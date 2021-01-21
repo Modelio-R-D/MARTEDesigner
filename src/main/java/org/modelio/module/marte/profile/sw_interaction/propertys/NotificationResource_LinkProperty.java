@@ -1,0 +1,130 @@
+package org.modelio.module.marte.profile.sw_interaction.propertys;
+
+import java.util.List;
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+import org.modelio.api.module.propertiesPage.IModulePropertyTable;
+import org.modelio.metamodel.uml.infrastructure.ModelElement;
+import org.modelio.module.marte.api.MARTEDesignerStereotypes;
+import org.modelio.module.marte.api.MARTEDesignerTagTypes;
+import org.modelio.module.marte.profile.editors.IPropertyContent;
+import org.modelio.module.marte.profile.utils.LinkManager;
+import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
+import org.modelio.module.marte.profile.utils.MARTEResourceManager;
+import org.modelio.module.marte.profile.utils.MARTESearchUtils;
+import org.modelio.module.marte.profile.utils.ModelUtils;
+
+@objid ("80be2330-9cae-4f1e-a301-cb12e47d6233")
+public class NotificationResource_LinkProperty implements IPropertyContent {
+    @objid ("5dda97e9-fd81-49a4-b1df-fc4d017c5480")
+    private static List<ModelElement> typedElement = null;
+
+    @objid ("e1c9beb0-780f-49b6-ad4b-c7d577b48a49")
+    private static List<ModelElement> behavioralFeature = null;
+
+    @objid ("68e12e7a-bfe1-4546-bfe0-59d296891e02")
+    @Override
+    public void changeProperty(final ModelElement elt, final int row, final String value) {
+        if(row == 1){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCE, value);
+        }
+        else if(row == 2){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MECHANISM, value);
+        }
+        else if(row == 3){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    typedElement, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_OCCURENCECOUNTELEMENTS_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS, 
+                    value);
+        }
+        else if(row == 4){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    typedElement, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_MASKELEMENTS_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MASKELEMENTS, 
+                    value);
+        }
+        else if(row == 5){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    behavioralFeature, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_FLUSHSERVICES_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES, 
+                    value);
+        }
+        else if(row == 6){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    behavioralFeature, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_OCCURENCECOUNTELEMENTS_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS, 
+                    value);
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES, value);
+        }
+        else if(row == 7){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    behavioralFeature, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITSERVICES_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_WAITSERVICES, 
+                    value);
+        }
+        else if(row == 8){
+            ModelUtils.manageMultipleOrientedLink(elt, 
+                    behavioralFeature, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_CLEARSERVICES_NOTIFICATIONRESOURCE, 
+        //                    MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_CLEARSERVICES, 
+                    value);
+        }
+    }
+
+    @objid ("92ed6cfc-d7da-41fb-8d8d-1f7201d0d1ce")
+    @Override
+    public void update(final ModelElement elt, final IModulePropertyTable table) {
+        //
+        // Notification Resource
+        //
+        
+        typedElement = MARTESearchUtils.searchTypedElement();   
+        behavioralFeature = MARTESearchUtils.searchBehavioralFeature(); 
+        
+        
+        String[] tableNotificationKind = MARTEEnumerationUtils.getNotificationKind();
+        String value_occurence = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCE, elt);
+        if(!(MARTEEnumerationUtils.isNotificationKind(value_occurence))){
+             value_occurence = "Undef";
+        }
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCE),value_occurence, tableNotificationKind);
+        
+        String[] tableNotificationResKind = MARTEEnumerationUtils.getNotificationResourceKind();
+        String value_mechanism = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MECHANISM, elt);
+        if(!(MARTEEnumerationUtils.isNotificationResourceKind(value_mechanism))){
+             value_mechanism = "Undef";
+        }
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MECHANISM),value_mechanism, tableNotificationResKind);
+        
+        
+        String[] tab_occurenceCountElements = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_OCCURENCECOUNTELEMENTS_NOTIFICATIONRESOURCE), typedElement);
+        String value_occurenceCountElements = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_OCCURENCECOUNTELEMENTS_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS),value_occurenceCountElements, tab_occurenceCountElements);
+        
+        
+        String[] tab_maskElements = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_MASKELEMENTS_NOTIFICATIONRESOURCE), typedElement);
+        String value_maskElements = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_MASKELEMENTS_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MASKELEMENTS),value_maskElements, tab_maskElements);
+        
+        String[] tab_flushServices = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_FLUSHSERVICES_NOTIFICATIONRESOURCE), behavioralFeature);
+        String value_flushServices = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_FLUSHSERVICES_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES),value_flushServices, tab_flushServices);
+        
+        String[] tab_signalServices = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_SIGNALSERVICES_NOTIFICATIONRESOURCE), behavioralFeature);
+        String value_signalServices = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_SIGNALSERVICES_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES),value_signalServices, tab_signalServices);
+        
+        String[] tab_waitServices = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITSERVICES_NOTIFICATIONRESOURCE), behavioralFeature);
+        String value_waitServices = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITSERVICES_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_WAITSERVICES),value_waitServices, tab_waitServices);
+        
+        String[] tab_clearServices = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_CLEARSERVICES_NOTIFICATIONRESOURCE), behavioralFeature);
+        String value_clearServices = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_CLEARSERVICES_NOTIFICATIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_CLEARSERVICES),value_clearServices, tab_clearServices);
+    }
+
+}

@@ -1,0 +1,67 @@
+package org.modelio.module.marte.profile.sw_interaction.propertys;
+
+import java.util.List;
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+import org.modelio.api.module.propertiesPage.IModulePropertyTable;
+import org.modelio.metamodel.uml.infrastructure.ModelElement;
+import org.modelio.module.marte.api.MARTEDesignerStereotypes;
+import org.modelio.module.marte.api.MARTEDesignerTagTypes;
+import org.modelio.module.marte.profile.editors.IPropertyContent;
+import org.modelio.module.marte.profile.utils.LinkManager;
+import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
+import org.modelio.module.marte.profile.utils.MARTEResourceManager;
+import org.modelio.module.marte.profile.utils.MARTESearchUtils;
+import org.modelio.module.marte.profile.utils.ModelUtils;
+
+@objid ("847657ef-9edd-4a49-b5e4-a77186d7e6be")
+public class SwInteractionResource_AssociationEndProperty implements IPropertyContent {
+    @objid ("a3eb5da3-1cdc-4c67-8eab-28024f71c067")
+    private static List<ModelElement> typedElements = null;
+
+    @objid ("a9b57f3b-0477-4dc3-9572-7a37a9f5ef74")
+    @Override
+    public void changeProperty(final ModelElement elt, final int row, final String value) {
+        if(row == 1){
+           ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_ISINTRAMEMORYPARTITIONINTERACTION, value);
+        }
+        else if(row == 2){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUEPOLICY, value);
+        }
+        else if(row == 3){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUECAPACITY, value);
+        }
+        else if(row == 4){
+             ModelUtils.manageMultipleOrientedLink(elt, 
+                     typedElements, 
+                     MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITINGPOLICYELEMENTS_SWINTERACTIONRESOURCE, 
+        //                     MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGPOLICYELEMENTS, 
+                     value);
+        }
+    }
+
+    @objid ("7c506dd3-56ef-4bf3-8abf-f6e7acdeda87")
+    @Override
+    public void update(final ModelElement elt, final IModulePropertyTable table) {
+        //
+        // Sw Interaction Resource
+        //
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_ISINTRAMEMORYPARTITIONINTERACTION),ModelUtils.hasTaggedValue(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_ISINTRAMEMORYPARTITIONINTERACTION, elt));
+        
+               
+        String [] tab_QueuePolicyKind = MARTEEnumerationUtils.getQueuePolicyKind();
+        String value_waitingQueuePolicy = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUEPOLICY, elt);
+        if(!(MARTEEnumerationUtils.isQueuePolicyKind(value_waitingQueuePolicy))){
+            value_waitingQueuePolicy = "Undef";
+        }
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUEPOLICY),value_waitingQueuePolicy, tab_QueuePolicyKind);
+               
+        String value_waitingQueueCapacity = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUECAPACITY, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUECAPACITY),value_waitingQueueCapacity);
+        
+        typedElements = MARTESearchUtils.searchTypedElement();       
+        String[] tab_waitingPolicyElements = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITINGPOLICYELEMENTS_SWINTERACTIONRESOURCE), typedElements);
+        String value_waitingPolicyElements = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_WAITINGPOLICYELEMENTS_SWINTERACTIONRESOURCE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGPOLICYELEMENTS),value_waitingPolicyElements, tab_waitingPolicyElements);
+    }
+
+}

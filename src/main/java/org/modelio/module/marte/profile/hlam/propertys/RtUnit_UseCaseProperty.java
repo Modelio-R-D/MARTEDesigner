@@ -1,0 +1,159 @@
+package org.modelio.module.marte.profile.hlam.propertys;
+
+import java.util.List;
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+import org.modelio.api.module.propertiesPage.IModulePropertyTable;
+import org.modelio.metamodel.uml.behavior.commonBehaviors.Behavior;
+import org.modelio.metamodel.uml.infrastructure.ModelElement;
+import org.modelio.metamodel.uml.statik.Operation;
+import org.modelio.module.marte.api.MARTEDesignerStereotypes;
+import org.modelio.module.marte.api.MARTEDesignerTagTypes;
+import org.modelio.module.marte.profile.editors.IPropertyContent;
+import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
+import org.modelio.module.marte.profile.utils.MARTEResourceManager;
+import org.modelio.module.marte.profile.utils.ModelUtils;
+
+@objid ("7bb0753d-42a7-444a-99a3-20cbb5f699e4")
+public class RtUnit_UseCaseProperty implements IPropertyContent {
+    @objid ("4b1e7c49-ae29-4927-ba7b-8f0aec3f42af")
+    private List<ModelElement> behavior = null;
+
+    @objid ("7a2f7f56-e045-4a2f-9fc4-935e70fc855e")
+    private List<ModelElement> operation = null;
+
+    @objid ("3d6caf3a-ccf2-4cea-8c67-73c4a844eb9d")
+    @Override
+    public void changeProperty(final ModelElement elt, final int row, final String value) {
+        if(row == 1){
+            ModelUtils.addBooleanValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISDYNAMIC, Boolean.valueOf(value));
+        }
+        else if(row == 2){
+            ModelUtils.addBooleanValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISMAIN, Boolean.valueOf(value));
+        }
+        else if(row == 3){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLSIZE, value);
+        }
+        else if(row == 4){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLPOLICY, value);
+        }
+        else if(row == 5){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLWAITINGTIME, value);
+        }
+        else if(row == 6){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESCHEDPOLICY, value);
+        }
+        else if(row == 7){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESIZE, value);
+        }
+        else if(row == 8){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MSGMAXSIZE, value);
+        }
+        else if(row == 9){
+            this.behavior = ModelUtils.searchElement(Behavior.class);
+            ModelUtils.manageSingleOrientedLink(elt, 
+                    this.behavior, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_OPERATIONMODE_RTUNIT_BEHAVIOR, 
+        //                    MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_OPERATIONALMODE, 
+                    value
+            );
+        }        
+        else if(row == 10){
+            this.operation = ModelUtils.searchElement(Operation.class);
+            ModelUtils.manageSingleOrientedLink(elt, 
+                    this.operation, 
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_MAIN_RTUNIT_OPERATION, 
+        //                    MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MAIN, 
+                    value
+            );
+        }
+        else  if(row == 11){
+            ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MEMORYSIZE, value);
+        }
+    }
+
+    @objid ("a1f45bad-493d-433b-8447-84bb245363ac")
+    @Override
+    public void update(final ModelElement elt, final IModulePropertyTable table) {
+        //
+        //isDynamic
+        //
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISDYNAMIC),ModelUtils.hasTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISDYNAMIC, elt));
+        
+        //
+        //isMain
+        //
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISMAIN),ModelUtils.hasTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_ISMAIN, elt));
+        
+        //
+        //SrPoolSize
+        //
+        String value_srPoolSize = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLSIZE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLSIZE),value_srPoolSize);
+        
+        //
+        //SrPoolPolicy
+        //
+        String[] types = MARTEEnumerationUtils.getPoolMgtPolicyKind();
+        String value_protectKind = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLPOLICY, elt);
+        if(!(MARTEEnumerationUtils.isPoolMgtPolicyKind(value_protectKind))){
+            value_protectKind = "other";
+        }
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLPOLICY),value_protectKind, types);
+        
+        //
+        //SrPoolWaitingTime
+        //
+        String value_srPoolWaitingTime = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLWAITINGTIME, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLWAITINGTIME),value_srPoolWaitingTime);
+        
+        
+        //
+        //QueueSchedPolicy
+        //
+        
+        types = MARTEEnumerationUtils.getSchedPolicyKind();
+        String value_queueSchedPolicy = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESCHEDPOLICY, elt);
+        if(!(MARTEEnumerationUtils.isSchedPolicyKind(value_queueSchedPolicy))){
+            value_queueSchedPolicy = "Other";
+        }
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESCHEDPOLICY),value_queueSchedPolicy, types);
+        
+        //
+        //QueueSize
+        //
+        String value_queueSize = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESIZE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_QUEUESIZE),value_queueSize);
+        
+        //
+        //MsgMaxSize
+        //
+        String value_msgMaxSize = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MSGMAXSIZE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MSGMAXSIZE),value_msgMaxSize);
+        
+        
+        //
+        //operationMode
+        //
+        this.behavior = ModelUtils.searchElement(Behavior.class);
+        String[] tab_operationalMode = ModelUtils.createListString(this.behavior);      
+        String value_operationalMode = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_OPERATIONMODE_RTUNIT_BEHAVIOR, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_OPERATIONALMODE), value_operationalMode, tab_operationalMode);
+        
+        //
+        //main
+        //
+        
+        this.operation = ModelUtils.searchElement(Operation.class);
+        String[] tab_main = ModelUtils.createListString(this.operation);      
+        String value_main = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_MAIN_RTUNIT_OPERATION, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MAIN), value_main, tab_main);
+        
+        
+        //
+        //memorySize
+        //
+        String value_memorySize = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MEMORYSIZE, elt);
+        table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.RTUNIT_USECASE_RTUNIT_USECASE_MEMORYSIZE),value_memorySize);
+    }
+
+}
