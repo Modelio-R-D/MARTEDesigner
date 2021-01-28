@@ -1,1 +1,3 @@
 # MARTEDesigner
+
+This Modelio extension adds capabilities for model-driven development of Real Time and Embedded Systems (RTES). This extension, called the UML profile for MARTE (in short MARTE for Modeling and Analysis of Real-Time and Embedded systems), provides support for specification, design, and verification/validation stages.
