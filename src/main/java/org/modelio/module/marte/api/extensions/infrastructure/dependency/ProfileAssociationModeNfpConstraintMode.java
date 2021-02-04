@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -22,6 +22,7 @@ import org.modelio.metamodel.uml.infrastructure.properties.PropertyDefinition;
 import org.modelio.metamodel.uml.infrastructure.properties.PropertyTableDefinition;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
 import org.modelio.module.marte.api.MARTEDesignerProxyFactory;
+import org.modelio.module.marte.api.extensions.infrastructure.dependency.ProfileAssociationModeNfpConstraintMode;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
@@ -30,26 +31,26 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("62431ae5-4822-4be9-8de1-85ef0533582e")
+@objid ("884e4072-ce7e-4f87-b8a5-ae864becc55c")
 public class ProfileAssociationModeNfpConstraintMode {
-    @objid ("9b5a3d00-eabf-4d44-bed2-9614c0c08bc2")
+    @objid ("950be3ac-73dc-4ff9-8aa2-a071d7781257")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_mode_NfpConstraint_Mode";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("f98a2b3a-8abd-40a5-85b8-b32ca3b78bbd")
+    @objid ("d8675b4a-bb63-464d-9694-12b848c1c304")
     protected final Dependency elt;
 
     /**
      * Tells whether a {@link ProfileAssociationModeNfpConstraintMode proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_mode_NfpConstraint_Mode >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("9d5865b1-d114-47d1-9b7a-2c8b46d3c339")
+    @objid ("35d0c4b1-ba4c-4215-8e4f-891e65808031")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationModeNfpConstraintMode.STEREOTYPE_NAME));
     }
@@ -59,44 +60,42 @@ public class ProfileAssociationModeNfpConstraintMode {
      * 
      * @return a {@link ProfileAssociationModeNfpConstraintMode} proxy on the created {@link Dependency}.
      */
-    @objid ("bb84c740-3a04-4813-9cff-33cf5387d563")
+    @objid ("adec6031-0567-4e85-99aa-5deb01f26a02")
     public static ProfileAssociationModeNfpConstraintMode create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationModeNfpConstraintMode.STEREOTYPE_NAME);
         return ProfileAssociationModeNfpConstraintMode.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationModeNfpConstraintMode} proxy from a {@link Dependency} stereotyped << ProfileAssociation_mode_NfpConstraint_Mode >>checking its metaclass and its stereotype.
+     * Tries to instantiate a {@link ProfileAssociationModeNfpConstraintMode} proxy from a {@link Dependency} stereotyped << ProfileAssociation_mode_NfpConstraint_Mode >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
-     * 
      * @param obj a Dependency
      * @return a {@link ProfileAssociationModeNfpConstraintMode} proxy or <i>null</i>.
      */
-    @objid ("7a925f7a-1369-485c-9804-89cbccf4eadf")
+    @objid ("4dd59842-d491-4367-a409-b10df4e3f912")
     public static ProfileAssociationModeNfpConstraintMode instantiate(final Dependency obj) {
         return ProfileAssociationModeNfpConstraintMode.canInstantiate(obj) ? new ProfileAssociationModeNfpConstraintMode(obj) : null;
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationModeNfpConstraintMode} proxy from a {@link Dependency} stereotyped << ProfileAssociation_mode_NfpConstraint_Mode >> checking its metaclass and its stereotype.
+     * Tries to instantiate a {@link ProfileAssociationModeNfpConstraintMode} proxy from a {@link Dependency} stereotyped << ProfileAssociation_mode_NfpConstraint_Mode >> checking its metaclass and its stereotype. 
      * <p>
      * The method throws an {@link IllegalArgumentException} if the instantiation cannot be carried out.
-     * 
      * @param obj a {@link Dependency}
      * @return a {@link ProfileAssociationModeNfpConstraintMode} proxy.
-     * @throws java.lang.IllegalArgumentException if the instantiation cannot be carried out.
+     * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("7d065730-0eac-400d-b1ca-9143e9938db9")
+    @objid ("4f4e357b-54a6-494c-95f7-d62def2f2501")
     public static ProfileAssociationModeNfpConstraintMode safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationModeNfpConstraintMode.canInstantiate(obj))
-            return new ProfileAssociationModeNfpConstraintMode(obj);
+        	return new ProfileAssociationModeNfpConstraintMode(obj);
         else
-            throw new IllegalArgumentException("ProfileAssociationModeNfpConstraintMode: Cannot instantiate "+obj+": wrong element type or stereotype");
+        	throw new IllegalArgumentException("ProfileAssociationModeNfpConstraintMode: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("70f5464f-4681-4bc6-a9ff-503724f615de")
+    @objid ("59548823-63d6-4381-96bf-6805881eb69c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,38 +112,37 @@ public class ProfileAssociationModeNfpConstraintMode {
     }
 
     /**
-     * Get the underlying {@link Dependency}.
-     * 
+     * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("879146b2-4ae2-497c-9e19-b763c4adccf2")
+    @objid ("b828d945-cca8-40a5-9ecd-b15c417f1add")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("2038c040-8064-4bd4-844e-f9583f61dccf")
+    @objid ("d7ace8b5-55ab-4011-b65d-e17972d7ec68")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("ee3edb67-f047-44ba-a807-7842de419f67")
+    @objid ("f7f05b1e-ed75-4901-8480-cdbe2df9a0c1")
     protected ProfileAssociationModeNfpConstraintMode(final Dependency elt) {
         this.elt = elt;
     }
 
-    @objid ("a3c9abb7-655c-42bb-9b41-5832a7b40536")
+    @objid ("a5eb791f-d519-4cd9-86c0-51e05918b3ed")
     public static final class MdaTypes {
-        @objid ("50c07d80-57f7-4b05-9727-52b0ed44011b")
+        @objid ("28504073-bce0-4879-92a6-c3a4ae1b30f5")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f1a2cc89-9fad-4ba2-93e9-e02a3cfcdfe7")
+        @objid ("43e17014-2e5d-4f2f-9066-4c82f192ac55")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c9673be9-821c-4821-ad47-ed4fe40d8b92")
+        @objid ("d4b14d7b-1c9c-4832-9951-e37ca16f76b4")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("6432965f-08e5-4ed3-881d-e3ef5c838840")
+        @objid ("860ed55d-bcaf-463c-aa67-c7cfe2976ede")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ad6dd368-7ddd-11df-9e39-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");
@@ -152,11 +150,11 @@ public class ProfileAssociationModeNfpConstraintMode {
         }
 
 
-static {
-        if(MARTEModule.getInstance() != null) {
-            init(MARTEModule.getInstance().getModuleContext());
-        }
-    }
+	static {
+		if(MARTEModule.getInstance() != null) {
+			init(MARTEModule.getInstance().getModuleContext());
+		}
+	}
     }
 
 }

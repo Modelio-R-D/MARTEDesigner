@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwgeneral.standard.attribute;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("8abfe83b-030b-4c68-a7d4-cb7f0ddee8dd")
 public class HwResourceAttribute extends ResourceAttribute {
-    @objid ("8f81a498-728a-47c2-996f-3f54ef2fdb95")
+    @objid ("fc2f8883-9881-439c-ac49-1e7566ac2059")
     public static final String STEREOTYPE_NAME = "HwResource_Attribute";
 
-    @objid ("89f5601d-8bc6-477e-89f6-c2daf2e80f79")
+    @objid ("152749cf-41a5-4a2b-a784-5097e60f22c4")
     public static final String HWRESOURCE_ATTRIBUTE_DESCRIPTION_TAGTYPE = "HwResource_Attribute_description";
 
-    @objid ("1a03a02a-f6f5-4a10-81e1-5fe156939fe8")
+    @objid ("43321fe7-e79f-4daa-97ee-84a2e066b266")
     public static final String HWRESOURCE_ATTRIBUTE_ENDPOINTS_TAGTYPE = "HwResource_Attribute_endPoints";
 
-    @objid ("08b913c2-5ace-4f46-990c-2c650eb32ae5")
+    @objid ("54d11df8-48ea-4175-82e9-3ba46a454f3e")
     public static final String HWRESOURCE_ATTRIBUTE_FREQUENCY_TAGTYPE = "HwResource_Attribute_frequency";
 
-    @objid ("485e5ce3-2ad5-433b-a20f-d1af4c82d987")
+    @objid ("130f77b9-7126-40c2-bbd4-af57d36b9914")
     public static final String HWRESOURCE_ATTRIBUTE_OWNEDHW_TAGTYPE = "HwResource_Attribute_ownedHW";
 
-    @objid ("24618c41-c050-4eb2-94a3-2c03aae70d62")
+    @objid ("9952dffa-7b52-4bfe-9999-fc2b0247f3d4")
     public static final String HWRESOURCE_ATTRIBUTE_P_HW_SERVICES_TAGTYPE = "HwResource_Attribute_p_HW_Services";
 
-    @objid ("37ad1d0a-4cdb-40ba-b569-3dc96b508faf")
+    @objid ("df76adb5-fdf4-4c0e-89ab-5ee58ffd2272")
     public static final String HWRESOURCE_ATTRIBUTE_R_HW_SERVICES_TAGTYPE = "HwResource_Attribute_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwResource_Attribute >>. 
+     * Tells whether a {@link HwResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("ba54c052-defc-4fc3-a9d5-b79c965aa960")
+    @objid ("227548ba-e807-43a3-ba91-2a9496acf505")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceAttribute.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class HwResourceAttribute extends ResourceAttribute {
      * 
      * @return a {@link HwResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("3363313e-75c6-4376-b158-1c3b25f7dcb6")
+    @objid ("76bd408f-afa3-4ea4-aff1-e7fd5070b099")
     public static HwResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceAttribute.STEREOTYPE_NAME);
         return HwResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwResourceAttribute} proxy from a {@link Attribute} stereotyped << HwResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwResourceAttribute} proxy from a {@link Attribute} stereotyped << HwResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("7c6f9384-8ee1-4afd-90a8-2fbae19ce0ff")
+    @objid ("8c9a10d4-d905-4ee1-b8b9-a18cd89880f1")
     public static HwResourceAttribute instantiate(final Attribute obj) {
         return HwResourceAttribute.canInstantiate(obj) ? new HwResourceAttribute(obj) : null;
     }
@@ -101,7 +101,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * @return a {@link HwResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("d1ddeb0f-6836-4727-b55e-e4c32fcfa857")
+    @objid ("d02b257c-4c0f-470c-8f9e-151fbbafff78")
     public static HwResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwResourceAttribute.canInstantiate(obj))
         	return new HwResourceAttribute(obj);
@@ -109,7 +109,7 @@ public class HwResourceAttribute extends ResourceAttribute {
         	throw new IllegalArgumentException("HwResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("dd068496-0eb8-474b-bd89-b257336248c4")
+    @objid ("e52c389b-8ea2-4543-867e-067e28bc6c69")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("d2374b24-e05e-4064-a045-b8a47b0f7b9c")
+    @objid ("85881319-de21-4fb1-a0d7-ff72f51bd9af")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -140,7 +140,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("16d8e655-1971-420b-9255-9a50098b9d56")
+    @objid ("28d6298d-a20c-4712-a819-14c28e3dc2a8")
     public String getHwResource_Attribute_description() {
         return this.elt.getTagValue(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("adcece0c-7c4f-480f-968f-dbe6a9b1340a")
+    @objid ("4559b68c-c6ab-4ac1-99bb-ac062cd11d71")
     public List<String> getHwResource_Attribute_endPoints() {
         return this.elt.getTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9597ed76-2b33-4e8a-ab49-33f53c4a12b6")
+    @objid ("07b304fd-46bb-46bf-87ce-e4d617b78378")
     public String getHwResource_Attribute_frequency() {
         return this.elt.getTagValue(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b80bd5bf-999d-4a63-aee6-781d2483d369")
+    @objid ("145cb9d4-5b0f-4588-9a5b-1802f4e1cf19")
     public List<String> getHwResource_Attribute_ownedHW() {
         return this.elt.getTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("56ad9b52-4f39-4425-bcfb-cea0f8648400")
+    @objid ("8e6d33b3-9ad4-42ec-8b16-e424251b0ca4")
     public List<String> getHwResource_Attribute_p_HW_Services() {
         return this.elt.getTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("19eed614-1716-40df-b799-3bb6156501c4")
+    @objid ("7fc096de-c52e-447c-9122-3f461db3f31b")
     public List<String> getHwResource_Attribute_r_HW_Services() {
         return this.elt.getTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("1abfd7e5-a57b-4ebd-83ed-924ad6f7706b")
+    @objid ("350913da-bc00-483a-8a1e-e8db31982a0d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3618e6fd-5ccd-4e13-bb2f-44c6867137f8")
+    @objid ("852d901d-adf5-4ea3-ba44-496fefbad01f")
     public void setHwResource_Attribute_description(final String value) {
         this.elt.putTagValue(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -216,7 +216,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ee8aea93-8e84-46f5-a5c3-372a01a29202")
+    @objid ("900f410e-2c1c-4b81-8159-43eda3129978")
     public void setHwResource_Attribute_endPoints(final List<String> values) {
         this.elt.putTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -226,7 +226,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("37beef46-5ec3-4097-8254-11f7bb43ea6f")
+    @objid ("3bebb348-64e8-4463-9f93-9f8ed15d97e8")
     public void setHwResource_Attribute_frequency(final String value) {
         this.elt.putTagValue(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +236,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("78aed9e1-f611-40f5-859f-b1bf93114d3b")
+    @objid ("e455154d-3a3a-4363-9c65-d8089b78c46c")
     public void setHwResource_Attribute_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9012fe73-2688-46fd-9cf0-32546767e9d8")
+    @objid ("c70ce4e0-8d43-46f1-a075-270a0ded676e")
     public void setHwResource_Attribute_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +256,46 @@ public class HwResourceAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dde942bf-576d-403f-a8a1-1462e4fda8d5")
+    @objid ("796d30cf-185b-48ff-ac07-fdc032ceffe2")
     public void setHwResource_Attribute_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceAttribute.MdaTypes.HWRESOURCE_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("9e40507f-5a29-45b5-86f4-49649bd5c225")
+    @objid ("ddea644e-14f8-4ef5-8960-913b28e9a586")
     protected HwResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("0d4ac5f5-f188-4ce3-8ddf-34d50f351f08")
     public static final class MdaTypes {
-        @objid ("8fe28981-9d1c-4272-84e8-77375f22e591")
+        @objid ("d74bc9cc-450c-4558-8dec-ed152552b9cf")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("85b3804a-60b0-46cf-a9d2-97e27fb2aadf")
+        @objid ("fcc7955b-b739-4d73-8262-1fb4e76ff9ff")
         public static TagType HWRESOURCE_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("e5f4b8a1-ec7c-4f36-86f2-bb52ab4f53ad")
+        @objid ("8727b04d-36a4-41cf-8cd4-27d8f2333039")
         public static TagType HWRESOURCE_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("38a09cbd-db96-4abb-a88b-50f07b1eae7e")
+        @objid ("457a1cfe-3044-4a84-ad0e-ce5854862720")
         public static TagType HWRESOURCE_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("4636b79e-d882-41f5-b694-b148c4b0ce80")
+        @objid ("9a57bd24-8a03-45d6-98de-a52cdbfb83f0")
         public static TagType HWRESOURCE_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("b781a3a6-0468-4b90-9360-80ec18cd4f43")
+        @objid ("06a5bc82-173f-4e90-9173-5cba4a71ffb5")
         public static TagType HWRESOURCE_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("c6ffb7aa-de74-4820-ac1b-78edd2bfd56e")
+        @objid ("29c15585-7c1f-4d7a-8ce0-535b3dd3a204")
         public static TagType HWRESOURCE_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("784498d0-3a79-44ed-84e5-44e653611483")
+        @objid ("68e6efd1-515c-46fc-9fba-ac33d58ea35f")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0e9d6998-a796-435d-9c79-e86dbc26b36a")
+        @objid ("43abec63-9deb-43f9-b68b-0cb4bba9d3a2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("087dff0b-f4fe-4bfa-addc-3750477d5369")
+        @objid ("684c2993-9d5d-42b1-bc24-569b4bf519a4")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00dae376-0ccf-11df-8525-001302895b2b");
             HWRESOURCE_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "019bff66-0ccf-11df-8525-001302895b2b");

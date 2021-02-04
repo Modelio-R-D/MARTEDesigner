@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.attribute;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e16274d4-6be4-48f1-8c9d-874ba4d82063")
 public class MessageComResourceAttribute extends SwCommunicationResourceAttribute {
-    @objid ("d187eefd-0fd9-4993-819d-1350024d78dd")
+    @objid ("0e0c3ad9-dbf1-4dbc-9412-2dcb3f517b9e")
     public static final String STEREOTYPE_NAME = "MessageComResource_Attribute";
 
-    @objid ("9db0d4d4-a7b1-48a4-b145-4c7b7c938d45")
+    @objid ("7f8f96ff-2fae-483c-bb40-92a5b9d842db")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE_TAGTYPE = "MessageComResource_Attribute_isFixedMessageSize";
 
-    @objid ("11923495-0a2c-43d7-a674-9b837bed6ef7")
+    @objid ("4459df20-812a-4c60-b505-39977f084549")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MECHANISM_TAGTYPE = "MessageComResource_Attribute_mechanism";
 
-    @objid ("65a21456-72ce-4c2c-8902-fb18f61d8124")
+    @objid ("10c02636-c8b4-4a32-877a-4a59fb182200")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUECAPACITYELEMENTS_TAGTYPE = "MessageComResource_Attribute_messageQueueCapacityElements";
 
-    @objid ("4b6d76c9-5778-43a6-b2b3-4b51e1b62155")
+    @objid ("d841ce0f-5731-4d59-bb06-13f5eeb63694")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUEPOLICY_TAGTYPE = "MessageComResource_Attribute_messageQueuePolicy";
 
-    @objid ("4c96ec4a-5e52-4785-93e1-6e0b405db9ba")
+    @objid ("9b686a7c-9dab-4d1b-b8cf-303992e60ae2")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGESIZEELEMENTS_TAGTYPE = "MessageComResource_Attribute_messageSizeElements";
 
-    @objid ("c9243d04-a28e-4474-b853-c9daf3caf6da")
+    @objid ("1e8615b8-b0de-44e0-adb0-d08f625e2d9a")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_RECEIVESERVICES_TAGTYPE = "MessageComResource_Attribute_receiveServices";
 
-    @objid ("b612d394-539e-4317-8ed4-b281713303eb")
+    @objid ("b987dc51-aa8e-42f5-8e44-3ab3be0505b2")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_SENDSERVICES_TAGTYPE = "MessageComResource_Attribute_sendServices";
 
     /**
-     * Tells whether a {@link MessageComResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << MessageComResource_Attribute >>. 
+     * Tells whether a {@link MessageComResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << MessageComResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("49de5619-726b-4bb7-a420-028fd5736706")
+    @objid ("8db434d1-ccb5-4b81-bf30-e9d581c2a5b2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, MessageComResourceAttribute.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * 
      * @return a {@link MessageComResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("8da666b8-1882-4660-b1ab-d80d409a135d")
+    @objid ("8a205186-30a8-4fd2-8aeb-5f8b6afd140a")
     public static MessageComResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, MessageComResourceAttribute.STEREOTYPE_NAME);
         return MessageComResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link MessageComResourceAttribute} proxy from a {@link Attribute} stereotyped << MessageComResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link MessageComResourceAttribute} proxy from a {@link Attribute} stereotyped << MessageComResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link MessageComResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("c8b44345-9448-4f3f-9401-48e6fad84e2b")
+    @objid ("fa22476a-3d0e-41cd-9ef7-eac5afc90cf9")
     public static MessageComResourceAttribute instantiate(final Attribute obj) {
         return MessageComResourceAttribute.canInstantiate(obj) ? new MessageComResourceAttribute(obj) : null;
     }
@@ -103,7 +103,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * @return a {@link MessageComResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("5996c9e2-c1e5-4282-8690-06113110312b")
+    @objid ("7643eeb1-5f7d-4c7b-ad8a-8b9f0aeb6d4a")
     public static MessageComResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (MessageComResourceAttribute.canInstantiate(obj))
         	return new MessageComResourceAttribute(obj);
@@ -111,7 +111,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
         	throw new IllegalArgumentException("MessageComResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9a533c09-28cf-4773-b4d8-c4f4cf4ec365")
+    @objid ("ddfaf16d-945f-4a93-82cb-770f2250ee3d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("98666a5c-e44a-454a-8d64-4e877f09ef87")
+    @objid ("5b9c8305-de95-4f1c-bfb9-981a0fefe46f")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -142,7 +142,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("793a7269-5d1e-4029-a786-f20ad471efb9")
+    @objid ("69bbdbdf-dbaf-4c51-ab4c-56e5e8c974a9")
     public String getMessageComResource_Attribute_mechanism() {
         return this.elt.getTagValue(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MECHANISM_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bc18e563-3c5c-4e37-bf4a-45276ce018f5")
+    @objid ("278d0e99-a445-40a7-b2bd-7c8ea30db3d6")
     public List<String> getMessageComResource_Attribute_messageQueueCapacityElements() {
         return this.elt.getTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUECAPACITYELEMENTS_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a582e0b3-37b1-492e-b33c-b28354aa3703")
+    @objid ("1995aed7-b790-42ea-87ee-43b111bb2adc")
     public String getMessageComResource_Attribute_messageQueuePolicy() {
         return this.elt.getTagValue(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUEPOLICY_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("17672baa-e0a2-4b82-9e0c-49212244c16e")
+    @objid ("70c83c0f-179c-49c1-bd67-e2077efccc1e")
     public List<String> getMessageComResource_Attribute_messageSizeElements() {
         return this.elt.getTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGESIZEELEMENTS_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("61041c12-8d9a-425a-957e-1886130784fc")
+    @objid ("7159aac0-cf95-4654-93d3-a10ab533590d")
     public List<String> getMessageComResource_Attribute_receiveServices() {
         return this.elt.getTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_RECEIVESERVICES_TAGTYPE_ELT);
     }
@@ -192,12 +192,12 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("fa5fa401-424c-43cc-a7ad-42563d5b5608")
+    @objid ("de9633c2-1444-4732-9536-6acb777f4088")
     public List<String> getMessageComResource_Attribute_sendServices() {
         return this.elt.getTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_SENDSERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("d668fa53-d683-4828-ba7e-6af937c9cc76")
+    @objid ("638a4845-bb0b-409c-9aae-657da39fe997")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -208,7 +208,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("85dc76f3-fbaa-474d-803a-fee62c2207a0")
+    @objid ("d993b518-8fb6-4754-a5b2-f6028eb8c5a6")
     public boolean isMessageComResource_Attribute_isFixedMessageSize() {
         return this.elt.isTagged(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE_TAGTYPE_ELT);
     }
@@ -218,7 +218,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b94eb2c8-4298-4910-bd4d-07e97a17f3c6")
+    @objid ("253ef1d6-6412-4bd9-b16d-4500cc9d16d1")
     public void setMessageComResource_Attribute_isFixedMessageSize(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE_TAGTYPE_ELT, this.elt);
@@ -231,7 +231,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("604b4bf8-5c30-407c-8a57-e805f653f99c")
+    @objid ("ac26d188-d722-4d51-af60-7ea11e90103c")
     public void setMessageComResource_Attribute_mechanism(final String value) {
         this.elt.putTagValue(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MECHANISM_TAGTYPE_ELT, value);
     }
@@ -241,7 +241,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b2c9e671-9075-4c9c-9514-65c385139012")
+    @objid ("2755f8fd-9915-479d-b6f4-a57b237d0fba")
     public void setMessageComResource_Attribute_messageQueueCapacityElements(final List<String> values) {
         this.elt.putTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUECAPACITYELEMENTS_TAGTYPE_ELT, values);
     }
@@ -251,7 +251,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c3d4ab3f-eb75-40f5-803d-c9e51c914a87")
+    @objid ("702ba608-e6f5-4624-9e08-45ee03a85c76")
     public void setMessageComResource_Attribute_messageQueuePolicy(final String value) {
         this.elt.putTagValue(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUEPOLICY_TAGTYPE_ELT, value);
     }
@@ -261,7 +261,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("24c5b007-1a6f-47e1-b45c-c374306d7d52")
+    @objid ("2c5af6fd-373f-4bfe-a885-2b47c1b5fba8")
     public void setMessageComResource_Attribute_messageSizeElements(final List<String> values) {
         this.elt.putTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGESIZEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -271,7 +271,7 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b1655219-1964-4bdc-bd8e-796347133670")
+    @objid ("5c4470e0-cb44-421f-b620-f975b52c8f15")
     public void setMessageComResource_Attribute_receiveServices(final List<String> values) {
         this.elt.putTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_RECEIVESERVICES_TAGTYPE_ELT, values);
     }
@@ -281,49 +281,49 @@ public class MessageComResourceAttribute extends SwCommunicationResourceAttribut
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7ef618ea-73f0-40d7-9a92-348bee5d0d13")
+    @objid ("0292febb-c1c1-406e-a50d-5b3e3b3e1848")
     public void setMessageComResource_Attribute_sendServices(final List<String> values) {
         this.elt.putTagValues(MessageComResourceAttribute.MdaTypes.MESSAGECOMRESOURCE_ATTRIBUTE_SENDSERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("481c0fb8-c428-4aac-bc1e-6714b3a9d936")
+    @objid ("c82304be-f203-4086-aab8-96bcb651d437")
     protected MessageComResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("41eb4304-90f7-4b7d-ae3d-8f980c5aae1e")
     public static final class MdaTypes {
-        @objid ("29ca1552-ecce-4f5f-bc9e-da1e7b17874a")
+        @objid ("25d659e3-2b4f-4a33-bc1d-8a4af2ad583b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("ed03d101-2da2-46a7-a927-dcecd31bb968")
+        @objid ("d9e862d2-8c89-4043-93dc-a87a7c669abc")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE_TAGTYPE_ELT;
 
-        @objid ("d1345d70-b6b8-40ca-8452-63cb0beb955d")
+        @objid ("472ca846-6093-423c-8835-cef0e146fb37")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_MECHANISM_TAGTYPE_ELT;
 
-        @objid ("00d33955-b4ce-49e0-9350-241fc26a82ff")
+        @objid ("d1334574-676f-47ef-8684-af7f728903f1")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGESIZEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("24e538fb-0850-4b49-bce6-9eea63c646a1")
+        @objid ("d6b5d8d2-76ce-4fc7-aab0-b9c621e29b38")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUECAPACITYELEMENTS_TAGTYPE_ELT;
 
-        @objid ("665d891a-2914-40d6-92b2-d8477c3e90d0")
+        @objid ("4d0e7380-4efb-4e2a-ba8d-e41b8fa5877a")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUEPOLICY_TAGTYPE_ELT;
 
-        @objid ("eb0b3253-54e7-42d9-822f-b3b0b0021876")
+        @objid ("ae3eb94d-ce6a-4ff0-b84a-ff837bc8d382")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_SENDSERVICES_TAGTYPE_ELT;
 
-        @objid ("70c17238-08be-499f-a047-db2d37503c86")
+        @objid ("00a3b309-891c-4be2-9880-802a668cd9f9")
         public static TagType MESSAGECOMRESOURCE_ATTRIBUTE_RECEIVESERVICES_TAGTYPE_ELT;
 
-        @objid ("52747055-b333-4102-8699-9520b4f40208")
+        @objid ("03a5dd5d-9129-4129-94de-9f7e603cd657")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e64f6548-7d39-4603-bf27-71b5fe93d086")
+        @objid ("c61e31a5-0c0b-48e7-b02e-d5a80fc37c9e")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("a23dbb4c-f370-4ad4-ad62-4d3619311eca")
+        @objid ("b352be20-8b17-4fce-a1ef-ce24d459c785")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "022b0aa0-0ccf-11df-8525-001302895b2b");
             MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "022b0aa7-0ccf-11df-8525-001302895b2b");

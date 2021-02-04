@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.link;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d1cb23ed-9c8a-41b0-97f4-a35bc9f14729")
 public class HwROMLink extends HwMemoryLink {
-    @objid ("d9c48b96-1008-43f3-9b24-1e5c0fffd0bf")
+    @objid ("5f8f553f-d79a-44a3-af42-4e01f8a99eeb")
     public static final String STEREOTYPE_NAME = "HwROM_Link";
 
-    @objid ("3dc4c6d4-d61d-472f-a774-cca85e2022a3")
+    @objid ("a6496af1-177e-41cd-80be-b5a4674c103d")
     public static final String HWROM_LINK_ORGANIZATION_TAGTYPE = "HwROM_Link_organization";
 
-    @objid ("c80a015f-1ceb-4dc6-81f9-e0d3140a30c3")
+    @objid ("cf0544f4-a7ae-4c81-aa68-65cac41d13a4")
     public static final String HWROM_LINK_TYPE_TAGTYPE = "HwROM_Link_type";
 
     /**
-     * Tells whether a {@link HwROMLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwROM_Link >>. 
+     * Tells whether a {@link HwROMLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwROM_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("faba4824-de22-4cf4-bd38-4fb4a7525e21")
+    @objid ("cf1f624b-0288-4dcf-a1a6-007f069a30f1")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwROMLink.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class HwROMLink extends HwMemoryLink {
      * 
      * @return a {@link HwROMLink} proxy on the created {@link Link}.
      */
-    @objid ("4ea49c2b-4fc8-458b-bb3d-3469868ddc9f")
+    @objid ("6f870c82-8b07-4944-90f6-97c6d9a3eea7")
     public static HwROMLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwROMLink.STEREOTYPE_NAME);
         return HwROMLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwROMLink} proxy from a {@link Link} stereotyped << HwROM_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwROMLink} proxy from a {@link Link} stereotyped << HwROM_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link HwROMLink} proxy or <i>null</i>.
      */
-    @objid ("b4a1e0ce-d3ca-4790-aa45-652eb645b6da")
+    @objid ("0b904f07-4393-49ea-82d0-fcc90e27b146")
     public static HwROMLink instantiate(final Link obj) {
         return HwROMLink.canInstantiate(obj) ? new HwROMLink(obj) : null;
     }
@@ -87,7 +87,7 @@ public class HwROMLink extends HwMemoryLink {
      * @return a {@link HwROMLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1bb72ee4-3406-469e-8107-cd87ef6df740")
+    @objid ("ca53f2de-0f8c-44b2-8b12-dd0b3b3a4a02")
     public static HwROMLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwROMLink.canInstantiate(obj))
         	return new HwROMLink(obj);
@@ -95,7 +95,7 @@ public class HwROMLink extends HwMemoryLink {
         	throw new IllegalArgumentException("HwROMLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("7f4c0730-1876-48ca-b309-5b620b54c49b")
+    @objid ("6dcd5fab-5212-454e-b383-3a5f46cc0d28")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class HwROMLink extends HwMemoryLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("8c6816b2-a4c0-4716-bd41-7f4648088270")
+    @objid ("90bb8e29-ab92-4bac-8f8d-8acfeeb0a9e7")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -126,7 +126,7 @@ public class HwROMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0588acba-d1ce-47a3-8bd3-1bfc221ccf79")
+    @objid ("7dd8e42a-57f2-4610-b980-d10bbef58676")
     public String getHwROM_Link_organization() {
         return this.elt.getTagValue(HwROMLink.MdaTypes.HWROM_LINK_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -136,12 +136,12 @@ public class HwROMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("feda6125-9636-46d8-8835-9f11eb499936")
+    @objid ("dd8802c1-72ff-48db-b502-1334764bb7a6")
     public String getHwROM_Link_type() {
         return this.elt.getTagValue(HwROMLink.MdaTypes.HWROM_LINK_TYPE_TAGTYPE_ELT);
     }
 
-    @objid ("be767cef-6e46-48f8-bd28-d9deba107f81")
+    @objid ("9dfba50c-75d6-4977-bb57-3c66ec115a99")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -152,7 +152,7 @@ public class HwROMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e9bea166-9286-4568-8df7-c5c5cdef547b")
+    @objid ("861f2c47-1b84-4311-bcda-5a4a754e59b8")
     public void setHwROM_Link_organization(final String value) {
         this.elt.putTagValue(HwROMLink.MdaTypes.HWROM_LINK_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -162,34 +162,34 @@ public class HwROMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("67fac323-be6b-4790-8e01-beb1c2ca675d")
+    @objid ("d1a7e43f-58d3-4680-b6bf-85f36c818528")
     public void setHwROM_Link_type(final String value) {
         this.elt.putTagValue(HwROMLink.MdaTypes.HWROM_LINK_TYPE_TAGTYPE_ELT, value);
     }
 
-    @objid ("b9c3e886-56c2-4c5f-898e-b3242eb8a4e8")
+    @objid ("b8d48a76-760d-4d8c-9e35-ae0afead6412")
     protected HwROMLink(final Link elt) {
         super(elt);
     }
 
     @objid ("f23f7d81-b11e-4409-9971-7141bb8c41ed")
     public static final class MdaTypes {
-        @objid ("6ed1ea7e-a1b4-40a9-bfc2-087e182ea32e")
+        @objid ("f520b6c5-4473-41d9-9daf-27256b0e4a01")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("5663bd06-6cfe-45ec-891d-abb6be6bb3a0")
+        @objid ("d464f721-4821-4476-85f3-165c2c81f7cc")
         public static TagType HWROM_LINK_TYPE_TAGTYPE_ELT;
 
-        @objid ("2070f403-340c-4ec9-ae00-6e46beba448f")
+        @objid ("e36212ae-7ffd-4e99-814e-a4cc9d8a61b5")
         public static TagType HWROM_LINK_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("61eb972f-b1c2-4d8c-8753-ba27edc02486")
+        @objid ("f236867c-6d90-4d64-818a-5758d554bec8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3c253e57-0f75-4044-b24c-702d2dd77703")
+        @objid ("9c9c9816-3015-4558-93d3-c1789f581659")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("113e69b4-0a98-481e-be26-6084e25ce985")
+        @objid ("f5168e47-ea2c-4f0e-9a6c-0443077be684")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01678c5e-0ccf-11df-8525-001302895b2b");
             HWROM_LINK_TYPE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0169eeb2-0ccf-11df-8525-001302895b2b");

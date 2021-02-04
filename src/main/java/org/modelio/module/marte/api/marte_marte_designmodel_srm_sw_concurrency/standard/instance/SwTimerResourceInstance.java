@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.instance;
 
@@ -34,18 +34,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d3dba01d-fee8-40bc-977c-376d92789924")
 public class SwTimerResourceInstance extends TimerResourceInstance {
-    @objid ("ea6e9394-c027-43a4-965c-e8e4c092b9d0")
+    @objid ("61314761-a6a4-44e0-8297-1bb47e9a9c9b")
     public static final String STEREOTYPE_NAME = "SwTimerResource_Instance";
 
     /**
-     * Tells whether a {@link SwTimerResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << SwTimerResource_Instance >>. 
+     * Tells whether a {@link SwTimerResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << SwTimerResource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("0065ad7b-c907-476b-a918-21ff7bd72de1")
+    @objid ("d64a22f0-09a6-4b1e-a404-3ecf9fff5546")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceInstance.STEREOTYPE_NAME));
     }
@@ -55,21 +55,21 @@ public class SwTimerResourceInstance extends TimerResourceInstance {
      * 
      * @return a {@link SwTimerResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("66ca8b6d-2f9f-4b42-b299-f82732efe787")
+    @objid ("85b0974b-0f70-4caf-aa90-56cdb606f3cb")
     public static SwTimerResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceInstance.STEREOTYPE_NAME);
         return SwTimerResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwTimerResourceInstance} proxy from a {@link Instance} stereotyped << SwTimerResource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwTimerResourceInstance} proxy from a {@link Instance} stereotyped << SwTimerResource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link SwTimerResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("7db9c4cb-12b6-4d3e-a04f-dd8087b3731c")
+    @objid ("e151e42e-9279-4260-8ee5-c25f44a56e03")
     public static SwTimerResourceInstance instantiate(final Instance obj) {
         return SwTimerResourceInstance.canInstantiate(obj) ? new SwTimerResourceInstance(obj) : null;
     }
@@ -82,7 +82,7 @@ public class SwTimerResourceInstance extends TimerResourceInstance {
      * @return a {@link SwTimerResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a3e1c35b-0a2f-4509-859c-929d8c2cb68a")
+    @objid ("cf7703d1-1010-4f5b-9209-ccc299530794")
     public static SwTimerResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (SwTimerResourceInstance.canInstantiate(obj))
         	return new SwTimerResourceInstance(obj);
@@ -90,7 +90,7 @@ public class SwTimerResourceInstance extends TimerResourceInstance {
         	throw new IllegalArgumentException("SwTimerResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f9252979-4d86-44b6-8f3d-85b4b7eb7167")
+    @objid ("66878d8d-9582-4797-b55a-96dc296921e9")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -110,35 +110,35 @@ public class SwTimerResourceInstance extends TimerResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("da40c311-68b0-44bd-a93e-7207c1ef93ca")
+    @objid ("e24559fb-7692-40bf-9a7b-9a45f4ea74bc")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
     }
 
-    @objid ("4060de26-0554-4870-88fb-882f777a2cf1")
+    @objid ("c15ae3d1-ed83-4d0e-be0c-98c93a47002e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("03a77bd9-1659-49f9-8398-29354f3b1250")
+    @objid ("60f6ce65-4610-4775-a944-e8a7908375f7")
     protected SwTimerResourceInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("634b3517-e799-4bfb-9525-ae0641645aa6")
     public static final class MdaTypes {
-        @objid ("06686c25-5c4b-4363-a5f0-0e8ce0afcd38")
+        @objid ("6c53d761-b191-4343-a0df-9037d318f354")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("93e33e27-b683-4841-a20c-18d68e0c1375")
+        @objid ("90e9e552-76ed-469e-b0a0-7f1d426e16ac")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("87f4a78d-782c-480b-a985-42a2275de814")
+        @objid ("baa58ff6-7c57-4b11-925e-adf8f180850d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("fa05c0b6-5d00-461c-8f78-b783964ea837")
+        @objid ("3a9fd27a-bfad-41f4-bfcb-b8ccd27f6e17")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01dec064-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

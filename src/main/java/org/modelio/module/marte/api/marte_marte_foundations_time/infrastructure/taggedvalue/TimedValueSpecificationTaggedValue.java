@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_time.infrastructure.taggedvalue;
 
@@ -34,30 +34,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c67f622e-fae6-43f5-8658-029c8b420f00")
 public class TimedValueSpecificationTaggedValue {
-    @objid ("b7ad4dfa-1b48-4072-ad95-b0f5ac369258")
+    @objid ("08440a66-0ecc-4c92-841d-959300d8740b")
     public static final String STEREOTYPE_NAME = "TimedValueSpecification_TaggedValue";
 
-    @objid ("6d456507-30aa-4dd4-aeef-99f3994a2959")
+    @objid ("f8d9e4d7-cdc6-4742-bf26-72738d862f54")
     public static final String TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION_TAGTYPE = "TimedValueSpecification_TaggedValue_interpretation";
 
-    @objid ("2d60cf05-9f7e-45b9-babf-2776843b4b5a")
+    @objid ("d22e3dbc-7c05-431e-aa4f-86b874498fd1")
     public static final String TIMEDVALUESPECIFICATION_TAGGEDVALUE_ON_TAGTYPE = "TimedValueSpecification_TaggedValue_on";
 
     /**
      * The underlying {@link TaggedValue} represented by this proxy, never null.
      */
-    @objid ("ff635d14-2825-4a32-abea-2371e8a0cb1e")
+    @objid ("23cafaf2-15c3-4783-b67d-15932bead85d")
     protected final TaggedValue elt;
 
     /**
-     * Tells whether a {@link TimedValueSpecificationTaggedValue proxy} can be instantiated from a {@link MObject} checking it is a {@link TaggedValue} stereotyped << TimedValueSpecification_TaggedValue >>. 
+     * Tells whether a {@link TimedValueSpecificationTaggedValue proxy} can be instantiated from a {@link MObject} checking it is a {@link TaggedValue} stereotyped << TimedValueSpecification_TaggedValue >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e770af2a-e199-4c74-96e0-98af863eadbd")
+    @objid ("5f81a57c-5da7-46f0-aaf6-9a49ad1e7e21")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof TaggedValue) && ((TaggedValue) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, TimedValueSpecificationTaggedValue.STEREOTYPE_NAME));
     }
@@ -67,21 +67,21 @@ public class TimedValueSpecificationTaggedValue {
      * 
      * @return a {@link TimedValueSpecificationTaggedValue} proxy on the created {@link TaggedValue}.
      */
-    @objid ("91b60780-c3af-474a-bb90-1a97e14eaea4")
+    @objid ("05f45728-c8aa-452a-9b44-9f94982aad27")
     public static TimedValueSpecificationTaggedValue create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("TaggedValue");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.TaggedValue");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, TimedValueSpecificationTaggedValue.STEREOTYPE_NAME);
         return TimedValueSpecificationTaggedValue.instantiate((TaggedValue)e);
     }
 
     /**
-     * Tries to instantiate a {@link TimedValueSpecificationTaggedValue} proxy from a {@link TaggedValue} stereotyped << TimedValueSpecification_TaggedValue >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link TimedValueSpecificationTaggedValue} proxy from a {@link TaggedValue} stereotyped << TimedValueSpecification_TaggedValue >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a TaggedValue
      * @return a {@link TimedValueSpecificationTaggedValue} proxy or <i>null</i>.
      */
-    @objid ("c693e62a-4aba-4e9c-8f2f-e95aefb8ebca")
+    @objid ("3b3f5832-8226-4a63-af7c-3e31268c8b7b")
     public static TimedValueSpecificationTaggedValue instantiate(final TaggedValue obj) {
         return TimedValueSpecificationTaggedValue.canInstantiate(obj) ? new TimedValueSpecificationTaggedValue(obj) : null;
     }
@@ -94,7 +94,7 @@ public class TimedValueSpecificationTaggedValue {
      * @return a {@link TimedValueSpecificationTaggedValue} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ffad7d0f-cd30-4e9b-a324-18ce44633a6f")
+    @objid ("8702187d-7258-47a8-83f4-60b96889a86d")
     public static TimedValueSpecificationTaggedValue safeInstantiate(final TaggedValue obj) throws IllegalArgumentException {
         if (TimedValueSpecificationTaggedValue.canInstantiate(obj))
         	return new TimedValueSpecificationTaggedValue(obj);
@@ -102,7 +102,7 @@ public class TimedValueSpecificationTaggedValue {
         	throw new IllegalArgumentException("TimedValueSpecificationTaggedValue: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9a4b7132-bee7-449e-a372-2d8dfb892863")
+    @objid ("8cc74023-cfdc-4d6f-8f30-18c95e043eaf")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -122,7 +122,7 @@ public class TimedValueSpecificationTaggedValue {
      * Get the underlying {@link TaggedValue}. 
      * @return the TaggedValue represented by this proxy, never null.
      */
-    @objid ("55d0ac26-7c67-4c87-af15-4ab542aa71a0")
+    @objid ("cef41f8a-a135-4a18-ba15-303471e21301")
     public TaggedValue getElement() {
         return this.elt;
     }
@@ -132,7 +132,7 @@ public class TimedValueSpecificationTaggedValue {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9b01ab04-e273-474c-9874-5a8dbec95a3a")
+    @objid ("173ead2d-f369-4383-a510-001e29f1920d")
     public String getTimedValueSpecification_TaggedValue_interpretation() {
         return this.elt.getTagValue(TimedValueSpecificationTaggedValue.MdaTypes.TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION_TAGTYPE_ELT);
     }
@@ -142,12 +142,12 @@ public class TimedValueSpecificationTaggedValue {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("63a7bf89-8280-4d70-bf06-5e3a5955dfdb")
+    @objid ("f74ba82e-da8c-4786-a024-f6fdc828e586")
     public List<String> getTimedValueSpecification_TaggedValue_on() {
         return this.elt.getTagValues(TimedValueSpecificationTaggedValue.MdaTypes.TIMEDVALUESPECIFICATION_TAGGEDVALUE_ON_TAGTYPE_ELT);
     }
 
-    @objid ("39867353-f38b-4304-9def-a7a575f5c267")
+    @objid ("1d1be724-8a3c-49f9-a9a0-7a38cd64b3f5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -158,7 +158,7 @@ public class TimedValueSpecificationTaggedValue {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1ca851d3-01d1-477e-84e0-677647343d63")
+    @objid ("288de933-926e-4269-82b9-b5d131a6e938")
     public void setTimedValueSpecification_TaggedValue_interpretation(final String value) {
         this.elt.putTagValue(TimedValueSpecificationTaggedValue.MdaTypes.TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION_TAGTYPE_ELT, value);
     }
@@ -168,34 +168,34 @@ public class TimedValueSpecificationTaggedValue {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f1a1706f-807d-41fc-b178-b7d6022c258c")
+    @objid ("63491b02-6d11-41e7-ac12-e2b6c417a39b")
     public void setTimedValueSpecification_TaggedValue_on(final List<String> values) {
         this.elt.putTagValues(TimedValueSpecificationTaggedValue.MdaTypes.TIMEDVALUESPECIFICATION_TAGGEDVALUE_ON_TAGTYPE_ELT, values);
     }
 
-    @objid ("0dd75579-332e-4f16-9885-247fa38fbb7e")
+    @objid ("f499004a-3d7e-4bed-be9c-83d86e06f059")
     protected TimedValueSpecificationTaggedValue(final TaggedValue elt) {
         this.elt = elt;
     }
 
     @objid ("96527654-91c3-4807-ac3b-948ef1e74d8e")
     public static final class MdaTypes {
-        @objid ("5ac0cbdb-c839-40fe-bfe8-88e0edbad3b5")
+        @objid ("13158e0e-cda2-4504-878b-612d743fd30e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("9a0f1a61-401b-4261-bca5-363fb3a168fa")
+        @objid ("0eb43e40-a2f5-4e24-bcfc-9bb87b09f4bb")
         public static TagType TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION_TAGTYPE_ELT;
 
-        @objid ("b9f175fc-7180-4596-8169-5f346303eb88")
+        @objid ("068fba46-2219-4401-96d2-4fb43addb7e4")
         public static TagType TIMEDVALUESPECIFICATION_TAGGEDVALUE_ON_TAGTYPE_ELT;
 
-        @objid ("c92fda1d-8e05-472a-8a83-4a0f5f6c3c34")
+        @objid ("a3a9c045-62c8-46f0-97aa-4b2fdc4996b1")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c654e367-8e9b-428b-af1a-9cde5f63047f")
+        @objid ("5b21f969-db1b-4ae5-af92-2a4b1e99116d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f664c3c8-6d15-4307-835a-e00b7b721b3f")
+        @objid ("6dec4e45-07d4-4543-9f66-89f076502e3e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "db341e70-0cce-11df-8525-001302895b2b");
             TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "db3680c0-0cce-11df-8525-001302895b2b");

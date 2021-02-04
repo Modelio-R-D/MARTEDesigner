@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.lifeline;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b831eecd-e9e6-454e-a0a3-4c2f86457be3")
 public class HwPLDLifeline extends HwComputingResourceLifeline {
-    @objid ("a0acae63-5563-4509-a09c-3f3ed8a2e0db")
+    @objid ("46f31c00-7663-4207-936e-34fde13b58c9")
     public static final String STEREOTYPE_NAME = "HwPLD_Lifeline";
 
-    @objid ("826e6d10-d97b-4a7f-9094-f36918ad947e")
+    @objid ("2f66baea-9f4b-4d57-9c6c-20ee64d27679")
     public static final String HWPLD_LIFELINE_BLOCKSCOMPUTING_TAGTYPE = "HwPLD_Lifeline_blocksComputing";
 
-    @objid ("c1133149-d50d-4191-98aa-1d878dc7f4f8")
+    @objid ("fd01221b-96e3-4678-a156-84e4cad37bdd")
     public static final String HWPLD_LIFELINE_BLOCKSRAM_TAGTYPE = "HwPLD_Lifeline_blocksRAM";
 
-    @objid ("f7ce9c97-e2c2-477a-93ed-88b924843ec8")
+    @objid ("98582809-a6e0-4fbd-b43e-969ac5a0e957")
     public static final String HWPLD_LIFELINE_NBFLIPFLOPS_TAGTYPE = "HwPLD_Lifeline_nbFlipFlops";
 
-    @objid ("8af39a35-57c6-4f7d-9a3f-42c5ec7ed3bd")
+    @objid ("c02f0081-d2c2-4945-940f-e035bab52656")
     public static final String HWPLD_LIFELINE_NBLUTS_TAGTYPE = "HwPLD_Lifeline_nbLUTs";
 
-    @objid ("c96fd6a8-33a5-41e9-9b25-7b8b86ad9139")
+    @objid ("7afd62d3-c979-4494-b141-6543158b8553")
     public static final String HWPLD_LIFELINE_NDLUT_INPUTS_TAGTYPE = "HwPLD_Lifeline_ndLUT_Inputs";
 
-    @objid ("a3978e4b-62ac-47a4-a1b1-11a6c7e14563")
+    @objid ("c411416e-e9dd-4831-91a8-66b73aa2ef8e")
     public static final String HWPLD_LIFELINE_ORGANIZATION_TAGTYPE = "HwPLD_Lifeline_organization";
 
-    @objid ("d5e51868-6a11-4f7c-b6b1-fa27d770230f")
+    @objid ("c4cdeb7e-c5a1-4572-9c80-3f49f837b8fa")
     public static final String HWPLD_LIFELINE_TECHNOLOGY_TAGTYPE = "HwPLD_Lifeline_technology";
 
     /**
-     * Tells whether a {@link HwPLDLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwPLD_Lifeline >>. 
+     * Tells whether a {@link HwPLDLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwPLD_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("aa6ee52a-e43f-44ce-b449-81577e46ad5e")
+    @objid ("c211a1de-5e43-455d-8351-f4214f175ab6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDLifeline.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * 
      * @return a {@link HwPLDLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("58f26489-f2e4-4df4-9060-bb274e3888a0")
+    @objid ("55f0cf62-e294-42fa-8abd-a59cc3da7d9b")
     public static HwPLDLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDLifeline.STEREOTYPE_NAME);
         return HwPLDLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwPLDLifeline} proxy from a {@link Lifeline} stereotyped << HwPLD_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwPLDLifeline} proxy from a {@link Lifeline} stereotyped << HwPLD_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwPLDLifeline} proxy or <i>null</i>.
      */
-    @objid ("7befbef6-d6e9-4191-81c5-a7c077b4163f")
+    @objid ("959499a9-302a-48ba-9519-9a220c187705")
     public static HwPLDLifeline instantiate(final Lifeline obj) {
         return HwPLDLifeline.canInstantiate(obj) ? new HwPLDLifeline(obj) : null;
     }
@@ -103,7 +103,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * @return a {@link HwPLDLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("f55c75b4-33a3-4c70-9926-babf0f83a1c8")
+    @objid ("e5d541e1-7ca6-4dfa-8298-dc8fda19de20")
     public static HwPLDLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwPLDLifeline.canInstantiate(obj))
         	return new HwPLDLifeline(obj);
@@ -111,7 +111,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
         	throw new IllegalArgumentException("HwPLDLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("5e039947-be2b-47f3-9c5e-ce1e917f8843")
+    @objid ("231e7091-307d-49b0-9367-a20999c17755")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("9027a931-79cb-4a18-a20d-12844a39ea32")
+    @objid ("7431aa81-503b-497d-bcf3-481ac2e84b5d")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -142,7 +142,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b7b3d1f5-2868-43c2-a527-783937cab2ec")
+    @objid ("d77cd31e-49fd-4e7c-a691-3d9a301eef13")
     public List<String> getHwPLD_Lifeline_blocksComputing() {
         return this.elt.getTagValues(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_BLOCKSCOMPUTING_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d2927360-b2df-419a-a2a3-db7c47a0d492")
+    @objid ("1c618338-9c67-410e-9460-ccb879507a61")
     public List<String> getHwPLD_Lifeline_blocksRAM() {
         return this.elt.getTagValues(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_BLOCKSRAM_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b187a368-0d82-4818-aa11-b0370f5d4e87")
+    @objid ("13e6b9f4-f164-454c-89f6-5d4582cb4cf1")
     public String getHwPLD_Lifeline_nbFlipFlops() {
         return this.elt.getTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NBFLIPFLOPS_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4a1bbaea-eabb-4c8b-beaf-3ff8bcf01a48")
+    @objid ("f73eb937-4eb7-4c55-9193-897a248b092e")
     public String getHwPLD_Lifeline_nbLUTs() {
         return this.elt.getTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NBLUTS_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2e566e4c-98a4-4014-9586-e99ae7ef1400")
+    @objid ("c72f60b8-ec70-42d7-890b-39f3b7bea456")
     public String getHwPLD_Lifeline_ndLUT_Inputs() {
         return this.elt.getTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NDLUT_INPUTS_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cea33dd8-2ad3-4d56-bd9a-489d2aede76f")
+    @objid ("861024bc-2974-47d2-beff-8337e9fef519")
     public String getHwPLD_Lifeline_organization() {
         return this.elt.getTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -202,12 +202,12 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a86b9bab-482a-46ab-b909-1ac2a15c8839")
+    @objid ("22aa0039-ebba-49ac-a9f7-0a1023c003b1")
     public String getHwPLD_Lifeline_technology() {
         return this.elt.getTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_TECHNOLOGY_TAGTYPE_ELT);
     }
 
-    @objid ("baf06e67-0004-4a61-99db-5014b9bacd30")
+    @objid ("48183698-b744-4da1-bcc3-4d4242810f79")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -218,7 +218,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0fc6b57c-797e-42a5-9ace-80247061a942")
+    @objid ("1696be20-2e08-4770-b628-9fe20704c44c")
     public void setHwPLD_Lifeline_blocksComputing(final List<String> values) {
         this.elt.putTagValues(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_BLOCKSCOMPUTING_TAGTYPE_ELT, values);
     }
@@ -228,7 +228,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6b8cea9c-32e0-41a9-b909-cc3582ba1259")
+    @objid ("e504c6e9-6ef2-4036-842c-4b143112a3c7")
     public void setHwPLD_Lifeline_blocksRAM(final List<String> values) {
         this.elt.putTagValues(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_BLOCKSRAM_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6ca006e8-4f2a-4711-9806-d1e1920dd7d5")
+    @objid ("e991ae2d-d00b-4149-9a08-46a6e4719175")
     public void setHwPLD_Lifeline_nbFlipFlops(final String value) {
         this.elt.putTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NBFLIPFLOPS_TAGTYPE_ELT, value);
     }
@@ -248,7 +248,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f36ce8e8-b091-48a7-aa65-18cf5f47c9f7")
+    @objid ("2d36fe8e-10ca-4c40-bf6e-7281f6ed4cd7")
     public void setHwPLD_Lifeline_nbLUTs(final String value) {
         this.elt.putTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NBLUTS_TAGTYPE_ELT, value);
     }
@@ -258,7 +258,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1fa1e9bc-e41d-4ab7-abd1-c75405e0762c")
+    @objid ("af3a94fc-a258-44d5-959c-435c2eb08cda")
     public void setHwPLD_Lifeline_ndLUT_Inputs(final String value) {
         this.elt.putTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_NDLUT_INPUTS_TAGTYPE_ELT, value);
     }
@@ -268,7 +268,7 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a061a1e2-ec6d-4fff-90d7-96d03010f7b4")
+    @objid ("27fcaad4-3c02-426b-b904-c2d910902d3c")
     public void setHwPLD_Lifeline_organization(final String value) {
         this.elt.putTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -278,49 +278,49 @@ public class HwPLDLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1c4c5198-8d5b-430c-b28b-cc2c86eb4e22")
+    @objid ("88e83b4d-72cf-4b2b-868e-8de497ca6b5d")
     public void setHwPLD_Lifeline_technology(final String value) {
         this.elt.putTagValue(HwPLDLifeline.MdaTypes.HWPLD_LIFELINE_TECHNOLOGY_TAGTYPE_ELT, value);
     }
 
-    @objid ("c315669c-6635-42d8-b746-01645ad1107c")
+    @objid ("e7ef6835-bad4-42de-a7d5-650af6f59420")
     protected HwPLDLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("6ff89d0a-ce08-4016-ae99-1ec316c6ebfa")
     public static final class MdaTypes {
-        @objid ("c82088f5-85d4-4688-b212-0beda19a83c7")
+        @objid ("e6abc6c2-73de-43f2-a733-728aadc5f65d")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("796be643-3e83-476a-915e-1a2f85dc0a9e")
+        @objid ("b9f3bbbe-1a37-4999-a61b-db6371b1a52b")
         public static TagType HWPLD_LIFELINE_TECHNOLOGY_TAGTYPE_ELT;
 
-        @objid ("eac06a08-8a1e-4b75-b5d2-133edf4d4491")
+        @objid ("5f99d068-dd6a-43e4-a5c0-d8ceb6d3a3d3")
         public static TagType HWPLD_LIFELINE_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("58cbc9cb-609a-4caa-bc65-2a5e41500c4f")
+        @objid ("c3da26fd-8566-4875-9bbf-d6f34c4e91c4")
         public static TagType HWPLD_LIFELINE_NBLUTS_TAGTYPE_ELT;
 
-        @objid ("c167ded3-725b-49f7-a952-3cebd6b95e18")
+        @objid ("fd0ea2f7-4508-4ba6-8d51-e4f2c7e51d71")
         public static TagType HWPLD_LIFELINE_NDLUT_INPUTS_TAGTYPE_ELT;
 
-        @objid ("b01c497b-7914-4d41-a5f1-620945b5b4b0")
+        @objid ("fa6768c9-e64c-4cf5-9fc7-290e2dfc1d0a")
         public static TagType HWPLD_LIFELINE_NBFLIPFLOPS_TAGTYPE_ELT;
 
-        @objid ("92f4b64f-f95a-47f3-878e-d85ea249328b")
+        @objid ("a06ec720-53da-41c8-b389-613ec6880b14")
         public static TagType HWPLD_LIFELINE_BLOCKSRAM_TAGTYPE_ELT;
 
-        @objid ("57b211d9-d555-413d-a62f-aac5e8f0a69a")
+        @objid ("3d851a5f-5627-40da-8a45-499d06ed294a")
         public static TagType HWPLD_LIFELINE_BLOCKSCOMPUTING_TAGTYPE_ELT;
 
-        @objid ("b88111d7-a7b0-438b-8ef1-dbb5b3a5dc5d")
+        @objid ("dd05313c-2fa6-483f-a7eb-676f3b0352bc")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("97c4e514-8159-4b3d-8497-fa7ce8a579d7")
+        @objid ("214aa41c-621a-4233-835d-f48091e375eb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f2a0b647-07ab-4227-8ee5-d5976cd0301f")
+        @objid ("1e4ebc13-8345-463f-91f3-845c06149553")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "745a28fd-10a5-11df-81d9-0014222a9f79");
             HWPLD_LIFELINE_TECHNOLOGY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "745a28fe-10a5-11df-81d9-0014222a9f79");

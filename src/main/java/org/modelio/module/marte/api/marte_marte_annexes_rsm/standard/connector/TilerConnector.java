@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_annexes_rsm.standard.connector;
 
@@ -33,36 +33,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("abbb3dd1-8ba9-4d8b-b68f-3ff40eecae5b")
 public class TilerConnector {
-    @objid ("c911af3a-4928-4485-858e-edd2aadf2dac")
+    @objid ("6f585166-26f3-4b3b-bbce-b25fc7ecbbdb")
     public static final String STEREOTYPE_NAME = "Tiler_Connector";
 
-    @objid ("43aadb17-e9c0-4bca-8377-9534b65550ed")
+    @objid ("15700e6a-f292-448b-b997-8981613f76ee")
     public static final String TILER_CONNECTOR_FITTING_TAGTYPE = "Tiler_Connector_fitting";
 
-    @objid ("28d2a7ca-384d-4a33-975f-14732711c957")
+    @objid ("66c8209f-3a87-4f1d-be49-0e6a2c63fb64")
     public static final String TILER_CONNECTOR_ORIGIN_TAGTYPE = "Tiler_Connector_origin";
 
-    @objid ("00d18273-1abc-4a5a-b32a-34adda03a990")
+    @objid ("abbf1969-6baa-421c-b6dc-b86d6405e5af")
     public static final String TILER_CONNECTOR_PAVING_TAGTYPE = "Tiler_Connector_paving";
 
-    @objid ("ae024461-c30e-47be-b3ca-01db694ce149")
+    @objid ("54120aab-c8d6-476e-8ed3-a8749ff1f30c")
     public static final String TILER_CONNECTOR_TILER_TAGTYPE = "Tiler_Connector_tiler";
 
     /**
      * The underlying {@link Connector} represented by this proxy, never null.
      */
-    @objid ("a2e98cb5-f9ef-492b-9daf-cd6ef30577d8")
+    @objid ("2e12b02e-fee9-491a-9935-76eec7f4633a")
     protected final Connector elt;
 
     /**
-     * Tells whether a {@link TilerConnector proxy} can be instantiated from a {@link MObject} checking it is a {@link Connector} stereotyped << Tiler_Connector >>. 
+     * Tells whether a {@link TilerConnector proxy} can be instantiated from a {@link MObject} checking it is a {@link Connector} stereotyped << Tiler_Connector >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("ebfa796e-d80f-4a5c-940e-8a368efd9510")
+    @objid ("7c845e6d-4625-4767-88ae-31e69c9d77c6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Connector) && ((Connector) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, TilerConnector.STEREOTYPE_NAME));
     }
@@ -72,21 +72,21 @@ public class TilerConnector {
      * 
      * @return a {@link TilerConnector} proxy on the created {@link Connector}.
      */
-    @objid ("d1532a8e-8f88-43dc-8a86-0c54f7ad61c5")
+    @objid ("cf5c12ef-5822-44dc-81f4-0933019005a7")
     public static TilerConnector create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Connector");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Connector");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, TilerConnector.STEREOTYPE_NAME);
         return TilerConnector.instantiate((Connector)e);
     }
 
     /**
-     * Tries to instantiate a {@link TilerConnector} proxy from a {@link Connector} stereotyped << Tiler_Connector >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link TilerConnector} proxy from a {@link Connector} stereotyped << Tiler_Connector >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Connector
      * @return a {@link TilerConnector} proxy or <i>null</i>.
      */
-    @objid ("e7b99183-95da-442e-b843-031dbc95f896")
+    @objid ("e2ff0291-fa4d-43a5-8930-ee4cc5155e5d")
     public static TilerConnector instantiate(final Connector obj) {
         return TilerConnector.canInstantiate(obj) ? new TilerConnector(obj) : null;
     }
@@ -99,7 +99,7 @@ public class TilerConnector {
      * @return a {@link TilerConnector} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1d8afba6-280e-47b0-b586-d90af577b8ed")
+    @objid ("14209971-7a60-4418-9b9d-f8da8497ec61")
     public static TilerConnector safeInstantiate(final Connector obj) throws IllegalArgumentException {
         if (TilerConnector.canInstantiate(obj))
         	return new TilerConnector(obj);
@@ -107,7 +107,7 @@ public class TilerConnector {
         	throw new IllegalArgumentException("TilerConnector: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("48758341-ae72-45a5-bb5b-5186138b1e7e")
+    @objid ("abea3831-ebb5-41b0-8b80-f9a4f30f6982")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -127,7 +127,7 @@ public class TilerConnector {
      * Get the underlying {@link Connector}. 
      * @return the Connector represented by this proxy, never null.
      */
-    @objid ("1eeb7e6d-d6ee-468a-a64a-7feb9a3ea54e")
+    @objid ("505e946d-e3e7-43f6-bc1b-476d1d5b8fe4")
     public Connector getElement() {
         return this.elt;
     }
@@ -137,7 +137,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7bd8c082-84e0-4f90-8104-776fdb2e84cd")
+    @objid ("c07e2f46-2d03-49df-ab9c-4c1b4fd9b89b")
     public String getTiler_Connector_fitting() {
         return this.elt.getTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_FITTING_TAGTYPE_ELT);
     }
@@ -147,7 +147,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("27d7a867-347b-4b68-9aa5-cd232bbaad72")
+    @objid ("81956469-f7a1-4787-9579-a4642cbd199b")
     public String getTiler_Connector_origin() {
         return this.elt.getTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_ORIGIN_TAGTYPE_ELT);
     }
@@ -157,7 +157,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("911e9d05-3305-4aca-a37d-04a6e3171b87")
+    @objid ("4e0bf6bf-6a77-40cd-8bd7-9588de52a8e3")
     public String getTiler_Connector_paving() {
         return this.elt.getTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_PAVING_TAGTYPE_ELT);
     }
@@ -167,12 +167,12 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fe0baf1a-7f88-4372-9038-9774ecfaaffb")
+    @objid ("ecdbf097-5e3f-42dc-8c15-a2188d7cc80f")
     public String getTiler_Connector_tiler() {
         return this.elt.getTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_TILER_TAGTYPE_ELT);
     }
 
-    @objid ("502290c8-1580-42d3-9d8d-c6f5adb0fd1d")
+    @objid ("733d6a60-c9cb-466a-b698-562e5de553ea")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -183,7 +183,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5d9d99b1-b861-455a-af3f-167845610535")
+    @objid ("8d7edb59-f162-46b0-a769-38321f35d2c7")
     public void setTiler_Connector_fitting(final String value) {
         this.elt.putTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_FITTING_TAGTYPE_ELT, value);
     }
@@ -193,7 +193,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a1d73274-536a-4e32-a6fd-fd56526b2fd4")
+    @objid ("bb0be4e6-7b9e-45a7-9a9b-d6f246a1be6d")
     public void setTiler_Connector_origin(final String value) {
         this.elt.putTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_ORIGIN_TAGTYPE_ELT, value);
     }
@@ -203,7 +203,7 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("91de620a-6852-4b4a-8d52-cf1d2115f60c")
+    @objid ("30c59168-e74d-457f-ad09-ed3f0fc85f5b")
     public void setTiler_Connector_paving(final String value) {
         this.elt.putTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_PAVING_TAGTYPE_ELT, value);
     }
@@ -213,40 +213,40 @@ public class TilerConnector {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("40b70a4b-68db-40e2-b878-11ab92a92149")
+    @objid ("b13a2590-012d-496e-9657-c5c798b8d914")
     public void setTiler_Connector_tiler(final String value) {
         this.elt.putTagValue(TilerConnector.MdaTypes.TILER_CONNECTOR_TILER_TAGTYPE_ELT, value);
     }
 
-    @objid ("2a69a7c7-0484-4043-979e-fc32ea4f9f06")
+    @objid ("9ca31d82-ac95-4481-944c-f89579f68430")
     protected TilerConnector(final Connector elt) {
         this.elt = elt;
     }
 
     @objid ("0e2180e5-2897-496f-abde-5d41e2ac991e")
     public static final class MdaTypes {
-        @objid ("aec18682-e453-4f66-9268-90fdb0a70e40")
+        @objid ("504cf53b-0f0b-4aee-9e84-cf41f24597d6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("01defd79-65b8-42f9-b02b-f33a6f43c078")
+        @objid ("b31c020f-bc1b-4053-a6ed-eb76a544ad2a")
         public static TagType TILER_CONNECTOR_ORIGIN_TAGTYPE_ELT;
 
-        @objid ("b1877bad-986b-4eb4-8692-132f5724805d")
+        @objid ("16c83563-37e8-4062-9a01-320b3567c66f")
         public static TagType TILER_CONNECTOR_PAVING_TAGTYPE_ELT;
 
-        @objid ("7078c344-2f24-42c4-a49b-65677466cc18")
+        @objid ("a0efa3e5-4af8-4aca-84e0-20a730e0aa08")
         public static TagType TILER_CONNECTOR_FITTING_TAGTYPE_ELT;
 
-        @objid ("6bd072bd-fdb1-47c7-a318-b10442ffafa5")
+        @objid ("ab04ad1c-cf65-4f78-965b-e40cce2fc776")
         public static TagType TILER_CONNECTOR_TILER_TAGTYPE_ELT;
 
-        @objid ("f7ad2d5a-14c2-4285-81b6-0076b6bcc8a0")
+        @objid ("6625ab0a-883f-492f-9951-bb0652b17a41")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("cd76e0c8-5f3b-4889-ae12-f66fcfc9842b")
+        @objid ("ceb67d21-a59b-4374-b3e4-9d813b890471")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f795dfbe-79f7-4fec-a617-49e0d3f78097")
+        @objid ("135ecc05-e214-47a0-9ba7-1916e65f0a13")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03da8e99-0ccf-11df-8525-001302895b2b");
             TILER_CONNECTOR_ORIGIN_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03da8e9b-0ccf-11df-8525-001302895b2b");

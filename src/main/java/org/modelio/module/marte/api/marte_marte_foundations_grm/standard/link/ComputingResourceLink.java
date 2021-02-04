@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.link;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("95fd3a4c-e174-42b1-bebb-45410bafdc2a")
 public class ComputingResourceLink extends ProcessingResourceLink {
-    @objid ("b9264cee-900b-4360-8faf-b0cf6090115d")
+    @objid ("69be90c2-4cec-441f-8a4c-64b73d6f11a1")
     public static final String STEREOTYPE_NAME = "ComputingResource_Link";
 
     /**
-     * Tells whether a {@link ComputingResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << ComputingResource_Link >>. 
+     * Tells whether a {@link ComputingResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << ComputingResource_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f73ee0f4-3f0f-44da-b3c5-5db66038d4f8")
+    @objid ("ad435c6f-eda2-47fd-ad53-e5c5db20e8b6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ComputingResourceLink.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class ComputingResourceLink extends ProcessingResourceLink {
      * 
      * @return a {@link ComputingResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("80d3b4f3-28a7-4136-b6f4-b82c033e77c2")
+    @objid ("5af1dfb0-d82d-4647-88ff-4a37b364d48f")
     public static ComputingResourceLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ComputingResourceLink.STEREOTYPE_NAME);
         return ComputingResourceLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link ComputingResourceLink} proxy from a {@link Link} stereotyped << ComputingResource_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ComputingResourceLink} proxy from a {@link Link} stereotyped << ComputingResource_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link ComputingResourceLink} proxy or <i>null</i>.
      */
-    @objid ("b2c0c791-6a46-490f-865c-5cac432acf1d")
+    @objid ("c79575e9-09a8-4ff8-b4a6-536f7243fd47")
     public static ComputingResourceLink instantiate(final Link obj) {
         return ComputingResourceLink.canInstantiate(obj) ? new ComputingResourceLink(obj) : null;
     }
@@ -81,7 +81,7 @@ public class ComputingResourceLink extends ProcessingResourceLink {
      * @return a {@link ComputingResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("501f7fd1-b2c7-498e-bb05-4904ab4c7b0c")
+    @objid ("43427a0c-420e-4474-8547-2f6c88121174")
     public static ComputingResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (ComputingResourceLink.canInstantiate(obj))
         	return new ComputingResourceLink(obj);
@@ -89,7 +89,7 @@ public class ComputingResourceLink extends ProcessingResourceLink {
         	throw new IllegalArgumentException("ComputingResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("06460261-b10c-4778-8e7f-cd8279af242a")
+    @objid ("6a91637a-014d-427d-a960-44ed1ba84f49")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class ComputingResourceLink extends ProcessingResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("1c83a17c-c1ef-4ecb-b903-3a53ca77f9f9")
+    @objid ("2cf22c52-8009-494c-b89c-8ec1fcce23af")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
     }
 
-    @objid ("2cd2e32e-56a8-434d-81db-e6150e02a38f")
+    @objid ("dedb6d80-a9aa-484e-beca-ac2a53678ed5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("0258f791-fe12-4228-ae34-0555d3504ba2")
+    @objid ("2bfe67ba-4dd7-43f9-81e7-65ed96d7c595")
     protected ComputingResourceLink(final Link elt) {
         super(elt);
     }
 
     @objid ("246ce161-f6ed-471d-8954-a714fb87d66f")
     public static final class MdaTypes {
-        @objid ("f05fc009-e2e5-4e7d-bab7-dbe02ac26643")
+        @objid ("fa9b6a8d-5706-4588-9cc8-b22d7100330a")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7aa1bdad-9a99-4ac0-9ad1-8d4799844246")
+        @objid ("014b79d3-5819-4860-aa8b-2f88f3babd71")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8393ab29-0f60-496f-b98e-81ab9eb4a94b")
+        @objid ("a885739b-fcdd-41bd-a1ad-9f4a2574597f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("a879c307-691a-47bc-89d9-e7cc09ff45c0")
+        @objid ("a77920bd-f89f-4fef-b58c-29eae0162138")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84d3-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

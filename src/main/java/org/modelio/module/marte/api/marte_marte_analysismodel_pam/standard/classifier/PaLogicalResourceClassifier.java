@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_pam.standard.classifier;
 
@@ -34,27 +34,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f6d5bc1e-8ebf-4379-beb4-086cb4329c73")
 public class PaLogicalResourceClassifier extends ResourceClassifier {
-    @objid ("c8fe10f7-2bdc-4f7f-86ea-5f34b239acca")
+    @objid ("5bf36c9f-abf6-4be3-8bc1-2430b2c472d0")
     public static final String STEREOTYPE_NAME = "PaLogicalResource_Classifier";
 
-    @objid ("d4d0266f-07d6-469b-b71c-16c602c0ace8")
+    @objid ("9f173009-d60d-4b5e-9335-c6dc1a58d83f")
     public static final String PALOGICALRESOURCE_CLASSIFIER_POOLSIZE_TAGTYPE = "PaLogicalResource_Classifier_poolSize";
 
-    @objid ("b9630604-6c19-4b7f-a276-15282aebe44f")
+    @objid ("e45802c5-e8e9-4e1f-b190-1a5afb4c878b")
     public static final String PALOGICALRESOURCE_CLASSIFIER_THROUGHPUT_TAGTYPE = "PaLogicalResource_Classifier_throughput";
 
-    @objid ("55234327-b701-496f-a273-fca9b4cd70b3")
+    @objid ("d0093e27-f1d3-435b-adf8-932c9e9868af")
     public static final String PALOGICALRESOURCE_CLASSIFIER_UTILIZATION_TAGTYPE = "PaLogicalResource_Classifier_utilization";
 
     /**
-     * Tells whether a {@link PaLogicalResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << PaLogicalResource_Classifier >>. 
+     * Tells whether a {@link PaLogicalResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << PaLogicalResource_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("7f279fdc-6f88-4e61-b455-deb6d62343e4")
+    @objid ("54e971af-efa7-4fba-8bb2-62802c7c8b73")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, PaLogicalResourceClassifier.STEREOTYPE_NAME));
     }
@@ -64,21 +64,21 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * 
      * @return a {@link PaLogicalResourceClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("99a74ac1-ae87-4918-8450-42cbf04d8774")
+    @objid ("c196c61e-aa40-4e1d-a167-618a2e212140")
     public static PaLogicalResourceClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, PaLogicalResourceClassifier.STEREOTYPE_NAME);
         return PaLogicalResourceClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link PaLogicalResourceClassifier} proxy from a {@link Classifier} stereotyped << PaLogicalResource_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link PaLogicalResourceClassifier} proxy from a {@link Classifier} stereotyped << PaLogicalResource_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link PaLogicalResourceClassifier} proxy or <i>null</i>.
      */
-    @objid ("ed3bd025-88f7-4ac9-81ef-3f4ce005f630")
+    @objid ("a8a0b310-e655-4ae3-95fc-952e787ad876")
     public static PaLogicalResourceClassifier instantiate(final Classifier obj) {
         return PaLogicalResourceClassifier.canInstantiate(obj) ? new PaLogicalResourceClassifier(obj) : null;
     }
@@ -91,7 +91,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * @return a {@link PaLogicalResourceClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("76012eb7-cc40-4830-b3a8-8df9fdb92237")
+    @objid ("da571c82-4bdb-4f9b-9333-f62fdbec3bc3")
     public static PaLogicalResourceClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (PaLogicalResourceClassifier.canInstantiate(obj))
         	return new PaLogicalResourceClassifier(obj);
@@ -99,7 +99,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
         	throw new IllegalArgumentException("PaLogicalResourceClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("c6e04899-77f2-4a97-922f-68997774b18e")
+    @objid ("e4bc30cc-4b5a-4c72-a68e-9e5c7088a0bd")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -119,7 +119,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("cd9307d3-7da9-42bb-98cd-51c77949751d")
+    @objid ("864c0173-ca1a-4cb6-827f-f6df2bccb670")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -130,7 +130,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("aea36d5e-ae4f-429e-8c64-5571b0057774")
+    @objid ("4b4fda12-caa3-4ebe-8cb0-694ba591b3e3")
     public String getPaLogicalResource_Classifier_poolSize() {
         return this.elt.getTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_POOLSIZE_TAGTYPE_ELT);
     }
@@ -140,7 +140,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f5e47cec-ff93-40fe-b2c5-6f4858fe1c21")
+    @objid ("131db2cf-038a-4b38-b26a-ffd2697923b4")
     public String getPaLogicalResource_Classifier_throughput() {
         return this.elt.getTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_THROUGHPUT_TAGTYPE_ELT);
     }
@@ -150,12 +150,12 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c57b7c20-605c-4db6-a76d-51e33e657c6b")
+    @objid ("17e76f7e-0353-41a6-943d-055f08bc8cb8")
     public String getPaLogicalResource_Classifier_utilization() {
         return this.elt.getTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("69596a28-579e-4ba1-bd9e-798a3a2be748")
+    @objid ("62f496f9-4f33-4334-b1d7-6628646e5b8b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -166,7 +166,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6ad7a126-5c0f-48b4-8cbc-cea046f1f011")
+    @objid ("df86e95e-a278-4a88-b455-950cac7509c8")
     public void setPaLogicalResource_Classifier_poolSize(final String value) {
         this.elt.putTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_POOLSIZE_TAGTYPE_ELT, value);
     }
@@ -176,7 +176,7 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("449123d6-e68a-4667-9657-d5f804810d51")
+    @objid ("dc6453fd-1fba-4adc-a5e4-0dd0316933a4")
     public void setPaLogicalResource_Classifier_throughput(final String value) {
         this.elt.putTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_THROUGHPUT_TAGTYPE_ELT, value);
     }
@@ -186,37 +186,37 @@ public class PaLogicalResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7dd65e00-642c-4a83-8eaa-ee7f3a2b00f7")
+    @objid ("4f6263b9-5f98-4e48-ad1b-83c7f6122f44")
     public void setPaLogicalResource_Classifier_utilization(final String value) {
         this.elt.putTagValue(PaLogicalResourceClassifier.MdaTypes.PALOGICALRESOURCE_CLASSIFIER_UTILIZATION_TAGTYPE_ELT, value);
     }
 
-    @objid ("8e25002f-1bad-4f8f-b58d-dfe4820768f4")
+    @objid ("c857bef1-81e5-4be1-be14-3ec6cf3a51de")
     protected PaLogicalResourceClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("6303e5ce-50e6-4f6d-a11d-2748cee99dc8")
     public static final class MdaTypes {
-        @objid ("a8e4a76f-6c88-4543-92e3-51b9aef7c6b7")
+        @objid ("a0660a70-f58a-463a-812e-0290f5ed6273")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("a2cddb23-6829-461b-965e-29781ddff92d")
+        @objid ("0e8e5b48-b51f-4cb5-8300-30698e51c618")
         public static TagType PALOGICALRESOURCE_CLASSIFIER_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("96d72d06-b03f-4f5e-a627-a4619d9e9709")
+        @objid ("455d5ed7-cc55-4057-b0d9-89e51a0f3c8d")
         public static TagType PALOGICALRESOURCE_CLASSIFIER_THROUGHPUT_TAGTYPE_ELT;
 
-        @objid ("de5eda4e-3c14-4daf-970a-2cae1c3bba8e")
+        @objid ("116edb13-6f99-49d0-8965-12f76e41413e")
         public static TagType PALOGICALRESOURCE_CLASSIFIER_POOLSIZE_TAGTYPE_ELT;
 
-        @objid ("a73f9050-26f6-4a26-be8f-88ee86d91597")
+        @objid ("0cfa942d-609d-4571-854f-f37b7ed78b05")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("9f114b55-6dee-4808-ba13-c1fa72fad460")
+        @objid ("0523a736-7b83-4c9d-8d4a-a9105c49802a")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("97f6b31f-f452-4392-b5bc-28b66c8d3286")
+        @objid ("49480fb3-f7a2-4fdd-a14a-5cff245abb9f")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "310c5859-14b2-11df-9d54-0014222a9f79");
             PALOGICALRESOURCE_CLASSIFIER_UTILIZATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "310c585a-14b2-11df-9d54-0014222a9f79");

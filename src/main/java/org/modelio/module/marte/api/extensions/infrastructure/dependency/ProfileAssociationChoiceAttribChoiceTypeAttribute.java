@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("87d6cd96-c4bd-4dd4-87a1-dcfb738d576e")
 public class ProfileAssociationChoiceAttribChoiceTypeAttribute {
-    @objid ("6c999b63-c5de-4c5e-b502-cca9d0f35577")
+    @objid ("141d65ac-8b96-47a6-a146-8d64bd02e438")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_choiceAttrib_ChoiceType_Attribute";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("8312681c-d439-4a59-96c4-3320b54eb2ad")
+    @objid ("36db0b42-1d06-4b8b-b9f9-c8fe7bc08dd0")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_choiceAttrib_ChoiceType_Attribute >>. 
+     * Tells whether a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_choiceAttrib_ChoiceType_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("15e91b7f-281a-4e04-b0a5-bc1332951fb5")
+    @objid ("9126a6f2-7b1b-4b1e-9b9a-e20c1a2e0a17")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationChoiceAttribChoiceTypeAttribute.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationChoiceAttribChoiceTypeAttribute {
      * 
      * @return a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute} proxy on the created {@link Dependency}.
      */
-    @objid ("a9d0354e-cdcf-4ef1-965a-ed4fc87ab3b7")
+    @objid ("ab89ff13-eee1-492b-a586-ec2f0e1a89ad")
     public static ProfileAssociationChoiceAttribChoiceTypeAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationChoiceAttribChoiceTypeAttribute.STEREOTYPE_NAME);
         return ProfileAssociationChoiceAttribChoiceTypeAttribute.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute} proxy from a {@link Dependency} stereotyped << ProfileAssociation_choiceAttrib_ChoiceType_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute} proxy from a {@link Dependency} stereotyped << ProfileAssociation_choiceAttrib_ChoiceType_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute} proxy or <i>null</i>.
      */
-    @objid ("4e8ccc25-4df9-4b76-a5eb-495d5c1b5abd")
+    @objid ("769e02f0-dd12-4284-8079-244760b396d9")
     public static ProfileAssociationChoiceAttribChoiceTypeAttribute instantiate(final Dependency obj) {
         return ProfileAssociationChoiceAttribChoiceTypeAttribute.canInstantiate(obj) ? new ProfileAssociationChoiceAttribChoiceTypeAttribute(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationChoiceAttribChoiceTypeAttribute {
      * @return a {@link ProfileAssociationChoiceAttribChoiceTypeAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("b5e61172-9300-4e9a-9eb2-6e22e10ca403")
+    @objid ("58bea8b6-7660-4330-b9b0-1be29a197b24")
     public static ProfileAssociationChoiceAttribChoiceTypeAttribute safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationChoiceAttribChoiceTypeAttribute.canInstantiate(obj))
         	return new ProfileAssociationChoiceAttribChoiceTypeAttribute(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationChoiceAttribChoiceTypeAttribute {
         	throw new IllegalArgumentException("ProfileAssociationChoiceAttribChoiceTypeAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("962cd3e2-85d6-4735-9540-46c58fc6a526")
+    @objid ("0c319bb9-4f67-49b2-9065-7f20afb69dd2")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationChoiceAttribChoiceTypeAttribute {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("335b351d-497c-4f9f-a67d-49a2bd3d7e58")
+    @objid ("14d614ea-ac3b-4c73-bbc1-c816946786a8")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("fb05ac37-d9b8-4a45-80c5-6aac29ca4180")
+    @objid ("51759ca8-7e61-4480-b84c-53d478a9671c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("6f4bb390-7ba1-4143-998b-5a6af66da235")
+    @objid ("ef702f2d-e206-46a4-942a-1cdec28dbb0f")
     protected ProfileAssociationChoiceAttribChoiceTypeAttribute(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("73742a79-b6a5-4571-8b7a-807ac0387743")
     public static final class MdaTypes {
-        @objid ("ed34bf96-20f4-4dad-945a-9008feb5e2e3")
+        @objid ("d0ef3512-8cbd-4796-abcf-496bf03e0d75")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("e451e9b5-23a4-4bdc-8fdb-8002ce00f588")
+        @objid ("5862e4ec-ba53-46a4-91e3-b3d4b4e6fddb")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1a53ccf6-e96d-4df9-8da9-457da0e0b600")
+        @objid ("e974a73f-2952-4e20-9cde-b7cc6f706758")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("de51d06d-e215-4005-8c49-8d4fd7b2bac2")
+        @objid ("3a3f2134-e46a-42cb-b17d-886b43dd3bfa")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "fb2c03b0-82b2-11df-b65a-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

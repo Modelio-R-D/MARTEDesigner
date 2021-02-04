@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.attribute;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e73a49f8-e8f7-4f2b-ad9d-5c16a7f51522")
 public class SynchronizationResourceAttribute extends ResourceAttribute {
-    @objid ("7db5861d-8b25-4aaf-9dbe-c903af04832f")
+    @objid ("d83ce098-a9d9-4bf7-b60d-aa74cac21698")
     public static final String STEREOTYPE_NAME = "SynchronizationResource_Attribute";
 
     /**
-     * Tells whether a {@link SynchronizationResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SynchronizationResource_Attribute >>. 
+     * Tells whether a {@link SynchronizationResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SynchronizationResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1082c3a7-f89e-4602-8584-7381958846ac")
+    @objid ("31d4385f-1b91-4966-b442-5a50237f492d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SynchronizationResourceAttribute.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class SynchronizationResourceAttribute extends ResourceAttribute {
      * 
      * @return a {@link SynchronizationResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("0b6ff0c8-fbf3-4d78-b3f7-2ae5241beea0")
+    @objid ("ae2639a5-a5ee-44c1-a118-8e76a3fb9920")
     public static SynchronizationResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SynchronizationResourceAttribute.STEREOTYPE_NAME);
         return SynchronizationResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link SynchronizationResourceAttribute} proxy from a {@link Attribute} stereotyped << SynchronizationResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SynchronizationResourceAttribute} proxy from a {@link Attribute} stereotyped << SynchronizationResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link SynchronizationResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("ded23529-281c-4ad3-bee0-bbf4ef436c14")
+    @objid ("0adb4886-9eda-4f78-abc9-7ad09f4f1a3b")
     public static SynchronizationResourceAttribute instantiate(final Attribute obj) {
         return SynchronizationResourceAttribute.canInstantiate(obj) ? new SynchronizationResourceAttribute(obj) : null;
     }
@@ -81,7 +81,7 @@ public class SynchronizationResourceAttribute extends ResourceAttribute {
      * @return a {@link SynchronizationResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("de0d5887-3d04-43ac-b107-40c296d651f7")
+    @objid ("4d6462a5-0cce-4aeb-b09e-2acfa34c113f")
     public static SynchronizationResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (SynchronizationResourceAttribute.canInstantiate(obj))
         	return new SynchronizationResourceAttribute(obj);
@@ -89,7 +89,7 @@ public class SynchronizationResourceAttribute extends ResourceAttribute {
         	throw new IllegalArgumentException("SynchronizationResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("1d090f58-a3a8-450b-bffe-641916532c6e")
+    @objid ("82d1e129-c74e-407e-b198-fc4286c00d07")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class SynchronizationResourceAttribute extends ResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("b29e30b9-72d9-415c-9900-d0ffb34d59c1")
+    @objid ("54726006-503f-4cce-82ce-f0ed6d69e984")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("845216d2-d23c-4e64-bd38-f26f4450d374")
+    @objid ("e1733aaf-fcd5-4831-8ab7-d7bdf6e34c3d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("50b9d340-7054-40ed-a29c-be5ecb672d8b")
+    @objid ("aea1213d-575c-4f1a-8288-3b66da20002d")
     protected SynchronizationResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("28a67bea-e29c-4297-9d51-a4c773e8d6b3")
     public static final class MdaTypes {
-        @objid ("b9a37f90-da28-463b-bf54-1741ed0dbaa1")
+        @objid ("450ed727-cd33-4535-ac68-2d8a23331745")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7d5f676b-5a58-42ea-aa06-fc9b609fac50")
+        @objid ("a8f87ef4-079c-450b-ad82-75dd7526d394")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("847c604e-b09e-4e79-a6a7-8668636f979d")
+        @objid ("43a789fd-b8d8-4e7d-8aa0-639ed49fab00")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("19336fc0-e888-4043-a7ac-8b7f1067d344")
+        @objid ("b2f3ffd4-84ac-4cbd-94ec-f54d2bbb9a16")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ffa75824-0cce-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_gqam.standard.associationend;
 
@@ -35,48 +35,48 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("47684fb7-1139-47d9-8e8b-8ab7c728f46b")
 public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
-    @objid ("718d287a-bffa-46d0-91af-d28cecf4703a")
+    @objid ("ad7fecc7-34c9-4a26-ae87-a4effc150f3b")
     public static final String STEREOTYPE_NAME = "GaCommHost_AssociationEnd";
 
-    @objid ("d449f5e2-f088-41c1-9466-401280ac975f")
+    @objid ("b247d192-a93a-4349-959e-7c5eb5c5abd2")
     public static final String GACOMMHOST_ASSOCIATIONEND_HOST_TAGTYPE = "GaCommHost_AssociationEnd_host";
 
-    @objid ("8f5a3b46-d9f7-4f53-9370-659ea1cc763a")
+    @objid ("3a1a314c-4835-4e76-a769-7f64c69fd516")
     public static final String GACOMMHOST_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE = "GaCommHost_AssociationEnd_isPreemptible";
 
-    @objid ("a7518372-3c4e-4704-ba60-010b43a6c07f")
+    @objid ("07aa6f90-e8a1-436a-ade9-ea81f6de5a7c")
     public static final String GACOMMHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE = "GaCommHost_AssociationEnd_otherSchedPolicy";
 
-    @objid ("c78c5e1a-9368-4598-8d28-0d593ccfc26b")
+    @objid ("bc5c38db-0631-40c1-89ac-5a7a240b0332")
     public static final String GACOMMHOST_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE = "GaCommHost_AssociationEnd_processingUnits";
 
-    @objid ("ea3fa791-9aec-45e8-bd82-7858058eb2cc")
+    @objid ("f5b7a441-9583-4800-8573-70ba45848e7f")
     public static final String GACOMMHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE = "GaCommHost_AssociationEnd_protectedSharedResources";
 
-    @objid ("77d73785-6db8-4df1-820e-91f43743b1f3")
+    @objid ("462c5a5a-3ba0-4d1d-a899-a5ab7d362b19")
     public static final String GACOMMHOST_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE = "GaCommHost_AssociationEnd_schedPolicy";
 
-    @objid ("7911c6e0-15b9-48e5-884e-d98bc597bc66")
+    @objid ("15d58d70-fab6-4a04-9ff1-81c5627d3580")
     public static final String GACOMMHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE = "GaCommHost_AssociationEnd_schedulableResources";
 
-    @objid ("53191967-e3a5-493b-9b2d-e81385087491")
+    @objid ("1948bb0d-e5d3-4663-909d-85865637f1ab")
     public static final String GACOMMHOST_ASSOCIATIONEND_SCHEDULE_TAGTYPE = "GaCommHost_AssociationEnd_schedule";
 
-    @objid ("1cbfa340-082c-4753-9688-3bdb69186f1f")
+    @objid ("e249a814-a57d-48d8-b79d-73e7eff06457")
     public static final String GACOMMHOST_ASSOCIATIONEND_THROUGHPUT_TAGTYPE = "GaCommHost_AssociationEnd_throughput";
 
-    @objid ("d6b9a435-15b3-4393-8347-743969e03c86")
+    @objid ("371fa0fd-953d-4ece-9732-6140ffa7b2af")
     public static final String GACOMMHOST_ASSOCIATIONEND_UTILIZATION_TAGTYPE = "GaCommHost_AssociationEnd_utilization";
 
     /**
-     * Tells whether a {@link GaCommHostAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << GaCommHost_AssociationEnd >>. 
+     * Tells whether a {@link GaCommHostAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << GaCommHost_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("9ce42435-7931-4bd2-a1ca-3550a2909738")
+    @objid ("ce77020d-fef6-46f3-b500-9e88028de423")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GaCommHostAssociationEnd.STEREOTYPE_NAME));
     }
@@ -86,21 +86,21 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * 
      * @return a {@link GaCommHostAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("73c6177b-e377-492a-b9e0-6e540387a56d")
+    @objid ("273a8caf-9962-4db7-b558-9ca06bc3d725")
     public static GaCommHostAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GaCommHostAssociationEnd.STEREOTYPE_NAME);
         return GaCommHostAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link GaCommHostAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << GaCommHost_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link GaCommHostAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << GaCommHost_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link GaCommHostAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("15f9d4b1-e370-4908-846c-c691d8838bba")
+    @objid ("95f58806-2353-4384-9b09-9945f7b5d227")
     public static GaCommHostAssociationEnd instantiate(final AssociationEnd obj) {
         return GaCommHostAssociationEnd.canInstantiate(obj) ? new GaCommHostAssociationEnd(obj) : null;
     }
@@ -113,7 +113,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * @return a {@link GaCommHostAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("e3758fff-2289-42ff-b9f3-ffaf5b769e62")
+    @objid ("25496036-b13b-4f43-8949-872f66153afd")
     public static GaCommHostAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (GaCommHostAssociationEnd.canInstantiate(obj))
         	return new GaCommHostAssociationEnd(obj);
@@ -121,7 +121,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
         	throw new IllegalArgumentException("GaCommHostAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2f8b2f37-55e6-4860-a529-61ed3700b47d")
+    @objid ("eb59a519-88d3-445d-927a-839f66b1d8dc")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -141,7 +141,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("4aee8650-a6da-46c1-8d6d-02f9e334f986")
+    @objid ("c1152975-1180-4111-9e19-41ea35412ceb")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -152,7 +152,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3b726187-9e4e-4541-88a6-2a6ed97b8414")
+    @objid ("38f614a7-caa1-43c2-bddb-1dcd151dffaa")
     public String getGaCommHost_AssociationEnd_host() {
         return this.elt.getTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_HOST_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5f7a076c-ad3a-493e-9551-32c64acc2de9")
+    @objid ("66019b20-64a7-4598-83b8-3a8c025e662d")
     public String getGaCommHost_AssociationEnd_otherSchedPolicy() {
         return this.elt.getTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4bea6c0c-87f1-44f0-92e7-5b93cf8c2d09")
+    @objid ("8c0e5c56-8ae0-487e-aed3-a2ee5d2b0b77")
     public List<String> getGaCommHost_AssociationEnd_processingUnits() {
         return this.elt.getTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b0e6008d-542a-444c-a0c1-08c6f0cdc434")
+    @objid ("a4d1b099-da77-4825-b270-23be1b8f7e4c")
     public List<String> getGaCommHost_AssociationEnd_protectedSharedResources() {
         return this.elt.getTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("81c63c38-309d-442a-85b9-0514a2ae0974")
+    @objid ("4fe7ecf5-608f-44bc-9f8c-c86007f2b128")
     public String getGaCommHost_AssociationEnd_schedPolicy() {
         return this.elt.getTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -202,7 +202,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8b68e159-1799-4f32-ba07-73938731b346")
+    @objid ("933f2dad-9874-4277-9384-78e1fffd6f1b")
     public List<String> getGaCommHost_AssociationEnd_schedulableResources() {
         return this.elt.getTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -212,7 +212,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b30260ed-f589-4fa8-afec-ce18d8bd1375")
+    @objid ("7da0e6a3-d6c6-4b4a-9b2b-3f03ba81a515")
     public String getGaCommHost_AssociationEnd_schedule() {
         return this.elt.getTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT);
     }
@@ -222,7 +222,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("5619091e-81ec-4371-8903-85582fd8eb9e")
+    @objid ("34730b6f-73e9-4402-9f8a-122cc793d884")
     public List<String> getGaCommHost_AssociationEnd_throughput() {
         return this.elt.getTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_THROUGHPUT_TAGTYPE_ELT);
     }
@@ -232,12 +232,12 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b2857361-6312-4cb1-a5d2-b98294b28bb5")
+    @objid ("1405209d-290d-41f4-a888-52a5fad45ad2")
     public List<String> getGaCommHost_AssociationEnd_utilization() {
         return this.elt.getTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("badf3d75-2b38-46dd-ac21-d0473612a3c5")
+    @objid ("4af5f222-c365-43e3-8800-d40f189d0f1c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -248,7 +248,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("50e11f6b-450f-45e9-9815-569e95076f22")
+    @objid ("50afdc7f-c24e-4924-a949-53891e988ed3")
     public boolean isGaCommHost_AssociationEnd_isPreemptible() {
         return this.elt.isTagged(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -258,7 +258,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ecb27b73-35b7-4fb2-8da0-0f22b9405b08")
+    @objid ("123318b1-b821-43cb-be72-d0656fc5634a")
     public void setGaCommHost_AssociationEnd_host(final String value) {
         this.elt.putTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_HOST_TAGTYPE_ELT, value);
     }
@@ -268,7 +268,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b88b2617-4bdc-4fb0-83c5-a3e16ab84d1b")
+    @objid ("deabb01d-7a9e-48d3-9e6b-c2bd26491558")
     public void setGaCommHost_AssociationEnd_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -281,7 +281,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3896707d-f5cf-4d20-8584-bf69aeeed1b1")
+    @objid ("609464c4-adde-453a-a335-12fa9e6f8413")
     public void setGaCommHost_AssociationEnd_otherSchedPolicy(final String value) {
         this.elt.putTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -291,7 +291,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9237c0da-f599-4438-89e1-ab3ad8930cb0")
+    @objid ("51a0c31d-358d-4fed-bc58-4d4fac1b0b19")
     public void setGaCommHost_AssociationEnd_processingUnits(final List<String> values) {
         this.elt.putTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -301,7 +301,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a98ec58d-995e-4ded-9d45-c1423c6e21e9")
+    @objid ("47c0b9f3-db95-406c-87ae-59e6fad25e99")
     public void setGaCommHost_AssociationEnd_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -311,7 +311,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("54b6d7f4-9804-4b2a-8fee-990843994e8b")
+    @objid ("460efab2-ce42-4327-97ee-ab95d719c4a6")
     public void setGaCommHost_AssociationEnd_schedPolicy(final String value) {
         this.elt.putTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -321,7 +321,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8e6e7e2b-58e1-43d3-87ef-7cdca9a80908")
+    @objid ("1aad5f78-febb-4343-bfa9-53faf4f011c1")
     public void setGaCommHost_AssociationEnd_schedulableResources(final List<String> values) {
         this.elt.putTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -331,7 +331,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2e4fc7e6-ca4e-4fab-9d40-5629b6767f4d")
+    @objid ("67b52c9a-4c15-46b4-b810-c277ff50a937")
     public void setGaCommHost_AssociationEnd_schedule(final String value) {
         this.elt.putTagValue(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT, value);
     }
@@ -341,7 +341,7 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b24c4d23-f4ee-4f7f-8544-1a335b68a29d")
+    @objid ("991b7c7b-dc5a-427b-90d8-ae27b9be4306")
     public void setGaCommHost_AssociationEnd_throughput(final List<String> values) {
         this.elt.putTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_THROUGHPUT_TAGTYPE_ELT, values);
     }
@@ -351,58 +351,58 @@ public class GaCommHostAssociationEnd extends CommunicationMediaAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a4f2e929-a672-4790-81a0-a8195d93cff5")
+    @objid ("f6a1d6df-5c2e-4236-9b32-b8735f456401")
     public void setGaCommHost_AssociationEnd_utilization(final List<String> values) {
         this.elt.putTagValues(GaCommHostAssociationEnd.MdaTypes.GACOMMHOST_ASSOCIATIONEND_UTILIZATION_TAGTYPE_ELT, values);
     }
 
-    @objid ("e3e7e652-4e98-4048-820e-85b39fe0835d")
+    @objid ("92e3440a-b0ed-4b5a-a1d8-65e513347786")
     protected GaCommHostAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("6527e515-b6a0-4c79-8f30-0a5dfbe652ca")
     public static final class MdaTypes {
-        @objid ("eca72c73-3020-43d6-af56-9465f41a8ad8")
+        @objid ("130c8001-510e-4cf7-8191-ccf887bbb88c")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("bfca9ec4-2705-4046-8f52-bc6f1b4f066d")
+        @objid ("fe828931-7b21-46e9-9404-deaf1820d8c5")
         public static TagType GACOMMHOST_ASSOCIATIONEND_THROUGHPUT_TAGTYPE_ELT;
 
-        @objid ("a8b433f1-e528-4d38-810e-2adc6ffdac6b")
+        @objid ("4d40e68d-4a68-468c-a405-1ddd948470f0")
         public static TagType GACOMMHOST_ASSOCIATIONEND_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("382b5ebb-5b0e-4589-bf90-11503cbb9bfb")
+        @objid ("97b0dd7e-3f96-4430-a5cc-32ba9543f608")
         public static TagType GACOMMHOST_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("317ec974-a590-45eb-aea9-dc87deb97fae")
+        @objid ("d9c48281-183d-4add-9c2d-249eec1b6016")
         public static TagType GACOMMHOST_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("c123295d-3aa8-4ea3-85fb-fb6129d6179b")
+        @objid ("d1d83320-a632-47e8-a720-0a718ec339a5")
         public static TagType GACOMMHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("a2e9a5b2-74e8-4954-8f75-76926203091d")
+        @objid ("91ea0b2f-8796-4628-8c0d-8fb3b8084c51")
         public static TagType GACOMMHOST_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("9b3c2779-226b-4af2-9216-0bb256c8820e")
+        @objid ("4fbe277a-c929-45e3-abda-2c411fbf9aef")
         public static TagType GACOMMHOST_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("b5450436-0df5-4354-a81c-9bfbcf6d8bfe")
+        @objid ("cae3a491-ad59-45a8-9b3b-11d54a9d26fd")
         public static TagType GACOMMHOST_ASSOCIATIONEND_HOST_TAGTYPE_ELT;
 
-        @objid ("76bd1667-e656-4bc0-87cd-4f2469f51104")
+        @objid ("4d22c8b9-114c-4d37-9a09-e05c82ead2bb")
         public static TagType GACOMMHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("6bc95cd5-fdc2-44c3-86d1-f3b228451c13")
+        @objid ("b496e309-5be0-4d1a-867b-f768fc078ae2")
         public static TagType GACOMMHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("4fd2b300-0336-4078-9f37-e3a4bbd190c3")
+        @objid ("3173d0e0-d618-40a6-8da0-48051cf0d3d6")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("093b2d8d-cb47-4834-b635-c74657c58247")
+        @objid ("f76844b6-73f3-412c-b75c-8bac2999debb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b7ab9bf7-7f2e-4215-bd6a-15fd9aae7100")
+        @objid ("82fc9062-2d06-4796-ac42-5e428a61ce4c")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03681f39-0ccf-11df-8525-001302895b2b");
             GACOMMHOST_ASSOCIATIONEND_THROUGHPUT_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "036a818b-0ccf-11df-8525-001302895b2b");

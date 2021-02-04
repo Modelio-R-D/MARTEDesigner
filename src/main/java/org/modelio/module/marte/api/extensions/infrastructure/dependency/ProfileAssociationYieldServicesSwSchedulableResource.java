@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("9f055c14-f947-4103-93ad-0492ce36d5ff")
 public class ProfileAssociationYieldServicesSwSchedulableResource {
-    @objid ("756a3fdb-dffc-4bda-ad55-c30caf351237")
+    @objid ("db92852a-5cf4-466f-b01a-ac4aaa72a788")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_yieldServices_SwSchedulableResource";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("dd925b01-4f85-45cf-a160-9278fbd37c54")
+    @objid ("d355aaef-f174-49c2-8ae9-97babe0b9c42")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationYieldServicesSwSchedulableResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_yieldServices_SwSchedulableResource >>. 
+     * Tells whether a {@link ProfileAssociationYieldServicesSwSchedulableResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_yieldServices_SwSchedulableResource >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("0754d14a-49e1-44c8-b8e0-f840e771ce4d")
+    @objid ("3be81658-0bf4-468c-9a66-5d8ceed89df8")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationYieldServicesSwSchedulableResource.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationYieldServicesSwSchedulableResource {
      * 
      * @return a {@link ProfileAssociationYieldServicesSwSchedulableResource} proxy on the created {@link Dependency}.
      */
-    @objid ("84b50e3e-8131-4ddc-8176-2debd2b84c55")
+    @objid ("51c412de-fe82-4f63-9092-154cc913df8b")
     public static ProfileAssociationYieldServicesSwSchedulableResource create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationYieldServicesSwSchedulableResource.STEREOTYPE_NAME);
         return ProfileAssociationYieldServicesSwSchedulableResource.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationYieldServicesSwSchedulableResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_yieldServices_SwSchedulableResource >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationYieldServicesSwSchedulableResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_yieldServices_SwSchedulableResource >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationYieldServicesSwSchedulableResource} proxy or <i>null</i>.
      */
-    @objid ("af83cd53-95b4-4a77-8dc1-de2743469b14")
+    @objid ("27d5c2c8-3ec1-4360-bf38-f1b9181c4009")
     public static ProfileAssociationYieldServicesSwSchedulableResource instantiate(final Dependency obj) {
         return ProfileAssociationYieldServicesSwSchedulableResource.canInstantiate(obj) ? new ProfileAssociationYieldServicesSwSchedulableResource(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationYieldServicesSwSchedulableResource {
      * @return a {@link ProfileAssociationYieldServicesSwSchedulableResource} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("8d457210-0797-4bbd-83ce-69e7e69b94bc")
+    @objid ("dff22f43-9fc3-4b75-aadc-eb918848146d")
     public static ProfileAssociationYieldServicesSwSchedulableResource safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationYieldServicesSwSchedulableResource.canInstantiate(obj))
         	return new ProfileAssociationYieldServicesSwSchedulableResource(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationYieldServicesSwSchedulableResource {
         	throw new IllegalArgumentException("ProfileAssociationYieldServicesSwSchedulableResource: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3b47b372-51fc-4f9a-b0af-bb477b727d90")
+    @objid ("9d99f0ef-11a4-48b2-b108-21bf6da3702c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationYieldServicesSwSchedulableResource {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("8391b550-c649-4e09-95d6-cb1b081630bd")
+    @objid ("0674f7e5-e61d-41e7-8362-e2a00f381776")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("ee1d563a-54fe-4403-8dff-5d836c03a503")
+    @objid ("a7389bfe-8ef1-464b-87d9-7f2f2a541aca")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("602cd947-b20d-44b0-b0e4-ce2fc349b739")
+    @objid ("f9f37add-075e-4ef3-bc3f-5b33e27647dc")
     protected ProfileAssociationYieldServicesSwSchedulableResource(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("43bb0b57-4106-400e-a4a6-af1d3221ec09")
     public static final class MdaTypes {
-        @objid ("d992b587-846d-4ebc-9abd-e7a1dd97d626")
+        @objid ("9e426422-19f0-4bab-be3a-100ab3deb479")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7580af75-9f1f-44b5-8847-323202074b88")
+        @objid ("371a967f-ca14-495d-82ee-2d9116373a56")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0980514e-cff6-46fb-a1e7-65008953a322")
+        @objid ("9d69b318-ab09-4625-9498-41f19cd2f48f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("fad371c7-8fbe-4e60-b0cb-dcd6982ae687")
+        @objid ("ffae9703-f898-44e2-a328-fdfac5438f7e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "3266854f-9758-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

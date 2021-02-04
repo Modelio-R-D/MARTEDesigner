@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_annexes_vsl_variables.standard.associationend;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c3fbc2ed-5053-4def-93be-2cfcd54b8a40")
 public class VarAssociationEnd {
-    @objid ("3ae357af-740e-41df-a351-67c4773e1a90")
+    @objid ("5959199b-5918-4bd2-9a04-11913804fdd1")
     public static final String STEREOTYPE_NAME = "Var_AssociationEnd";
 
-    @objid ("21de50f2-6b22-4153-8964-e1195924770f")
+    @objid ("69b5b08d-e760-4ea4-a377-cb061738e0f5")
     public static final String VAR_ASSOCIATIONEND_DIR_TAGTYPE = "Var_AssociationEnd_dir";
 
     /**
      * The underlying {@link AssociationEnd} represented by this proxy, never null.
      */
-    @objid ("882f7669-642b-4d1d-b39b-532e5de8b90b")
+    @objid ("ddee880d-2df8-4aad-b9e8-90f07c10a569")
     protected final AssociationEnd elt;
 
     /**
-     * Tells whether a {@link VarAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << Var_AssociationEnd >>. 
+     * Tells whether a {@link VarAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << Var_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("eeba856d-7925-461b-a650-c04c71d3f9b5")
+    @objid ("c3b82f33-9af5-4b3e-bcc5-9f942bb54e43")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, VarAssociationEnd.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class VarAssociationEnd {
      * 
      * @return a {@link VarAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("898100d8-32b7-4420-9bba-b658b50c461c")
+    @objid ("c66da6d2-db17-4a52-8e04-c8a286456907")
     public static VarAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, VarAssociationEnd.STEREOTYPE_NAME);
         return VarAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link VarAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << Var_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link VarAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << Var_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link VarAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("046f15e7-581f-41d7-a886-ce77ea17da22")
+    @objid ("3aa6e027-9f48-4acf-953c-71d5ca7bc6fc")
     public static VarAssociationEnd instantiate(final AssociationEnd obj) {
         return VarAssociationEnd.canInstantiate(obj) ? new VarAssociationEnd(obj) : null;
     }
@@ -90,7 +90,7 @@ public class VarAssociationEnd {
      * @return a {@link VarAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ff88c027-059c-4513-92ba-b993145f8905")
+    @objid ("cdf48417-7f3d-4563-b9dd-5fd1ddea0b85")
     public static VarAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (VarAssociationEnd.canInstantiate(obj))
         	return new VarAssociationEnd(obj);
@@ -98,7 +98,7 @@ public class VarAssociationEnd {
         	throw new IllegalArgumentException("VarAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("1114e993-fe4f-473b-9735-e8375b9db89f")
+    @objid ("c6a26f01-3f3a-40fe-b1d3-ca00014ab27a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -118,7 +118,7 @@ public class VarAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("d4e042e8-a3d2-46a5-acc7-8f1de25da2e6")
+    @objid ("685c1cd7-9ad7-496f-8733-d7fda56e3980")
     public AssociationEnd getElement() {
         return this.elt;
     }
@@ -128,12 +128,12 @@ public class VarAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("481c94c3-b147-4df5-acd9-0ddd8d327617")
+    @objid ("cfd048ae-ac1a-423a-8aa8-46f5f0bf83de")
     public String getVar_AssociationEnd_dir() {
         return this.elt.getTagValue(VarAssociationEnd.MdaTypes.VAR_ASSOCIATIONEND_DIR_TAGTYPE_ELT);
     }
 
-    @objid ("5040b728-444d-4d79-b38e-c4e625bcf5a2")
+    @objid ("4c424d18-1510-4c0e-8a76-da8677349188")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class VarAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0cf9409e-6ceb-4033-9aae-8b199d2973be")
+    @objid ("3eee5bd9-4a04-4a72-81aa-54f87903d820")
     public void setVar_AssociationEnd_dir(final String value) {
         this.elt.putTagValue(VarAssociationEnd.MdaTypes.VAR_ASSOCIATIONEND_DIR_TAGTYPE_ELT, value);
     }
 
-    @objid ("86dc4f1e-3895-4753-86dd-3706d8b2f607")
+    @objid ("5cc65858-81ee-442a-bd88-5687ee4b6cd9")
     protected VarAssociationEnd(final AssociationEnd elt) {
         this.elt = elt;
     }
 
     @objid ("99530e83-5100-4380-8f32-c1da6f565379")
     public static final class MdaTypes {
-        @objid ("279bbe19-13b1-4cf8-9ef8-fc35d6c63e08")
+        @objid ("058cd3f8-e903-4823-805a-dec9ebf935da")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("18d9315b-952b-41c1-a7f9-0e2de656cbd4")
+        @objid ("a8c65653-85f0-4cd9-a5c9-de22dfefb9cd")
         public static TagType VAR_ASSOCIATIONEND_DIR_TAGTYPE_ELT;
 
-        @objid ("f0da382f-129d-4624-ae67-dee9df06f7b6")
+        @objid ("9d0dcef5-b3d5-4636-99c0-c5f816657064")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1da14d5c-871c-4405-bd2b-92b3bd540d77")
+        @objid ("7ba9841a-9a2e-44e1-a281-60aa6bca643c")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b679822a-320a-49d9-bab6-fd4c9b1eeb66")
+        @objid ("8b9973d9-2868-4c96-881a-ae63164a68a7")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03dcf103-0ccf-11df-8525-001302895b2b");
             VAR_ASSOCIATIONEND_DIR_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03dcf106-0ccf-11df-8525-001302895b2b");

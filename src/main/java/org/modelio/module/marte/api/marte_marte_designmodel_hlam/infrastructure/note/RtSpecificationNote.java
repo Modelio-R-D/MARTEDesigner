@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hlam.infrastructure.note;
 
@@ -33,54 +33,54 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("a4e560fa-8742-49f9-beec-db0c7987feeb")
 public class RtSpecificationNote {
-    @objid ("0d79c691-5899-4743-ac54-c2e50f67a43c")
+    @objid ("5eef9140-be59-464e-afd3-f214e642174d")
     public static final String STEREOTYPE_NAME = "RtSpecification_Note";
 
-    @objid ("df0f55a1-7028-47f9-8272-41fb19b5e85e")
+    @objid ("bf4ee013-7ee8-43fd-9de3-e6bf90c33107")
     public static final String RTSPECIFICATION_NOTE_ABSDL_TAGTYPE = "RtSpecification_Note_absDl";
 
-    @objid ("da9d5c87-e424-4255-8426-0a1641c20b8a")
+    @objid ("609d5d54-402a-4d8d-92da-965ffece7232")
     public static final String RTSPECIFICATION_NOTE_BOUNDDL_TAGTYPE = "RtSpecification_Note_boundDl";
 
-    @objid ("7065dd0b-5da4-4748-9c30-127c9bae0d6f")
+    @objid ("486f8161-4f31-4df9-bca5-4350dcf18f8d")
     public static final String RTSPECIFICATION_NOTE_CONTEXT_TAGTYPE = "RtSpecification_Note_context";
 
-    @objid ("72db5ca9-f5c0-4ef9-a0a0-ed290fbf7559")
+    @objid ("8fb0f0f4-d01d-4353-a85c-2751943d9e40")
     public static final String RTSPECIFICATION_NOTE_MISS_TAGTYPE = "RtSpecification_Note_miss";
 
-    @objid ("c04f099f-4d23-4e7d-ae03-8ed9c6898a54")
+    @objid ("8193f9e7-e6ca-4edb-8f63-bd54406edad1")
     public static final String RTSPECIFICATION_NOTE_OCCKIND_TAGTYPE = "RtSpecification_Note_occKind";
 
-    @objid ("4f18ddc8-786e-4ebe-85ad-b336355f9b4e")
+    @objid ("2d41e9e3-7aa6-4c62-81b6-b48657fcb135")
     public static final String RTSPECIFICATION_NOTE_PRIORITY_TAGTYPE = "RtSpecification_Note_priority";
 
-    @objid ("66b895fd-df97-4831-8f19-4d36be9307cb")
+    @objid ("a56f5003-888a-4a37-9d37-16df389ae41a")
     public static final String RTSPECIFICATION_NOTE_RDTIME_TAGTYPE = "RtSpecification_Note_rdTime";
 
-    @objid ("000f1d90-3e2d-4a06-8656-8f6179e1ad44")
+    @objid ("4d5a19fc-b66d-4bb5-bb95-56d5f30bfef0")
     public static final String RTSPECIFICATION_NOTE_RELDL_TAGTYPE = "RtSpecification_Note_relDl";
 
-    @objid ("371a5484-9cca-44af-a834-680ef1606b88")
+    @objid ("4240c044-a419-49f8-8747-f67fc209f6de")
     public static final String RTSPECIFICATION_NOTE_TREF_TAGTYPE = "RtSpecification_Note_tRef";
 
-    @objid ("5de0eff2-36a8-48c6-a3a1-c8d5e5cc262a")
+    @objid ("5b87c747-ef2c-4a0f-b01c-f68b1f6319f1")
     public static final String RTSPECIFICATION_NOTE_UTILITY_TAGTYPE = "RtSpecification_Note_utility";
 
     /**
      * The underlying {@link Note} represented by this proxy, never null.
      */
-    @objid ("54b6f849-d859-4b9a-95a3-1dac88bb445c")
+    @objid ("830765bb-c678-4a56-8f37-b18b0d7dd337")
     protected final Note elt;
 
     /**
-     * Tells whether a {@link RtSpecificationNote proxy} can be instantiated from a {@link MObject} checking it is a {@link Note} stereotyped << RtSpecification_Note >>. 
+     * Tells whether a {@link RtSpecificationNote proxy} can be instantiated from a {@link MObject} checking it is a {@link Note} stereotyped << RtSpecification_Note >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("61317b54-4b99-4296-ad8e-27c6ce527c6c")
+    @objid ("157052ad-3011-4b3a-821b-46cdd6de3ae6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Note) && ((Note) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, RtSpecificationNote.STEREOTYPE_NAME));
     }
@@ -90,21 +90,21 @@ public class RtSpecificationNote {
      * 
      * @return a {@link RtSpecificationNote} proxy on the created {@link Note}.
      */
-    @objid ("658511ba-a44e-45c4-9dd8-f8d71e5a1e8a")
+    @objid ("a8740296-ce5a-43a4-b8f0-696eaec232ab")
     public static RtSpecificationNote create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Note");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Note");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, RtSpecificationNote.STEREOTYPE_NAME);
         return RtSpecificationNote.instantiate((Note)e);
     }
 
     /**
-     * Tries to instantiate a {@link RtSpecificationNote} proxy from a {@link Note} stereotyped << RtSpecification_Note >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link RtSpecificationNote} proxy from a {@link Note} stereotyped << RtSpecification_Note >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Note
      * @return a {@link RtSpecificationNote} proxy or <i>null</i>.
      */
-    @objid ("bab4a506-9a81-4c1a-b107-c9fdfa805b7a")
+    @objid ("d5481697-a3c9-451d-902e-c6a6cbf2d400")
     public static RtSpecificationNote instantiate(final Note obj) {
         return RtSpecificationNote.canInstantiate(obj) ? new RtSpecificationNote(obj) : null;
     }
@@ -117,7 +117,7 @@ public class RtSpecificationNote {
      * @return a {@link RtSpecificationNote} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("b9a4e101-b025-4224-ba57-439e67371750")
+    @objid ("95985ea4-1650-4eba-a63d-5197474ad704")
     public static RtSpecificationNote safeInstantiate(final Note obj) throws IllegalArgumentException {
         if (RtSpecificationNote.canInstantiate(obj))
         	return new RtSpecificationNote(obj);
@@ -125,7 +125,7 @@ public class RtSpecificationNote {
         	throw new IllegalArgumentException("RtSpecificationNote: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d3f2e618-7051-4820-b7e4-2ff251b4a204")
+    @objid ("c5c641f1-038e-460f-a2d7-211d94c73910")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -145,7 +145,7 @@ public class RtSpecificationNote {
      * Get the underlying {@link Note}. 
      * @return the Note represented by this proxy, never null.
      */
-    @objid ("c6bc6da5-4c04-4406-a865-4f74d0a95e92")
+    @objid ("19d5b289-e464-41dc-b67e-c5cd4151bb14")
     public Note getElement() {
         return this.elt;
     }
@@ -155,7 +155,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bf7ec904-4e17-4788-a260-760115ae36ce")
+    @objid ("4b1be70c-38eb-4b46-b359-14db199c4d43")
     public String getRtSpecification_Note_absDl() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_ABSDL_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c47e777f-e69f-4b57-ac3d-db7f8a98c176")
+    @objid ("02d2bc50-e4ca-4fdb-9297-51fb4661ba2c")
     public String getRtSpecification_Note_boundDl() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_BOUNDDL_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9fbbb298-82a1-439b-aec1-92e829750c85")
+    @objid ("884af08b-8d3f-4194-b973-0a8884bc43ff")
     public String getRtSpecification_Note_context() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_CONTEXT_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c34b4d34-0d4d-4f3e-b818-3b74e2e1de22")
+    @objid ("b47352be-5f19-4ede-aa81-7c90adbc92b5")
     public String getRtSpecification_Note_miss() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_MISS_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3c6d8812-7524-4db6-b830-3505cad1e459")
+    @objid ("e7f5d9d3-26fb-4135-a8da-dbeab21246a8")
     public String getRtSpecification_Note_occKind() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_OCCKIND_TAGTYPE_ELT);
     }
@@ -205,7 +205,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a1e676fc-f694-4829-bd58-00183585292c")
+    @objid ("51c35ab6-6110-4c58-828e-b46767bff568")
     public String getRtSpecification_Note_priority() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_PRIORITY_TAGTYPE_ELT);
     }
@@ -215,7 +215,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("88cd0098-e0c1-4eb7-b000-b88887f08e66")
+    @objid ("58e6bb0e-1b8a-4f26-95c2-04d096dd9e26")
     public String getRtSpecification_Note_rdTime() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_RDTIME_TAGTYPE_ELT);
     }
@@ -225,7 +225,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4fda8bac-c5ef-4c05-b188-fd46866fbe65")
+    @objid ("8a3620e4-b1c9-4354-82be-bfa24a50c5d9")
     public String getRtSpecification_Note_relDl() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_RELDL_TAGTYPE_ELT);
     }
@@ -235,7 +235,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d12dffd4-50ca-47c6-9ccd-35934a0780c6")
+    @objid ("e5863361-fc40-4b3a-9860-de8945e099cf")
     public String getRtSpecification_Note_tRef() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_TREF_TAGTYPE_ELT);
     }
@@ -245,12 +245,12 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("48b09780-3493-4952-9fc5-1e0c54f8369a")
+    @objid ("17841e88-5203-4a1b-887b-67c770434f9f")
     public String getRtSpecification_Note_utility() {
         return this.elt.getTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_UTILITY_TAGTYPE_ELT);
     }
 
-    @objid ("3b69ba31-add3-4bb9-9f2c-0cd58e5d93f1")
+    @objid ("14ac106c-a347-4fc2-a865-587f19bd5f87")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -261,7 +261,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b50100f1-5cfe-4634-9e93-ec1f8d589b39")
+    @objid ("a9c2abc8-739c-4c5c-90d7-659597862057")
     public void setRtSpecification_Note_absDl(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_ABSDL_TAGTYPE_ELT, value);
     }
@@ -271,7 +271,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("70b636e9-2337-4e90-9aa2-a5a6b39c15dd")
+    @objid ("8a42b1d4-7e8b-423b-a303-b120539459f2")
     public void setRtSpecification_Note_boundDl(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_BOUNDDL_TAGTYPE_ELT, value);
     }
@@ -281,7 +281,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d998596c-f827-47c6-b2f9-bc841be6736a")
+    @objid ("07137969-fcb5-4f55-a953-cea3c98505d1")
     public void setRtSpecification_Note_context(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_CONTEXT_TAGTYPE_ELT, value);
     }
@@ -291,7 +291,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c7b5bd5d-0de1-4afa-a0c8-f25b94407b48")
+    @objid ("b7666b28-cdb8-4a34-a30e-63a21833ab59")
     public void setRtSpecification_Note_miss(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_MISS_TAGTYPE_ELT, value);
     }
@@ -301,7 +301,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7c7f0007-01e4-405a-95ee-8a62779066e0")
+    @objid ("00cc7d2b-06ee-4c43-bc57-aedaf8a889a4")
     public void setRtSpecification_Note_occKind(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_OCCKIND_TAGTYPE_ELT, value);
     }
@@ -311,7 +311,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8fee656d-8f18-4af2-8a97-462319ed1d64")
+    @objid ("929fdfc8-2beb-430f-a362-d6c3d17c44e4")
     public void setRtSpecification_Note_priority(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_PRIORITY_TAGTYPE_ELT, value);
     }
@@ -321,7 +321,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c75f5473-d1b2-446c-8538-362dbea3c442")
+    @objid ("1b9b0dbc-b09c-4610-bc35-964e8b294ce3")
     public void setRtSpecification_Note_rdTime(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_RDTIME_TAGTYPE_ELT, value);
     }
@@ -331,7 +331,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("99a6ef4b-42f6-4742-b029-45107db98163")
+    @objid ("45841af3-1fe7-4dfe-834c-fa19ea20001d")
     public void setRtSpecification_Note_relDl(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_RELDL_TAGTYPE_ELT, value);
     }
@@ -341,7 +341,7 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b0576d82-b92d-4bf3-8647-bdcf4d9000ea")
+    @objid ("d882dd7d-2353-42da-a742-d68d72e284b6")
     public void setRtSpecification_Note_tRef(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_TREF_TAGTYPE_ELT, value);
     }
@@ -351,58 +351,58 @@ public class RtSpecificationNote {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ccd08f0a-a6d8-4b46-8d78-232b1aac7b67")
+    @objid ("33c6c94b-6802-44f5-888a-23b9e9362daf")
     public void setRtSpecification_Note_utility(final String value) {
         this.elt.putTagValue(RtSpecificationNote.MdaTypes.RTSPECIFICATION_NOTE_UTILITY_TAGTYPE_ELT, value);
     }
 
-    @objid ("27d9760f-00e0-4361-9039-b0a4a6b94260")
+    @objid ("da7e64c2-f22c-4006-910c-af9a5ffe5bb4")
     protected RtSpecificationNote(final Note elt) {
         this.elt = elt;
     }
 
     @objid ("ad2560c6-f5c5-48d8-9fd7-c74794af92c9")
     public static final class MdaTypes {
-        @objid ("36e59b2b-192a-4a5a-98a6-1249ffb915de")
+        @objid ("22363df7-088d-4f7c-985b-3e8bf72f1fba")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7c771ca6-06b2-44bf-9389-422dfc2aa1f0")
+        @objid ("07b84376-6503-4805-9ab1-d7df09c9e624")
         public static TagType RTSPECIFICATION_NOTE_UTILITY_TAGTYPE_ELT;
 
-        @objid ("3619b17a-e9d3-44dc-b09c-0a5a7d4a1089")
+        @objid ("bc464ac3-ebb7-4fd7-b7b6-1622c4b6bbb8")
         public static TagType RTSPECIFICATION_NOTE_OCCKIND_TAGTYPE_ELT;
 
-        @objid ("1a0afc82-acf6-4861-967b-def9214c8456")
+        @objid ("460ac496-b486-4b30-8768-f0b9229d8f7d")
         public static TagType RTSPECIFICATION_NOTE_TREF_TAGTYPE_ELT;
 
-        @objid ("b0b88593-289e-45e8-861f-788a7da6dc54")
+        @objid ("e45f8832-3106-4a0f-9d1b-7c8fef63417f")
         public static TagType RTSPECIFICATION_NOTE_RELDL_TAGTYPE_ELT;
 
-        @objid ("12d77dd0-df14-4eba-9d21-ce2715435715")
+        @objid ("7cf53008-3276-44ed-916a-bf828919e499")
         public static TagType RTSPECIFICATION_NOTE_ABSDL_TAGTYPE_ELT;
 
-        @objid ("8c47ffe0-c6ea-48b8-bd5e-01f3e9808bbf")
+        @objid ("c86eb134-1fef-421b-b716-870ab0f33d1a")
         public static TagType RTSPECIFICATION_NOTE_BOUNDDL_TAGTYPE_ELT;
 
-        @objid ("be221d8a-5ea5-4815-acb4-228ef60b1fb8")
+        @objid ("16bbe557-faa9-4573-9fca-a8cdf98cd22a")
         public static TagType RTSPECIFICATION_NOTE_RDTIME_TAGTYPE_ELT;
 
-        @objid ("8a756977-1001-43a6-8d54-db4440728ecf")
+        @objid ("0a4665b3-b616-4a6b-a25a-f437e643d7a4")
         public static TagType RTSPECIFICATION_NOTE_MISS_TAGTYPE_ELT;
 
-        @objid ("efd3acda-1f9e-4a18-9c30-07fac9ec3ac5")
+        @objid ("9a49d8ee-5f56-4748-8d8b-b195fb6d9b4b")
         public static TagType RTSPECIFICATION_NOTE_PRIORITY_TAGTYPE_ELT;
 
-        @objid ("04e5ee3f-9cba-4528-af88-7c872aba0306")
+        @objid ("d9490882-3ce2-4ac2-a98c-c64246ded671")
         public static TagType RTSPECIFICATION_NOTE_CONTEXT_TAGTYPE_ELT;
 
-        @objid ("296ff923-a7de-497c-a97b-dfd0fc11a743")
+        @objid ("14dc6224-022c-492f-a9e8-2d4c02aafb32")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b35ce91f-54e0-49e3-9ad2-30f102c59005")
+        @objid ("8d192195-d424-47df-94e7-778e683c3b63")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("7eb6f1f6-a51a-4fa3-b33f-5111efe582ee")
+        @objid ("c37bc058-9fd8-402f-8032-64573ea1951f")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "b96d3dd7-1237-11df-8f55-0014222a9f79");
             RTSPECIFICATION_NOTE_UTILITY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "bb47b5b0-1237-11df-8f55-0014222a9f79");

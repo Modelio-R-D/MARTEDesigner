@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.parameter;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("594b9910-37ac-4705-8792-5c11a92bc1d7")
 public class HwASICParameter extends HwComputingResourceParameter {
-    @objid ("b8397d1d-1c8c-4b43-be15-584b1ebc2529")
+    @objid ("91582f6e-b1f8-4813-b6de-fc226992cdbb")
     public static final String STEREOTYPE_NAME = "HwASIC_Parameter";
 
     /**
-     * Tells whether a {@link HwASICParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwASIC_Parameter >>. 
+     * Tells whether a {@link HwASICParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwASIC_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("db799325-792c-4616-b883-490a936a1798")
+    @objid ("cbdaff83-5e6d-4cdf-8e14-e9f6c9ee3e5a")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwASICParameter.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class HwASICParameter extends HwComputingResourceParameter {
      * 
      * @return a {@link HwASICParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("c960571f-59b7-4e98-aae5-2c81625c7adc")
+    @objid ("a44ad28c-ca29-47ae-a3b4-553cb1c195bb")
     public static HwASICParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwASICParameter.STEREOTYPE_NAME);
         return HwASICParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwASICParameter} proxy from a {@link Parameter} stereotyped << HwASIC_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwASICParameter} proxy from a {@link Parameter} stereotyped << HwASIC_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link HwASICParameter} proxy or <i>null</i>.
      */
-    @objid ("7a26571d-48b5-4875-93f5-de02d7a165d6")
+    @objid ("6a4d04f9-c7db-48a7-b0a7-c859387f4b74")
     public static HwASICParameter instantiate(final Parameter obj) {
         return HwASICParameter.canInstantiate(obj) ? new HwASICParameter(obj) : null;
     }
@@ -81,7 +81,7 @@ public class HwASICParameter extends HwComputingResourceParameter {
      * @return a {@link HwASICParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("eeda9980-a1db-452c-8eed-1deb66853ec9")
+    @objid ("364a82a1-0ebd-479e-8375-66bed350de04")
     public static HwASICParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (HwASICParameter.canInstantiate(obj))
         	return new HwASICParameter(obj);
@@ -89,7 +89,7 @@ public class HwASICParameter extends HwComputingResourceParameter {
         	throw new IllegalArgumentException("HwASICParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("94571e27-4447-47ef-a9a3-e4c4596812e7")
+    @objid ("8b545047-b796-482a-8936-a06c70fb50b4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class HwASICParameter extends HwComputingResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("fcac1b15-01d7-4013-88e7-ec5c9e51f35e")
+    @objid ("be9ef2e9-f21c-4c35-a980-745ae3799316")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
     }
 
-    @objid ("56317124-eedb-418a-9414-7784f51097d6")
+    @objid ("39556711-8b6e-4b72-a74b-74feed0b9c70")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("649c9ddc-525a-4294-850e-0b5c765859d0")
+    @objid ("b49e6ed7-10a7-440d-bbb1-4d2ee7820ad2")
     protected HwASICParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("d71371b8-8c34-4824-9163-3eb3e3a387f2")
     public static final class MdaTypes {
-        @objid ("1721b5a9-bc18-4205-add1-41a5d94bd2dc")
+        @objid ("ded42743-85a0-4d2a-b467-75c407ed1f5c")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("edd76fba-a6e3-46d5-942d-710caa46c360")
+        @objid ("60afa6b2-3779-427b-93c3-5f590d8a56bb")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b20ab230-32fe-45d6-a257-b03c8c495c3d")
+        @objid ("27904357-b11c-4787-bf98-64e44522784a")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2e69d9ac-a485-462c-b776-ed6bd2ff1554")
+        @objid ("d8aae913-7d6b-4d99-a048-5322b9a900e1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00e93160-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

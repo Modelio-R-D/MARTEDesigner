@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.link;
 
@@ -34,54 +34,54 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b148332c-382c-42bb-81f0-a34243b9c165")
 public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
-    @objid ("62514137-11bf-433f-806b-6d92d21fec4d")
+    @objid ("22e7c97b-f484-44d5-b412-7fd08cb684cc")
     public static final String STEREOTYPE_NAME = "SwSchedulableResource_Link";
 
-    @objid ("bb60524d-9ddc-4574-87b6-3f1f0a73b8a7")
+    @objid ("05996415-6dd7-4e33-8add-0cb7694ddbdb")
     public static final String SWSCHEDULABLERESOURCE_LINK_DEADLINEELEMENTS_TAGTYPE = "SwSchedulableResource_Link_deadlineElements";
 
-    @objid ("8dad5a28-a52d-467a-ab41-c8f27362d121")
+    @objid ("f99220e9-4fd5-4895-9b57-9a94ccec642e")
     public static final String SWSCHEDULABLERESOURCE_LINK_DEADLINETYPEELEMENTS_TAGTYPE = "SwSchedulableResource_Link_deadlineTypeElements";
 
-    @objid ("49763248-339a-4b0d-9ee0-6c4dd7a01698")
+    @objid ("fefdead7-b9f5-4464-b387-9a5393f4bff5")
     public static final String SWSCHEDULABLERESOURCE_LINK_DELAYSERVICES_TAGTYPE = "SwSchedulableResource_Link_delayServices";
 
-    @objid ("648e3013-e305-4b77-a1ca-ac86d4aca18d")
+    @objid ("c3a4ef69-f1da-49ee-8085-ed371088b5e3")
     public static final String SWSCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER_TAGTYPE = "SwSchedulableResource_Link_dependentScheduler";
 
-    @objid ("b98f0c5e-1b18-49e9-8dc9-877274cd392b")
+    @objid ("9f116807-e0e3-4b00-9ac1-c3a7f08537c0")
     public static final String SWSCHEDULABLERESOURCE_LINK_HOST_TAGTYPE = "SwSchedulableResource_Link_host";
 
-    @objid ("450b8e7a-f06b-46d2-8ab4-7308fd7a9b8e")
+    @objid ("5040d884-4fc4-4b37-98b9-d55d75201485")
     public static final String SWSCHEDULABLERESOURCE_LINK_ISPREEMPTABLE_TAGTYPE = "SwSchedulableResource_Link_isPreemptable";
 
-    @objid ("df7bd958-c2a2-4766-91a6-91ebc33eb016")
+    @objid ("780e576f-f2b7-4bf4-8a4f-65a42149500c")
     public static final String SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE_TAGTYPE = "SwSchedulableResource_Link_isStaticSchedulingFeature";
 
-    @objid ("8f4bea91-e1ae-464d-86c1-160e12f575bc")
+    @objid ("c9203ca9-d7ee-49a9-b05f-bc0967d08b8c")
     public static final String SWSCHEDULABLERESOURCE_LINK_JOINSERVICES_TAGTYPE = "SwSchedulableResource_Link_joinServices";
 
-    @objid ("48bcbcbe-ebd0-4722-9b70-acf7db39ec6c")
+    @objid ("b5f00a0d-fb61-47ea-8c20-c535611e4972")
     public static final String SWSCHEDULABLERESOURCE_LINK_SCHEDPARAMS_TAGTYPE = "SwSchedulableResource_Link_schedParams";
 
-    @objid ("0d263d9e-b11b-4434-9874-567df15dc4a0")
+    @objid ("ed1568cd-5f66-4697-93d8-5b02ae65e3fc")
     public static final String SWSCHEDULABLERESOURCE_LINK_SCHEDULERS_TAGTYPE = "SwSchedulableResource_Link_schedulers";
 
-    @objid ("530b0741-bf16-435a-8f49-3f7b05b13f06")
+    @objid ("674d9322-bbc8-49c7-be3f-79b1879dcfeb")
     public static final String SWSCHEDULABLERESOURCE_LINK_TIMESLICEELEMENTS_TAGTYPE = "SwSchedulableResource_Link_timeSliceElements";
 
-    @objid ("b1d60099-2644-44a1-bb79-39d340b2e746")
+    @objid ("c20ddae8-fb9e-4824-8353-1cbfb243a593")
     public static final String SWSCHEDULABLERESOURCE_LINK_YIELDSERVICES_TAGTYPE = "SwSchedulableResource_Link_yieldServices";
 
     /**
-     * Tells whether a {@link SwSchedulableResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << SwSchedulableResource_Link >>. 
+     * Tells whether a {@link SwSchedulableResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << SwSchedulableResource_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("cf4df71e-422e-4d98-b546-6bb07a16866a")
+    @objid ("21937283-75c6-458b-a236-a6cc9a81835c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwSchedulableResourceLink.STEREOTYPE_NAME));
     }
@@ -91,21 +91,21 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * 
      * @return a {@link SwSchedulableResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("a3444aad-5705-4354-93b2-b8662ecc936a")
+    @objid ("f8eb4d60-a73b-429a-88bc-8998ec077f57")
     public static SwSchedulableResourceLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwSchedulableResourceLink.STEREOTYPE_NAME);
         return SwSchedulableResourceLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwSchedulableResourceLink} proxy from a {@link Link} stereotyped << SwSchedulableResource_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwSchedulableResourceLink} proxy from a {@link Link} stereotyped << SwSchedulableResource_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link SwSchedulableResourceLink} proxy or <i>null</i>.
      */
-    @objid ("38afd895-2b01-4b4b-bb26-ef1737cf715d")
+    @objid ("e4918ff8-fd53-46f7-b4f3-fbc93426ab73")
     public static SwSchedulableResourceLink instantiate(final Link obj) {
         return SwSchedulableResourceLink.canInstantiate(obj) ? new SwSchedulableResourceLink(obj) : null;
     }
@@ -118,7 +118,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * @return a {@link SwSchedulableResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("68f406fc-6265-477a-8395-4bf6489c562b")
+    @objid ("60a8b2a1-57d5-4e4d-9112-815a3580cc7f")
     public static SwSchedulableResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (SwSchedulableResourceLink.canInstantiate(obj))
         	return new SwSchedulableResourceLink(obj);
@@ -126,7 +126,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
         	throw new IllegalArgumentException("SwSchedulableResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("881cfda2-684f-4ab9-8aa7-ded4f029450f")
+    @objid ("b69de68e-3c49-4a7f-85fc-0703e4bb6814")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -146,7 +146,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("e820e127-6b5c-43b3-a480-92391749ea58")
+    @objid ("63a02b66-b6df-4312-b5d6-3891e2586db5")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -157,7 +157,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c93b101e-44b9-475c-9fda-541feb106404")
+    @objid ("99d0b932-e726-4fbc-aca7-c3a44b85eec7")
     public List<String> getSwSchedulableResource_Link_deadlineElements() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEADLINEELEMENTS_TAGTYPE_ELT);
     }
@@ -167,7 +167,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("dd4adb5e-8c60-48e0-99ce-1954d51ea67f")
+    @objid ("0cc7cdf3-6d96-4000-8b82-baeb58d7b05d")
     public List<String> getSwSchedulableResource_Link_deadlineTypeElements() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEADLINETYPEELEMENTS_TAGTYPE_ELT);
     }
@@ -177,7 +177,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4c834b17-82a5-42d7-ba7d-0a49cebbb1f6")
+    @objid ("5b927e40-9d25-4b03-a0b6-8e01c25ec251")
     public List<String> getSwSchedulableResource_Link_delayServices() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DELAYSERVICES_TAGTYPE_ELT);
     }
@@ -187,7 +187,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("79321bee-94f1-4172-b5c1-129ab151bac5")
+    @objid ("8751bf16-29de-4c20-8fa4-21abe6838f97")
     public String getSwSchedulableResource_Link_dependentScheduler() {
         return this.elt.getTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER_TAGTYPE_ELT);
     }
@@ -197,7 +197,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8a93b446-be6d-4a3d-9d4d-5e46b6725298")
+    @objid ("8c29acd1-45b5-45d7-8a2a-a1240eccba37")
     public String getSwSchedulableResource_Link_host() {
         return this.elt.getTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_HOST_TAGTYPE_ELT);
     }
@@ -207,7 +207,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("62a72214-e9a0-48ad-a57a-c0f592f1a6d9")
+    @objid ("47816cdf-adc4-4ed5-add8-eaa90b02fe91")
     public List<String> getSwSchedulableResource_Link_joinServices() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_JOINSERVICES_TAGTYPE_ELT);
     }
@@ -217,7 +217,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("dc325820-4040-4bf3-b9e3-96c12ff72ab3")
+    @objid ("321b29b4-408f-4d10-b698-76ae3c4cd2e9")
     public List<String> getSwSchedulableResource_Link_schedParams() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_SCHEDPARAMS_TAGTYPE_ELT);
     }
@@ -227,7 +227,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("464ec1d5-690b-4659-aed3-fc5538daa5a6")
+    @objid ("1180f61b-94b0-424c-bc19-361b63e9e048")
     public String getSwSchedulableResource_Link_schedulers() {
         return this.elt.getTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_SCHEDULERS_TAGTYPE_ELT);
     }
@@ -237,7 +237,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b3a02a41-9007-4461-b247-112339de92fd")
+    @objid ("9b48c5e1-cfd0-4ee3-b685-9dab1209fb6f")
     public List<String> getSwSchedulableResource_Link_timeSliceElements() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_TIMESLICEELEMENTS_TAGTYPE_ELT);
     }
@@ -247,12 +247,12 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("f7e71814-9828-4e72-ac82-10af44ade3a5")
+    @objid ("0d8f5da4-46ac-4e8f-b553-bd35c9d04b69")
     public List<String> getSwSchedulableResource_Link_yieldServices() {
         return this.elt.getTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_YIELDSERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("ff9a29eb-26a2-4992-9ad7-ba174ee06009")
+    @objid ("f558921c-ec5f-483d-8e5e-9fc2fb8030bf")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -263,7 +263,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("de529447-374d-45ec-ba28-0f6afdb8622c")
+    @objid ("9bf90fed-08da-45c7-82d0-2397beced2f1")
     public boolean isSwSchedulableResource_Link_isPreemptable() {
         return this.elt.isTagged(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_ISPREEMPTABLE_TAGTYPE_ELT);
     }
@@ -273,7 +273,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5d05244b-f958-4fb3-9b66-e1134637d92a")
+    @objid ("8698fb93-298e-4ede-9bfc-c283bd7c21f7")
     public boolean isSwSchedulableResource_Link_isStaticSchedulingFeature() {
         return this.elt.isTagged(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE_TAGTYPE_ELT);
     }
@@ -283,7 +283,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("320419e3-23fd-4aed-abb6-4afe0d0d8b84")
+    @objid ("1a4c5c9f-1117-4db3-ad82-e96cb21cb0e4")
     public void setSwSchedulableResource_Link_deadlineElements(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEADLINEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -293,7 +293,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7683d955-0d0b-4958-9d33-8ef435e5470c")
+    @objid ("21173ff1-0c35-4c3b-aa31-22f77245164f")
     public void setSwSchedulableResource_Link_deadlineTypeElements(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEADLINETYPEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -303,7 +303,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b33cdf0f-f9a5-412e-ac52-c73f2bf5384a")
+    @objid ("f29ff169-687b-487f-803f-3779cbdeae38")
     public void setSwSchedulableResource_Link_delayServices(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DELAYSERVICES_TAGTYPE_ELT, values);
     }
@@ -313,7 +313,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cc692769-0896-48ec-b6f0-a4ebb8da1751")
+    @objid ("8bbfb3d2-a4dc-45de-af0c-695bf5c58c92")
     public void setSwSchedulableResource_Link_dependentScheduler(final String value) {
         this.elt.putTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER_TAGTYPE_ELT, value);
     }
@@ -323,7 +323,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("626b8c24-93c4-4ead-9db2-28eabbed0455")
+    @objid ("555516c7-b6d6-4373-8d05-9691ec03790c")
     public void setSwSchedulableResource_Link_host(final String value) {
         this.elt.putTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_HOST_TAGTYPE_ELT, value);
     }
@@ -333,7 +333,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b72b2866-d31d-4cb6-8465-ff0db4ccbba0")
+    @objid ("c5795278-8ac7-4cc3-a60b-60b6989f86a7")
     public void setSwSchedulableResource_Link_isPreemptable(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_ISPREEMPTABLE_TAGTYPE_ELT, this.elt);
@@ -346,7 +346,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b25f5e9e-fca9-4d23-8477-b897851b508c")
+    @objid ("4112e565-b0a6-42b0-a554-23b7dfda7fbf")
     public void setSwSchedulableResource_Link_isStaticSchedulingFeature(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE_TAGTYPE_ELT, this.elt);
@@ -359,7 +359,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0effb864-74d4-4a59-ac26-5558ba9fe3d6")
+    @objid ("bdeb3707-14a0-49fc-add7-4f5b9a8c033d")
     public void setSwSchedulableResource_Link_joinServices(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_JOINSERVICES_TAGTYPE_ELT, values);
     }
@@ -369,7 +369,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5d6163de-3a1a-426a-a5e7-a1411ac8bfb1")
+    @objid ("bb0d1066-78d3-4fc8-9746-3acd78493e71")
     public void setSwSchedulableResource_Link_schedParams(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_SCHEDPARAMS_TAGTYPE_ELT, values);
     }
@@ -379,7 +379,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9cc5c14f-54dc-4271-a7e0-6059d097196c")
+    @objid ("0c389681-6035-468f-9cd5-2b98e2446eed")
     public void setSwSchedulableResource_Link_schedulers(final String value) {
         this.elt.putTagValue(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_SCHEDULERS_TAGTYPE_ELT, value);
     }
@@ -389,7 +389,7 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("330bb85b-f629-4843-a6de-8177b95fe571")
+    @objid ("b7e9ffd2-2cc7-4ef7-9f7a-f61c733f0b6e")
     public void setSwSchedulableResource_Link_timeSliceElements(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_TIMESLICEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -399,64 +399,64 @@ public class SwSchedulableResourceLink extends SwConcurrentResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ecc47586-cf97-425a-a2bb-c57df1f16ab3")
+    @objid ("d4eeebf8-c58e-4f9c-bf8e-d8f475c68abc")
     public void setSwSchedulableResource_Link_yieldServices(final List<String> values) {
         this.elt.putTagValues(SwSchedulableResourceLink.MdaTypes.SWSCHEDULABLERESOURCE_LINK_YIELDSERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("f93ef540-9855-4392-ac01-f3f8ac24d992")
+    @objid ("ea11bd03-090b-4647-a545-095e1cd7b6fa")
     protected SwSchedulableResourceLink(final Link elt) {
         super(elt);
     }
 
     @objid ("96fa8383-3293-4868-9105-94d2a2d8037c")
     public static final class MdaTypes {
-        @objid ("98772e5b-c333-4d1d-9557-8276ba35f880")
+        @objid ("1471a671-1e12-4a0c-b268-2012b4c607bf")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("35990b3c-526c-4a7e-8bcf-c4b3721bd8ca")
+        @objid ("e458a220-7310-4dc0-9d24-8a378ed60770")
         public static TagType SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE_TAGTYPE_ELT;
 
-        @objid ("82baa40a-deea-442b-9301-9618b6acc72d")
+        @objid ("0c689a57-3638-4d38-9233-1deb52802c5f")
         public static TagType SWSCHEDULABLERESOURCE_LINK_ISPREEMPTABLE_TAGTYPE_ELT;
 
-        @objid ("12768f0b-3afe-4679-b053-dc0e840a964e")
+        @objid ("dd04c575-7fbd-4c80-a351-351d5e915211")
         public static TagType SWSCHEDULABLERESOURCE_LINK_SCHEDULERS_TAGTYPE_ELT;
 
-        @objid ("d3352b6d-4e01-4a48-93bf-dc0dfc6a8a5a")
+        @objid ("35bbe9b3-5d17-485c-9638-d40402baa411")
         public static TagType SWSCHEDULABLERESOURCE_LINK_DEADLINEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("f8ef46f4-a211-4f63-9f56-03fa4c61573d")
+        @objid ("f29d9eb0-42d9-4012-9813-03696bcde0f4")
         public static TagType SWSCHEDULABLERESOURCE_LINK_DEADLINETYPEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("66e2f9c5-4bd1-4c5f-90c6-494a987fb68b")
+        @objid ("3d0b7126-4c35-4a6a-8348-fd169c745e0e")
         public static TagType SWSCHEDULABLERESOURCE_LINK_TIMESLICEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("2b815f9c-a416-4661-9944-17873ed3eb0d")
+        @objid ("c58d9342-331d-4072-9a34-675fb3f85960")
         public static TagType SWSCHEDULABLERESOURCE_LINK_DELAYSERVICES_TAGTYPE_ELT;
 
-        @objid ("d39e28e4-b0f0-4d04-b13e-7314cdb259c0")
+        @objid ("b76fd773-ce8f-406e-9201-5b776043dcd9")
         public static TagType SWSCHEDULABLERESOURCE_LINK_JOINSERVICES_TAGTYPE_ELT;
 
-        @objid ("2dd55ee3-468b-4da3-961b-b34e6430f3e5")
+        @objid ("25f6b7c9-0e9d-4afc-8407-7d6c8e33c61a")
         public static TagType SWSCHEDULABLERESOURCE_LINK_YIELDSERVICES_TAGTYPE_ELT;
 
-        @objid ("6c654f2b-abe2-41b0-9ea6-fdca1f650a9f")
+        @objid ("2aad4b1b-a472-47fd-b7db-1c347296d99a")
         public static TagType SWSCHEDULABLERESOURCE_LINK_SCHEDPARAMS_TAGTYPE_ELT;
 
-        @objid ("68e96df4-02d6-4112-bd6f-21cc6ea1e192")
+        @objid ("4da8a88c-9816-4312-9d71-869484551b9e")
         public static TagType SWSCHEDULABLERESOURCE_LINK_HOST_TAGTYPE_ELT;
 
-        @objid ("db67dc4b-17e9-4b06-8904-33f3ad08b586")
+        @objid ("8171a201-e531-4539-9b54-836e58070e79")
         public static TagType SWSCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER_TAGTYPE_ELT;
 
-        @objid ("cd058024-4735-4e22-8be3-9ecf995454e9")
+        @objid ("76cbbb58-10b7-4be8-afee-f9b91b73fd08")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("674289a2-7345-4647-a1e3-28e4dae988e6")
+        @objid ("855535a9-66bf-4759-88a1-00d370c44ffb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("618518b4-f13c-4725-9bba-71d799b1d38d")
+        @objid ("72b83a81-ae3d-49e1-afed-75486f5affe1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01d7996c-0ccf-11df-8525-001302895b2b");
             SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ddea5e0d-172c-11df-b92a-0014222a9f79");

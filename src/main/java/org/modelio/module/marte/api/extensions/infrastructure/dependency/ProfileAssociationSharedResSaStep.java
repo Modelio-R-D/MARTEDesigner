@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("27742497-8c1b-49f9-bfa6-fb93bda7952d")
 public class ProfileAssociationSharedResSaStep {
-    @objid ("48fb377c-1826-47ce-92b1-d1d7a277bb4d")
+    @objid ("9c1d3a18-f2fb-4910-bcb7-3c3c5ff9adb3")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_sharedRes_SaStep";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("4d9e5271-f1bc-4865-ae49-2389a1f49455")
+    @objid ("ccf5ba8f-afea-427a-a365-32a5d8cf574d")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationSharedResSaStep proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_sharedRes_SaStep >>. 
+     * Tells whether a {@link ProfileAssociationSharedResSaStep proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_sharedRes_SaStep >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("6c5bddc4-5019-490b-90b2-696896a722c1")
+    @objid ("ebcf4548-22d9-4cea-9d87-ec2748ed02cf")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationSharedResSaStep.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationSharedResSaStep {
      * 
      * @return a {@link ProfileAssociationSharedResSaStep} proxy on the created {@link Dependency}.
      */
-    @objid ("0cd1ae00-f66a-456e-92f9-fb33bf92f2c7")
+    @objid ("beeb8863-1b76-4d04-9d40-9709de7075c5")
     public static ProfileAssociationSharedResSaStep create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationSharedResSaStep.STEREOTYPE_NAME);
         return ProfileAssociationSharedResSaStep.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationSharedResSaStep} proxy from a {@link Dependency} stereotyped << ProfileAssociation_sharedRes_SaStep >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationSharedResSaStep} proxy from a {@link Dependency} stereotyped << ProfileAssociation_sharedRes_SaStep >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationSharedResSaStep} proxy or <i>null</i>.
      */
-    @objid ("f5c0f0c8-d825-459f-accb-fba089ac317d")
+    @objid ("1862122d-62cb-489e-8bea-0b10f52eb623")
     public static ProfileAssociationSharedResSaStep instantiate(final Dependency obj) {
         return ProfileAssociationSharedResSaStep.canInstantiate(obj) ? new ProfileAssociationSharedResSaStep(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationSharedResSaStep {
      * @return a {@link ProfileAssociationSharedResSaStep} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ef665753-3fbc-43e8-8b17-4e1e602cdf27")
+    @objid ("0d4dc420-1f90-4f81-91f3-3024e2411b51")
     public static ProfileAssociationSharedResSaStep safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationSharedResSaStep.canInstantiate(obj))
         	return new ProfileAssociationSharedResSaStep(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationSharedResSaStep {
         	throw new IllegalArgumentException("ProfileAssociationSharedResSaStep: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a0a95166-ff0a-4065-a429-3dadfba87d1c")
+    @objid ("4994b20a-68c1-4f8e-8d1c-e1ee3bf15cfd")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationSharedResSaStep {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("8a8eef50-ccc5-476c-8b2e-dc7f6ed72785")
+    @objid ("f69d2fc0-2ed5-46bd-bbc8-5584b447a152")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("5f958b7e-1a16-4aa3-8de0-cafc742c0fd7")
+    @objid ("10e0be16-6d08-40df-9371-ac7b98650be5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("9b62cbba-bbfa-4521-a422-a885468ed6c1")
+    @objid ("7ffb208e-510c-4f1b-ba47-6af0367aa852")
     protected ProfileAssociationSharedResSaStep(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("dd337b70-feb6-4d66-89ab-e2873396857c")
     public static final class MdaTypes {
-        @objid ("173ae827-9661-49de-86e0-214fe1c17700")
+        @objid ("fd8dc60b-0fe5-4803-9cb9-01edcfcf1d5e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("5a6f41c6-842c-4c82-aa0f-78a206437a87")
+        @objid ("ef35472b-4d57-4580-a507-2233d4a17736")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0214c3cf-4fa9-41b1-8d09-4a4e1e2022a6")
+        @objid ("d2782c78-5a2a-4e51-b73a-a284855f4ee5")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d4ea05bd-6df5-41f5-99a5-102d6ce9638a")
+        @objid ("e6717746-605c-4537-b37c-8790b383c983")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d0d509cc-dd1f-11e0-a2be-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

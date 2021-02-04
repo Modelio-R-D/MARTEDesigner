@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.associationend;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e808cb00-9e19-432a-b911-8cfdb4b304e6")
 public class SharedDataComResourceAssociationEnd extends SwCommunicationResourceAssociationEnd {
-    @objid ("3ffbd7e3-aef9-4597-aee3-6b5830bf1f1c")
+    @objid ("42b49ecd-8e2a-4b2f-a4e7-ee2d70d7902f")
     public static final String STEREOTYPE_NAME = "SharedDataComResource_AssociationEnd";
 
-    @objid ("e4164102-7226-4d3f-b7a4-1beaed132198")
+    @objid ("ed8ae005-932f-4abd-b762-9262254dcde3")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES_TAGTYPE = "SharedDataComResource_AssociationEnd_readServices";
 
-    @objid ("9cda3d5c-2ca7-468f-9434-a2529bead925")
+    @objid ("0b7587fc-d22d-40f3-b057-ab76e4b1dd94")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATIONEND_WRITESERVICES_TAGTYPE = "SharedDataComResource_AssociationEnd_writeServices";
 
     /**
-     * Tells whether a {@link SharedDataComResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SharedDataComResource_AssociationEnd >>. 
+     * Tells whether a {@link SharedDataComResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SharedDataComResource_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b79faa5d-1f01-46ef-995f-4a685c423d58")
+    @objid ("799d1e7e-5a56-457f-9611-1fc4fc0d1bd6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceAssociationEnd.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * 
      * @return a {@link SharedDataComResourceAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("02914de1-0916-485f-bf44-a0320f83d3db")
+    @objid ("59c61256-4b8b-4617-9229-7c7b025105dc")
     public static SharedDataComResourceAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceAssociationEnd.STEREOTYPE_NAME);
         return SharedDataComResourceAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link SharedDataComResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SharedDataComResource_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SharedDataComResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SharedDataComResource_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link SharedDataComResourceAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("a797fc44-7310-4b8e-8df2-9efa55256d91")
+    @objid ("60935a7f-c4d2-41d2-974f-782e10453e4e")
     public static SharedDataComResourceAssociationEnd instantiate(final AssociationEnd obj) {
         return SharedDataComResourceAssociationEnd.canInstantiate(obj) ? new SharedDataComResourceAssociationEnd(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * @return a {@link SharedDataComResourceAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ab9b3c0e-fcd9-4c90-b23f-4269174ffd21")
+    @objid ("9ce3d533-e841-4326-ad02-8da6c17f30b8")
     public static SharedDataComResourceAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (SharedDataComResourceAssociationEnd.canInstantiate(obj))
         	return new SharedDataComResourceAssociationEnd(obj);
@@ -96,7 +96,7 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
         	throw new IllegalArgumentException("SharedDataComResourceAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f16efb2d-3eeb-4d14-85fc-255fba4b8caa")
+    @objid ("14314c5d-3346-45cf-9ed9-a08183af57e9")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("c981be67-7158-49a5-bd62-31ab0dbad6d9")
+    @objid ("3ff3b737-32b8-400c-890e-699923e1e956")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -127,7 +127,7 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("91687b86-7bd0-4460-aab9-b8bd51ba6828")
+    @objid ("23103b88-a9e1-4297-94e9-56d3ae385f1f")
     public List<String> getSharedDataComResource_AssociationEnd_readServices() {
         return this.elt.getTagValues(SharedDataComResourceAssociationEnd.MdaTypes.SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("327ee09a-5bb7-450c-b4f6-14c1a0844707")
+    @objid ("3ee6c408-0811-41ba-91c3-ea14acb58bd3")
     public List<String> getSharedDataComResource_AssociationEnd_writeServices() {
         return this.elt.getTagValues(SharedDataComResourceAssociationEnd.MdaTypes.SHAREDDATACOMRESOURCE_ASSOCIATIONEND_WRITESERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("5bddd933-7f2c-4b92-b934-ad72580568bd")
+    @objid ("6ac61cad-80ec-4a27-bb82-85904edffede")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bd310a70-d5d2-4727-86c0-af9c39b1e590")
+    @objid ("fae8b3d0-4e37-4359-96a8-c539608c5b43")
     public void setSharedDataComResource_AssociationEnd_readServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceAssociationEnd.MdaTypes.SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES_TAGTYPE_ELT, values);
     }
@@ -163,34 +163,34 @@ public class SharedDataComResourceAssociationEnd extends SwCommunicationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("43b98137-9287-4149-a686-785daf7f8f5f")
+    @objid ("6111d03c-99c1-4816-9dbe-3d67b6ea9aac")
     public void setSharedDataComResource_AssociationEnd_writeServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceAssociationEnd.MdaTypes.SHAREDDATACOMRESOURCE_ASSOCIATIONEND_WRITESERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("d1c29b06-daf3-4b6f-8f8c-9c53d311fed5")
+    @objid ("06c08e48-f6f7-4311-98d6-ddbdb422a860")
     protected SharedDataComResourceAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("0e725a18-75e2-4ec3-826c-de35445a90ee")
     public static final class MdaTypes {
-        @objid ("a23080de-f7b2-4e06-a9ee-b43029698737")
+        @objid ("41f7517a-e3b4-4d0a-90ba-6670afe0a5a4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("c5d1b4f4-3254-4005-963f-6d36b9b2f19e")
+        @objid ("89557114-cd40-46a0-8ef6-d00b5f5e92c6")
         public static TagType SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES_TAGTYPE_ELT;
 
-        @objid ("8f9c49c5-fd7b-409f-901a-1ed6d881ca2a")
+        @objid ("efa46817-77af-4ce9-be1c-c9e21ae3abff")
         public static TagType SHAREDDATACOMRESOURCE_ASSOCIATIONEND_WRITESERVICES_TAGTYPE_ELT;
 
-        @objid ("6a9159bb-aaf6-4c54-ac4c-242171291203")
+        @objid ("fc7647fd-8b1c-45d4-b3ea-708874cdeb6c")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("98d1633e-d990-4eb1-b207-7bbe94c90c8d")
+        @objid ("7d8c9c0b-84dc-479c-a635-1bcbdfb130a2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e0b37180-1ac5-4a3a-b193-fd887f8aa061")
+        @objid ("ec3d3178-537b-4fa3-bd26-779d173f1788")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "02218156-0ccf-11df-8525-001302895b2b");
             SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0221815d-0ccf-11df-8525-001302895b2b");

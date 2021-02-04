@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.parameter;
 
@@ -34,36 +34,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("66cdb7d4-b905-4dcd-85a9-0693f1472253")
 public class InterruptResourceParameter extends SwConcurrentResourceParameter {
-    @objid ("d68e7c94-7e65-4d34-a8e7-ad1f0ab7a895")
+    @objid ("1367182c-6df6-4e0f-815d-33ea2106b10a")
     public static final String STEREOTYPE_NAME = "InterruptResource_Parameter";
 
-    @objid ("7a5c25b4-28a7-4ac6-bffa-2f80b224b921")
+    @objid ("26187d02-f3db-440f-a190-efc2042cf904")
     public static final String INTERRUPTRESOURCE_PARAMETER_ISMASKABLE_TAGTYPE = "InterruptResource_Parameter_isMaskable";
 
-    @objid ("061fbf60-931a-4f82-ba96-960e46a90052")
+    @objid ("251eb055-d53d-4cf5-8120-02e7861cd9b5")
     public static final String INTERRUPTRESOURCE_PARAMETER_KIND_TAGTYPE = "InterruptResource_Parameter_kind";
 
-    @objid ("934f537b-48d8-4457-a6fa-93a4dbf1cbc0")
+    @objid ("23da6c39-efde-4cdf-929b-365124335ffd")
     public static final String INTERRUPTRESOURCE_PARAMETER_MASKELEMENTS_TAGTYPE = "InterruptResource_Parameter_maskElements";
 
-    @objid ("089d71d3-c259-4d69-b5ec-c5c648407a78")
+    @objid ("3de18a15-d347-4447-9e8a-c4b52dbce8f2")
     public static final String INTERRUPTRESOURCE_PARAMETER_ROUTINECONNECTSERVICES_TAGTYPE = "InterruptResource_Parameter_routineConnectServices";
 
-    @objid ("865f7fea-ee7d-488e-8695-158b38d4848f")
+    @objid ("aaa9cec2-1456-4c8c-a58d-ddeb8bcc3b34")
     public static final String INTERRUPTRESOURCE_PARAMETER_ROUTINEDISCONNECTSERVICES_TAGTYPE = "InterruptResource_Parameter_routineDisconnectServices";
 
-    @objid ("813449f8-6f5a-4dc7-9d1c-0dd050f04818")
+    @objid ("b7d435c5-8c2d-49cd-ad69-49e9eb18e15d")
     public static final String INTERRUPTRESOURCE_PARAMETER_VECTORELEMENTS_TAGTYPE = "InterruptResource_Parameter_vectorElements";
 
     /**
-     * Tells whether a {@link InterruptResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << InterruptResource_Parameter >>. 
+     * Tells whether a {@link InterruptResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << InterruptResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8c7aba01-2884-4c8d-a27b-f684850bf8fc")
+    @objid ("3b9588f7-e7e0-40a9-8c6d-56fa93d52605")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, InterruptResourceParameter.STEREOTYPE_NAME));
     }
@@ -73,21 +73,21 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * 
      * @return a {@link InterruptResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("d4575f87-4234-4588-b2e1-a8ecaecc3e35")
+    @objid ("61bbab82-cdb5-489e-9fba-2b9306ac3efe")
     public static InterruptResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, InterruptResourceParameter.STEREOTYPE_NAME);
         return InterruptResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link InterruptResourceParameter} proxy from a {@link Parameter} stereotyped << InterruptResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link InterruptResourceParameter} proxy from a {@link Parameter} stereotyped << InterruptResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link InterruptResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("5a9b66da-54a3-433c-bce3-1480d1e18b18")
+    @objid ("6dab0fbf-ef86-4a07-b1d1-1cb6e234472e")
     public static InterruptResourceParameter instantiate(final Parameter obj) {
         return InterruptResourceParameter.canInstantiate(obj) ? new InterruptResourceParameter(obj) : null;
     }
@@ -100,7 +100,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * @return a {@link InterruptResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("f5a8353a-3c37-4951-a4e6-8de96c254498")
+    @objid ("d8a38729-ccc4-4a4f-95d4-0e151f42f63e")
     public static InterruptResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (InterruptResourceParameter.canInstantiate(obj))
         	return new InterruptResourceParameter(obj);
@@ -108,7 +108,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
         	throw new IllegalArgumentException("InterruptResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ccbe427a-bfba-472b-8148-3156a7b1b318")
+    @objid ("632f0d99-2ee1-4960-bfa4-d2a8d7b87ec2")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -128,7 +128,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("05805ffd-1c1d-48f2-9d87-a85067da02ee")
+    @objid ("8f44189d-8cd3-455a-a4ea-9ac06c4d5535")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -139,7 +139,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0907c8e4-1f4f-469e-b7ae-6fc3d5aa59f2")
+    @objid ("0258555f-18a4-4ad7-9126-1b65df7698e0")
     public String getInterruptResource_Parameter_kind() {
         return this.elt.getTagValue(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_KIND_TAGTYPE_ELT);
     }
@@ -149,7 +149,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("fa11fa1b-d746-41e3-848f-a672ca0b6c9b")
+    @objid ("fcaf2484-2ad5-4e30-af52-73708e84f925")
     public List<String> getInterruptResource_Parameter_maskElements() {
         return this.elt.getTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_MASKELEMENTS_TAGTYPE_ELT);
     }
@@ -159,7 +159,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b2691ba9-3d19-4e3b-992c-b52d339a2401")
+    @objid ("c0646ff1-e29b-4cf5-84f7-0bdb2c8a79ea")
     public List<String> getInterruptResource_Parameter_routineConnectServices() {
         return this.elt.getTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ROUTINECONNECTSERVICES_TAGTYPE_ELT);
     }
@@ -169,7 +169,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("adb2ff27-8f4d-4049-b08d-1077b660ebed")
+    @objid ("7b5d444c-4c15-49ff-a168-33ea5842a8ec")
     public List<String> getInterruptResource_Parameter_routineDisconnectServices() {
         return this.elt.getTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ROUTINEDISCONNECTSERVICES_TAGTYPE_ELT);
     }
@@ -179,12 +179,12 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("377e7c27-3b71-4a78-8aa0-e93a80c6142c")
+    @objid ("4a4b41e5-c44b-4e5a-af13-4a2b83d2c3ab")
     public List<String> getInterruptResource_Parameter_vectorElements() {
         return this.elt.getTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_VECTORELEMENTS_TAGTYPE_ELT);
     }
 
-    @objid ("d09432b7-d440-4d0d-907c-12643915656f")
+    @objid ("6ac0044c-cf24-4a4d-a976-a708b3ab2004")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -195,7 +195,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9c9d8cfa-889a-45cb-9b8c-4b2583db9186")
+    @objid ("b75d4af7-5f86-41c1-aa04-ecd1316bfce9")
     public boolean isInterruptResource_Parameter_isMaskable() {
         return this.elt.isTagged(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ISMASKABLE_TAGTYPE_ELT);
     }
@@ -205,7 +205,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("18652220-495f-4018-ab01-749e08d23474")
+    @objid ("99d68024-66c3-400c-969e-ee68761e3442")
     public void setInterruptResource_Parameter_isMaskable(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ISMASKABLE_TAGTYPE_ELT, this.elt);
@@ -218,7 +218,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("682912b0-3ba4-49e0-83b4-60fc9e79ff96")
+    @objid ("45f09d11-1261-4a08-83ec-42c11dc87e65")
     public void setInterruptResource_Parameter_kind(final String value) {
         this.elt.putTagValue(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_KIND_TAGTYPE_ELT, value);
     }
@@ -228,7 +228,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("84de44f9-a1e4-4932-854e-c85b215f6f08")
+    @objid ("67bc86d6-2c4a-4980-a20a-9052d0719253")
     public void setInterruptResource_Parameter_maskElements(final List<String> values) {
         this.elt.putTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_MASKELEMENTS_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fdd1f600-e329-4a04-a531-2772a3c5c587")
+    @objid ("cddaa400-4cd6-4524-87eb-a0aa012ebef0")
     public void setInterruptResource_Parameter_routineConnectServices(final List<String> values) {
         this.elt.putTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ROUTINECONNECTSERVICES_TAGTYPE_ELT, values);
     }
@@ -248,7 +248,7 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a773b2ab-9b29-4cbd-a0a7-e7fc1cd5b035")
+    @objid ("698d9c3d-eb25-4b52-9dc1-4660e2a84983")
     public void setInterruptResource_Parameter_routineDisconnectServices(final List<String> values) {
         this.elt.putTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_ROUTINEDISCONNECTSERVICES_TAGTYPE_ELT, values);
     }
@@ -258,46 +258,46 @@ public class InterruptResourceParameter extends SwConcurrentResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d1886271-28a4-4755-b65d-8c31d95164f2")
+    @objid ("8063bb1e-c9c4-4a15-aa7f-6c43f04a6dc8")
     public void setInterruptResource_Parameter_vectorElements(final List<String> values) {
         this.elt.putTagValues(InterruptResourceParameter.MdaTypes.INTERRUPTRESOURCE_PARAMETER_VECTORELEMENTS_TAGTYPE_ELT, values);
     }
 
-    @objid ("d2dd9b8c-35cd-4db5-ba79-750e2112e3d6")
+    @objid ("e1e1ffa6-c703-4465-9add-8c959dca08ae")
     protected InterruptResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("ff572fa1-46d7-40bd-8766-1dca2fa8be3d")
     public static final class MdaTypes {
-        @objid ("4b3800a7-b604-4fc1-bd03-c4ab3d702f43")
+        @objid ("a349d6ef-e5d9-4493-9111-9d4ec5d1628c")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("0a1f475d-71e4-4e06-9bec-dc7dcdee9160")
+        @objid ("9476d236-c8aa-45c3-9c0b-30067366bd04")
         public static TagType INTERRUPTRESOURCE_PARAMETER_KIND_TAGTYPE_ELT;
 
-        @objid ("ca8ededb-75d6-49d7-b03b-e510f991ba61")
+        @objid ("7b8e7750-81b2-4a00-a24f-22fdf494b7fc")
         public static TagType INTERRUPTRESOURCE_PARAMETER_ISMASKABLE_TAGTYPE_ELT;
 
-        @objid ("5f309f09-7a52-49bf-a89a-ce0045b03439")
+        @objid ("95f15c6c-352a-43b1-bf4a-5a1cd0de28c0")
         public static TagType INTERRUPTRESOURCE_PARAMETER_VECTORELEMENTS_TAGTYPE_ELT;
 
-        @objid ("cc640329-a819-479c-ae46-3560b8b63ed0")
+        @objid ("ee9968ba-ab58-4a09-9404-b48d0358a0e9")
         public static TagType INTERRUPTRESOURCE_PARAMETER_MASKELEMENTS_TAGTYPE_ELT;
 
-        @objid ("4983dd15-2c34-456f-afee-3d1e96e82919")
+        @objid ("d5a3fad3-d915-4152-a290-e89b66cbd833")
         public static TagType INTERRUPTRESOURCE_PARAMETER_ROUTINECONNECTSERVICES_TAGTYPE_ELT;
 
-        @objid ("c5cc5e00-63cf-44fd-ad3c-779b7528db39")
+        @objid ("96333c1b-b7db-4807-9f1c-66c85165f8c0")
         public static TagType INTERRUPTRESOURCE_PARAMETER_ROUTINEDISCONNECTSERVICES_TAGTYPE_ELT;
 
-        @objid ("157d8fb1-4695-4309-af7c-ab370151756a")
+        @objid ("d03ff2c2-48da-4e67-943e-4e2fe2c710b4")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1ec59546-f2db-45aa-b17c-43aa2c352f9f")
+        @objid ("da128ddc-e129-463d-bda4-752a44bc88be")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("502510ad-57ca-49ab-99af-fb0f3d83f6d4")
+        @objid ("19d9d8ef-eacb-4ad5-a346-e26179962207")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01bd5ff0-0ccf-11df-8525-001302895b2b");
             INTERRUPTRESOURCE_PARAMETER_KIND_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01c94b82-0ccf-11df-8525-001302895b2b");

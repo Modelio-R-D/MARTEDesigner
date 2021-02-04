@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdevice.standard.instance;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("4e3b13b9-e8ae-4afb-8fa2-5dea90393461")
 public class HwSensorInstance extends HwIOInstance {
-    @objid ("80093596-9c88-4861-a204-d5c8b3b03a9a")
+    @objid ("fa990640-ce19-4bc7-97b7-e906cf441aac")
     public static final String STEREOTYPE_NAME = "HwSensor_Instance";
 
     /**
-     * Tells whether a {@link HwSensorInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwSensor_Instance >>. 
+     * Tells whether a {@link HwSensorInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwSensor_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("85171258-4fcf-42d1-ae8c-c2da5725825e")
+    @objid ("44b226eb-ca6d-421b-81a6-062359723dfd")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwSensorInstance.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class HwSensorInstance extends HwIOInstance {
      * 
      * @return a {@link HwSensorInstance} proxy on the created {@link Instance}.
      */
-    @objid ("3d7f01e4-bf70-455b-83c6-8f7502604a34")
+    @objid ("e4f615be-e105-48d8-82d1-523558893050")
     public static HwSensorInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwSensorInstance.STEREOTYPE_NAME);
         return HwSensorInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwSensorInstance} proxy from a {@link Instance} stereotyped << HwSensor_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwSensorInstance} proxy from a {@link Instance} stereotyped << HwSensor_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link HwSensorInstance} proxy or <i>null</i>.
      */
-    @objid ("9518f302-a6e0-4ad3-861f-24718cc1d567")
+    @objid ("ccc73105-43e2-43bc-97ee-51d09faae990")
     public static HwSensorInstance instantiate(final Instance obj) {
         return HwSensorInstance.canInstantiate(obj) ? new HwSensorInstance(obj) : null;
     }
@@ -81,7 +81,7 @@ public class HwSensorInstance extends HwIOInstance {
      * @return a {@link HwSensorInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1bcf3403-ff64-445f-b7a6-c7eebe551e27")
+    @objid ("4dcd0563-d454-4b74-a68e-03b1d7849362")
     public static HwSensorInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (HwSensorInstance.canInstantiate(obj))
         	return new HwSensorInstance(obj);
@@ -89,7 +89,7 @@ public class HwSensorInstance extends HwIOInstance {
         	throw new IllegalArgumentException("HwSensorInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("93d61c99-e1a0-4dc2-8ed6-c0c49ba017a3")
+    @objid ("44a71871-aa29-4487-8eb1-faea5628b73e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class HwSensorInstance extends HwIOInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("7f089ad1-68af-4680-92db-35cc7d3ee056")
+    @objid ("7f7bbe97-a228-4f25-b1f0-27cc6b24399d")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
     }
 
-    @objid ("49e7bdf9-7347-4f33-bfa6-bfa26e0420b2")
+    @objid ("04f2b242-5830-4cda-98c6-b33049135d20")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("5d028f47-2a90-4aec-b445-b2b02d342ceb")
+    @objid ("c360bc78-bf5a-4c9a-9b0a-de75ff01d3c7")
     protected HwSensorInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("69305d49-6b05-486b-b1ce-717249cb099c")
     public static final class MdaTypes {
-        @objid ("6c850e22-8e52-4293-af3e-9d27a74fc040")
+        @objid ("b0781eee-cbce-48f4-9b65-971587128457")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("0ea0e008-8eca-4c6a-924e-66a6177c77d6")
+        @objid ("cb83dcaa-b6e6-4781-a58e-d42b1982b5ae")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a08d1912-6fac-4f88-8e7f-5e425b3353ec")
+        @objid ("3c3ffc7d-b1ce-4e25-8f6a-29dbe2a5cd38")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("16d16213-e202-4828-8dab-8d1109053fc5")
+        @objid ("746d62b8-8a9f-49ad-80a1-5f02f2a374c2")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "e89de84c-c7ac-11df-ad39-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

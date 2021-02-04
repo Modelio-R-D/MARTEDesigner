@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_sam.standard.associationend;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("1a10a1da-a19d-4bca-b9d5-9a2745eca3dc")
 public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
-    @objid ("837a09d2-74c5-4144-87eb-9715365bddbd")
+    @objid ("fe9981cb-44de-49ae-9412-6da37390e77a")
     public static final String STEREOTYPE_NAME = "SaCommHost_AssociationEnd";
 
-    @objid ("bdbd0649-57c6-443b-b057-cb4bd8926081")
+    @objid ("32e0f3e8-61b2-4243-8065-75c72bb647bb")
     public static final String SACOMMHOST_ASSOCIATIONEND_ISSCHED_TAGTYPE = "SaCommHost_AssociationEnd_isSched";
 
-    @objid ("0a9f4c93-035e-44f1-8ce9-904bd50a5b7a")
+    @objid ("15749b29-f964-45e2-8e4c-48458d177ef3")
     public static final String SACOMMHOST_ASSOCIATIONEND_SCHSLACK_TAGTYPE = "SaCommHost_AssociationEnd_schSlack";
 
     /**
-     * Tells whether a {@link SaCommHostAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SaCommHost_AssociationEnd >>. 
+     * Tells whether a {@link SaCommHostAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SaCommHost_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("beab4964-feb1-4dc5-bbcc-0d85bf10b08f")
+    @objid ("f0d738fc-44d9-41f5-b2fc-1fc5d6bb506c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SaCommHostAssociationEnd.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * 
      * @return a {@link SaCommHostAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("36ee47ad-cc22-488a-a4f9-1d399cfeb1db")
+    @objid ("45f323b5-0721-47ca-8afd-2b93076ad004")
     public static SaCommHostAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SaCommHostAssociationEnd.STEREOTYPE_NAME);
         return SaCommHostAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link SaCommHostAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SaCommHost_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SaCommHostAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SaCommHost_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link SaCommHostAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("64c41eda-891e-49db-a1d9-bd1d2d42b8e7")
+    @objid ("b0ea7291-e6c3-464f-b0a5-816496d82b33")
     public static SaCommHostAssociationEnd instantiate(final AssociationEnd obj) {
         return SaCommHostAssociationEnd.canInstantiate(obj) ? new SaCommHostAssociationEnd(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * @return a {@link SaCommHostAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1e0d6632-a693-4288-8298-952076fc7b93")
+    @objid ("fa6230f3-4917-4973-8fc9-409582904485")
     public static SaCommHostAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (SaCommHostAssociationEnd.canInstantiate(obj))
         	return new SaCommHostAssociationEnd(obj);
@@ -96,7 +96,7 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
         	throw new IllegalArgumentException("SaCommHostAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3d7463d1-9db6-494f-aaaa-3c0e301b6750")
+    @objid ("6c1b564c-15a7-45f3-bca0-39133a1471f8")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("0dead547-0fe7-4011-8e47-d794ab194f99")
+    @objid ("c3d70e46-ff50-45bc-8bfc-f2d70d14185b")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -127,12 +127,12 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dd868c9c-3994-484d-8b2a-076d5c2530ba")
+    @objid ("f8d3019b-d84b-4e98-af01-9de39cbed12d")
     public String getSaCommHost_AssociationEnd_schSlack() {
         return this.elt.getTagValue(SaCommHostAssociationEnd.MdaTypes.SACOMMHOST_ASSOCIATIONEND_SCHSLACK_TAGTYPE_ELT);
     }
 
-    @objid ("a68b100c-86f1-4d50-a1e1-c675b266dcf1")
+    @objid ("313b929d-614b-48a3-9c90-b95f8cdf417d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -143,7 +143,7 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6f609536-55f6-4bcc-a4eb-c6d15169d3f9")
+    @objid ("a19a6124-a6e8-4f31-9bd2-e802ad97d666")
     public boolean isSaCommHost_AssociationEnd_isSched() {
         return this.elt.isTagged(SaCommHostAssociationEnd.MdaTypes.SACOMMHOST_ASSOCIATIONEND_ISSCHED_TAGTYPE_ELT);
     }
@@ -153,7 +153,7 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d30419b6-d7b6-4a25-a055-133987823e31")
+    @objid ("2a188d7e-af39-43ae-afa4-8f765c5c2b78")
     public void setSaCommHost_AssociationEnd_isSched(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaCommHostAssociationEnd.MdaTypes.SACOMMHOST_ASSOCIATIONEND_ISSCHED_TAGTYPE_ELT, this.elt);
@@ -166,34 +166,34 @@ public class SaCommHostAssociationEnd extends GaCommHostAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eb04a7f6-695a-411e-be26-19cca64092f2")
+    @objid ("af4c92ec-5a93-48f4-8e4e-8162af5a9d93")
     public void setSaCommHost_AssociationEnd_schSlack(final String value) {
         this.elt.putTagValue(SaCommHostAssociationEnd.MdaTypes.SACOMMHOST_ASSOCIATIONEND_SCHSLACK_TAGTYPE_ELT, value);
     }
 
-    @objid ("50182bbe-bb36-4e6b-a2ee-fec6a4c60ea2")
+    @objid ("204c9c33-ab58-4241-905c-52569b937e30")
     protected SaCommHostAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("88030503-a182-4b85-ba0e-e0f5cb48512a")
     public static final class MdaTypes {
-        @objid ("fab776b5-97a7-45cf-8dc0-3fe87b898a0b")
+        @objid ("da310829-0eff-4e6e-972d-e100ecc82519")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("2a0298ef-fc15-48f1-8c24-0998bcc16e35")
+        @objid ("6b766643-f5f6-4006-ac0b-7a8101429321")
         public static TagType SACOMMHOST_ASSOCIATIONEND_ISSCHED_TAGTYPE_ELT;
 
-        @objid ("c46990ff-1e44-4b17-98cd-98dc9f161520")
+        @objid ("7a2f78ce-b0b0-4b48-8b20-addb86d0d0fe")
         public static TagType SACOMMHOST_ASSOCIATIONEND_SCHSLACK_TAGTYPE_ELT;
 
-        @objid ("086afd72-563b-4d46-a9b9-23e5c0114f9f")
+        @objid ("299969ad-29bf-41d6-bfe6-c14afd893664")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("57649552-9264-45e1-9c8f-345b5c39a45f")
+        @objid ("3db8ff56-9601-4877-8ff4-5dd785a8109d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("33e003e2-d37b-4000-9e47-45d73cdff044")
+        @objid ("75dc79ed-69f0-4ba3-937e-45158c076336")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "039c9245-0ccf-11df-8525-001302895b2b");
             SACOMMHOST_ASSOCIATIONEND_ISSCHED_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "039c924c-0ccf-11df-8525-001302895b2b");

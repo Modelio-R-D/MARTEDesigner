@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.linkend;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("539e432e-7463-4735-a2cb-2a498d1efd01")
 public class ResourceLinkEnd {
-    @objid ("aa65a9a1-b518-4716-9330-616985f3d3e9")
+    @objid ("59e5067b-4351-4849-9d7f-3d224bd18e28")
     public static final String STEREOTYPE_NAME = "Resource_LinkEnd";
 
-    @objid ("4fb6784e-bb48-4039-a46d-804686dab416")
+    @objid ("c97e8f11-2064-40da-b7b7-04b5ac122699")
     public static final String RESOURCE_LINKEND_ISACTIVE_TAGTYPE = "Resource_LinkEnd_isActive";
 
-    @objid ("aba50086-ca3b-4929-9dc5-9f9b26743a40")
+    @objid ("97bd126c-2496-4a27-8ae0-ede5d58aa31a")
     public static final String RESOURCE_LINKEND_ISPROTECTED_TAGTYPE = "Resource_LinkEnd_isProtected";
 
-    @objid ("9e1cbd36-483b-463a-b7a0-4aa1c9366930")
+    @objid ("40bf6c9c-8044-4a01-a0c3-8878c2f24bd2")
     public static final String RESOURCE_LINKEND_RESMULT_TAGTYPE = "Resource_LinkEnd_resMult";
 
     /**
      * The underlying {@link LinkEnd} represented by this proxy, never null.
      */
-    @objid ("3ab872f3-516a-4be2-a377-4c97ae1b93b8")
+    @objid ("87e0847d-7c84-4cc0-9046-1cf00c24b822")
     protected final LinkEnd elt;
 
     /**
-     * Tells whether a {@link ResourceLinkEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link LinkEnd} stereotyped << Resource_LinkEnd >>. 
+     * Tells whether a {@link ResourceLinkEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link LinkEnd} stereotyped << Resource_LinkEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("37029fc0-4fba-432a-ab3f-411aebc2e7be")
+    @objid ("a7074c0b-e20e-4030-91f4-b7cf556f1e2c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof LinkEnd) && ((LinkEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ResourceLinkEnd.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class ResourceLinkEnd {
      * 
      * @return a {@link ResourceLinkEnd} proxy on the created {@link LinkEnd}.
      */
-    @objid ("0ef9954d-0fc4-4b79-b430-d8cf3783b780")
+    @objid ("7638f109-6d78-439a-9c5e-4293272013b5")
     public static ResourceLinkEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("LinkEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.LinkEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ResourceLinkEnd.STEREOTYPE_NAME);
         return ResourceLinkEnd.instantiate((LinkEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link ResourceLinkEnd} proxy from a {@link LinkEnd} stereotyped << Resource_LinkEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ResourceLinkEnd} proxy from a {@link LinkEnd} stereotyped << Resource_LinkEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a LinkEnd
      * @return a {@link ResourceLinkEnd} proxy or <i>null</i>.
      */
-    @objid ("03d9c4f8-603a-4fd9-a605-6be511873775")
+    @objid ("443b68b5-93e9-413e-88b9-13991c2e85e8")
     public static ResourceLinkEnd instantiate(final LinkEnd obj) {
         return ResourceLinkEnd.canInstantiate(obj) ? new ResourceLinkEnd(obj) : null;
     }
@@ -96,7 +96,7 @@ public class ResourceLinkEnd {
      * @return a {@link ResourceLinkEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("243aecd0-a53f-4ab5-b2bd-af58d7765ad4")
+    @objid ("90cb7626-7f7c-4027-b09a-082670f90916")
     public static ResourceLinkEnd safeInstantiate(final LinkEnd obj) throws IllegalArgumentException {
         if (ResourceLinkEnd.canInstantiate(obj))
         	return new ResourceLinkEnd(obj);
@@ -104,7 +104,7 @@ public class ResourceLinkEnd {
         	throw new IllegalArgumentException("ResourceLinkEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("1352efb4-6c29-4b29-93a7-1f87a116a089")
+    @objid ("2d0d6fbd-799b-4f86-b565-5caeea6dcc52")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +124,7 @@ public class ResourceLinkEnd {
      * Get the underlying {@link LinkEnd}. 
      * @return the LinkEnd represented by this proxy, never null.
      */
-    @objid ("8d61b5d2-fbfc-4618-aa49-517da8be9341")
+    @objid ("99fd3a39-1f45-4b7e-b349-4080c4569726")
     public LinkEnd getElement() {
         return this.elt;
     }
@@ -134,12 +134,12 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("45656f70-c3d8-4bd0-929f-27720f019bf0")
+    @objid ("61041f39-21b6-4851-8738-2b293d93c848")
     public String getResource_LinkEnd_resMult() {
         return this.elt.getTagValue(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_RESMULT_TAGTYPE_ELT);
     }
 
-    @objid ("23376ae2-1812-43a8-9ecd-681dd92aaf5a")
+    @objid ("675e1127-e1a3-4348-8181-09d67706f6b1")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -150,7 +150,7 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f4d2ef45-fc28-4efe-bb70-cd1058505299")
+    @objid ("400702a0-0073-46b3-9c29-e791d8988b64")
     public boolean isResource_LinkEnd_isActive() {
         return this.elt.isTagged(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_ISACTIVE_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8f1d2f19-982a-463d-90bc-0aa64e459889")
+    @objid ("7e154c0e-c411-471a-aa4a-5c5b43ceaa65")
     public boolean isResource_LinkEnd_isProtected() {
         return this.elt.isTagged(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_ISPROTECTED_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5c025b14-ef4a-4cd8-963c-6a86cca0894c")
+    @objid ("358cd3a1-026a-46ac-84a1-560832b9a583")
     public void setResource_LinkEnd_isActive(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_ISACTIVE_TAGTYPE_ELT, this.elt);
@@ -183,7 +183,7 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eeb3d1e4-49b4-41d2-bb35-4c918f1e16ae")
+    @objid ("88a7255c-6745-4cfa-a17f-f1f1f75ac130")
     public void setResource_LinkEnd_isProtected(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_ISPROTECTED_TAGTYPE_ELT, this.elt);
@@ -196,37 +196,37 @@ public class ResourceLinkEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("14cabbab-e9b4-4ddc-9b53-4745b8d0ea99")
+    @objid ("cf0a521c-62c4-45c1-94e4-f20dbd108c46")
     public void setResource_LinkEnd_resMult(final String value) {
         this.elt.putTagValue(ResourceLinkEnd.MdaTypes.RESOURCE_LINKEND_RESMULT_TAGTYPE_ELT, value);
     }
 
-    @objid ("fd961f00-22bc-434b-9681-6273ee012e9c")
+    @objid ("d515e9be-e68f-4ddb-8f45-2dfa1c4a44a8")
     protected ResourceLinkEnd(final LinkEnd elt) {
         this.elt = elt;
     }
 
     @objid ("8dcbeca9-5909-40cd-a83c-84f2bd145b15")
     public static final class MdaTypes {
-        @objid ("44b59158-dc4e-433d-810d-1d2eb3e253c8")
+        @objid ("d4c3ab7f-2ba8-43bc-a776-3ee76ef628f1")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("59ab7b42-9eae-4429-9b2a-2e68c5a46a54")
+        @objid ("b40346b0-7e03-4a0f-82a3-005706e4e975")
         public static TagType RESOURCE_LINKEND_RESMULT_TAGTYPE_ELT;
 
-        @objid ("8ab4229a-df78-45fa-a65e-d0d6cbb9e8b2")
+        @objid ("773d7e5c-2a64-47f3-a4fe-15fabc21e0f2")
         public static TagType RESOURCE_LINKEND_ISPROTECTED_TAGTYPE_ELT;
 
-        @objid ("ce78b237-6c66-4b6e-863f-93bf45a68a2d")
+        @objid ("89431300-11e0-48cd-be76-885fea38ef9e")
         public static TagType RESOURCE_LINKEND_ISACTIVE_TAGTYPE_ELT;
 
-        @objid ("470c6b24-bce0-4fde-9060-b7f9a3016860")
+        @objid ("e555751b-a64d-4d22-acf6-857d1b975e92")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0c339c69-080d-4481-aee1-4d8a2b5913da")
+        @objid ("a61197b8-5f94-4151-b65b-6c16879f6e50")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("00e06e98-6449-44b0-a2d4-7d82d580ef9e")
+        @objid ("8c91d655-37dd-48d7-81e0-5ad08b124828")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "90ae0f72-32a2-11df-9294-001302895b2b");
             RESOURCE_LINKEND_RESMULT_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "90ae0f73-32a2-11df-9294-001302895b2b");

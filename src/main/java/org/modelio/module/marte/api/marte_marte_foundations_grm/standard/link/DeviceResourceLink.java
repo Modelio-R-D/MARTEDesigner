@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.link;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("31cf68fe-e235-447a-946c-6e0328a3ad8f")
 public class DeviceResourceLink extends ProcessingResourceLink {
-    @objid ("833485ef-7c16-4d4b-ad07-fa00964abb27")
+    @objid ("7014ba75-ffe5-4b86-b5fa-595f75580c9f")
     public static final String STEREOTYPE_NAME = "DeviceResource_Link";
 
     /**
-     * Tells whether a {@link DeviceResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << DeviceResource_Link >>. 
+     * Tells whether a {@link DeviceResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << DeviceResource_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("5cb20c97-c886-4700-af27-e17cf9e3ba86")
+    @objid ("b07e97c5-bed4-4751-8270-399d8255ec22")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLink.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * 
      * @return a {@link DeviceResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("2ac04aa0-c2c9-4742-85e9-00ddc3f8c40b")
+    @objid ("82bb883e-4885-40c7-a322-9f68f1155e0f")
     public static DeviceResourceLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLink.STEREOTYPE_NAME);
         return DeviceResourceLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link DeviceResourceLink} proxy from a {@link Link} stereotyped << DeviceResource_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link DeviceResourceLink} proxy from a {@link Link} stereotyped << DeviceResource_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link DeviceResourceLink} proxy or <i>null</i>.
      */
-    @objid ("d23659e5-a695-453b-bab6-3ea5fb146519")
+    @objid ("6bfd70c0-579f-4feb-b391-763dfe334b53")
     public static DeviceResourceLink instantiate(final Link obj) {
         return DeviceResourceLink.canInstantiate(obj) ? new DeviceResourceLink(obj) : null;
     }
@@ -81,7 +81,7 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * @return a {@link DeviceResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("088ee693-f2fb-4e70-bf12-114c8cadf560")
+    @objid ("41f63440-a6de-4e3b-89ff-9dbf8926db0c")
     public static DeviceResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (DeviceResourceLink.canInstantiate(obj))
         	return new DeviceResourceLink(obj);
@@ -89,7 +89,7 @@ public class DeviceResourceLink extends ProcessingResourceLink {
         	throw new IllegalArgumentException("DeviceResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("78aa2d27-c6ba-4494-8731-305e42e4f09b")
+    @objid ("d9db7128-a860-4e41-bd75-735363453760")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("a5c287f9-efb9-46db-ad1b-3945f89c6e89")
+    @objid ("07e28c02-268d-40a1-a8f1-3fea5121a5ae")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
     }
 
-    @objid ("a70c2867-c10b-4b93-9054-34c3c64bd968")
+    @objid ("25820e6e-b71b-4d3f-968b-68d60e34e517")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("0afd515e-4ba3-483d-a65f-8afa1547fba9")
+    @objid ("14c4cf28-c89b-443d-96ba-60c396976c83")
     protected DeviceResourceLink(final Link elt) {
         super(elt);
     }
 
     @objid ("f075d49d-c30d-4e32-94f2-b330701b6b4b")
     public static final class MdaTypes {
-        @objid ("37a24cd5-c1b8-40b7-bed2-ce1dc6c3b6ab")
+        @objid ("d0124c0c-81a9-4790-9f81-707c10e4a0a4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("59230251-2420-4548-b13d-754eb78a09d3")
+        @objid ("08e9880d-1a48-4ba2-ab05-8f39d62cb3a8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f976848f-8f10-41b0-8dd1-c92738647353")
+        @objid ("f1e640dd-1f4a-4717-a389-6ba12914face")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b0ee2c91-9ebd-4ba0-a832-4f2ec20c7dc2")
+        @objid ("31b36381-f0f4-40aa-913d-4d9e550f217e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84da-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

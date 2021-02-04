@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.attribute;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("271b0b6f-0900-4bc7-8437-261400bd92a5")
 public class HwCacheAttribute extends HwMemoryAttribute {
-    @objid ("807e25a4-f4bc-493c-9842-cd1c324845d8")
+    @objid ("34fef90f-d4c1-4fcf-a02e-45b147910dea")
     public static final String STEREOTYPE_NAME = "HwCache_Attribute";
 
-    @objid ("76866f83-aa25-4ebe-a9a1-ac3157d3ff24")
+    @objid ("c785b702-097f-4e37-9b45-40cb967a6c4e")
     public static final String HWCACHE_ATTRIBUTE_LEVEL_TAGTYPE = "HwCache_Attribute_level";
 
-    @objid ("70bd3ae2-f298-47da-b4be-8ce438f08e07")
+    @objid ("5937f732-07c1-4adb-b957-d93911a83926")
     public static final String HWCACHE_ATTRIBUTE_REPL_POLICY_TAGTYPE = "HwCache_Attribute_repl_Policy";
 
-    @objid ("fda2ff55-6532-4eb6-a408-c606906de336")
+    @objid ("4e763e47-e08e-4bc6-a63e-4bbf9ad33c7e")
     public static final String HWCACHE_ATTRIBUTE_STRUCTURE_TAGTYPE = "HwCache_Attribute_structure";
 
-    @objid ("613b6be8-5a30-45a7-9421-ac2d167852b6")
+    @objid ("17416adf-4053-42ff-8065-cfc9cd59c3a9")
     public static final String HWCACHE_ATTRIBUTE_TYPE_TAGTYPE = "HwCache_Attribute_type";
 
-    @objid ("2b43ee93-45b7-4364-9d1d-90371bf318ae")
+    @objid ("603697a2-8d9e-4de6-b69a-f9f670094537")
     public static final String HWCACHE_ATTRIBUTE_WRITEPOLICY_TAGTYPE = "HwCache_Attribute_writePolicy";
 
     /**
-     * Tells whether a {@link HwCacheAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwCache_Attribute >>. 
+     * Tells whether a {@link HwCacheAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwCache_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2abd3d5e-d66c-45d3-a6e1-27fc5d6eba58")
+    @objid ("821851b7-b1e5-49f8-b78b-8b0f2aaa1af6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwCacheAttribute.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * 
      * @return a {@link HwCacheAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("20e2eb75-b1eb-488a-9faa-c832e248069f")
+    @objid ("b4994514-48b1-4e01-ba0d-d1fb0402c583")
     public static HwCacheAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwCacheAttribute.STEREOTYPE_NAME);
         return HwCacheAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwCacheAttribute} proxy from a {@link Attribute} stereotyped << HwCache_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwCacheAttribute} proxy from a {@link Attribute} stereotyped << HwCache_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwCacheAttribute} proxy or <i>null</i>.
      */
-    @objid ("166d502d-3350-461e-acc7-cff286172c11")
+    @objid ("c1e23a7d-5d4c-43af-bdb3-b22412864e3f")
     public static HwCacheAttribute instantiate(final Attribute obj) {
         return HwCacheAttribute.canInstantiate(obj) ? new HwCacheAttribute(obj) : null;
     }
@@ -96,7 +96,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * @return a {@link HwCacheAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c6a57714-5659-446a-829b-83c015c86c75")
+    @objid ("963ca250-7fcc-408a-90fc-4f1fb1894877")
     public static HwCacheAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwCacheAttribute.canInstantiate(obj))
         	return new HwCacheAttribute(obj);
@@ -104,7 +104,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
         	throw new IllegalArgumentException("HwCacheAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("44d86cdc-8c5a-4206-9f8e-6412be08ccee")
+    @objid ("dffa0631-a130-4e98-87bc-53438ac94464")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +124,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("6741d637-0d06-452e-83e6-b6d2b65b890f")
+    @objid ("1e647cdf-c65a-4c2b-b8c7-e66dbf04a2f9")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -135,7 +135,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0f4476ec-3a73-4b37-8fa8-d2b4c430d574")
+    @objid ("4d632db5-d59b-423c-ac78-4773050a4844")
     public String getHwCache_Attribute_level() {
         return this.elt.getTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_LEVEL_TAGTYPE_ELT);
     }
@@ -145,7 +145,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2e5bb2e1-60f1-4cb8-a762-98187b06679f")
+    @objid ("6dea85e4-08d1-463b-8062-f5f8841fdf3d")
     public String getHwCache_Attribute_repl_Policy() {
         return this.elt.getTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_REPL_POLICY_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("42a8c92a-d2b4-4d06-8439-086bf75c4176")
+    @objid ("e35ae9fe-8fe6-4775-a2e7-0d0d86ccb60d")
     public String getHwCache_Attribute_structure() {
         return this.elt.getTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_STRUCTURE_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fe6faaca-804e-4905-a100-da7a79fd1fc0")
+    @objid ("2b54d3ef-7e74-43a5-80ca-e8e38cdb8131")
     public String getHwCache_Attribute_type() {
         return this.elt.getTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_TYPE_TAGTYPE_ELT);
     }
@@ -175,12 +175,12 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c893a556-1269-45f0-bb4e-276c1481494b")
+    @objid ("afdf8564-0f54-4cc2-9dd7-ae16248c66fb")
     public String getHwCache_Attribute_writePolicy() {
         return this.elt.getTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_WRITEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("f26adaca-a857-41aa-b699-b5649805a1e3")
+    @objid ("321b5a34-bf97-4496-b18b-ac7bfd88c211")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -191,7 +191,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("91578a9e-2820-4d0b-ac1f-0ea4f08dd86f")
+    @objid ("6ee7191b-eca8-46d6-9ea6-3939b7aae385")
     public void setHwCache_Attribute_level(final String value) {
         this.elt.putTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_LEVEL_TAGTYPE_ELT, value);
     }
@@ -201,7 +201,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e868f089-20b0-40e4-9300-b99324017f06")
+    @objid ("a4d2167d-e9e7-401d-ab76-873bb6c5a0c5")
     public void setHwCache_Attribute_repl_Policy(final String value) {
         this.elt.putTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_REPL_POLICY_TAGTYPE_ELT, value);
     }
@@ -211,7 +211,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4c580e17-0fe7-4e9e-93d9-937c2543fb8e")
+    @objid ("24364e1a-2c02-408e-9fd1-ff13c7ce9472")
     public void setHwCache_Attribute_structure(final String value) {
         this.elt.putTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_STRUCTURE_TAGTYPE_ELT, value);
     }
@@ -221,7 +221,7 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a1bb74db-4f5e-4b2f-9dcd-9e52875ae3af")
+    @objid ("a56dccf3-a757-4ae5-9710-4573a06e2e98")
     public void setHwCache_Attribute_type(final String value) {
         this.elt.putTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_TYPE_TAGTYPE_ELT, value);
     }
@@ -231,43 +231,43 @@ public class HwCacheAttribute extends HwMemoryAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5cbd8dd7-4021-49fd-9227-c50ed0ae5d1d")
+    @objid ("b0426191-aedb-4103-b22e-9636adf18faf")
     public void setHwCache_Attribute_writePolicy(final String value) {
         this.elt.putTagValue(HwCacheAttribute.MdaTypes.HWCACHE_ATTRIBUTE_WRITEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("77a522b4-de48-4141-8132-e0dcda8b99f4")
+    @objid ("9387009e-aaa0-4196-9f01-2aff19b0e467")
     protected HwCacheAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("fed24553-7987-44c8-8e7d-5cbd3776dd0f")
     public static final class MdaTypes {
-        @objid ("623fa4cb-0a05-4553-b937-3985c90c1160")
+        @objid ("cb4dff5f-8f41-4391-a21a-ef380edb5c20")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b5641636-c0dd-4423-8578-70e0383551a7")
+        @objid ("a43d8079-d917-4405-ba71-f04945a89ab4")
         public static TagType HWCACHE_ATTRIBUTE_LEVEL_TAGTYPE_ELT;
 
-        @objid ("c884ce36-2488-4675-9058-30611b63c896")
+        @objid ("27f72d86-d777-48fb-9c08-e472b30da680")
         public static TagType HWCACHE_ATTRIBUTE_TYPE_TAGTYPE_ELT;
 
-        @objid ("e83b768c-f9ef-4954-b855-a295ac8e1f7e")
+        @objid ("c0862ffe-bca1-4dd5-b73d-8b6683ec063e")
         public static TagType HWCACHE_ATTRIBUTE_STRUCTURE_TAGTYPE_ELT;
 
-        @objid ("93d50090-cbf4-440b-968e-69ed4d81e66a")
+        @objid ("bc042c55-4360-473c-85f2-9cfb2771945a")
         public static TagType HWCACHE_ATTRIBUTE_REPL_POLICY_TAGTYPE_ELT;
 
-        @objid ("306fbeb3-601e-447d-a232-09b0f2e34149")
+        @objid ("8662100f-78ac-424a-aa41-61cf9a5dd403")
         public static TagType HWCACHE_ATTRIBUTE_WRITEPOLICY_TAGTYPE_ELT;
 
-        @objid ("c838af09-488e-4ab8-a3dd-2117184de087")
+        @objid ("4bc69b76-425c-4eb8-beed-17cbcc4d3bb7")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e5149c0a-3c71-4d6b-863e-27bee0b3d268")
+        @objid ("b1e2bc92-f83b-49ab-af16-528141bee015")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2de9cd3a-e0ac-409d-8668-9bc6644f586e")
+        @objid ("c7805781-afd6-44ce-8518-a369dd51c634")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "015479cc-0ccf-11df-8525-001302895b2b");
             HWCACHE_ATTRIBUTE_LEVEL_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "015479d3-0ccf-11df-8525-001302895b2b");

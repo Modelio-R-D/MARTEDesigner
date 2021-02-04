@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_gcm.standard.operation;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("08123102-6889-4cfd-b4c9-a20fda81d25f")
 public class ClientServerFeatureOperation {
-    @objid ("ab36ce7e-0445-4cb8-80ac-8f656fa03c10")
+    @objid ("23ef2ca0-2a4d-4a05-b20a-29fe92d77feb")
     public static final String STEREOTYPE_NAME = "ClientServerFeature_Operation";
 
-    @objid ("61530287-1955-47f7-9854-224cec23af5a")
+    @objid ("dfbbd6d0-00e4-4653-8da0-c593451a3e48")
     public static final String CLIENTSERVERFEATURE_OPERATION_KIND_TAGTYPE = "ClientServerFeature_Operation_kind";
 
     /**
      * The underlying {@link Operation} represented by this proxy, never null.
      */
-    @objid ("675284d0-d8a5-4c6b-aea3-fe384b0126af")
+    @objid ("02d8b8b1-4ed0-4a51-9bf5-8a03eccab0eb")
     protected final Operation elt;
 
     /**
-     * Tells whether a {@link ClientServerFeatureOperation proxy} can be instantiated from a {@link MObject} checking it is a {@link Operation} stereotyped << ClientServerFeature_Operation >>. 
+     * Tells whether a {@link ClientServerFeatureOperation proxy} can be instantiated from a {@link MObject} checking it is a {@link Operation} stereotyped << ClientServerFeature_Operation >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("c6bf2677-5d0d-4d29-9523-98d7475aa325")
+    @objid ("f8b26bcf-4227-418f-8c8f-ed73ed4be5b4")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Operation) && ((Operation) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ClientServerFeatureOperation.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class ClientServerFeatureOperation {
      * 
      * @return a {@link ClientServerFeatureOperation} proxy on the created {@link Operation}.
      */
-    @objid ("3c756f98-ba1b-480c-b6dc-9a6479b9ab2c")
+    @objid ("fa4af94e-0acc-443e-b9cc-b708647222cf")
     public static ClientServerFeatureOperation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Operation");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Operation");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ClientServerFeatureOperation.STEREOTYPE_NAME);
         return ClientServerFeatureOperation.instantiate((Operation)e);
     }
 
     /**
-     * Tries to instantiate a {@link ClientServerFeatureOperation} proxy from a {@link Operation} stereotyped << ClientServerFeature_Operation >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ClientServerFeatureOperation} proxy from a {@link Operation} stereotyped << ClientServerFeature_Operation >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Operation
      * @return a {@link ClientServerFeatureOperation} proxy or <i>null</i>.
      */
-    @objid ("457e8d3a-146c-49eb-8bce-68cf8aa70536")
+    @objid ("ae4ddfa0-e503-44f6-8c47-03ecf504ab50")
     public static ClientServerFeatureOperation instantiate(final Operation obj) {
         return ClientServerFeatureOperation.canInstantiate(obj) ? new ClientServerFeatureOperation(obj) : null;
     }
@@ -90,7 +90,7 @@ public class ClientServerFeatureOperation {
      * @return a {@link ClientServerFeatureOperation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("3ad96bb1-a6e1-41ad-92e5-d9e14ddb6ab0")
+    @objid ("af5f7182-f31f-4856-ae2b-df0f80b74f59")
     public static ClientServerFeatureOperation safeInstantiate(final Operation obj) throws IllegalArgumentException {
         if (ClientServerFeatureOperation.canInstantiate(obj))
         	return new ClientServerFeatureOperation(obj);
@@ -98,7 +98,7 @@ public class ClientServerFeatureOperation {
         	throw new IllegalArgumentException("ClientServerFeatureOperation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("841f59ac-6579-4b4d-a191-9882d4ed192c")
+    @objid ("b4312557-294f-4a01-ad35-576290158003")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -119,7 +119,7 @@ public class ClientServerFeatureOperation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("77f9a74c-d99d-4eb7-a7e5-1ce6695518a6")
+    @objid ("01a6aae6-e2b0-4cd3-821a-12665ff2675f")
     public String getClientServerFeature_Operation_kind() {
         return this.elt.getTagValue(ClientServerFeatureOperation.MdaTypes.CLIENTSERVERFEATURE_OPERATION_KIND_TAGTYPE_ELT);
     }
@@ -128,12 +128,12 @@ public class ClientServerFeatureOperation {
      * Get the underlying {@link Operation}. 
      * @return the Operation represented by this proxy, never null.
      */
-    @objid ("bc6c5d89-6eba-452e-943d-1e060db930b7")
+    @objid ("b7522632-8e68-4248-9122-5e2b98e8fc23")
     public Operation getElement() {
         return this.elt;
     }
 
-    @objid ("f00111b3-4f3b-46af-bc4c-5e01e2a7e93d")
+    @objid ("b41d1610-96c3-4911-9587-25411c91caba")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class ClientServerFeatureOperation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6736bc14-149c-4121-8ae3-060106ff89bf")
+    @objid ("47d18ef5-672c-4e9f-8cfa-933f313203cd")
     public void setClientServerFeature_Operation_kind(final String value) {
         this.elt.putTagValue(ClientServerFeatureOperation.MdaTypes.CLIENTSERVERFEATURE_OPERATION_KIND_TAGTYPE_ELT, value);
     }
 
-    @objid ("6c14dd1b-f917-4b41-b1d0-34656da61905")
+    @objid ("a9af30e2-ad4d-4e85-8b13-8c524e0f80a2")
     protected ClientServerFeatureOperation(final Operation elt) {
         this.elt = elt;
     }
 
     @objid ("9103f2f3-073f-41a3-8893-1cb89e9fb97a")
     public static final class MdaTypes {
-        @objid ("758310b0-7c89-4703-a66a-86e4964d6f35")
+        @objid ("38b6e3cf-7ca0-4ea6-8fe9-c2a7463c4b48")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("33b5fe1d-ad25-4cb0-b71b-949a12d4021b")
+        @objid ("cb482320-0ef9-447f-8152-22256b697264")
         public static TagType CLIENTSERVERFEATURE_OPERATION_KIND_TAGTYPE_ELT;
 
-        @objid ("07fd7ff6-83bd-4916-9b6b-0948a1beb46a")
+        @objid ("5b810f5b-dda6-4620-9c94-b2f7e5ce7590")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("5048ea05-69dc-4dc8-a322-397a104296f3")
+        @objid ("d1cc1fe6-966a-472f-9565-9f56e9bf73b4")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("694f3038-d0bc-401d-b7aa-e1aad791312c")
+        @objid ("d494cf26-a15e-4bbd-b274-8ab7f4c131b1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0255f477-0ccf-11df-8525-001302895b2b");
             CLIENTSERVERFEATURE_OPERATION_KIND_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0255f478-0ccf-11df-8525-001302895b2b");

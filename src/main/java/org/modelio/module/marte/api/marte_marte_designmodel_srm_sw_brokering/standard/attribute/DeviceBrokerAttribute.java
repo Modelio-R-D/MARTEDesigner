@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_brokering.standard.attribute;
 
@@ -35,42 +35,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("78ee2546-81d9-4ca8-9836-3eb5186d9b14")
 public class DeviceBrokerAttribute extends SwResourceAttribute {
-    @objid ("85c1608a-6ede-4704-b0f7-8b0d721ce8bd")
+    @objid ("bccbf9c4-fbdb-48f5-a054-b57f0f562fcf")
     public static final String STEREOTYPE_NAME = "DeviceBroker_Attribute";
 
-    @objid ("816d6ba3-4c35-4623-a5ca-b56b2a824b15")
+    @objid ("2173f5a7-124b-4671-a1a3-7e8bd7520fe9")
     public static final String DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY_TAGTYPE = "DeviceBroker_Attribute_accessPolicy";
 
-    @objid ("93df89b2-4891-4f09-853a-83dcfee3d689")
+    @objid ("066da80a-956a-44be-a491-b136144303b0")
     public static final String DEVICEBROKER_ATTRIBUTE_CLOSESERVICES_TAGTYPE = "DeviceBroker_Attribute_closeServices";
 
-    @objid ("97e0cbec-13fe-487b-b0ec-0ffed7b62062")
+    @objid ("e60a5ba5-c7a3-4a29-b0a0-436af4453d7d")
     public static final String DEVICEBROKER_ATTRIBUTE_CONTROLSERVICES_TAGTYPE = "DeviceBroker_Attribute_controlServices";
 
-    @objid ("cee243e1-89bb-4228-bea2-a68fadc976d8")
+    @objid ("b25ff745-0920-4482-b6a5-41388b2a188a")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICES_TAGTYPE = "DeviceBroker_Attribute_devices";
 
-    @objid ("a84f82c0-8860-40b2-adb7-4706980926a1")
+    @objid ("198a0e4b-1d55-4004-af9a-41e94da0cb1b")
     public static final String DEVICEBROKER_ATTRIBUTE_ISBUFFERED_TAGTYPE = "DeviceBroker_Attribute_isBuffered";
 
-    @objid ("bc6e72ca-974a-4a17-bd38-2544e1ee4a1b")
+    @objid ("c142b2ad-dd26-4c94-ad7f-cc0f8af98f1c")
     public static final String DEVICEBROKER_ATTRIBUTE_OPENSERVICES_TAGTYPE = "DeviceBroker_Attribute_openServices";
 
-    @objid ("4f7fbb44-ad3e-4f7f-9cf8-0b6f6e9700c1")
+    @objid ("dc301d1d-ded6-47b0-bae4-b8ab98d6b4d0")
     public static final String DEVICEBROKER_ATTRIBUTE_READSERVICES_TAGTYPE = "DeviceBroker_Attribute_readServices";
 
-    @objid ("4d1faa7c-8d09-4c83-b9fe-89a65bdd1cf2")
+    @objid ("d27b4a10-077a-410c-8e28-98d69b3b0dcb")
     public static final String DEVICEBROKER_ATTRIBUTE_WRITESERVICES_TAGTYPE = "DeviceBroker_Attribute_writeServices";
 
     /**
-     * Tells whether a {@link DeviceBrokerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << DeviceBroker_Attribute >>. 
+     * Tells whether a {@link DeviceBrokerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << DeviceBroker_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8de2b5bc-6491-4b5e-bd94-2db426acb099")
+    @objid ("2b0bc8d7-ed21-43b2-99ca-02ff539f26e8")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DeviceBrokerAttribute.STEREOTYPE_NAME));
     }
@@ -80,21 +80,21 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * 
      * @return a {@link DeviceBrokerAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("541fed04-0af3-4c7b-8b0b-5a3c6533d205")
+    @objid ("078b8e3b-e15b-407e-8b92-a49509754791")
     public static DeviceBrokerAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DeviceBrokerAttribute.STEREOTYPE_NAME);
         return DeviceBrokerAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link DeviceBrokerAttribute} proxy from a {@link Attribute} stereotyped << DeviceBroker_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link DeviceBrokerAttribute} proxy from a {@link Attribute} stereotyped << DeviceBroker_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link DeviceBrokerAttribute} proxy or <i>null</i>.
      */
-    @objid ("1caec9d6-5658-407e-914a-f8710582fab4")
+    @objid ("65c2aa6a-d849-420a-a932-c9826c11c821")
     public static DeviceBrokerAttribute instantiate(final Attribute obj) {
         return DeviceBrokerAttribute.canInstantiate(obj) ? new DeviceBrokerAttribute(obj) : null;
     }
@@ -107,7 +107,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * @return a {@link DeviceBrokerAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("5abe1aa0-52ff-4f09-922c-9c8a8b6e9f87")
+    @objid ("e967b5f6-84b2-4a55-af6b-216ed11db8d1")
     public static DeviceBrokerAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (DeviceBrokerAttribute.canInstantiate(obj))
         	return new DeviceBrokerAttribute(obj);
@@ -115,7 +115,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
         	throw new IllegalArgumentException("DeviceBrokerAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2b8801af-b6a7-406d-8a8e-20b0fda42fc7")
+    @objid ("8f874f76-11ff-4666-9861-ab024c63b4fd")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -136,7 +136,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("92d37b3c-df67-48e8-b288-4f4618254d57")
+    @objid ("a626f109-0d5e-419b-a9f4-0dd80584b430")
     public String getDeviceBroker_Attribute_accessPolicy() {
         return this.elt.getTagValue(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c77e5cd6-8783-41e2-82fe-a399590f831f")
+    @objid ("dc2d1ff5-401f-42b8-b662-6f818e0f51a3")
     public List<String> getDeviceBroker_Attribute_closeServices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_CLOSESERVICES_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("742496db-f48c-457d-9670-1dbdb84c3aab")
+    @objid ("0348b102-0aaa-4698-8c45-3feab71fc86f")
     public List<String> getDeviceBroker_Attribute_controlServices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_CONTROLSERVICES_TAGTYPE_ELT);
     }
@@ -166,7 +166,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c5bd8c0e-c3f9-49a6-b993-2386ed6117a6")
+    @objid ("dce0c8eb-af8d-45f3-bd0a-e59a1542296b")
     public List<String> getDeviceBroker_Attribute_devices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_DEVICES_TAGTYPE_ELT);
     }
@@ -176,7 +176,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("9ef5e5f1-e936-4ca7-8502-89c920dc556b")
+    @objid ("bb7c7afc-43b1-4df5-b7a8-95e38d75fc61")
     public List<String> getDeviceBroker_Attribute_openServices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_OPENSERVICES_TAGTYPE_ELT);
     }
@@ -186,7 +186,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4b63d22d-ff23-4433-a69a-b989bf93fa6f")
+    @objid ("9a97718d-a7f4-4a4d-8d8c-1b779a79ede9")
     public List<String> getDeviceBroker_Attribute_readServices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_READSERVICES_TAGTYPE_ELT);
     }
@@ -196,7 +196,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("9b3b9bd1-ac92-4b66-9b6a-0604cbe857fe")
+    @objid ("65df4581-f08e-4df7-ad66-6ad025bd6109")
     public List<String> getDeviceBroker_Attribute_writeServices() {
         return this.elt.getTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_WRITESERVICES_TAGTYPE_ELT);
     }
@@ -205,13 +205,13 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("f165923e-9c49-4b6c-b20e-0786bae818a3")
+    @objid ("a7df0ea9-827d-4b6d-813e-471ee09f19a4")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("c7395fb4-8979-4f86-bc69-7d8d48c7d7a8")
+    @objid ("c373af08-0c73-4dc5-a3af-2e7dbff82ea4")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -222,7 +222,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7946693e-9540-422f-a05b-feba4fbbad6e")
+    @objid ("20e0044a-d5c9-4966-ab76-c225e27a4cff")
     public boolean isDeviceBroker_Attribute_isBuffered() {
         return this.elt.isTagged(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_ISBUFFERED_TAGTYPE_ELT);
     }
@@ -232,7 +232,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ff5ebee2-e83e-4f12-a90e-0b2a8506baf5")
+    @objid ("32b05187-3ec4-4854-8270-d3e83d872428")
     public void setDeviceBroker_Attribute_accessPolicy(final String value) {
         this.elt.putTagValue(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY_TAGTYPE_ELT, value);
     }
@@ -242,7 +242,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("59c24bf0-79e4-4f55-bd84-dcf5c5ada464")
+    @objid ("3312130c-5395-4956-9ca3-dc76fdde3fb4")
     public void setDeviceBroker_Attribute_closeServices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_CLOSESERVICES_TAGTYPE_ELT, values);
     }
@@ -252,7 +252,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("595f573a-70e1-49f9-a8ad-a85490b25e21")
+    @objid ("19c65487-3ebc-4fae-ad89-7588f07de3da")
     public void setDeviceBroker_Attribute_controlServices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_CONTROLSERVICES_TAGTYPE_ELT, values);
     }
@@ -262,7 +262,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fc3efca2-011c-4e90-8f7b-d478d02b7072")
+    @objid ("77f0c88e-6623-4836-8d77-df8ffa057005")
     public void setDeviceBroker_Attribute_devices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_DEVICES_TAGTYPE_ELT, values);
     }
@@ -272,7 +272,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("90ba7649-889e-4c4d-839c-e6020c200928")
+    @objid ("477f63d5-0407-4b75-b408-7f02e1e155e2")
     public void setDeviceBroker_Attribute_isBuffered(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_ISBUFFERED_TAGTYPE_ELT, this.elt);
@@ -285,7 +285,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e4e46543-261d-49e9-abfd-1d8ea93d8ff2")
+    @objid ("1a86775a-02e1-47bf-9618-6c36a50fdc73")
     public void setDeviceBroker_Attribute_openServices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_OPENSERVICES_TAGTYPE_ELT, values);
     }
@@ -295,7 +295,7 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0a0d0f02-b7bc-472e-b30a-cb34ebef9ec3")
+    @objid ("594726f5-9a1f-41db-a763-f37619aa7090")
     public void setDeviceBroker_Attribute_readServices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_READSERVICES_TAGTYPE_ELT, values);
     }
@@ -305,52 +305,52 @@ public class DeviceBrokerAttribute extends SwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("db3184b1-bf7b-4bce-8960-340f78c4f41d")
+    @objid ("325b76c2-a2d3-4b75-8a23-5b01a7c68eeb")
     public void setDeviceBroker_Attribute_writeServices(final List<String> values) {
         this.elt.putTagValues(DeviceBrokerAttribute.MdaTypes.DEVICEBROKER_ATTRIBUTE_WRITESERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("0c4ad897-5f8e-4c20-9d73-970cec033346")
+    @objid ("c60f5f00-dac5-41ad-a0b4-9c02f6a5efba")
     protected DeviceBrokerAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("6a3cf3ec-cb65-4db4-b877-7befb1519ea2")
     public static final class MdaTypes {
-        @objid ("882d476e-3948-4efd-bb6d-3e1123fc1388")
+        @objid ("e968e21c-fe6d-4752-a660-73a35b4dbbdc")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("666aa3eb-6f27-40e3-88af-7f47b9d6405e")
+        @objid ("a60aee56-3214-42e9-abe5-a65bd9103f91")
         public static TagType DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY_TAGTYPE_ELT;
 
-        @objid ("cb399398-cbab-42d5-b740-a5bf280e7387")
+        @objid ("0e3e4077-d5f3-42b2-b2ac-fd022b5185f2")
         public static TagType DEVICEBROKER_ATTRIBUTE_ISBUFFERED_TAGTYPE_ELT;
 
-        @objid ("7177832c-3056-4d45-8ae3-caf5089dde8a")
+        @objid ("3cd7caac-f604-4acb-953b-84c532dcb6fc")
         public static TagType DEVICEBROKER_ATTRIBUTE_DEVICES_TAGTYPE_ELT;
 
-        @objid ("3144bfe4-0937-4c0d-8995-2c27c90d868c")
+        @objid ("76f90bb5-8dfa-4ef7-b0db-1476f7cc681e")
         public static TagType DEVICEBROKER_ATTRIBUTE_CLOSESERVICES_TAGTYPE_ELT;
 
-        @objid ("366166c8-04b7-4b12-9393-3ad07917d765")
+        @objid ("1f57ab1c-8e45-452e-9ed1-eb5be19bb99f")
         public static TagType DEVICEBROKER_ATTRIBUTE_CONTROLSERVICES_TAGTYPE_ELT;
 
-        @objid ("5f9ce8ea-5fa5-4c29-b8b1-a6f4716bf32a")
+        @objid ("c2c54b71-84c3-4f07-808f-dd6de16f4f0b")
         public static TagType DEVICEBROKER_ATTRIBUTE_OPENSERVICES_TAGTYPE_ELT;
 
-        @objid ("9e50e3f7-f955-48ba-b861-bc5f4c09fbb4")
+        @objid ("f20e31b9-ec32-4055-98e0-1ca231ad7221")
         public static TagType DEVICEBROKER_ATTRIBUTE_READSERVICES_TAGTYPE_ELT;
 
-        @objid ("d78fb490-42a6-4e9e-bcea-feec026d76f5")
+        @objid ("ac9e383d-4a46-45aa-8424-c239378a18bc")
         public static TagType DEVICEBROKER_ATTRIBUTE_WRITESERVICES_TAGTYPE_ELT;
 
-        @objid ("a7768bd8-60ac-4474-868e-329ab958a722")
+        @objid ("8d796b6b-4a71-43a5-a1b7-82e9bf00b6ba")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c21645e9-7f96-43aa-9cd5-4588a98dc954")
+        @objid ("9dd0da62-2e76-430e-ad12-43c8f499e05b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("910c974f-2dd2-40eb-a5a1-7e06f7d4d724")
+        @objid ("1886880f-823c-4210-9d74-6ec8666ef233")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01fb5c38-0ccf-11df-8525-001302895b2b");
             DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0d74becd-172e-11df-b92a-0014222a9f79");

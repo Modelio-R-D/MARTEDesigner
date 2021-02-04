@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_gqam.standard.association;
 
@@ -35,24 +35,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c465fdb0-101f-4e95-8696-7abb298c6f23")
 public class GaCommChannelAssociation extends SchedulableResourceAssociation {
-    @objid ("85e6832c-43da-4255-aafa-f76aaf6e1dd4")
+    @objid ("91053aa7-55f5-4d0d-9e10-3cbd514e952a")
     public static final String STEREOTYPE_NAME = "GaCommChannel_Association";
 
-    @objid ("a474b601-b2fa-407d-9301-fd327e6e9b05")
+    @objid ("aa25d62a-afaa-47c7-9dc6-22529dac7950")
     public static final String GACOMMCHANNEL_ASSOCIATION_PACKETSIZE_TAGTYPE = "GaCommChannel_Association_packetSize";
 
-    @objid ("74d2c8c4-1311-44d9-9a78-084ad177645e")
+    @objid ("cbfe2944-7742-4c55-80bf-5637a2dd496e")
     public static final String GACOMMCHANNEL_ASSOCIATION_UTILIZATION_TAGTYPE = "GaCommChannel_Association_utilization";
 
     /**
-     * Tells whether a {@link GaCommChannelAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << GaCommChannel_Association >>. 
+     * Tells whether a {@link GaCommChannelAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << GaCommChannel_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("fa7c8e81-3e97-4994-950a-a3fc8ef571e4")
+    @objid ("210f54d7-9281-4647-b77f-ed8f5b0fd307")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GaCommChannelAssociation.STEREOTYPE_NAME));
     }
@@ -62,21 +62,21 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * 
      * @return a {@link GaCommChannelAssociation} proxy on the created {@link Association}.
      */
-    @objid ("5bb0e626-9eb8-47e7-950c-14c7005dde8a")
+    @objid ("d4481ba1-03c7-4b72-acee-0409b48909ba")
     public static GaCommChannelAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GaCommChannelAssociation.STEREOTYPE_NAME);
         return GaCommChannelAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link GaCommChannelAssociation} proxy from a {@link Association} stereotyped << GaCommChannel_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link GaCommChannelAssociation} proxy from a {@link Association} stereotyped << GaCommChannel_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link GaCommChannelAssociation} proxy or <i>null</i>.
      */
-    @objid ("6f8283b0-3f74-443d-b650-2429c93c1d7e")
+    @objid ("9fda8651-1905-4a33-bb70-bc7432270280")
     public static GaCommChannelAssociation instantiate(final Association obj) {
         return GaCommChannelAssociation.canInstantiate(obj) ? new GaCommChannelAssociation(obj) : null;
     }
@@ -89,7 +89,7 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * @return a {@link GaCommChannelAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("181279fc-5cec-46d3-8f4f-36845ad736d7")
+    @objid ("c92c1367-4143-45dc-a2e1-e8322c1169b7")
     public static GaCommChannelAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (GaCommChannelAssociation.canInstantiate(obj))
         	return new GaCommChannelAssociation(obj);
@@ -97,7 +97,7 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
         	throw new IllegalArgumentException("GaCommChannelAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2da295d4-afe5-4418-9b67-554dca41309b")
+    @objid ("475cd772-85bd-4cf7-94f9-c36659f371bd")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -117,7 +117,7 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("cf2fe06d-c75d-4550-a548-f87ca6b1afff")
+    @objid ("f201b3e9-83f3-4f5c-9f52-e447465a1937")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -128,7 +128,7 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bee8a311-2a3b-4070-9c3b-a8fc10e09a40")
+    @objid ("9f44884a-54a4-4239-b2cc-302f605e76de")
     public String getGaCommChannel_Association_packetSize() {
         return this.elt.getTagValue(GaCommChannelAssociation.MdaTypes.GACOMMCHANNEL_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -138,12 +138,12 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("893e1eec-dcb7-4534-91c9-f30bf66d1bec")
+    @objid ("36b3def8-9731-47d6-8920-a754fa5ff130")
     public List<String> getGaCommChannel_Association_utilization() {
         return this.elt.getTagValues(GaCommChannelAssociation.MdaTypes.GACOMMCHANNEL_ASSOCIATION_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("8791653c-6b3f-4ee0-a994-21fd5da62fca")
+    @objid ("18deae3e-901e-4fcc-9029-f72a9d0e7320")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -154,7 +154,7 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("45fbb2d5-ecb6-4cf2-b43a-5e0c37c0c092")
+    @objid ("85af8e8d-6fdc-4344-b607-672885f41994")
     public void setGaCommChannel_Association_packetSize(final String value) {
         this.elt.putTagValue(GaCommChannelAssociation.MdaTypes.GACOMMCHANNEL_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT, value);
     }
@@ -164,34 +164,34 @@ public class GaCommChannelAssociation extends SchedulableResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("34478a87-3853-479c-9a42-cb928770dc87")
+    @objid ("ac01d6c0-37a3-42ad-94fe-99bb1de852bd")
     public void setGaCommChannel_Association_utilization(final List<String> values) {
         this.elt.putTagValues(GaCommChannelAssociation.MdaTypes.GACOMMCHANNEL_ASSOCIATION_UTILIZATION_TAGTYPE_ELT, values);
     }
 
-    @objid ("f72c3bea-3dda-4cbf-bae0-ca08b5183a33")
+    @objid ("f49c4946-351e-456a-9b68-6e9000e3731e")
     protected GaCommChannelAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("9f7359ed-0273-40bc-bb9d-2e10517dfc9c")
     public static final class MdaTypes {
-        @objid ("660b4114-df55-4e2b-9715-19a98a1690c4")
+        @objid ("b1a1f223-2904-44a6-97d1-5a62f549302b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("1fed911a-6db6-4747-9bb1-753b6599a76a")
+        @objid ("cf500853-97fd-42aa-99b0-97409091f602")
         public static TagType GACOMMCHANNEL_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("a0b998b8-e251-42a6-9473-a460291c9b17")
+        @objid ("678f2ac3-2f53-4d78-bd25-db03ecd48522")
         public static TagType GACOMMCHANNEL_ASSOCIATION_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("4354eceb-7365-4efc-b38c-b2a48faf2462")
+        @objid ("96394701-b53f-40d3-a309-64550407ee76")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("d081005c-0545-4171-98c4-9594c4f31fac")
+        @objid ("f63d3260-768a-4338-8ad9-db3ef04d5bce")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("cd813e27-cf55-4f55-8d2e-31878931af88")
+        @objid ("2b442bbc-8f5e-4567-b487-a7e35b79bc17")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "eda7c7ca-149e-11df-9d54-0014222a9f79");
             GACOMMCHANNEL_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "eda7c7cb-149e-11df-9d54-0014222a9f79");

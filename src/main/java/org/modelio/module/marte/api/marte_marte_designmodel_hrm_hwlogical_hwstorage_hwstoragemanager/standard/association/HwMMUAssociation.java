@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwstoragemanager.standard.association;
 
@@ -34,33 +34,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f5bf282e-d63c-4f4b-b50d-db2a28526888")
 public class HwMMUAssociation extends HwStorageManagerAssociation {
-    @objid ("b441448a-157b-4bef-b0cd-71756fd3087d")
+    @objid ("5207d065-5d93-4bc6-8b9d-dea09aa0f3a5")
     public static final String STEREOTYPE_NAME = "HwMMU_Association";
 
-    @objid ("482601c4-068d-47ac-9d85-e4ff040407ec")
+    @objid ("93efc589-0f56-4522-92d8-73c685d9237b")
     public static final String HWMMU_ASSOCIATION_MEMORYPROTECTION_TAGTYPE = "HwMMU_Association_memoryProtection";
 
-    @objid ("4fea1b99-fca4-4eae-b764-635abb786f18")
+    @objid ("0e70150f-4977-4e8d-b6b3-6d7e5c1e39aa")
     public static final String HWMMU_ASSOCIATION_NBENTRIES_TAGTYPE = "HwMMU_Association_nbEntries";
 
-    @objid ("15d3d5f5-8d26-4bfe-8b3b-905b6b7fbd18")
+    @objid ("06fc988e-2122-438d-9ec2-a0fe25683023")
     public static final String HWMMU_ASSOCIATION_OWNEDTLBS_TAGTYPE = "HwMMU_Association_ownedTLBs";
 
-    @objid ("8df5f1ec-4e88-4972-b8cd-030f49fc9830")
+    @objid ("38d9b608-4197-4397-ae98-f716f7f8aab2")
     public static final String HWMMU_ASSOCIATION_PHYSICALADDRSPACE_TAGTYPE = "HwMMU_Association_physicalAddrSpace";
 
-    @objid ("37aa942c-3536-4e61-860d-aa68d2782808")
+    @objid ("2d18258d-b950-4cea-b383-74fcd47f9d35")
     public static final String HWMMU_ASSOCIATION_VIRTUALADDRSPACE_TAGTYPE = "HwMMU_Association_virtualAddrSpace";
 
     /**
-     * Tells whether a {@link HwMMUAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwMMU_Association >>. 
+     * Tells whether a {@link HwMMUAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwMMU_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("85121825-b68e-42c0-b093-efa554e7b67e")
+    @objid ("cf2a6855-87fc-45e3-b701-51ab257b6730")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwMMUAssociation.STEREOTYPE_NAME));
     }
@@ -70,21 +70,21 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * 
      * @return a {@link HwMMUAssociation} proxy on the created {@link Association}.
      */
-    @objid ("39685b18-3022-4e2a-be2a-9d7c2705f162")
+    @objid ("e163d1ae-d81e-4c40-b1e9-bcf629c677bf")
     public static HwMMUAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwMMUAssociation.STEREOTYPE_NAME);
         return HwMMUAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwMMUAssociation} proxy from a {@link Association} stereotyped << HwMMU_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwMMUAssociation} proxy from a {@link Association} stereotyped << HwMMU_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link HwMMUAssociation} proxy or <i>null</i>.
      */
-    @objid ("1fceb2c6-1860-4958-b460-7422b2e6829e")
+    @objid ("2aadee8b-4cdd-4eef-b3ca-525b108e3198")
     public static HwMMUAssociation instantiate(final Association obj) {
         return HwMMUAssociation.canInstantiate(obj) ? new HwMMUAssociation(obj) : null;
     }
@@ -97,7 +97,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * @return a {@link HwMMUAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("479e50a0-ead9-4361-bae4-dc7ff7e1a7f9")
+    @objid ("3fd2c0b5-5a94-4911-9399-10fc4911c94a")
     public static HwMMUAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (HwMMUAssociation.canInstantiate(obj))
         	return new HwMMUAssociation(obj);
@@ -105,7 +105,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
         	throw new IllegalArgumentException("HwMMUAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b9eb5611-51b9-4bd7-95ad-707da8c6798b")
+    @objid ("5cc816cd-ab4f-4fdc-af3c-3dc4f5d07d44")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("9f8701a9-cb1d-4f39-9c72-a676fe6d2119")
+    @objid ("84166e2c-e0a9-4241-a094-0ffeaea22cb0")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -136,7 +136,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f606448a-c6fa-4fea-8102-3725188b98f4")
+    @objid ("7f153caa-1ec8-4f2e-a4cc-e3fade686d93")
     public String getHwMMU_Association_nbEntries() {
         return this.elt.getTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_NBENTRIES_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("a3d0873c-bd31-442d-8fbb-6cb3eac46d8b")
+    @objid ("baee1f74-cbd7-4825-ba1c-de92cfbc4b28")
     public List<String> getHwMMU_Association_ownedTLBs() {
         return this.elt.getTagValues(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_OWNEDTLBS_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a525c2e9-4f7f-419a-80b2-c7cde2258c10")
+    @objid ("0339b532-132d-428e-b096-f44a02040e58")
     public String getHwMMU_Association_physicalAddrSpace() {
         return this.elt.getTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_PHYSICALADDRSPACE_TAGTYPE_ELT);
     }
@@ -166,12 +166,12 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("82952ee9-7fc8-42ee-b850-42c4cb1acd86")
+    @objid ("e06b8550-fdad-4c77-9325-c501e974f8d2")
     public String getHwMMU_Association_virtualAddrSpace() {
         return this.elt.getTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_VIRTUALADDRSPACE_TAGTYPE_ELT);
     }
 
-    @objid ("c8400804-8e54-4d12-a477-ee74543cd037")
+    @objid ("e0c6f7e2-31a4-46b1-9597-d56e72b48234")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -182,7 +182,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e24f85ad-6260-48f6-b828-3a90219a78e5")
+    @objid ("09205546-fee3-4b89-8134-0274814ea43e")
     public boolean isHwMMU_Association_memoryProtection() {
         return this.elt.isTagged(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_MEMORYPROTECTION_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fc106a5b-a4d0-41d0-a43c-b9ed7a714c2f")
+    @objid ("b71d8b4f-401e-4ae3-b3fa-c2ec83927a50")
     public void setHwMMU_Association_memoryProtection(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_MEMORYPROTECTION_TAGTYPE_ELT, this.elt);
@@ -205,7 +205,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("49668e2c-ee11-47d4-89d7-ad5ad27b6173")
+    @objid ("2739e43b-b0fe-4f84-924a-e612b4ded9ff")
     public void setHwMMU_Association_nbEntries(final String value) {
         this.elt.putTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_NBENTRIES_TAGTYPE_ELT, value);
     }
@@ -215,7 +215,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("35b97da2-2e79-4fb3-9a8f-25674290fb11")
+    @objid ("7f6f81a9-d954-46d5-99ab-b11154f97d43")
     public void setHwMMU_Association_ownedTLBs(final List<String> values) {
         this.elt.putTagValues(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_OWNEDTLBS_TAGTYPE_ELT, values);
     }
@@ -225,7 +225,7 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e8eb698a-046d-4441-b08c-a0a38d762db9")
+    @objid ("649d9699-ef18-4c9c-a060-0012ea793060")
     public void setHwMMU_Association_physicalAddrSpace(final String value) {
         this.elt.putTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_PHYSICALADDRSPACE_TAGTYPE_ELT, value);
     }
@@ -235,43 +235,43 @@ public class HwMMUAssociation extends HwStorageManagerAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e58ba227-3035-41fd-b3da-d8ebb4f9f8f8")
+    @objid ("b1cd7916-259a-41e0-b998-0c3f63b0af1f")
     public void setHwMMU_Association_virtualAddrSpace(final String value) {
         this.elt.putTagValue(HwMMUAssociation.MdaTypes.HWMMU_ASSOCIATION_VIRTUALADDRSPACE_TAGTYPE_ELT, value);
     }
 
-    @objid ("c1f190ad-594e-4f32-aae3-e786999e18d7")
+    @objid ("f4b9f4ef-038e-407f-af69-c437d8de4e58")
     protected HwMMUAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("356fe071-11f7-4d60-b3dd-34ad868e5064")
     public static final class MdaTypes {
-        @objid ("14dcb658-ab32-4124-922b-0fef72d32bff")
+        @objid ("cfeb0f78-4e76-4f7c-b11e-2d9a8e957b75")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("72989c82-38a2-48bb-aad6-a47b78d1ea73")
+        @objid ("cb36de3c-c563-4504-a2a3-557adc60fe33")
         public static TagType HWMMU_ASSOCIATION_VIRTUALADDRSPACE_TAGTYPE_ELT;
 
-        @objid ("e440649c-132d-46c3-a8f9-7b06a880a980")
+        @objid ("f4103e80-a4ee-4880-b3bd-a5569c278bf5")
         public static TagType HWMMU_ASSOCIATION_PHYSICALADDRSPACE_TAGTYPE_ELT;
 
-        @objid ("fc5c07ba-d655-4470-bb3b-5a0900ef2791")
+        @objid ("3522d734-9402-424c-bf35-67d84b9005cc")
         public static TagType HWMMU_ASSOCIATION_NBENTRIES_TAGTYPE_ELT;
 
-        @objid ("36599a5c-9496-4e41-a14d-d3a713a3d97c")
+        @objid ("e256fecb-9a7f-4a27-9c02-1283b59412d6")
         public static TagType HWMMU_ASSOCIATION_OWNEDTLBS_TAGTYPE_ELT;
 
-        @objid ("d1e3e3bd-8ac8-44be-8d88-216eb186b6b7")
+        @objid ("3a2ffbe3-6f8f-4b23-bce6-a58a4e5b2158")
         public static TagType HWMMU_ASSOCIATION_MEMORYPROTECTION_TAGTYPE_ELT;
 
-        @objid ("b2cd926d-a23b-4004-91ae-02e3d6b91a2f")
+        @objid ("6ad3b45f-acd3-4eaa-928a-5cbdb0f7c2f9")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("236b29e2-85be-44f1-be41-a42b20931aa2")
+        @objid ("7e650a6f-abd9-48e6-b7b3-a6a9f5fa5b12")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d329d77c-7503-4d8a-8ad7-9179aa0f62e9")
+        @objid ("8658d617-e50c-4056-befa-23e404ed9931")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "47e6404c-10b3-11df-81d9-0014222a9f79");
             HWMMU_ASSOCIATION_VIRTUALADDRSPACE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "47e6404d-10b3-11df-81d9-0014222a9f79");

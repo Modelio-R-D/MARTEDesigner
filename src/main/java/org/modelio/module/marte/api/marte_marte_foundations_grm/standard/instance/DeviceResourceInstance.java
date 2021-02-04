@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.instance;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("6544457c-0805-4a0d-9372-758d7cea16a1")
 public class DeviceResourceInstance extends ProcessingResourceInstance {
-    @objid ("dd31e980-5729-4380-ac25-3199da7b1d06")
+    @objid ("baee89c5-2f6a-4829-b923-52a48dcb6ff7")
     public static final String STEREOTYPE_NAME = "DeviceResource_Instance";
 
     /**
-     * Tells whether a {@link DeviceResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << DeviceResource_Instance >>. 
+     * Tells whether a {@link DeviceResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << DeviceResource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("13212263-c328-4c3b-a515-8bafbf70c76d")
+    @objid ("da7c71c1-8547-46ff-ac04-8e36c52f103a")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceInstance.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class DeviceResourceInstance extends ProcessingResourceInstance {
      * 
      * @return a {@link DeviceResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("7c1dda79-0fe6-492e-a5df-44016f78236f")
+    @objid ("bb7e11e6-38a2-47a4-a6d0-de224b16530d")
     public static DeviceResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceInstance.STEREOTYPE_NAME);
         return DeviceResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link DeviceResourceInstance} proxy from a {@link Instance} stereotyped << DeviceResource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link DeviceResourceInstance} proxy from a {@link Instance} stereotyped << DeviceResource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link DeviceResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("894d43bd-4693-4807-8583-0d177e1e033f")
+    @objid ("5411a00d-486c-49ee-87ac-89f8bddfde53")
     public static DeviceResourceInstance instantiate(final Instance obj) {
         return DeviceResourceInstance.canInstantiate(obj) ? new DeviceResourceInstance(obj) : null;
     }
@@ -81,7 +81,7 @@ public class DeviceResourceInstance extends ProcessingResourceInstance {
      * @return a {@link DeviceResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4d28647f-1bc4-46a5-a2e8-59a83b74fb0f")
+    @objid ("5a5cd4b8-5443-405d-886a-bbd37f4161d8")
     public static DeviceResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (DeviceResourceInstance.canInstantiate(obj))
         	return new DeviceResourceInstance(obj);
@@ -89,7 +89,7 @@ public class DeviceResourceInstance extends ProcessingResourceInstance {
         	throw new IllegalArgumentException("DeviceResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("abd5dadc-c565-40e8-b712-1cc76a108399")
+    @objid ("5eb6d38a-6011-4692-9253-cefd94b0d677")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class DeviceResourceInstance extends ProcessingResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("6d998d49-c318-47f6-bce1-086576ff88a8")
+    @objid ("afd22c63-c89e-4ee1-92da-f1c8ac9a1682")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
     }
 
-    @objid ("58fcebf7-7261-43dc-9d44-d5348429983c")
+    @objid ("a2428201-3e50-4e55-942d-f0550fa81bc8")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("2ee3970a-7fc9-4fe1-9c8a-46d26749b145")
+    @objid ("16db1457-52c5-4727-93d3-9c65bafa4b93")
     protected DeviceResourceInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("b9d3e7db-d5a2-473e-9496-31e577e3574e")
     public static final class MdaTypes {
-        @objid ("48d6f87d-29fa-42bf-a45e-3a48aeb3cfec")
+        @objid ("5a537f72-cd02-4e4b-bf89-2a2e8eebaa15")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("573fd4e0-2488-43cf-b255-df51d525e488")
+        @objid ("bc5b2db8-c120-435a-af70-1b16c6bce3c5")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("7be1a7cd-049c-4af5-b581-c6973120e44f")
+        @objid ("f4d66b23-1e56-4bdc-a49e-968ec3b59e95")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("eb4a2043-6e7e-445c-a9da-23263a3a20a2")
+        @objid ("e04582fb-6eaf-4bc3-929e-eb6c4cc888ea")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84db-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

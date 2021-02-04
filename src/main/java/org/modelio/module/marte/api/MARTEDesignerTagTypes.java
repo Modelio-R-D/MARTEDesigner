@@ -2,8331 +2,8331 @@ package org.modelio.module.marte.api;
 
 import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
-@objid ("431c69a8-14d8-4f0d-97e3-beccec44882e")
+@objid ("a2d2c513-e4cb-4ecb-bee9-797002a274fa")
 public interface MARTEDesignerTagTypes {
-    @objid ("275c7e5c-9b5a-48ee-ae27-2f5dc6729353")
+    @objid ("10631df1-75e5-4df1-bc77-512bb81956fb")
     public static final String ACQUIRE_BEHAVIOR_ACQUIRE_BEHAVIOR_ISBLOCKING = "Acquire_Behavior_isBlocking";
 
-    @objid ("ebb176d5-4474-467a-bfc5-92528ccb9c4f")
+    @objid ("9bb52822-96f3-4abf-a537-d7770a1debde")
     public static final String ACQUIRE_COLLABORATION_ACQUIRE_COLLABORATION_ISBLOCKING = "Acquire_Collaboration_isBlocking";
 
-    @objid ("4837341b-a14a-4b16-aeb7-15a6b9b83116")
+    @objid ("c416a0d4-03e9-4584-b5db-c873135e0fa1")
     public static final String ACQUIRE_COLLABORATIONUSE_ACQUIRE_COLLABORATIONUSE_ISBLOCKING = "Acquire_CollaborationUse_isBlocking";
 
-    @objid ("fd4e5090-61d0-4919-9310-999f5fc604ed")
+    @objid ("7272c53e-62f6-40da-9e98-e96291610b2f")
     public static final String ACQUIRE_EXECUTIONSPECIFICATION_ACQUIRE_EXECUTIONSPECIFICATION_ISBLOCKING = "Acquire_ExecutionSpecification_isBlocking";
 
-    @objid ("ff1e8587-89cb-4e3f-9ed7-2045196bcaff")
+    @objid ("9e930e3a-8f03-43bb-8f14-c22a58a51e6c")
     public static final String ACQUIRE_OPERATION_ACQUIRE_OPERATION_ISBLOCKING = "Acquire_Operation_isBlocking";
 
-    @objid ("961a13be-2247-42e6-a574-10d28280116e")
+    @objid ("eb8d6595-74ad-42c1-80d0-2e3a47c3fb9f")
     public static final String COMMUNICATIONENDPOINT_ASSOCIATION_COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE = "CommunicationEndPoint_Association_packetSize";
 
-    @objid ("d6682cdd-61a5-41ce-8d09-b14d265c85fc")
+    @objid ("6d70a302-3bae-4b81-b56a-a62fced90fb8")
     public static final String COMMUNICATIONENDPOINT_ASSOCIATIONEND_COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE = "CommunicationEndPoint_AssociationEnd_packetSize";
 
-    @objid ("cccf80c1-7e7f-41ff-b886-4fbe892aab59")
+    @objid ("05f202cd-053b-4a45-ad2a-01337521144f")
     public static final String COMMUNICATIONENDPOINT_ATTRIBUTE_COMMUNICATIONENDPOINT_ATTRIBUTE_PACKETSIZE = "CommunicationEndPoint_Attribute_packetSize";
 
-    @objid ("afd05f64-c3b9-4154-b45d-c1297a7cd859")
+    @objid ("8635bd73-f742-4db6-8222-a60f1acc1b84")
     public static final String COMMUNICATIONENDPOINT_CLASSIFIER_COMMUNICATIONENDPOINT_CLASSIFIER_PACKETSIZE = "CommunicationEndPoint_Classifier_packetSize";
 
-    @objid ("d51756ef-bb71-4e3a-92f7-a25d0898d0d6")
+    @objid ("f44e550a-10e0-4010-8169-0f835cbd853f")
     public static final String COMMUNICATIONENDPOINT_INSTANCE_COMMUNICATIONENDPOINT_INSTANCE_PACKETSIZE = "CommunicationEndPoint_Instance_packetSize";
 
-    @objid ("43758db4-b273-44fe-a37f-df222baacaae")
+    @objid ("71a680d9-87fd-4e7a-9d3c-41f40fe79a05")
     public static final String COMMUNICATIONENDPOINT_LIFELINE_COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE = "CommunicationEndPoint_Lifeline_packetSize";
 
-    @objid ("711870d7-516d-4149-9b4a-998c8c24b401")
+    @objid ("a1120ec7-7d41-472c-915d-03da65a1af10")
     public static final String COMMUNICATIONENDPOINT_LINK_COMMUNICATIONENDPOINT_LINK_PACKETSIZE = "CommunicationEndPoint_Link_packetSize";
 
-    @objid ("ac7b730b-e382-495b-9e15-dbe7210e2a71")
+    @objid ("a0bb515b-a3ed-47cd-ae36-bc24faf440ff")
     public static final String COMMUNICATIONENDPOINT_LINKEND_COMMUNICATIONENDPOINT_LINKEND_PACKETSIZE = "CommunicationEndPoint_LinkEnd_packetSize";
 
-    @objid ("a688f8be-3df4-4585-8009-fb506cdf0a24")
+    @objid ("1470278f-8a3f-4d5e-ba84-a4995c2cb219")
     public static final String COMMUNICATIONENDPOINT_PARAMETER_COMMUNICATIONENDPOINT_PARAMETER_PACKETSIZE = "CommunicationEndPoint_Parameter_packetSize";
 
-    @objid ("9e7be50f-46a1-4734-9c20-fcb406fbf1da")
+    @objid ("dc3795d4-cb36-46b0-9d90-8dc818458f5b")
     public static final String COMMUNICATIONMEDIA_ASSOCIATION_COMMUNICATIONMEDIA_ASSOCIATION_ELEMENTSIZE = "CommunicationMedia_Association_elementSize";
 
-    @objid ("37b5d28d-6c4f-4a28-a14c-efdb93ef9b37")
+    @objid ("bf728085-2da1-4622-acfa-a1e4e2779325")
     public static final String COMMUNICATIONMEDIA_ASSOCIATION_COMMUNICATIONMEDIA_ASSOCIATION_TRANSMMODE = "CommunicationMedia_Association_transmMode";
 
-    @objid ("34b8ed51-df1a-46a1-9f75-6f41f802c55b")
+    @objid ("3e01ea66-575e-4ca2-891e-4aba52dd06d6")
     public static final String COMMUNICATIONMEDIA_ASSOCIATION_COMMUNICATIONMEDIA_ASSOCIATION_BLOCKT = "CommunicationMedia_Association_blockT";
 
-    @objid ("17bc9b61-5982-41c0-9f9c-876524cfa421")
+    @objid ("b6984231-938d-4dde-be4c-38b12d5380df")
     public static final String COMMUNICATIONMEDIA_ASSOCIATION_COMMUNICATIONMEDIA_ASSOCIATION_PACKETT = "CommunicationMedia_Association_packetT";
 
-    @objid ("9d5bc371-8541-4f7f-a0bd-6dd64a2e837e")
+    @objid ("43b57232-679d-4492-bc00-835a2263d498")
     public static final String COMMUNICATIONMEDIA_ASSOCIATION_COMMUNICATIONMEDIA_ASSOCIATION_CAPACITY = "CommunicationMedia_Association_capacity";
 
-    @objid ("c43632c6-e781-416c-9738-2950f02c788b")
+    @objid ("fc642ec1-0ccf-46e2-b600-7b7f7209dfbc")
     public static final String COMMUNICATIONMEDIA_ASSOCIATIONEND_COMMUNICATIONMEDIA_ASSOCIATIONEND_ELEMENTSIZE = "CommunicationMedia_AssociationEnd_elementSize";
 
-    @objid ("ffcd0cd2-08b6-431d-86f7-fdfb1928f51d")
+    @objid ("88139eda-29c7-4695-b8e9-4e6d04a5c603")
     public static final String COMMUNICATIONMEDIA_ASSOCIATIONEND_COMMUNICATIONMEDIA_ASSOCIATIONEND_TRANSMMODE = "CommunicationMedia_AssociationEnd_transmMode";
 
-    @objid ("4ff9337c-9e10-472b-92ed-1bb11d496031")
+    @objid ("0bb6e740-5711-482e-aca7-9291f68f60e7")
     public static final String COMMUNICATIONMEDIA_ASSOCIATIONEND_COMMUNICATIONMEDIA_ASSOCIATIONEND_BLOCKT = "CommunicationMedia_AssociationEnd_blockT";
 
-    @objid ("4d6e4af9-3b5b-48d0-8666-3341244ca465")
+    @objid ("2c71713d-9bfb-4f40-947b-546c3d3f5c41")
     public static final String COMMUNICATIONMEDIA_ASSOCIATIONEND_COMMUNICATIONMEDIA_ASSOCIATIONEND_PACKETT = "CommunicationMedia_AssociationEnd_packetT";
 
-    @objid ("8000c159-6e8b-4a81-af31-d3ae5b2c3a7a")
+    @objid ("2619e504-ae4a-461f-97ef-b20366370305")
     public static final String COMMUNICATIONMEDIA_ASSOCIATIONEND_COMMUNICATIONMEDIA_ASSOCIATIONEND_CAPACITY = "CommunicationMedia_AssociationEnd_capacity";
 
-    @objid ("bda40c99-3dcb-4e33-b4fa-7f71983f4380")
+    @objid ("b8e60cf3-f249-4867-85a8-3b1da02223f3")
     public static final String COMMUNICATIONMEDIA_ATTRIBUTE_COMMUNICATIONMEDIA_ATTRIBUTE_ELEMENTSIZE = "CommunicationMedia_Attribute_elementSize";
 
-    @objid ("43604167-09bc-47ac-bb60-5841f0833c75")
+    @objid ("35b8596f-ac9d-4679-a8a7-ff520d573809")
     public static final String COMMUNICATIONMEDIA_ATTRIBUTE_COMMUNICATIONMEDIA_ATTRIBUTE_TRANSMMODE = "CommunicationMedia_Attribute_transmMode";
 
-    @objid ("10334cbd-0b5f-4343-927e-561c6bea60ac")
+    @objid ("e8f729ed-f060-434d-a648-ed54776ae541")
     public static final String COMMUNICATIONMEDIA_ATTRIBUTE_COMMUNICATIONMEDIA_ATTRIBUTE_BLOCKT = "CommunicationMedia_Attribute_blockT";
 
-    @objid ("8aed12fa-1a02-4aa9-a4fa-555916af516d")
+    @objid ("4e866c06-c471-4a7e-9ef3-7355a1ab8e9f")
     public static final String COMMUNICATIONMEDIA_ATTRIBUTE_COMMUNICATIONMEDIA_ATTRIBUTE_PACKETT = "CommunicationMedia_Attribute_packetT";
 
-    @objid ("90718a9e-c12e-4edb-b5c5-213ed756e6c7")
+    @objid ("4f6eff9a-e82f-4f71-92ec-b8a73000cf3f")
     public static final String COMMUNICATIONMEDIA_ATTRIBUTE_COMMUNICATIONMEDIA_ATTRIBUTE_CAPACITY = "CommunicationMedia_Attribute_capacity";
 
-    @objid ("736daba4-6ef3-402b-8c7e-34a9ab223bde")
+    @objid ("cee794a9-34a5-4d18-aac6-1b919578eb6e")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE = "CommunicationMedia_Classifier_elementSize";
 
-    @objid ("ac811339-aebf-4bec-947e-4d1fe96b9348")
+    @objid ("cd5a8491-2f4a-4719-abd3-059c59088d51")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_COMMUNICATIONMEDIA_CLASSIFIER_TRANSMMODE = "CommunicationMedia_Classifier_transmMode";
 
-    @objid ("228a4cf8-ee6b-444d-9d1d-d4e4efff0074")
+    @objid ("0fed438a-2298-4050-a9e6-e376308745f2")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_COMMUNICATIONMEDIA_CLASSIFIER_BLOCKT = "CommunicationMedia_Classifier_blockT";
 
-    @objid ("cc77a8d7-0185-4a8a-a7d5-c218114b9321")
+    @objid ("aba60ce7-0e7c-4f1a-b2df-1bc9124c1ce2")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_COMMUNICATIONMEDIA_CLASSIFIER_PACKETT = "CommunicationMedia_Classifier_packetT";
 
-    @objid ("6a363cb0-89ae-43ca-b9d1-75958973f914")
+    @objid ("fac69905-7a3c-4ebc-95d0-b4d97f2bc7c5")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_COMMUNICATIONMEDIA_CLASSIFIER_CAPACITY = "CommunicationMedia_Classifier_capacity";
 
-    @objid ("e2897031-0af1-480d-ae2a-c7c5679841ff")
+    @objid ("5ff4ecef-b141-4f35-b626-11d5ea6f83ba")
     public static final String COMMUNICATIONMEDIA_INSTANCE_COMMUNICATIONMEDIA_INSTANCE_ELEMENTSIZE = "CommunicationMedia_Instance_elementSize";
 
-    @objid ("a70021f7-101b-477e-85ef-70110013a615")
+    @objid ("9c202028-54a8-4f35-bec0-181658d24520")
     public static final String COMMUNICATIONMEDIA_INSTANCE_COMMUNICATIONMEDIA_INSTANCE_TRANSMMODE = "CommunicationMedia_Instance_transmMode";
 
-    @objid ("29b7688a-de81-4e40-a750-6a98349b02b9")
+    @objid ("488e813c-e85c-4479-a284-147c5d2cb20a")
     public static final String COMMUNICATIONMEDIA_INSTANCE_COMMUNICATIONMEDIA_INSTANCE_BLOCKT = "CommunicationMedia_Instance_blockT";
 
-    @objid ("e351fdeb-2488-42e1-8df0-61376626ea1b")
+    @objid ("5b543967-251e-4ea0-bb5a-056101c49886")
     public static final String COMMUNICATIONMEDIA_INSTANCE_COMMUNICATIONMEDIA_INSTANCE_PACKETT = "CommunicationMedia_Instance_packetT";
 
-    @objid ("943db5ef-b715-43bd-93b9-155722f3bd8d")
+    @objid ("846a1246-bc80-49e7-af94-a70fefc5ebba")
     public static final String COMMUNICATIONMEDIA_INSTANCE_COMMUNICATIONMEDIA_INSTANCE_CAPACITY = "CommunicationMedia_Instance_capacity";
 
-    @objid ("7a987402-f535-4f57-bde7-15b62fde8771")
+    @objid ("f39b4ef4-8bb1-40e6-ad77-c663fc074bd2")
     public static final String COMMUNICATIONMEDIA_LIFELINE_COMMUNICATIONMEDIA_LIFELINE_ELEMENTSIZE = "CommunicationMedia_Lifeline_elementSize";
 
-    @objid ("07fd1ce0-1345-44b1-8e80-1e2fc4f8bd6a")
+    @objid ("82e646c3-c769-4a11-bab5-430c175fae84")
     public static final String COMMUNICATIONMEDIA_LIFELINE_COMMUNICATIONMEDIA_LIFELINE_TRANSMMODE = "CommunicationMedia_Lifeline_transmMode";
 
-    @objid ("22a1a584-d99e-467e-879f-2481ff5347fd")
+    @objid ("82e0679b-c446-40f4-8da7-6aae28ff05e8")
     public static final String COMMUNICATIONMEDIA_LIFELINE_COMMUNICATIONMEDIA_LIFELINE_BLOCKT = "CommunicationMedia_Lifeline_blockT";
 
-    @objid ("82439450-f5c4-40c6-bc40-8859eb4282b7")
+    @objid ("9eb92d57-8eb8-4564-8da3-98238c50ed42")
     public static final String COMMUNICATIONMEDIA_LIFELINE_COMMUNICATIONMEDIA_LIFELINE_PACKETT = "CommunicationMedia_Lifeline_packetT";
 
-    @objid ("663901ff-11f8-48c4-a571-f1da9a8d9fdf")
+    @objid ("3a198e53-ca6e-4acf-8c53-50fdc62ac355")
     public static final String COMMUNICATIONMEDIA_LIFELINE_COMMUNICATIONMEDIA_LIFELINE_CAPACITY = "CommunicationMedia_Lifeline_capacity";
 
-    @objid ("957850e8-3190-4376-ba63-21a955e5439b")
+    @objid ("a060124a-8ae3-4ee5-a4be-00fff2469f43")
     public static final String COMMUNICATIONMEDIA_LINK_COMMUNICATIONMEDIA_LINK_ELEMENTSIZE = "CommunicationMedia_Link_elementSize";
 
-    @objid ("a991bd05-151a-4dbb-80a2-af5971ab676e")
+    @objid ("3fb22342-2f5e-43d2-9beb-e231f938701b")
     public static final String COMMUNICATIONMEDIA_LINK_COMMUNICATIONMEDIA_LINK_TRANSMMODE = "CommunicationMedia_Link_transmMode";
 
-    @objid ("994c8bb2-d751-4da2-b147-238c67d40e2f")
+    @objid ("1732f920-2318-4efb-9759-b0bdbb716379")
     public static final String COMMUNICATIONMEDIA_LINK_COMMUNICATIONMEDIA_LINK_BLOCKT = "CommunicationMedia_Link_blockT";
 
-    @objid ("46ad72c8-6d2d-4c60-bec2-a3223628b427")
+    @objid ("62fce8a4-8fa7-4ae2-bb38-ddadbaf82665")
     public static final String COMMUNICATIONMEDIA_LINK_COMMUNICATIONMEDIA_LINK_PACKETT = "CommunicationMedia_Link_packetT";
 
-    @objid ("a84cdd7c-b8f6-44a6-aa10-354b08931c43")
+    @objid ("d22abbc6-709c-4d2e-b1cb-a1246af7a6c1")
     public static final String COMMUNICATIONMEDIA_LINK_COMMUNICATIONMEDIA_LINK_CAPACITY = "CommunicationMedia_Link_capacity";
 
-    @objid ("23203890-e316-455c-b445-bfe0359426f2")
+    @objid ("064a79f8-6b3f-4460-b519-a1f88457c045")
     public static final String COMMUNICATIONMEDIA_PARAMETER_COMMUNICATIONMEDIA_PARAMETER_ELEMENTSIZE = "CommunicationMedia_Parameter_elementSize";
 
-    @objid ("bad767f0-401c-4cee-a812-cb5e1cbc1b7a")
+    @objid ("18fd4069-6f52-4dfd-916b-1abdbda69b30")
     public static final String COMMUNICATIONMEDIA_PARAMETER_COMMUNICATIONMEDIA_PARAMETER_TRANSMMODE = "CommunicationMedia_Parameter_transmMode";
 
-    @objid ("f01c15b9-58cb-49b3-a75c-3326e91a9c03")
+    @objid ("49d8eea9-27f1-460f-8505-cf61d2ba35e1")
     public static final String COMMUNICATIONMEDIA_PARAMETER_COMMUNICATIONMEDIA_PARAMETER_BLOCKT = "CommunicationMedia_Parameter_blockT";
 
-    @objid ("b7658f18-d9b7-49da-be09-73e252e4151c")
+    @objid ("7ac0e928-d78c-4468-a81c-ea2ee27e0d57")
     public static final String COMMUNICATIONMEDIA_PARAMETER_COMMUNICATIONMEDIA_PARAMETER_PACKETT = "CommunicationMedia_Parameter_packetT";
 
-    @objid ("2da1e7fa-7186-4d55-abe6-116fea63a53f")
+    @objid ("9a8848ac-46af-4c75-9ea8-b11bbdbaa6bd")
     public static final String COMMUNICATIONMEDIA_PARAMETER_COMMUNICATIONMEDIA_PARAMETER_CAPACITY = "CommunicationMedia_Parameter_capacity";
 
-    @objid ("da3f2594-8f6e-41b8-bc15-19d001aa411a")
+    @objid ("4fe0829c-e118-4176-a81a-ffdf89e1648c")
     public static final String GRSERVICE_BEHAVIOR_GRSERVICE_BEHAVIOR_OWNER = "GrService_Behavior_owner";
 
-    @objid ("94b700f6-6aac-4c96-b243-104978bf9441")
+    @objid ("bb6637a6-77e1-4899-a0d1-5562f2a44f79")
     public static final String GRSERVICE_COLLABORATION_GRSERVICE_COLLABORATION_OWNER = "GrService_Collaboration_owner";
 
-    @objid ("92a9bbb0-9c77-43cc-8d6f-024d355ab3c7")
+    @objid ("6dd993d6-797b-4282-82a2-093785f14efa")
     public static final String GRSERVICE_COLLABORATIONUSE_GRSERVICE_COLLABORATIONUSE_OWNER = "GrService_CollaborationUse_owner";
 
-    @objid ("4e0d92fa-af47-40d6-9f60-9fae1dbfc424")
+    @objid ("0bbe7223-381e-46c0-8df6-5ba448235079")
     public static final String GRSERVICE_EXECUTIONSPECIFICATION_GRSERVICE_EXECUTIONSPECIFICATION_OWNER = "GrService_ExecutionSpecification_owner";
 
-    @objid ("4ea9a3d7-dad7-4a91-a4a6-fce1f9dfd4d0")
+    @objid ("bb8612dd-02d3-41b6-8477-9c5b480f8a26")
     public static final String GRSERVICE_OPERATION_GRSERVICE_OPERATION_OWNER = "GrService_Operation_owner";
 
-    @objid ("f2ca1eb1-2ddd-430b-a2cb-57e0f0e566b4")
+    @objid ("54fa5d01-9172-428a-abd8-288df849de0d")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATION_MUTUALEXCLUSIONRESOURCE_ASSOCIATION_PROTECTKIND = "MutualExclusionResource_Association_protectKind";
 
-    @objid ("b3d24d94-428c-4fe9-9cdb-c123e2d0d3eb")
+    @objid ("31f1e2d1-ad32-4059-a50c-facd2c86b75a")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATION_MUTUALEXCLUSIONRESOURCE_ASSOCIATION_CEILING = "MutualExclusionResource_Association_ceiling";
 
-    @objid ("c189f6ab-a183-4ff1-9cb9-fa20592dc816")
+    @objid ("6ad0782d-febd-4207-8f2d-b508df6a5c69")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATION_MUTUALEXCLUSIONRESOURCE_ASSOCIATION_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Association_otherProtectProtocol";
 
-    @objid ("f0285fb1-862b-4139-a459-343234a5f76d")
+    @objid ("e562c003-0aee-4b86-83f2-bfaf10719385")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATION_MUTUALEXCLUSIONRESOURCE_ASSOCIATION_SCHEDULER = "MutualExclusionResource_Association_scheduler";
 
-    @objid ("bc058fb2-ee49-4159-a8c6-1e6d1a9ee76e")
+    @objid ("20df8ceb-14e3-4708-a488-005e548b793d")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_PROTECTKIND = "MutualExclusionResource_AssociationEnd_protectKind";
 
-    @objid ("2e865b13-6f69-4da2-a565-7a899d66099b")
+    @objid ("218c4f01-1aef-4f38-b0b6-4210c3449570")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_CEILING = "MutualExclusionResource_AssociationEnd_ceiling";
 
-    @objid ("eba99ac7-09e4-4963-9cd3-1e8004683740")
+    @objid ("331a6ae1-a00c-4c7e-acd8-e09d4d67efdf")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_OTHERPROTECTPROTOCOL = "MutualExclusionResource_AssociationEnd_otherProtectProtocol";
 
-    @objid ("7ac400c2-dfdb-49e7-8ae4-b4af7373bc72")
+    @objid ("2983db21-fef9-4901-bb56-f208099840cb")
     public static final String MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_MUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SCHEDULER = "MutualExclusionResource_AssociationEnd_scheduler";
 
-    @objid ("986bac5b-1152-485c-b43c-8f8eab5f7ec2")
+    @objid ("2aa44c06-fb53-4c8a-a27a-a0d3abacee28")
     public static final String MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_PROTECTKIND = "MutualExclusionResource_Attribute_protectKind";
 
-    @objid ("92872050-6bad-4fef-85a7-798378c40ea1")
+    @objid ("ec844ca0-960d-48dc-b87d-9270451c8a4e")
     public static final String MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_CEILING = "MutualExclusionResource_Attribute_ceiling";
 
-    @objid ("0cfa7c43-4e38-4299-9309-a347e5a31c80")
+    @objid ("2c24ab8a-6ce8-425a-a3b0-8dbc5ad2816b")
     public static final String MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Attribute_otherProtectProtocol";
 
-    @objid ("7b987984-4c16-492e-bb69-7bf80e81c4a5")
+    @objid ("22bae16a-c3f4-4043-8fad-07e7074f85fe")
     public static final String MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_MUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SCHEDULER = "MutualExclusionResource_Attribute_scheduler";
 
-    @objid ("43fe5821-81a4-416c-a963-5dbefe9644c9")
+    @objid ("e4ea2aae-7ba6-4f7a-b7ee-11ec3da3e9f1")
     public static final String MUTUALEXCLUSIONRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCE_CLASSIFIER_PROTECTKIND = "MutualExclusionResource_Classifier_protectKind";
 
-    @objid ("f2ada7be-ac65-4b8f-8296-cedf6215a0e4")
+    @objid ("f4fb9180-2ae4-4ee7-9af8-cf1720514424")
     public static final String MUTUALEXCLUSIONRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCE_CLASSIFIER_CEILING = "MutualExclusionResource_Classifier_ceiling";
 
-    @objid ("2586acec-a2f8-4be4-b141-31869718fe22")
+    @objid ("28016164-14b1-4966-91ca-cecb667cacb4")
     public static final String MUTUALEXCLUSIONRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCE_CLASSIFIER_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Classifier_otherProtectProtocol";
 
-    @objid ("02c7bc9e-7584-428f-89d1-eebe24bd1317")
+    @objid ("a0f74e8b-89ee-44a3-83dc-30e2e088171a")
     public static final String MUTUALEXCLUSIONRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCE_CLASSIFIER_SCHEDULER = "MutualExclusionResource_Classifier_scheduler";
 
-    @objid ("3b5c8791-f010-4a89-8e67-a67cafa9385c")
+    @objid ("7286f891-7bd7-4b8d-b42c-8257b84a0e7b")
     public static final String MUTUALEXCLUSIONRESOURCE_INSTANCE_MUTUALEXCLUSIONRESOURCE_INSTANCE_PROTECTKIND = "MutualExclusionResource_Instance_protectKind";
 
-    @objid ("f58f9101-d800-4ff1-ac25-72a65841afaa")
+    @objid ("ac82a880-f6e2-4aa9-b22d-f30de1d439c7")
     public static final String MUTUALEXCLUSIONRESOURCE_INSTANCE_MUTUALEXCLUSIONRESOURCE_INSTANCE_CEILING = "MutualExclusionResource_Instance_ceiling";
 
-    @objid ("b6615337-c59b-4c93-a91e-9a652a4edb86")
+    @objid ("74f366ac-7051-4603-bfb5-be9c02cf989a")
     public static final String MUTUALEXCLUSIONRESOURCE_INSTANCE_MUTUALEXCLUSIONRESOURCE_INSTANCE_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Instance_otherProtectProtocol";
 
-    @objid ("cf6c5e68-9eea-422f-b614-ad7e4985616f")
+    @objid ("0f97ee1b-f89a-4c63-b129-dac79fcf852f")
     public static final String MUTUALEXCLUSIONRESOURCE_INSTANCE_MUTUALEXCLUSIONRESOURCE_INSTANCE_SCHEDULER = "MutualExclusionResource_Instance_scheduler";
 
-    @objid ("d8621fea-0fc3-4062-873c-f39df8ae0583")
+    @objid ("1e844c7a-0b28-417d-ba6f-2de25e432bfe")
     public static final String MUTUALEXCLUSIONRESOURCE_LIFELINE_MUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND = "MutualExclusionResource_Lifeline_protectKind";
 
-    @objid ("74fa9bba-03fa-44c4-93db-54056fec15a4")
+    @objid ("1c1c3cfc-1493-4043-a0d4-d2f1527d190b")
     public static final String MUTUALEXCLUSIONRESOURCE_LIFELINE_MUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING = "MutualExclusionResource_Lifeline_ceiling";
 
-    @objid ("a149985c-00a6-4670-a5ab-049c829383e4")
+    @objid ("3185f245-e057-4543-97f5-946c8c0e6d3c")
     public static final String MUTUALEXCLUSIONRESOURCE_LIFELINE_MUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Lifeline_otherProtectProtocol";
 
-    @objid ("93634489-8dd6-4f32-806d-90f037340253")
+    @objid ("ec1efb46-f696-4a29-855c-9f977aa3ccd8")
     public static final String MUTUALEXCLUSIONRESOURCE_LIFELINE_MUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER = "MutualExclusionResource_Lifeline_scheduler";
 
-    @objid ("df83d87b-2983-404f-9152-c3025c1a5ed0")
+    @objid ("407385f2-30ba-4a43-b2af-ff665809ad9e")
     public static final String MUTUALEXCLUSIONRESOURCE_LINK_MUTUALEXCLUSIONRESOURCE_LINK_PROTECTKIND = "MutualExclusionResource_Link_protectKind";
 
-    @objid ("84f4a6f2-1cf1-4ead-b398-fd1baaa6f392")
+    @objid ("0352fc40-6975-41f4-97e6-f7c2e0301c1b")
     public static final String MUTUALEXCLUSIONRESOURCE_LINK_MUTUALEXCLUSIONRESOURCE_LINK_CEILING = "MutualExclusionResource_Link_ceiling";
 
-    @objid ("46ef9af6-48a8-444e-b00f-0182d65dbe43")
+    @objid ("f5b72658-a785-4936-952c-5541bb1421f5")
     public static final String MUTUALEXCLUSIONRESOURCE_LINK_MUTUALEXCLUSIONRESOURCE_LINK_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Link_otherProtectProtocol";
 
-    @objid ("31a8aefa-08a2-4264-a2f3-db3074c1adfa")
+    @objid ("432b0c41-0dec-4bda-84d2-2317d2dcfc32")
     public static final String MUTUALEXCLUSIONRESOURCE_LINK_MUTUALEXCLUSIONRESOURCE_LINK_SCHEDULER = "MutualExclusionResource_Link_scheduler";
 
-    @objid ("044b1c4f-69f8-4298-90f0-e69f27a5319b")
+    @objid ("3cd3aaa1-3743-45e5-b292-61959e910247")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND = "MutualExclusionResource_Parameter_protectKind";
 
-    @objid ("19286d4b-91b8-4a17-b244-433a2d4b3751")
+    @objid ("2047f78c-7e6a-49de-b37e-59caed8a4b86")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_MUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING = "MutualExclusionResource_Parameter_ceiling";
 
-    @objid ("be760df2-6b79-4892-96ba-35e47c37f415")
+    @objid ("5074e3fc-198b-4e04-82c0-7bba28491aa0")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_MUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL = "MutualExclusionResource_Parameter_otherProtectProtocol";
 
-    @objid ("d9cdfa80-2c0f-4567-92b0-67006fbf9407")
+    @objid ("9a6a84de-6c2b-4b27-a8da-322b4b620da7")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_MUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER = "MutualExclusionResource_Parameter_scheduler";
 
-    @objid ("d0945625-fa4f-4b0c-8e67-f8b167476573")
+    @objid ("8e05872c-f3bc-4a0c-848a-a91bf59ff00a")
     public static final String PROCESSINGRESOURCE_ASSOCIATION_PROCESSINGRESOURCE_ASSOCIATION_SPEEDFACTOR = "ProcessingResource_Association_speedFactor";
 
-    @objid ("8edce20d-8bfb-4a70-897d-53c449b729d7")
+    @objid ("913d1638-5f71-4adc-ad98-e068c588353f")
     public static final String PROCESSINGRESOURCE_ASSOCIATION_PROCESSINGRESOURCE_ASSOCIATION_MAINSCHEDULER = "ProcessingResource_Association_mainScheduler";
 
-    @objid ("cecce0bc-50c6-4c01-af4b-b6de26cdfbaa")
+    @objid ("11e7e229-95f9-4251-a2a7-10a386425a60")
     public static final String PROCESSINGRESOURCE_ASSOCIATIONEND_PROCESSINGRESOURCE_ASSOCIATIONEND_SPEEDFACTOR = "ProcessingResource_AssociationEnd_speedFactor";
 
-    @objid ("5b26dcc2-b7bc-4ea1-a628-6d06135e0e1f")
+    @objid ("48e0b703-cbd2-4ff2-b9b6-7d1c9122a485")
     public static final String PROCESSINGRESOURCE_ASSOCIATIONEND_PROCESSINGRESOURCE_ASSOCIATIONEND_MAINSCHEDULER = "ProcessingResource_AssociationEnd_mainScheduler";
 
-    @objid ("32db3561-145e-40cb-97b7-f024cdad03f5")
+    @objid ("44984c4d-4878-45fa-aac1-3e0121bd3f2b")
     public static final String PROCESSINGRESOURCE_ATTRIBUTE_PROCESSINGRESOURCE_ATTRIBUTE_SPEEDFACTOR = "ProcessingResource_Attribute_speedFactor";
 
-    @objid ("c79745da-78d5-462a-9e6f-f5ce42fb8032")
+    @objid ("682a82d9-c29a-4d3c-a861-499d8e355a4f")
     public static final String PROCESSINGRESOURCE_ATTRIBUTE_PROCESSINGRESOURCE_ATTRIBUTE_MAINSCHEDULER = "ProcessingResource_Attribute_mainScheduler";
 
-    @objid ("6c74b49d-c653-485f-9991-b1a6222883d5")
+    @objid ("6a739af1-fe74-4618-b4b6-94b454ef6ba1")
     public static final String PROCESSINGRESOURCE_CLASSIFIER_PROCESSINGRESOURCE_CLASSIFIER_SPEEDFACTOR = "ProcessingResource_Classifier_speedFactor";
 
-    @objid ("28fd8023-0df1-4acf-98ed-7af612a8b2cc")
+    @objid ("dff21114-6b29-4fe1-8b96-6bacb04ebf67")
     public static final String PROCESSINGRESOURCE_CLASSIFIER_PROCESSINGRESOURCE_CLASSIFIER_MAINSCHEDULER = "ProcessingResource_Classifier_mainScheduler";
 
-    @objid ("0ff4426d-711c-4e25-9c23-3e63bee58f94")
+    @objid ("df2770c6-fed8-4d0f-bd28-5f5234ae1b10")
     public static final String PROCESSINGRESOURCE_INSTANCE_PROCESSINGRESOURCE_INSTANCE_SPEEDFACTOR = "ProcessingResource_Instance_speedFactor";
 
-    @objid ("520b1f02-8417-4bbe-8bc4-65f06cc25ade")
+    @objid ("8aa0b849-b0d6-4ef4-8ff4-38e4e62b4f98")
     public static final String PROCESSINGRESOURCE_INSTANCE_PROCESSINGRESOURCE_INSTANCE_MAINSCHEDULER = "ProcessingResource_Instance_mainScheduler";
 
-    @objid ("276d5fc1-b8f4-42b8-8a9b-00a31c2ee79d")
+    @objid ("3646830f-e53d-4bda-8d9f-d7bf8dfaa626")
     public static final String PROCESSINGRESOURCE_LIFELINE_PROCESSINGRESOURCE_LIFELINE_SPEEDFACTOR = "ProcessingResource_Lifeline_speedFactor";
 
-    @objid ("a721ef06-8c88-43db-b2a4-712ab0f80fec")
+    @objid ("368b5f07-f3a4-4c82-b221-55b15c00c3d7")
     public static final String PROCESSINGRESOURCE_LIFELINE_PROCESSINGRESOURCE_LIFELINE_MAINSCHEDULER = "ProcessingResource_Lifeline_mainScheduler";
 
-    @objid ("8f3915a8-e084-4632-a30f-38d8deddb6c4")
+    @objid ("69846e88-9a69-464e-a61e-0115f38a9ec9")
     public static final String PROCESSINGRESOURCE_PARAMETER_PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR = "ProcessingResource_Parameter_speedFactor";
 
-    @objid ("60f5e5ae-99d4-4baa-a61a-0e2bcd871a0d")
+    @objid ("04326990-2aee-4c04-9ef0-f82440d8d698")
     public static final String PROCESSINGRESOURCE_PARAMETER_PROCESSINGRESOURCE_PARAMETER_MAINSCHEDULER = "ProcessingResource_Parameter_mainScheduler";
 
-    @objid ("888f8d86-bfa0-44d7-b75b-d6e07811d556")
+    @objid ("b69e09c4-5477-40f3-b943-b3359d49cdbc")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_EXECTIME = "ResourceUsage_ModelElement_execTime";
 
-    @objid ("afc0ef26-a232-4095-a7e3-9be0d4e85b81")
+    @objid ("7df54c53-de3d-4cde-90cc-17132c1ac5fd")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_ALLOCATEDMEMORY = "ResourceUsage_ModelElement_allocatedMemory";
 
-    @objid ("854e90ca-b5d3-47e7-80bc-d4f0d3b8db08")
+    @objid ("d1fc210b-c811-4b93-bb9c-7cd7b5704c65")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_USEDMEMORY = "ResourceUsage_ModelElement_usedMemory";
 
-    @objid ("cce6362e-cae5-4461-84fd-afb4db9b882c")
+    @objid ("7e051c1d-81fe-401a-86f6-0671489acb99")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_POWERPEAK = "ResourceUsage_ModelElement_powerPeak";
 
-    @objid ("bab71673-53e0-4db3-8b1e-deeb6afc0b97")
+    @objid ("ca405e29-8311-4110-a2af-4769588a456c")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_ENERGY = "ResourceUsage_ModelElement_energy";
 
-    @objid ("990ab830-9e5f-441e-998d-096d3810b7e3")
+    @objid ("bcaded0e-b073-49ad-a6c2-cd9b3323577e")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_SUBUSAGE = "ResourceUsage_ModelElement_subUsage";
 
-    @objid ("e38b246e-6329-40ec-8a29-e2ad7126c44c")
+    @objid ("2ec02614-f789-42ea-8283-78d8ae7e699e")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_USEDRESOURCES = "ResourceUsage_ModelElement_usedResources";
 
-    @objid ("a042ef1e-5f2c-42a3-a9f8-83c729d0f2e8")
+    @objid ("dd2c8816-0a94-4818-9891-b05603dd1dca")
     public static final String RESOURCEUSAGE_MODELELEMENT_RESOURCEUSAGE_MODELELEMENT_MSGSIZE = "ResourceUsage_ModelElement_msgSize";
 
-    @objid ("1f7e5119-4bb9-4d77-bb29-05c80383290b")
+    @objid ("d1c8b65e-5bf7-4d33-95bf-e2d18df49c92")
     public static final String RESOURCE_ASSOCIATION_RESOURCE_ASSOCIATION_RESMULT = "Resource_Association_resMult";
 
-    @objid ("b8b8597f-bd8b-4fe6-935f-43f40ebf11be")
+    @objid ("f3143201-7ef8-44de-8136-4a8879e3cea2")
     public static final String RESOURCE_ASSOCIATION_RESOURCE_ASSOCIATION_ISPROTECTED = "Resource_Association_isProtected";
 
-    @objid ("994ad8ce-6237-4dcc-9907-2c83aee3b504")
+    @objid ("b59c3f62-7bac-4c87-a7cb-a6bfa35e8b3a")
     public static final String RESOURCE_ASSOCIATION_RESOURCE_ASSOCIATION_ISACTIVE = "Resource_Association_isActive";
 
-    @objid ("132766a5-b3f4-461e-82f5-36bced3f616b")
+    @objid ("2ac713d4-8e12-4176-a61e-ef699091aa26")
     public static final String RESOURCE_ASSOCIATIONEND_RESOURCE_ASSOCIATIONEND_RESMULT = "Resource_AssociationEnd_resMult";
 
-    @objid ("ea49aae4-fa27-429f-8159-3e3f7c626a16")
+    @objid ("bf7c1168-d8fb-42a2-9b5a-20b1309b6e33")
     public static final String RESOURCE_ASSOCIATIONEND_RESOURCE_ASSOCIATIONEND_ISPROTECTED = "Resource_AssociationEnd_isProtected";
 
-    @objid ("041409ea-0035-4d95-a135-4b18e0962fa3")
+    @objid ("b5a2d02a-0275-4f0a-8acf-64fdd244020e")
     public static final String RESOURCE_ASSOCIATIONEND_RESOURCE_ASSOCIATIONEND_ISACTIVE = "Resource_AssociationEnd_isActive";
 
-    @objid ("a85d8382-c597-4425-aaac-a87c6782344a")
+    @objid ("8d07c539-aaed-45f7-b713-a4685b513519")
     public static final String RESOURCE_ATTRIBUTE_RESOURCE_ATTRIBUTE_RESMULT = "Resource_Attribute_resMult";
 
-    @objid ("2c7aa208-066e-4e1b-aefc-19964c62a893")
+    @objid ("eb0cabaf-1c87-4e92-9c68-4a3cf02f7582")
     public static final String RESOURCE_ATTRIBUTE_RESOURCE_ATTRIBUTE_ISPROTECTED = "Resource_Attribute_isProtected";
 
-    @objid ("ed94ab7b-4a78-4105-8424-53004eb86191")
+    @objid ("2f66cf65-b030-41a0-9a1e-b2919fe3d543")
     public static final String RESOURCE_ATTRIBUTE_RESOURCE_ATTRIBUTE_ISACTIVE = "Resource_Attribute_isActive";
 
-    @objid ("5eea648c-3a1a-4e27-9977-c2b0a62761fb")
+    @objid ("b1cf7488-6d4b-4c9a-93e5-9cf821b90ed8")
     public static final String RESOURCE_CLASSIFIER_RESOURCE_CLASSIFIER_RESMULT = "Resource_Classifier_resMult";
 
-    @objid ("a4406319-694a-481d-8e53-4cc0e7c1388a")
+    @objid ("ef5e5ccf-3335-4050-978d-9fc402ae8fd8")
     public static final String RESOURCE_CLASSIFIER_RESOURCE_CLASSIFIER_ISPROTECTED = "Resource_Classifier_isProtected";
 
-    @objid ("94ed7334-dace-47d0-9452-736fefb97fd8")
+    @objid ("b00088e1-b306-41ac-b46e-f3edd90c7972")
     public static final String RESOURCE_CLASSIFIER_RESOURCE_CLASSIFIER_ISACTIVE = "Resource_Classifier_isActive";
 
-    @objid ("2ac55e33-2700-406f-8832-86e26a5d6151")
+    @objid ("0e7798aa-55eb-4226-81f9-273109156a97")
     public static final String RESOURCE_INSTANCE_RESOURCE_INSTANCE_RESMULT = "Resource_Instance_resMult";
 
-    @objid ("d8535752-f810-4ec9-9dfe-fb8e91b6d0cb")
+    @objid ("4f7fd0f4-50f8-4176-9c31-e88ca610274f")
     public static final String RESOURCE_INSTANCE_RESOURCE_INSTANCE_ISPROTECTED = "Resource_Instance_isProtected";
 
-    @objid ("fe2898af-5d3a-4b81-a274-033df24ce298")
+    @objid ("0de0d13d-ca9e-4a48-aef1-15c3d9f94c6c")
     public static final String RESOURCE_INSTANCE_RESOURCE_INSTANCE_ISACTIVE = "Resource_Instance_isActive";
 
-    @objid ("6df46fa0-0d35-41c3-bac9-519215a5121d")
+    @objid ("8b065359-42c9-42dd-a1e0-836a1045481c")
     public static final String RESOURCE_LIFELINE_RESOURCE_LIFELINE_RESMULT = "Resource_Lifeline_resMult";
 
-    @objid ("4cdbb747-80cc-4c2f-a2df-20d4e805ffce")
+    @objid ("ed1c9b40-486e-4289-ba50-cdf14722400b")
     public static final String RESOURCE_LIFELINE_RESOURCE_LIFELINE_ISPROTECTED = "Resource_Lifeline_isProtected";
 
-    @objid ("90f3232a-847d-4905-856c-fde7eb827314")
+    @objid ("5082a56d-6132-4744-ad2a-f8588c3b7144")
     public static final String RESOURCE_LIFELINE_RESOURCE_LIFELINE_ISACTIVE = "Resource_Lifeline_isActive";
 
-    @objid ("bcb6b3a6-6599-4ffc-bc67-ebd2d270af03")
+    @objid ("004eb962-bc60-4212-abf4-af4fd6f6e588")
     public static final String RESOURCE_LINK_RESOURCE_LINK_RESMULT = "Resource_Link_resMult";
 
-    @objid ("544ae8f1-a761-4e77-9ad0-9e9592fc2d93")
+    @objid ("41ebf85e-e80f-4b7d-9a37-b9f96294e023")
     public static final String RESOURCE_LINK_RESOURCE_LINK_ISPROTECTED = "Resource_Link_isProtected";
 
-    @objid ("68d848a2-424e-4221-9567-656badb52b3f")
+    @objid ("37c1ac88-a4fe-4cb1-910e-31cf68952870")
     public static final String RESOURCE_LINK_RESOURCE_LINK_ISACTIVE = "Resource_Link_isActive";
 
-    @objid ("44e1362e-ec36-4678-a1ba-16fc29993765")
+    @objid ("1b76e393-f552-40ec-b663-40d37d3c168f")
     public static final String RESOURCE_LINKEND_RESOURCE_LINKEND_RESMULT = "Resource_LinkEnd_resMult";
 
-    @objid ("3b5964c1-03e2-4626-adea-02abdf630897")
+    @objid ("35fc9556-a889-4a1d-95f0-f99926d2f885")
     public static final String RESOURCE_LINKEND_RESOURCE_LINKEND_ISPROTECTED = "Resource_LinkEnd_isProtected";
 
-    @objid ("9db97c86-b088-49e3-8087-bda02f4bba65")
+    @objid ("407c2839-0bd9-4e9f-aeb1-85b0792d27b6")
     public static final String RESOURCE_LINKEND_RESOURCE_LINKEND_ISACTIVE = "Resource_LinkEnd_isActive";
 
-    @objid ("2ade8ea4-eb04-4f09-86df-41376115caf7")
+    @objid ("b24fb8dc-313a-46ff-99d5-322ad2c10bf8")
     public static final String RESOURCE_PARAMETER_RESOURCE_PARAMETER_RESMULT = "Resource_Parameter_resMult";
 
-    @objid ("8dfde3cf-3087-4447-be52-1c85886a2282")
+    @objid ("487a46f1-4505-4dc1-8b25-392b07cc22b5")
     public static final String RESOURCE_PARAMETER_RESOURCE_PARAMETER_ISPROTECTED = "Resource_Parameter_isProtected";
 
-    @objid ("3f905353-1108-4636-ac6f-46df1fcf9433")
+    @objid ("7bb6aa1c-8714-40ed-b95f-98f19a232709")
     public static final String RESOURCE_PARAMETER_RESOURCE_PARAMETER_ISACTIVE = "Resource_Parameter_isActive";
 
-    @objid ("b2eb65b2-e840-4c4f-8857-7a87f90da2cf")
+    @objid ("8f38ef3d-9dbe-47ae-8a98-8ed1b724993c")
     public static final String SCHEDULABLERESOURCE_ASSOCIATION_SCHEDULABLERESOURCE_ASSOCIATION_SCHEDPARAMS = "SchedulableResource_Association_schedParams";
 
-    @objid ("ffe238b4-3f5c-4d46-a87c-bc176d71007a")
+    @objid ("15504acf-25a9-4902-8e0d-56272be9c3fe")
     public static final String SCHEDULABLERESOURCE_ASSOCIATION_SCHEDULABLERESOURCE_ASSOCIATION_HOST = "SchedulableResource_Association_host";
 
-    @objid ("4d22b2b5-0068-472a-9d7c-37a514f5248a")
+    @objid ("9737741c-aa21-494e-8c16-055740a11e30")
     public static final String SCHEDULABLERESOURCE_ASSOCIATION_SCHEDULABLERESOURCE_ASSOCIATION_DEPENDENTSCHEDULER = "SchedulableResource_Association_dependentScheduler";
 
-    @objid ("9b0cd18d-df1a-4625-876b-e8c6fe051a00")
+    @objid ("cc34188f-49c6-495f-a273-ee93c1c4ba34")
     public static final String SCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDPARAMS = "SchedulableResource_AssociationEnd_schedParams";
 
-    @objid ("ae2f3b69-6322-4ec0-b37e-8c0dda60491d")
+    @objid ("89414922-ed2e-49e3-9863-add2a1722cc1")
     public static final String SCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDULABLERESOURCE_ASSOCIATIONEND_HOST = "SchedulableResource_AssociationEnd_host";
 
-    @objid ("cdd6087c-4f25-4b9e-a3ae-ced3a2bb3d8f")
+    @objid ("7a92a539-d624-4311-ad9b-51a0a7853efe")
     public static final String SCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDULABLERESOURCE_ASSOCIATIONEND_DEPENDENTSCHEDULER = "SchedulableResource_AssociationEnd_dependentScheduler";
 
-    @objid ("a9c19333-c47d-48a1-8366-fcb3a1500e53")
+    @objid ("ba217d13-ef30-4f3b-a597-c8a4883221a1")
     public static final String SCHEDULABLERESOURCE_ATTRIBUTE_SCHEDULABLERESOURCE_ATTRIBUTE_SCHEDPARAMS = "SchedulableResource_Attribute_schedParams";
 
-    @objid ("ed698c93-2f28-496b-8e80-1537eaf2613e")
+    @objid ("2748d342-b4a7-4166-882c-747e3ff7b987")
     public static final String SCHEDULABLERESOURCE_ATTRIBUTE_SCHEDULABLERESOURCE_ATTRIBUTE_HOST = "SchedulableResource_Attribute_host";
 
-    @objid ("797abea2-771b-4a46-ae92-b90109b6d157")
+    @objid ("10cf41be-b1c6-4599-a84a-ce12c65258be")
     public static final String SCHEDULABLERESOURCE_ATTRIBUTE_SCHEDULABLERESOURCE_ATTRIBUTE_DEPENDENTSCHEDULER = "SchedulableResource_Attribute_dependentScheduler";
 
-    @objid ("03a81835-359e-4f8b-b4e7-dbd08989f6ba")
+    @objid ("aa70608d-d213-49f4-924b-ab9feacf8f95")
     public static final String SCHEDULABLERESOURCE_CLASSIFIER_SCHEDULABLERESOURCE_CLASSIFIER_SCHEDPARAMS = "SchedulableResource_Classifier_schedParams";
 
-    @objid ("f61db3d5-ea80-4caf-9352-b53248c1b8f7")
+    @objid ("3c59418a-4d13-444d-be27-8c1777bbab8b")
     public static final String SCHEDULABLERESOURCE_CLASSIFIER_SCHEDULABLERESOURCE_CLASSIFIER_HOST = "SchedulableResource_Classifier_host";
 
-    @objid ("8a3dd0b1-4d95-49ff-8abf-bc8d55f082b4")
+    @objid ("84c6f89b-35df-4d1d-bd9a-e185555dfeb2")
     public static final String SCHEDULABLERESOURCE_CLASSIFIER_SCHEDULABLERESOURCE_CLASSIFIER_DEPENDENTSCHEDULER = "SchedulableResource_Classifier_dependentScheduler";
 
-    @objid ("f58bcf90-8c6b-47e1-84b7-993f0f2ba3b9")
+    @objid ("cdd674fc-5afc-452a-bd36-b166725d18ad")
     public static final String SCHEDULABLERESOURCE_INSTANCE_SCHEDULABLERESOURCE_INSTANCE_SCHEDPARAMS = "SchedulableResource_Instance_schedParams";
 
-    @objid ("6fab27a4-af75-4b55-8046-4a82d46424be")
+    @objid ("0136a938-ba19-4c4f-a086-12104a4b0dcc")
     public static final String SCHEDULABLERESOURCE_INSTANCE_SCHEDULABLERESOURCE_INSTANCE_HOST = "SchedulableResource_Instance_host";
 
-    @objid ("35d2457e-7631-4325-95f2-f008a65e7750")
+    @objid ("c9ba5a62-ebe4-49ea-96c6-fdb51cb39a8d")
     public static final String SCHEDULABLERESOURCE_INSTANCE_SCHEDULABLERESOURCE_INSTANCE_DEPENDENTSCHEDULER = "SchedulableResource_Instance_dependentScheduler";
 
-    @objid ("687db1c6-ac10-401c-bd5d-04bd61a22903")
+    @objid ("0a0dc8a2-3ba7-431c-b012-867028af6658")
     public static final String SCHEDULABLERESOURCE_LIFELINE_SCHEDULABLERESOURCE_LIFELINE_SCHEDPARAMS = "SchedulableResource_Lifeline_schedParams";
 
-    @objid ("773e1d54-5cfe-4b13-9538-6a89b6008ffe")
+    @objid ("c1980707-1830-44d4-a443-940e7e711d66")
     public static final String SCHEDULABLERESOURCE_LIFELINE_SCHEDULABLERESOURCE_LIFELINE_HOST = "SchedulableResource_Lifeline_host";
 
-    @objid ("9cb2c3c6-9795-46fa-817d-ed90e1643fee")
+    @objid ("3441474a-f734-43d7-bbd5-43dce6c51b7e")
     public static final String SCHEDULABLERESOURCE_LIFELINE_SCHEDULABLERESOURCE_LIFELINE_DEPENDENTSCHEDULER = "SchedulableResource_Lifeline_dependentScheduler";
 
-    @objid ("f8ccb87b-6ec4-457f-a83d-fe359c26f10d")
+    @objid ("d085dc3b-4c58-47a4-a88c-3c7e3701247f")
     public static final String SCHEDULABLERESOURCE_LINK_SCHEDULABLERESOURCE_LINK_SCHEDPARAMS = "SchedulableResource_Link_schedParams";
 
-    @objid ("ef91e4aa-5673-46ea-86f4-77b8ff877639")
+    @objid ("4b0fcc4b-ee59-4a81-a4ad-1c13dd4af95b")
     public static final String SCHEDULABLERESOURCE_LINK_SCHEDULABLERESOURCE_LINK_HOST = "SchedulableResource_Link_host";
 
-    @objid ("4ef93ea2-2efc-4972-b1cb-93bb8f4ce1a1")
+    @objid ("b006ba61-808a-4db8-8539-ab1c313d426b")
     public static final String SCHEDULABLERESOURCE_LINK_SCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER = "SchedulableResource_Link_dependentScheduler";
 
-    @objid ("6b4aa5a3-5384-4099-a1b6-2d5c47b5b6ff")
+    @objid ("8e20e29c-cac1-4a22-90fd-a12396edb7c1")
     public static final String SCHEDULABLERESOURCE_PARAMETER_SCHEDULABLERESOURCE_PARAMETER_SCHEDPARAMS = "SchedulableResource_Parameter_schedParams";
 
-    @objid ("28f9fa35-aecf-44cf-8a3c-c35690bd1383")
+    @objid ("86f1c056-e53c-49c9-ae24-9f179e5effe9")
     public static final String SCHEDULABLERESOURCE_PARAMETER_SCHEDULABLERESOURCE_PARAMETER_HOST = "SchedulableResource_Parameter_host";
 
-    @objid ("a107fd37-0a4f-44c8-8860-55a6aa1cf5bc")
+    @objid ("6a0b45b8-2126-4dd8-8f65-fc3e6945a131")
     public static final String SCHEDULABLERESOURCE_PARAMETER_SCHEDULABLERESOURCE_PARAMETER_DEPENDENTSCHEDULER = "SchedulableResource_Parameter_dependentScheduler";
 
-    @objid ("293cf862-522b-4bb5-882f-f993d3f55c84")
+    @objid ("e2c5d817-19e4-4b35-ad59-791a94d86fac")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_ISPREEMPTIBLE = "Scheduler_Association_isPreemptible";
 
-    @objid ("442e894e-9cb8-4202-b6e6-0fe6d28e184e")
+    @objid ("d73b2f8b-8e7a-4d76-a895-152504b98765")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_SCHEDPOLICY = "Scheduler_Association_schedPolicy";
 
-    @objid ("2524a5eb-7a2c-4631-8cb7-78508e211d0b")
+    @objid ("c37f214a-a096-49a5-b384-ec8bfd5a2713")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_OTHERSCHEDPOLICY = "Scheduler_Association_otherSchedPolicy";
 
-    @objid ("de57cc09-8cfa-43a6-b379-087d34b8baf0")
+    @objid ("57da15d6-5e0d-41e1-90e2-c46efb96f165")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_SCHEDULE = "Scheduler_Association_schedule";
 
-    @objid ("e4bebb1f-6fc3-4d8d-902b-21646752322e")
+    @objid ("2732642f-50c0-4b9a-93d5-c9422e095a19")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_PROCESSINGUNITS = "Scheduler_Association_processingUnits";
 
-    @objid ("0965a120-6476-4392-ab9f-996769190dd1")
+    @objid ("ac4f2ea6-cf17-4924-a93a-edcebbea60bf")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_HOST = "Scheduler_Association_host";
 
-    @objid ("3b862849-27e6-4630-817f-5f4a5eea6dbb")
+    @objid ("a578d968-dba3-4c91-a1a4-5304665094c1")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_PROTECTEDSHAREDRESOURCES = "Scheduler_Association_protectedSharedResources";
 
-    @objid ("fec570d4-4166-4e66-9fae-7cf2d4c86c89")
+    @objid ("04224822-0e7e-48d9-b530-848906df9964")
     public static final String SCHEDULER_ASSOCIATION_SCHEDULER_ASSOCIATION_SCHEDULABLERESOURCES = "Scheduler_Association_schedulableResources";
 
-    @objid ("acaaa0ed-98d7-41c7-82c8-dd9d7a608797")
+    @objid ("7eaa8a2d-13d5-48b0-bce8-6dede2316d22")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE = "Scheduler_AssociationEnd_isPreemptible";
 
-    @objid ("1d4958e5-8a47-4d2b-9524-3331d4036486")
+    @objid ("77cb6ecf-e93c-47c3-91f3-871efb1efc07")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_SCHEDPOLICY = "Scheduler_AssociationEnd_schedPolicy";
 
-    @objid ("d0834b06-2cef-4dea-b4f9-118575ceeb50")
+    @objid ("84c2139e-3693-4c3b-a9f2-a6e0373efc42")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_OTHERSCHEDPOLICY = "Scheduler_AssociationEnd_otherSchedPolicy";
 
-    @objid ("8fae1a10-573e-41f9-bb3e-970c1c871af5")
+    @objid ("f3e908e4-ef2d-4f25-95ed-5faa246c3fa6")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_SCHEDULE = "Scheduler_AssociationEnd_schedule";
 
-    @objid ("0bfa9f34-3c4c-4072-be17-cb3bcda5f473")
+    @objid ("e9c4f4ee-5a2a-49a9-87bf-6e342467b4c6")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_PROCESSINGUNITS = "Scheduler_AssociationEnd_processingUnits";
 
-    @objid ("7f94faa4-7f80-48b8-8eb4-9df8bbc3706b")
+    @objid ("a55c257d-4a70-4b79-ac83-58c4677e6a08")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_HOST = "Scheduler_AssociationEnd_host";
 
-    @objid ("e58d2228-587a-495f-baf3-b7d3c7568df2")
+    @objid ("d4432588-81d0-40ca-bd99-9e7b4ae425e2")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES = "Scheduler_AssociationEnd_protectedSharedResources";
 
-    @objid ("4e2be2db-d558-4af8-bad2-d9121304428b")
+    @objid ("762d65d6-10cf-4473-bfb4-c1848054f5c1")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULER_ASSOCIATIONEND_SCHEDULABLERESOURCES = "Scheduler_AssociationEnd_schedulableResources";
 
-    @objid ("dfba9a97-3eab-413f-bff7-a56b8b61d8a3")
+    @objid ("4cce07be-925e-4b11-8e37-5b49d5666621")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE = "Scheduler_Attribute_isPreemptible";
 
-    @objid ("4fb3106a-376d-4e8d-8a5f-1746d0e80582")
+    @objid ("45933190-08db-4f08-949e-486d7d91fae7")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_SCHEDPOLICY = "Scheduler_Attribute_schedPolicy";
 
-    @objid ("cb394605-3748-4cbb-84ac-7a18e7075f01")
+    @objid ("5ed7b227-983d-40f5-9e5e-49bc55d64704")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_OTHERSCHEDPOLICY = "Scheduler_Attribute_otherSchedPolicy";
 
-    @objid ("7f88e0ab-2e0b-46bb-a23e-f2fc6a85614b")
+    @objid ("59661645-e898-4f97-845b-06f5a4726ea4")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_SCHEDULE = "Scheduler_Attribute_schedule";
 
-    @objid ("1e8a87e5-ab8e-4b30-9470-479d5b433057")
+    @objid ("0998cbad-b830-42f8-92a6-70b550b11ef1")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_PROCESSINGUNITS = "Scheduler_Attribute_processingUnits";
 
-    @objid ("9393bd24-20de-4b47-bb6a-61163f95fd95")
+    @objid ("956b3206-b4dc-4931-9f7e-ad600bcdd1e4")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_HOST = "Scheduler_Attribute_host";
 
-    @objid ("6ef98276-b424-463b-91fc-ec5dd52dbffb")
+    @objid ("b1549e12-e20d-447b-be5c-795dfa6dd26a")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_PROTECTEDSHAREDRESOURCES = "Scheduler_Attribute_protectedSharedResources";
 
-    @objid ("7d1c692f-e681-4da1-85f5-67a215cfaf3a")
+    @objid ("3ad75682-abde-4989-82ea-7975d311e840")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULER_ATTRIBUTE_SCHEDULABLERESOURCES = "Scheduler_Attribute_schedulableResources";
 
-    @objid ("ae2ed596-731a-42be-bb37-7fe0f8e4edaa")
+    @objid ("e8818740-d908-43c8-a8ca-e768e2b13979")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_ISPREEMPTIBLE = "Scheduler_Classifier_isPreemptible";
 
-    @objid ("0a9321bb-92d2-4b71-b31c-5ce53aced81c")
+    @objid ("9780adb2-ba1e-441a-b0aa-825992edc530")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_SCHEDPOLICY = "Scheduler_Classifier_schedPolicy";
 
-    @objid ("abe7957f-24f4-4bbf-a5a7-1d90eccbed58")
+    @objid ("d34c89d3-ddb9-4b4e-a8ad-69cd61d1a3f4")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_OTHERSCHEDPOLICY = "Scheduler_Classifier_otherSchedPolicy";
 
-    @objid ("aa0977e8-d5cf-4408-b216-0dbc263f6209")
+    @objid ("04049a82-f70e-48e9-ae80-d268b2281da5")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_SCHEDULE = "Scheduler_Classifier_schedule";
 
-    @objid ("f1f232cd-0355-471e-93d1-d21b061991c0")
+    @objid ("e86502c8-6859-4689-bc02-ebce8e492f09")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_PROCESSINGUNITS = "Scheduler_Classifier_processingUnits";
 
-    @objid ("e41831cd-9f7b-485e-8025-297b06c1c0b2")
+    @objid ("9ef8e272-3ac2-4944-9160-91fe776722c2")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_HOST = "Scheduler_Classifier_host";
 
-    @objid ("35aeb6f0-2d5a-4905-a647-c97723ef7723")
+    @objid ("b8aa37b2-1878-4d3f-899c-30ac0b5f9c90")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_PROTECTEDSHAREDRESOURCES = "Scheduler_Classifier_protectedSharedResources";
 
-    @objid ("b610a4e2-975c-428b-bffa-57a7f1b15cab")
+    @objid ("0383475c-6d4c-46e8-91f8-e88f6abd0da7")
     public static final String SCHEDULER_CLASSIFIER_SCHEDULER_CLASSIFIER_SCHEDULABLERESOURCES = "Scheduler_Classifier_schedulableResources";
 
-    @objid ("f839de81-8ce3-487d-a556-e8917db75ce4")
+    @objid ("6572d499-9a60-40bd-be86-45a92302526f")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_ISPREEMPTIBLE = "Scheduler_Instance_isPreemptible";
 
-    @objid ("17ebbea0-db0f-4c73-acc7-e363a2929c99")
+    @objid ("a4898158-1f52-47f7-a9b2-0b59ed1a7c8b")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_SCHEDPOLICY = "Scheduler_Instance_schedPolicy";
 
-    @objid ("19b8ed70-45e2-48c9-84b9-428a6eefebcd")
+    @objid ("3cf1cd37-4699-40ca-ac83-339eeef1c570")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_OTHERSCHEDPOLICY = "Scheduler_Instance_otherSchedPolicy";
 
-    @objid ("908483dd-586b-4166-9103-acb666409eda")
+    @objid ("0c933220-56a7-4a4f-945f-b220196dd010")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_SCHEDULE = "Scheduler_Instance_schedule";
 
-    @objid ("59e3e3cd-4e68-46c1-a997-eb190866f521")
+    @objid ("bf9cab9a-ccd6-4809-abac-078d30ab1fb3")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_PROCESSINGUNITS = "Scheduler_Instance_processingUnits";
 
-    @objid ("42b82dd7-8cc2-4762-9830-128e92ada993")
+    @objid ("46b45bb3-56ae-4dae-887d-3937f7442bff")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_HOST = "Scheduler_Instance_host";
 
-    @objid ("31fd196c-a4c4-4af7-8065-8bf659e963e0")
+    @objid ("b1932aca-342c-4f97-ba9b-9e11cc08568d")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_PROTECTEDSHAREDRESOURCES = "Scheduler_Instance_protectedSharedResources";
 
-    @objid ("2011fa36-e379-4e32-83ca-929b8d111381")
+    @objid ("e76ad21c-ea52-4e6b-8987-6856ad12c0e1")
     public static final String SCHEDULER_INSTANCE_SCHEDULER_INSTANCE_SCHEDULABLERESOURCES = "Scheduler_Instance_schedulableResources";
 
-    @objid ("f6242d4d-83fa-4ffe-823c-831fd6ca3347")
+    @objid ("4b9fe35b-c9cb-4dd0-9efc-014084cbe018")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_ISPREEMPTIBLE = "Scheduler_Lifeline_isPreemptible";
 
-    @objid ("e7fd7b44-b1ed-49a8-9d98-3402d0010d4a")
+    @objid ("236c4d01-cc90-4612-b421-080a8fe11dc6")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_SCHEDPOLICY = "Scheduler_Lifeline_schedPolicy";
 
-    @objid ("befe4716-622e-4062-8cc8-bb05718b54b2")
+    @objid ("96fc67cb-3d34-4ce4-9f85-73f473c21d4b")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_OTHERSCHEDPOLICY = "Scheduler_Lifeline_otherSchedPolicy";
 
-    @objid ("ea989aca-6db6-4efc-86ac-4ad156a91aed")
+    @objid ("efee74c1-f2d3-480e-8baa-cda1e66741df")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_SCHEDULE = "Scheduler_Lifeline_schedule";
 
-    @objid ("60ba357a-afe2-4d66-afce-3cc3db5fe380")
+    @objid ("13882a8b-c259-4948-adab-5b466a6e4a42")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_PROCESSINGUNITS = "Scheduler_Lifeline_processingUnits";
 
-    @objid ("72dc9a3e-24d0-4f94-8c1e-df787c2dc2c8")
+    @objid ("941e59a3-431b-4ca8-a636-8e0692cbad77")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_HOST = "Scheduler_Lifeline_host";
 
-    @objid ("5a4a5de5-e5f0-4c7c-ba38-6dbf37611e37")
+    @objid ("6ac2a6f9-a6b6-47c3-bed7-d91a6f4ac78e")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_PROTECTEDSHAREDRESOURCES = "Scheduler_Lifeline_protectedSharedResources";
 
-    @objid ("a81dcb5d-952c-4144-b762-53fdd46e2f5a")
+    @objid ("83b05cdf-f84d-49fc-963d-01d321824b47")
     public static final String SCHEDULER_LIFELINE_SCHEDULER_LIFELINE_SCHEDULABLERESOURCES = "Scheduler_Lifeline_schedulableResources";
 
-    @objid ("69567a61-54f6-4559-9119-86f0756b5d99")
+    @objid ("718528e8-8d9f-48aa-83c7-862c27db9030")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_ISPREEMPTIBLE = "Scheduler_Link_isPreemptible";
 
-    @objid ("fef492eb-3b1e-4f98-8f43-2adc63cff444")
+    @objid ("a51a3b01-0756-474a-a995-e34ebcd02f01")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_SCHEDPOLICY = "Scheduler_Link_schedPolicy";
 
-    @objid ("760db06b-c236-495b-b6df-e6abd5b370b1")
+    @objid ("e7b98c98-f45c-4d74-9795-3d1b0f1f439f")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_OTHERSCHEDPOLICY = "Scheduler_Link_otherSchedPolicy";
 
-    @objid ("5813ad5d-b6ed-418a-b5d9-6bafb6931c75")
+    @objid ("5bcd80c4-6470-427a-8064-f4570b00f810")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_SCHEDULE = "Scheduler_Link_schedule";
 
-    @objid ("38933809-711a-46a9-b5ed-7a28eb565e87")
+    @objid ("3bf23662-39f8-420b-b6e0-90b9d119c485")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_PROCESSINGUNITS = "Scheduler_Link_processingUnits";
 
-    @objid ("4fee28e8-79e6-449e-b73e-30c3e1eb2131")
+    @objid ("b897534b-8e3b-4176-8065-47e3db8a155d")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_HOST = "Scheduler_Link_host";
 
-    @objid ("97392d13-fae8-49f9-b661-77078a639a8c")
+    @objid ("48946ba0-1ab2-49ec-ab87-62767b14f5f8")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_PROTECTEDSHAREDRESOURCES = "Scheduler_Link_protectedSharedResources";
 
-    @objid ("27618eeb-f165-4996-a7ce-44e3fa711501")
+    @objid ("da183d86-bc57-45bf-930e-a157015f50f6")
     public static final String SCHEDULER_LINK_SCHEDULER_LINK_SCHEDULABLERESOURCES = "Scheduler_Link_schedulableResources";
 
-    @objid ("87114941-48f0-4f39-90f5-de76a8e660bc")
+    @objid ("275e7051-2e90-4917-8126-4ca94bc02e14")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_ISPREEMPTIBLE = "Scheduler_Parameter_isPreemptible";
 
-    @objid ("320b6dc6-7f79-4079-af5c-d9beee86904c")
+    @objid ("54148d0a-19e2-44bf-ad1d-c4d9dbadb294")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_SCHEDPOLICY = "Scheduler_Parameter_schedPolicy";
 
-    @objid ("7fdb9f28-6fec-4c98-b131-cc28d875ca5a")
+    @objid ("715e52ac-4ce6-4983-a9b5-a9938eb51629")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_OTHERSCHEDPOLICY = "Scheduler_Parameter_otherSchedPolicy";
 
-    @objid ("6f87f6ba-a81b-46fb-aa35-b71efa486327")
+    @objid ("001151c8-2888-46a6-8bae-43ff18d29d48")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_SCHEDULE = "Scheduler_Parameter_schedule";
 
-    @objid ("70baa2a0-7963-469d-862e-b47e4b3eae71")
+    @objid ("1e067893-4104-4593-9a16-6d12f4f91754")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_PROCESSINGUNITS = "Scheduler_Parameter_processingUnits";
 
-    @objid ("b1f3b7b4-cc82-4a95-aa73-005bd1c35801")
+    @objid ("908b774b-fb36-4540-abeb-8eceded5edc2")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_HOST = "Scheduler_Parameter_host";
 
-    @objid ("02a2aa5c-300b-43d0-b9b6-7ef40030568b")
+    @objid ("fba39c4a-c2f0-44d0-bbd4-2969d9f6aa6c")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_PROTECTEDSHAREDRESOURCES = "Scheduler_Parameter_protectedSharedResources";
 
-    @objid ("ace4100f-4ecb-4243-81c3-33f499d45cc7")
+    @objid ("2dfba01e-95b6-4fbd-8265-fad1e8bc7730")
     public static final String SCHEDULER_PARAMETER_SCHEDULER_PARAMETER_SCHEDULABLERESOURCES = "Scheduler_Parameter_schedulableResources";
 
-    @objid ("dc8cd420-5620-4b2a-ba47-bf5018e92028")
+    @objid ("2e74b2bd-24db-4db2-b96d-bde92eb47a0a")
     public static final String SECONDARYSCHEDULER_ASSOCIATION_SECONDARYSCHEDULER_ASSOCIATION_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Association_virtualProcessingUnits";
 
-    @objid ("4fb376d2-754e-412f-8d36-4b65e404bac6")
+    @objid ("78ae8550-faba-4aeb-88c4-768211702b0b")
     public static final String SECONDARYSCHEDULER_ASSOCIATIONEND_SECONDARYSCHEDULER_ASSOCIATIONEND_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_AssociationEnd_virtualProcessingUnits";
 
-    @objid ("eacefcc3-a847-467c-8503-c63ec4bf6e8f")
+    @objid ("76f36df1-141d-43ac-8a40-bb1f12e05c0c")
     public static final String SECONDARYSCHEDULER_ATTRIBUTE_SECONDARYSCHEDULER_ATTRIBUTE_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Attribute_virtualProcessingUnits";
 
-    @objid ("46bf621a-e0e8-4742-8bc7-143ab036c07b")
+    @objid ("cf0e84c1-ac13-41cc-86cc-699f8ecf9b9d")
     public static final String SECONDARYSCHEDULER_CLASSIFIER_SECONDARYSCHEDULER_CLASSIFIER_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Classifier_virtualProcessingUnits";
 
-    @objid ("ca553f23-3420-4a92-9814-0eba42885d2d")
+    @objid ("43ac9f1a-ff5f-4ee1-b675-588f9117ddcc")
     public static final String SECONDARYSCHEDULER_INSTANCE_SECONDARYSCHEDULER_INSTANCE_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Instance_virtualProcessingUnits";
 
-    @objid ("522e965e-fc25-492e-a58d-88da02d0ae47")
+    @objid ("74c63138-bf1b-4654-9204-8f76f8a92f5b")
     public static final String SECONDARYSCHEDULER_LIFELINE_SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Lifeline_virtualProcessingUnits";
 
-    @objid ("eb70bde6-8901-4d42-80c7-3e55816112e0")
+    @objid ("77191301-6a23-4c53-96c5-090d150b609d")
     public static final String SECONDARYSCHEDULER_LINK_SECONDARYSCHEDULER_LINK_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Link_virtualProcessingUnits";
 
-    @objid ("c8de228a-a7dd-4088-a821-e69b6c02026c")
+    @objid ("5d4c26c5-d304-48d4-ac50-d1328085302f")
     public static final String SECONDARYSCHEDULER_PARAMETER_SECONDARYSCHEDULER_PARAMETER_VIRTUALPROCESSINGUNITS = "SecondaryScheduler_Parameter_virtualProcessingUnits";
 
-    @objid ("45d51b02-4c96-45e0-abf0-209378f05d51")
+    @objid ("4fd3e8cf-0685-4cbc-bea1-d994393d85d6")
     public static final String STORAGERESOURCE_ASSOCIATION_STORAGERESOURCE_ASSOCIATION_ELEMENTSIZE = "StorageResource_Association_elementSize";
 
-    @objid ("aeb10e30-b9ad-47f8-918f-c67618bacaa8")
+    @objid ("c4b5e188-b55b-41e3-a765-b07320c20ff9")
     public static final String STORAGERESOURCE_ASSOCIATIONEND_STORAGERESOURCE_ASSOCIATIONEND_ELEMENTSIZE = "StorageResource_AssociationEnd_elementSize";
 
-    @objid ("1858cdcd-508c-44a9-abde-f5b2c9a83fc7")
+    @objid ("98f0ec2b-5093-4319-b782-caf3963adec0")
     public static final String STORAGERESOURCE_ATTRIBUTE_STORAGERESOURCE_ATTRIBUTE_ELEMENTSIZE = "StorageResource_Attribute_elementSize";
 
-    @objid ("fe1a0e30-994f-475e-bbcf-b43e78426871")
+    @objid ("a1fced76-2b37-41b8-8c7c-12c8b33a040a")
     public static final String STORAGERESOURCE_CLASSIFIER_STORAGERESOURCE_CLASSIFIER_ELEMENTSIZE = "StorageResource_Classifier_elementSize";
 
-    @objid ("723992c6-ca4d-406d-83f8-6fef45ee6b85")
+    @objid ("ca2ee1f9-59c4-4629-94b4-320d137dffad")
     public static final String STORAGERESOURCE_INSTANCE_STORAGERESOURCE_INSTANCE_ELEMENTSIZE = "StorageResource_Instance_elementSize";
 
-    @objid ("10b3980b-708e-4a59-b268-6e88fb5490e8")
+    @objid ("7fa407d1-1a73-4e64-a4c7-3d493aac0576")
     public static final String STORAGERESOURCE_LIFELINE_STORAGERESOURCE_LIFELINE_ELEMENTSIZE = "StorageResource_Lifeline_elementSize";
 
-    @objid ("c6bbf380-78cb-4cf2-9f40-f504cbef5453")
+    @objid ("2a1a9bc9-c6e1-4b98-bd93-5e08553fee28")
     public static final String STORAGERESOURCE_LINK_STORAGERESOURCE_LINK_ELEMENTSIZE = "StorageResource_Link_elementSize";
 
-    @objid ("a0b7547e-034b-41b9-a753-f03bedfc4706")
+    @objid ("dbcd525c-566c-4561-9dfa-f407ad82612f")
     public static final String STORAGERESOURCE_PARAMETER_STORAGERESOURCE_PARAMETER_ELEMENTSIZE = "StorageResource_Parameter_elementSize";
 
-    @objid ("37163dc1-1c45-4d76-91f5-31f7134a44d5")
+    @objid ("0a008d32-a5c4-461c-9e31-7f9e75c98f90")
     public static final String TIMERRESOURCE_ASSOCIATION_TIMERRESOURCE_ASSOCIATION_DURATION = "TimerResource_Association_duration";
 
-    @objid ("dfe825e9-7904-40cd-be4b-5114d3f4c65d")
+    @objid ("351bc2d6-14c5-49d6-b57e-5511672d63d5")
     public static final String TIMERRESOURCE_ASSOCIATION_TIMERRESOURCE_ASSOCIATION_ISPERIODIC = "TimerResource_Association_isPeriodic";
 
-    @objid ("f41f1f82-b958-45f7-8916-3374a86a7a78")
+    @objid ("b48fba97-ad34-4a7c-aa8e-729eeecc5711")
     public static final String TIMERRESOURCE_ASSOCIATIONEND_TIMERRESOURCE_ASSOCIATIONEND_DURATION = "TimerResource_AssociationEnd_duration";
 
-    @objid ("72aabb3a-5725-47a1-b136-5563e7bba7c0")
+    @objid ("6ef3f0b6-ba13-40da-af91-fd88eb68abd8")
     public static final String TIMERRESOURCE_ASSOCIATIONEND_TIMERRESOURCE_ASSOCIATIONEND_ISPERIODIC = "TimerResource_AssociationEnd_isPeriodic";
 
-    @objid ("eb76db75-7963-418f-a86a-5aef1dd2a222")
+    @objid ("f09ee43d-f1b7-4eac-8593-137da16571d7")
     public static final String TIMERRESOURCE_ATTRIBUTE_TIMERRESOURCE_ATTRIBUTE_DURATION = "TimerResource_Attribute_duration";
 
-    @objid ("1084c791-9638-4a5a-bb62-ea7d478f0d36")
+    @objid ("6d40affd-b1cc-4d05-ae31-c5bb560b901d")
     public static final String TIMERRESOURCE_ATTRIBUTE_TIMERRESOURCE_ATTRIBUTE_ISPERIODIC = "TimerResource_Attribute_isPeriodic";
 
-    @objid ("149f0877-3bd1-49cc-8b04-b93658f290d0")
+    @objid ("7f0f056d-0b35-47c4-bbda-f3f94e65cb7f")
     public static final String TIMERRESOURCE_CLASSIFIER_TIMERRESOURCE_CLASSIFIER_DURATION = "TimerResource_Classifier_duration";
 
-    @objid ("d5686d45-a34e-4e11-83ab-5c4ae58d25f2")
+    @objid ("86de2880-81e2-477f-8837-1d055ab7d4b7")
     public static final String TIMERRESOURCE_CLASSIFIER_TIMERRESOURCE_CLASSIFIER_ISPERIODIC = "TimerResource_Classifier_isPeriodic";
 
-    @objid ("8a06234e-b4f4-4fe2-8c97-eecf778fd2da")
+    @objid ("2162ca8a-ca86-4bff-b37f-18ca7efd3dd8")
     public static final String TIMERRESOURCE_INSTANCE_TIMERRESOURCE_INSTANCE_DURATION = "TimerResource_Instance_duration";
 
-    @objid ("ebbce5c7-d629-4bb3-bb44-689599d9fe8e")
+    @objid ("98b61268-00a5-4e9e-be79-fa634d136d2f")
     public static final String TIMERRESOURCE_INSTANCE_TIMERRESOURCE_INSTANCE_ISPERIODIC = "TimerResource_Instance_isPeriodic";
 
-    @objid ("1312567b-9779-46a8-882f-529c3380a7e6")
+    @objid ("e4c1da56-4505-4a1c-ad76-625f3885a6e6")
     public static final String TIMERRESOURCE_LIFELINE_TIMERRESOURCE_LIFELINE_DURATION = "TimerResource_Lifeline_duration";
 
-    @objid ("8af64916-0efc-4be4-8308-87a4d6b58046")
+    @objid ("468c1c68-c62f-4988-9f47-99df2400d3b4")
     public static final String TIMERRESOURCE_LIFELINE_TIMERRESOURCE_LIFELINE_ISPERIODIC = "TimerResource_Lifeline_isPeriodic";
 
-    @objid ("8f789022-a737-46c1-abe2-3dc75ea93a3c")
+    @objid ("f3ffe5bd-9ae2-4110-ab18-31f980bc9bb0")
     public static final String TIMERRESOURCE_LINK_TIMERRESOURCE_LINK_DURATION = "TimerResource_Link_duration";
 
-    @objid ("382fe450-c164-4cde-9d23-d72e2858ba6e")
+    @objid ("d358a60c-be0a-4475-af98-bdbc6139b757")
     public static final String TIMERRESOURCE_LINK_TIMERRESOURCE_LINK_ISPERIODIC = "TimerResource_Link_isPeriodic";
 
-    @objid ("d6e170a7-41b1-42ce-9bcc-0537f85e3cf6")
+    @objid ("9af3c3a3-146d-4bbb-9004-181f29f5e68d")
     public static final String TIMERRESOURCE_PARAMETER_TIMERRESOURCE_PARAMETER_DURATION = "TimerResource_Parameter_duration";
 
-    @objid ("26f3f390-5997-4b83-a790-790cc637c7d6")
+    @objid ("e42de09d-48f6-4e60-ace7-6adf46d6c2ec")
     public static final String TIMERRESOURCE_PARAMETER_TIMERRESOURCE_PARAMETER_ISPERIODIC = "TimerResource_Parameter_isPeriodic";
 
-    @objid ("90dcf22b-5ed4-44c6-8614-c9b57164ebd2")
+    @objid ("2ed0c0c2-54b8-406e-88c5-dc54579f7d53")
     public static final String PROCESSINGRESOURCE_LINK_PROCESSINGRESOURCE_LINK_SPEEDFACTOR = "ProcessingResource_Link_speedFactor";
 
-    @objid ("c0d3c9e9-fe8f-4f46-a9ca-cd1d160328fd")
+    @objid ("29620ce4-754e-40f5-8f8c-fa9e84fe1501")
     public static final String PROCESSINGRESOURCE_LINK_PROCESSINGRESOURCE_LINK_MAINSCHEDULER = "ProcessingResource_Link_mainScheduler";
 
-    @objid ("d6fbf4e5-9257-4a6f-8301-22831ce04fe4")
+    @objid ("085023aa-3b9d-43ce-812c-36bd37a9af16")
     public static final String ALLOCATEACTIVITYGROUP_ACTIVITYPARTITION_ALLOCATEACTIVITYGROUP_ACTIVITYPARTITION_ISUNIQUE = "AllocateActivityGroup_ActivityPartition_isUnique";
 
-    @objid ("cce1cf14-a78b-42ce-919a-355ad85f8ad8")
+    @objid ("b67d403b-2a01-4f5c-ae0b-32dd02c296a4")
     public static final String ALLOCATE_DEPENDENCY_ALLOCATE_DEPENDENCY_KIND = "Allocate_Dependency_kind";
 
-    @objid ("148c6164-fc4a-487e-b737-9b8c12484794")
+    @objid ("4fd015aa-fa27-4f4e-aad2-1e17657d1ec0")
     public static final String ALLOCATE_DEPENDENCY_ALLOCATE_DEPENDENCY_NATURE = "Allocate_Dependency_nature";
 
-    @objid ("d61ee104-829e-4ff0-9a64-9562e24d7913")
+    @objid ("ba54b523-b411-4679-b1c8-6164bce6ef03")
     public static final String ALLOCATE_DEPENDENCY_ALLOCATE_DEPENDENCY_IMPLIEDCONSTRAINT = "Allocate_Dependency_impliedConstraint";
 
-    @objid ("b622decf-6732-4679-a320-e40b0a9a45e4")
+    @objid ("8793f0f0-b9b4-46ac-99e7-580342d8e9a3")
     public static final String ALLOCATED_MODELELEMENT_ALLOCATED_MODELELEMENT_ALLOCATEDTO = "Allocated_ModelElement_allocatedTo";
 
-    @objid ("9dca335f-62a2-4ed2-8099-349b6bbab5cf")
+    @objid ("cdf03f4a-d15c-4a3c-87da-be968a8ab92c")
     public static final String ALLOCATED_MODELELEMENT_ALLOCATED_MODELELEMENT_ALLOCATEDFROM = "Allocated_ModelElement_allocatedFrom";
 
-    @objid ("d375deb0-ca3d-4268-954a-9669998b7c4f")
+    @objid ("57ef34bb-73fd-48cd-b1b3-a3939f33b9f5")
     public static final String ALLOCATED_MODELELEMENT_ALLOCATED_MODELELEMENT_KIND = "Allocated_ModelElement_kind";
 
-    @objid ("b329b3f8-1051-4629-b279-bc9458e7a449")
+    @objid ("4d658e2f-bbdd-40c1-9695-599cf757f803")
     public static final String ASSIGN_NOTE_ASSIGN_NOTE_KIND = "Assign_Note_kind";
 
-    @objid ("a3ca8977-5a64-493f-a886-e2b9ca7c686c")
+    @objid ("c5783e05-01d1-42c2-a099-f9090a8c19ba")
     public static final String ASSIGN_NOTE_ASSIGN_NOTE_NATURE = "Assign_Note_nature";
 
-    @objid ("6b0d7915-1f9d-4c56-a109-96f1420df0e7")
+    @objid ("9ed24e4b-9c5a-4050-a1f1-0827f88e7c83")
     public static final String ASSIGN_NOTE_ASSIGN_NOTE_FROM = "Assign_Note_from";
 
-    @objid ("5a112245-91a1-47fd-bd88-67f68e5189b0")
+    @objid ("bad573f5-a007-4777-8d97-552b6cb0c9be")
     public static final String ASSIGN_NOTE_ASSIGN_NOTE_TO = "Assign_Note_to";
 
-    @objid ("37bc3f40-5402-484f-9624-4cce5f9fb7b4")
+    @objid ("3eb30ccb-7cda-4777-a8a6-5b0059c2dc7d")
     public static final String ATTRIBUTE_ATTRIBUTE_DATATYPEVALUE = "Attribute_DataTypeValue";
 
-    @objid ("3d3725cf-3c76-49a9-917a-21021a643d5b")
+    @objid ("6e531297-2eb4-4aaa-9ccc-cb27e3004df1")
     public static final String ASSIGN_NOTE_ASSIGN_NOTE_IMPLIEDCONSTRAINT = "Assign_Note_impliedConstraint";
 
-    @objid ("4aa26447-956f-4af5-bd7d-ea3230a671c0")
+    @objid ("773045e0-8e2f-42de-bfa4-c44022aabd17")
     public static final String NFPREFINE_DEPENDENCY_NFPREFINE_DEPENDENCY_CONSTRAINT = "NfpRefine_Dependency_constraint";
 
-    @objid ("bed2c4d1-97b5-4a44-9de5-bb738842fabd")
+    @objid ("00746e1d-65f5-45d8-bcd2-ddbf12586a7f")
     public static final String CONFIGURATION_BEHAVIOR_CONFIGURATION_BEHAVIOR_MODE = "Configuration_Behavior_mode";
 
-    @objid ("84af2b8b-01ce-43a8-be07-d11a3434f8d5")
+    @objid ("4ea0b32b-97de-4b95-ac7a-984c7cfdd649")
     public static final String CONFIGURATION_CLASS_CONFIGURATION_CLASS_MODE = "Configuration_Class_mode";
 
-    @objid ("f835a198-6510-4ff9-b703-edfeb278d156")
+    @objid ("35d40f29-dfa7-4184-bd69-1b44848ea9a3")
     public static final String CONFIGURATION_COLLABORATION_CONFIGURATION_COLLABORATION_MODE = "Configuration_Collaboration_mode";
 
-    @objid ("a1013fc0-a770-4ba4-8810-1ff210d3a096")
+    @objid ("aa9bb2ac-a692-477b-855c-432d4c272f0a")
     public static final String CONFIGURATION_NODE_CONFIGURATION_NODE_MODE = "Configuration_Node_mode";
 
-    @objid ("85cdee96-92c5-4f87-bd52-f24ef1229e08")
+    @objid ("27e44896-7c0c-47cf-a315-50d2d8926fe3")
     public static final String CONFIGURATION_PACKAGE_CONFIGURATION_PACKAGE_MODE = "Configuration_Package_mode";
 
-    @objid ("342bab63-3d03-4479-b2f4-4e993e8aabfa")
+    @objid ("32b4a3ba-d61d-4aa3-85ee-6df1e04fe92d")
     public static final String UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_CONVFACTOR = "Unit_EnumerationLiteral_convFactor";
 
-    @objid ("fda0e37e-4584-4e19-a8f9-5310e17a20db")
+    @objid ("2bba2125-ffca-41d7-858e-81bb706c1ae6")
     public static final String UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_OFFSETFACTOR = "Unit_EnumerationLiteral_offsetFactor";
 
-    @objid ("a45e64c4-0ccf-4804-b2db-3d750cb0b42f")
+    @objid ("3be237f8-662b-4ca8-8320-4e089a1e48da")
     public static final String UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_BASEUNIT = "Unit_EnumerationLiteral_baseUnit";
 
-    @objid ("6c2381df-c6db-4036-9080-aa46c1259081")
+    @objid ("06c63ba2-77d4-4b8b-89ee-391a53f573de")
     public static final String NFPTYPE_DATATYPE_NFPTYPE_DATATYPE_VALUEATTRIB = "NfpType_DataType_valueAttrib";
 
-    @objid ("20a51a01-037a-4e48-bd1c-a63dbcb3929c")
+    @objid ("da397ce8-37c2-4ff3-823b-9775c0fc3561")
     public static final String NFPTYPE_DATATYPE_NFPTYPE_DATATYPE_UNITATTRIB = "NfpType_DataType_unitAttrib";
 
-    @objid ("007dbf6b-c0e6-4601-a6c1-fcb98babcc83")
+    @objid ("8b4dc47e-7c35-497a-931e-5fa69d7fc54e")
     public static final String NFPTYPE_DATATYPE_NFPTYPE_DATATYPE_EXPRATTRIB = "NfpType_DataType_exprAttrib";
 
-    @objid ("437d805b-11de-4d2e-a82a-148a4cbf288f")
+    @objid ("1fc9eafa-ff4f-47c2-a8ad-40d9a936170f")
     public static final String DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_SYMBOL = "Dimension_Enumeration_symbol";
 
-    @objid ("ddfae27b-bf43-49b0-a27a-7d6e8e5f18fe")
+    @objid ("6e3b6806-5021-4802-ae30-50de39e19f3c")
     public static final String DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_BASEDIMENSION = "Dimension_Enumeration_baseDimension";
 
-    @objid ("1e8885b5-60b7-485f-88e2-1f0927ed907d")
+    @objid ("c334ce1c-6046-4d29-aecc-c5f22beb6fc7")
     public static final String DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_BASEEXPONENT = "Dimension_Enumeration_baseExponent";
 
-    @objid ("ee629eaa-a137-4b8a-8452-127586aa5c6a")
+    @objid ("20ea134a-d950-40a3-a35a-a4e0744f1041")
     public static final String NFPCONSTRAINT_CONSTRAINT_NFPCONSTRAINT_CONSTRAINT_KIND = "NfpConstraint_Constraint_kind";
 
-    @objid ("2a1550a0-cb8b-4ce3-97b9-1245afdc9cb4")
+    @objid ("e9000881-df13-4fca-8a2a-b4390c4d121f")
     public static final String NFPCONSTRAINT_CONSTRAINT_NFPCONSTRAINT_CONSTRAINT_MODE = "NfpConstraint_Constraint_mode";
 
-    @objid ("4568b171-a03d-4365-8906-4aa28bbf0dbd")
+    @objid ("68d01224-5f1e-46a3-a6db-b9779fda276f")
     public static final String CLOCKCONSTRAINT_CONSTRAINT_CLOCKCONSTRAINT_CONSTRAINT_ISCOINCIDENCEBASED = "ClockConstraint_Constraint_isCoincidenceBased";
 
-    @objid ("c151bcdd-5b72-4a82-8830-c117afe76b4b")
+    @objid ("e6fa9e0e-593b-47af-b497-06bec59d2853")
     public static final String CLOCKCONSTRAINT_CONSTRAINT_CLOCKCONSTRAINT_CONSTRAINT_ISPRECEDENCEBASED = "ClockConstraint_Constraint_isPrecedenceBased";
 
-    @objid ("e9ef0328-2af2-45c6-aa55-aced2a4da8ef")
+    @objid ("e99bd2c1-b7d2-4b6c-aa61-96ceb99f8d87")
     public static final String CLOCKCONSTRAINT_CONSTRAINT_CLOCKCONSTRAINT_CONSTRAINT_ISCHRONOMETRICBASED = "ClockConstraint_Constraint_isChronometricBased";
 
-    @objid ("87b8bceb-42ef-444d-94f5-9f303d1aa0f4")
+    @objid ("8c2fd52f-2ca0-4c42-85f5-93a044835d3b")
     public static final String CLOCKCONSTRAINT_CONSTRAINT_CLOCKCONSTRAINT_CONSTRAINT_ON = "ClockConstraint_Constraint_on";
 
-    @objid ("875fb3b7-a51f-4385-92f8-7042631fd1f6")
+    @objid ("c66a12c6-3bba-4442-b3d7-a1190b169b65")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_NATURE = "ClockType_Class_nature";
 
-    @objid ("cf70203f-079c-4ab0-8e6c-123c951250f3")
+    @objid ("b56ee364-a35d-4708-98f2-0ba26ecbb08d")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_UNITTYPE = "ClockType_Class_unitType";
 
-    @objid ("798f3a51-c4eb-4a4d-aa6c-44705268f942")
+    @objid ("d0978fda-fa75-4f60-b3d1-631c17aa13c1")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_ISLOGICAL = "ClockType_Class_isLogical";
 
-    @objid ("d40424bb-7543-4d68-b4ed-77f741b9ff14")
+    @objid ("2ac57afc-7fc9-4fb3-a149-cdb3a0944740")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_RESOLATTR = "ClockType_Class_resolAttr";
 
-    @objid ("764a847b-0e20-4e95-8e6b-15976b2b87fe")
+    @objid ("381f6f22-798f-4c4f-a96f-ec1c5ef39804")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_MAXVALATTR = "ClockType_Class_maxValAttr";
 
-    @objid ("8674b44f-37a2-442b-82e6-71c0b20d78ed")
+    @objid ("eb12827a-0e01-45e5-924f-b7d5ec0e3db2")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_OFFSETATTR = "ClockType_Class_offsetAttr";
 
-    @objid ("bfa2b073-9b96-42c1-a0c8-b9b6fae57b7b")
+    @objid ("1faab3b9-de2e-4eb1-993e-99df457d1397")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_GETTIME = "ClockType_Class_getTime";
 
-    @objid ("223d0f37-17f3-4142-832b-01f44a6a1909")
+    @objid ("953388d4-230b-48e4-b6e5-e674399e118f")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_SETTIME = "ClockType_Class_setTime";
 
-    @objid ("cab74047-7068-44ee-8fa3-3f75824cdf90")
+    @objid ("f57b2c17-845d-4be7-8b8d-2b89b63c21bf")
     public static final String CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_INDEXTOVALUE = "ClockType_Class_indexToValue";
 
-    @objid ("5daa6366-f0b2-4188-949d-7873caa803e8")
+    @objid ("f18d8daf-e799-4ce4-a6bc-95625aedfc82")
     public static final String CLOCK_ASSOCIATIONEND_CLOCK_ASSOCIATIONEND_STANDARD = "Clock_AssociationEnd_standard";
 
-    @objid ("e1650bc0-b368-4330-958d-6cb56de09ca0")
+    @objid ("b1c7ec58-e848-43de-8401-0b682496d08d")
     public static final String CLOCK_ASSOCIATIONEND_CLOCK_ASSOCIATIONEND_TYPE = "Clock_AssociationEnd_type";
 
-    @objid ("7cfdaad2-3c19-4172-8a26-f7a89f64c6b8")
+    @objid ("2f7b5bda-21a0-4730-843f-65a3542d6c85")
     public static final String CLOCK_ASSOCIATIONEND_CLOCK_ASSOCIATIONEND_UNIT = "Clock_AssociationEnd_unit";
 
-    @objid ("66bba643-6972-472b-b96d-a6444ec77b34")
+    @objid ("d6a0357b-ec0b-494f-bbad-0657fd152e3a")
     public static final String CLOCK_ATTRIBUTE_CLOCK_ATTRIBUTE_STANDARD = "Clock_Attribute_standard";
 
-    @objid ("5671d57b-d60b-48f1-9533-63d842193b58")
+    @objid ("1b649e4f-3242-4493-9c01-d95979ff57c4")
     public static final String CLOCK_ATTRIBUTE_CLOCK_ATTRIBUTE_TYPE = "Clock_Attribute_type";
 
-    @objid ("98dbca3a-ed2a-4a5e-a2a1-9d59d5fdc9fe")
+    @objid ("2c42c380-08ed-4620-ac3b-96fc4dae0ac9")
     public static final String CLOCK_ATTRIBUTE_CLOCK_ATTRIBUTE_UNIT = "Clock_Attribute_unit";
 
-    @objid ("bfdef79e-5d8b-4530-99f0-ced92cfe155e")
+    @objid ("6b8a22d9-0bb2-4a42-9826-5a694aaa421b")
     public static final String CLOCK_ASSOCIATION_CLOCK_ASSOCIATION_STANDARD = "Clock_Association_standard";
 
-    @objid ("2e24da69-4ab2-4d2c-b98f-6525a7b5a041")
+    @objid ("3f4187c9-aa1e-485d-9580-6fbfcc3250ab")
     public static final String CLOCK_ASSOCIATION_CLOCK_ASSOCIATION_TYPE = "Clock_Association_type";
 
-    @objid ("29ba60ea-14b1-4dbe-afa0-17d7e7c2fe89")
+    @objid ("373e4861-7800-4964-9252-f7735fa3834c")
     public static final String CLOCK_ASSOCIATION_CLOCK_ASSOCIATION_UNIT = "Clock_Association_unit";
 
-    @objid ("2db36410-bdbe-4cf6-8464-718449722ca8")
+    @objid ("06991949-a6b7-4051-9f69-7c2644588009")
     public static final String CLOCK_INSTANCE_CLOCK_INSTANCE_STANDARD = "Clock_Instance_standard";
 
-    @objid ("addb22a6-8f2f-4f85-85fd-c115bdd937f1")
+    @objid ("e78fe5ab-9e6c-4153-b31d-723fb46cfb88")
     public static final String CLOCK_INSTANCE_CLOCK_INSTANCE_TYPE = "Clock_Instance_type";
 
-    @objid ("1bd83230-3945-4c66-a081-ada6ab55b730")
+    @objid ("7959345f-a1e0-489f-8e99-9d08b83be719")
     public static final String CLOCK_INSTANCE_CLOCK_INSTANCE_UNIT = "Clock_Instance_unit";
 
-    @objid ("2bd9bc52-d3af-42c4-97b2-b50d254305ec")
+    @objid ("e81de20f-e5cf-4d4d-8bc8-f33684db2af7")
     public static final String CLOCK_EVENT_CLOCK_EVENT_STANDARD = "Clock_Event_standard";
 
-    @objid ("20a0fb19-9595-4405-9c40-db808e71d612")
+    @objid ("cf0a15f5-7b0e-47a1-95e7-86fd05ccf311")
     public static final String CLOCK_EVENT_CLOCK_EVENT_TYPE = "Clock_Event_type";
 
-    @objid ("6c08d247-648e-406b-bd21-f86a23f8ea07")
+    @objid ("b17b5a7b-3bf0-4e17-82a6-8a537fa9d9a5")
     public static final String CLOCK_EVENT_CLOCK_EVENT_UNIT = "Clock_Event_unit";
 
-    @objid ("8dbb946e-5ae1-4450-b5fe-e5f47ac27b37")
+    @objid ("03c7df3b-c0e1-481d-b5f1-b71b591d750f")
     public static final String CLOCK_LINK_CLOCK_LINK_STANDARD = "Clock_Link_standard";
 
-    @objid ("97d3bbb3-c456-4eae-9a93-3ca931ef642c")
+    @objid ("f5eeab3a-7d6d-42b4-ad16-f1f2abce9b0a")
     public static final String CLOCK_LINK_CLOCK_LINK_TYPE = "Clock_Link_type";
 
-    @objid ("dd0ab11a-cda2-4f8a-b28b-7ed6123f8cdc")
+    @objid ("e353e5b4-06b4-4ccf-a377-c74024e46450")
     public static final String CLOCK_LINK_CLOCK_LINK_UNIT = "Clock_Link_unit";
 
-    @objid ("ebba0625-4636-4dd4-b874-d922885d9c43")
+    @objid ("e8596682-13ba-4f6a-84b3-25ddc4897867")
     public static final String TIMEDCONSTRAINT_CONSTRAINT_TIMEDCONSTRAINT_CONSTRAINT_INTERPRETATION = "TimedConstraint_Constraint_interpretation";
 
-    @objid ("aeee1d4b-3d92-416f-9bf5-bae0420bcf4a")
+    @objid ("634bd88a-b999-4f3c-9cb4-28dc377c9de2")
     public static final String TIMEDCONSTRAINT_CONSTRAINT_TIMEDCONSTRAINT_CONSTRAINT_ON = "TimedConstraint_Constraint_on";
 
-    @objid ("b946ea02-eeb1-4a49-b941-a9a5aa975e56")
+    @objid ("d7403f84-58f3-469b-b17b-62b9f6f5ba62")
     public static final String TIMEDDURATIONOBSERVATION_NOTE_TIMEDDURATIONOBSERVATION_NOTE_OBSKIND = "TimedDurationObservation_Note_obsKind";
 
-    @objid ("41d7b030-b92a-463c-81f7-f63dc23c4dca")
+    @objid ("91844155-3485-48e8-9efc-de37a154be2a")
     public static final String TIMEDDURATIONOBSERVATION_NOTE_TIMEDDURATIONOBSERVATION_NOTE_ON = "TimedDurationObservation_Note_on";
 
-    @objid ("4bc1eb95-2817-47b9-9393-514ab792984f")
+    @objid ("f7de9ba0-de7a-4909-9675-144df6bbd350")
     public static final String TIMEDDURATIONOBSERVATION_CONSTRAINT_TIMEDDURATIONOBSERVATION_CONSTRAINT_OBSKIND = "TimedDurationObservation_Constraint_obsKind";
 
-    @objid ("9f892d96-acf3-45a7-adc7-3a28f0735114")
+    @objid ("7d751098-89d9-40fc-bbec-e9977da756c2")
     public static final String TIMEDDURATIONOBSERVATION_CONSTRAINT_TIMEDDURATIONOBSERVATION_CONSTRAINT_ON = "TimedDurationObservation_Constraint_on";
 
-    @objid ("4b137b20-05c4-497c-ba87-51368fbc3749")
+    @objid ("6afbeb89-d4a1-4c94-9e67-7af8f4e62976")
     public static final String TIMEDEVENT_EVENT_TIMEDEVENT_EVENT_REPETITION = "TimedEvent_Event_repetition";
 
-    @objid ("c32d73f5-ba09-449d-a3d8-1b3ed3d51ba7")
+    @objid ("f6b73e2d-1f6d-4130-84a3-88419ca10386")
     public static final String TIMEDEVENT_EVENT_TIMEDEVENT_EVENT_EVERY = "TimedEvent_Event_every";
 
-    @objid ("e05221b9-a65f-4ca8-81a2-8bead6b3e929")
+    @objid ("3e71ec96-22ea-42d9-bf97-209a20ac6907")
     public static final String TIMEDEVENT_EVENT_TIMEDEVENT_EVENT_ON = "TimedEvent_Event_on";
 
-    @objid ("7a9ac5d1-3cb7-4a2b-b786-3fcc73648f2c")
+    @objid ("e1658faf-96bc-4642-84e6-6ac24ba32e22")
     public static final String TIMEDINSTANTOBSERVATION_NOTE_TIMEDINSTANTOBSERVATION_NOTE_OBSKIND = "TimedInstantObservation_Note_obsKind";
 
-    @objid ("a1bc5b16-1a1f-4baf-89b5-5be865251343")
+    @objid ("dd90bdc1-6ca2-4ade-9395-57215e035848")
     public static final String TIMEDINSTANTOBSERVATION_NOTE_TIMEDINSTANTOBSERVATION_NOTE_ON = "TimedInstantObservation_Note_on";
 
-    @objid ("e3dcff99-64ac-48b9-8ca6-02204f86f3f4")
+    @objid ("540f50eb-f75f-49f8-91dd-70cf02954f0b")
     public static final String TIMEDPROCESSING_ACTIVITYACTION_TIMEDPROCESSING_ACTIVITYACTION_DURATION = "TimedProcessing_ActivityAction_duration";
 
-    @objid ("05e4e317-0ee4-4976-ac45-fc091ba47248")
+    @objid ("d3528290-9f76-4c1f-ac11-cf904d49b8b7")
     public static final String TIMEDPROCESSING_ACTIVITYACTION_TIMEDPROCESSING_ACTIVITYACTION_START = "TimedProcessing_ActivityAction_start";
 
-    @objid ("9102132b-b4a8-4c17-af0b-1aaebd2483a3")
+    @objid ("2cf40907-7616-4360-90be-30869e42e507")
     public static final String TIMEDPROCESSING_ACTIVITYACTION_TIMEDPROCESSING_ACTIVITYACTION_FINISH = "TimedProcessing_ActivityAction_finish";
 
-    @objid ("8a5ca0ff-934f-457a-9a0f-d7fdfb5b96ff")
+    @objid ("014460ac-c151-47ac-98b9-0fc845d63399")
     public static final String TIMEDPROCESSING_ACTIVITYACTION_TIMEDPROCESSING_ACTIVITYACTION_ON = "TimedProcessing_ActivityAction_on";
 
-    @objid ("1d40e8f9-f9df-4abb-bd9f-4bab50827f31")
+    @objid ("a65beba3-2e8e-4728-aefb-7c24dc2e2660")
     public static final String TIMEDPROCESSING_BEHAVIOR_TIMEDPROCESSING_BEHAVIOR_DURATION = "TimedProcessing_Behavior_duration";
 
-    @objid ("77dae24b-294e-4fb7-8a34-a8fb2c7d7be1")
+    @objid ("404a012d-2d95-4551-83ff-17b5522e0fac")
     public static final String TIMEDPROCESSING_BEHAVIOR_TIMEDPROCESSING_BEHAVIOR_START = "TimedProcessing_Behavior_start";
 
-    @objid ("a8cfd71e-a59f-42b8-ba01-865441631d09")
+    @objid ("a569467d-f84e-431b-bb0b-43133f3f0ffa")
     public static final String TIMEDPROCESSING_BEHAVIOR_TIMEDPROCESSING_BEHAVIOR_FINISH = "TimedProcessing_Behavior_finish";
 
-    @objid ("1a035242-e8b8-42e4-a38d-769432890f77")
+    @objid ("a672ed86-7993-4d1d-b6be-71d4e3af9414")
     public static final String TIMEDPROCESSING_BEHAVIOR_TIMEDPROCESSING_BEHAVIOR_ON = "TimedProcessing_Behavior_on";
 
-    @objid ("402e6b43-533a-4db4-9a91-b8e71d902876")
+    @objid ("d625c49e-40cb-4838-a429-f6b3100e9fd4")
     public static final String TIMEDPROCESSING_MESSAGE_TIMEDPROCESSING_MESSAGE_DURATION = "TimedProcessing_Message_duration";
 
-    @objid ("8db83582-f820-49af-b2d1-9ae05a9d1f03")
+    @objid ("f50a76f2-7d82-4e9f-8c5d-eb81d238c84d")
     public static final String TIMEDPROCESSING_MESSAGE_TIMEDPROCESSING_MESSAGE_START = "TimedProcessing_Message_start";
 
-    @objid ("cd56767a-3fff-46a2-8503-0cb6949d438c")
+    @objid ("59a8d8b0-bb3d-4635-9455-4d1bca720069")
     public static final String TIMEDPROCESSING_MESSAGE_TIMEDPROCESSING_MESSAGE_FINISH = "TimedProcessing_Message_finish";
 
-    @objid ("754306c2-fd63-4dc9-8622-d62a89b8c1b5")
+    @objid ("4b233bcf-d827-4518-a125-a2926fd29723")
     public static final String TIMEDPROCESSING_MESSAGE_TIMEDPROCESSING_MESSAGE_ON = "TimedProcessing_Message_on";
 
-    @objid ("ab976daf-29d0-490f-bc11-34414dd64a1b")
+    @objid ("5d4848dc-66db-4da9-b8e2-32899edffe22")
     public static final String TIMEDVALUESPECIFICATION_TAGGEDVALUE_TIMEDVALUESPECIFICATION_TAGGEDVALUE_INTERPRETATION = "TimedValueSpecification_TaggedValue_interpretation";
 
-    @objid ("aa902dcb-8b54-48c1-aedc-bfa0e6e69658")
+    @objid ("f15abcdd-e0f8-434d-a600-9d68b5cab5d9")
     public static final String TIMEDVALUESPECIFICATION_TAGGEDVALUE_TIMEDVALUESPECIFICATION_TAGGEDVALUE_ON = "TimedValueSpecification_TaggedValue_on";
 
-    @objid ("b8183b38-1eb3-4ac7-8cd3-f07c111faeed")
+    @objid ("d4dcac3b-daa1-4a63-9ce5-53d9b60e48ed")
     public static final String PPUNIT_ACTOR_PPUNIT_ACTOR_CONCPOLICY = "PpUnit_Actor_concPolicy";
 
-    @objid ("cff41105-aa26-4dd4-8521-1570adde2307")
+    @objid ("53d50e82-63c4-48af-8acf-0aa0916753c2")
     public static final String PPUNIT_ACTOR_PPUNIT_ACTOR_MEMORYSIZE = "PpUnit_Actor_memorySize";
 
-    @objid ("54e9ce81-43c1-4d7c-936b-c9826d414e02")
+    @objid ("76301b98-89d7-491d-8353-f767f736a634")
     public static final String PPUNIT_BEHAVIOR_PPUNIT_BEHAVIOR_CONCPOLICY = "PpUnit_Behavior_concPolicy";
 
-    @objid ("53a5524c-7fff-49db-afe7-507f7da9f228")
+    @objid ("b19b1a75-c076-4aa2-a317-387291303763")
     public static final String PPUNIT_BEHAVIOR_PPUNIT_BEHAVIOR_MEMORYSIZE = "PpUnit_Behavior_memorySize";
 
-    @objid ("75e38b69-22ef-4c2d-9aa5-49b94ab91ab9")
+    @objid ("d3f9e640-8b8c-47b1-a312-e5433767e8d5")
     public static final String PPUNIT_CLASS_PPUNIT_CLASS_CONCPOLICY = "PpUnit_Class_concPolicy";
 
-    @objid ("ea021f81-ad05-4990-9c0c-b8b1222f9d23")
+    @objid ("e1bb6ff2-ba1c-4ca1-8421-01f1226b4d0e")
     public static final String PPUNIT_CLASS_PPUNIT_CLASS_MEMORYSIZE = "PpUnit_Class_memorySize";
 
-    @objid ("6b05f1ef-34aa-4a54-a6d0-8dcf72d8f328")
+    @objid ("e1642bce-cc86-4808-b79c-90d8683fff32")
     public static final String PPUNIT_COLLABORATION_PPUNIT_COLLABORATION_CONCPOLICY = "PpUnit_Collaboration_concPolicy";
 
-    @objid ("28f3582a-426d-49a6-aecf-10df3e6168e5")
+    @objid ("2f6587b9-3a2a-4193-a307-b7a2101caf78")
     public static final String PPUNIT_COLLABORATION_PPUNIT_COLLABORATION_MEMORYSIZE = "PpUnit_Collaboration_memorySize";
 
-    @objid ("817cc1ad-8807-4d70-98c3-a192747de312")
+    @objid ("23e7a0f8-a881-4156-a297-986e916d1839")
     public static final String PPUNIT_USECASE_PPUNIT_USECASE_CONCPOLICY = "PpUnit_UseCase_concPolicy";
 
-    @objid ("5b707f38-e0f6-492c-8ebd-be5fc7a23f81")
+    @objid ("931912c7-1d86-46d6-b91a-861a7bfcdb2c")
     public static final String PPUNIT_USECASE_PPUNIT_USECASE_MEMORYSIZE = "PpUnit_UseCase_memorySize";
 
-    @objid ("2909166a-17f4-48c9-bf3f-8f1ce0bdf563")
+    @objid ("40a2c46f-ad0f-4b42-9f68-280141366bed")
     public static final String RTACTION_CALLACTION_RTACTION_CALLACTION_ISATOMIC = "RtAction_CallAction_isAtomic";
 
-    @objid ("33b1d2bb-ca2f-4440-94d4-0f0c139007ee")
+    @objid ("73159613-5642-4847-84bd-89e235137ce5")
     public static final String RTACTION_CALLACTION_RTACTION_CALLACTION_SYNCHKIND = "RtAction_CallAction_synchKind";
 
-    @objid ("2a2a2d3c-48db-406e-8262-61c173ca368e")
+    @objid ("148d4de7-e8f9-4c15-9482-32392b07418d")
     public static final String RTACTION_CALLACTION_RTACTION_CALLACTION_MSGSIZE = "RtAction_CallAction_msgSize";
 
-    @objid ("f18ac455-0b12-4dc4-86ce-3f23c20d98ce")
+    @objid ("f81935a8-1671-40c1-8370-d24165de714c")
     public static final String RTACTION_OPAQUEACTION_RTACTION_OPAQUEACTION_ISATOMIC = "RtAction_OpaqueAction_isAtomic";
 
-    @objid ("ac987ad1-75d8-41cf-83be-353ba8116e37")
+    @objid ("94f9c9fc-74f9-4ec5-b7a0-e0ffa9f6772a")
     public static final String RTACTION_OPAQUEACTION_RTACTION_OPAQUEACTION_SYNCHKIND = "RtAction_OpaqueAction_synchKind";
 
-    @objid ("48c0c83a-a4d8-4ac3-bb5d-c144dfb9373a")
+    @objid ("601868a8-23e9-4849-b7ab-ed996c295cf0")
     public static final String RTACTION_OPAQUEACTION_RTACTION_OPAQUEACTION_MSGSIZE = "RtAction_OpaqueAction_msgSize";
 
-    @objid ("35ecc9d4-02a0-468b-97c5-d75c456a42d1")
+    @objid ("ecd0485a-3c3e-489e-808d-8750b26ef2ad")
     public static final String RTACTION_OPERATION_RTACTION_OPERATION_ISATOMIC = "RtAction_Operation_isAtomic";
 
-    @objid ("692825b0-0b9e-4431-bf52-18cac5bf79d8")
+    @objid ("6b423c16-e0ab-4a8d-9d89-fb322e28603b")
     public static final String RTACTION_OPERATION_RTACTION_OPERATION_SYNCHKIND = "RtAction_Operation_synchKind";
 
-    @objid ("d2342b52-52a5-4dee-aa52-8e45feaafdcd")
+    @objid ("a518c5de-ca9e-481c-bda6-94895dc65d80")
     public static final String RTACTION_OPERATION_RTACTION_OPERATION_MSGSIZE = "RtAction_Operation_msgSize";
 
-    @objid ("0f9e69bb-f852-48e2-9f6a-280f6b17eb01")
+    @objid ("b6e08219-bd7d-494f-b08b-d7b1e4249c84")
     public static final String RTACTION_SENDSIGNALACTION_RTACTION_SENDSIGNALACTION_ISATOMIC = "RtAction_SendSignalAction_isAtomic";
 
-    @objid ("3d9b0607-bd1b-4f95-a6dd-6eda4ec45c5d")
+    @objid ("76147c52-d41b-4267-82d1-e6936b47c4b2")
     public static final String RTACTION_SENDSIGNALACTION_RTACTION_SENDSIGNALACTION_SYNCHKIND = "RtAction_SendSignalAction_synchKind";
 
-    @objid ("26c0adf1-0141-4a6a-830a-4953f1ceb73c")
+    @objid ("07dd8fcd-1de2-4433-8d24-4803de2b349a")
     public static final String RTACTION_SENDSIGNALACTION_RTACTION_SENDSIGNALACTION_MSGSIZE = "RtAction_SendSignalAction_msgSize";
 
-    @objid ("10e317ce-e050-4e6e-86bc-ee35983472b6")
+    @objid ("c112d78b-ac4b-4287-b839-04634c3f6e5c")
     public static final String RTSERVICE_OPERATION_RTSERVICE_OPERATION_CONCPOLICY = "RtService_Operation_concPolicy";
 
-    @objid ("f61fb8a0-da20-4f39-bfee-30b77a8cea06")
+    @objid ("3e9cd3ed-d103-4ac0-beb7-f1c8aff3626a")
     public static final String RTSERVICE_OPERATION_RTSERVICE_OPERATION_EXEKIND = "RtService_Operation_exeKind";
 
-    @objid ("7c42b933-f7fe-4353-bd25-75849f569fa7")
+    @objid ("5935bdbe-31ce-4e4c-8109-48a7e156bca3")
     public static final String RTSERVICE_OPERATION_RTSERVICE_OPERATION_ISATOMIC = "RtService_Operation_isAtomic";
 
-    @objid ("bb9a791b-e5e1-407f-8c8d-438dd20cff06")
+    @objid ("0d307907-13d3-43a3-8207-53eab80ab5d5")
     public static final String RTSERVICE_OPERATION_RTSERVICE_OPERATION_SYNCHKIND = "RtService_Operation_synchKind";
 
-    @objid ("652d481e-f0cd-4038-956a-1e7647ffa2b5")
+    @objid ("751ce33e-ffb9-4cc0-b396-2160c9f5058f")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_UTILITY = "RtSpecification_Note_utility";
 
-    @objid ("e77719a2-a44b-49da-8615-9ef127970801")
+    @objid ("113e5539-6296-4a8c-883b-ed7fa6ce8c89")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_OCCKIND = "RtSpecification_Note_occKind";
 
-    @objid ("67e5b84a-444a-4542-b0c2-b88fc7f51da5")
+    @objid ("10cbb58e-533a-4f34-b9c6-4c5d6ff7249e")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_TREF = "RtSpecification_Note_tRef";
 
-    @objid ("53921cbb-c203-4614-b352-274bdbd8ee4d")
+    @objid ("904ccc5d-3e2f-4ab4-ba68-dc62e4b11c21")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_RELDL = "RtSpecification_Note_relDl";
 
-    @objid ("0f6d4984-67f1-4978-aea7-84bc2e6cee33")
+    @objid ("dad6240e-7ae2-4922-b7ee-a81994bd3600")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_ABSDL = "RtSpecification_Note_absDl";
 
-    @objid ("6c2cc812-285d-4562-9a86-69fc2a51251c")
+    @objid ("6a7cba9d-b8e2-48a5-bae5-672dde1b8037")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_BOUNDDL = "RtSpecification_Note_boundDl";
 
-    @objid ("5fd3109c-af43-4955-8850-377872df3ba0")
+    @objid ("52103a58-a24a-4ebd-b26c-52bd6fa4b263")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_RDTIME = "RtSpecification_Note_rdTime";
 
-    @objid ("538b82ec-20dc-4186-85ab-bdce167cee4d")
+    @objid ("17068fb0-9519-403d-84c6-db2ca828165d")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_MISS = "RtSpecification_Note_miss";
 
-    @objid ("589514c2-af97-433c-8703-4865814d7664")
+    @objid ("41976606-20c3-4749-b390-60cebfe0c646")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_PRIORITY = "RtSpecification_Note_priority";
 
-    @objid ("0e6c9da1-e2a4-41cf-a492-c3767b8923eb")
+    @objid ("efb3e583-a63f-4d9f-bd3f-a4d85346dcf7")
     public static final String RTSPECIFICATION_NOTE_RTSPECIFICATION_NOTE_CONTEXT = "RtSpecification_Note_context";
 
-    @objid ("d092e87e-e6b5-4405-be6a-cd2769bd1977")
+    @objid ("dc618160-8356-4a2b-a3f8-8f70eb26fd55")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_ISDYNAMIC = "RtUnit_Actor_isDynamic";
 
-    @objid ("e70d777d-6a94-45cd-ad1d-8facb6811353")
+    @objid ("08d12f28-94ee-49c7-bfeb-0a04eef7bf48")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_ISMAIN = "RtUnit_Actor_isMain";
 
-    @objid ("34f1d5f8-23bd-4e78-9045-6d5c6474f2b3")
+    @objid ("8f53f4c8-df4b-44ca-8e99-57720f644209")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_SRPOOLSIZE = "RtUnit_Actor_srPoolSize";
 
-    @objid ("f8c684df-d7d2-494a-82ca-4774db09417c")
+    @objid ("b016e57c-a51e-41f2-8fcb-c5b2dcfd90bd")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_SRPOOLPOLICY = "RtUnit_Actor_srPoolPolicy";
 
-    @objid ("75743fc3-f399-4eac-b820-536d03c5f588")
+    @objid ("3d235b57-23aa-4c1e-8857-be3c7ab2327d")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_SRPOOLWAITINGTIME = "RtUnit_Actor_srPoolWaitingTime";
 
-    @objid ("c2008c99-2615-4ead-8a2c-65fa497a9511")
+    @objid ("4227f3fa-8e1a-4008-8ddb-f07601ee52a9")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_QUEUESCHEDPOLICY = "RtUnit_Actor_queueSchedPolicy";
 
-    @objid ("f4aadd99-c35c-47bb-bfcd-ff8fa40ed3cc")
+    @objid ("3d55df03-3383-4f27-a3ad-fba6624aaba4")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_QUEUESIZE = "RtUnit_Actor_queueSize";
 
-    @objid ("84769fa4-136c-46f6-93e7-6e51be793220")
+    @objid ("10751eb5-832e-4a45-b1e4-1c4a0deae25b")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_MSGMAXSIZE = "RtUnit_Actor_msgMaxSize";
 
-    @objid ("7bbfe9f9-0ff3-44c4-8fb9-75e5190ba606")
+    @objid ("83abf837-5d7b-4f38-a815-4b516907aae9")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_OPERATIONALMODE = "RtUnit_Actor_operationalMode";
 
-    @objid ("37bc6906-a6e1-4e19-9756-cd898cab1619")
+    @objid ("65107ddf-8396-450c-a0f5-54b26d81b784")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_MAIN = "RtUnit_Actor_main";
 
-    @objid ("a7ab66aa-3c27-4f54-a5d0-f10914ea489a")
+    @objid ("d07e2250-6a11-4aba-a5d4-48c58692f022")
     public static final String RTUNIT_ACTOR_RTUNIT_ACTOR_MEMORYSIZE = "RtUnit_Actor_memorySize";
 
-    @objid ("550678f5-c8cf-4c05-b091-59bfced0c880")
+    @objid ("1e965238-39df-41c1-88be-cb8db89bb4c2")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_ISDYNAMIC = "RtUnit_Behavior_isDynamic";
 
-    @objid ("7e039a52-748f-490c-9510-fa1c0965c365")
+    @objid ("ba43540e-ea70-4998-ae6b-5ca05c389521")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_ISMAIN = "RtUnit_Behavior_isMain";
 
-    @objid ("a3a81c7d-0f20-4178-a383-6e4676f4ea00")
+    @objid ("43f6c5c7-e987-4a65-b626-a7aee6b5282a")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_SRPOOLSIZE = "RtUnit_Behavior_srPoolSize";
 
-    @objid ("5e0bf1b4-69bb-451e-8da6-72e107a0e162")
+    @objid ("bf50e417-0369-476b-834b-be711b348eb3")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_SRPOOLPOLICY = "RtUnit_Behavior_srPoolPolicy";
 
-    @objid ("d4c9a3ff-f986-4b7c-af20-56cb015b40b2")
+    @objid ("8212e228-0a2b-4363-b09b-a6ba4e478af5")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_SRPOOLWAITINGTIME = "RtUnit_Behavior_srPoolWaitingTime";
 
-    @objid ("1e1f5788-9d9d-40e4-8212-1f96968f3849")
+    @objid ("bfdd2959-147f-460f-90c3-5ee706a8f650")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_QUEUESCHEDPOLICY = "RtUnit_Behavior_queueSchedPolicy";
 
-    @objid ("b038bbc5-486b-47d3-b954-0af164083eeb")
+    @objid ("5ceddc9f-e858-4ac2-88cc-4e3c85864129")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_QUEUESIZE = "RtUnit_Behavior_queueSize";
 
-    @objid ("198758a1-f7fe-4726-ae33-de242a678a92")
+    @objid ("8ccaa541-32c0-4806-88dd-0bbd8f764b0f")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_MSGMAXSIZE = "RtUnit_Behavior_msgMaxSize";
 
-    @objid ("891bd899-d37c-4d92-9b10-0ed73fc27e0f")
+    @objid ("e9eb42f4-e800-47d0-a2df-c7a65e90e796")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_OPERATIONALMODE = "RtUnit_Behavior_operationalMode";
 
-    @objid ("44de4b6c-cd2a-4854-bf88-9d5cb41f33f1")
+    @objid ("edbcc4ec-a1ae-4145-b93e-127a3f07799d")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_MAIN = "RtUnit_Behavior_main";
 
-    @objid ("adcaa4f0-e0e8-4dab-bd93-2ed1d7805d6d")
+    @objid ("61bd75af-6979-4dce-a6eb-71aea7782b9f")
     public static final String RTUNIT_BEHAVIOR_RTUNIT_BEHAVIOR_MEMORYSIZE = "RtUnit_Behavior_memorySize";
 
-    @objid ("38dadac4-14e8-4bc0-8ae0-82c55b142a37")
+    @objid ("b40af7f8-3b20-4abd-9227-18e454b5cb4b")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_ISDYNAMIC = "RtUnit_Class_isDynamic";
 
-    @objid ("729ba1c7-ad00-465e-9df4-e48d12dd11bd")
+    @objid ("fae9b5e2-27bc-4ce0-ae1a-48af1769cccb")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_ISMAIN = "RtUnit_Class_isMain";
 
-    @objid ("095eac4a-6635-4f55-b623-d5b8eaaa9c3e")
+    @objid ("0da1b77e-b5eb-4de3-acef-7b13a345384d")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_SRPOOLSIZE = "RtUnit_Class_srPoolSize";
 
-    @objid ("f7348550-d2cb-420d-bd42-e1897b2d2139")
+    @objid ("be41c6bd-29a8-4a97-8365-dce160202e59")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_SRPOOLPOLICY = "RtUnit_Class_srPoolPolicy";
 
-    @objid ("d8f1cca0-e7ba-470f-b885-c3d2030153f3")
+    @objid ("6dd7b19f-3846-41ef-881d-e2b7882ba79d")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_SRPOOLWAITINGTIME = "RtUnit_Class_srPoolWaitingTime";
 
-    @objid ("c41f00fd-b218-4fd8-b32a-dc29b0735d5a")
+    @objid ("2c0862cb-de19-41b0-ac2e-97edc89dc5b3")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_QUEUESCHEDPOLICY = "RtUnit_Class_queueSchedPolicy";
 
-    @objid ("780f2123-86af-4a88-b453-64d544e4e1c9")
+    @objid ("9e297943-30ff-4084-8bbb-fab0989ebbd5")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_QUEUESIZE = "RtUnit_Class_queueSize";
 
-    @objid ("289b2363-8703-48d0-841c-141dfd184b67")
+    @objid ("e98ad7d3-3acc-4cae-96d3-0121f202202c")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_MSGMAXSIZE = "RtUnit_Class_msgMaxSize";
 
-    @objid ("56eec69e-bd6b-4050-a692-506df8278016")
+    @objid ("c40b322b-4107-4155-9e2e-5ebced4ed8a5")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_OPERATIONALMODE = "RtUnit_Class_operationalMode";
 
-    @objid ("a3a4a5f1-991a-4c13-8572-59155c268282")
+    @objid ("d5c60e84-1ecd-4a3a-a9d4-5f6888558977")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_MAIN = "RtUnit_Class_main";
 
-    @objid ("5d5946ac-4a50-49b3-8820-bde855ee7c3b")
+    @objid ("6dafd3cc-b1b6-4989-8e32-7c63e8ae1d21")
     public static final String RTUNIT_CLASS_RTUNIT_CLASS_MEMORYSIZE = "RtUnit_Class_memorySize";
 
-    @objid ("3bcd37fb-a7ff-4564-966f-207dad55f6ec")
+    @objid ("4d161d20-094f-4965-b6bd-4a591fecb2cc")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_ISDYNAMIC = "RtUnit_Collaboration_isDynamic";
 
-    @objid ("747060b7-3178-43bb-b67b-e9939c5585f2")
+    @objid ("6fd2eeee-64eb-4e7f-acb9-16313a0597e6")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_ISMAIN = "RtUnit_Collaboration_isMain";
 
-    @objid ("388295de-8340-4ab1-a963-1aea60199846")
+    @objid ("cff21977-d413-45e5-8f34-bab11bfdc410")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_SRPOOLSIZE = "RtUnit_Collaboration_srPoolSize";
 
-    @objid ("ef449f4c-e212-4246-a290-3c9044e70a78")
+    @objid ("d85d56e2-e338-4b4e-8c24-53ae6ef4b7f9")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_SRPOOLPOLICY = "RtUnit_Collaboration_srPoolPolicy";
 
-    @objid ("7d9acd54-a0a9-45a4-8c01-b214fcb93bb0")
+    @objid ("39ee4158-223c-480e-94f6-648c30b6120f")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_SRPOOLWAITINGTIME = "RtUnit_Collaboration_srPoolWaitingTime";
 
-    @objid ("1e91bd5c-6f0c-428b-b588-7137d8a74da0")
+    @objid ("539282c1-0e3b-4375-bbe1-b10ad88af6c1")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_QUEUESCHEDPOLICY = "RtUnit_Collaboration_queueSchedPolicy";
 
-    @objid ("998c8398-7f7b-4509-a783-2588bd30c951")
+    @objid ("bbfa7281-fbc2-4a3d-b9e7-44251a91d2c6")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_QUEUESIZE = "RtUnit_Collaboration_queueSize";
 
-    @objid ("c6643dff-bdd0-49b8-925e-58b33cdd27cd")
+    @objid ("816546d4-7909-479d-bb7f-7ae975ab8cea")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_MSGMAXSIZE = "RtUnit_Collaboration_msgMaxSize";
 
-    @objid ("b1c93659-d563-4653-a1f2-64969d697be3")
+    @objid ("b43cfeb1-c36c-4fb7-9591-bd98bf1472ac")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_OPERATIONALMODE = "RtUnit_Collaboration_operationalMode";
 
-    @objid ("f76159e4-db10-42a7-b3b9-aec1b4fa7b22")
+    @objid ("a3b1cbe3-0eef-4ed5-b2f5-ab81c6334708")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_MAIN = "RtUnit_Collaboration_main";
 
-    @objid ("a38e9fad-b1ee-4668-ab19-a0e321fde174")
+    @objid ("de30a8db-f7d2-4826-8114-e43e89580dcd")
     public static final String RTUNIT_COLLABORATION_RTUNIT_COLLABORATION_MEMORYSIZE = "RtUnit_Collaboration_memorySize";
 
-    @objid ("2523fd33-f19a-445b-9c64-5de4240bad4e")
+    @objid ("faa9a76e-f54b-43cc-a5f9-4a7d01c709bc")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_ISDYNAMIC = "RtUnit_UseCase_isDynamic";
 
-    @objid ("ce6ccb84-a473-4fb9-9352-e3138e7698a4")
+    @objid ("165a5029-2e72-4a59-be0e-c7b4c39d4116")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_ISMAIN = "RtUnit_UseCase_isMain";
 
-    @objid ("6eadd4ed-9574-47d4-86aa-a93d115ca635")
+    @objid ("9a0c3b3a-d83a-4bca-8f1f-4af98159e65a")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLSIZE = "RtUnit_UseCase_srPoolSize";
 
-    @objid ("2da6e7e0-20ed-41c2-b3d9-2a4257cf6ea8")
+    @objid ("d4f739cd-08a0-4b64-9104-c79573f6ecea")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLPOLICY = "RtUnit_UseCase_srPoolPolicy";
 
-    @objid ("3eeee976-9ec4-4b09-8c53-60aab6d6cc4b")
+    @objid ("889792b1-1ea1-4d42-853c-373391811011")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_SRPOOLWAITINGTIME = "RtUnit_UseCase_srPoolWaitingTime";
 
-    @objid ("090d495a-9124-4a28-a809-ee04622246a1")
+    @objid ("af3ec9d0-0ec1-4112-89f4-ec5cbe348fb5")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_QUEUESCHEDPOLICY = "RtUnit_UseCase_queueSchedPolicy";
 
-    @objid ("26f63f8b-f626-46e3-97ba-0ceac15e722b")
+    @objid ("54b3fb3f-81a5-4271-ae29-77f71dbcb755")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_QUEUESIZE = "RtUnit_UseCase_queueSize";
 
-    @objid ("783cef08-c3cf-4881-8830-be46a6eac572")
+    @objid ("2814b671-ace6-44af-ab61-bffaf8d20532")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_MSGMAXSIZE = "RtUnit_UseCase_msgMaxSize";
 
-    @objid ("f14b6ede-7bd7-453a-b109-17f1f4dd8c0d")
+    @objid ("fcfc3117-6d47-4d12-a0be-80687d41f750")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_OPERATIONALMODE = "RtUnit_UseCase_operationalMode";
 
-    @objid ("05a096ac-1cfd-46b1-af82-1147eaeb5c05")
+    @objid ("a8100e62-c0b9-44f3-a331-b68d279577c8")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_MAIN = "RtUnit_UseCase_main";
 
-    @objid ("9501a945-03cf-44aa-a7e4-bb7d0fc1a0b8")
+    @objid ("b3b750ec-c343-4dde-810c-0f4096512539")
     public static final String RTUNIT_USECASE_RTUNIT_USECASE_MEMORYSIZE = "RtUnit_UseCase_memorySize";
 
-    @objid ("d217ce57-94f2-484a-89bf-417f7c39674e")
+    @objid ("e5da4a8a-871f-4ecc-9e30-b639b0ec48c1")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_OP_FREQUENCIES = "HwComputingResource_Association_op_Frequencies";
 
-    @objid ("b3dcc9c6-20c0-4555-9e07-0522e22b4406")
+    @objid ("a987b982-c300-4d64-9eb4-14aaeb5eb3ca")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_DESCRIPTION = "HwComputingResource_Association_description";
 
-    @objid ("7b34b1a9-5db8-4f98-a8de-d6d1af1bcd6c")
+    @objid ("bbe7d014-3b9a-4598-828a-47cc4bf8225e")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_P_HW_SERVICES = "HwComputingResource_Association_p_HW_Services";
 
-    @objid ("4436fe04-4bb6-4dbc-849a-d0b2bb3fde0a")
+    @objid ("cf43f71b-03d4-4acb-b1f6-7124c2842ec3")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_R_HW_SERVICES = "HwComputingResource_Association_r_HW_Services";
 
-    @objid ("a1d613bc-6570-40af-b089-d5c72960da76")
+    @objid ("d81fc7c6-9f4b-4c7f-a1d2-20e4ec01465d")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_OWNEDHW = "HwComputingResource_Association_ownedHW";
 
-    @objid ("27220620-7a00-4b3b-9563-a4dd21b89eaa")
+    @objid ("f103d238-5513-4b6a-83ce-3802d21e7b54")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_FREQUENCY = "HwComputingResource_Association_frequency";
 
-    @objid ("be1025bc-ad5b-4054-99ea-ad9fd410778f")
+    @objid ("0b28c9c9-15a6-4c73-8508-0777751ff661")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATION_HWCOMPUTINGRESOURCE_ASSOCIATION_ENDPOINTS = "HwComputingResource_Association_endPoints";
 
-    @objid ("8b4a809e-e3ac-47f2-82d0-a622620d9bb0")
+    @objid ("e5c17915-d10f-4aa7-849a-f0373d3be4ca")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_OP_FREQUENCIES = "HwComputingResource_AssociationEnd_op_Frequencies";
 
-    @objid ("e4fc5452-10fb-41cc-aa15-0d819287419e")
+    @objid ("10718837-b420-4eee-b119-4a216aa26307")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_DESCRIPTION = "HwComputingResource_AssociationEnd_description";
 
-    @objid ("56cf7429-ba45-44a5-a911-350cb2090c6a")
+    @objid ("2d444a1e-6fc2-4032-ba69-1d682e8788e3")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_P_HW_SERVICES = "HwComputingResource_AssociationEnd_p_HW_Services";
 
-    @objid ("8d93bccc-b276-46ee-9688-4c7456f20a9d")
+    @objid ("2ef191b9-2315-49b1-b0dc-a97f9b069397")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_R_HW_SERVICES = "HwComputingResource_AssociationEnd_r_HW_Services";
 
-    @objid ("1c8160a1-c945-4674-a683-fec03306cfa3")
+    @objid ("3b2eb525-fc25-4bd0-b679-e9ec80141d7f")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_OWNEDHW = "HwComputingResource_AssociationEnd_ownedHW";
 
-    @objid ("65df818d-4379-4f41-8a99-f5cf882e0e02")
+    @objid ("bd35c970-a580-40d8-be7c-e60a7387c1de")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_FREQUENCY = "HwComputingResource_AssociationEnd_frequency";
 
-    @objid ("2b0ae2ba-7537-423a-892b-c186f03b947a")
+    @objid ("7b5948fc-5443-4bff-901a-f6d168059948")
     public static final String HWCOMPUTINGRESOURCE_ASSOCIATIONEND_HWCOMPUTINGRESOURCE_ASSOCIATIONEND_ENDPOINTS = "HwComputingResource_AssociationEnd_endPoints";
 
-    @objid ("6368ee9f-c97a-4cd6-b16e-4cfc20df8fc3")
+    @objid ("abfc0f07-f0d0-4394-86f3-3e3c0dec79b5")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_OP_FREQUENCIES = "HwComputingResource_Attribute_op_Frequencies";
 
-    @objid ("3ee9e26d-4ef8-4f22-9e12-71a3d7962877")
+    @objid ("613a8cbc-41fb-4f95-b85d-0d7bdfb826a5")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_DESCRIPTION = "HwComputingResource_Attribute_description";
 
-    @objid ("ffc85a6d-7c78-499d-9155-f5a2adc662fe")
+    @objid ("8fcff851-4304-48a9-a016-18f2a470eedd")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_P_HW_SERVICES = "HwComputingResource_Attribute_p_HW_Services";
 
-    @objid ("c9a781e2-afab-40ee-b9d2-2dd5329cb5d4")
+    @objid ("c19e00dc-86fc-4b9d-b4bb-daea0ebba005")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_R_HW_SERVICES = "HwComputingResource_Attribute_r_HW_Services";
 
-    @objid ("195f7a55-caf7-4759-b8bd-a20265620f7d")
+    @objid ("16f68359-60e7-4067-93c8-1a11508ea811")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_OWNEDHW = "HwComputingResource_Attribute_ownedHW";
 
-    @objid ("409578c6-afca-47ad-bcc3-205494081fe1")
+    @objid ("1dcb5645-7b02-4cb3-b163-78101f5d0604")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_FREQUENCY = "HwComputingResource_Attribute_frequency";
 
-    @objid ("eb3421bf-ea8c-49fb-8301-34aecd29bba3")
+    @objid ("107d9945-4aac-4ce3-9c28-08d888283765")
     public static final String HWCOMPUTINGRESOURCE_ATTRIBUTE_HWCOMPUTINGRESOURCE_ATTRIBUTE_ENDPOINTS = "HwComputingResource_Attribute_endPoints";
 
-    @objid ("ffc19e95-f9db-4223-83d5-126ae2965ccb")
+    @objid ("d2ef8a4c-561a-41d9-ae57-aec8d08d067e")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_OP_FREQUENCIES = "HwComputingResource_Classifier_op_Frequencies";
 
-    @objid ("6c1a6728-2a0d-4a67-ac8a-5a9b1b61708c")
+    @objid ("c6ac1284-d9ee-402f-a321-71de077c05cf")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_DESCRIPTION = "HwComputingResource_Classifier_description";
 
-    @objid ("a16681c6-729f-4583-ba99-f70c9e026f98")
+    @objid ("f614b3b5-dfde-48fb-bb28-593d5e7dbbbc")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_P_HW_SERVICES = "HwComputingResource_Classifier_p_HW_Services";
 
-    @objid ("fce39d45-db2e-45f8-a51a-2c7aedc0cd74")
+    @objid ("e18b7a89-e9f5-44f5-b343-e1940e59a705")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_R_HW_SERVICES = "HwComputingResource_Classifier_r_HW_Services";
 
-    @objid ("790cc577-6184-425d-9bd8-74f21dc734b7")
+    @objid ("d3d31892-d20c-4cf8-83f2-fed61a21d26e")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_OWNEDHW = "HwComputingResource_Classifier_ownedHW";
 
-    @objid ("6d0c3240-a82a-43d9-9f09-7ab41b7656d4")
+    @objid ("77773b8d-1001-4b0a-96aa-3512a10174e1")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_FREQUENCY = "HwComputingResource_Classifier_frequency";
 
-    @objid ("774dcceb-f826-499b-91c1-d8fa50ed28b5")
+    @objid ("218a5448-e07d-4440-a5c4-5e590d0501e6")
     public static final String HWCOMPUTINGRESOURCE_CLASSIFIER_HWCOMPUTINGRESOURCE_CLASSIFIER_ENDPOINTS = "HwComputingResource_Classifier_endPoints";
 
-    @objid ("60d0a16f-e0f7-4c11-8141-de2c6f4b8eca")
+    @objid ("935501a4-9255-45d1-a678-e6b7632816b9")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_OP_FREQUENCIES = "HwComputingResource_Instance_op_Frequencies";
 
-    @objid ("c6e434e8-414d-4395-884e-72e407d0eb02")
+    @objid ("c67a7f51-94a4-4e9a-9b6a-ceacc66bae2c")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_DESCRIPTION = "HwComputingResource_Instance_description";
 
-    @objid ("b205ffd7-6c9a-48b9-9fee-b0053ae7dfab")
+    @objid ("fdfa2767-5dea-44ff-ad8f-92e5b2984894")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_P_HW_SERVICES = "HwComputingResource_Instance_p_HW_Services";
 
-    @objid ("303acb78-b540-4b73-bbff-3807a996c2be")
+    @objid ("e091d58e-e9c6-4f33-832b-226f13f6ea83")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_R_HW_SERVICES = "HwComputingResource_Instance_r_HW_Services";
 
-    @objid ("16e2d75a-1598-4765-9b92-98c5cc9a06a7")
+    @objid ("d88c60b5-d3ec-4564-9dd7-8ec7a925de5b")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_OWNEDHW = "HwComputingResource_Instance_ownedHW";
 
-    @objid ("4599815d-bedb-4233-b98c-8648c0485af8")
+    @objid ("6f1710cf-cd8a-4724-b142-7a634a1a7df9")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_FREQUENCY = "HwComputingResource_Instance_frequency";
 
-    @objid ("2c971522-bcfb-4e30-b958-dec6ce7ebaec")
+    @objid ("0cd5208a-6c96-4a5b-88a6-f89b007aa267")
     public static final String HWCOMPUTINGRESOURCE_INSTANCE_HWCOMPUTINGRESOURCE_INSTANCE_ENDPOINTS = "HwComputingResource_Instance_endPoints";
 
-    @objid ("1e6ed34e-ec1e-4959-a8f7-68f07707a7e3")
+    @objid ("9266794a-c7fa-44b7-95ef-62c011c5e2c2")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_OP_FREQUENCIES = "HwComputingResource_Lifeline_op_Frequencies";
 
-    @objid ("b1d1e209-e535-4a77-a409-2ff7cab57973")
+    @objid ("fcaee30c-f96d-46f9-b0d9-47b1604a8169")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_DESCRIPTION = "HwComputingResource_Lifeline_description";
 
-    @objid ("4ef64eea-1003-4b39-8977-1bfd354a2e56")
+    @objid ("fead0baf-3768-4473-98db-f2ad3f6c09db")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_P_HW_SERVICES = "HwComputingResource_Lifeline_p_HW_Services";
 
-    @objid ("ddfc4836-57eb-4700-b1b7-7ea14f2063b3")
+    @objid ("6c9ec846-1183-4d23-b9dd-816bc575c5b0")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_R_HW_SERVICES = "HwComputingResource_Lifeline_r_HW_Services";
 
-    @objid ("669f4535-051b-497f-978c-5588365e325e")
+    @objid ("1d57ffc5-776d-4c26-818f-69addc8e1568")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_OWNEDHW = "HwComputingResource_Lifeline_ownedHW";
 
-    @objid ("fafe296d-48bd-4d2e-a938-84bb2aa82d5d")
+    @objid ("84a6d847-4f82-480b-8b50-374d843c9a9e")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_FREQUENCY = "HwComputingResource_Lifeline_frequency";
 
-    @objid ("d88a19cb-72fd-4407-97f6-41783dbdb77a")
+    @objid ("0eabca9f-9319-43ff-984e-cf3a0d181749")
     public static final String HWCOMPUTINGRESOURCE_LIFELINE_HWCOMPUTINGRESOURCE_LIFELINE_ENDPOINTS = "HwComputingResource_Lifeline_endPoints";
 
-    @objid ("376e10ef-0079-4417-a57d-ebd5f3d381b9")
+    @objid ("651e2268-f974-4b68-9a6a-ed7990e3ff4e")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_OP_FREQUENCIES = "HwComputingResource_Link_op_Frequencies";
 
-    @objid ("85a2dec8-dda3-4b32-8b2a-e63a0243224b")
+    @objid ("59e7a346-ab80-42e4-8ce7-37dc7279ddb6")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_DESCRIPTION = "HwComputingResource_Link_description";
 
-    @objid ("5a6caad7-f5c8-4332-8fef-3b5ba17c552c")
+    @objid ("76c67721-997e-4e5f-b1b8-d7a87a75554a")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_P_HW_SERVICES = "HwComputingResource_Link_p_HW_Services";
 
-    @objid ("2e5e7901-ed4c-4d18-909c-4f80bbd24eba")
+    @objid ("6e81a709-4112-4769-ba26-d98883e10162")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_R_HW_SERVICES = "HwComputingResource_Link_r_HW_Services";
 
-    @objid ("b4380700-cebf-4c5b-9298-c8cfe098bcf7")
+    @objid ("3fe0fee1-0c2b-45ba-b33e-72dfc4df1290")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_OWNEDHW = "HwComputingResource_Link_ownedHW";
 
-    @objid ("b83bdee8-29b0-4cc7-a57d-f9440b87fa2b")
+    @objid ("465baaf5-40c3-4e51-bb93-54a9b081d781")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_FREQUENCY = "HwComputingResource_Link_frequency";
 
-    @objid ("043464d1-a850-40bb-aade-8da4f89d84af")
+    @objid ("155b9669-45c2-4c52-bb10-d37d84efda27")
     public static final String HWCOMPUTINGRESOURCE_LINK_HWCOMPUTINGRESOURCE_LINK_ENDPOINTS = "HwComputingResource_Link_endPoints";
 
-    @objid ("abd21b70-9d79-43d6-bd83-19c9290c5517")
+    @objid ("964f8180-c4ce-4a97-883a-82b0653f2642")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES = "HwComputingResource_Parameter_op_Frequencies";
 
-    @objid ("54aefb99-810f-403f-88c7-706aa8d3e350")
+    @objid ("7fc8e962-721a-43b3-a398-9fc38c29f3f2")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_DESCRIPTION = "HwComputingResource_Parameter_description";
 
-    @objid ("8911a895-aac7-4904-ad38-81fa72bed7ab")
+    @objid ("1abfc6cd-e683-483a-b286-7e4caa97ddb1")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_P_HW_SERVICES = "HwComputingResource_Parameter_p_HW_Services";
 
-    @objid ("d655360a-beef-409a-a861-526e0461204c")
+    @objid ("fb15fe32-92f3-4594-986e-55287c7dc915")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_R_HW_SERVICES = "HwComputingResource_Parameter_r_HW_Services";
 
-    @objid ("30dacfee-df08-4e99-964a-57a9d9512c01")
+    @objid ("8571d36a-1efb-4df1-9a2a-b593b82aa643")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_OWNEDHW = "HwComputingResource_Parameter_ownedHW";
 
-    @objid ("ea0613c2-b4d8-4aab-8f8c-e8b5aa1bf587")
+    @objid ("2f28aed3-7bcd-400e-9ac6-158a6fb97b09")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_FREQUENCY = "HwComputingResource_Parameter_frequency";
 
-    @objid ("44396abc-042a-4425-8f15-58f9ae0bf0a0")
+    @objid ("33973cc1-7c18-4562-acb6-037e248f821d")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_HWCOMPUTINGRESOURCE_PARAMETER_ENDPOINTS = "HwComputingResource_Parameter_endPoints";
 
-    @objid ("9f94e599-f44d-4f74-aa46-d3d2536d1b41")
+    @objid ("6b8e0495-9793-4637-9556-2166fa9870c4")
     public static final String HWISA_ASSOCIATION_HWISA_ASSOCIATION_FAMILY = "HwISA_Association_family";
 
-    @objid ("50d22802-8855-4ace-a936-c94864cd76fc")
+    @objid ("ec5bc487-322b-4a30-a940-b04d72dd1cae")
     public static final String HWISA_ASSOCIATION_HWISA_ASSOCIATION_INST_WIDTH = "HwISA_Association_inst_Width";
 
-    @objid ("8b134197-9850-4139-aae0-a3f362615a69")
+    @objid ("bc73b09f-73c0-4946-8a10-2f57613f5b4e")
     public static final String HWISA_ASSOCIATION_HWISA_ASSOCIATION_TYPE = "HwISA_Association_type";
 
-    @objid ("3a1f4ae6-8692-4705-8f26-2e53eae70412")
+    @objid ("1844a6b9-e6d8-4b3a-b29b-c285793ca3d8")
     public static final String HWISA_ASSOCIATIONEND_HWISA_ASSOCIATIONEND_FAMILY = "HwISA_AssociationEnd_family";
 
-    @objid ("b8e49f5f-ee9f-4275-a00b-84e86adb17de")
+    @objid ("3117d139-d9e8-4613-a9d9-53390a2f8249")
     public static final String HWISA_ASSOCIATIONEND_HWISA_ASSOCIATIONEND_INST_WIDTH = "HwISA_AssociationEnd_inst_Width";
 
-    @objid ("7d8b04a9-e452-46f2-a7e0-07627095a27a")
+    @objid ("bbebebd0-f964-419e-8dde-f85e1d426b94")
     public static final String HWISA_ASSOCIATIONEND_HWISA_ASSOCIATIONEND_TYPE = "HwISA_AssociationEnd_type";
 
-    @objid ("3baeb2c6-e853-4ac3-a9ba-940ef602f87a")
+    @objid ("b7e6617a-b499-4e3e-9202-fe8c02459be2")
     public static final String HWISA_ATTRIBUTE_HWISA_ATTRIBUTE_FAMILY = "HwISA_Attribute_family";
 
-    @objid ("0c823a89-a622-48fc-aadc-291ed5c21894")
+    @objid ("a1a43779-1666-49e4-a6f8-77802626ddc6")
     public static final String HWISA_ATTRIBUTE_HWISA_ATTRIBUTE_INST_WIDTH = "HwISA_Attribute_inst_Width";
 
-    @objid ("5ca4316c-1127-4f9f-86c9-9ac4253f20ae")
+    @objid ("67abcde9-cb89-4a16-aca5-09ffc3ae72d1")
     public static final String HWISA_ATTRIBUTE_HWISA_ATTRIBUTE_TYPE = "HwISA_Attribute_type";
 
-    @objid ("a96fe8ad-9f91-42c4-ab5a-a664b1008ab3")
+    @objid ("a4c53efb-acd4-4460-b281-16a700d0ae46")
     public static final String HWISA_CLASSIFIER_HWISA_CLASSIFIER_FAMILY = "HwISA_Classifier_family";
 
-    @objid ("03e66a51-4289-492d-af96-287d64ef33a4")
+    @objid ("6113b6ea-c76a-4de9-83c4-0406db75a304")
     public static final String HWISA_CLASSIFIER_HWISA_CLASSIFIER_INST_WIDTH = "HwISA_Classifier_inst_Width";
 
-    @objid ("060d2dad-a853-46c6-b97d-92063eb8cbab")
+    @objid ("efd3aee9-cd8a-454b-b85d-645b9175c6b9")
     public static final String HWISA_CLASSIFIER_HWISA_CLASSIFIER_TYPE = "HwISA_Classifier_type";
 
-    @objid ("02502931-3969-4694-918e-aa724facd75e")
+    @objid ("d7ab1c2b-9a15-4c43-97e5-53aecd44d0f3")
     public static final String HWISA_INSTANCE_HWISA_INSTANCE_FAMILY = "HwISA_Instance_family";
 
-    @objid ("c5d4ba66-32d5-4fbe-8bc0-af9420fd0532")
+    @objid ("aeb17c92-85e7-4888-9b86-963c8cf05129")
     public static final String HWISA_INSTANCE_HWISA_INSTANCE_INST_WIDTH = "HwISA_Instance_inst_Width";
 
-    @objid ("bfb7d3f4-559f-4f57-ba96-17d6eea34fb9")
+    @objid ("7ef99c64-8b92-4ebf-80f3-444d02b3a36c")
     public static final String HWISA_INSTANCE_HWISA_INSTANCE_TYPE = "HwISA_Instance_type";
 
-    @objid ("7dbb55b9-d535-4ec3-8beb-af3438f850c0")
+    @objid ("0962ba01-54c4-4855-a68b-9037c3ebbc3a")
     public static final String HWISA_LIFELINE_HWISA_LIFELINE_FAMILY = "HwISA_Lifeline_family";
 
-    @objid ("e156becc-3319-48c5-b1e7-794d392c9184")
+    @objid ("e3f0266e-cd70-425e-963b-4b4b5204c1e5")
     public static final String HWISA_LIFELINE_HWISA_LIFELINE_INST_WIDTH = "HwISA_Lifeline_inst_Width";
 
-    @objid ("7b65891d-875f-40fa-a363-90ebb14f7941")
+    @objid ("4ff3d2c2-5344-4547-99ef-a48f5bdce6a7")
     public static final String HWISA_LIFELINE_HWISA_LIFELINE_TYPE = "HwISA_Lifeline_type";
 
-    @objid ("80a03805-e8ce-4785-b42b-89107c4a8009")
+    @objid ("2f23f98f-79b4-49af-8c04-6312b7d10060")
     public static final String HWISA_LINK_HWISA_LINK_FAMILY = "HwISA_Link_family";
 
-    @objid ("1e22f6f3-362d-41b2-a9cc-0738aad41b07")
+    @objid ("5f4cf211-6c1f-4621-92c9-df89e0d1a487")
     public static final String HWISA_LINK_HWISA_LINK_INST_WIDTH = "HwISA_Link_inst_Width";
 
-    @objid ("6165e8a5-ad32-40f2-bdf4-c08eab5451f6")
+    @objid ("e1e85860-b668-44e7-ab6f-2e1a4cf16029")
     public static final String HWISA_LINK_HWISA_LINK_TYPE = "HwISA_Link_type";
 
-    @objid ("1b401a7c-ae0b-4814-b2b2-4056b4f4399e")
+    @objid ("3af4cff2-e723-49ce-97c4-60ae0a52e45e")
     public static final String HWISA_PARAMETER_HWISA_PARAMETER_FAMILY = "HwISA_Parameter_family";
 
-    @objid ("39b17f72-be77-4bdb-86c1-7cdb58b6a74d")
+    @objid ("7c7a439b-6e06-4c42-bec1-4b45c676ac7f")
     public static final String HWISA_PARAMETER_HWISA_PARAMETER_INST_WIDTH = "HwISA_Parameter_inst_Width";
 
-    @objid ("355cd9fc-716c-4d3d-baa3-8bddbc39a76c")
+    @objid ("22e92918-ab53-42f7-98f1-ba0f3d0214d0")
     public static final String HWISA_PARAMETER_HWISA_PARAMETER_TYPE = "HwISA_Parameter_type";
 
-    @objid ("990f20ef-4f4d-47a9-8da0-d166e7df72aa")
+    @objid ("aceb0f4a-3f3d-48da-9467-45f133fe8617")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_TECHNOLOGY = "HwPLD_Association_technology";
 
-    @objid ("be272182-01f7-4c34-bdf5-5d26902223ab")
+    @objid ("3cd0dd5d-8976-4148-832a-8bab81d69a26")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_ORGANIZATION = "HwPLD_Association_organization";
 
-    @objid ("71846cfe-7f36-46fb-bd35-691d2b4a13b6")
+    @objid ("b228c7fc-0b4b-44f2-907a-5789fe066cba")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_NBLUTS = "HwPLD_Association_nbLUTs";
 
-    @objid ("e9decb6c-f97f-4749-aa1f-fd31dab990ca")
+    @objid ("05190704-b251-42a1-8512-bb28592d7a7d")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_NDLUT_INPUTS = "HwPLD_Association_ndLUT_Inputs";
 
-    @objid ("6d92083d-c3f0-4fa9-a76a-6afa285c64d8")
+    @objid ("412915ee-18d1-4cf2-9d31-6fd51a4d5abb")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_NBFLIPFLOPS = "HwPLD_Association_nbFlipFlops";
 
-    @objid ("59766e0f-c4c5-41bb-88f5-af9140f3076f")
+    @objid ("f0246cf5-c71a-481a-bad5-094dd64ec024")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_BLOCKSRAM = "HwPLD_Association_blocksRAM";
 
-    @objid ("fe5d0a2a-5496-47f4-8b35-6570b69832c2")
+    @objid ("def3f545-ae8f-43d6-b03a-597d0dbac017")
     public static final String HWPLD_ASSOCIATION_HWPLD_ASSOCIATION_BLOCKSCOMPUTING = "HwPLD_Association_blocksComputing";
 
-    @objid ("ebbbbae9-6ac8-4389-abf1-eae3443bba81")
+    @objid ("8431c3fa-500d-41fe-9291-f29e821ca4e0")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_TECHNOLOGY = "HwPLD_AssociationEnd_technology";
 
-    @objid ("15307bbe-05d7-43bb-bd2f-3bc81837373f")
+    @objid ("066738d3-efde-4007-9edc-8d1bb373f6f8")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_ORGANIZATION = "HwPLD_AssociationEnd_organization";
 
-    @objid ("94397119-8a67-48ab-b035-8378d15405e6")
+    @objid ("5131a478-2a45-41b4-92dc-d3c5e11fd0ea")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_NBLUTS = "HwPLD_AssociationEnd_nbLUTs";
 
-    @objid ("5e7ee7a8-71e0-45a2-9f6c-3dfcddea8dc0")
+    @objid ("f208d208-778a-4e25-9710-62321c30b157")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_NDLUT_INPUTS = "HwPLD_AssociationEnd_ndLUT_Inputs";
 
-    @objid ("3c470027-1593-44f0-bc1b-f0c2c4a532bb")
+    @objid ("fe8dcc43-513b-4a49-b646-5080eb9c3511")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_NBFLIPFLOPS = "HwPLD_AssociationEnd_nbFlipFlops";
 
-    @objid ("5e71d97a-4284-4bad-b255-d8fc19adff54")
+    @objid ("20f31de1-83b3-4ed3-9e8e-7cb3221e5220")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_BLOCKSRAM = "HwPLD_AssociationEnd_blocksRAM";
 
-    @objid ("30ccc74e-61dd-48b3-8b69-4e30e05b80f9")
+    @objid ("b4b9c11d-e3f4-4689-86c1-a636adfbd706")
     public static final String HWPLD_ASSOCIATIONEND_HWPLD_ASSOCIATIONEND_BLOCKSCOMPUTING = "HwPLD_AssociationEnd_blocksComputing";
 
-    @objid ("94fdd9d5-144b-4ee8-9e08-43fd7beab4d4")
+    @objid ("c9060a8d-cae9-421e-a8ca-77f5ccb5f1ad")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_TECHNOLOGY = "HwPLD_Attribute_technology";
 
-    @objid ("4f35b819-4218-4a1c-a130-c6c5ee85b8a6")
+    @objid ("291bd07e-f7ac-4ec6-acfe-5a2d9fb11e22")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_ORGANIZATION = "HwPLD_Attribute_organization";
 
-    @objid ("9dd15ffb-baac-4e63-94fb-89047b08e02e")
+    @objid ("c7bce2c6-560c-4f7d-a1f3-17a618beb21c")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_NBLUTS = "HwPLD_Attribute_nbLUTs";
 
-    @objid ("70753374-2885-4a05-b75f-8d735c7dee0d")
+    @objid ("f328a7e9-e21d-4475-aa0c-75ce1a60d282")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_NDLUT_INPUTS = "HwPLD_Attribute_ndLUT_Inputs";
 
-    @objid ("445b1ea5-725e-40d9-a828-ff27882981ec")
+    @objid ("f3602fba-c70a-41b5-811a-53ce6751ff0c")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_NBFLIPFLOPS = "HwPLD_Attribute_nbFlipFlops";
 
-    @objid ("306f164c-8cc3-4e86-a271-c7c8e8bf917d")
+    @objid ("a6557aad-73dc-4e4e-8d01-d8d17f10f31f")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_BLOCKSRAM = "HwPLD_Attribute_blocksRAM";
 
-    @objid ("d3dc3a4f-3424-4f9e-a372-019fb57b495c")
+    @objid ("68377771-bce1-44ce-9a75-4f1b13284d3d")
     public static final String HWPLD_ATTRIBUTE_HWPLD_ATTRIBUTE_BLOCKSCOMPUTING = "HwPLD_Attribute_blocksComputing";
 
-    @objid ("0b620fc2-3843-441c-ba2c-24edc0669d1e")
+    @objid ("ad5a5145-1049-4630-9e56-d2a865cac15f")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_TECHNOLOGY = "HwPLD_Classifier_technology";
 
-    @objid ("deb6819a-36ac-42ab-b8a9-ca2572f55f27")
+    @objid ("d9b141f6-d6fe-4c8f-bbe1-ea99e1c85fc3")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_ORGANIZATION = "HwPLD_Classifier_organization";
 
-    @objid ("cee91672-1a4c-45a0-97a8-0fa46799deb1")
+    @objid ("eff0f2b5-f866-4b6c-ae3b-5866eb3ae701")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_NBLUTS = "HwPLD_Classifier_nbLUTs";
 
-    @objid ("e4cb169e-d301-4d5b-812f-fd801175368e")
+    @objid ("43853d45-74ea-4169-ae64-98f07f631f68")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_NDLUT_INPUTS = "HwPLD_Classifier_ndLUT_Inputs";
 
-    @objid ("2074134d-43c9-4f53-8230-d1e38c47b399")
+    @objid ("c07d9c6c-ddab-4a5d-aa4c-0e7fbf9db291")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_NBFLIPFLOPS = "HwPLD_Classifier_nbFlipFlops";
 
-    @objid ("f57e5ecd-ad1e-4c9a-8672-a7a50e1f643a")
+    @objid ("00220049-cee0-499d-aa24-485dd764c4b4")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_BLOCKSRAM = "HwPLD_Classifier_blocksRAM";
 
-    @objid ("438f7d1d-efa8-4f9c-95a4-8cb5566d618f")
+    @objid ("58fac3d2-2bf0-461a-8f1e-54dd10fdb405")
     public static final String HWPLD_CLASSIFIER_HWPLD_CLASSIFIER_BLOCKSCOMPUTING = "HwPLD_Classifier_blocksComputing";
 
-    @objid ("a9e9608e-be2a-4266-ab44-00b1386b1688")
+    @objid ("2dea0eec-c084-4cd5-9282-ebbf015ec332")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_TECHNOLOGY = "HwPLD_Instance_technology";
 
-    @objid ("66d9162d-fd8c-46a0-a69b-c915e5a1f62e")
+    @objid ("9de7a88e-3f37-4fbf-bb3c-d8bd3c44e850")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_ORGANIZATION = "HwPLD_Instance_organization";
 
-    @objid ("333bf655-51aa-4ebb-9e6f-334acfd949c1")
+    @objid ("36501640-2825-43d7-b945-d23a1e82ddeb")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_NBLUTS = "HwPLD_Instance_nbLUTs";
 
-    @objid ("686443fc-4169-4c1f-a256-38b8b2952455")
+    @objid ("6b0077c7-34fb-49b7-9735-e2f3ae8ed67b")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_NDLUT_INPUTS = "HwPLD_Instance_ndLUT_Inputs";
 
-    @objid ("f316c9b5-f5b0-4bc5-a435-a6bfeaf79a2b")
+    @objid ("c07b9a2f-a48c-4102-8bec-93caa2896a05")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_NBFLIPFLOPS = "HwPLD_Instance_nbFlipFlops";
 
-    @objid ("731f151d-430d-4977-8920-559e7c915537")
+    @objid ("65f84db1-a2a0-4883-a842-ba42cbcfeebe")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_BLOCKSRAM = "HwPLD_Instance_blocksRAM";
 
-    @objid ("38d9c0b4-b030-4825-af30-67d777392ded")
+    @objid ("2943c1ce-86f6-4a95-9bb2-5b1252163bc9")
     public static final String HWPLD_INSTANCE_HWPLD_INSTANCE_BLOCKSCOMPUTING = "HwPLD_Instance_blocksComputing";
 
-    @objid ("16282d48-85e7-4845-8b3b-b0fbc40dfa01")
+    @objid ("06eec6f1-ada8-49dd-a160-658d5f8779a7")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_TECHNOLOGY = "HwPLD_Lifeline_technology";
 
-    @objid ("05d94832-ed6d-407c-b5df-fa155fc33725")
+    @objid ("e73f1b28-d654-4ee6-b37f-48d3810137e6")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_ORGANIZATION = "HwPLD_Lifeline_organization";
 
-    @objid ("7b6fa740-4fd6-49b2-b745-0d11134ad69b")
+    @objid ("9831ad7a-30af-43bf-a712-cf696078c1f7")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_NBLUTS = "HwPLD_Lifeline_nbLUTs";
 
-    @objid ("06a7d74b-5470-4107-a409-94864c014a60")
+    @objid ("f639af2d-3a69-410d-bebe-30535e1cff5c")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_NDLUT_INPUTS = "HwPLD_Lifeline_ndLUT_Inputs";
 
-    @objid ("aece4e0b-2453-4e76-8ad3-f12aacb201c4")
+    @objid ("f32ebba8-ff07-4b69-8a71-23ab8878f709")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_NBFLIPFLOPS = "HwPLD_Lifeline_nbFlipFlops";
 
-    @objid ("c58a47e6-5dfb-472d-897f-8df69756131b")
+    @objid ("f6bf6806-e21b-4854-ba46-2a7aace8cd07")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_BLOCKSRAM = "HwPLD_Lifeline_blocksRAM";
 
-    @objid ("cbe1f581-17c3-4afc-82fc-142f49beb55a")
+    @objid ("1302580c-85d2-4c78-b1e3-7fdef6712763")
     public static final String HWPLD_LIFELINE_HWPLD_LIFELINE_BLOCKSCOMPUTING = "HwPLD_Lifeline_blocksComputing";
 
-    @objid ("75412020-78af-404d-a358-7043563d4a47")
+    @objid ("8780309b-7fe6-4051-9390-41499d10ba84")
     public static final String HWPLD_LINK_HWPLD_LINK_TECHNOLOGY = "HwPLD_Link_technology";
 
-    @objid ("6b6c065a-707f-49d9-a40f-eb8a4b0aed25")
+    @objid ("bf5ee7e7-8ccd-4eae-bffe-5e30b48252b4")
     public static final String HWPLD_LINK_HWPLD_LINK_ORGANIZATION = "HwPLD_Link_organization";
 
-    @objid ("2b241575-f59f-4a5d-82ff-02b0ebb9d311")
+    @objid ("6b525da8-0db8-453f-b573-63060459f930")
     public static final String HWPLD_LINK_HWPLD_LINK_NBLUTS = "HwPLD_Link_nbLUTs";
 
-    @objid ("c40affad-93a3-405b-baf9-a6f2a4d6a15e")
+    @objid ("68105534-b609-4dab-b7c6-5f62fbbe134c")
     public static final String HWPLD_LINK_HWPLD_LINK_NDLUT_INPUTS = "HwPLD_Link_ndLUT_Inputs";
 
-    @objid ("ec8877fc-93d3-4a7c-bb09-0f72af7f75cd")
+    @objid ("122ae6b5-16b3-47da-b05f-0ace5577cb1c")
     public static final String HWPLD_LINK_HWPLD_LINK_NBFLIPFLOPS = "HwPLD_Link_nbFlipFlops";
 
-    @objid ("6d293695-6829-4a27-806d-b95cc89ec7d2")
+    @objid ("4cd40505-164d-48a1-b6af-eee015758a3e")
     public static final String HWPLD_LINK_HWPLD_LINK_BLOCKSRAM = "HwPLD_Link_blocksRAM";
 
-    @objid ("2c5b98c2-77ce-48ea-904f-0dfef9d2c3d0")
+    @objid ("507315fa-688e-4032-8887-7fa22637b93f")
     public static final String HWPLD_LINK_HWPLD_LINK_BLOCKSCOMPUTING = "HwPLD_Link_blocksComputing";
 
-    @objid ("db7c8cb0-d970-442a-bb55-0cc3c55c06d5")
+    @objid ("68243e09-69c7-41d7-bbe4-e389d350f9a1")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_TECHNOLOGY = "HwPLD_Parameter_technology";
 
-    @objid ("e57a2c94-30cf-403d-9942-d7d9da827c36")
+    @objid ("a89d1c6b-ae9c-4459-ab1f-c20f3d207a76")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_ORGANIZATION = "HwPLD_Parameter_organization";
 
-    @objid ("6a61c90e-bc1e-4b55-a003-163f4d25516f")
+    @objid ("1a608af0-1ef1-4c92-be50-d1e166502823")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_NBLUTS = "HwPLD_Parameter_nbLUTs";
 
-    @objid ("e7a7a8c2-7360-4971-8e36-1e16c16a92a5")
+    @objid ("5c48efe8-13a9-4ff6-ad8c-8d5d411c316e")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_NDLUT_INPUTS = "HwPLD_Parameter_ndLUT_Inputs";
 
-    @objid ("2a260f1b-bcf4-476b-a356-b71e18d5d0e1")
+    @objid ("a1adec07-c3a3-402b-991c-15be6faf7e9e")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_NBFLIPFLOPS = "HwPLD_Parameter_nbFlipFlops";
 
-    @objid ("c6b1637e-dc7c-48e9-ad8d-f29893a5dc17")
+    @objid ("51f2f8dd-bd70-438c-b356-c655d5b8e24d")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_BLOCKSRAM = "HwPLD_Parameter_blocksRAM";
 
-    @objid ("94cc2998-8cec-4735-9000-d7cbc6f76c24")
+    @objid ("62a1cd49-783e-4619-a7b9-0505d2f10842")
     public static final String HWPLD_PARAMETER_HWPLD_PARAMETER_BLOCKSCOMPUTING = "HwPLD_Parameter_blocksComputing";
 
-    @objid ("ccbf3354-cb2f-48f9-8f2a-d7be1c75960c")
+    @objid ("8cd1222d-cc4c-47ad-b162-ea9861c01396")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_ARCHITECTURE = "HwProcessor_Association_architecture";
 
-    @objid ("355cf360-178d-478b-895f-206ef307980b")
+    @objid ("3b0f9b46-d841-4607-a781-cd9cb2bda977")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_MIPS = "HwProcessor_Association_mips";
 
-    @objid ("5b797c9f-0fe8-41f4-8dfc-ddf01506c08c")
+    @objid ("2f51aefb-202c-4630-9dbd-19ae819a9440")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_IPC = "HwProcessor_Association_ipc";
 
-    @objid ("e13c6860-7121-41df-b290-aa0aa7c0af3b")
+    @objid ("416b0c3d-a6d2-4509-862a-ab5d253feb28")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_NBCORES = "HwProcessor_Association_nbCores";
 
-    @objid ("d023ce92-1ddf-4618-bf2f-fdc8fe3b17f6")
+    @objid ("053d836a-4bdf-46bf-aa7f-98ae8257f5c1")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_NBPIPELINES = "HwProcessor_Association_nbPipelines";
 
-    @objid ("28a61aa1-f545-4fe9-b559-bc2dc9b19610")
+    @objid ("69c21288-c0a2-472a-9e09-bbb33e07606c")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_NBSTAGES = "HwProcessor_Association_nbStages";
 
-    @objid ("fb176006-c65b-4abf-9886-f95362b98ee7")
+    @objid ("6f5ebb6f-17b2-4ade-84ad-5de17b3ca6b2")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_NBALUS = "HwProcessor_Association_nbALUs";
 
-    @objid ("3bc8895f-8d80-40d7-88f9-bc1922f05d9b")
+    @objid ("77f1f89b-705c-4b34-ac82-5d61807fe89f")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_NBFPUS = "HwProcessor_Association_nbFPUs";
 
-    @objid ("888bbe7d-ac11-42a8-ae7f-327082705a21")
+    @objid ("61d6d9d5-e554-45c5-ac24-02722643ee7d")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_OWNEDISAS = "HwProcessor_Association_ownedISAs";
 
-    @objid ("717f2854-49f3-4c8c-93d7-9c816ab811d4")
+    @objid ("9f7d0041-cab6-4483-90f2-01e2c02adafc")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_PREDICTORS = "HwProcessor_Association_predictors";
 
-    @objid ("83f21fdc-63d2-4d24-a3dd-f077b61adbb2")
+    @objid ("0afb437d-fa01-4614-8dfb-a7ef51517dd9")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_CACHES = "HwProcessor_Association_caches";
 
-    @objid ("9111bf67-eb1a-44f5-a825-32fa40e6df12")
+    @objid ("e1ff35cb-55b0-428b-ab78-0ed39676f6a3")
     public static final String HWPROCESSOR_ASSOCIATION_HWPROCESSOR_ASSOCIATION_OWNEDMMUS = "HwProcessor_Association_ownedMMUs";
 
-    @objid ("9c8e0207-38bc-47c0-b4af-26235e5cc55d")
+    @objid ("325910ee-ebd3-48dc-8ecb-127da6231a0f")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_ARCHITECTURE = "HwProcessor_AssociationEnd_architecture";
 
-    @objid ("35794a05-6477-4fe0-9d24-7f974c7d305c")
+    @objid ("77996385-a52d-48fd-b577-69ce036c694d")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_MIPS = "HwProcessor_AssociationEnd_mips";
 
-    @objid ("19ceb981-2e0b-470f-b305-9462dc90ecd3")
+    @objid ("4dd1cd28-fe94-4c2c-b3b3-e5ba316e761d")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_IPC = "HwProcessor_AssociationEnd_ipc";
 
-    @objid ("a42165e8-789c-4757-9b90-c1b6cb33d4da")
+    @objid ("44f4fc02-cfc5-4c2e-82e1-e3dc526747d3")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_NBCORES = "HwProcessor_AssociationEnd_nbCores";
 
-    @objid ("d53003b7-ccd4-45c4-9674-e04e0e2025e2")
+    @objid ("625fb827-8798-4f2e-b2ac-c61140525256")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_NBPIPELINES = "HwProcessor_AssociationEnd_nbPipelines";
 
-    @objid ("c4b10303-3859-48ad-a0a8-0259dfbf0d58")
+    @objid ("38687180-e5b8-4835-aac2-cc30eb1524a8")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_NBSTAGES = "HwProcessor_AssociationEnd_nbStages";
 
-    @objid ("9949f627-b451-4a54-89aa-aa3d15378084")
+    @objid ("7fc5a5e9-76ac-46e9-a9a7-1b55842d1d9f")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_NBALUS = "HwProcessor_AssociationEnd_nbALUs";
 
-    @objid ("4a9684f6-9428-4a9b-9cc2-fe99ec248c5c")
+    @objid ("0cc9d695-4345-4dc0-8f44-8909995f4655")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_NBFPUS = "HwProcessor_AssociationEnd_nbFPUs";
 
-    @objid ("3c3efa1c-7991-4163-b370-f7e791ee1753")
+    @objid ("b758a893-53a2-4cc0-93d5-891166c01770")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_OWNEDISAS = "HwProcessor_AssociationEnd_ownedISAs";
 
-    @objid ("385d0c99-a3f5-464d-8e60-1848bbb495b4")
+    @objid ("53e943f7-573a-44e6-ac76-5f395b19a5f9")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_PREDICTORS = "HwProcessor_AssociationEnd_predictors";
 
-    @objid ("53ec6219-80af-498c-b6c1-08bd0e58dbf9")
+    @objid ("e0923306-1bd8-4604-9026-8bb7616e7d7d")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_CACHES = "HwProcessor_AssociationEnd_caches";
 
-    @objid ("2234f198-0adf-4bb3-ae78-e8a9851a9043")
+    @objid ("cf6cf8f8-7590-418e-8ad7-43093f04eb7b")
     public static final String HWPROCESSOR_ASSOCIATIONEND_HWPROCESSOR_ASSOCIATIONEND_OWNEDMMUS = "HwProcessor_AssociationEnd_ownedMMUs";
 
-    @objid ("24dc2aed-0663-45f7-8d92-ea61ac0509ea")
+    @objid ("e464e0f8-d987-4f20-8b92-cfe072e37c25")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_ARCHITECTURE = "HwProcessor_Attribute_architecture";
 
-    @objid ("ab9f749a-4483-4b78-9f69-d9a4f08b18ef")
+    @objid ("c84c103c-3f60-4ce9-948d-0f31ff6ab2ba")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_MIPS = "HwProcessor_Attribute_mips";
 
-    @objid ("c7198655-cbd0-45d7-9b06-9650cda639a0")
+    @objid ("88bc3da5-8863-42e4-b135-77033a65c692")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_IPC = "HwProcessor_Attribute_ipc";
 
-    @objid ("b5ed1750-9775-47b8-83cb-9b057de051dc")
+    @objid ("a5da3987-aef7-42f7-9647-1d32777a567d")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_NBCORES = "HwProcessor_Attribute_nbCores";
 
-    @objid ("bb182831-36d9-4430-b6a4-8d026f00df5c")
+    @objid ("18cf42ef-2ba1-4478-9738-91420177de3d")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_NBPIPELINES = "HwProcessor_Attribute_nbPipelines";
 
-    @objid ("cd1e7144-123f-45b2-98f7-0bad3a0ca002")
+    @objid ("57604a63-ad2b-4b65-a4de-1515031d618d")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_NBSTAGES = "HwProcessor_Attribute_nbStages";
 
-    @objid ("fc483868-b1d4-4499-9622-6909478b9b4d")
+    @objid ("b39ff228-89ca-4ae2-b771-cbed9281ff1b")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_NBALUS = "HwProcessor_Attribute_nbALUs";
 
-    @objid ("e08b2915-d01f-4b54-a84f-8b6c1627b0a5")
+    @objid ("3fc50a2e-f37d-4bf8-b3b1-4288b9c9673b")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_NBFPUS = "HwProcessor_Attribute_nbFPUs";
 
-    @objid ("04dd484b-c2da-4d0d-a95c-1b2addd674dd")
+    @objid ("03160da7-be42-4291-8885-0fca903a7561")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_OWNEDISAS = "HwProcessor_Attribute_ownedISAs";
 
-    @objid ("47d1a16e-1596-4db6-937e-0cc5aafefff2")
+    @objid ("ac504fbd-f9d6-4fb8-8bbb-2a5aba0d2e28")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_PREDICTORS = "HwProcessor_Attribute_predictors";
 
-    @objid ("95f24556-8bb1-4947-aa2c-5b757c101225")
+    @objid ("46aac41b-a575-4ab7-a36d-6559a69ad55c")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_CACHES = "HwProcessor_Attribute_caches";
 
-    @objid ("177e5135-f8c4-4d10-869d-06a7b1f4bfa2")
+    @objid ("c768e2f8-1271-48fd-832e-169a9419079b")
     public static final String HWPROCESSOR_ATTRIBUTE_HWPROCESSOR_ATTRIBUTE_OWNEDMMUS = "HwProcessor_Attribute_ownedMMUs";
 
-    @objid ("3bd52b65-8bc5-4c9b-b44a-f1d19a93348c")
+    @objid ("e31059ff-4bc4-4957-95dd-fb9ea72ec0ae")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_ARCHITECTURE = "HwProcessor_Classifier_architecture";
 
-    @objid ("1e36bbc3-3132-42da-bbac-8b2683b24ca5")
+    @objid ("5e3468ef-e61d-4e13-bf1e-0a8d62f2921f")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_MIPS = "HwProcessor_Classifier_mips";
 
-    @objid ("bb847d7c-5109-4ce0-9a9c-24e79ffb03a8")
+    @objid ("ad6b1510-9dbf-4311-904a-602f7d13edb3")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_IPC = "HwProcessor_Classifier_ipc";
 
-    @objid ("86b76518-dd8a-43be-954d-4a460e7efb79")
+    @objid ("4598c547-812c-4113-89fc-0e985ffd9f97")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_NBCORES = "HwProcessor_Classifier_nbCores";
 
-    @objid ("15154870-697e-4f82-aaad-de8377e9e18c")
+    @objid ("aa66268f-50c9-4b04-b153-cc970782b144")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_NBPIPELINES = "HwProcessor_Classifier_nbPipelines";
 
-    @objid ("aa07ebbb-2695-4365-95a9-2c5589c243cc")
+    @objid ("69263405-74a9-4d24-a14e-9fea180a176b")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_NBSTAGES = "HwProcessor_Classifier_nbStages";
 
-    @objid ("56af5039-6126-4b0c-bfab-ed843f2f0ccd")
+    @objid ("13b53e48-8561-469d-8270-49080dde560a")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_NBALUS = "HwProcessor_Classifier_nbALUs";
 
-    @objid ("57863e69-0cc0-49a9-9600-80c9d1941cf3")
+    @objid ("beb90b43-3f4a-428e-a644-a89bbfa394c6")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_NBFPUS = "HwProcessor_Classifier_nbFPUs";
 
-    @objid ("dab215e3-6870-457c-b4e4-84c4b6928aa3")
+    @objid ("e9f72b6d-2b36-4377-a589-4d6e448f68cd")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_OWNEDISAS = "HwProcessor_Classifier_ownedISAs";
 
-    @objid ("d02f08be-4299-476c-9005-f19a0c895b48")
+    @objid ("f131198f-9c47-4332-b3ac-1d3310333ca0")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_PREDICTORS = "HwProcessor_Classifier_predictors";
 
-    @objid ("d58a4d0c-f799-4f58-a92f-85f9f71a67b7")
+    @objid ("a8ee4e37-3823-4dfb-bf4b-8739d32b434e")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_CACHES = "HwProcessor_Classifier_caches";
 
-    @objid ("14f8b548-1368-45e7-a8c4-1a94eb13423e")
+    @objid ("27f42fd0-9367-468b-9acc-fdce1dc8fa88")
     public static final String HWPROCESSOR_CLASSIFIER_HWPROCESSOR_CLASSIFIER_OWNEDMMUS = "HwProcessor_Classifier_ownedMMUs";
 
-    @objid ("e81f92d1-97dc-418a-8b4e-a57c60a3a32c")
+    @objid ("c5c234c1-7c1f-4cdf-b037-22f99890928f")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_ARCHITECTURE = "HwProcessor_Instance_architecture";
 
-    @objid ("66fc859c-414d-4595-8942-1b099edaafe8")
+    @objid ("747020a8-e87b-4698-ba1b-9e87b4f4f425")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_MIPS = "HwProcessor_Instance_mips";
 
-    @objid ("42243acd-3acc-445d-9d80-afc358fad1dd")
+    @objid ("4448adfb-d61b-44e5-8085-417ae6d69ea9")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_IPC = "HwProcessor_Instance_ipc";
 
-    @objid ("fefeab3c-33a9-4e77-9e7d-8c42a9075c16")
+    @objid ("7bcd7b25-97ed-4309-aa2c-75cfa2348463")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_NBCORES = "HwProcessor_Instance_nbCores";
 
-    @objid ("6d866eaa-acde-4420-b258-11c7ecb25c59")
+    @objid ("3ce1a473-73b2-4e7b-a784-2437087ef5d3")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_NBPIPELINES = "HwProcessor_Instance_nbPipelines";
 
-    @objid ("0b44aa75-8f31-4af1-8cb4-1d891a605adf")
+    @objid ("b5f8d94a-76e8-4b93-9f3e-0441f5e58af7")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_NBSTAGES = "HwProcessor_Instance_nbStages";
 
-    @objid ("f0582cc7-1a8d-4ed1-98f6-77e8e5b444a0")
+    @objid ("d5c85fb9-ea95-4400-bd13-00e12eb210fb")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_NBALUS = "HwProcessor_Instance_nbALUs";
 
-    @objid ("f3e973ca-71f7-4580-9fda-eddcd972402f")
+    @objid ("3692b258-9a63-4a63-b2ac-5e6d13b27abb")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_NBFPUS = "HwProcessor_Instance_nbFPUs";
 
-    @objid ("ce1346ca-bc54-4d6f-aa15-5d47f4891657")
+    @objid ("cef288fa-1730-4567-874e-637999dc5557")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_OWNEDISAS = "HwProcessor_Instance_ownedISAs";
 
-    @objid ("61c318ca-447a-4518-bc07-3604258a3250")
+    @objid ("75c7a3aa-cc37-4d6d-853b-7ebe0e805501")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_PREDICTORS = "HwProcessor_Instance_predictors";
 
-    @objid ("78708214-74e7-4929-8068-2532eab5b4d9")
+    @objid ("bc4e897c-0231-4ec3-ac71-8619106ce0ca")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_CACHES = "HwProcessor_Instance_caches";
 
-    @objid ("9c4e89df-6fc3-47e2-ba71-74b59502677f")
+    @objid ("5a2fa71c-e857-43dc-aca6-47dbe57adc53")
     public static final String HWPROCESSOR_INSTANCE_HWPROCESSOR_INSTANCE_OWNEDMMUS = "HwProcessor_Instance_ownedMMUs";
 
-    @objid ("552d31b3-b663-41a7-9976-8dc6b74e816f")
+    @objid ("6b977ef7-a44f-425e-8ace-11c74c69f946")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_ARCHITECTURE = "HwProcessor_Lifeline_architecture";
 
-    @objid ("c3303de6-ba9a-4a89-a85c-a88148d81816")
+    @objid ("f19b89ba-b831-40cc-a652-a86fa088c08b")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_MIPS = "HwProcessor_Lifeline_mips";
 
-    @objid ("b87158e1-74b2-4884-aff5-05e1117c51c5")
+    @objid ("c61a1428-549a-413a-b73d-9333d441f60f")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_IPC = "HwProcessor_Lifeline_ipc";
 
-    @objid ("ee046666-d4e4-406a-8b59-84f1c091b75e")
+    @objid ("da9badb5-d3a2-41ee-9dd5-3714f8efeb6a")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_NBCORES = "HwProcessor_Lifeline_nbCores";
 
-    @objid ("fe46d723-509b-487b-8dc8-0421c6798a31")
+    @objid ("457e91ce-cdc1-48bb-a68c-3ad30deeadfa")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_NBPIPELINES = "HwProcessor_Lifeline_nbPipelines";
 
-    @objid ("a509d2f1-ecfd-4cd7-b777-1daf5d74c6d1")
+    @objid ("99239e48-76b8-403a-8282-73c0f9190640")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_NBSTAGES = "HwProcessor_Lifeline_nbStages";
 
-    @objid ("129c089d-1541-41f3-9123-f588e077594b")
+    @objid ("1bd3ea34-afb0-4c26-8fd9-95cdd4e060f6")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_NBALUS = "HwProcessor_Lifeline_nbALUs";
 
-    @objid ("2194b361-cb5b-4194-a947-53028065f1fb")
+    @objid ("dbcd3d23-9625-40ad-bc8b-dc926055b006")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_NBFPUS = "HwProcessor_Lifeline_nbFPUs";
 
-    @objid ("439c472e-e3a2-47ad-979f-fbb4f1b7cc98")
+    @objid ("4c8faced-accd-4c3d-9817-35df4f675524")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_OWNEDISAS = "HwProcessor_Lifeline_ownedISAs";
 
-    @objid ("746db0ed-6376-48c6-8913-f3638834c601")
+    @objid ("5e9ac0a1-126a-4fbb-b050-cbe757fc0984")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_PREDICTORS = "HwProcessor_Lifeline_predictors";
 
-    @objid ("b726279d-7b26-46df-a8a2-187fdb14f475")
+    @objid ("1edd04b8-8745-4142-a6b3-b512b8f1d378")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_CACHES = "HwProcessor_Lifeline_caches";
 
-    @objid ("27b4d957-6024-4826-9087-b3cc70357d6d")
+    @objid ("8637e5da-9072-431f-ad41-aa13c5bacc06")
     public static final String HWPROCESSOR_LIFELINE_HWPROCESSOR_LIFELINE_OWNEDMMUS = "HwProcessor_Lifeline_ownedMMUs";
 
-    @objid ("ac5cb2af-78ce-4414-a90a-513b58285368")
+    @objid ("baf80037-7c8c-4962-8453-d7d0257d0838")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_ARCHITECTURE = "HwProcessor_Link_architecture";
 
-    @objid ("2c0726c4-ade3-4c77-ac5c-71b961a9ea28")
+    @objid ("14e76c29-45c6-4cab-b156-31db4dd41354")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_MIPS = "HwProcessor_Link_mips";
 
-    @objid ("e7957cab-d627-4f2c-9beb-d9564c823c12")
+    @objid ("a92a69db-18a1-4835-ba7b-503efaf55c23")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_IPC = "HwProcessor_Link_ipc";
 
-    @objid ("4ae75021-0aa2-4d6c-b529-4a6867dacf55")
+    @objid ("4e3c989d-bb5f-490c-a966-6f8b69d8d51e")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_NBCORES = "HwProcessor_Link_nbCores";
 
-    @objid ("abfb126b-3ec5-4325-86a6-c231741f9eb1")
+    @objid ("f35404d7-d271-476d-a0dd-83bd7280202e")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_NBPIPELINES = "HwProcessor_Link_nbPipelines";
 
-    @objid ("a209dd8b-f57b-4ef9-98a2-624b615c4540")
+    @objid ("260b9ca9-0a34-48d6-b2d8-38a5d1d0e8fe")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_NBSTAGES = "HwProcessor_Link_nbStages";
 
-    @objid ("9067a743-958c-41df-b0b2-acf0c2834589")
+    @objid ("a5ea37b8-bb14-460e-828d-817003d2577c")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_NBALUS = "HwProcessor_Link_nbALUs";
 
-    @objid ("c5e35b47-8f85-465a-91a7-2ccd642f9b2c")
+    @objid ("a7161f61-fb9c-48d9-896f-153b45c5684b")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_NBFPUS = "HwProcessor_Link_nbFPUs";
 
-    @objid ("b74cf84b-db65-41b1-a03f-65918b202104")
+    @objid ("33593ae1-5f4d-41a9-ba3a-b4d5f75269db")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_OWNEDISAS = "HwProcessor_Link_ownedISAs";
 
-    @objid ("a5215f01-44e1-4a49-af0a-cc9cd2441de8")
+    @objid ("e10aafdd-761d-429a-b7af-3967793d76a8")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_PREDICTORS = "HwProcessor_Link_predictors";
 
-    @objid ("38eef2be-1c8c-4094-ad93-13d69914c9f3")
+    @objid ("e0eba626-f505-430a-9101-6fb7d435e7f2")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_CACHES = "HwProcessor_Link_caches";
 
-    @objid ("725ba6d8-3bf4-4579-b27c-2bc639388eec")
+    @objid ("49617d12-ecea-4655-9a73-66ac1955704a")
     public static final String HWPROCESSOR_LINK_HWPROCESSOR_LINK_OWNEDMMUS = "HwProcessor_Link_ownedMMUs";
 
-    @objid ("254143e2-6157-47c6-81d0-af89015da85b")
+    @objid ("2476dfea-02a9-4347-8c14-a964538f0b75")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_ARCHITECTURE = "HwProcessor_Parameter_architecture";
 
-    @objid ("a9842ffe-d706-46a0-9209-7227a394d70d")
+    @objid ("42e202e2-6d68-4eb9-9130-aa234e3b271a")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_MIPS = "HwProcessor_Parameter_mips";
 
-    @objid ("c943adc2-8dbd-4f63-ad6f-d99b9203f08d")
+    @objid ("41e68238-6f1d-4c4a-af28-964246b6e9e8")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_IPC = "HwProcessor_Parameter_ipc";
 
-    @objid ("9f4a5c90-576b-4199-835c-e2b6f84e22d1")
+    @objid ("1c676dc4-af0c-414b-a923-11ca80c18c31")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_NBCORES = "HwProcessor_Parameter_nbCores";
 
-    @objid ("bf6fe3f6-1023-4bed-b163-edf06a689a4b")
+    @objid ("7e7c87ec-f9ef-40c5-9d81-b2d4ed8a5396")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_NBPIPELINES = "HwProcessor_Parameter_nbPipelines";
 
-    @objid ("5f0db299-7a28-403f-9ed2-abcbd9e0707b")
+    @objid ("ae356ddd-d821-48eb-bfd3-b51028cac5e5")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_NBSTAGES = "HwProcessor_Parameter_nbStages";
 
-    @objid ("de30e0cd-473d-4261-99f3-f20a6ddc864c")
+    @objid ("ee2b4884-3b4e-4b2a-8e3d-7d63b9162434")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_NBALUS = "HwProcessor_Parameter_nbALUs";
 
-    @objid ("aac665b9-634d-4838-abd1-ec590c176aae")
+    @objid ("8fcb08cc-9cba-41c4-91a2-c55871070b5d")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_NBFPUS = "HwProcessor_Parameter_nbFPUs";
 
-    @objid ("2f015351-40b5-4900-b87e-e9aa72c96cc4")
+    @objid ("50bdc8d9-c261-4958-b9f3-a4cc2269ca13")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_OWNEDISAS = "HwProcessor_Parameter_ownedISAs";
 
-    @objid ("a5107c2f-7c46-4cba-9492-2238ed625c14")
+    @objid ("a38beac3-d690-44cd-867f-0a41e07a3b76")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_PREDICTORS = "HwProcessor_Parameter_predictors";
 
-    @objid ("2f08b58e-8ca8-4787-8caa-57bfea51ce54")
+    @objid ("40a56476-46e6-4860-a267-64b41de6912c")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_CACHES = "HwProcessor_Parameter_caches";
 
-    @objid ("d6172137-1785-4b3b-a2d6-e90b38490646")
+    @objid ("5d3c1bea-67e1-4b6b-9fe7-1c8cc40ae7fa")
     public static final String HWPROCESSOR_PARAMETER_HWPROCESSOR_PARAMETER_OWNEDMMUS = "HwProcessor_Parameter_ownedMMUs";
 
-    @objid ("29c62cad-a093-4e30-8999-ba23e0b76d03")
+    @objid ("df9c9cdb-c05d-4a3a-9815-6e446f282f14")
     public static final String HWARBITER_ASSOCIATION_HWARBITER_ASSOCIATION_CONTROLLEDMEDIAS = "HwArbiter_Association_controlledMedias";
 
-    @objid ("acf32738-f4cb-4213-968d-e5334ba06ddb")
+    @objid ("f45df5ce-4488-44e0-9c53-d736662ae0a1")
     public static final String HWARBITER_ASSOCIATIONEND_HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS = "HwArbiter_AssociationEnd_controlledMedias";
 
-    @objid ("48b3d375-26e6-4f6c-9780-ed17a13cfc41")
+    @objid ("05e6ac53-10c3-4d0b-99c9-93ab4dc2c84a")
     public static final String HWARBITER_ATTRIBUTE_HWARBITER_ATTRIBUTE_CONTROLLEDMEDIAS = "HwArbiter_Attribute_controlledMedias";
 
-    @objid ("8a995f4c-0d6c-435c-92ea-cbd19aa0d45d")
+    @objid ("8a3fddf6-1033-4763-93df-f38ebf0bd941")
     public static final String HWARBITER_CLASSIFIER_HWARBITER_CLASSIFIER_CONTROLLEDMEDIAS = "HwArbiter_Classifier_controlledMedias";
 
-    @objid ("5749e4b9-2785-411e-9c1f-eacb57dd8a09")
+    @objid ("01b183cd-2f79-4c48-95ff-efcc5e3edd8f")
     public static final String HWARBITER_INSTANCE_HWARBITER_INSTANCE_CONTROLLEDMEDIAS = "HwArbiter_Instance_controlledMedias";
 
-    @objid ("d88682d6-0477-4746-a57a-97b24b06d57f")
+    @objid ("52d94322-3a98-457d-bc40-6d814462f8e1")
     public static final String HWARBITER_LIFELINE_HWARBITER_LIFELINE_CONTROLLEDMEDIAS = "HwArbiter_Lifeline_controlledMedias";
 
-    @objid ("eb6466ca-5880-415c-a3fc-6d7ded06c3f4")
+    @objid ("4350b4ff-ebd7-4cfd-96b6-18b19cbaa521")
     public static final String HWARBITER_LINK_HWARBITER_LINK_CONTROLLEDMEDIAS = "HwArbiter_Link_controlledMedias";
 
-    @objid ("9de19082-070f-4b11-a00f-b96274dd9849")
+    @objid ("94caab65-790b-4570-b71f-1f73bfe87155")
     public static final String HWARBITER_PARAMETER_HWARBITER_PARAMETER_CONTROLLEDMEDIAS = "HwArbiter_Parameter_controlledMedias";
 
-    @objid ("71073e62-88d4-4479-ba21-136436230764")
+    @objid ("ee35c5f8-9805-4717-8672-30f32fc1f28c")
     public static final String HWBRIDGE_ASSOCIATION_HWBRIDGE_ASSOCIATION_SIDES = "HwBridge_Association_sides";
 
-    @objid ("894578f2-f888-4152-8efc-4da8c6fafba7")
+    @objid ("bba81ad4-d3a5-4b3b-9882-8381b7c3de0d")
     public static final String HWBRIDGE_ASSOCIATIONEND_HWBRIDGE_ASSOCIATIONEND_SIDES = "HwBridge_AssociationEnd_sides";
 
-    @objid ("dd29a890-225d-454b-a3dc-07838664e272")
+    @objid ("c54b4828-b2b6-49f9-b93d-73321f3fc251")
     public static final String HWBRIDGE_ATTRIBUTE_HWBRIDGE_ATTRIBUTE_SIDES = "HwBridge_Attribute_sides";
 
-    @objid ("63b7fbef-1b78-4f2f-a7ba-1a358c6a82eb")
+    @objid ("c0cd6bf9-c054-4164-b4fd-b76ccb33f7e6")
     public static final String HWBRIDGE_CLASSIFIER_HWBRIDGE_CLASSIFIER_SIDES = "HwBridge_Classifier_sides";
 
-    @objid ("59e6f4cb-252d-4c44-8c03-ff529c3da510")
+    @objid ("ef31201e-d789-4603-a28f-53a2aa04fdef")
     public static final String HWBRIDGE_INSTANCE_HWBRIDGE_INSTANCE_SIDES = "HwBridge_Instance_sides";
 
-    @objid ("d76ba7b2-f057-4199-8d32-75707b6323f6")
+    @objid ("2d58ba57-269e-42ed-afcb-9e7adf2ae4e7")
     public static final String HWBRIDGE_LIFELINE_HWBRIDGE_LIFELINE_SIDES = "HwBridge_Lifeline_sides";
 
-    @objid ("5234884f-5ca2-4d9f-9357-ccaa99872720")
+    @objid ("20c5d90e-2cd6-4c81-9587-86c0c7f022f0")
     public static final String HWBRIDGE_LINK_HWBRIDGE_LINK_SIDES = "HwBridge_Link_sides";
 
-    @objid ("80811bf0-c533-4b5e-b133-9ce3ddc04bf4")
+    @objid ("ee4e31d7-036f-4144-8fff-e294a37090a6")
     public static final String HWBRIDGE_PARAMETER_HWBRIDGE_PARAMETER_SIDES = "HwBridge_Parameter_sides";
 
-    @objid ("ffae0693-91ba-497e-ab9f-13d21921f143")
+    @objid ("b144da0c-be65-4627-9ce4-bc1aa6d8b4a3")
     public static final String HWBUS_ASSOCIATION_HWBUS_ASSOCIATION_ADRESSWIDTH = "HwBus_Association_adressWidth";
 
-    @objid ("ceb3c916-55ec-43c7-8110-8d68f4c5c57d")
+    @objid ("667a44dc-daf9-43e7-aca6-f7354eabe509")
     public static final String HWBUS_ASSOCIATION_HWBUS_ASSOCIATION_WORDWIDTH = "HwBus_Association_wordWidth";
 
-    @objid ("59729ad7-3a4f-46af-8cda-06e29ca63118")
+    @objid ("7ea05ffd-d277-4cb3-9d35-f087fab0cc39")
     public static final String HWBUS_ASSOCIATION_HWBUS_ASSOCIATION_ISSYNCHRONOUS = "HwBus_Association_isSynchronous";
 
-    @objid ("f9da858f-b88f-45e5-8724-030b23641a13")
+    @objid ("8279414c-baef-4755-a9b6-36cc2cae0a66")
     public static final String HWBUS_ASSOCIATION_HWBUS_ASSOCIATION_ISSERIAL = "HwBus_Association_isSerial";
 
-    @objid ("955f1545-d953-4195-a62b-fc863146b2ed")
+    @objid ("886ad634-fa2e-40af-af49-78e878010ca2")
     public static final String HWBUS_ASSOCIATIONEND_HWBUS_ASSOCIATIONEND_ADRESSWIDTH = "HwBus_AssociationEnd_adressWidth";
 
-    @objid ("5e1a8f70-b203-4429-b9ab-e7dc145a48fb")
+    @objid ("436a1936-8376-4888-84a0-12729fb6ef05")
     public static final String HWBUS_ASSOCIATIONEND_HWBUS_ASSOCIATIONEND_WORDWIDTH = "HwBus_AssociationEnd_wordWidth";
 
-    @objid ("db67097f-c74c-4d6a-b3bb-77f863cf7b90")
+    @objid ("fa7d325f-3c2a-4ee5-94fd-0f0d7cc69d64")
     public static final String HWBUS_ASSOCIATIONEND_HWBUS_ASSOCIATIONEND_ISSYNCHRONOUS = "HwBus_AssociationEnd_isSynchronous";
 
-    @objid ("58bc5be9-ba6e-475f-b398-34950591e8ff")
+    @objid ("97eff9bf-5eb6-4887-b09a-85b805c192ca")
     public static final String HWBUS_ASSOCIATIONEND_HWBUS_ASSOCIATIONEND_ISSERIAL = "HwBus_AssociationEnd_isSerial";
 
-    @objid ("731b0410-f70e-446e-a7fc-91665769e0c9")
+    @objid ("4942a155-5a80-4297-b8d3-f3808b1d3330")
     public static final String HWBUS_ATTRIBUTE_HWBUS_ATTRIBUTE_ADRESSWIDTH = "HwBus_Attribute_adressWidth";
 
-    @objid ("26e743e1-4053-4fb9-9792-ef4badda2741")
+    @objid ("c4f2d275-cd80-4b51-a667-b2748bd1f976")
     public static final String HWBUS_ATTRIBUTE_HWBUS_ATTRIBUTE_WORDWIDTH = "HwBus_Attribute_wordWidth";
 
-    @objid ("18103430-e6ea-4a35-b6df-2038992016a6")
+    @objid ("8ed9aee9-65d2-447d-afa8-8ca824bfbbf8")
     public static final String HWBUS_ATTRIBUTE_HWBUS_ATTRIBUTE_ISSYNCHRONOUS = "HwBus_Attribute_isSynchronous";
 
-    @objid ("281f8b13-11df-493f-a909-6cc4ed1ab699")
+    @objid ("83718b59-4019-4497-88cf-3bf8063138f1")
     public static final String HWBUS_ATTRIBUTE_HWBUS_ATTRIBUTE_ISSERIAL = "HwBus_Attribute_isSerial";
 
-    @objid ("6ded42a7-a057-44c9-a910-76b8097573df")
+    @objid ("5894d768-eb1c-4312-b602-42da190519e1")
     public static final String HWBUS_CLASSIFIER_HWBUS_CLASSIFIER_ADRESSWIDTH = "HwBus_Classifier_adressWidth";
 
-    @objid ("cbef283d-c4f3-42f2-82d2-0173a19952c8")
+    @objid ("096b67a3-1137-45b0-814f-b9bdec434784")
     public static final String HWBUS_CLASSIFIER_HWBUS_CLASSIFIER_WORDWIDTH = "HwBus_Classifier_wordWidth";
 
-    @objid ("17a7d614-4b94-4d36-857f-379e2fd9a59e")
+    @objid ("7f90a28a-b489-4b62-b4b2-d410bcac22f3")
     public static final String HWBUS_CLASSIFIER_HWBUS_CLASSIFIER_ISSYNCHRONOUS = "HwBus_Classifier_isSynchronous";
 
-    @objid ("5c53cf86-b9a6-4fe5-a458-ee127c828e25")
+    @objid ("3a423569-930a-4edb-a918-48447020bd46")
     public static final String HWBUS_CLASSIFIER_HWBUS_CLASSIFIER_ISSERIAL = "HwBus_Classifier_isSerial";
 
-    @objid ("9f13e848-3a7f-40e3-bd3d-bcdf46d4c561")
+    @objid ("44e6cfe1-4c9b-4c34-86d7-3c02a424629c")
     public static final String HWBUS_INSTANCE_HWBUS_INSTANCE_ADRESSWIDTH = "HwBus_Instance_adressWidth";
 
-    @objid ("9d3a7695-afef-4d31-aab7-40fedb8ab388")
+    @objid ("11440f41-4d9b-45dc-8488-7262abc23429")
     public static final String HWBUS_INSTANCE_HWBUS_INSTANCE_WORDWIDTH = "HwBus_Instance_wordWidth";
 
-    @objid ("b05636a3-728d-4e4e-8f84-c9e76a376ca6")
+    @objid ("92a959cb-2949-4f81-9e23-a1a4f913f0e6")
     public static final String HWBUS_INSTANCE_HWBUS_INSTANCE_ISSYNCHRONOUS = "HwBus_Instance_isSynchronous";
 
-    @objid ("d43a66f1-572f-4c49-afc0-00a1dfb2d33e")
+    @objid ("e487377b-b178-4e66-881e-04243bd90665")
     public static final String HWBUS_INSTANCE_HWBUS_INSTANCE_ISSERIAL = "HwBus_Instance_isSerial";
 
-    @objid ("2ebd99e8-25c9-40a9-9142-2ee2873427b6")
+    @objid ("481effb6-d8df-4ef3-8fe9-d24868d25684")
     public static final String HWBUS_LIFELINE_HWBUS_LIFELINE_ADRESSWIDTH = "HwBus_Lifeline_adressWidth";
 
-    @objid ("96acd039-6080-4caa-82d7-cf2152a6f6da")
+    @objid ("05291880-469b-418c-9d3e-79d65453cbde")
     public static final String HWBUS_LIFELINE_HWBUS_LIFELINE_WORDWIDTH = "HwBus_Lifeline_wordWidth";
 
-    @objid ("ea11d573-d47b-46a9-8354-7607c922c0f9")
+    @objid ("4008e054-dd57-47c0-b969-7c5176d26e3a")
     public static final String HWBUS_LIFELINE_HWBUS_LIFELINE_ISSYNCHRONOUS = "HwBus_Lifeline_isSynchronous";
 
-    @objid ("6989937f-29ff-47b0-a066-a8c05d2cd45c")
+    @objid ("562c3987-3170-4c5b-ad32-d1fff56813dd")
     public static final String HWBUS_LIFELINE_HWBUS_LIFELINE_ISSERIAL = "HwBus_Lifeline_isSerial";
 
-    @objid ("152015c5-cca2-44d7-a9c2-a4f270d7a3a7")
+    @objid ("128706ae-545d-43ae-b227-f2b2ca7ebb7f")
     public static final String HWBUS_LINK_HWBUS_LINK_ADRESSWIDTH = "HwBus_Link_adressWidth";
 
-    @objid ("369f1018-6ef4-4a80-acd3-7e1973ca1c74")
+    @objid ("ab96e67a-1b4d-4c60-96e9-642be9ec1dfc")
     public static final String HWBUS_LINK_HWBUS_LINK_WORDWIDTH = "HwBus_Link_wordWidth";
 
-    @objid ("32b762bf-98a9-457e-87b2-347366095504")
+    @objid ("16de742c-7c11-4f49-b18b-d846938ce33b")
     public static final String HWBUS_LINK_HWBUS_LINK_ISSYNCHRONOUS = "HwBus_Link_isSynchronous";
 
-    @objid ("e72d1fe2-220f-44cc-87a4-82e9862a090c")
+    @objid ("5327f381-2c6c-4d12-a48c-5bc75bbf3ff2")
     public static final String HWBUS_LINK_HWBUS_LINK_ISSERIAL = "HwBus_Link_isSerial";
 
-    @objid ("3f388f20-7402-4f91-8cce-e31f4f591edb")
+    @objid ("417a2baa-d61e-4aea-af12-6286e63b56a0")
     public static final String HWBUS_PARAMETER_HWBUS_PARAMETER_ADRESSWIDTH = "HwBus_Parameter_adressWidth";
 
-    @objid ("362f2775-0025-47db-9df7-946684c416c1")
+    @objid ("99cb7035-a429-470f-a5be-97296c2ab024")
     public static final String HWBUS_PARAMETER_HWBUS_PARAMETER_WORDWIDTH = "HwBus_Parameter_wordWidth";
 
-    @objid ("d06bca74-fb28-430b-ad65-70be1f55fa7a")
+    @objid ("454ff52d-2f62-4870-ac5d-bfa6ed34c058")
     public static final String HWBUS_PARAMETER_HWBUS_PARAMETER_ISSYNCHRONOUS = "HwBus_Parameter_isSynchronous";
 
-    @objid ("e2aff6fe-14af-4655-800e-1716f5df1d7b")
+    @objid ("84f2b9be-487c-4d50-b8db-291754ec20d5")
     public static final String HWBUS_PARAMETER_HWBUS_PARAMETER_ISSERIAL = "HwBus_Parameter_isSerial";
 
-    @objid ("d83186aa-a9bc-48dc-8c98-17cee3d6511c")
+    @objid ("218aa378-2293-411e-9685-1dda9277bdc4")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_CONNECTEDTO = "HwEndPoint_Association_connectedTo";
 
-    @objid ("fca7d205-2e9d-4381-b35d-91ca9f52d9aa")
+    @objid ("5e8f6b1f-d10b-4235-976d-f6b77c46beee")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_DESCRIPTION = "HwEndPoint_Association_description";
 
-    @objid ("a4fcf4a1-5be7-4472-ab35-ba0f26a9fc9a")
+    @objid ("4e38b770-028e-4d64-848b-21160501aedb")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_P_HW_SERVICES = "HwEndPoint_Association_p_HW_Services";
 
-    @objid ("3ceb5895-ca41-434c-b13d-3f45e26ae810")
+    @objid ("80a47715-923f-4707-976a-977e0c9549b0")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_R_HW_SERVICES = "HwEndPoint_Association_r_HW_Services";
 
-    @objid ("fda5f316-9e2a-47ad-8078-227bf37e8db1")
+    @objid ("566678f5-cc6b-4a20-b271-117b84f0106c")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_OWNEDHW = "HwEndPoint_Association_ownedHW";
 
-    @objid ("43147528-666d-4d91-9491-5a09d52bac76")
+    @objid ("54081a63-52f7-48ee-b8e7-98dfc01e989f")
     public static final String HWENDPOINT_ASSOCIATION_HWENDPOINT_ASSOCIATION_FREQUENCY = "HwEndPoint_Association_frequency";
 
-    @objid ("28b559c7-446a-4bf3-a606-ad8b2226388b")
+    @objid ("edb72016-afbd-451e-b5a9-4cd44cbc791f")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO = "HwEndPoint_AssociationEnd_connectedTo";
 
-    @objid ("2ebb25f1-f502-4745-8dd9-bc04a23fabd3")
+    @objid ("408876a7-38b4-42db-9af6-ee85e5744381")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_DESCRIPTION = "HwEndPoint_AssociationEnd_description";
 
-    @objid ("938988de-4612-47fb-825d-13caab5615c0")
+    @objid ("d5558f7b-1f78-45c6-8375-2be1e9e48689")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_P_HW_SERVICES = "HwEndPoint_AssociationEnd_p_HW_Services";
 
-    @objid ("611291ee-ebb3-468e-a9db-ba516849527f")
+    @objid ("e8da4990-78d3-4e40-b3ae-d22181259b9d")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_R_HW_SERVICES = "HwEndPoint_AssociationEnd_r_HW_Services";
 
-    @objid ("c38d36d3-ac02-48c2-82e7-ced515d11ba7")
+    @objid ("0f6bc57e-81be-4886-97a2-743febd109cd")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_OWNEDHW = "HwEndPoint_AssociationEnd_ownedHW";
 
-    @objid ("c574b4f1-c87c-4f5d-a272-674bbcfbe8c6")
+    @objid ("6aff3e80-5ec9-42f3-b9e7-7cda0311463d")
     public static final String HWENDPOINT_ASSOCIATIONEND_HWENDPOINT_ASSOCIATIONEND_FREQUENCY = "HwEndPoint_AssociationEnd_frequency";
 
-    @objid ("7c354722-9433-44c0-a06e-7eaca3999004")
+    @objid ("44b936e4-8b3e-4070-9c4a-17f40afcb5a4")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_CONNECTEDTO = "HwEndPoint_Attribute_connectedTo";
 
-    @objid ("a7b126f8-893d-4e84-ab99-12cd88bb49e4")
+    @objid ("e6ea8a15-2e1a-41bf-8ab4-5e7b0f775665")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_DESCRIPTION = "HwEndPoint_Attribute_description";
 
-    @objid ("12351c06-5c25-4f51-baba-dd0eeb9f2456")
+    @objid ("41de1075-c6d3-43bd-9abd-0a6ba2a704fa")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_P_HW_SERVICES = "HwEndPoint_Attribute_p_HW_Services";
 
-    @objid ("fa71d6cb-9c92-4fc2-9153-9ddcbbbf5c14")
+    @objid ("242b790a-e52a-4b61-9eff-6055bf87c239")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_R_HW_SERVICES = "HwEndPoint_Attribute_r_HW_Services";
 
-    @objid ("da66f619-0247-47fc-9269-e8c7511d50d6")
+    @objid ("d803476d-d207-4244-a2d1-d6af4045a55e")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_OWNEDHW = "HwEndPoint_Attribute_ownedHW";
 
-    @objid ("1e564c6e-d425-4e71-86c0-8e358d449b5c")
+    @objid ("c42d9478-1927-4b7e-b9c1-e4591b5fbb57")
     public static final String HWENDPOINT_ATTRIBUTE_HWENDPOINT_ATTRIBUTE_FREQUENCY = "HwEndPoint_Attribute_frequency";
 
-    @objid ("afebf9be-5644-4d0c-a81e-7d863dc10da9")
+    @objid ("e02841da-4fd7-431b-9619-75da3f14703a")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_CONNECTEDTO = "HwEndPoint_Classifier_connectedTo";
 
-    @objid ("d9224c34-d692-426e-bab3-5e99821fa3b5")
+    @objid ("2fe222c4-1e63-4901-aff9-2bd0fa43d076")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_DESCRIPTION = "HwEndPoint_Classifier_description";
 
-    @objid ("ace6f24e-6582-4649-a241-5a5dd1cb91c7")
+    @objid ("380343b7-b12b-4ff9-856d-c5a8fa0df992")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_P_HW_SERVICES = "HwEndPoint_Classifier_p_HW_Services";
 
-    @objid ("0ebb7237-2dbf-44ad-88dc-befde72ba727")
+    @objid ("0e325418-cdde-4d94-846e-f5e62ade0c50")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_R_HW_SERVICES = "HwEndPoint_Classifier_r_HW_Services";
 
-    @objid ("feb2ff05-a259-4f99-93f2-69f521f20c18")
+    @objid ("1a5603b1-8561-41a0-9bce-1e712b0f720d")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_OWNEDHW = "HwEndPoint_Classifier_ownedHW";
 
-    @objid ("e6285020-739e-44a2-b968-9797a54f644c")
+    @objid ("a8f7c4ba-833d-4c30-837e-5b3520788e9d")
     public static final String HWENDPOINT_CLASSIFIER_HWENDPOINT_CLASSIFIER_FREQUENCY = "HwEndPoint_Classifier_frequency";
 
-    @objid ("b811ad07-f56e-4e82-8bed-ed6c20918f0e")
+    @objid ("352e5fa3-efe1-46a0-a5c1-11d54e41eae4")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_CONNECTEDTO = "HwEndPoint_Instance_connectedTo";
 
-    @objid ("56e75585-f1e0-4ffa-af6f-34b301322353")
+    @objid ("a0f1362e-c9d1-4be4-99c1-736f86de323c")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_DESCRIPTION = "HwEndPoint_Instance_description";
 
-    @objid ("61563e88-493b-41e6-b586-023769bf1d1c")
+    @objid ("e79bace1-e546-41a7-93c9-44ae87452ffc")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_P_HW_SERVICES = "HwEndPoint_Instance_p_HW_Services";
 
-    @objid ("1b1c59a6-a60a-4a77-8117-20d32dab3ed1")
+    @objid ("f3ca7e81-a72c-4db7-8070-fe85caa1f58f")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_R_HW_SERVICES = "HwEndPoint_Instance_r_HW_Services";
 
-    @objid ("c0d77aa2-1508-4321-84a7-ba563c5408a2")
+    @objid ("3afde07b-44c4-4f60-8c72-7e8e970a63ff")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_OWNEDHW = "HwEndPoint_Instance_ownedHW";
 
-    @objid ("daba023f-1a4e-4e31-9049-7194b7d4a010")
+    @objid ("8a5c096f-6c53-4bd4-b00c-458f6d04d236")
     public static final String HWENDPOINT_INSTANCE_HWENDPOINT_INSTANCE_FREQUENCY = "HwEndPoint_Instance_frequency";
 
-    @objid ("c870dbfe-9874-4898-ba97-9195df224456")
+    @objid ("533af184-96f5-41ce-92af-d316456b188b")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_CONNECTEDTO = "HwEndPoint_Lifeline_connectedTo";
 
-    @objid ("01955ce2-e6b3-421e-bd2e-a79971ec9c3c")
+    @objid ("407bf246-d117-4f09-b166-a1221a7e470a")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_DESCRIPTION = "HwEndPoint_Lifeline_description";
 
-    @objid ("591474d1-4d46-4dfd-8528-eb59622fea6d")
+    @objid ("4e752611-c758-40fe-9d40-e6de43bb8862")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_P_HW_SERVICES = "HwEndPoint_Lifeline_p_HW_Services";
 
-    @objid ("b0b1150b-41f8-435a-8303-52aaf777cf67")
+    @objid ("993d8fd5-5de8-44cd-a273-46934a69cde8")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_R_HW_SERVICES = "HwEndPoint_Lifeline_r_HW_Services";
 
-    @objid ("51e4895a-7999-4524-94a8-dd30e77cf873")
+    @objid ("adc6d725-a8e6-428f-8eaa-53b4d6a9efc9")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_OWNEDHW = "HwEndPoint_Lifeline_ownedHW";
 
-    @objid ("fc2a4342-01ef-4088-b56e-d91acfbcd6bf")
+    @objid ("864dccd0-8aca-48ed-a1f2-d4c569f72469")
     public static final String HWENDPOINT_LIFELINE_HWENDPOINT_LIFELINE_FREQUENCY = "HwEndPoint_Lifeline_frequency";
 
-    @objid ("1e0d15b7-642a-4f3a-bcd4-8bf5ed6687d1")
+    @objid ("813041e8-903d-4864-a134-1882ccfb48b7")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_CONNECTEDTO = "HwEndPoint_Link_connectedTo";
 
-    @objid ("2cf73b8f-dd2e-46ae-9fda-3bbd0e533e79")
+    @objid ("c073831a-33a6-4bdc-bef4-529eacc90535")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_DESCRIPTION = "HwEndPoint_Link_description";
 
-    @objid ("3fa31c65-55fc-4bfd-9df8-9053a6a2e3aa")
+    @objid ("e8840b4b-6df8-49dc-92c7-f137bb7e053f")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_P_HW_SERVICES = "HwEndPoint_Link_p_HW_Services";
 
-    @objid ("7ccedbae-ee59-46dd-bf02-f20a8a776242")
+    @objid ("8f2c94cd-ba58-4ee0-9346-5d01ac75df4b")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_R_HW_SERVICES = "HwEndPoint_Link_r_HW_Services";
 
-    @objid ("8933ab1f-264c-45f4-9857-570b6077017b")
+    @objid ("6aa90ac0-3cde-4da0-90cf-61ed94467816")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_OWNEDHW = "HwEndPoint_Link_ownedHW";
 
-    @objid ("8b272fdd-ff60-4dd2-84cc-dbd332af704d")
+    @objid ("7652cf2e-e199-4eed-919a-0ca59e04a048")
     public static final String HWENDPOINT_LINK_HWENDPOINT_LINK_FREQUENCY = "HwEndPoint_Link_frequency";
 
-    @objid ("0ba33543-733e-4524-9d82-271f5db4571a")
+    @objid ("f1768942-fe43-4d86-b974-029dfccc6af4")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_CONNECTEDTO = "HwEndPoint_LinkEnd_connectedTo";
 
-    @objid ("6b68f71f-9329-4396-8114-1ad406676447")
+    @objid ("8c97425e-c13d-4fa7-82e1-90b2f463029d")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_DESCRIPTION = "HwEndPoint_LinkEnd_description";
 
-    @objid ("b409741d-c1b5-4f5c-87aa-606c0e93238d")
+    @objid ("804fa993-e5c4-4c96-bfcc-aeff5c9bb082")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_P_HW_SERVICES = "HwEndPoint_LinkEnd_p_HW_Services";
 
-    @objid ("2551fc23-ebca-44db-b8cf-4b3883f1c39a")
+    @objid ("09677174-a749-4fd6-b8ef-af47d005bfc8")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_R_HW_SERVICES = "HwEndPoint_LinkEnd_r_HW_Services";
 
-    @objid ("2c79799b-f52e-4e43-8dfa-3fcb049fddf1")
+    @objid ("9d471c24-a95e-4312-b1b6-0957e9620d64")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_OWNEDHW = "HwEndPoint_LinkEnd_ownedHW";
 
-    @objid ("4d3636b0-f115-45ab-bbbc-627f89ebdd6f")
+    @objid ("3798c684-7670-4eca-bdbe-22b283ebf526")
     public static final String HWENDPOINT_LINKEND_HWENDPOINT_LINKEND_FREQUENCY = "HwEndPoint_LinkEnd_frequency";
 
-    @objid ("3b67282c-e9ad-4512-a580-f71e9b81181f")
+    @objid ("4550bed0-b850-4e2b-9400-f3f911e4c16d")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_CONNECTEDTO = "HwEndPoint_Parameter_connectedTo";
 
-    @objid ("80c6197d-146b-451f-ae4d-07ae81f8be67")
+    @objid ("7e70ee31-ffca-4cf3-8366-5b564b4dd720")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_DESCRIPTION = "HwEndPoint_Parameter_description";
 
-    @objid ("46b7791b-194d-468b-979d-2a7ccf3b2e02")
+    @objid ("a9edf415-08f8-4915-85b8-d788656afd47")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_P_HW_SERVICES = "HwEndPoint_Parameter_p_HW_Services";
 
-    @objid ("93c95ad2-0e39-48c4-ac75-53a1a17e4b1d")
+    @objid ("3838fd73-67c5-412f-afbe-f6b67cd56672")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_R_HW_SERVICES = "HwEndPoint_Parameter_r_HW_Services";
 
-    @objid ("e20cc622-ffe3-406c-afe2-cb495b09f216")
+    @objid ("0cd51e14-638a-41cd-a3d2-15c567d0f5bb")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_OWNEDHW = "HwEndPoint_Parameter_ownedHW";
 
-    @objid ("b5078cf6-fe8b-48e8-bc60-ef3a11a68720")
+    @objid ("c50e1564-be46-4e2c-8cd5-2145ada1f024")
     public static final String HWENDPOINT_PARAMETER_HWENDPOINT_PARAMETER_FREQUENCY = "HwEndPoint_Parameter_frequency";
 
-    @objid ("4bb38c42-f5d9-4506-a148-54b465112aec")
+    @objid ("33072a02-500d-4885-8331-d75f91bd0b43")
     public static final String HWMEDIA_ASSOCIATION_HWMEDIA_ASSOCIATION_ARBITERS = "HwMedia_Association_arbiters";
 
-    @objid ("1e1a6dcc-f85d-4036-adb7-09e7e57c7b89")
+    @objid ("ebca0f56-34bb-4514-ac5f-20c21c583c2a")
     public static final String HWMEDIA_ASSOCIATION_HWMEDIA_ASSOCIATION_BANDWIDTH = "HwMedia_Association_bandwidth";
 
-    @objid ("3aea09e5-ce1d-4a33-8dd9-8694f320654d")
+    @objid ("61157c6c-12cd-4cf8-9d41-4fec0a88759d")
     public static final String HWMEDIA_ASSOCIATIONEND_HWMEDIA_ASSOCIATIONEND_ARBITERS = "HwMedia_AssociationEnd_arbiters";
 
-    @objid ("1b8f33f9-a137-42c0-abbf-7eb1c1000e39")
+    @objid ("cd26f696-a247-42b8-95f2-630cbc691fde")
     public static final String HWMEDIA_ASSOCIATIONEND_HWMEDIA_ASSOCIATIONEND_BANDWIDTH = "HwMedia_AssociationEnd_bandwidth";
 
-    @objid ("ca5f0c66-c26b-4013-82cc-a01704c40b98")
+    @objid ("fc2d1f3c-bd01-49b6-b073-5db538fc0c46")
     public static final String HWMEDIA_ATTRIBUTE_HWMEDIA_ATTRIBUTE_ARBITERS = "HwMedia_Attribute_arbiters";
 
-    @objid ("5c974327-e019-42c7-be1d-75e67e76d69d")
+    @objid ("69945900-ab78-4f94-980d-0bad26659c8d")
     public static final String HWMEDIA_ATTRIBUTE_HWMEDIA_ATTRIBUTE_BANDWIDTH = "HwMedia_Attribute_bandwidth";
 
-    @objid ("ee6b2533-66dd-45d9-b2e8-a3e533e59c06")
+    @objid ("0cca4fbe-27dc-4274-99a7-89a6366df1a8")
     public static final String HWMEDIA_CLASSIFIER_HWMEDIA_CLASSIFIER_ARBITERS = "HwMedia_Classifier_arbiters";
 
-    @objid ("4c797c70-e4b2-43c1-9fb3-d92f70359a75")
+    @objid ("79833529-c8ef-4fe6-8a2d-2fdc72682f85")
     public static final String HWMEDIA_CLASSIFIER_HWMEDIA_CLASSIFIER_BANDWIDTH = "HwMedia_Classifier_bandwidth";
 
-    @objid ("9a00e751-8bda-4374-a6c6-8ae40b6f5c6f")
+    @objid ("f9e3f958-a50f-4127-a88d-2511e62bdd2b")
     public static final String HWMEDIA_INSTANCE_HWMEDIA_INSTANCE_ARBITERS = "HwMedia_Instance_arbiters";
 
-    @objid ("2fa937ff-8e86-4f3f-b492-901bcc30bdc4")
+    @objid ("ef4e52e2-1d4b-4aad-a1b5-bba90d6a5178")
     public static final String HWMEDIA_INSTANCE_HWMEDIA_INSTANCE_BANDWIDTH = "HwMedia_Instance_bandwidth";
 
-    @objid ("30ca08de-2afd-4745-a483-235f9defeadd")
+    @objid ("d091593b-ca87-4a4e-8fc2-e26b1f10b435")
     public static final String HWMEDIA_LIFELINE_HWMEDIA_LIFELINE_ARBITERS = "HwMedia_Lifeline_arbiters";
 
-    @objid ("dd3842ed-c547-4820-a0b5-f8284b02c971")
+    @objid ("db55dea7-3bd4-4256-a6ba-4eb0b64b8579")
     public static final String HWMEDIA_LIFELINE_HWMEDIA_LIFELINE_BANDWIDTH = "HwMedia_Lifeline_bandwidth";
 
-    @objid ("7d268402-e341-4dcd-a1d2-306272f313e9")
+    @objid ("e91e5fa2-286e-42c2-9b9f-c9fa540d78ac")
     public static final String HWMEDIA_LINK_HWMEDIA_LINK_ARBITERS = "HwMedia_Link_arbiters";
 
-    @objid ("1b6460a5-6a4b-40d0-841e-b5591fb69269")
+    @objid ("063087c9-1043-40f5-b064-86580ab022b6")
     public static final String HWMEDIA_LINK_HWMEDIA_LINK_BANDWIDTH = "HwMedia_Link_bandwidth";
 
-    @objid ("a07cb06d-b2eb-4f9a-8e0d-2f7b08f5b2b7")
+    @objid ("2625e113-4644-428e-b1c0-775a0e3e5811")
     public static final String HWMEDIA_PARAMETER_HWMEDIA_PARAMETER_ARBITERS = "HwMedia_Parameter_arbiters";
 
-    @objid ("a8e22032-844b-46ee-bab2-ae53acc0afec")
+    @objid ("1e8684f8-efc4-432d-9c43-906f88597e10")
     public static final String HWMEDIA_PARAMETER_HWMEDIA_PARAMETER_BANDWIDTH = "HwMedia_Parameter_bandwidth";
 
-    @objid ("e25b9384-63da-45d8-b8d5-6ae41a5f0f1e")
+    @objid ("af7fb649-ef09-4d1f-872a-a0b7bca23b9b")
     public static final String HWCLOCK_ASSOCIATION_HWCLOCK_ASSOCIATION_FREQUENCY = "HwClock_Association_frequency";
 
-    @objid ("8bc10d75-f388-4beb-9d7b-947e03fe2b83")
+    @objid ("24bad395-d8e3-439b-9f45-92e6c1d5583d")
     public static final String HWCLOCK_ASSOCIATIONEND_HWCLOCK_ASSOCIATIONEND_FREQUENCY = "HwClock_AssociationEnd_frequency";
 
-    @objid ("c10774f8-28e3-426b-b0a7-137c37e08602")
+    @objid ("d11da11c-1e16-4302-8b92-2abc8725dce0")
     public static final String HWCLOCK_ATTRIBUTE_HWCLOCK_ATTRIBUTE_FREQUENCY = "HwClock_Attribute_frequency";
 
-    @objid ("e85367b0-9dbd-4b1e-8996-1940668e65be")
+    @objid ("08761ae8-4905-4cc3-87f1-b33d10aef475")
     public static final String HWCLOCK_CLASSIFIER_HWCLOCK_CLASSIFIER_FREQUENCY = "HwClock_Classifier_frequency";
 
-    @objid ("40aefe55-dec6-472a-8cb7-6830e5344aa9")
+    @objid ("285ee6c1-928c-484d-a23e-0bfa4f3fcf18")
     public static final String HWCLOCK_INSTANCE_HWCLOCK_INSTANCE_FREQUENCY = "HwClock_Instance_frequency";
 
-    @objid ("42c474b9-f426-41f0-927e-ccdd8ce6512a")
+    @objid ("bbc454e9-cbd8-4a46-badb-bc335aa674cc")
     public static final String HWCLOCK_LIFELINE_HWCLOCK_LIFELINE_FREQUENCY = "HwClock_Lifeline_frequency";
 
-    @objid ("16d9d5c2-7a8c-499c-9ecb-c82d0cc011df")
+    @objid ("52dbcf02-f35e-43ea-bd81-e9e0655de212")
     public static final String HWCLOCK_LINK_HWCLOCK_LINK_FREQUENCY = "HwClock_Link_frequency";
 
-    @objid ("91882f44-4109-472e-8638-d18bd3ba2588")
+    @objid ("2ef4f317-3e80-41cc-8727-36a83a6e29e6")
     public static final String HWCLOCK_PARAMETER_HWCLOCK_PARAMETER_FREQUENCY = "HwClock_Parameter_frequency";
 
-    @objid ("e41e82fb-00c1-4ff4-8958-06662a1215c2")
+    @objid ("27ea16eb-e179-4f50-9a6f-f8e6c80bf2e9")
     public static final String HWTIMER_ASSOCIATION_HWTIMER_ASSOCIATION_NBCOUNTERS = "HwTimer_Association_nbCounters";
 
-    @objid ("b41f006b-a0ec-4ed1-99a4-871190f57d90")
+    @objid ("c8a8dae3-7078-415e-9725-81e95e0b6d19")
     public static final String HWTIMER_ASSOCIATION_HWTIMER_ASSOCIATION_COUNTERWIDTH = "HwTimer_Association_counterWidth";
 
-    @objid ("11aac52f-24a8-4fcb-a593-d380c4ca3ee4")
+    @objid ("c0cc2405-0fbb-4fea-b7be-776dff636f3a")
     public static final String HWTIMER_ASSOCIATION_HWTIMER_ASSOCIATION_INPUTCLOCK = "HwTimer_Association_inputClock";
 
-    @objid ("9a485b66-385b-4332-b68d-608b5b912374")
+    @objid ("a8ce5964-adb0-43c3-921c-6522244b6dec")
     public static final String HWTIMER_ASSOCIATIONEND_HWTIMER_ASSOCIATIONEND_NBCOUNTERS = "HwTimer_AssociationEnd_nbCounters";
 
-    @objid ("460bd1a6-38e1-4942-b7f9-b6d81233994c")
+    @objid ("3b9bd4f7-7127-4214-adb1-a5b760904c65")
     public static final String HWTIMER_ASSOCIATIONEND_HWTIMER_ASSOCIATIONEND_COUNTERWIDTH = "HwTimer_AssociationEnd_counterWidth";
 
-    @objid ("766e2acf-ad84-441f-8c13-b1eba69ba3e2")
+    @objid ("85a75673-3319-4fcb-872f-162a3cebef8f")
     public static final String HWTIMER_ASSOCIATIONEND_HWTIMER_ASSOCIATIONEND_INPUTCLOCK = "HwTimer_AssociationEnd_inputClock";
 
-    @objid ("b32e355d-2a32-471e-a77e-89ca46157323")
+    @objid ("4f4fb387-73c2-4397-9534-1e21f92cf296")
     public static final String HWTIMER_ATTRIBUTE_HWTIMER_ATTRIBUTE_NBCOUNTERS = "HwTimer_Attribute_nbCounters";
 
-    @objid ("8d35e523-95c1-4422-9258-db83752a39a8")
+    @objid ("0ef59fb8-171b-4582-b12c-d376fc13f508")
     public static final String HWTIMER_ATTRIBUTE_HWTIMER_ATTRIBUTE_COUNTERWIDTH = "HwTimer_Attribute_counterWidth";
 
-    @objid ("c0248daf-53e2-493d-b1b4-be607d7fbe00")
+    @objid ("6bb56f7a-6963-444d-baab-5638c11df800")
     public static final String HWTIMER_ATTRIBUTE_HWTIMER_ATTRIBUTE_INPUTCLOCK = "HwTimer_Attribute_inputClock";
 
-    @objid ("f9ce7130-e78b-46ea-b7ed-738ca7d69c53")
+    @objid ("4963e27d-5502-43b1-9db4-01a9d75c799a")
     public static final String HWTIMER_CLASSIFIER_HWTIMER_CLASSIFIER_NBCOUNTERS = "HwTimer_Classifier_nbCounters";
 
-    @objid ("557d404e-1147-4164-b757-f5f963480723")
+    @objid ("24190e16-7f7a-4051-89a5-22bdf05e4fa0")
     public static final String HWTIMER_CLASSIFIER_HWTIMER_CLASSIFIER_COUNTERWIDTH = "HwTimer_Classifier_counterWidth";
 
-    @objid ("95e5ae3e-8522-43e9-a96c-578cef7b250d")
+    @objid ("f89ffe50-0577-4a23-b6a3-2535dcb01c33")
     public static final String HWTIMER_CLASSIFIER_HWTIMER_CLASSIFIER_INPUTCLOCK = "HwTimer_Classifier_inputClock";
 
-    @objid ("eafe7378-5253-43a1-9043-3622c21fe025")
+    @objid ("4241f642-b206-4994-953d-853c6a2adde1")
     public static final String HWTIMER_INSTANCE_HWTIMER_INSTANCE_NBCOUNTERS = "HwTimer_Instance_nbCounters";
 
-    @objid ("d268eb19-de81-4088-a358-fc1350f2ce25")
+    @objid ("b187afc1-a75f-4dad-bb7b-3f5085ad7604")
     public static final String HWTIMER_INSTANCE_HWTIMER_INSTANCE_COUNTERWIDTH = "HwTimer_Instance_counterWidth";
 
-    @objid ("9b6cf318-7859-4d25-8bb0-68ab409171ce")
+    @objid ("9e2531d6-0998-406a-a4ca-26ac100654b8")
     public static final String HWTIMER_INSTANCE_HWTIMER_INSTANCE_INPUTCLOCK = "HwTimer_Instance_inputClock";
 
-    @objid ("a48edbee-80b3-46b8-b843-ec9c5515ff96")
+    @objid ("02cf76aa-ea39-434a-a203-b76bcc66ccac")
     public static final String HWTIMER_LIFELINE_HWTIMER_LIFELINE_NBCOUNTERS = "HwTimer_Lifeline_nbCounters";
 
-    @objid ("3eb0e085-0406-42e4-8b31-28204a9a308c")
+    @objid ("1af7d0b0-5033-4ee1-890a-9a006dfcf9fa")
     public static final String HWTIMER_LIFELINE_HWTIMER_LIFELINE_COUNTERWIDTH = "HwTimer_Lifeline_counterWidth";
 
-    @objid ("f6758423-de35-4749-b03b-a7cb9a48027f")
+    @objid ("a4ce12b8-4de4-40a2-9ae1-1eeb493c04c2")
     public static final String HWTIMER_LIFELINE_HWTIMER_LIFELINE_INPUTCLOCK = "HwTimer_Lifeline_inputClock";
 
-    @objid ("b239d059-4667-484d-b342-1d2050338816")
+    @objid ("68530e74-8e37-459f-bbe4-ba26fc645330")
     public static final String HWTIMER_LINK_HWTIMER_LINK_NBCOUNTERS = "HwTimer_Link_nbCounters";
 
-    @objid ("0a793d0c-f208-431d-b68a-1cac9f5626ee")
+    @objid ("fc25d2a6-8141-426e-9551-eade6c484c0c")
     public static final String HWTIMER_LINK_HWTIMER_LINK_COUNTERWIDTH = "HwTimer_Link_counterWidth";
 
-    @objid ("c70ca3bd-a23b-4303-a61b-9f9d4811ac12")
+    @objid ("787b3f89-7c89-4fd0-aeeb-c2bf6c3ff140")
     public static final String HWTIMER_LINK_HWTIMER_LINK_INPUTCLOCK = "HwTimer_Link_inputClock";
 
-    @objid ("f0a1ac45-90e5-43f8-903e-2771cd36a5f0")
+    @objid ("3a860b26-85c0-4f7c-9a06-7862f816eb92")
     public static final String HWTIMER_PARAMETER_HWTIMER_PARAMETER_NBCOUNTERS = "HwTimer_Parameter_nbCounters";
 
-    @objid ("7143090d-f78f-4744-baf7-7a69b00b8cfd")
+    @objid ("b2f1fc78-2cab-49b4-af42-166d0cc06af1")
     public static final String HWTIMER_PARAMETER_HWTIMER_PARAMETER_COUNTERWIDTH = "HwTimer_Parameter_counterWidth";
 
-    @objid ("ab437553-8968-4192-a432-04da211122a0")
+    @objid ("bc0f5eba-6646-4d49-b1da-c62d9a71f64b")
     public static final String HWTIMER_PARAMETER_HWTIMER_PARAMETER_INPUTCLOCK = "HwTimer_Parameter_inputClock";
 
-    @objid ("b772171d-a41a-4fb1-9467-1fc5f3f47f4e")
+    @objid ("3609a2c4-be01-4758-9e08-09ab4eb4e676")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_DESCRIPTION = "HwTimingResource_Association_description";
 
-    @objid ("706ac9bc-cf47-4911-a649-66d6cc2c1ba0")
+    @objid ("831b900c-88ad-4f76-b7a3-0c1dbe6ab7a0")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_P_HW_SERVICES = "HwTimingResource_Association_p_HW_Services";
 
-    @objid ("4de99fad-c7fe-4055-93e4-8bddbc66b0e8")
+    @objid ("7639668a-6d63-41a0-9443-4ee60e511196")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_R_HW_SERVICES = "HwTimingResource_Association_r_HW_Services";
 
-    @objid ("0dbdfacb-8f07-41c1-8033-0f9e57611af0")
+    @objid ("9f4112a6-637c-4c8d-8a0b-fadf9303231f")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_OWNEDHW = "HwTimingResource_Association_ownedHW";
 
-    @objid ("7a248964-9dd4-43aa-a98e-276a2cc5813a")
+    @objid ("cbfc0731-1167-4779-b2a6-689eecc64729")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_ENDPOINTS = "HwTimingResource_Association_endPoints";
 
-    @objid ("66943da3-025f-4762-89c4-7e3743a98815")
+    @objid ("8df19ce4-a8d2-4a33-84fa-713989d7882f")
     public static final String HWTIMINGRESOURCE_ASSOCIATION_HWTIMINGRESOURCE_ASSOCIATION_FREQUENCY = "HwTimingResource_Association_frequency";
 
-    @objid ("df65e304-080e-4249-bd39-5208160861dc")
+    @objid ("8c03c752-6bf2-4941-adbd-a22db202a9ed")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_DESCRIPTION = "HwTimingResource_AssociationEnd_description";
 
-    @objid ("4f246c4f-8b3d-4590-a9f4-7a98249da81d")
+    @objid ("904ddcef-fa98-4925-8095-59e86b40becb")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_P_HW_SERVICES = "HwTimingResource_AssociationEnd_p_HW_Services";
 
-    @objid ("61a64e51-dece-49f6-8913-3192f0f4b620")
+    @objid ("0690403a-3107-4f9d-8bed-a48e5e83bf66")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_R_HW_SERVICES = "HwTimingResource_AssociationEnd_r_HW_Services";
 
-    @objid ("0f49e4b6-5c7e-42af-a477-7dc91c7ff0d1")
+    @objid ("9477b834-e9e6-4330-b768-38439a47d822")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_OWNEDHW = "HwTimingResource_AssociationEnd_ownedHW";
 
-    @objid ("cf4469ba-032b-459a-8e06-305fce9cdb15")
+    @objid ("2a47a5f3-893f-42b3-8838-3c4afa26828d")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_ENDPOINTS = "HwTimingResource_AssociationEnd_endPoints";
 
-    @objid ("b8679f7f-c913-4c4a-a4b7-3c5cc4eda8e2")
+    @objid ("dbcc0388-50ed-41a1-89a7-ffcc4f02f203")
     public static final String HWTIMINGRESOURCE_ASSOCIATIONEND_HWTIMINGRESOURCE_ASSOCIATIONEND_FREQUENCY = "HwTimingResource_AssociationEnd_frequency";
 
-    @objid ("bdb57850-5356-4103-a253-60a10450c5de")
+    @objid ("e14a29d8-4c72-443b-97a3-bbf281b53c63")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_DESCRIPTION = "HwTimingResource_Attribute_description";
 
-    @objid ("c1aa92ba-7bc0-4e80-843e-8f6526e799d1")
+    @objid ("87f56b81-d6fc-4629-9a14-fa9b1be14f3b")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_P_HW_SERVICES = "HwTimingResource_Attribute_p_HW_Services";
 
-    @objid ("799e508f-7215-4c01-8b34-3106162fdd9f")
+    @objid ("b59b035e-a9c0-49a6-baac-9f8bf4ece03e")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_R_HW_SERVICES = "HwTimingResource_Attribute_r_HW_Services";
 
-    @objid ("e59b52b6-aaad-4f4c-8ef7-30557311d770")
+    @objid ("a451bee4-8d00-458e-9cc1-1f273694fb89")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_OWNEDHW = "HwTimingResource_Attribute_ownedHW";
 
-    @objid ("dbf332a5-e878-46a2-8f55-8b7e19d9b3a8")
+    @objid ("ce232cab-7f2e-4976-9af1-61b75466bb6e")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_ENDPOINTS = "HwTimingResource_Attribute_endPoints";
 
-    @objid ("32c1f383-3ab5-4ccd-a855-08b5d35b0afe")
+    @objid ("c950a2b8-d0c0-4c28-acbb-abd98bbf1431")
     public static final String HWTIMINGRESOURCE_ATTRIBUTE_HWTIMINGRESOURCE_ATTRIBUTE_FREQUENCY = "HwTimingResource_Attribute_frequency";
 
-    @objid ("3c730b32-de26-41b6-811d-70f2ebe62b7f")
+    @objid ("4c67cf32-ec94-4302-9323-d972cfe994ae")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_DESCRIPTION = "HwTimingResource_Classifier_description";
 
-    @objid ("7f99eefc-9131-420b-9b57-2befe621e343")
+    @objid ("8f093e8d-8fd9-4255-874a-34cf5dabd6ff")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_P_HW_SERVICES = "HwTimingResource_Classifier_p_HW_Services";
 
-    @objid ("7edde31e-90d2-46dd-85c4-0134392197a2")
+    @objid ("579d446b-a945-4ed7-b019-6acd59d416d1")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_R_HW_SERVICES = "HwTimingResource_Classifier_r_HW_Services";
 
-    @objid ("04db2df2-1255-4f14-bad3-094938494640")
+    @objid ("6b7e9eba-506c-4ff0-adff-da17d95b1024")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_OWNEDHW = "HwTimingResource_Classifier_ownedHW";
 
-    @objid ("b9f4741a-b082-46dc-a683-ca92201f0517")
+    @objid ("2ba27501-166a-40c6-8a55-f2c4e9592e85")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_ENDPOINTS = "HwTimingResource_Classifier_endPoints";
 
-    @objid ("558c42fd-dc9a-4660-8e0d-c00a74e487f0")
+    @objid ("97cf79c9-1c0f-4dce-bc49-8593f98d2949")
     public static final String HWTIMINGRESOURCE_CLASSIFIER_HWTIMINGRESOURCE_CLASSIFIER_FREQUENCY = "HwTimingResource_Classifier_frequency";
 
-    @objid ("1c185093-b8ad-4bfc-bd9c-c958d0b2529e")
+    @objid ("1cdafa73-9349-4ee2-bfd9-e585ab25a071")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_DESCRIPTION = "HwTimingResource_Instance_description";
 
-    @objid ("f66dbd6b-4069-4529-86e3-bc67097bb056")
+    @objid ("3a4ee78b-7ee9-4c39-b1ce-d469868300d6")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_P_HW_SERVICES = "HwTimingResource_Instance_p_HW_Services";
 
-    @objid ("3a51ca41-452c-4e3b-95f9-6b742c0bdc43")
+    @objid ("fcc699dc-256b-4953-831f-ad4a0f1a2ae3")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_R_HW_SERVICES = "HwTimingResource_Instance_r_HW_Services";
 
-    @objid ("e29e9397-7c57-4f5a-902d-9beca2dcc211")
+    @objid ("689dd6cc-b42d-4fa4-96f3-6b903f8ed90b")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_OWNEDHW = "HwTimingResource_Instance_ownedHW";
 
-    @objid ("7c7b9669-a707-4f9d-8c53-85fbc241b59c")
+    @objid ("0ca15ed8-faa0-4ee5-8b19-a6f55e9b206f")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_ENDPOINTS = "HwTimingResource_Instance_endPoints";
 
-    @objid ("5b036078-80ef-43f8-87c1-a261f59e9178")
+    @objid ("973a9af6-7100-4dcf-8aac-e43df45a9713")
     public static final String HWTIMINGRESOURCE_INSTANCE_HWTIMINGRESOURCE_INSTANCE_FREQUENCY = "HwTimingResource_Instance_frequency";
 
-    @objid ("2ce381c5-1be6-4fda-973d-ee2828082261")
+    @objid ("dd693ed2-e242-4809-958b-d152b5ff6993")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_DESCRIPTION = "HwTimingResource_Lifeline_description";
 
-    @objid ("390d5395-0fec-4de7-a341-db02a23ce95e")
+    @objid ("59c01fdf-6abf-4c70-a87a-77bb2e951458")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_P_HW_SERVICES = "HwTimingResource_Lifeline_p_HW_Services";
 
-    @objid ("5988d163-e954-46fd-859b-a4568f4effb0")
+    @objid ("7bbd78d7-d64e-4d72-ab82-570cdabc8aa9")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_R_HW_SERVICES = "HwTimingResource_Lifeline_r_HW_Services";
 
-    @objid ("8cffc3af-06ed-4982-a59b-94c0496a9240")
+    @objid ("ee687406-46c7-468f-af95-0294353572a5")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_OWNEDHW = "HwTimingResource_Lifeline_ownedHW";
 
-    @objid ("4fef0a91-4211-4d78-ae62-cedf5aed4b68")
+    @objid ("85947845-0a74-4d0a-acfc-924118b5b3be")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_ENDPOINTS = "HwTimingResource_Lifeline_endPoints";
 
-    @objid ("5295bd27-03ec-4182-92a6-5bd7e1681bbc")
+    @objid ("8b33798a-c19c-47d7-b5c7-45005b70ba35")
     public static final String HWTIMINGRESOURCE_LIFELINE_HWTIMINGRESOURCE_LIFELINE_FREQUENCY = "HwTimingResource_Lifeline_frequency";
 
-    @objid ("0104aa8d-3db0-4e7e-907c-32edef072dd7")
+    @objid ("6dd36113-877c-431a-8cfc-57de6f1d1b78")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_DESCRIPTION = "HwTimingResource_Link_description";
 
-    @objid ("784a265b-5682-42dc-83e2-2f6e633b2f5e")
+    @objid ("b24b30ad-8cfa-43e2-894b-4d810a452b4d")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_P_HW_SERVICES = "HwTimingResource_Link_p_HW_Services";
 
-    @objid ("fd1d88b7-6f38-4352-8089-0079f6dfa7d2")
+    @objid ("ff94654e-ab77-4ce3-aaaf-abbff83f7d37")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_R_HW_SERVICES = "HwTimingResource_Link_r_HW_Services";
 
-    @objid ("d281a154-5920-4825-866e-9c3ac078b17e")
+    @objid ("b01da30a-84e0-41bf-8a03-5396b14cef87")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_OWNEDHW = "HwTimingResource_Link_ownedHW";
 
-    @objid ("40c2c621-4848-4c62-93b1-1d089dcb50e1")
+    @objid ("79397b7d-c109-41db-8ff4-477d5df4c851")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_ENDPOINTS = "HwTimingResource_Link_endPoints";
 
-    @objid ("b9fb62cd-23d2-4ab5-a4de-4e2f29f9dfb4")
+    @objid ("7fe7275b-6ffd-48ce-9f2a-324ebe60b26b")
     public static final String HWTIMINGRESOURCE_LINK_HWTIMINGRESOURCE_LINK_FREQUENCY = "HwTimingResource_Link_frequency";
 
-    @objid ("12e59d4b-97be-4131-8b49-8573d9325fc3")
+    @objid ("112fd62e-f449-4f6a-9ecb-c8ff07c553d9")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_DESCRIPTION = "HwTimingResource_Parameter_description";
 
-    @objid ("35fab97a-80cb-4f7b-a4ee-12642f42ace9")
+    @objid ("73327025-9000-4a1d-8c92-7fb218f6ca87")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_P_HW_SERVICES = "HwTimingResource_Parameter_p_HW_Services";
 
-    @objid ("57a0c2db-6e17-48db-b997-a0747301dfb9")
+    @objid ("7ace460a-e90a-4b31-ab7d-e4eb76ea9258")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_R_HW_SERVICES = "HwTimingResource_Parameter_r_HW_Services";
 
-    @objid ("22838355-1415-49b1-b1da-c05c787635bf")
+    @objid ("c15c302b-a71a-4759-ac96-0458d3f7b559")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_OWNEDHW = "HwTimingResource_Parameter_ownedHW";
 
-    @objid ("6df86033-03f3-46e1-8ac8-3d30ffeb8bc1")
+    @objid ("7f23d872-6b92-4e31-8a0e-eec634454082")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_ENDPOINTS = "HwTimingResource_Parameter_endPoints";
 
-    @objid ("fc0bf7cd-a24a-4658-a292-29532bdd1ff3")
+    @objid ("97bf6776-19a9-434b-9346-eaf50b0bac9f")
     public static final String HWTIMINGRESOURCE_PARAMETER_HWTIMINGRESOURCE_PARAMETER_FREQUENCY = "HwTimingResource_Parameter_frequency";
 
-    @objid ("e974c268-f56e-42e2-bbb5-5af0459e53ad")
+    @objid ("bbaa53f0-a0c4-4b0b-a86f-1e780de2637a")
     public static final String HWDEVICE_ASSOCIATION_HWDEVICE_ASSOCIATION_SPEEDFACTOR = "HwDevice_Association_speedFactor";
 
-    @objid ("9c2ae6d4-8b6e-4d75-bde8-bf99f29c76b1")
+    @objid ("b409323c-c0f9-4a31-83b8-fb3cf3681daf")
     public static final String HWDEVICE_ASSOCIATION_HWDEVICE_ASSOCIATION_MAINSCHEDULER = "HwDevice_Association_mainScheduler";
 
-    @objid ("682de233-7c4a-459b-b528-49c9e570c42b")
+    @objid ("62e70214-8290-47a8-80f4-7144ae5aa184")
     public static final String HWDEVICE_ASSOCIATIONEND_HWDEVICE_ASSOCIATIONEND_SPEEDFACTOR = "HwDevice_AssociationEnd_speedFactor";
 
-    @objid ("722b6fc2-a3aa-4d9d-bb56-8ee3636d1117")
+    @objid ("70e3f6d0-8e06-4a66-849e-a57019b0b35c")
     public static final String HWDEVICE_ASSOCIATIONEND_HWDEVICE_ASSOCIATIONEND_MAINSCHEDULER = "HwDevice_AssociationEnd_mainScheduler";
 
-    @objid ("09b7f9d9-3d7c-4c57-a197-288864a53ea8")
+    @objid ("2c38d8b6-8726-4178-9fc0-09fd1dedf832")
     public static final String HWDEVICE_ATTRIBUTE_HWDEVICE_ATTRIBUTE_SPEEDFACTOR = "HwDevice_Attribute_speedFactor";
 
-    @objid ("9a182bdf-2c4f-433b-abc9-63f49a8b8a0d")
+    @objid ("0e29d033-611c-4b1c-86ed-a98f16754828")
     public static final String HWDEVICE_ATTRIBUTE_HWDEVICE_ATTRIBUTE_MAINSCHEDULER = "HwDevice_Attribute_mainScheduler";
 
-    @objid ("b76267c5-f2ee-42e6-83df-986cfa6d8ddf")
+    @objid ("f998e492-25f5-495b-b6f8-a79098572a53")
     public static final String HWDEVICE_CLASSIFIER_HWDEVICE_CLASSIFIER_SPEEDFACTOR = "HwDevice_Classifier_speedFactor";
 
-    @objid ("a60e18eb-d7a5-499b-a91b-1903369e13fa")
+    @objid ("fbb84339-5243-4781-94fa-c224102fe669")
     public static final String HWDEVICE_CLASSIFIER_HWDEVICE_CLASSIFIER_MAINSCHEDULER = "HwDevice_Classifier_mainScheduler";
 
-    @objid ("65a2a422-edd6-4046-9056-4af35dfac4d9")
+    @objid ("f183b3dd-26c2-48d7-a7e3-73b3c079d769")
     public static final String HWDEVICE_INSTANCE_HWDEVICE_INSTANCE_SPEEDFACTOR = "HwDevice_Instance_speedFactor";
 
-    @objid ("934e8d76-e377-4f9b-a9dc-809480095b02")
+    @objid ("126cebc5-2160-4bbb-8aa8-adcdea945797")
     public static final String HWDEVICE_INSTANCE_HWDEVICE_INSTANCE_MAINSCHEDULER = "HwDevice_Instance_mainScheduler";
 
-    @objid ("985c63a4-d69a-442b-a9c8-ac1e33dd9fa2")
+    @objid ("d5d008d8-6684-4f65-8311-63227734f57f")
     public static final String HWDEVICE_LIFELINE_HWDEVICE_LIFELINE_SPEEDFACTOR = "HwDevice_Lifeline_speedFactor";
 
-    @objid ("839dd12d-b4a7-4c71-85e7-9f8448b0a573")
+    @objid ("e4258b58-0a62-4f4b-9901-952e15db9890")
     public static final String HWDEVICE_LIFELINE_HWDEVICE_LIFELINE_MAINSCHEDULER = "HwDevice_Lifeline_mainScheduler";
 
-    @objid ("92cc3057-80e3-4164-8b12-a7b85692bfa9")
+    @objid ("bf0a9d31-a7c5-4073-98e9-7d7548a7e67c")
     public static final String HWDEVICE_LINK_HWDEVICE_LINK_SPEEDFACTOR = "HwDevice_Link_speedFactor";
 
-    @objid ("2e17c74a-5f6a-44ed-98f7-fb1e5d329b97")
+    @objid ("ab3ac5dd-6ec1-453d-bd30-ee61add726ca")
     public static final String HWDEVICE_LINK_HWDEVICE_LINK_MAINSCHEDULER = "HwDevice_Link_mainScheduler";
 
-    @objid ("3e9b20a2-4f43-48bc-9fe7-41cfa68c87fa")
+    @objid ("0e4ab16e-758a-4424-a407-ddea603870ce")
     public static final String HWDEVICE_PARAMETER_HWDEVICE_PARAMETER_SPEEDFACTOR = "HwDevice_Parameter_speedFactor";
 
-    @objid ("c95377ca-771a-4371-a7fe-fb53e368a0bd")
+    @objid ("70dfb7d0-dbbe-444c-9025-05863bc555d3")
     public static final String HWDEVICE_PARAMETER_HWDEVICE_PARAMETER_MAINSCHEDULER = "HwDevice_Parameter_mainScheduler";
 
-    @objid ("f6e7bed1-849e-4844-82aa-eef57008c305")
+    @objid ("4253eaac-5b3f-48de-86ea-beff906ba114")
     public static final String HWCACHE_ASSOCIATION_HWCACHE_ASSOCIATION_LEVEL = "HwCache_Association_level";
 
-    @objid ("a1c4575c-c147-4b43-97e4-8e42842cc169")
+    @objid ("dfee03ac-b282-4f92-9f4f-bcad3ed67a81")
     public static final String HWCACHE_ASSOCIATION_HWCACHE_ASSOCIATION_TYPE = "HwCache_Association_type";
 
-    @objid ("261b30bd-dd6c-4136-a72f-d4f0eedc750e")
+    @objid ("820210d0-6a44-4769-af02-0cc47f959939")
     public static final String HWCACHE_ASSOCIATION_HWCACHE_ASSOCIATION_STRUCTURE = "HwCache_Association_structure";
 
-    @objid ("e9a89a28-2a49-4b01-9bde-3c159f42d0d6")
+    @objid ("e41f2c94-e5bc-47e2-a6df-156f9743dca3")
     public static final String HWCACHE_ASSOCIATION_HWCACHE_ASSOCIATION_REPL_POLICY = "HwCache_Association_repl_Policy";
 
-    @objid ("e1a61ba2-9a41-4461-b013-e5fa8f9bb3ce")
+    @objid ("99e24b81-96e0-4fec-983f-df364aba8502")
     public static final String HWCACHE_ASSOCIATION_HWCACHE_ASSOCIATION_WRITEPOLICY = "HwCache_Association_writePolicy";
 
-    @objid ("550d9fa5-986d-4be8-8897-ea0fcf09f400")
+    @objid ("fd795d79-754e-4bdb-b888-f5cca390765b")
     public static final String HWCACHE_ASSOCIATIONEND_HWCACHE_ASSOCIATIONEND_LEVEL = "HwCache_AssociationEnd_level";
 
-    @objid ("ce2e4e0f-676e-46a8-981a-955eaedca998")
+    @objid ("fa70c602-895f-4eb7-9b6c-0707e79c9235")
     public static final String HWCACHE_ASSOCIATIONEND_HWCACHE_ASSOCIATIONEND_TYPE = "HwCache_AssociationEnd_type";
 
-    @objid ("bb268b77-a7bc-4356-8d9c-da2373ca0d74")
+    @objid ("791c9818-5b32-45a4-b649-2953f4fa8606")
     public static final String HWCACHE_ASSOCIATIONEND_HWCACHE_ASSOCIATIONEND_STRUCTURE = "HwCache_AssociationEnd_structure";
 
-    @objid ("875dd572-3491-4598-b895-3f636e3aaa07")
+    @objid ("bd53fda7-e56c-4c64-a995-7cb0222c5fb3")
     public static final String HWCACHE_ASSOCIATIONEND_HWCACHE_ASSOCIATIONEND_REPL_POLICY = "HwCache_AssociationEnd_repl_Policy";
 
-    @objid ("58888a64-7d26-4a4e-bf18-f7864e182182")
+    @objid ("54c09ae5-2f9f-4cf0-9a51-b15d77ab00c9")
     public static final String HWCACHE_ASSOCIATIONEND_HWCACHE_ASSOCIATIONEND_WRITEPOLICY = "HwCache_AssociationEnd_writePolicy";
 
-    @objid ("c4d0c4ae-261d-4b3d-8d91-5d4dd8b88115")
+    @objid ("a46d6d0b-df3e-463e-965e-448fc7598840")
     public static final String HWCACHE_ATTRIBUTE_HWCACHE_ATTRIBUTE_LEVEL = "HwCache_Attribute_level";
 
-    @objid ("baef7df9-54de-4b4d-a9ea-0f88ee311760")
+    @objid ("fcf269d7-6294-4b55-bd36-a7e81144536c")
     public static final String HWCACHE_ATTRIBUTE_HWCACHE_ATTRIBUTE_TYPE = "HwCache_Attribute_type";
 
-    @objid ("34e6e317-868e-473c-9108-d03ae50cc6c0")
+    @objid ("5a763a44-cffe-4836-b57f-98c78de74295")
     public static final String HWCACHE_ATTRIBUTE_HWCACHE_ATTRIBUTE_STRUCTURE = "HwCache_Attribute_structure";
 
-    @objid ("b551e7b0-d8d3-40e7-9d27-0f00f9643e66")
+    @objid ("81dec960-791c-4095-bb0f-cc07f02ce8ff")
     public static final String HWCACHE_ATTRIBUTE_HWCACHE_ATTRIBUTE_REPL_POLICY = "HwCache_Attribute_repl_Policy";
 
-    @objid ("603c8417-6715-4e63-8a6b-3bf130f91d09")
+    @objid ("748a364e-1512-4643-bcf9-ad6b4c9759cc")
     public static final String HWCACHE_ATTRIBUTE_HWCACHE_ATTRIBUTE_WRITEPOLICY = "HwCache_Attribute_writePolicy";
 
-    @objid ("58f0cdf6-547f-4865-9c6d-bd79a5240f78")
+    @objid ("9d25de34-53a6-454b-8512-776f3d459208")
     public static final String HWCACHE_CLASSIFIER_HWCACHE_CLASSIFIER_LEVEL = "HwCache_Classifier_level";
 
-    @objid ("5dfeb4a5-9e2a-4644-9dd8-8083eaa34560")
+    @objid ("dfc5ff19-aaf1-4dbb-ae6a-6608e065b26e")
     public static final String HWCACHE_CLASSIFIER_HWCACHE_CLASSIFIER_TYPE = "HwCache_Classifier_type";
 
-    @objid ("8da95048-e518-4a4b-9053-e1c1fb328cd0")
+    @objid ("44375610-2e32-45bb-a1f6-c2fbec141f1e")
     public static final String HWCACHE_CLASSIFIER_HWCACHE_CLASSIFIER_STRUCTURE = "HwCache_Classifier_structure";
 
-    @objid ("02ae09bd-2229-45cb-9271-c466f5e207eb")
+    @objid ("46d12322-650b-4bde-acad-1737f78f8518")
     public static final String HWCACHE_CLASSIFIER_HWCACHE_CLASSIFIER_REPL_POLICY = "HwCache_Classifier_repl_Policy";
 
-    @objid ("2e5ce796-a6cd-440b-8f45-17938ecc0e3b")
+    @objid ("3564c28e-ff9d-4b64-93d5-7c8707edbe0c")
     public static final String HWCACHE_CLASSIFIER_HWCACHE_CLASSIFIER_WRITEPOLICY = "HwCache_Classifier_writePolicy";
 
-    @objid ("585a5208-341c-413f-9444-93c78806fe34")
+    @objid ("840aee67-c23e-4953-a9d1-5c363730c8e3")
     public static final String HWCACHE_INSTANCE_HWCACHE_INSTANCE_LEVEL = "HwCache_Instance_level";
 
-    @objid ("ac7aee95-56ce-4b99-8ea2-13aed9ec6097")
+    @objid ("cfdd6f59-a286-42ea-b2f1-54dfe29438cc")
     public static final String HWCACHE_INSTANCE_HWCACHE_INSTANCE_TYPE = "HwCache_Instance_type";
 
-    @objid ("8ecd4bf3-a84e-4231-83b6-f95861fd074e")
+    @objid ("1b4c006e-5f36-48ad-99db-2cd65316df73")
     public static final String HWCACHE_INSTANCE_HWCACHE_INSTANCE_STRUCTURE = "HwCache_Instance_structure";
 
-    @objid ("66610929-5433-4b3d-912b-9ff634b26ef9")
+    @objid ("19bbf87b-255c-4089-958d-d1ec6600312d")
     public static final String HWCACHE_INSTANCE_HWCACHE_INSTANCE_REPL_POLICY = "HwCache_Instance_repl_Policy";
 
-    @objid ("c00f5b2c-54e3-40ff-98a1-ae98b0eb9706")
+    @objid ("8d7c1ce3-373c-4c88-a119-924434f9a0ec")
     public static final String HWCACHE_INSTANCE_HWCACHE_INSTANCE_WRITEPOLICY = "HwCache_Instance_writePolicy";
 
-    @objid ("23b3256d-7417-4977-bb6a-a796631906d9")
+    @objid ("34f75a1a-17bd-4a00-84d0-7649242d7e08")
     public static final String HWCACHE_LIFELINE_HWCACHE_LIFELINE_LEVEL = "HwCache_Lifeline_level";
 
-    @objid ("613de7b4-bc95-48b2-a3d0-f97f22f9bcba")
+    @objid ("0a640bcc-7af1-4a07-b9a7-a9cdbf99f94b")
     public static final String HWCACHE_LIFELINE_HWCACHE_LIFELINE_TYPE = "HwCache_Lifeline_type";
 
-    @objid ("6e5b92be-9296-4a7a-80dd-a48de44ee2d5")
+    @objid ("154eb67c-5f21-41f1-9b88-6c262a7abe2a")
     public static final String HWCACHE_LIFELINE_HWCACHE_LIFELINE_STRUCTURE = "HwCache_Lifeline_structure";
 
-    @objid ("a3481787-6544-4c96-8d84-a6d2cbe7be61")
+    @objid ("bb6f76c2-2a95-4d75-88b6-7c223d1a1f19")
     public static final String HWCACHE_LIFELINE_HWCACHE_LIFELINE_REPL_POLICY = "HwCache_Lifeline_repl_Policy";
 
-    @objid ("68d23318-479c-41b3-a3b0-110ed72c1837")
+    @objid ("3ae07a01-128e-4082-8f09-a8c9be8a9cfe")
     public static final String HWCACHE_LIFELINE_HWCACHE_LIFELINE_WRITEPOLICY = "HwCache_Lifeline_writePolicy";
 
-    @objid ("d8b4af2c-343f-4594-a73a-8bcacce8db80")
+    @objid ("e6b002f2-f770-4dbc-9bb1-0e948640ce24")
     public static final String HWCACHE_LINK_HWCACHE_LINK_LEVEL = "HwCache_Link_level";
 
-    @objid ("4c57980d-b299-4b10-ad23-c9ea8043f194")
+    @objid ("4e370283-9bb8-42b8-8c25-50dacaf9c9b1")
     public static final String HWCACHE_LINK_HWCACHE_LINK_TYPE = "HwCache_Link_type";
 
-    @objid ("4dd15ec9-77ef-4263-ab10-468dfb3366bd")
+    @objid ("276cbe5c-68ef-4e0c-b1ed-ea11112528b7")
     public static final String HWCACHE_LINK_HWCACHE_LINK_STRUCTURE = "HwCache_Link_structure";
 
-    @objid ("ecb41cb3-3ca2-4bcc-8585-fdbf6f279f78")
+    @objid ("35bc0e7c-bfa2-4907-8b60-adb3aab87f9d")
     public static final String HWCACHE_LINK_HWCACHE_LINK_REPL_POLICY = "HwCache_Link_repl_Policy";
 
-    @objid ("e72c41bd-7b02-42ce-9e1c-60c2ee81c397")
+    @objid ("f1bba3ee-7102-4266-8d67-f2a1de274da7")
     public static final String HWCACHE_LINK_HWCACHE_LINK_WRITEPOLICY = "HwCache_Link_writePolicy";
 
-    @objid ("7b9d7596-4b45-4f3a-a092-e4ce1b28ccfa")
+    @objid ("176e3d03-8fb6-49df-8fd8-ce856acec758")
     public static final String HWCACHE_PARAMETER_HWCACHE_PARAMETER_LEVEL = "HwCache_Parameter_level";
 
-    @objid ("05893632-8504-4d6d-9c1a-1a63569a989a")
+    @objid ("791f4468-67fa-4409-9831-e9443343a9f6")
     public static final String HWCACHE_PARAMETER_HWCACHE_PARAMETER_TYPE = "HwCache_Parameter_type";
 
-    @objid ("da53be12-9bdc-415c-ae80-483ffa8d5de7")
+    @objid ("29d436c5-c35c-43ee-a94c-23eaa5e69d06")
     public static final String HWCACHE_PARAMETER_HWCACHE_PARAMETER_STRUCTURE = "HwCache_Parameter_structure";
 
-    @objid ("3e77dd2c-b7e6-4c66-92d7-e027a6dc1a3d")
+    @objid ("53bd8422-d3eb-4df2-828a-76db7cf308f1")
     public static final String HWCACHE_PARAMETER_HWCACHE_PARAMETER_REPL_POLICY = "HwCache_Parameter_repl_Policy";
 
-    @objid ("04c9b901-c5ee-4f2c-bc08-9a8e911d6717")
+    @objid ("f59b9c7b-3648-4b8b-b729-9b56412b79a1")
     public static final String HWCACHE_PARAMETER_HWCACHE_PARAMETER_WRITEPOLICY = "HwCache_Parameter_writePolicy";
 
-    @objid ("a4cacd50-8ad8-41f4-914e-9c9074a032cb")
+    @objid ("aa33445e-78e5-4af3-b6ab-68e6b4c49f8e")
     public static final String HWDRIVE_ASSOCIATION_HWDRIVE_ASSOCIATION_SECTORSIZE = "HwDrive_Association_sectorSize";
 
-    @objid ("e6ee3683-fd19-4cc5-a36b-4360b781a2bd")
+    @objid ("566c4051-24e4-40a8-9b83-2bd7ccb63052")
     public static final String HWDRIVE_ASSOCIATION_HWDRIVE_ASSOCIATION_BUFFER = "HwDrive_Association_buffer";
 
-    @objid ("9cca0581-72db-4bdc-8305-19afeabaa652")
+    @objid ("56260943-09e2-409e-81a9-ca1241bbe562")
     public static final String HWDRIVE_ASSOCIATIONEND_HWDRIVE_ASSOCIATIONEND_SECTORSIZE = "HwDrive_AssociationEnd_sectorSize";
 
-    @objid ("0643151c-1e66-4cb4-bc25-6e2de02f8c43")
+    @objid ("5c919bc6-1fc6-4259-a8e6-9b008a926ad8")
     public static final String HWDRIVE_ASSOCIATIONEND_HWDRIVE_ASSOCIATIONEND_BUFFER = "HwDrive_AssociationEnd_buffer";
 
-    @objid ("afb1e368-c9a6-4c07-a9d0-7776617cd8ee")
+    @objid ("cbed7ba7-0ded-4d39-96a1-f7a90efc7659")
     public static final String HWDRIVE_ATTRIBUTE_HWDRIVE_ATTRIBUTE_SECTORSIZE = "HwDrive_Attribute_sectorSize";
 
-    @objid ("f1da8103-b77a-418a-9ac4-9a6826d654e7")
+    @objid ("125fc16b-a292-4128-a17a-ec6532955ca8")
     public static final String HWDRIVE_ATTRIBUTE_HWDRIVE_ATTRIBUTE_BUFFER = "HwDrive_Attribute_buffer";
 
-    @objid ("6e5c4f9a-4917-4a93-9d8a-092537798040")
+    @objid ("42f24fe9-ec21-4320-a58e-48313dfbc82d")
     public static final String HWDRIVE_CLASSIFIER_HWDRIVE_CLASSIFIER_SECTORSIZE = "HwDrive_Classifier_sectorSize";
 
-    @objid ("6b5086ce-ebcf-4d5d-a491-85bddc599cb9")
+    @objid ("e10c61b6-a80c-4e09-9b6f-75f90cc6f12a")
     public static final String HWDRIVE_CLASSIFIER_HWDRIVE_CLASSIFIER_BUFFER = "HwDrive_Classifier_buffer";
 
-    @objid ("f89a7a21-70b9-4440-b2c7-42be219e6b36")
+    @objid ("4acec190-b665-4ebe-8374-bc6624ccf413")
     public static final String HWDRIVE_INSTANCE_HWDRIVE_INSTANCE_SECTORSIZE = "HwDrive_Instance_sectorSize";
 
-    @objid ("eb138b90-ac55-47da-a61e-2cd869dc1603")
+    @objid ("34f4b367-4f71-41ea-82bd-4f0222ddc13f")
     public static final String HWDRIVE_INSTANCE_HWDRIVE_INSTANCE_BUFFER = "HwDrive_Instance_buffer";
 
-    @objid ("2627637c-313d-4f76-a73b-bf5c5213d945")
+    @objid ("6f5ea8c3-b2a3-4ce0-a0ce-aa20bf0f5e96")
     public static final String HWDRIVE_LIFELINE_HWDRIVE_LIFELINE_SECTORSIZE = "HwDrive_Lifeline_sectorSize";
 
-    @objid ("555b5ee0-ebff-4a7b-853c-25994d5e0b0c")
+    @objid ("d2851a5e-d1fa-4d97-b8b9-2ac03b3ff60c")
     public static final String HWDRIVE_LIFELINE_HWDRIVE_LIFELINE_BUFFER = "HwDrive_Lifeline_buffer";
 
-    @objid ("ea20fc60-554e-4616-b3df-2e5efb877e31")
+    @objid ("87949f8f-def1-4950-ac1b-48bbf2d0772a")
     public static final String HWDRIVE_LINK_HWDRIVE_LINK_SECTORSIZE = "HwDrive_Link_sectorSize";
 
-    @objid ("8bd787d2-90f5-42c2-87e3-9b73c25fdbf7")
+    @objid ("844c79e0-0aa2-4f9a-a5d1-39c239628dd7")
     public static final String HWDRIVE_LINK_HWDRIVE_LINK_BUFFER = "HwDrive_Link_buffer";
 
-    @objid ("c4ac996a-6a32-4890-9c9c-277e84a570b9")
+    @objid ("e9ddcf12-04e3-4e96-bc4d-494db8855111")
     public static final String HWDRIVE_PARAMETER_HWDRIVE_PARAMETER_SECTORSIZE = "HwDrive_Parameter_sectorSize";
 
-    @objid ("3bb2d2d6-728d-48d6-8a41-d22c2afffd9b")
+    @objid ("9beb8238-c2ff-484d-8131-cbf67a93e9f7")
     public static final String HWDRIVE_PARAMETER_HWDRIVE_PARAMETER_BUFFER = "HwDrive_Parameter_buffer";
 
-    @objid ("7bd86028-b582-4e47-8f43-1e6ed9db974a")
+    @objid ("d2dc6ee2-04f4-4720-b37e-4a1d21d546c8")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_MEMORYSIZE = "HwMemory_Association_memorySize";
 
-    @objid ("99dbfd96-8a9d-4dfd-b7ff-ba6731cd7f15")
+    @objid ("144e70e4-3c28-45fe-8ac5-0724842ee882")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_ADRESSSIZE = "HwMemory_Association_adressSize";
 
-    @objid ("563b7c71-16bc-4a44-ac1f-d59978708473")
+    @objid ("e5cc1256-53b3-4601-9f58-35845515069b")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_TIMINGS = "HwMemory_Association_timings";
 
-    @objid ("4691eab7-251d-4f7c-b21c-06e9f42354a2")
+    @objid ("45aac0e6-6041-4177-b8d3-22a0fac60a43")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_THROUGHPUT = "HwMemory_Association_throughput";
 
-    @objid ("504b119b-ce34-48a3-989d-a1781cd1e769")
+    @objid ("e384863b-c159-41eb-8ae9-b10713feee2c")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_DESCRIPTION = "HwMemory_Association_description";
 
-    @objid ("a5d7830f-2d25-4504-a2cf-3086ed485538")
+    @objid ("91ffc6b0-ea9a-4dc4-a632-3402b71a96d0")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_P_HW_SERVICES = "HwMemory_Association_p_HW_Services";
 
-    @objid ("3d78f81d-b0f3-4982-b37c-3723f56087e1")
+    @objid ("876b6c67-9a00-400f-ab79-a01e63eee878")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_R_HW_SERVICES = "HwMemory_Association_r_HW_Services";
 
-    @objid ("6b8f1ef6-2179-42e8-9a79-4c4c640420b5")
+    @objid ("8be97a5a-95b1-4c54-89ac-b6cc11a1dc7e")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_OWNEDHW = "HwMemory_Association_ownedHW";
 
-    @objid ("e8157cdd-bd1c-4183-b119-43292b6843d7")
+    @objid ("45cccfd8-f1c6-4b37-a142-2a828022ec3a")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_FREQUENCY = "HwMemory_Association_frequency";
 
-    @objid ("eced83bf-02a5-49e4-93bf-b059e4488b7c")
+    @objid ("2427180a-e7f5-4e7d-b243-01df3e5c6ff0")
     public static final String HWMEMORY_ASSOCIATION_HWMEMORY_ASSOCIATION_ENDPOINTS = "HwMemory_Association_endPoints";
 
-    @objid ("6b4ade57-a375-4e81-a852-a3caa71393b2")
+    @objid ("d8fa3152-9b1b-4a69-b83b-677ccd4dbde1")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_MEMORYSIZE = "HwMemory_AssociationEnd_memorySize";
 
-    @objid ("a5fb5d5d-754a-4a24-9fcf-94722cc0e126")
+    @objid ("65b5cb0f-0e01-425b-b046-f9815879626b")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_ADRESSSIZE = "HwMemory_AssociationEnd_adressSize";
 
-    @objid ("6bcf56f7-2f14-4d2b-956c-e752f10ca3d2")
+    @objid ("cbb1dc1f-07e9-448b-9026-23b15f49f314")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_TIMINGS = "HwMemory_AssociationEnd_timings";
 
-    @objid ("ba5e1859-5526-4d4e-bf6d-8d14c306c87c")
+    @objid ("2ba62d93-08bc-4034-8471-52c35f4020b9")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_THROUGHPUT = "HwMemory_AssociationEnd_throughput";
 
-    @objid ("37f201c9-9e51-4281-acfb-210444523cec")
+    @objid ("a1dc5187-2990-4090-8a3b-20d473444034")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_DESCRIPTION = "HwMemory_AssociationEnd_description";
 
-    @objid ("a82cf426-44fc-4706-87cc-5230b08bce25")
+    @objid ("40214f21-9702-4d33-8aa3-47af62194886")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_P_HW_SERVICES = "HwMemory_AssociationEnd_p_HW_Services";
 
-    @objid ("bed93ee9-950e-4eb7-be8b-92de786cdedf")
+    @objid ("193676ee-3847-4d11-aeb2-2066511da39a")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_R_HW_SERVICES = "HwMemory_AssociationEnd_r_HW_Services";
 
-    @objid ("169a7fdc-2cfe-42f3-bbfc-c32be50fcd77")
+    @objid ("f274a7e0-ce49-41dc-8f0e-fa51446e9fb4")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_OWNEDHW = "HwMemory_AssociationEnd_ownedHW";
 
-    @objid ("fd655532-f3b7-456c-aeba-19a569ce3e56")
+    @objid ("297ead01-0455-455f-aa78-ba9102cffbd8")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_FREQUENCY = "HwMemory_AssociationEnd_frequency";
 
-    @objid ("4a1d673e-e01e-4eaf-b1e2-1aa5479463fc")
+    @objid ("964e91c7-0053-4f14-81a0-b29f4b8645a0")
     public static final String HWMEMORY_ASSOCIATIONEND_HWMEMORY_ASSOCIATIONEND_ENDPOINTS = "HwMemory_AssociationEnd_endPoints";
 
-    @objid ("11a1a3c6-a728-41c8-99f0-2f6d617e833e")
+    @objid ("449d25e9-611d-46ff-93bf-5304b3760e63")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_MEMORYSIZE = "HwMemory_Attribute_memorySize";
 
-    @objid ("968731f6-3601-4c8f-b1c0-607d5acce904")
+    @objid ("3bac10c6-c1dc-4d28-86b0-6e80b2d901e8")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_ADRESSSIZE = "HwMemory_Attribute_adressSize";
 
-    @objid ("a84e7a2a-62c6-498f-bd53-04d401d2bbd1")
+    @objid ("5ee040a0-ec3d-4b9c-807b-3a0bec8b704a")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_TIMINGS = "HwMemory_Attribute_timings";
 
-    @objid ("ea75a573-f49a-47d9-81aa-6d03c7c46f38")
+    @objid ("866f5a01-b881-4326-8c7c-5c55a632a84b")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_THROUGHPUT = "HwMemory_Attribute_throughput";
 
-    @objid ("2d3bd95e-64b5-474b-805a-9d9b5a68bc2f")
+    @objid ("731b4e17-c01c-4539-ad1f-aafa41fc1974")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_DESCRIPTION = "HwMemory_Attribute_description";
 
-    @objid ("1ba673dc-d011-491f-836c-d994c4a8373d")
+    @objid ("c4ec2938-275f-45e7-a1f4-58ba8f8d28ff")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_P_HW_SERVICES = "HwMemory_Attribute_p_HW_Services";
 
-    @objid ("9bc09a41-b378-4733-95c3-12dda192c6c5")
+    @objid ("30dc7afa-ffba-4642-b236-9fbb10b55906")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_R_HW_SERVICES = "HwMemory_Attribute_r_HW_Services";
 
-    @objid ("21718bda-bc11-4886-8104-772195897536")
+    @objid ("bcdefb5a-04c1-41be-9c36-86f1d231b45b")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_OWNEDHW = "HwMemory_Attribute_ownedHW";
 
-    @objid ("c7f4319b-a41b-4c37-a0cd-fc68680990d5")
+    @objid ("a22f5d1e-dc93-461c-9810-014191b8f39a")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_FREQUENCY = "HwMemory_Attribute_frequency";
 
-    @objid ("806c5de0-a71e-44c6-9b6c-0f0db72cd87e")
+    @objid ("ab6778ba-1a96-4f4e-9dfc-75c97405fc3e")
     public static final String HWMEMORY_ATTRIBUTE_HWMEMORY_ATTRIBUTE_ENDPOINTS = "HwMemory_Attribute_endPoints";
 
-    @objid ("b542af13-0984-4f1f-a62b-14bd616215e3")
+    @objid ("8d4bfdec-79c6-4ae9-9b45-e34a3c5a615d")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_MEMORYSIZE = "HwMemory_Classifier_memorySize";
 
-    @objid ("283eea99-1911-4110-bf66-8bb3bb83bb5c")
+    @objid ("a6b57c4e-452c-4283-ba41-fa50aa5c54f2")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_ADRESSSIZE = "HwMemory_Classifier_adressSize";
 
-    @objid ("764a8ba9-6c70-4440-8ae8-b1bce2e2b094")
+    @objid ("3243fac1-6bd7-42b1-a6d9-8607daaea9b7")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_TIMINGS = "HwMemory_Classifier_timings";
 
-    @objid ("36ea4dd3-0d54-48c4-b137-ef832f0409aa")
+    @objid ("ea24455c-9f6b-4da8-9d79-568d7ff1534a")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_THROUGHPUT = "HwMemory_Classifier_throughput";
 
-    @objid ("2b7a7410-b8c8-4f79-82c5-643376de6c49")
+    @objid ("0d261742-ed8d-4f1b-ae75-b42b2df8eeec")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_DESCRIPTION = "HwMemory_Classifier_description";
 
-    @objid ("0a26efe3-48ec-43f5-b991-17f529bf9529")
+    @objid ("719d7349-1562-440e-b6c9-91747609d3e3")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_P_HW_SERVICES = "HwMemory_Classifier_p_HW_Services";
 
-    @objid ("b44c2082-741c-435f-8fcc-1b04c9fbfc5f")
+    @objid ("95fec79c-b39a-4755-b545-fc3cfac12cd6")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_R_HW_SERVICES = "HwMemory_Classifier_r_HW_Services";
 
-    @objid ("e8b638e1-cd97-4087-8c1f-687d8315d486")
+    @objid ("3e08128a-165d-4d8c-84f5-f47e032c8646")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_OWNEDHW = "HwMemory_Classifier_ownedHW";
 
-    @objid ("72e5416a-cba7-4c4e-92f1-0a10b2b93d19")
+    @objid ("0e5bad88-3a0e-4f70-a0e6-8ba04975260f")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_FREQUENCY = "HwMemory_Classifier_frequency";
 
-    @objid ("86ec4e9d-89dc-4b0e-9b6e-5866081817d1")
+    @objid ("2862eff1-03ea-41e3-aaaf-324243815b4c")
     public static final String HWMEMORY_CLASSIFIER_HWMEMORY_CLASSIFIER_ENDPOINTS = "HwMemory_Classifier_endPoints";
 
-    @objid ("ec7504e3-10f3-4fcb-aeb0-be39cb9d1a7e")
+    @objid ("432e4653-d2de-44e0-80a9-cb2f30214dac")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_MEMORYSIZE = "HwMemory_Instance_memorySize";
 
-    @objid ("9ececd48-ad25-493b-adba-cb285c0ac583")
+    @objid ("ca72709f-473b-4e04-ab38-7eb0cbf617db")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_ADRESSSIZE = "HwMemory_Instance_adressSize";
 
-    @objid ("7ebbdeee-467e-4a60-a4a1-aaad8fc33bc7")
+    @objid ("5179fc2b-da06-46b5-86cf-ad41cea53217")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_TIMINGS = "HwMemory_Instance_timings";
 
-    @objid ("14254675-d705-43c3-a764-44be534d1ac2")
+    @objid ("8e6987fb-01df-40e0-baa8-d599692de7bd")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_THROUGHPUT = "HwMemory_Instance_throughput";
 
-    @objid ("cd42458e-f132-422f-848e-e7535a181903")
+    @objid ("b934514d-ac44-4681-b029-610237a0334d")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_DESCRIPTION = "HwMemory_Instance_description";
 
-    @objid ("143b5b0e-f38d-471c-b98f-f6403edd2013")
+    @objid ("3146ea6f-de50-4d5c-9910-e154bc5b6da3")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_P_HW_SERVICES = "HwMemory_Instance_p_HW_Services";
 
-    @objid ("987a660b-eaf2-41a4-8bf3-f4a0f614ae8b")
+    @objid ("d3f4b944-ae39-4125-8f75-f70356e27a30")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_R_HW_SERVICES = "HwMemory_Instance_r_HW_Services";
 
-    @objid ("4f871953-7ca3-434e-ad5a-5c56aa947d18")
+    @objid ("959ffc16-e296-4b79-84ef-572a515347e7")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_OWNEDHW = "HwMemory_Instance_ownedHW";
 
-    @objid ("ef214e80-d3a6-4bcf-8ddb-f2f7106fde69")
+    @objid ("0c1f17cc-4cc9-4a38-bd8a-617f8502db63")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_FREQUENCY = "HwMemory_Instance_frequency";
 
-    @objid ("a8406465-190e-4aed-9de4-27b5aa29e723")
+    @objid ("0cd83168-6a71-4385-9318-b871da4d30bf")
     public static final String HWMEMORY_INSTANCE_HWMEMORY_INSTANCE_ENDPOINTS = "HwMemory_Instance_endPoints";
 
-    @objid ("cf843ab1-4cbe-4932-b337-1d1a5da1b76e")
+    @objid ("7f0df39e-0aa7-484e-aba3-94beffdfe78e")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_MEMORYSIZE = "HwMemory_Lifeline_memorySize";
 
-    @objid ("a8b4e0b8-2b2f-44d9-b117-3d1ff166da3a")
+    @objid ("0f81f6c6-15f2-4f9a-836f-a962192979e0")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_ADRESSSIZE = "HwMemory_Lifeline_adressSize";
 
-    @objid ("90fe1448-8a0b-4bd4-83d1-8a46c49eaf92")
+    @objid ("f2eccd1a-ebb0-4280-9a2e-957492bc7e58")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_TIMINGS = "HwMemory_Lifeline_timings";
 
-    @objid ("1fb8d42f-cdbd-4bfd-ae17-f1cd491dade2")
+    @objid ("046760bb-f565-42c6-831d-f0f03f5b3ead")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_THROUGHPUT = "HwMemory_Lifeline_throughput";
 
-    @objid ("96d786e9-b878-4d55-8f34-efcd59003e4f")
+    @objid ("80f50b44-2186-47ef-b39f-1ce3a6cf6ff5")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_DESCRIPTION = "HwMemory_Lifeline_description";
 
-    @objid ("b115d246-208d-499a-9ac3-d31a3dc5d8fb")
+    @objid ("91261188-402f-4f6e-a9a9-324bb4cd7f27")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_P_HW_SERVICES = "HwMemory_Lifeline_p_HW_Services";
 
-    @objid ("d559b35c-dc59-4ef5-b43e-31ad750c47ac")
+    @objid ("4e2dc941-afca-4137-a8d5-f0899172759c")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_R_HW_SERVICES = "HwMemory_Lifeline_r_HW_Services";
 
-    @objid ("73c002ee-fdaf-4d3a-9a8b-7231f2548682")
+    @objid ("bbd02f2d-ff8f-4798-a25e-8ed1414f321d")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_OWNEDHW = "HwMemory_Lifeline_ownedHW";
 
-    @objid ("17b90a63-cce2-43e7-97ca-1f42e974a59f")
+    @objid ("026556dc-db26-4a9a-a24a-43f2e565662d")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_FREQUENCY = "HwMemory_Lifeline_frequency";
 
-    @objid ("3fb46485-6c52-4ca1-a3a5-bd1c43066986")
+    @objid ("59e8ccd9-e2fd-4ad1-a5c6-bc44be20756f")
     public static final String HWMEMORY_LIFELINE_HWMEMORY_LIFELINE_ENDPOINTS = "HwMemory_Lifeline_endPoints";
 
-    @objid ("ca954b73-9897-4acd-bb3b-2baabfc35052")
+    @objid ("c1b40499-4f8a-4058-8861-416f97eb11ce")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_MEMORYSIZE = "HwMemory_Link_memorySize";
 
-    @objid ("9b841824-5f7e-4d1d-a826-61c5fe621fd3")
+    @objid ("23b1cb34-766b-43d6-8e63-c9eb22d1945f")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_ADRESSSIZE = "HwMemory_Link_adressSize";
 
-    @objid ("7d9000a2-b0f8-4c9e-93fa-8007694d84d3")
+    @objid ("28f9a33f-c804-44ff-9d35-86876363973a")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_TIMINGS = "HwMemory_Link_timings";
 
-    @objid ("7a11cb2e-43da-499a-9d2f-506f1706670e")
+    @objid ("1f6915b0-865d-48ff-be14-8ff24a9762d0")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_THROUGHPUT = "HwMemory_Link_throughput";
 
-    @objid ("c7dbd42d-fb74-42cf-ad6b-2b45eb684e40")
+    @objid ("d844fac3-bc47-48a9-89b1-ac5223d965e8")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_DESCRIPTION = "HwMemory_Link_description";
 
-    @objid ("58ca5a5b-ce8f-4d61-912e-e6ce2341b587")
+    @objid ("0321138e-8779-44f6-a73f-e0bbd199f96c")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_P_HW_SERVICES = "HwMemory_Link_p_HW_Services";
 
-    @objid ("4744d46d-c8c6-4809-b363-51111d21fc26")
+    @objid ("050f72d4-964a-4641-aaaa-711916a8bdd2")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_R_HW_SERVICES = "HwMemory_Link_r_HW_Services";
 
-    @objid ("04634261-8d2e-4569-883d-9a8cbd02c652")
+    @objid ("7384e989-083c-4b9a-8aa3-aadb9eed7400")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_OWNEDHW = "HwMemory_Link_ownedHW";
 
-    @objid ("5f3b9f79-f29d-4441-b13f-e0523252e23e")
+    @objid ("d8237102-1d3c-4436-b69a-42b8184f21c4")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_FREQUENCY = "HwMemory_Link_frequency";
 
-    @objid ("0d998c8e-f0fa-496b-97cc-1145b358896a")
+    @objid ("5d805c10-0983-4e21-9878-e4143ed62cd4")
     public static final String HWMEMORY_LINK_HWMEMORY_LINK_ENDPOINTS = "HwMemory_Link_endPoints";
 
-    @objid ("bef67c45-5246-49ed-a063-3cd6288e4cfc")
+    @objid ("3dfb0f01-53f5-4bcb-96c2-a761a70f86c5")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_MEMORYSIZE = "HwMemory_Parameter_memorySize";
 
-    @objid ("add4fa2b-939c-479a-ac79-2facf0e76d00")
+    @objid ("9e31a044-6893-44af-bbe6-6edf8276b860")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_ADRESSSIZE = "HwMemory_Parameter_adressSize";
 
-    @objid ("6ff80ee1-0bd2-429f-b315-92797849a293")
+    @objid ("693cc842-47bc-4ddc-adfc-605bf2219083")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_TIMINGS = "HwMemory_Parameter_timings";
 
-    @objid ("e7349d9b-40be-45b7-b184-0d855de7d80e")
+    @objid ("2cb31cbc-4140-4dbc-a7c1-4e407d13563e")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_THROUGHPUT = "HwMemory_Parameter_throughput";
 
-    @objid ("69095d98-d514-4b9a-8a62-3206ebea942a")
+    @objid ("30d3d38e-03b7-4389-b651-f517350e373a")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_DESCRIPTION = "HwMemory_Parameter_description";
 
-    @objid ("2999f7e4-6b9e-43f8-994c-83aa602952ca")
+    @objid ("85ab817c-968a-46fd-ad01-e8d9fa0b654b")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_P_HW_SERVICES = "HwMemory_Parameter_p_HW_Services";
 
-    @objid ("6565f393-3017-482c-8017-c059f2b52a3a")
+    @objid ("1fcd2c5c-3cd7-47aa-97d0-39a558d0294a")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_R_HW_SERVICES = "HwMemory_Parameter_r_HW_Services";
 
-    @objid ("effbb394-fddf-4afa-89a8-fcf04675d41c")
+    @objid ("de07dc17-3108-43e6-b0ab-7a486f50f4cb")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_OWNEDHW = "HwMemory_Parameter_ownedHW";
 
-    @objid ("95a14cda-eef9-4906-8510-e4fc6fc4e765")
+    @objid ("54b11ad5-333a-411a-882b-107b1e053551")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_FREQUENCY = "HwMemory_Parameter_frequency";
 
-    @objid ("44f5c25f-a034-48b5-a3d6-c1f7e441d934")
+    @objid ("6b7f5c15-a51b-4f81-ab6c-109e879b4b05")
     public static final String HWMEMORY_PARAMETER_HWMEMORY_PARAMETER_ENDPOINTS = "HwMemory_Parameter_endPoints";
 
-    @objid ("762f8210-a5bd-470a-8f78-728246e95e06")
+    @objid ("654c688a-2e03-4c14-aa7c-31fc169186ff")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_ORGANIZATION = "HwRAM_Association_organization";
 
-    @objid ("77c1572d-3697-41ae-8491-dcaf334e6504")
+    @objid ("406c6306-426a-4a1f-b71e-941d973a9679")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_REPL_POLICY = "HwRAM_Association_repl_Policy";
 
-    @objid ("47d80db2-5912-4619-8285-02448ce796f6")
+    @objid ("5c80e338-be62-4d81-9994-ec4fa69a039d")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_WRITEPOLICY = "HwRAM_Association_writePolicy";
 
-    @objid ("5178a462-9ebd-4b56-a9f9-b2acde05ddad")
+    @objid ("0be7a3e6-641c-492a-ad36-fb8b7d65295b")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_ISSYNCHRONOUS = "HwRAM_Association_isSynchronous";
 
-    @objid ("49d36ef2-c36c-4067-a25a-c266906da7f2")
+    @objid ("03ab4b83-7e5e-4488-808b-4a62c04cf407")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_ISSTATIC = "HwRAM_Association_isStatic";
 
-    @objid ("b0ddf746-c361-46ed-a089-341effa83f2f")
+    @objid ("110ea28a-c20a-468a-8646-0ac471309dae")
     public static final String HWRAM_ASSOCIATION_HWRAM_ASSOCIATION_ISNONVOLATILE = "HwRAM_Association_isNonVolatile";
 
-    @objid ("43c93309-45a6-4ec5-a230-98683a98049f")
+    @objid ("3e350213-f74b-47ff-9a06-8fbeed99e177")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_ORGANIZATION = "HwRAM_AssociationEnd_organization";
 
-    @objid ("5cc3a478-db10-46ce-a6db-9e7ab6b075fd")
+    @objid ("91ebd91e-31ea-4391-8ad8-8f54b2cdef0e")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_REPL_POLICY = "HwRAM_AssociationEnd_repl_Policy";
 
-    @objid ("5b0b4448-a988-48a5-be57-1bed13f0b0d2")
+    @objid ("e97cb5bd-4818-4153-8fef-cd2c1952c56c")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_WRITEPOLICY = "HwRAM_AssociationEnd_writePolicy";
 
-    @objid ("8e63e5f3-33aa-4a6b-b4fd-5d3f62aa2b18")
+    @objid ("4fc2acaf-e096-449d-adac-e2822ec38694")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_ISSYNCHRONOUS = "HwRAM_AssociationEnd_isSynchronous";
 
-    @objid ("d6b3f4f9-5ff8-41b2-9e37-d19bcfb15367")
+    @objid ("7a716874-b5a5-4e96-b0db-0a514fc70dff")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_ISSTATIC = "HwRAM_AssociationEnd_isStatic";
 
-    @objid ("07d59c1d-9b7a-40fd-a1aa-1ad02597357c")
+    @objid ("ad2dd78d-64bf-4c9e-a519-9faf29fdd5d1")
     public static final String HWRAM_ASSOCIATIONEND_HWRAM_ASSOCIATIONEND_ISNONVOLATILE = "HwRAM_AssociationEnd_isNonVolatile";
 
-    @objid ("d89b098d-6a9a-499b-8404-97e8ba67e76d")
+    @objid ("bbf7cd18-0fbc-429d-bbf2-4d361b8eb4dc")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_ORGANIZATION = "HwRAM_Attribute_organization";
 
-    @objid ("3c6af04e-c41c-4b3a-ab17-f06aa4f81fb6")
+    @objid ("b1dc1fb4-2654-4eaa-b366-487a8b212257")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_REPL_POLICY = "HwRAM_Attribute_repl_Policy";
 
-    @objid ("49bf8210-b739-48d9-9dc8-1a257c59b9aa")
+    @objid ("d81d0381-4317-4c46-b4a0-aaffc6f9f6d9")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_WRITEPOLICY = "HwRAM_Attribute_writePolicy";
 
-    @objid ("e47f90d0-4022-40b1-af87-9e9a593e23d8")
+    @objid ("d54751e1-c0b7-48a5-adc0-ef4a65407b88")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_ISSYNCHRONOUS = "HwRAM_Attribute_isSynchronous";
 
-    @objid ("17a230e0-d470-4ac8-84b4-188ed91469b5")
+    @objid ("cf453985-f975-4bc6-a6c8-e41f8f7143e1")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_ISSTATIC = "HwRAM_Attribute_isStatic";
 
-    @objid ("7710bf3d-c482-4207-9936-65b3ad433a00")
+    @objid ("65244086-4dd4-44e6-bcd5-08652216aa8f")
     public static final String HWRAM_ATTRIBUTE_HWRAM_ATTRIBUTE_ISNONVOLATILE = "HwRAM_Attribute_isNonVolatile";
 
-    @objid ("ac5ca09c-92ed-43a9-8ebb-f91042344b3a")
+    @objid ("c78ab424-cdb5-4f77-adfa-cc77dbc7b3bd")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_ORGANIZATION = "HwRAM_Classifier_organization";
 
-    @objid ("6a508c30-c3af-48c5-b657-04570d3cd8f0")
+    @objid ("3954bbf3-b900-460b-b75e-23d28ae6ab70")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_REPL_POLICY = "HwRAM_Classifier_repl_Policy";
 
-    @objid ("2b48b2db-f50c-47b3-8dfd-1c26614b59ca")
+    @objid ("19542196-1503-428f-b7be-1fefa36a912e")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_WRITEPOLICY = "HwRAM_Classifier_writePolicy";
 
-    @objid ("b5d87460-79b0-4501-acf7-27ede74ecc0a")
+    @objid ("df3a20a2-ea8d-4981-9506-29946eed3544")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_ISSYNCHRONOUS = "HwRAM_Classifier_isSynchronous";
 
-    @objid ("f727c677-e586-4190-ba69-0d484732000b")
+    @objid ("cd124f90-c6f8-4de4-97f4-9a5e44b56f48")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_ISSTATIC = "HwRAM_Classifier_isStatic";
 
-    @objid ("b0daccf6-011b-4a4b-8985-87f653535953")
+    @objid ("37129016-cab5-4089-bbe1-6569beae43e3")
     public static final String HWRAM_CLASSIFIER_HWRAM_CLASSIFIER_ISNONVOLATILE = "HwRAM_Classifier_isNonVolatile";
 
-    @objid ("e0e2e4b1-0e8e-461b-a76a-effcac76b762")
+    @objid ("663bdfbc-f73b-4348-b107-24a919b6076e")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_ORGANIZATION = "HwRAM_Instance_organization";
 
-    @objid ("31450222-4e47-4fa1-9239-d33af91c30bc")
+    @objid ("b7d56c7c-0fa7-40c4-a163-8acfbc22a015")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_REPL_POLICY = "HwRAM_Instance_repl_Policy";
 
-    @objid ("522799be-b5c9-4312-8235-b6a68572899c")
+    @objid ("f7d4f79d-65e3-4392-9e9a-4fb0db03642b")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_WRITEPOLICY = "HwRAM_Instance_writePolicy";
 
-    @objid ("686cb8de-912d-4619-9445-18a607e668b6")
+    @objid ("5022ddeb-51a8-4c9d-8f82-78b76aaa54c1")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_ISSYNCHRONOUS = "HwRAM_Instance_isSynchronous";
 
-    @objid ("45f0f696-8380-49f9-ba86-c3f24849b5da")
+    @objid ("9ffe56e6-4838-45f0-94d7-1d60edc11386")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_ISSTATIC = "HwRAM_Instance_isStatic";
 
-    @objid ("5aa0f6e7-7a8d-4a2c-8b9c-79d1c87e2ee4")
+    @objid ("8dd97a8e-1a9c-4a4b-a2d3-d2834938fcf2")
     public static final String HWRAM_INSTANCE_HWRAM_INSTANCE_ISNONVOLATILE = "HwRAM_Instance_isNonVolatile";
 
-    @objid ("9e4f1291-dd44-4f9f-bed9-f302413bada3")
+    @objid ("3a1ec6db-cbbe-4aae-907a-b5489bcd8e4c")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_ORGANIZATION = "HwRAM_Lifeline_organization";
 
-    @objid ("c888ac31-9544-4c34-a2ed-d69ed4639e0d")
+    @objid ("abb71c37-df79-4732-9bbb-4c6e22e167b1")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_REPL_POLICY = "HwRAM_Lifeline_repl_Policy";
 
-    @objid ("8107bc7c-1bbc-4f2a-89d1-c64d64a4d85d")
+    @objid ("f25c54da-25ab-4cea-97fe-3cb390b2fa45")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_WRITEPOLICY = "HwRAM_Lifeline_writePolicy";
 
-    @objid ("7c5ca93e-f028-4ec2-b746-d5036577e22e")
+    @objid ("5598bdf4-e3a0-429f-b2cd-370f336a56e8")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_ISSYNCHRONOUS = "HwRAM_Lifeline_isSynchronous";
 
-    @objid ("efb514ea-ed6e-47f7-8c62-597dcef8146b")
+    @objid ("b2852933-a1e9-4dd2-89e3-e79804ac9d60")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_ISSTATIC = "HwRAM_Lifeline_isStatic";
 
-    @objid ("0511257e-102e-4d47-a769-fc67d6737827")
+    @objid ("ee150c64-7436-4f5e-b9f3-29f445dbc612")
     public static final String HWRAM_LIFELINE_HWRAM_LIFELINE_ISNONVOLATILE = "HwRAM_Lifeline_isNonVolatile";
 
-    @objid ("787dc89a-e133-40cf-876d-28623967eab5")
+    @objid ("9bfc2e35-f1ad-4403-8f6e-3c61075ee24a")
     public static final String HWRAM_LINK_HWRAM_LINK_ORGANIZATION = "HwRAM_Link_organization";
 
-    @objid ("5ecdd3d1-f8b6-4a71-bc26-d4ae9c1b1109")
+    @objid ("94909af2-0b63-40e8-95d2-92aaa6050177")
     public static final String HWRAM_LINK_HWRAM_LINK_REPL_POLICY = "HwRAM_Link_repl_Policy";
 
-    @objid ("26def770-43a7-492c-ba6a-cdb81dbdf05c")
+    @objid ("d49cdfa7-782f-443e-b58a-75b6f65572a4")
     public static final String HWRAM_LINK_HWRAM_LINK_WRITEPOLICY = "HwRAM_Link_writePolicy";
 
-    @objid ("f0d5d741-0e3c-4782-90e2-7992bb5b9868")
+    @objid ("4b96bfdf-5c17-4a6e-b134-2a6e1ad1334a")
     public static final String HWRAM_LINK_HWRAM_LINK_ISSYNCHRONOUS = "HwRAM_Link_isSynchronous";
 
-    @objid ("16e2734a-be36-428e-9210-11d87686485d")
+    @objid ("03b29a88-a5d0-4d04-970a-e25bb521fea9")
     public static final String HWRAM_LINK_HWRAM_LINK_ISSTATIC = "HwRAM_Link_isStatic";
 
-    @objid ("6d92c450-74f8-47cc-8065-327b17852cb4")
+    @objid ("91a95ea3-8f15-40d3-9ed7-1b8a5c84d35f")
     public static final String HWRAM_LINK_HWRAM_LINK_ISNONVOLATILE = "HwRAM_Link_isNonVolatile";
 
-    @objid ("19474432-6445-4b8b-a003-38898d3316b0")
+    @objid ("1790f8fa-3ef7-4a4f-9d14-a2f80edd50c5")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_ORGANIZATION = "HwRAM_Parameter_organization";
 
-    @objid ("dc4329a7-b0d8-4517-9a4d-7e6d5a48cd81")
+    @objid ("5a7cebb1-e731-41a9-8092-9aacc51e754d")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_REPL_POLICY = "HwRAM_Parameter_repl_Policy";
 
-    @objid ("92d6b9ac-2969-41a4-9bd4-1a61323a6149")
+    @objid ("452148c7-c2f3-4924-a5d1-cd461c506610")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_WRITEPOLICY = "HwRAM_Parameter_writePolicy";
 
-    @objid ("c424b1a0-e439-4d14-a422-867133bcf8dc")
+    @objid ("61b07178-c67c-4070-934a-0a1720c81556")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_ISSYNCHRONOUS = "HwRAM_Parameter_isSynchronous";
 
-    @objid ("6634ea1a-aef8-485e-b95f-85eb484894eb")
+    @objid ("f63bd8d2-80ce-44c6-ba2a-8d149db82b4d")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_ISSTATIC = "HwRAM_Parameter_isStatic";
 
-    @objid ("da374105-83dd-4b87-8cfc-4b280383af50")
+    @objid ("dc9aa4b4-7c5d-4ba8-8fcc-e99da8a3314e")
     public static final String HWRAM_PARAMETER_HWRAM_PARAMETER_ISNONVOLATILE = "HwRAM_Parameter_isNonVolatile";
 
-    @objid ("5ff68a00-d3d3-44a4-a217-4992b022b651")
+    @objid ("a03621ab-5df9-4513-9278-e5e4f62dfd49")
     public static final String HWROM_ASSOCIATION_HWROM_ASSOCIATION_TYPE = "HwROM_Association_type";
 
-    @objid ("07c8a3d4-a37f-4cdc-9f19-22bced8186e7")
+    @objid ("22a505b6-f64b-4e81-93cf-c2637d83106d")
     public static final String HWROM_ASSOCIATION_HWROM_ASSOCIATION_ORGANIZATION = "HwROM_Association_organization";
 
-    @objid ("0838a144-7394-4a7b-9c2d-61ab870026cd")
+    @objid ("3d238c2a-b6a1-4966-add0-cf8f78142527")
     public static final String HWROM_ASSOCIATIONEND_HWROM_ASSOCIATIONEND_TYPE = "HwROM_AssociationEnd_type";
 
-    @objid ("acd995e5-d292-4905-ae1f-bb6b1d1330c9")
+    @objid ("36bbe508-ca7f-4f84-a3d9-5381316816cf")
     public static final String HWROM_ASSOCIATIONEND_HWROM_ASSOCIATIONEND_ORGANIZATION = "HwROM_AssociationEnd_organization";
 
-    @objid ("4573efaf-96d0-4498-9bb8-0b80ea4a6322")
+    @objid ("af7c3a94-fae7-4d72-b333-f5e6f0864948")
     public static final String HWROM_ATTRIBUTE_HWROM_ATTRIBUTE_TYPE = "HwROM_Attribute_type";
 
-    @objid ("6c02ee57-2971-4644-97f8-02f98f85c04d")
+    @objid ("5af03336-aae4-497d-8811-9c45624035bd")
     public static final String HWROM_ATTRIBUTE_HWROM_ATTRIBUTE_ORGANIZATION = "HwROM_Attribute_organization";
 
-    @objid ("2af48451-3751-4fd1-aeed-fcd5c8277604")
+    @objid ("8e45dff4-9a2b-46b9-b1a4-4c009e9cff63")
     public static final String HWROM_CLASSIFIER_HWROM_CLASSIFIER_TYPE = "HwROM_Classifier_type";
 
-    @objid ("b2e93de8-d790-422c-8dde-3418ab24497e")
+    @objid ("cd61eeae-c50b-443b-bc5b-58a3e2f7c7a3")
     public static final String HWROM_CLASSIFIER_HWROM_CLASSIFIER_ORGANIZATION = "HwROM_Classifier_organization";
 
-    @objid ("5e5a2b93-100c-4bec-ae00-b55c710912f1")
+    @objid ("3b3dbd28-d47a-4caf-89eb-644c6d9148cf")
     public static final String HWROM_INSTANCE_HWROM_INSTANCE_TYPE = "HwROM_Instance_type";
 
-    @objid ("727b4291-dc15-454d-8b5c-48b56d671212")
+    @objid ("20a1a7da-6a51-40bb-bdb7-a1829c962005")
     public static final String HWROM_INSTANCE_HWROM_INSTANCE_ORGANIZATION = "HwROM_Instance_organization";
 
-    @objid ("59e05d2e-2722-41a5-b0ab-50c74b84c836")
+    @objid ("53bf1e69-d9d6-4dd2-b848-960409015bbd")
     public static final String HWROM_LIFELINE_HWROM_LIFELINE_TYPE = "HwROM_Lifeline_type";
 
-    @objid ("a2934776-5ce9-46f9-80cf-95c756b8bb1d")
+    @objid ("ff47da6a-4916-41cf-a3fe-a461b11a4bd3")
     public static final String HWROM_LIFELINE_HWROM_LIFELINE_ORGANIZATION = "HwROM_Lifeline_organization";
 
-    @objid ("d4f4c74b-df09-4e22-a17b-1548dfe849b5")
+    @objid ("588dccbf-2432-42a2-abb0-c29c156b43ab")
     public static final String HWROM_LINK_HWROM_LINK_TYPE = "HwROM_Link_type";
 
-    @objid ("8560f81e-61e5-4bbd-a984-dbfd2af7bff3")
+    @objid ("d5aa6231-0fc2-48ef-b24d-082c76f3d2d9")
     public static final String HWROM_LINK_HWROM_LINK_ORGANIZATION = "HwROM_Link_organization";
 
-    @objid ("e99110e1-634f-44c6-bb8f-37475c3109be")
+    @objid ("c2da93bb-c839-4cbf-a0d2-049c4dbcd517")
     public static final String HWROM_PARAMETER_HWROM_PARAMETER_TYPE = "HwROM_Parameter_type";
 
-    @objid ("ce174167-8931-4a89-aa8c-c43a9da5a0fe")
+    @objid ("4c612d1a-cb67-4dfe-b76f-472d2d0b317e")
     public static final String HWROM_PARAMETER_HWROM_PARAMETER_ORGANIZATION = "HwROM_Parameter_organization";
 
-    @objid ("6a0b1c14-39cf-471c-99de-11777f322595")
+    @objid ("7ec108d6-ba07-4cea-af2d-e833d87f0079")
     public static final String HWDMA_ASSOCIATION_HWDMA_ASSOCIATION_NBCHANNELS = "HwDMA_Association_nbChannels";
 
-    @objid ("f82be325-1c16-4f56-ada3-f193544463a9")
+    @objid ("9ebdbb22-79f0-4de8-912a-293bee0369a7")
     public static final String HWDMA_ASSOCIATION_HWDMA_ASSOCIATION_TRANSFERWIDTH = "HwDMA_Association_transferWidth";
 
-    @objid ("79e715a5-700c-47b6-8dd3-5a39e2981fea")
+    @objid ("0c44f8a2-fe1b-4618-8832-62d6116345ca")
     public static final String HWDMA_ASSOCIATION_HWDMA_ASSOCIATION_DRIVENBY = "HwDMA_Association_drivenBy";
 
-    @objid ("e649a93f-84e2-46ea-826c-db663de97e94")
+    @objid ("309f762e-aa05-4a1d-9969-1e64ece75068")
     public static final String HWDMA_ASSOCIATION_HWDMA_ASSOCIATION_MANAGEDMEMORIES = "HwDMA_Association_managedMemories";
 
-    @objid ("04048bf5-10ac-4e37-bff0-6b7700e3ef9f")
+    @objid ("b2e7d337-8e2e-4601-9e75-221b611e8ae5")
     public static final String HWDMA_ASSOCIATION_HWDMA_ASSOCIATION_ELEMENTSIZE = "HwDMA_Association_elementSize";
 
-    @objid ("e1bc000e-54c0-4a23-91a8-494d11cee99d")
+    @objid ("68c4bed9-4cea-4a05-9ff8-34430886999b")
     public static final String HWDMA_ASSOCIATIONEND_HWDMA_ASSOCIATIONEND_NBCHANNELS = "HwDMA_AssociationEnd_nbChannels";
 
-    @objid ("5bdce4b0-7a9e-4a31-8c9b-9ea0f76505ab")
+    @objid ("7abf5283-5918-46c9-8557-4b2ed78fda2a")
     public static final String HWDMA_ASSOCIATIONEND_HWDMA_ASSOCIATIONEND_TRANSFERWIDTH = "HwDMA_AssociationEnd_transferWidth";
 
-    @objid ("d71df35c-adc9-48ab-a66e-95a7e65dc831")
+    @objid ("0d736d49-8239-49d4-b0e5-ff00e5710170")
     public static final String HWDMA_ASSOCIATIONEND_HWDMA_ASSOCIATIONEND_DRIVENBY = "HwDMA_AssociationEnd_drivenBy";
 
-    @objid ("a32af668-44ae-4bcd-a8c8-284affccb3fd")
+    @objid ("301b4a3b-8d53-4077-a02f-3e96ab4adeb0")
     public static final String HWDMA_ASSOCIATIONEND_HWDMA_ASSOCIATIONEND_MANAGEDMEMORIES = "HwDMA_AssociationEnd_managedMemories";
 
-    @objid ("6b2d5294-6e9b-44ee-a60f-67eaf312d299")
+    @objid ("10c899b6-cc74-4bd1-bcf4-959d389fabf0")
     public static final String HWDMA_ASSOCIATIONEND_HWDMA_ASSOCIATIONEND_ELEMENTSIZE = "HwDMA_AssociationEnd_elementSize";
 
-    @objid ("5d3c096d-db3c-4af8-9a9f-cec67a39744d")
+    @objid ("4a632be8-2614-428d-841d-8dc3aa9d60c9")
     public static final String HWDMA_ATTRIBUTE_HWDMA_ATTRIBUTE_NBCHANNELS = "HwDMA_Attribute_nbChannels";
 
-    @objid ("858d82eb-1114-4302-a5dd-1c9b97056507")
+    @objid ("9884f9bb-f474-422c-adfe-d845af040d84")
     public static final String HWDMA_ATTRIBUTE_HWDMA_ATTRIBUTE_TRANSFERWIDTH = "HwDMA_Attribute_transferWidth";
 
-    @objid ("39859cb4-ef00-424d-9063-1a1eb53133b5")
+    @objid ("841fbb26-0dee-4ef0-bcf1-637ae128b9b3")
     public static final String HWDMA_ATTRIBUTE_HWDMA_ATTRIBUTE_DRIVENBY = "HwDMA_Attribute_drivenBy";
 
-    @objid ("c1967543-559e-41ed-875d-5748740f69d7")
+    @objid ("8be4188b-482a-4237-bfb2-6604e6587fdd")
     public static final String HWDMA_ATTRIBUTE_HWDMA_ATTRIBUTE_MANAGEDMEMORIES = "HwDMA_Attribute_managedMemories";
 
-    @objid ("80b885b8-af32-4fa2-9c16-5a6321380933")
+    @objid ("5e8d3b73-6c81-4bf4-a0bb-f96ae303d21c")
     public static final String HWDMA_ATTRIBUTE_HWDMA_ATTRIBUTE_ELEMENTSIZE = "HwDMA_Attribute_elementSize";
 
-    @objid ("c48ba05e-f164-4792-ae87-d89e492a0aa6")
+    @objid ("6a3648aa-46da-4fd3-8b95-763579ae272a")
     public static final String HWDMA_CLASSIFIER_HWDMA_CLASSIFIER_NBCHANNELS = "HwDMA_Classifier_nbChannels";
 
-    @objid ("20a83d9b-24cc-4839-9e9b-3e42e01b121a")
+    @objid ("749ab66a-9c91-4235-a711-d894632aa037")
     public static final String HWDMA_CLASSIFIER_HWDMA_CLASSIFIER_TRANSFERWIDTH = "HwDMA_Classifier_transferWidth";
 
-    @objid ("6832e739-8c62-42ef-ad09-60fbbaa00408")
+    @objid ("61bc5aa2-15dd-4966-a4ff-ac2c8eaad794")
     public static final String HWDMA_CLASSIFIER_HWDMA_CLASSIFIER_DRIVENBY = "HwDMA_Classifier_drivenBy";
 
-    @objid ("5ddb77c9-e972-4c8a-ab23-9c20b5420b47")
+    @objid ("769b036b-6be8-445f-9937-7b79f498009c")
     public static final String HWDMA_CLASSIFIER_HWDMA_CLASSIFIER_MANAGEDMEMORIES = "HwDMA_Classifier_managedMemories";
 
-    @objid ("6196492e-5214-483c-8e04-c6f02b325da0")
+    @objid ("2431404e-7433-40dc-8c96-18e7a1ba9299")
     public static final String HWDMA_CLASSIFIER_HWDMA_CLASSIFIER_ELEMENTSIZE = "HwDMA_Classifier_elementSize";
 
-    @objid ("72e2174c-bdc9-4653-862a-440c1ba91a7d")
+    @objid ("9a6cfbdc-9469-4b4a-a6b2-b9162db259f3")
     public static final String HWDMA_INSTANCE_HWDMA_INSTANCE_NBCHANNELS = "HwDMA_Instance_nbChannels";
 
-    @objid ("71e3c08c-27fc-4078-b50a-ea63d4457859")
+    @objid ("76511f29-b9ab-4796-91db-39f73e988146")
     public static final String HWDMA_INSTANCE_HWDMA_INSTANCE_TRANSFERWIDTH = "HwDMA_Instance_transferWidth";
 
-    @objid ("9e8a3874-9178-40bd-b738-0a136c88e463")
+    @objid ("ceb59879-09af-433e-a97a-cd12f6134be2")
     public static final String HWDMA_INSTANCE_HWDMA_INSTANCE_DRIVENBY = "HwDMA_Instance_drivenBy";
 
-    @objid ("fa5a700c-02e2-4611-b55a-a402dc87c135")
+    @objid ("4d410058-be12-4ad6-a60f-454ef019b8ea")
     public static final String HWDMA_INSTANCE_HWDMA_INSTANCE_MANAGEDMEMORIES = "HwDMA_Instance_managedMemories";
 
-    @objid ("2495b9d7-69cb-43bf-bdd9-0ab488c3d089")
+    @objid ("6b2b0334-8bed-4287-98f5-f2f8f9d63b89")
     public static final String HWDMA_INSTANCE_HWDMA_INSTANCE_ELEMENTSIZE = "HwDMA_Instance_elementSize";
 
-    @objid ("80f465fa-0bd9-4879-a7fb-b53d98b81df9")
+    @objid ("c34fc089-c171-43a4-8076-6cdbf928ec84")
     public static final String HWDMA_LIFELINE_HWDMA_LIFELINE_NBCHANNELS = "HwDMA_Lifeline_nbChannels";
 
-    @objid ("8441f1e3-910c-47d2-a20d-e68f3eeb6632")
+    @objid ("d14b93a7-dd45-46c8-9255-9e74d8240616")
     public static final String HWDMA_LIFELINE_HWDMA_LIFELINE_TRANSFERWIDTH = "HwDMA_Lifeline_transferWidth";
 
-    @objid ("cc933b69-e223-49e1-bdb6-c980a0553d0b")
+    @objid ("6d62269a-53a2-4e74-a3a5-27d4af35fb2e")
     public static final String HWDMA_LIFELINE_HWDMA_LIFELINE_DRIVENBY = "HwDMA_Lifeline_drivenBy";
 
-    @objid ("0de651f3-2f4c-4c5e-8d30-4d601f0c9311")
+    @objid ("3b2e4d31-f8e6-4320-8962-cd3af09f805f")
     public static final String HWDMA_LIFELINE_HWDMA_LIFELINE_MANAGEDMEMORIES = "HwDMA_Lifeline_managedMemories";
 
-    @objid ("61d298e3-1685-46cb-bb31-072b6e3c9ced")
+    @objid ("2b5a832f-9c08-431b-8db0-8205068b2766")
     public static final String HWDMA_LIFELINE_HWDMA_LIFELINE_ELEMENTSIZE = "HwDMA_Lifeline_elementSize";
 
-    @objid ("a2c94ec5-d7f7-40b9-a784-a950e2bc50ac")
+    @objid ("45dbac31-cbce-461a-8ad9-ca171b720227")
     public static final String HWDMA_LINK_HWDMA_LINK_NBCHANNELS = "HwDMA_Link_nbChannels";
 
-    @objid ("64cb6671-be52-4156-bf6a-95c89e9e15a0")
+    @objid ("f3bf9d2d-832d-4344-b75a-cb1d924ca50e")
     public static final String HWDMA_LINK_HWDMA_LINK_TRANSFERWIDTH = "HwDMA_Link_transferWidth";
 
-    @objid ("ed1ed46c-b44d-4e28-8988-8c9cc46a6261")
+    @objid ("8af68f2f-259c-4d80-ab5c-fb368142112e")
     public static final String HWDMA_LINK_HWDMA_LINK_DRIVENBY = "HwDMA_Link_drivenBy";
 
-    @objid ("5430239e-0723-416a-8979-4e7643727d89")
+    @objid ("5eea7f3d-0c85-4cd2-8797-279d9db911b8")
     public static final String HWDMA_LINK_HWDMA_LINK_MANAGEDMEMORIES = "HwDMA_Link_managedMemories";
 
-    @objid ("37880a29-6845-4b81-bc7c-c4a23ae02e73")
+    @objid ("9ee17236-8a27-402e-8a55-1c7fe2dc8d78")
     public static final String HWDMA_LINK_HWDMA_LINK_ELEMENTSIZE = "HwDMA_Link_elementSize";
 
-    @objid ("b7afe72a-5fc1-4dd3-82ce-fa00452fcf5c")
+    @objid ("a8f03fb1-2e86-4ae8-bcf5-7eee823089f0")
     public static final String HWDMA_PARAMETER_HWDMA_PARAMETER_NBCHANNELS = "HwDMA_Parameter_nbChannels";
 
-    @objid ("4f075307-eaac-47ce-885b-c2c23e9f1b67")
+    @objid ("a161041a-d932-4434-8a0b-52ca261c452e")
     public static final String HWDMA_PARAMETER_HWDMA_PARAMETER_TRANSFERWIDTH = "HwDMA_Parameter_transferWidth";
 
-    @objid ("0eb9e97f-16c2-4b8c-9f60-c57106a505df")
+    @objid ("00af4963-ed57-4e8c-a4bc-950426856c41")
     public static final String HWDMA_PARAMETER_HWDMA_PARAMETER_DRIVENBY = "HwDMA_Parameter_drivenBy";
 
-    @objid ("8d524b4b-1d29-4fa7-8419-1abfbe66d58c")
+    @objid ("c901bead-c7a5-4af2-b79d-cebae97cbf95")
     public static final String HWDMA_PARAMETER_HWDMA_PARAMETER_MANAGEDMEMORIES = "HwDMA_Parameter_managedMemories";
 
-    @objid ("e7c52f9c-2b28-4de8-95a2-92a9bd485a68")
+    @objid ("4a3d1bcb-df03-49bd-8509-32473a87c2ad")
     public static final String HWDMA_PARAMETER_HWDMA_PARAMETER_ELEMENTSIZE = "HwDMA_Parameter_elementSize";
 
-    @objid ("2b2f5f12-1a13-4fd2-9e28-f9d2330702c0")
+    @objid ("e19510cf-24dd-441e-8b84-c7a2ba4eecda")
     public static final String HWMMU_ASSOCIATION_HWMMU_ASSOCIATION_VIRTUALADDRSPACE = "HwMMU_Association_virtualAddrSpace";
 
-    @objid ("c92f1d11-cb30-4c43-ad7e-bb67f92d9072")
+    @objid ("592f485c-5bb7-4588-b231-fddc0f7858a2")
     public static final String HWMMU_ASSOCIATION_HWMMU_ASSOCIATION_PHYSICALADDRSPACE = "HwMMU_Association_physicalAddrSpace";
 
-    @objid ("4b710c23-102a-4aa3-ace9-985ddb7da0f8")
+    @objid ("49254985-4114-4c4f-855b-3e49842be476")
     public static final String HWMMU_ASSOCIATION_HWMMU_ASSOCIATION_NBENTRIES = "HwMMU_Association_nbEntries";
 
-    @objid ("2c823426-e8c6-40eb-a403-3d04b0ddf8dd")
+    @objid ("3e6f6781-426f-40df-afd6-d1b473a88a2c")
     public static final String HWMMU_ASSOCIATION_HWMMU_ASSOCIATION_OWNEDTLBS = "HwMMU_Association_ownedTLBs";
 
-    @objid ("53a7b2d7-8df0-40cb-a50d-73665d3e4b8a")
+    @objid ("1c91f371-4b61-468f-af04-fa9abff5a8f2")
     public static final String HWMMU_ASSOCIATION_HWMMU_ASSOCIATION_MEMORYPROTECTION = "HwMMU_Association_memoryProtection";
 
-    @objid ("0dcb9d4e-bba4-453c-a229-ceac2ea58c1a")
+    @objid ("8212f06a-12c3-4579-b70d-1ca3e5765d8e")
     public static final String HWMMU_ASSOCIATIONEND_HWMMU_ASSOCIATIONEND_VIRTUALADDRSPACE = "HwMMU_AssociationEnd_virtualAddrSpace";
 
-    @objid ("c7b38d79-da2e-4cc2-a512-012fca346107")
+    @objid ("078f1fda-9034-459c-8471-856d308bb966")
     public static final String HWMMU_ASSOCIATIONEND_HWMMU_ASSOCIATIONEND_PHYSICALADDRSPACE = "HwMMU_AssociationEnd_physicalAddrSpace";
 
-    @objid ("d894958b-c432-4c5e-afa3-6677818034c9")
+    @objid ("cd1c8454-ac78-48f4-8c04-c6b36dbba0a9")
     public static final String HWMMU_ASSOCIATIONEND_HWMMU_ASSOCIATIONEND_MEMORYPROTECTION = "HwMMU_AssociationEnd_memoryProtection";
 
-    @objid ("13eb9b6b-c849-45ed-9481-c3fb6618abd4")
+    @objid ("1ff05cd5-c993-41dd-921f-62aedd4d1034")
     public static final String HWMMU_ASSOCIATIONEND_HWMMU_ASSOCIATIONEND_NBENTRIES = "HwMMU_AssociationEnd_nbEntries";
 
-    @objid ("5821caf1-ed30-47aa-bbb1-05c9c36fa3c4")
+    @objid ("d00589a9-82c6-4b60-b71f-ff714eaed5df")
     public static final String HWMMU_ASSOCIATIONEND_HWMMU_ASSOCIATIONEND_OWNEDTLBS = "HwMMU_AssociationEnd_ownedTLBs";
 
-    @objid ("0fff4f15-7ab4-4de6-adf5-8029b2aa5c5d")
+    @objid ("a5928092-0b6d-458c-845f-63eb04d1b370")
     public static final String HWMMU_ATTRIBUTE_HWMMU_ATTRIBUTE_VIRTUALADDRSPACE = "HwMMU_Attribute_virtualAddrSpace";
 
-    @objid ("329f48be-10f0-4f51-ab84-d0ed4a3c3819")
+    @objid ("b61cbead-0af5-4a36-9494-98878101635b")
     public static final String HWMMU_ATTRIBUTE_HWMMU_ATTRIBUTE_PHYSICALADDRSPACE = "HwMMU_Attribute_physicalAddrSpace";
 
-    @objid ("e6f10aea-bedb-48ec-89ec-c6deb2253c42")
+    @objid ("8d9b9e50-5786-4a01-8fae-45cbc6733049")
     public static final String HWMMU_ATTRIBUTE_HWMMU_ATTRIBUTE_NBENTRIES = "HwMMU_Attribute_nbEntries";
 
-    @objid ("9deef02c-48ad-41a4-9f3a-c38ffb2696e9")
+    @objid ("076614d5-ab13-488d-b69f-9df72c65f056")
     public static final String HWMMU_ATTRIBUTE_HWMMU_ATTRIBUTE_OWNEDTLBS = "HwMMU_Attribute_ownedTLBs";
 
-    @objid ("e68933b3-d01e-4a01-aa06-2e2c4fcb5daf")
+    @objid ("e6ba438d-5257-4bc6-b3c1-1d927a1eee06")
     public static final String HWMMU_ATTRIBUTE_HWMMU_ATTRIBUTE_MEMORYPROTECTION = "HwMMU_Attribute_memoryProtection";
 
-    @objid ("5dd003ac-3414-43ea-a218-32bd25855923")
+    @objid ("6d9e7f27-9483-47b1-a5bc-8782fad22f1a")
     public static final String HWMMU_CLASSIFIER_HWMMU_CLASSIFIER_VIRTUALADDRSPACE = "HwMMU_Classifier_virtualAddrSpace";
 
-    @objid ("9b74d8b0-e7fb-49e3-bff7-d8946cd4a082")
+    @objid ("d77290db-f783-49c9-b820-a282e96dcc94")
     public static final String HWMMU_CLASSIFIER_HWMMU_CLASSIFIER_PHYSICALADDRSPACE = "HwMMU_Classifier_physicalAddrSpace";
 
-    @objid ("5fb1aa35-7421-4984-8362-257c109e45fa")
+    @objid ("41305b74-6d03-4702-9b1b-48daba06e55f")
     public static final String HWMMU_CLASSIFIER_HWMMU_CLASSIFIER_NBENTRIES = "HwMMU_Classifier_nbEntries";
 
-    @objid ("ef3dee3b-2da9-4a0d-9143-58fe75db760e")
+    @objid ("089910c4-0bb4-4537-8b22-129127627972")
     public static final String HWMMU_CLASSIFIER_HWMMU_CLASSIFIER_OWNEDTLBS = "HwMMU_Classifier_ownedTLBs";
 
-    @objid ("da926d14-f28e-435d-bd0b-5c7c41149bb9")
+    @objid ("079eedc6-aa34-498f-a016-7c69aeeaed62")
     public static final String HWMMU_CLASSIFIER_HWMMU_CLASSIFIER_MEMORYPROTECTION = "HwMMU_Classifier_memoryProtection";
 
-    @objid ("bb57f894-f56a-4848-a743-48a492bb34f4")
+    @objid ("1962651d-fc91-4440-abfe-daa8bdf74834")
     public static final String HWMMU_INSTANCE_HWMMU_INSTANCE_VIRTUALADDRSPACE = "HwMMU_Instance_virtualAddrSpace";
 
-    @objid ("d9509161-abd0-48c6-8156-8cf586c8d98d")
+    @objid ("76f12957-3976-44fb-9069-0aa58e4d4c6a")
     public static final String HWMMU_INSTANCE_HWMMU_INSTANCE_PHYSICALADDRSPACE = "HwMMU_Instance_physicalAddrSpace";
 
-    @objid ("65e4116b-ebae-47de-b571-6f4ad225beff")
+    @objid ("4294c3e1-87e9-4530-a932-5145f08c3db1")
     public static final String HWMMU_INSTANCE_HWMMU_INSTANCE_NBENTRIES = "HwMMU_Instance_nbEntries";
 
-    @objid ("70571b46-9d01-4b5f-958f-bbf874e89f28")
+    @objid ("e1924ceb-5d79-4d7e-a4ca-c476063d5113")
     public static final String HWMMU_INSTANCE_HWMMU_INSTANCE_OWNEDTLBS = "HwMMU_Instance_ownedTLBs";
 
-    @objid ("3457e745-aad7-4af8-9ad4-5ac7357ecdec")
+    @objid ("2eaefc90-d8d5-4695-8015-96a835f99bf8")
     public static final String HWMMU_INSTANCE_HWMMU_INSTANCE_MEMORYPROTECTION = "HwMMU_Instance_memoryProtection";
 
-    @objid ("cb00c502-176f-4ddc-a698-a6b63d88dd54")
+    @objid ("79aec805-53af-4ea5-9837-053c16228bc3")
     public static final String HWMMU_LIFELINE_HWMMU_LIFELINE_VIRTUALADDRSPACE = "HwMMU_Lifeline_virtualAddrSpace";
 
-    @objid ("2e96ddc6-bbf9-43c2-ac31-4cb2f85ae6ab")
+    @objid ("bf3cd51e-26ad-4ee7-85a0-aba80f1e3b13")
     public static final String HWMMU_LIFELINE_HWMMU_LIFELINE_PHYSICALADDRSPACE = "HwMMU_Lifeline_physicalAddrSpace";
 
-    @objid ("fe990357-b7fc-49e5-b0a1-5c36e227adfc")
+    @objid ("ed5e8c6d-15a0-487b-a8bd-639f44c37110")
     public static final String HWMMU_LIFELINE_HWMMU_LIFELINE_NBENTRIES = "HwMMU_Lifeline_nbEntries";
 
-    @objid ("f7cf5bd7-4467-4884-bc3d-ab8a20ff6143")
+    @objid ("734bf9dc-8cf1-481f-8000-6f4fa78c9c7a")
     public static final String HWMMU_LIFELINE_HWMMU_LIFELINE_OWNEDTLBS = "HwMMU_Lifeline_ownedTLBs";
 
-    @objid ("97ec9ea7-6e37-42c8-aa81-a483a0b49ec9")
+    @objid ("551e43d1-394a-4733-9379-906444ee0e08")
     public static final String HWMMU_LIFELINE_HWMMU_LIFELINE_MEMORYPROTECTION = "HwMMU_Lifeline_memoryProtection";
 
-    @objid ("c834eafa-fd8b-4bf4-ae1f-c5acaadd8518")
+    @objid ("14f4dedf-654e-48e6-8018-fa0e88dfa064")
     public static final String HWMMU_LINK_HWMMU_LINK_VIRTUALADDRSPACE = "HwMMU_Link_virtualAddrSpace";
 
-    @objid ("78e90ceb-13f6-44e7-9d88-a0a64ba70b93")
+    @objid ("4dba3531-4cd1-4730-b99a-bd6c322601ca")
     public static final String HWMMU_LINK_HWMMU_LINK_PHYSICALADDRSPACE = "HwMMU_Link_physicalAddrSpace";
 
-    @objid ("9dcbbb89-8dbd-45fb-aaad-ba20ff810cde")
+    @objid ("44a6a86e-cf1f-4715-87d7-d1ef72a56df2")
     public static final String HWMMU_LINK_HWMMU_LINK_NBENTRIES = "HwMMU_Link_nbEntries";
 
-    @objid ("81adaa3c-8a74-4403-aefd-d7e070ae6592")
+    @objid ("2764a741-d8ed-409e-8382-69b456bcf3b7")
     public static final String HWMMU_LINK_HWMMU_LINK_OWNEDTLBS = "HwMMU_Link_ownedTLBs";
 
-    @objid ("04119d6e-776e-40de-82c8-2a6e974060ed")
+    @objid ("fd685c50-e0b7-4c2a-b93a-dae53545fa08")
     public static final String HWMMU_LINK_HWMMU_LINK_MEMORYPROTECTION = "HwMMU_Link_memoryProtection";
 
-    @objid ("1d3b0483-a640-4cb9-8d93-7bdc3a420c65")
+    @objid ("03320b80-5ba4-45d6-bdee-6d84f6fe1ecd")
     public static final String HWMMU_PARAMETER_HWMMU_PARAMETER_VIRTUALADDRSPACE = "HwMMU_Parameter_virtualAddrSpace";
 
-    @objid ("92b6328f-67ff-4c2b-8f14-f2418cca987d")
+    @objid ("7d6e76e2-e832-49f2-b4bd-6ceaac4c4e74")
     public static final String HWMMU_PARAMETER_HWMMU_PARAMETER_PHYSICALADDRSPACE = "HwMMU_Parameter_physicalAddrSpace";
 
-    @objid ("a1e49558-1988-4a34-a8aa-adeffb4ac127")
+    @objid ("c1d6c246-0ec4-4e27-9c56-e37ad5dacee7")
     public static final String HWMMU_PARAMETER_HWMMU_PARAMETER_NBENTRIES = "HwMMU_Parameter_nbEntries";
 
-    @objid ("006c5970-c499-4d81-a96b-376402c9949d")
+    @objid ("d91d8087-3f1c-434f-b07b-4dc659542d51")
     public static final String HWMMU_PARAMETER_HWMMU_PARAMETER_OWNEDTLBS = "HwMMU_Parameter_ownedTLBs";
 
-    @objid ("81aecdb8-fd7d-4261-9250-baacf65c104f")
+    @objid ("f738be55-8c0f-4a33-aa27-2d8e925dc898")
     public static final String HWMMU_PARAMETER_HWMMU_PARAMETER_MEMORYPROTECTION = "HwMMU_Parameter_memoryProtection";
 
-    @objid ("15b322ff-30ba-4757-b5a8-910eb1453cae")
+    @objid ("74fc3262-05ef-4b89-a1de-adaafcad87c1")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_MANAGEDMEMORIES = "HwStorageManager_Association_managedMemories";
 
-    @objid ("f40f4f1e-7638-4c73-be01-552d9ffd5625")
+    @objid ("8fee69c3-bf28-4a26-ae67-8fb46c6cba61")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_DESCRIPTION = "HwStorageManager_Association_description";
 
-    @objid ("31f70f02-0958-450a-8ba7-f74178510a28")
+    @objid ("c80a9bcd-fc77-447a-81d9-9f1d4c3bd92e")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_P_HW_SERVICES = "HwStorageManager_Association_p_HW_Services";
 
-    @objid ("317ca789-f1c9-4c13-8ce8-6e14224b1b1a")
+    @objid ("501f0fa5-3755-4af9-9796-bf023313d24a")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_R_HW_SERVICES = "HwStorageManager_Association_r_HW_Services";
 
-    @objid ("5d907bd3-fb3c-44ec-a9d3-d710c024cb67")
+    @objid ("3eb4f28e-a924-468f-8c5f-754254b1cb40")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_OWNEDHW = "HwStorageManager_Association_ownedHW";
 
-    @objid ("96e56864-7488-4d39-be17-0c0a980062db")
+    @objid ("60c06b66-a770-4bb6-9ca6-6e99c40ed33d")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_FREQUENCY = "HwStorageManager_Association_frequency";
 
-    @objid ("db9dba2a-569d-4ca2-af38-a14ca5cda6ab")
+    @objid ("5546c205-6900-4185-a060-bd69cbb593c2")
     public static final String HWSTORAGEMANAGER_ASSOCIATION_HWSTORAGEMANAGER_ASSOCIATION_ENDPOINTS = "HwStorageManager_Association_endPoints";
 
-    @objid ("707104f6-4ad7-4478-bcaf-bdc4008a3220")
+    @objid ("79029e42-417b-4df1-8cab-3c73bacaea56")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_MANAGEDMEMORIES = "HwStorageManager_AssociationEnd_managedMemories";
 
-    @objid ("86afb573-8843-470b-b98b-9f26661e0780")
+    @objid ("2b0e9efb-4d34-486a-8f0f-b27ada240444")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_DESCRIPTION = "HwStorageManager_AssociationEnd_description";
 
-    @objid ("e1340828-0713-4cd8-91e0-431a61abb78a")
+    @objid ("d6951863-c1fe-46e6-b44b-47447ff6eb2e")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_P_HW_SERVICES = "HwStorageManager_AssociationEnd_p_HW_Services";
 
-    @objid ("0fa21a5f-1ddf-4081-ba0e-27b792658455")
+    @objid ("257f2ee1-23d5-431c-a0bb-365fbe4c2273")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_R_HW_SERVICES = "HwStorageManager_AssociationEnd_r_HW_Services";
 
-    @objid ("df2a9543-7c62-49e2-bf54-7174ea6901c8")
+    @objid ("166656d8-7e2f-45e1-83a3-d42e095cbe6a")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_OWNEDHW = "HwStorageManager_AssociationEnd_ownedHW";
 
-    @objid ("27a7436c-9051-4149-82fb-754907c8a022")
+    @objid ("187e36db-3139-4047-ba63-8c7b2b9aa3e1")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_FREQUENCY = "HwStorageManager_AssociationEnd_frequency";
 
-    @objid ("299db1d6-cae8-4451-a683-cc1561f654a6")
+    @objid ("28dbfb11-73aa-454f-a4a0-eb3716eaacc3")
     public static final String HWSTORAGEMANAGER_ASSOCIATIONEND_HWSTORAGEMANAGER_ASSOCIATIONEND_ENDPOINTS = "HwStorageManager_AssociationEnd_endPoints";
 
-    @objid ("df6ea89e-4c34-44bf-9fbf-4c4ee5141d0c")
+    @objid ("ec9ed929-c347-4f19-b1c4-232df3011b91")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES = "HwStorageManager_Attribute_managedMemories";
 
-    @objid ("8b460c30-e0a3-45d9-aaa7-e35fec66f015")
+    @objid ("0a04bf67-0d63-45ba-9774-2c7fbd86966b")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_DESCRIPTION = "HwStorageManager_Attribute_description";
 
-    @objid ("1caaaa08-19b7-4b18-9bc7-c2186b2888dd")
+    @objid ("2f3c3f05-02ec-47a4-9587-b030c2536914")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_P_HW_SERVICES = "HwStorageManager_Attribute_p_HW_Services";
 
-    @objid ("4b1b7240-cbd4-4fc6-abdb-912db732ede2")
+    @objid ("49746070-2738-42a9-9b40-0af41ceb61c5")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_R_HW_SERVICES = "HwStorageManager_Attribute_r_HW_Services";
 
-    @objid ("a2752a77-7c34-4d05-afc9-bd9a7bfcb30d")
+    @objid ("d0f56fef-6826-49b0-b637-d79dd3182095")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_OWNEDHW = "HwStorageManager_Attribute_ownedHW";
 
-    @objid ("ad22d327-f3a9-4359-b6b1-d1195b242052")
+    @objid ("5bd908a2-be4b-4b71-acb4-142a7a00fadb")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_FREQUENCY = "HwStorageManager_Attribute_frequency";
 
-    @objid ("5c34b516-93fe-471b-afae-953112ab8823")
+    @objid ("5ddea9bc-23f8-47fc-a6b9-37c885427d32")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_HWSTORAGEMANAGER_ATTRIBUTE_ENDPOINTS = "HwStorageManager_Attribute_endPoints";
 
-    @objid ("d5e9a69f-01a3-4538-a8c5-33bcb45d459c")
+    @objid ("221073a2-c99f-4abb-b29c-5bd489d0e1e8")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_MANAGEDMEMORIES = "HwStorageManager_Classifier_managedMemories";
 
-    @objid ("352184eb-f748-4389-abe5-cdf6c5b314a5")
+    @objid ("bec02835-c863-4bb8-af92-0fe7ca837b8c")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_DESCRIPTION = "HwStorageManager_Classifier_description";
 
-    @objid ("ea88f9af-6a15-4fc2-9d2e-983cc02ae56b")
+    @objid ("c9c3756a-ffc9-46a1-af5b-3e708efcb469")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_P_HW_SERVICES = "HwStorageManager_Classifier_p_HW_Services";
 
-    @objid ("02182483-a026-4a01-a3d0-7e1e544575bf")
+    @objid ("0b8c8b3a-c786-4a7e-9119-2484941467f7")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_R_HW_SERVICES = "HwStorageManager_Classifier_r_HW_Services";
 
-    @objid ("9f602bb2-053d-4cb4-9dea-12fbcf01d735")
+    @objid ("2806fc9d-b73c-4166-9f40-4311008091a4")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_OWNEDHW = "HwStorageManager_Classifier_ownedHW";
 
-    @objid ("9acce85c-36e7-491d-abb6-5e98c0e8a2ef")
+    @objid ("74e47cd9-b468-445e-852b-39143249de2f")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_FREQUENCY = "HwStorageManager_Classifier_frequency";
 
-    @objid ("383cb7c4-fd2e-439f-8367-4a2506082236")
+    @objid ("91e238a6-b2b4-47b7-8aa7-53daa286fe8d")
     public static final String HWSTORAGEMANAGER_CLASSIFIER_HWSTORAGEMANAGER_CLASSIFIER_ENDPOINTS = "HwStorageManager_Classifier_endPoints";
 
-    @objid ("a69847a1-98ec-4e33-8a73-386b3e9e848d")
+    @objid ("fa8afbfd-a38e-4cf2-b407-6e4b34e598ce")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_MANAGEDMEMORIES = "HwStorageManager_Instance_managedMemories";
 
-    @objid ("46a0a09e-1956-4b09-8ebd-e0240d6779b5")
+    @objid ("11846f1c-5ca9-4e1c-a78a-d109d54908e0")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_DESCRIPTION = "HwStorageManager_Instance_description";
 
-    @objid ("6e5cddf4-6b24-48fa-99fd-44374dceed1f")
+    @objid ("2adb70f5-a2be-46cc-950d-0949a2af1493")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_P_HW_SERVICES = "HwStorageManager_Instance_p_HW_Services";
 
-    @objid ("1eba1567-8e30-4af8-a706-3777f9e155ca")
+    @objid ("6eb1da58-5758-4a94-a2e7-9c560882e210")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_R_HW_SERVICES = "HwStorageManager_Instance_r_HW_Services";
 
-    @objid ("ddf0a97a-e414-418c-afaf-3758744d1bca")
+    @objid ("f45da2c1-5f55-4bc8-8ef6-70c1f0e56889")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_OWNEDHW = "HwStorageManager_Instance_ownedHW";
 
-    @objid ("ec3793ef-354b-4de7-b9bf-20b96f4b1b64")
+    @objid ("ee6d44c5-7ede-4625-9cee-e54880fda077")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_FREQUENCY = "HwStorageManager_Instance_frequency";
 
-    @objid ("97578c6d-88dc-4096-926f-023181708287")
+    @objid ("bd93185a-8756-49fd-8555-aa57668615b3")
     public static final String HWSTORAGEMANAGER_INSTANCE_HWSTORAGEMANAGER_INSTANCE_ENDPOINTS = "HwStorageManager_Instance_endPoints";
 
-    @objid ("81113737-74df-4b09-9467-c54e40b97d60")
+    @objid ("e371e335-c11d-4e24-8bfd-f61600f45b5b")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_MANAGEDMEMORIES = "HwStorageManager_Lifeline_managedMemories";
 
-    @objid ("286fec4d-9b42-4d8e-be31-aa5a56bdad3a")
+    @objid ("b4f65241-756f-44c8-ad73-f2b0cbd85894")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_DESCRIPTION = "HwStorageManager_Lifeline_description";
 
-    @objid ("ab888539-9dfb-4062-8971-872eb34aa941")
+    @objid ("6439e898-bdc2-436c-8e9e-4d321109bff4")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_P_HW_SERVICES = "HwStorageManager_Lifeline_p_HW_Services";
 
-    @objid ("d7b9f16f-50db-4f59-9cfa-71fddc572725")
+    @objid ("96f9ea7e-05e7-49f0-bde2-1a5cb7811ccf")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_R_HW_SERVICES = "HwStorageManager_Lifeline_r_HW_Services";
 
-    @objid ("ef646840-a08d-4333-9680-09415e2435d4")
+    @objid ("f0f06f59-82d1-489b-b30b-178f15372a70")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_OWNEDHW = "HwStorageManager_Lifeline_ownedHW";
 
-    @objid ("ef612eb5-5013-4e03-9ecc-c3a875f3fb2f")
+    @objid ("9608da1e-071e-45f8-809c-08a63385bbbd")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_FREQUENCY = "HwStorageManager_Lifeline_frequency";
 
-    @objid ("15a9de29-ab39-44ef-ad5e-3fe3b12bd4e2")
+    @objid ("7bb694c9-90b3-4785-88f5-b6cbb94603b8")
     public static final String HWSTORAGEMANAGER_LIFELINE_HWSTORAGEMANAGER_LIFELINE_ENDPOINTS = "HwStorageManager_Lifeline_endPoints";
 
-    @objid ("d990b36a-7542-4bd3-a1cd-b4b49f882025")
+    @objid ("de8d27ca-a591-4b78-a7a2-0c05f428016e")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES = "HwStorageManager_Link_managedMemories";
 
-    @objid ("57207e1d-b15b-49a7-bbde-ede1de23b72b")
+    @objid ("2bf748e4-66da-44c0-8e1e-90a8eaf1834c")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_DESCRIPTION = "HwStorageManager_Link_description";
 
-    @objid ("0f087ac7-b01a-4578-95c3-b529c1c246ed")
+    @objid ("4805df17-e1ff-47b9-b0bd-3b1992c37ca3")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_P_HW_SERVICES = "HwStorageManager_Link_p_HW_Services";
 
-    @objid ("98af9ad7-7f5a-47f1-86a5-66d6222bbb61")
+    @objid ("a781c26e-39be-4617-a911-0266ad1ff668")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_R_HW_SERVICES = "HwStorageManager_Link_r_HW_Services";
 
-    @objid ("a28c1263-7ec4-4ffa-aeff-d4b5375f0929")
+    @objid ("37adfb8b-7c30-451d-b518-ef2da0616048")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_OWNEDHW = "HwStorageManager_Link_ownedHW";
 
-    @objid ("4242be9d-8df5-4a1b-a756-f4deeb98424e")
+    @objid ("27a1d1a9-33ad-4bb1-97cc-74f7ed0232ba")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_FREQUENCY = "HwStorageManager_Link_frequency";
 
-    @objid ("9a142888-86e3-4325-9037-a3b9ba80162d")
+    @objid ("d0c3cafd-c823-4b4c-9190-5411085949f7")
     public static final String HWSTORAGEMANAGER_LINK_HWSTORAGEMANAGER_LINK_ENDPOINTS = "HwStorageManager_Link_endPoints";
 
-    @objid ("2013afc3-312b-44f9-bcac-4c3d1b5d75a3")
+    @objid ("e8e2413a-33a0-4a35-82fd-cc2ac89eace2")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_MANAGEDMEMORIES = "HwStorageManager_Parameter_managedMemories";
 
-    @objid ("5053158f-5d2d-4004-998b-ca6978ff91c0")
+    @objid ("a17c7079-1d39-4c32-ba7a-4b9d182e0f1b")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_DESCRIPTION = "HwStorageManager_Parameter_description";
 
-    @objid ("0a6d4f67-7f38-4670-a61b-6f85af71eb45")
+    @objid ("c90ad280-dc4e-494b-91c3-649fd8326a72")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_P_HW_SERVICES = "HwStorageManager_Parameter_p_HW_Services";
 
-    @objid ("7971838c-03dd-4b8d-84b8-f1847e53082d")
+    @objid ("d25e5905-d01d-4158-865c-66191b90ac32")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_R_HW_SERVICES = "HwStorageManager_Parameter_r_HW_Services";
 
-    @objid ("4404b2e5-1db9-4852-8a27-a030e72d5692")
+    @objid ("a3f9adac-d707-4c54-976e-d3dae802a828")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_OWNEDHW = "HwStorageManager_Parameter_ownedHW";
 
-    @objid ("1188f056-67cb-46e7-9869-4e0436083a00")
+    @objid ("ce29a2c1-30bc-4149-87ff-25bcf45ce6c3")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_FREQUENCY = "HwStorageManager_Parameter_frequency";
 
-    @objid ("3658630a-ea1a-40b8-a423-9945b534d7e4")
+    @objid ("5dcb5557-bddb-43db-9329-be4c5f37dcdd")
     public static final String HWSTORAGEMANAGER_PARAMETER_HWSTORAGEMANAGER_PARAMETER_ENDPOINTS = "HwStorageManager_Parameter_endPoints";
 
-    @objid ("ffc1e457-be17-40db-b926-abb9bdf1b590")
+    @objid ("d48dca95-a5c9-4ef6-9eee-b502dc08460b")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_KIND = "HwComponent_Association_kind";
 
-    @objid ("15f93afd-ea22-496c-a519-938efd7acb22")
+    @objid ("b5723e7d-ea9e-4ae2-a7fb-f4d6d0de355b")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_DIMENSIONS = "HwComponent_Association_dimensions";
 
-    @objid ("05a49484-ad9e-46a9-84c6-ea153479abf0")
+    @objid ("c66dd6e1-1fed-4ec6-8d5e-74e8d5c1ddc0")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_AREA = "HwComponent_Association_area";
 
-    @objid ("4c0a7c38-cf6e-4df1-a912-b4ee62f0fa39")
+    @objid ("f113fded-a551-453c-b5bd-40f225015c47")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_POSITION = "HwComponent_Association_position";
 
-    @objid ("7bb05154-20b0-4522-96bf-eff6ef63067e")
+    @objid ("2edfb533-1bb0-4fee-8439-31bcf580d5e0")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_GRID = "HwComponent_Association_grid";
 
-    @objid ("b1e188a2-5dd7-415a-b363-e42e33a38c66")
+    @objid ("8580914e-c5fb-40b5-8bf3-12c5f63ea33d")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_NBPINS = "HwComponent_Association_nbPins";
 
-    @objid ("3a3ea3ff-f789-49a3-b994-eefdfd570a6b")
+    @objid ("b0cf393d-cc71-40c0-ad7a-ca51e2af8218")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_WEIGHT = "HwComponent_Association_weight";
 
-    @objid ("edc03b7a-1f8d-42aa-b270-15254f53b697")
+    @objid ("025dacb7-dfe1-4078-b5dc-d1d51e34b6c0")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_PRICE = "HwComponent_Association_price";
 
-    @objid ("7d712bdd-6d4d-412f-9f8b-cf25de4d5274")
+    @objid ("285abfd9-dee3-467a-ad48-e1da6f6b8462")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_R_CONDITIONS = "HwComponent_Association_r_Conditions";
 
-    @objid ("aa0cf5c7-aebf-4c55-893a-536515e5e758")
+    @objid ("4845c9ca-99fb-4996-ae4e-af233acc8372")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_POWEREDSERVICES = "HwComponent_Association_poweredServices";
 
-    @objid ("06c2208a-9e1e-42cb-b1c4-5b40b11d8588")
+    @objid ("a9762be6-a41a-4ed2-ae59-44543b781296")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_STATICCONSUMPTION = "HwComponent_Association_staticConsumption";
 
-    @objid ("965bf0ed-3bf7-486b-bd5a-ae46b17a3505")
+    @objid ("8fe522e3-d5ef-4a5c-a6e3-74e220a03a9b")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_STATICDISSIPATION = "HwComponent_Association_staticDissipation";
 
-    @objid ("a7299d6a-5daa-4a34-add2-881d14e75845")
+    @objid ("24743b62-4d98-4e34-a624-74c3dfa6fd97")
     public static final String HWCOMPONENT_ASSOCIATION_HWCOMPONENT_ASSOCIATION_SUBCOMPONENTS = "HwComponent_Association_subComponents";
 
-    @objid ("3fab8aa5-216f-4cee-89c3-83f3a84c3ed1")
+    @objid ("d6918c6d-c16b-40ff-980c-96b8cc43b85a")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_KIND = "HwComponent_AssociationEnd_kind";
 
-    @objid ("951ac7a0-46e6-4b39-a68a-1873e0e3093f")
+    @objid ("dbe7ed9a-871c-4b16-b23f-11ae13f30a08")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_DIMENSIONS = "HwComponent_AssociationEnd_dimensions";
 
-    @objid ("9509eafc-033e-4485-884c-ffbcb505c5ca")
+    @objid ("a2d8eed5-ab60-4485-8958-5f8a377a697a")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_AREA = "HwComponent_AssociationEnd_area";
 
-    @objid ("8acc8916-3e7d-425b-b6de-6ef17b1b2929")
+    @objid ("e867a8b2-9ed5-4e23-926e-895e9350f995")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_POSITION = "HwComponent_AssociationEnd_position";
 
-    @objid ("09cc23b5-0348-48f3-8238-39bb6dc67d2f")
+    @objid ("f97734b7-a5d9-4ee3-be9d-8bc9e1b7aaf2")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_GRID = "HwComponent_AssociationEnd_grid";
 
-    @objid ("a015c529-694b-4318-ab75-970321b9bdd2")
+    @objid ("488b5db1-1342-48df-ada0-2ab565d8e428")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_NBPINS = "HwComponent_AssociationEnd_nbPins";
 
-    @objid ("ca642917-2541-40ca-a134-27c326b5757f")
+    @objid ("5f636302-f545-46fd-a8e4-5dc6daa4c6b3")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_WEIGHT = "HwComponent_AssociationEnd_weight";
 
-    @objid ("2871c3e3-434e-4e73-8070-621b2cff085a")
+    @objid ("7a0b4189-f4ee-4527-b359-bf1a7629ec95")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_PRICE = "HwComponent_AssociationEnd_price";
 
-    @objid ("ede4cab4-47fb-41ec-a592-505a472df415")
+    @objid ("22eec4b3-550f-4ec2-9e69-72784f9a84fb")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_R_CONDITIONS = "HwComponent_AssociationEnd_r_Conditions";
 
-    @objid ("b879f537-955d-4c3c-b4ff-ec73157d0fb7")
+    @objid ("cfa980f2-3625-40f8-8176-42ea00419ee3")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_POWEREDSERVICES = "HwComponent_AssociationEnd_poweredServices";
 
-    @objid ("9b50e969-6745-4716-9afb-1bd0dcc0b18d")
+    @objid ("6077285d-fc0e-43c7-8a03-da8d2e4a9732")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_STATICCONSUMPTION = "HwComponent_AssociationEnd_staticConsumption";
 
-    @objid ("97f4c290-93fd-463e-add5-bcc95c64b04f")
+    @objid ("8940e7f8-6927-4bf3-bb7a-d13da77cbfd8")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_STATICDISSIPATION = "HwComponent_AssociationEnd_staticDissipation";
 
-    @objid ("5701b756-0f75-41c8-8ebe-73b984d03e8d")
+    @objid ("173e4104-4f17-4050-89aa-7b9c0ae29dbc")
     public static final String HWCOMPONENT_ASSOCIATIONEND_HWCOMPONENT_ASSOCIATIONEND_SUBCOMPONENTS = "HwComponent_AssociationEnd_subComponents";
 
-    @objid ("03aeee10-d62d-4801-8acc-9f19babf1c60")
+    @objid ("a81d22fa-d400-49ca-9497-2b370ebdc3be")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_KIND = "HwComponent_Attribute_kind";
 
-    @objid ("8acd173e-211a-4a03-8d51-61e81f3e045d")
+    @objid ("fe4b727b-e03a-4c3e-9ed8-77666fe70da8")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_DIMENSIONS = "HwComponent_Attribute_dimensions";
 
-    @objid ("71364899-e888-4daa-b684-64c503af19f5")
+    @objid ("2938942a-1266-4bdb-83d1-ca5f06b7c176")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_AREA = "HwComponent_Attribute_area";
 
-    @objid ("66d987ae-6501-4039-8237-76f9be4f387c")
+    @objid ("08fce93e-5596-4a80-a5fc-ab465fb46124")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_POSITION = "HwComponent_Attribute_position";
 
-    @objid ("47f3e799-ff8c-4e8e-89d4-857ceac1ab42")
+    @objid ("aa646186-8d06-4a54-9dea-c6733c34936c")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_GRID = "HwComponent_Attribute_grid";
 
-    @objid ("e231ecaf-26a9-4b9b-914b-35979ead32ed")
+    @objid ("26ea112d-b3ba-403d-9e0b-8a130f0d4284")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_NBPINS = "HwComponent_Attribute_nbPins";
 
-    @objid ("edd812c7-901b-4abb-b0a6-7d5447bc99f9")
+    @objid ("96b95996-2447-47a3-b603-5a567a8d2e92")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_WEIGHT = "HwComponent_Attribute_weight";
 
-    @objid ("25ff09d9-52bd-4d6e-bf56-3c6c2ef867e4")
+    @objid ("e4a7ad19-f586-4dc0-9efa-e9e30ae0b198")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_PRICE = "HwComponent_Attribute_price";
 
-    @objid ("2af70745-df2f-4176-98ce-9e0cfc5b77fc")
+    @objid ("fd806acf-9fd9-4df5-bfff-5b7cffb964ef")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_R_CONDITIONS = "HwComponent_Attribute_r_Conditions";
 
-    @objid ("75d7bd65-b8e0-4343-a1a3-2279e3b56f34")
+    @objid ("10d39731-8e49-47d0-934c-e8db33db4ff2")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_POWEREDSERVICES = "HwComponent_Attribute_poweredServices";
 
-    @objid ("56aebcf4-588b-4b3c-b688-91dd07a593e6")
+    @objid ("81d628d3-1f3c-4153-9dd9-9fee5f0070b8")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_STATICCONSUMPTION = "HwComponent_Attribute_staticConsumption";
 
-    @objid ("bd0bed82-1d5b-4918-b342-29ed81a85792")
+    @objid ("47ac73a2-d226-4b35-bf7e-4fc8c84eb20b")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_STATICDISSIPATION = "HwComponent_Attribute_staticDissipation";
 
-    @objid ("276ee75b-8d42-4ea8-98ab-19ff581173cd")
+    @objid ("f4cbc184-dbd5-446b-895c-e43afecce8ed")
     public static final String HWCOMPONENT_ATTRIBUTE_HWCOMPONENT_ATTRIBUTE_SUBCOMPONENTS = "HwComponent_Attribute_subComponents";
 
-    @objid ("88df22dc-4b5e-496d-9752-0f20dcfeb631")
+    @objid ("7c8b422b-12c3-447d-ae48-8f4b4686cfbd")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_KIND = "HwComponent_Classifier_kind";
 
-    @objid ("61ef95a8-54f3-445a-b181-b335bc232d67")
+    @objid ("9087667a-583d-47f5-a0f2-d9c567d5e00f")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_DIMENSIONS = "HwComponent_Classifier_dimensions";
 
-    @objid ("f2715eab-7083-4bca-8788-ffff8559ee2b")
+    @objid ("c5175d33-cd25-4abb-b2a0-e59cb990e59c")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_AREA = "HwComponent_Classifier_area";
 
-    @objid ("b78cd13d-ec3a-4f46-b6cf-67a2e25d9578")
+    @objid ("b33f4d7f-7f06-421a-8fc8-f51a5e258388")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_POSITION = "HwComponent_Classifier_position";
 
-    @objid ("1593ba43-cf2d-4313-ab97-dae6bb5adca7")
+    @objid ("e80923cb-aee4-4344-b15d-a4927e3e444f")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_GRID = "HwComponent_Classifier_grid";
 
-    @objid ("990f140a-730d-4e82-bc91-3645ad2811c2")
+    @objid ("d008416c-249a-464b-b5e1-1bd86637b865")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_NBPINS = "HwComponent_Classifier_nbPins";
 
-    @objid ("67626c88-42c7-47fc-8c2d-12880c2dd38e")
+    @objid ("56f4b38c-67b7-4eb2-bf7e-be828167acfb")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_WEIGHT = "HwComponent_Classifier_weight";
 
-    @objid ("870b5cd1-5ee7-4c29-9c47-9542af1f91a3")
+    @objid ("9dd23c69-214e-427a-8bab-65ae88566ec5")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_PRICE = "HwComponent_Classifier_price";
 
-    @objid ("20748161-37b4-4246-9e6d-da70b3fa459e")
+    @objid ("43b93ca7-934f-4cf8-a0c6-8a6b816edcf2")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_R_CONDITIONS = "HwComponent_Classifier_r_Conditions";
 
-    @objid ("579d0184-03f8-4854-842e-2dbc5c34f282")
+    @objid ("cbf2b0bd-8493-497c-9c1c-e78ae8fdc967")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_POWEREDSERVICES = "HwComponent_Classifier_poweredServices";
 
-    @objid ("ca505694-3126-4415-83c7-b5272564bd4a")
+    @objid ("c62e4c66-10ea-4f7a-92c5-af14ae50c657")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_STATICCONSUMPTION = "HwComponent_Classifier_staticConsumption";
 
-    @objid ("8df617b4-497c-4a18-9e8c-98cc0adfa36e")
+    @objid ("89a071fb-5e4b-47e9-9ac7-baa106b3e66e")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_STATICDISSIPATION = "HwComponent_Classifier_staticDissipation";
 
-    @objid ("fb2fcd5b-ce22-4b28-8249-8e58bc915f70")
+    @objid ("b7dc09a3-fac9-4ad6-81cd-c2b70f5c932a")
     public static final String HWCOMPONENT_CLASSIFIER_HWCOMPONENT_CLASSIFIER_SUBCOMPONENTS = "HwComponent_Classifier_subComponents";
 
-    @objid ("503c3296-f659-4063-923f-09d61c07505b")
+    @objid ("062bff06-9538-4d71-b910-04f334ef90e2")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_KIND = "HwComponent_Instance_kind";
 
-    @objid ("3bc88682-12d4-4bcc-a0bf-cc2ca44ca671")
+    @objid ("9b823a45-0c2c-4d3a-a9b0-c215927b84cd")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_DIMENSIONS = "HwComponent_Instance_dimensions";
 
-    @objid ("356d339f-655b-4be8-8540-d00f5d395d74")
+    @objid ("4e6305ff-ccec-4860-8dde-1c5edfb2a476")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_AREA = "HwComponent_Instance_area";
 
-    @objid ("e8cddc53-7033-4941-8dd1-be8aa43180ef")
+    @objid ("598a20a1-1657-4985-9c4c-4444c9f4160a")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_POSITION = "HwComponent_Instance_position";
 
-    @objid ("58f31f69-6d2f-4909-bbea-d450f1233f57")
+    @objid ("6c24efd5-2129-46c3-8560-eb138ee0cce1")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_GRID = "HwComponent_Instance_grid";
 
-    @objid ("6b121d13-d145-4ee3-925c-e1ebca522202")
+    @objid ("3dfc0d0a-96c6-4327-9b5d-255aace31b15")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_NBPINS = "HwComponent_Instance_nbPins";
 
-    @objid ("2b356578-edd6-4d4a-bb1c-d84e90cb4b3f")
+    @objid ("adedc4b1-0808-4ac3-81a9-0611e610c62a")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_WEIGHT = "HwComponent_Instance_weight";
 
-    @objid ("a8b29956-541d-478a-976d-35d99bfe6300")
+    @objid ("879123ce-721a-47f4-90ee-559ecb964dcc")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_PRICE = "HwComponent_Instance_price";
 
-    @objid ("281e2acb-b34f-4e1c-ad60-886d6448bfd6")
+    @objid ("58d23203-5e8a-49df-933b-755a7f818ef6")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_R_CONDITIONS = "HwComponent_Instance_r_Conditions";
 
-    @objid ("8aebc041-44cf-4fd8-892e-a58b315f3cbd")
+    @objid ("1791f8c0-127c-4742-ac88-34f67938e77f")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_POWEREDSERVICES = "HwComponent_Instance_poweredServices";
 
-    @objid ("388c4cec-20c8-4307-9dad-74d097dad14a")
+    @objid ("e70a1ba2-8893-48e0-a212-6fe402383665")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_STATICCONSUMPTION = "HwComponent_Instance_staticConsumption";
 
-    @objid ("8fd1b85a-5dfa-4d46-8012-2fde4fc7e0ee")
+    @objid ("ca3f0ea7-8fd9-4ca4-9477-073c225c96c1")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_STATICDISSIPATION = "HwComponent_Instance_staticDissipation";
 
-    @objid ("b8a92f8f-d2da-4bdb-a939-1924f8beca99")
+    @objid ("8fa3c950-0a71-47f7-9a4a-7380b3f66da2")
     public static final String HWCOMPONENT_INSTANCE_HWCOMPONENT_INSTANCE_SUBCOMPONENTS = "HwComponent_Instance_subComponents";
 
-    @objid ("88e2b05e-da8b-454e-9661-7c5567fb7ca8")
+    @objid ("18bd992c-bbdf-4f72-8a32-d41093865c72")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_KIND = "HwComponent_LifeLine_kind";
 
-    @objid ("bc61e9f1-1307-4ed1-a0d1-21bdad0c7643")
+    @objid ("cba72963-7fc0-4e45-ac23-ff43f79bca93")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_DIMENSIONS = "HwComponent_LifeLine_dimensions";
 
-    @objid ("fbb56022-d2e5-4f85-8389-47264b8a34dc")
+    @objid ("fcba8a5a-cff6-481c-be1b-155f852a3bc2")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_AREA = "HwComponent_LifeLine_area";
 
-    @objid ("b5dae563-aea2-4377-a5f8-800da87c32a3")
+    @objid ("176031ab-2e71-4f7d-a99e-307ff8591a14")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_POSITION = "HwComponent_LifeLine_position";
 
-    @objid ("233d7cdf-e6f9-4b92-8ce1-0299400ccf83")
+    @objid ("73188b26-bd6e-4cdb-8c19-505abebc17a1")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_GRID = "HwComponent_LifeLine_grid";
 
-    @objid ("21893a1c-b58f-46b7-a8e5-21b45c6beaac")
+    @objid ("7473ccb4-9b8c-46c8-a710-32db277d645f")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_NBPINS = "HwComponent_LifeLine_nbPins";
 
-    @objid ("b1c8cdd6-a7a5-4ad5-b38f-dbe4121e33b7")
+    @objid ("34b0a63b-13a6-4144-8e04-843ddde3e3c9")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_WEIGHT = "HwComponent_LifeLine_weight";
 
-    @objid ("3f7dd97c-caa9-4391-a962-749f0333ce6c")
+    @objid ("18ed8bd3-1f93-4b2e-94ba-6e9966a0f448")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_PRICE = "HwComponent_LifeLine_price";
 
-    @objid ("7084acd8-e55d-4b7f-a878-51b6a720a234")
+    @objid ("4df9d101-c31b-4f78-a804-de773bc0ef81")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_R_CONDITIONS = "HwComponent_LifeLine_r_Conditions";
 
-    @objid ("f951803a-5cb2-4abb-886f-6ff1792fc0e9")
+    @objid ("979c7f12-0fa5-4ebc-a860-4eda9bf37362")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_POWEREDSERVICES = "HwComponent_LifeLine_poweredServices";
 
-    @objid ("9308043e-b669-4a2e-b5f9-e723c867cfc4")
+    @objid ("1f665c21-80b6-4cf5-b60b-64b9d68870ec")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_STATICCONSUMPTION = "HwComponent_LifeLine_staticConsumption";
 
-    @objid ("2668ff8b-8994-4ff0-949a-0b9c26d027cf")
+    @objid ("8a29e379-0def-404c-84ae-1eee04644879")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_STATICDISSIPATION = "HwComponent_LifeLine_staticDissipation";
 
-    @objid ("708837e9-afc7-47fe-bac1-72ce9912418c")
+    @objid ("0c9786c2-929e-4772-bbbf-01f3ed85b8c7")
     public static final String HWCOMPONENT_LIFELINE_HWCOMPONENT_LIFELINE_SUBCOMPONENTS = "HwComponent_LifeLine_subComponents";
 
-    @objid ("0fe4c040-4dd8-4d51-a4ab-45c226c73bda")
+    @objid ("f33c5d68-dd68-4bd0-95b5-2f4b75c9338c")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_KIND = "HwComponent_Link_kind";
 
-    @objid ("dae79f33-032b-49d6-8863-891abeeb1841")
+    @objid ("1baffcc3-33d0-45ec-ab76-be5e45e4eb90")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_DIMENSIONS = "HwComponent_Link_dimensions";
 
-    @objid ("16b4ca52-124e-444d-8295-67e8a5bbf1bb")
+    @objid ("6cb9191a-77c7-41cf-b927-97f72febc879")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_AREA = "HwComponent_Link_area";
 
-    @objid ("50aa02a9-0030-4faf-b215-034a98a15849")
+    @objid ("c5a934ca-7e84-4346-8cef-08dbd1cd7e67")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_POSITION = "HwComponent_Link_position";
 
-    @objid ("d828c96c-0de0-48ba-a0ed-2b646f85404d")
+    @objid ("f9276115-cb28-4467-9908-f32572085f68")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_GRID = "HwComponent_Link_grid";
 
-    @objid ("b25e3100-15b5-4fee-8095-a94e9d01feb8")
+    @objid ("1cdf1056-3ba1-4caa-a0e1-4845651b0010")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_NBPINS = "HwComponent_Link_nbPins";
 
-    @objid ("6cd43ba0-03d0-42df-b89f-22dfa8c55ce9")
+    @objid ("b1b2b1b7-04b7-4cee-84c6-12f1a41729b0")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_WEIGHT = "HwComponent_Link_weight";
 
-    @objid ("63adcb6a-b3f2-4683-8613-adb582e90577")
+    @objid ("fa9714cf-b749-470d-ad6b-aa1076152953")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_PRICE = "HwComponent_Link_price";
 
-    @objid ("948240ab-1801-4d08-b9ae-5b9dc7dd156d")
+    @objid ("c9008e76-97dd-42cf-863c-166e6c5bee57")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_R_CONDITIONS = "HwComponent_Link_r_Conditions";
 
-    @objid ("71637a03-c786-49be-8a2b-1188df127774")
+    @objid ("50f794e4-5c5a-4811-884d-f107d54a2ad4")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_POWEREDSERVICES = "HwComponent_Link_poweredServices";
 
-    @objid ("ed739456-25fe-4efb-a067-46987cff60dc")
+    @objid ("c4138511-d012-4712-8086-e0341c2de79d")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_STATICCONSUMPTION = "HwComponent_Link_staticConsumption";
 
-    @objid ("07d8419d-6878-4b13-a78a-e2d21fc04323")
+    @objid ("b199d942-4c48-41a3-9b22-b600771a642f")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_STATICDISSIPATION = "HwComponent_Link_staticDissipation";
 
-    @objid ("0cc56d5c-1709-4520-ae87-f346a9b6ac47")
+    @objid ("95d0e5cb-5c5c-4e77-88ea-4c6da413bf63")
     public static final String HWCOMPONENT_LINK_HWCOMPONENT_LINK_SUBCOMPONENTS = "HwComponent_Link_subComponents";
 
-    @objid ("4772d3a3-78c3-4185-86f5-626dd0e36f87")
+    @objid ("78362f77-1003-4b86-ad5e-00f9d43019aa")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_KIND = "HwComponent_Parameter_kind";
 
-    @objid ("0af18a82-7698-44c7-930a-cd9cc42165d1")
+    @objid ("630e94e0-2d97-4776-b22a-82a18ccf6ed9")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_DIMENSIONS = "HwComponent_Parameter_dimensions";
 
-    @objid ("eb8b80fb-9951-45a6-90c9-79a716cd6356")
+    @objid ("ea914d21-cadf-4f05-8c06-ad35a3412c5b")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_AREA = "HwComponent_Parameter_area";
 
-    @objid ("e7c7d5d9-3bdd-49ec-955e-9be40ad1d7aa")
+    @objid ("d4b296f5-0e6f-4d98-bf24-8bb843a3459e")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_POSITION = "HwComponent_Parameter_position";
 
-    @objid ("bacb9954-17de-4bc7-8268-f0070b1532f4")
+    @objid ("cb9677da-a6ab-4b56-aab0-ada97c8d0daa")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_GRID = "HwComponent_Parameter_grid";
 
-    @objid ("124a786c-3d5d-491c-ae91-1bcb13d02486")
+    @objid ("28b9173b-9c75-45ff-906c-9ec898560306")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_NBPINS = "HwComponent_Parameter_nbPins";
 
-    @objid ("44f574f7-bb8e-45fe-a052-19470d91d1eb")
+    @objid ("fab66552-8827-4b2c-a8e9-a0f233115321")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_WEIGHT = "HwComponent_Parameter_weight";
 
-    @objid ("02ee6df1-c3d0-4b0f-b5c3-49177661aaf9")
+    @objid ("0b4a3f63-edf1-478c-8f07-573d68726a36")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_PRICE = "HwComponent_Parameter_price";
 
-    @objid ("e6a7add4-e144-4a84-9cc1-ac772b8eb57c")
+    @objid ("7cd0d725-212f-4662-9ac2-84e53477d31a")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_R_CONDITIONS = "HwComponent_Parameter_r_Conditions";
 
-    @objid ("8af191fb-9704-4e00-bfab-b742ed39ed73")
+    @objid ("16c6f879-588e-4e48-a49f-f506f509e806")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_POWEREDSERVICES = "HwComponent_Parameter_poweredServices";
 
-    @objid ("5536c61a-25c6-4bf3-bffd-7fa9a770cfb9")
+    @objid ("0d09f1aa-8b2f-4b67-8667-9370f9e86725")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_STATICCONSUMPTION = "HwComponent_Parameter_staticConsumption";
 
-    @objid ("20546c71-e0c3-402b-b8c7-204a0172db0c")
+    @objid ("58e4f7f7-3aea-4094-94b3-a5b224df5f2c")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_STATICDISSIPATION = "HwComponent_Parameter_staticDissipation";
 
-    @objid ("78f31ade-f5d4-4b2e-86f0-3689e5c0a708")
+    @objid ("a97179fc-5a93-4cfe-abd0-92f58ff94aef")
     public static final String HWCOMPONENT_PARAMETER_HWCOMPONENT_PARAMETER_SUBCOMPONENTS = "HwComponent_Parameter_subComponents";
 
-    @objid ("56e467be-8b56-4079-b592-3fea08b80474")
+    @objid ("5b807271-b84b-4da4-bbbb-ec9777f25872")
     public static final String HWBATTERY_ASSOCIATION_HWBATTERY_ASSOCIATION_CAPACITY = "HwBattery_Association_capacity";
 
-    @objid ("a81bf857-76e2-468b-8e3c-466a6a0f849b")
+    @objid ("f39830c2-dcfc-4dce-a524-b9967608162c")
     public static final String HWBATTERY_ASSOCIATIONEND_HWBATTERY_ASSOCIATIONEND_CAPACITY = "HwBattery_AssociationEnd_capacity";
 
-    @objid ("b385ac03-003f-4192-bae8-77157ea6c96c")
+    @objid ("ccd94e31-d983-4842-8f2e-3dbe50290cb2")
     public static final String HWBATTERY_ATTRIBUTE_HWBATTERY_ATTRIBUTE_CAPACITY = "HwBattery_Attribute_capacity";
 
-    @objid ("05207a1e-dfde-46fe-943b-3d3f7eb513bb")
+    @objid ("0c26c7c9-a5a0-4e33-b3af-f5b21efcabc1")
     public static final String HWBATTERY_CLASSIFIER_HWBATTERY_CLASSIFIER_CAPACITY = "HwBattery_Classifier_capacity";
 
-    @objid ("e5dc890e-22c2-4903-bbdc-798239805707")
+    @objid ("48d09df7-67d4-4155-b762-ab9fc4fad5ed")
     public static final String HWBATTERY_INSTANCE_HWBATTERY_INSTANCE_CAPACITY = "HwBattery_Instance_capacity";
 
-    @objid ("f8d0296b-fa96-4bb2-aca6-6b83a5087a1b")
+    @objid ("8c940121-b571-4023-bff2-4463f66685e6")
     public static final String HWBATTERY_LIFELINE_HWBATTERY_LIFELINE_CAPACITY = "HwBattery_Lifeline_capacity";
 
-    @objid ("0b30c462-f16a-414f-8bf3-d2ebfba00bd8")
+    @objid ("ecfb2732-f5b6-4378-bb74-4d5e2e86eeb4")
     public static final String HWBATTERY_LINK_HWBATTERY_LINK_CAPACITY = "HwBattery_Link_capacity";
 
-    @objid ("1996ed52-0d37-4b59-a88b-f431eabb6d6a")
+    @objid ("9593252a-a7f9-416a-a209-925466229d9e")
     public static final String HWBATTERY_PARAMETER_HWBATTERY_PARAMETER_CAPACITY = "HwBattery_Parameter_capacity";
 
-    @objid ("0003d09f-3482-4f7b-a622-a5343a3f9a91")
+    @objid ("c8b9899e-30d1-4705-9d19-0600c9a44f33")
     public static final String HWCOOLINGSUPPLY_ASSOCIATION_HWCOOLINGSUPPLY_ASSOCIATION_COOLINGPOWER = "HwCoolingSupply_Association_coolingPower";
 
-    @objid ("79d45eb0-7862-45b4-80f8-c2f5800361be")
+    @objid ("b3d2e3fa-1647-4418-b7fb-74b4d61f473f")
     public static final String HWCOOLINGSUPPLY_ASSOCIATIONEND_HWCOOLINGSUPPLY_ASSOCIATIONEND_COOLINGPOWER = "HwCoolingSupply_AssociationEnd_coolingPower";
 
-    @objid ("96052b02-361b-4f03-b4b1-da51beae367c")
+    @objid ("7fe76595-7277-41b7-ad9c-c06fca13273e")
     public static final String HWCOOLINGSUPPLY_ATTRIBUTE_HWCOOLINGSUPPLY_ATTRIBUTE_COOLINGPOWER = "HwCoolingSupply_Attribute_coolingPower";
 
-    @objid ("94f0de24-9914-4bea-a2c0-06d8559cf465")
+    @objid ("bd7ea3fb-1698-4367-b865-049122a30305")
     public static final String HWCOOLINGSUPPLY_CLASSIFIER_HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER = "HwCoolingSupply_Classifier_coolingPower";
 
-    @objid ("e0a949c8-1496-4a4b-b037-0f48ae90ac20")
+    @objid ("2a7fc785-ef2e-4dcc-b911-d4acf259571c")
     public static final String HWCOOLINGSUPPLY_INSTANCE_HWCOOLINGSUPPLY_INSTANCE_COOLINGPOWER = "HwCoolingSupply_Instance_coolingPower";
 
-    @objid ("555a35f6-af90-4ba9-999b-e2567c509e6a")
+    @objid ("aa45a2bc-5ebe-4e04-8b61-65b415115b6e")
     public static final String HWCOOLINGSUPPLY_LIFELINE_HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER = "HwCoolingSupply_Lifeline_coolingPower";
 
-    @objid ("856185b5-d4e6-46e1-90de-f56f847886b5")
+    @objid ("27bd9dac-fee7-4832-b62f-596480d39b03")
     public static final String HWCOOLINGSUPPLY_LINK_HWCOOLINGSUPPLY_LINK_COOLINGPOWER = "HwCoolingSupply_Link_coolingPower";
 
-    @objid ("90bc2e01-06d5-4e4d-8d29-d65bc9cd20fe")
+    @objid ("d206190b-31fe-4ab7-a7ac-6aea84a1bbdf")
     public static final String HWCOOLINGSUPPLY_PARAMETER_HWCOOLINGSUPPLY_PARAMETER_COOLINGPOWER = "HwCoolingSupply_Parameter_coolingPower";
 
-    @objid ("87b57bb0-444b-48ab-aecd-ca4ea124ae69")
+    @objid ("b48d1861-15a1-4c9c-8989-e60616dbaef3")
     public static final String HWPOWERSUPPLY_ASSOCIATION_HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER = "HwPowerSupply_Association_suppliedPower";
 
-    @objid ("b12dd283-c7fa-49f0-8e45-6fc549df30db")
+    @objid ("7e267f3f-e4d6-4c60-9e7f-6db7e7540297")
     public static final String HWPOWERSUPPLY_ASSOCIATION_HWPOWERSUPPLY_ASSOCIATION_CAPACITY = "HwPowerSupply_Association_capacity";
 
-    @objid ("0736a527-c447-4df6-bca3-a99fc1ea4977")
+    @objid ("4d65b312-3315-44d3-b29f-e179ee3c1a12")
     public static final String HWPOWERSUPPLY_ASSOCIATIONEND_HWPOWERSUPPLY_ASSOCIATIONEND_SUPPLIEDPOWER = "HwPowerSupply_AssociationEnd_suppliedPower";
 
-    @objid ("7974670f-34b8-4853-a0b2-707d017521b4")
+    @objid ("5d5e993f-84b6-45b9-9ab9-f6b1e24b6e1d")
     public static final String HWPOWERSUPPLY_ASSOCIATIONEND_HWPOWERSUPPLY_ASSOCIATIONEND_CAPACITY = "HwPowerSupply_AssociationEnd_capacity";
 
-    @objid ("e40496d3-1145-4dc9-98f2-ce976be4cd44")
+    @objid ("b575213e-dad8-4401-93e4-56d72085a4e4")
     public static final String HWPOWERSUPPLY_ATTRIBUTE_HWPOWERSUPPLY_ATTRIBUTE_SUPPLIEDPOWER = "HwPowerSupply_Attribute_suppliedPower";
 
-    @objid ("c1e1a489-7184-48f5-a39d-900c95912f63")
+    @objid ("3b8a4fa7-59a2-4464-be18-255650b1e926")
     public static final String HWPOWERSUPPLY_ATTRIBUTE_HWPOWERSUPPLY_ATTRIBUTE_CAPACITY = "HwPowerSupply_Attribute_capacity";
 
-    @objid ("a245d241-3f84-4e6c-9a03-dde4bd9d3dc2")
+    @objid ("64db79b1-0fde-4f06-ba62-9ba2070069ba")
     public static final String HWPOWERSUPPLY_CLASSIFIER_HWPOWERSUPPLY_CLASSIFIER_SUPPLIEDPOWER = "HwPowerSupply_Classifier_suppliedPower";
 
-    @objid ("aec0de85-8a6c-42ed-b588-f50c41cb7247")
+    @objid ("aab72c73-9775-4d00-b28e-94879f641c4c")
     public static final String HWPOWERSUPPLY_CLASSIFIER_HWPOWERSUPPLY_CLASSIFIER_CAPACITY = "HwPowerSupply_Classifier_capacity";
 
-    @objid ("413d8f42-ee27-41ec-b15a-9c1af104dd6f")
+    @objid ("984e8f9f-a093-4028-8e71-8c688d8a11a8")
     public static final String HWPOWERSUPPLY_INSTANCE_HWPOWERSUPPLY_INSTANCE_SUPPLIEDPOWER = "HwPowerSupply_Instance_suppliedPower";
 
-    @objid ("7354a556-2f45-4fbb-b90b-a51f9afbdd29")
+    @objid ("9f280ee2-6f19-4dfc-9596-534357ef15f8")
     public static final String HWPOWERSUPPLY_INSTANCE_HWPOWERSUPPLY_INSTANCE_CAPACITY = "HwPowerSupply_Instance_capacity";
 
-    @objid ("883f9608-3b85-451e-8b4b-0151d2c21764")
+    @objid ("c64b31a8-084d-4335-b4c4-687a176fac04")
     public static final String HWPOWERSUPPLY_LIFELINE_HWPOWERSUPPLY_LIFELINE_SUPPLIEDPOWER = "HwPowerSupply_Lifeline_suppliedPower";
 
-    @objid ("50c9a108-c79f-4874-820a-f28508c7756e")
+    @objid ("1c30645a-834d-4d7f-97f6-096bd8799dfc")
     public static final String HWPOWERSUPPLY_LIFELINE_HWPOWERSUPPLY_LIFELINE_CAPACITY = "HwPowerSupply_Lifeline_capacity";
 
-    @objid ("199c0798-ba2c-4e75-9fe9-b38daa38e719")
+    @objid ("0262c21d-09cf-44bb-81e6-252868cd4abf")
     public static final String HWPOWERSUPPLY_LINK_HWPOWERSUPPLY_LINK_SUPPLIEDPOWER = "HwPowerSupply_Link_suppliedPower";
 
-    @objid ("65b25364-77d6-4598-8306-cc00230bf461")
+    @objid ("1f84eac4-2ecb-4a44-b2cb-7059652d0e7e")
     public static final String HWPOWERSUPPLY_LINK_HWPOWERSUPPLY_LINK_CAPACITY = "HwPowerSupply_Link_capacity";
 
-    @objid ("97d1cc84-ac6c-480a-b76f-5faa53961cda")
+    @objid ("7018562b-e767-41e8-9e74-c3c8d56ede13")
     public static final String HWPOWERSUPPLY_PARAMETER_HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER = "HwPowerSupply_Parameter_suppliedPower";
 
-    @objid ("21b8f20c-1685-4484-99ec-52bf278861a0")
+    @objid ("7e6f42b7-d3c0-4b49-ac66-783b4b099656")
     public static final String HWPOWERSUPPLY_PARAMETER_HWPOWERSUPPLY_PARAMETER_CAPACITY = "HwPowerSupply_Parameter_capacity";
 
-    @objid ("6313ad5c-95d1-4f29-a9f4-f903cb6adaba")
+    @objid ("26ada478-a463-43d8-ba1e-3eec74b69506")
     public static final String HWRESOURCESERVICE_BEHAVIOR_HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION = "HwResourceService_Behavior_consumption";
 
-    @objid ("2a50cb4e-fda8-407c-a542-f1ea2a45e7d7")
+    @objid ("6f6ab127-b28d-4975-a03d-ff8957cb36a5")
     public static final String HWRESOURCESERVICE_BEHAVIOR_HWRESOURCESERVICE_BEHAVIOR_DISSIPATION = "HwResourceService_Behavior_dissipation";
 
-    @objid ("cf63d738-201e-4262-8064-01993bcc8259")
+    @objid ("814db470-b624-4fb0-a4dc-46c1def18317")
     public static final String HWRESOURCESERVICE_COLLABORATION_HWRESOURCESERVICE_COLLABORATION_CONSUMPTION = "HwResourceService_Collaboration_consumption";
 
-    @objid ("5d27681d-9f00-4d88-b868-b2cb329619ec")
+    @objid ("fa65d753-398f-43c0-a6f6-3d7b9c81ba56")
     public static final String HWRESOURCESERVICE_COLLABORATION_HWRESOURCESERVICE_COLLABORATION_DISSIPATION = "HwResourceService_Collaboration_dissipation";
 
-    @objid ("be851af6-9f86-40b6-8974-dd5dcc8f4bff")
+    @objid ("5e0ad435-f075-4cb1-92c9-aa076707ed13")
     public static final String HWRESOURCESERVICE_COLLABORATIONUSE_HWRESOURCESERVICE_COLLABORATIONUSE_CONSUMPTION = "HwResourceService_CollaborationUse_consumption";
 
-    @objid ("8b4faae6-e865-4a40-a06e-06ed64476e24")
+    @objid ("f744f759-077b-4a0f-8b19-39097b3e209b")
     public static final String HWRESOURCESERVICE_COLLABORATIONUSE_HWRESOURCESERVICE_COLLABORATIONUSE_DISSIPATION = "HwResourceService_CollaborationUse_dissipation";
 
-    @objid ("a041ef74-a949-48b7-908a-189140aca2bf")
+    @objid ("a0f38fbe-d88d-437c-af3e-f357ee1cef0a")
     public static final String HWRESOURCESERVICE_EXECUTIONSPECIFICATION_HWRESOURCESERVICE_EXECUTIONSPECIFICATION_CONSUMPTION = "HwResourceService_ExecutionSpecification_consumption";
 
-    @objid ("dbd11c91-d0ce-4ba9-a2a0-9a15d9935cff")
+    @objid ("b3acb42c-8f2d-4b2c-bc4f-297d5d9b647a")
     public static final String HWRESOURCESERVICE_EXECUTIONSPECIFICATION_HWRESOURCESERVICE_EXECUTIONSPECIFICATION_DISSIPATION = "HwResourceService_ExecutionSpecification_dissipation";
 
-    @objid ("87c65661-4c2f-4537-aa7c-942d45c8a3a5")
+    @objid ("9bd1afc8-946c-4585-80fe-c23a8dcd2491")
     public static final String HWRESOURCESERVICE_OPERATION_HWRESOURCESERVICE_OPERATION_CONSUMPTION = "HwResourceService_Operation_consumption";
 
-    @objid ("196b3ecd-cea7-4cb3-b3f8-1a2b2f6a3a42")
+    @objid ("0273bd96-d4d2-4f44-855a-d1f361983005")
     public static final String HWRESOURCESERVICE_OPERATION_HWRESOURCESERVICE_OPERATION_DISSIPATION = "HwResourceService_Operation_dissipation";
 
-    @objid ("008f028c-b262-4926-a0b2-13666ea10f0e")
+    @objid ("7d5d5497-2038-4526-96d3-6945d42ba19e")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_DESCRIPTION = "HwResource_Association_description";
 
-    @objid ("24cfd030-43cb-4487-94d5-b843a30f60d9")
+    @objid ("b97e13c7-b29e-45f1-9590-bca7343eb901")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_P_HW_SERVICES = "HwResource_Association_p_HW_Services";
 
-    @objid ("7e4b1c7c-5177-4387-82c3-1dbd63a58b17")
+    @objid ("d6a435c1-2b19-4852-bdd7-64f13e83c55e")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_R_HW_SERVICES = "HwResource_Association_r_HW_Services";
 
-    @objid ("4aa514ef-601c-43bf-8b9a-aa1b37cf2922")
+    @objid ("ac0abbf9-2654-466a-a726-f8094730575e")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_OWNEDHW = "HwResource_Association_ownedHW";
 
-    @objid ("9b8a30fd-3088-4a0e-bc4e-dd9084a89a5b")
+    @objid ("6441c545-6354-4356-b478-29922f32ffd6")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_FREQUENCY = "HwResource_Association_frequency";
 
-    @objid ("77d38b6e-4df1-40f1-977d-65d1337103c5")
+    @objid ("0bfeda62-9d6c-4df1-b931-dc9671a9ad9a")
     public static final String HWRESOURCE_ASSOCIATION_HWRESOURCE_ASSOCIATION_ENDPOINTS = "HwResource_Association_endPoints";
 
-    @objid ("79ae0631-1fe4-45df-bec2-4a43c729d672")
+    @objid ("68e410db-756d-496d-b1a9-0baf06df69f5")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_DESCRIPTION = "HwResource_AssociationEnd_description";
 
-    @objid ("a5822b9a-8e3c-4a6c-9750-1c7357c97440")
+    @objid ("4e14b98a-1812-4420-a5be-5fdb86ee89b7")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_P_HW_SERVICES = "HwResource_AssociationEnd_p_HW_Services";
 
-    @objid ("c40fe034-65a6-4abf-9859-6127842d7578")
+    @objid ("b6a5c8c6-1a4c-43c7-8b05-67712c2797c6")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_R_HW_SERVICES = "HwResource_AssociationEnd_r_HW_Services";
 
-    @objid ("2e915bdd-bfb5-4928-a4bc-aadbd28bbda5")
+    @objid ("bff397be-d1cc-48e2-932d-6b5421d961a3")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_OWNEDHW = "HwResource_AssociationEnd_ownedHW";
 
-    @objid ("1969513d-969b-4578-935d-a4050aeb1546")
+    @objid ("5056682e-d7c5-4d82-b0da-7e2045645804")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_FREQUENCY = "HwResource_AssociationEnd_frequency";
 
-    @objid ("27df9cf5-bba9-45c2-928d-046310e76f73")
+    @objid ("d7d5ba71-3be5-4fc3-be64-9efc85d0fc9a")
     public static final String HWRESOURCE_ASSOCIATIONEND_HWRESOURCE_ASSOCIATIONEND_ENDPOINTS = "HwResource_AssociationEnd_endPoints";
 
-    @objid ("d8ed3182-9430-4540-ad3f-8b47837e41aa")
+    @objid ("7e09f514-9f2f-4598-9ade-9a707f5b1300")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_DESCRIPTION = "HwResource_Attribute_description";
 
-    @objid ("70980e5d-9558-4a34-97d9-d7cc1052fb6f")
+    @objid ("cd0ac042-7f70-4bac-83fc-58a398242955")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_P_HW_SERVICES = "HwResource_Attribute_p_HW_Services";
 
-    @objid ("64ff2ca0-1ae3-42fb-9d1c-0d20d15468a8")
+    @objid ("270f64fa-b51b-4654-806c-7ce53066c26d")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_R_HW_SERVICES = "HwResource_Attribute_r_HW_Services";
 
-    @objid ("218a6630-f68c-4f2f-bdc3-4183794e951e")
+    @objid ("f13f0a72-b3fe-40af-8c0b-e8ffa1bef4db")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_OWNEDHW = "HwResource_Attribute_ownedHW";
 
-    @objid ("15cf022e-8c1c-445c-9eb5-e448a7768309")
+    @objid ("e3d3ddae-25b1-48c6-9e72-61b0aeba122a")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_FREQUENCY = "HwResource_Attribute_frequency";
 
-    @objid ("0eb68929-10c6-4637-bf2f-8937e2fe61b4")
+    @objid ("00ad9ed9-c634-463d-bf11-b6b2f25f7cdf")
     public static final String HWRESOURCE_ATTRIBUTE_HWRESOURCE_ATTRIBUTE_ENDPOINTS = "HwResource_Attribute_endPoints";
 
-    @objid ("403e6e0b-0d32-4491-b648-0eed057f768b")
+    @objid ("df2b9dde-5b0c-44b4-9c85-7fee4fd81caf")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_DESCRIPTION = "HwResource_Classifier_description";
 
-    @objid ("faf2f5cc-44d6-4aae-9ddb-92b2b5bb20c3")
+    @objid ("3e0baa92-680d-4137-b2dc-9105e8655728")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_P_HW_SERVICES = "HwResource_Classifier_p_HW_Services";
 
-    @objid ("e51b156e-fbf1-49dc-924b-4d9e55b2fe05")
+    @objid ("d741a7b7-b7e9-4891-9a1e-f6c9f8117571")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_R_HW_SERVICES = "HwResource_Classifier_r_HW_Services";
 
-    @objid ("3510efa4-87cd-42f6-a691-1d5295312d80")
+    @objid ("f4c21f99-048f-4899-a2d8-b4ccd28fc1e2")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_OWNEDHW = "HwResource_Classifier_ownedHW";
 
-    @objid ("3d0072c9-f9af-4c7f-ac7b-90a566e02332")
+    @objid ("9cb85684-36aa-4e7e-b278-1e5184229cc2")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_FREQUENCY = "HwResource_Classifier_frequency";
 
-    @objid ("d269c344-1d3f-47f1-8be6-dfb12ed64597")
+    @objid ("0a7e9707-b183-4531-a741-ee13f441cac4")
     public static final String HWRESOURCE_CLASSIFIER_HWRESOURCE_CLASSIFIER_ENDPOINTS = "HwResource_Classifier_endPoints";
 
-    @objid ("739814ba-1f96-453c-a6e6-9b8145531125")
+    @objid ("93b43aec-06c4-4586-a605-e24a1b151963")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_DESCRIPTION = "HwResource_Instance_description";
 
-    @objid ("f964b507-8812-468b-9f37-32dae8730cd5")
+    @objid ("93873ffc-d839-4fd1-a09e-8981b69fcbea")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_P_HW_SERVICES = "HwResource_Instance_p_HW_Services";
 
-    @objid ("845832e8-762a-4c96-8030-42363c734ece")
+    @objid ("0ab57f85-a76f-4d95-827c-4da4e8c9a023")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_R_HW_SERVICES = "HwResource_Instance_r_HW_Services";
 
-    @objid ("332e0c49-5eee-415b-9570-c456cd7bc0b6")
+    @objid ("472db633-e1f8-4ddf-98ab-9ba9c4796618")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_OWNEDHW = "HwResource_Instance_ownedHW";
 
-    @objid ("d7ed8e39-f720-4a09-9898-c7a6df93e0d2")
+    @objid ("cab1670a-ace8-4d2f-991d-548e807e4eb4")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_FREQUENCY = "HwResource_Instance_frequency";
 
-    @objid ("5811d002-21f8-4cbe-bacd-11bc5b58c88f")
+    @objid ("9bdd923b-e0ca-4c61-a697-743fc62ad563")
     public static final String HWRESOURCE_INSTANCE_HWRESOURCE_INSTANCE_ENDPOINTS = "HwResource_Instance_endPoints";
 
-    @objid ("c759a3a4-46a7-4e4d-aab2-2e3348c3ad98")
+    @objid ("ada234ec-30fd-4dc2-97b0-7db510015955")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_DESCRIPTION = "HwResource_Lifeline_description";
 
-    @objid ("ee6197cd-2f58-493c-8382-2b661d7894a0")
+    @objid ("400c2ee4-55ac-465e-b248-662489b23184")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_P_HW_SERVICES = "HwResource_Lifeline_p_HW_Services";
 
-    @objid ("4c466de6-184e-44cf-b953-e61219fece21")
+    @objid ("dbb5be24-9f9e-41f2-b630-a3a44d37b669")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_R_HW_SERVICES = "HwResource_Lifeline_r_HW_Services";
 
-    @objid ("a913bf6c-252e-4e67-b436-6ab70741ab83")
+    @objid ("27672416-766a-47fe-bf76-2c37e8bfd340")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_OWNEDHW = "HwResource_Lifeline_ownedHW";
 
-    @objid ("50768046-69e0-438f-8702-ed047bfcd708")
+    @objid ("059588ea-96ab-4bbf-8754-8f8d7c29321f")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_FREQUENCY = "HwResource_Lifeline_frequency";
 
-    @objid ("505bff81-6047-401a-8f68-22630b47e30d")
+    @objid ("4a42380e-0621-4df1-b762-d47a314e6764")
     public static final String HWRESOURCE_LIFELINE_HWRESOURCE_LIFELINE_ENDPOINTS = "HwResource_Lifeline_endPoints";
 
-    @objid ("584bd4ac-f624-4bde-86a1-9e18dc6235d3")
+    @objid ("bba45cdf-b2a6-4a21-9da5-0ccec739edd9")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_DESCRIPTION = "HwResource_Link_description";
 
-    @objid ("b718c44d-7c68-48ad-ac57-e3e0632051c2")
+    @objid ("fb74e4b7-b262-4277-a573-f4ee70ff9842")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_P_HW_SERVICES = "HwResource_Link_p_HW_Services";
 
-    @objid ("fe9c1ddd-82c1-4e4b-ae9e-f4aa585be992")
+    @objid ("02fb5f46-22b6-46a4-b06e-714a083b8bc9")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_R_HW_SERVICES = "HwResource_Link_r_HW_Services";
 
-    @objid ("620e4483-08c6-4e08-8e8c-786fe77d2649")
+    @objid ("1fe79970-3a72-4df7-b8fc-4dcb7bf6de53")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_OWNEDHW = "HwResource_Link_ownedHW";
 
-    @objid ("fccd790e-1122-4a4a-8b19-a0c0e49c7eb6")
+    @objid ("c59cd1dd-cef2-4215-9782-2add0cafb697")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_FREQUENCY = "HwResource_Link_frequency";
 
-    @objid ("a8813435-b238-4702-a345-03c0329cce14")
+    @objid ("188cc371-9d14-49c1-b1fb-bc7842bbd4a5")
     public static final String HWRESOURCE_LINK_HWRESOURCE_LINK_ENDPOINTS = "HwResource_Link_endPoints";
 
-    @objid ("c149799f-2d06-40c1-b30a-16aacfe8aa60")
+    @objid ("88c30680-98a5-4be2-966d-9ffeb90599e6")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_DESCRIPTION = "HwResource_Parameter_description";
 
-    @objid ("1097bb31-8daa-47a3-b815-459ad1b2e1dd")
+    @objid ("9b673771-1c37-4430-88cb-55ca25fccb08")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_P_HW_SERVICES = "HwResource_Parameter_p_HW_Services";
 
-    @objid ("3f6783ea-f06b-4390-84ed-dcfab51624af")
+    @objid ("c48e46cd-0048-4563-b1af-def9b10dc8ba")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_R_HW_SERVICES = "HwResource_Parameter_r_HW_Services";
 
-    @objid ("56330d42-3189-4d46-8b23-974d670ba3bc")
+    @objid ("ae1e00f5-d114-4693-bc23-a86d6f74561c")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_OWNEDHW = "HwResource_Parameter_ownedHW";
 
-    @objid ("1063b8f2-9deb-4074-aad0-c290ceffbe86")
+    @objid ("a4e98b19-32fa-490b-85df-5702eede8f1b")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_FREQUENCY = "HwResource_Parameter_frequency";
 
-    @objid ("d1869dfe-13d3-455d-be8d-f151340126ab")
+    @objid ("6dde2f4b-cfcb-4283-bc7f-9978d34e2bde")
     public static final String HWRESOURCE_PARAMETER_HWRESOURCE_PARAMETER_ENDPOINTS = "HwResource_Parameter_endPoints";
 
-    @objid ("98fc2de2-599c-4974-bcdc-5f88a72f3dd4")
+    @objid ("bf246dbf-c038-468b-95aa-6a0e88a109ca")
     public static final String SWACCESSSERVICE_BEHAVIOR_SWACCESSSERVICE_BEHAVIOR_ISMODIFIER = "SwAccessService_Behavior_isModifier";
 
-    @objid ("70244c89-8b66-4a77-99a9-79da36b0ba70")
+    @objid ("81278ee2-18a3-488c-8e58-19dbe334b9ff")
     public static final String SWACCESSSERVICE_BEHAVIOR_SWACCESSSERVICE_BEHAVIOR_ACCESSEDELEMENT = "SwAccessService_Behavior_accessedElement";
 
-    @objid ("8078212e-017a-4f2b-a4ec-7d82318e6072")
+    @objid ("6b996b78-8f41-4776-9c64-d0318029b634")
     public static final String SWACCESSSERVICE_COLLABORATION_SWACCESSSERVICE_COLLABORATION_ISMODIFIER = "SwAccessService_Collaboration_isModifier";
 
-    @objid ("2461ca6f-1ce7-4c84-b09a-2fb14036b29d")
+    @objid ("0640ed75-9c7a-4f97-9777-4f7074874ec4")
     public static final String SWACCESSSERVICE_COLLABORATION_SWACCESSSERVICE_COLLABORATION_ACCESSEDELEMENT = "SwAccessService_Collaboration_accessedElement";
 
-    @objid ("c69a91bd-cbbe-4da5-bbe6-aab2e53b3e7a")
+    @objid ("fbe133b7-ed10-441b-b2e0-7c843510c3f5")
     public static final String SWACCESSSERVICE_COLLABORATIONUSE_SWACCESSSERVICE_COLLABORATIONUSE_ISMODIFIER = "SwAccessService_CollaborationUse_isModifier";
 
-    @objid ("a46ed6b1-25d0-4722-acf8-bf203d598b98")
+    @objid ("972a166c-ff4b-48e2-99b5-4feef7e2c7f6")
     public static final String SWACCESSSERVICE_COLLABORATIONUSE_SWACCESSSERVICE_COLLABORATIONUSE_ACCESSEDELEMENT = "SwAccessService_CollaborationUse_accessedElement";
 
-    @objid ("69b7f5fa-fbcb-4736-af3f-30d3cd905f15")
+    @objid ("ab4fcec5-b0d4-43cc-afc0-e4f7a35032b7")
     public static final String SWACCESSSERVICE_EXECUTIONSPECIFICATION_SWACCESSSERVICE_EXECUTIONSPECIFICATION_ISMODIFIER = "SwAccessService_ExecutionSpecification_isModifier";
 
-    @objid ("db355176-cd5e-4ae1-b935-92c0136094c9")
+    @objid ("64fe05ec-82a5-4951-80fb-2723ff17d863")
     public static final String SWACCESSSERVICE_EXECUTIONSPECIFICATION_SWACCESSSERVICE_EXECUTIONSPECIFICATION_ACCESSEDELEMENT = "SwAccessService_ExecutionSpecification_accessedElement";
 
-    @objid ("4a4bbecb-bdf5-4254-b933-fbc54b198ff0")
+    @objid ("e482bba0-c760-4829-af5a-78c51a25244a")
     public static final String SWACCESSSERVICE_OPERATION_SWACCESSSERVICE_OPERATION_ISMODIFIER = "SwAccessService_Operation_isModifier";
 
-    @objid ("fb330c3e-5a4b-4dda-9400-f82d2cff33ff")
+    @objid ("10200bbc-92da-40f6-8997-c1c5824f697d")
     public static final String SWACCESSSERVICE_OPERATION_SWACCESSSERVICE_OPERATION_ACCESSEDELEMENT = "SwAccessService_Operation_accessedElement";
 
-    @objid ("d83d742b-6fa4-4710-b6b9-29f2dc23bf71")
+    @objid ("0fce6675-1cae-4193-a4c1-7f606fbac093")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_IDENTIFIERELEMENTS = "SwResource_Association_identifierElements";
 
-    @objid ("5ad62508-87f1-49de-9845-7f7cdc1a5523")
+    @objid ("08b1fe29-4435-499c-ab52-bc15ab4dd7b5")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_STATEELEMENTS = "SwResource_Association_stateElements";
 
-    @objid ("c54ae240-0ec3-4d40-b269-a8446c0c5638")
+    @objid ("8a770b62-14ff-4df5-9393-ec122f423097")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_MEMORYSIZEFOOTPRINT = "SwResource_Association_memorySizeFootprint";
 
-    @objid ("936a818e-5714-453d-828c-387e0af14894")
+    @objid ("ea372598-a4af-4d67-98c7-b6906dbdfa8c")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_CREATESERVICES = "SwResource_Association_createServices";
 
-    @objid ("4121982c-72bf-4b55-84d5-74073eff48cf")
+    @objid ("1ed4b86a-24bb-4583-9de0-1e96667fe789")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_DELETESERVICES = "SwResource_Association_deleteServices";
 
-    @objid ("ba62f4d1-4a4e-4b93-be77-074a6388b2be")
+    @objid ("c2be8234-8ef4-4fae-bceb-e9ed056de5cd")
     public static final String SWRESOURCE_ASSOCIATION_SWRESOURCE_ASSOCIATION_INITIALIZESERVICES = "SwResource_Association_initializeServices";
 
-    @objid ("79136da2-d123-4472-8b66-d520b19517d8")
+    @objid ("192c403b-344e-49c0-9a79-0394d442fffb")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS = "SwResource_AssociationEnd_identifierElements";
 
-    @objid ("202e9b8c-bd77-4995-8235-ab6c762a1775")
+    @objid ("f17ccf40-01ab-4257-9b58-6f0fa7519bd1")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_STATEELEMENTS = "SwResource_AssociationEnd_stateElements";
 
-    @objid ("9994b584-acf6-4881-ac9a-3d4d65ba90aa")
+    @objid ("0babc5ca-06df-4240-bfe0-676d8db7424c")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_MEMORYSIZEFOOTPRINT = "SwResource_AssociationEnd_memorySizeFootprint";
 
-    @objid ("dc04f496-2511-4235-9d1f-8e31527f6b91")
+    @objid ("f7f21952-2a6d-4e84-a970-517af53f1db4")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_CREATESERVICES = "SwResource_AssociationEnd_createServices";
 
-    @objid ("fe9df668-f175-47ba-af9b-42cf62daeada")
+    @objid ("a017571b-7967-42b5-963b-81c68df0dea5")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_DELETESERVICES = "SwResource_AssociationEnd_deleteServices";
 
-    @objid ("a3b55e48-f082-4b2d-ae85-c10a945fb12d")
+    @objid ("15074963-bea8-4ef5-a4ac-02440424e790")
     public static final String SWRESOURCE_ASSOCIATIONEND_SWRESOURCE_ASSOCIATIONEND_INITIALIZESERVICES = "SwResource_AssociationEnd_initializeServices";
 
-    @objid ("16ad16d0-a4dc-47eb-8467-1d2d406bd3e1")
+    @objid ("c305599f-3e66-441d-93d4-7caa8c15134c")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_IDENTIFIERELEMENTS = "SwResource_Attribute_identifierElements";
 
-    @objid ("de7b849e-82c6-4c47-89de-544f93158205")
+    @objid ("3cf94dfa-00bd-41ee-afd7-05930dd39b1e")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_STATEELEMENTS = "SwResource_Attribute_stateElements";
 
-    @objid ("0b7e76aa-f1e5-45b4-949f-1fb0f2ac7a6b")
+    @objid ("093afdcf-8f6b-4612-b0bf-eab52fd50727")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_MEMORYSIZEFOOTPRINT = "SwResource_Attribute_memorySizeFootprint";
 
-    @objid ("b009ddcf-240f-43ff-af75-0daeed837931")
+    @objid ("33b74ed9-007a-40df-8b13-a5694dc4d2ed")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_CREATESERVICES = "SwResource_Attribute_createServices";
 
-    @objid ("62e8ef64-9664-4079-8f16-1afde6181c5f")
+    @objid ("b857f89a-cc13-4e6f-80a5-a262444cedbd")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_DELETESERVICES = "SwResource_Attribute_deleteServices";
 
-    @objid ("62ecb5bc-915e-4b59-b0e4-48d3a426cf32")
+    @objid ("4a793b35-17f7-4591-9740-8b5ca7110417")
     public static final String SWRESOURCE_ATTRIBUTE_SWRESOURCE_ATTRIBUTE_INITIALIZESERVICES = "SwResource_Attribute_initializeServices";
 
-    @objid ("20be3083-9dda-49d9-ab15-f30418ac4e5b")
+    @objid ("79352323-2748-4815-917a-1d067132ba79")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_IDENTIFIERELEMENTS = "SwResource_Classifier_identifierElements";
 
-    @objid ("02ff0d23-f01d-4ce9-9e6a-6f69aadbeb06")
+    @objid ("a590bd92-4248-4241-aa8e-1b88f37ea1f0")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_STATEELEMENTS = "SwResource_Classifier_stateElements";
 
-    @objid ("9a4a7edf-36cf-4d49-a37b-830df7bdc013")
+    @objid ("8b123347-40ca-46ab-966e-07e5d8b4c5ac")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_MEMORYSIZEFOOTPRINT = "SwResource_Classifier_memorySizeFootprint";
 
-    @objid ("eebc2ee7-0642-49b0-a866-f20e896a24da")
+    @objid ("1fe982b2-0a39-4003-8105-bd4a18019d2d")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_CREATESERVICES = "SwResource_Classifier_createServices";
 
-    @objid ("395069f5-1b8e-47e9-b091-f8a4f0f3f540")
+    @objid ("4e3382f7-34a1-43fe-959a-14fb7710851a")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_DELETESERVICES = "SwResource_Classifier_deleteServices";
 
-    @objid ("c98ff825-ec09-4c89-88f6-db9e1bb69939")
+    @objid ("e023c944-85e3-4918-a0ad-f43f1c23258e")
     public static final String SWRESOURCE_CLASSIFIER_SWRESOURCE_CLASSIFIER_INITIALIZESERVICES = "SwResource_Classifier_initializeServices";
 
-    @objid ("c5d8870f-7fe8-45b5-ae71-dcbfadef017a")
+    @objid ("e59deb20-8744-40c9-b75c-76ba4ba5eb05")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_IDENTIFIERELEMENTS = "SwResource_Instance_identifierElements";
 
-    @objid ("3433f4a1-94d9-44d4-90fd-532f08438bea")
+    @objid ("5a507a57-7c6e-477d-8514-ca6dd9337665")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_STATEELEMENTS = "SwResource_Instance_stateElements";
 
-    @objid ("c4edc705-1331-4373-a9c5-7e768f57d924")
+    @objid ("6ee09d09-da59-4abb-a4d0-b8b41b47e483")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_MEMORYSIZEFOOTPRINT = "SwResource_Instance_memorySizeFootprint";
 
-    @objid ("6d19fc5d-ac7f-4341-b779-30b252f74e10")
+    @objid ("d376d9c5-abd4-4dcf-ace2-cb9b4199dd11")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_CREATESERVICES = "SwResource_Instance_createServices";
 
-    @objid ("54ca08f9-60e2-4388-97ae-b4fb85694e5a")
+    @objid ("2a56d7c1-5acc-480c-a5a0-60b2221f19f8")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_DELETESERVICES = "SwResource_Instance_deleteServices";
 
-    @objid ("419d9eba-728d-48ff-b189-d4ed6f15f36b")
+    @objid ("4a819ea9-42f1-40e6-8403-98f7c65496e4")
     public static final String SWRESOURCE_INSTANCE_SWRESOURCE_INSTANCE_INITIALIZESERVICES = "SwResource_Instance_initializeServices";
 
-    @objid ("0840e73d-682f-4212-b236-1144df630f98")
+    @objid ("edbd20ce-ee53-45e6-8a32-722542800734")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_IDENTIFIERELEMENTS = "SwResource_Lifeline_identifierElements";
 
-    @objid ("f22a7e25-f2f3-48ea-83ac-c22aeb8fd026")
+    @objid ("bfeb7ecb-ecf5-4450-b2cc-7a0d37e431bc")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_STATEELEMENTS = "SwResource_Lifeline_stateElements";
 
-    @objid ("8366abb5-35bd-40cc-8f9d-7b242b82ca70")
+    @objid ("c080bcbd-85b2-492b-8397-a5ab19b44025")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_MEMORYSIZEFOOTPRINT = "SwResource_Lifeline_memorySizeFootprint";
 
-    @objid ("82e249bb-dff0-45d3-8a3a-db864c889548")
+    @objid ("40b59f22-1ed0-4d78-887b-09bf1195f034")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_CREATESERVICES = "SwResource_Lifeline_createServices";
 
-    @objid ("8840a4f6-97cd-4745-b25a-0852f23ac72f")
+    @objid ("9cd17cee-1575-4c6a-8efa-1abbd40b5414")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_DELETESERVICES = "SwResource_Lifeline_deleteServices";
 
-    @objid ("5d5b0385-0cb7-462f-b99b-fe78f365765b")
+    @objid ("7dd57cbf-5017-4149-8ddc-a2ea5fbbf72c")
     public static final String SWRESOURCE_LIFELINE_SWRESOURCE_LIFELINE_INITIALIZESERVICES = "SwResource_Lifeline_initializeServices";
 
-    @objid ("f632df39-fb1d-427f-8b22-c4a22146be0f")
+    @objid ("e1a0d193-0d0f-49a1-9e33-de4ed4eb8889")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_IDENTIFIERELEMENTS = "SwResource_Link_identifierElements";
 
-    @objid ("5e35d524-4095-4e17-a28d-9417e6139b7a")
+    @objid ("a056a1dc-d930-496e-985c-73b9cc893ad1")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_STATEELEMENTS = "SwResource_Link_stateElements";
 
-    @objid ("05f2e75a-02c5-4f41-951d-ecce536bcb7a")
+    @objid ("f02d8dc2-cdfb-418c-bae4-72c49e6b5b9b")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_MEMORYSIZEFOOTPRINT = "SwResource_Link_memorySizeFootprint";
 
-    @objid ("7dd68cb1-6e4b-40a9-97ec-c3c7c7ef5cfe")
+    @objid ("8744f6f5-e22f-4dbe-b950-1f97790f740f")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_CREATESERVICES = "SwResource_Link_createServices";
 
-    @objid ("a63746fe-3693-47c6-bab7-e08a236885cb")
+    @objid ("6d58a0ff-9c41-4af3-a042-fb3508da91ea")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_DELETESERVICES = "SwResource_Link_deleteServices";
 
-    @objid ("ef8d36ac-7ebd-4bc4-be8c-148be187496a")
+    @objid ("1b9cd1c2-e853-460d-a497-6abb6c793e71")
     public static final String SWRESOURCE_LINK_SWRESOURCE_LINK_INITIALIZESERVICES = "SwResource_Link_initializeServices";
 
-    @objid ("af27a770-0f64-4461-ab5b-89aeaf5ad6f2")
+    @objid ("2bc721d4-3977-4ad1-939a-fdb92d5d6d47")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_IDENTIFIERELEMENTS = "SwResource_Parameter_identifierElements";
 
-    @objid ("812ed97f-4128-40f2-8a38-3d0c4cca3700")
+    @objid ("fe669489-c861-469b-8e0e-c114afb59797")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_STATEELEMENTS = "SwResource_Parameter_stateElements";
 
-    @objid ("27529162-4463-4024-b04b-0c720b2839a2")
+    @objid ("725fcc71-bdaa-4341-9055-409192f2fa81")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_MEMORYSIZEFOOTPRINT = "SwResource_Parameter_memorySizeFootprint";
 
-    @objid ("44f3cf8d-2775-4bcb-81c8-883cf34225ed")
+    @objid ("6f80b47f-4363-4892-9e50-f1a86d635c8d")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_CREATESERVICES = "SwResource_Parameter_createServices";
 
-    @objid ("721c8299-0318-48e8-891b-3bcfe4c85e4c")
+    @objid ("dc7c1eba-55db-46c9-94c2-9fb03e006f47")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_DELETESERVICES = "SwResource_Parameter_deleteServices";
 
-    @objid ("917345cd-16dc-4683-be35-75424ef1ee03")
+    @objid ("f9271843-a27d-4c13-8dd7-fd4bbd6e68bc")
     public static final String SWRESOURCE_PARAMETER_SWRESOURCE_PARAMETER_INITIALIZESERVICES = "SwResource_Parameter_initializeServices";
 
-    @objid ("9203788e-e060-4a86-bfa2-136233deba6b")
+    @objid ("cb52ce64-c5be-4dd8-8062-775056bad1de")
     public static final String ALARM_ASSOCIATION_ALARM_ASSOCIATION_ISWATCHDOG = "Alarm_Association_isWatchdog";
 
-    @objid ("80d88f95-1d72-4e25-86d2-ca59481846d1")
+    @objid ("6e0592ec-8bdd-400d-b536-2fe9e865b3ad")
     public static final String ALARM_ASSOCIATION_ALARM_ASSOCIATION_TIMERS = "Alarm_Association_timers";
 
-    @objid ("d9277e79-61fa-4983-aa5a-22cff644f1a4")
+    @objid ("26524742-d7c0-4239-b751-7ef01b54b5ed")
     public static final String ALARM_ASSOCIATIONEND_ALARM_ASSOCIATIONEND_ISWATCHDOG = "Alarm_AssociationEnd_isWatchdog";
 
-    @objid ("1b2344af-a57c-428a-98c9-bc8b67579e0f")
+    @objid ("12ac468f-5503-42b0-ae68-adcdaa45fa4d")
     public static final String ALARM_ASSOCIATIONEND_ALARM_ASSOCIATIONEND_TIMERS = "Alarm_AssociationEnd_timers";
 
-    @objid ("893ace9b-e00c-42fb-81d8-9f5710021349")
+    @objid ("e62e3da5-be2a-479c-8de0-56ea6881ad4f")
     public static final String ALARM_ATTRIBUTE_ALARM_ATTRIBUTE_ISWATCHDOG = "Alarm_Attribute_isWatchdog";
 
-    @objid ("827d0297-1780-458d-a951-a7127cdc3183")
+    @objid ("160bd634-0beb-45e0-bd1c-2d120f14bc84")
     public static final String ALARM_ATTRIBUTE_ALARM_ATTRIBUTE_TIMERS = "Alarm_Attribute_timers";
 
-    @objid ("e69b844d-ea00-4939-a4e3-b171daddcb32")
+    @objid ("4ff71a40-547f-497e-b20b-c8d5c683dbad")
     public static final String ALARM_CLASSIFIER_ALARM_CLASSIFIER_ISWATCHDOG = "Alarm_Classifier_isWatchdog";
 
-    @objid ("f0c57847-32f1-4cc7-8796-7d70928ec088")
+    @objid ("11cdf512-52fb-440a-9590-0d3c23cac47f")
     public static final String ALARM_CLASSIFIER_ALARM_CLASSIFIER_TIMERS = "Alarm_Classifier_timers";
 
-    @objid ("966fab7b-fa98-4a81-993d-b28a7665d261")
+    @objid ("adfe36ed-f318-4d29-983f-04dd2187e02b")
     public static final String ALARM_INSTANCE_ALARM_INSTANCE_ISWATCHDOG = "Alarm_Instance_isWatchdog";
 
-    @objid ("1bd6e049-4b39-48dc-83b3-39749edc6516")
+    @objid ("b7015dbf-2ac8-4c44-b41e-d970d0ac3c04")
     public static final String ALARM_INSTANCE_ALARM_INSTANCE_TIMERS = "Alarm_Instance_timers";
 
-    @objid ("85c2eb3e-6a07-4c77-a033-295369893cbb")
+    @objid ("5983e92d-08d8-488d-beb6-a85e5eae3c75")
     public static final String ALARM_LIFELINE_ALARM_LIFELINE_ISWATCHDOG = "Alarm_Lifeline_isWatchdog";
 
-    @objid ("8a361f76-327f-4fd3-956f-b0cdf58cbe27")
+    @objid ("0bd560d5-e5e1-415a-96ad-d6f01e9a5caf")
     public static final String ALARM_LIFELINE_ALARM_LIFELINE_TIMERS = "Alarm_Lifeline_timers";
 
-    @objid ("c00b8681-9d3a-4ae1-889e-15bfbcfb6559")
+    @objid ("481bab37-600d-4382-9230-23bf8f9b1d5b")
     public static final String ALARM_LINK_ALARM_LINK_ISWATCHDOG = "Alarm_Link_isWatchdog";
 
-    @objid ("8ca156cd-42f9-4ed7-9dd9-bfb3ed92bc50")
+    @objid ("eb42dae4-a1bc-4a3a-9dea-0ee3528c0e3c")
     public static final String ALARM_LINK_ALARM_LINK_TIMERS = "Alarm_Link_timers";
 
-    @objid ("ed74bde1-41c5-4c42-aae0-a9833fad9aa1")
+    @objid ("66488c87-13f3-4e43-90ee-cbb3b3973a85")
     public static final String ALARM_PARAMETER_ALARM_PARAMETER_ISWATCHDOG = "Alarm_Parameter_isWatchdog";
 
-    @objid ("aae4d1bc-b13a-4377-8612-f005d216c721")
+    @objid ("f7565949-d724-469a-8622-7e312f9cf56c")
     public static final String ALARM_PARAMETER_ALARM_PARAMETER_TIMERS = "Alarm_Parameter_timers";
 
-    @objid ("f2b983ef-3b1a-4100-a722-ff218a8fc951")
+    @objid ("0135c31e-542a-4af6-9d59-8960bf1a13e3")
     public static final String ENTRYPOINT_DEPENDENCY_ENTRYPOINT_DEPENDENCY_ISREENTRANT = "EntryPoint_Dependency_isReentrant";
 
-    @objid ("6f329278-af45-4a59-852c-1bfce155f10a")
+    @objid ("300ae698-2542-4bae-902c-f6131d5469bb")
     public static final String ENTRYPOINT_DEPENDENCY_ENTRYPOINT_DEPENDENCY_ROUTINE = "EntryPoint_Dependency_routine";
 
-    @objid ("4fcc16ee-dcd7-40fc-9746-f0f45b92561b")
+    @objid ("66e725af-a892-4696-8498-e27a5548160e")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_KIND = "InterruptResource_Association_kind";
 
-    @objid ("b76c6fe5-21d2-4980-97f4-9701735cf2dc")
+    @objid ("fae8af32-7762-4669-a6bb-8e7a35b4722b")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_ISMASKABLE = "InterruptResource_Association_isMaskable";
 
-    @objid ("7b6f0db7-f665-4779-838e-b29c9d05dfb3")
+    @objid ("e7b9f569-1792-409c-8f25-4a2eff16b887")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_VECTORELEMENTS = "InterruptResource_Association_vectorElements";
 
-    @objid ("a20d2af1-1d9c-4bf2-9a03-aa88f96573ba")
+    @objid ("f9f94eca-55ff-44cb-a647-a57cfcc473ba")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_MASKELEMENTS = "InterruptResource_Association_maskElements";
 
-    @objid ("606a96cb-befd-44b6-8156-a80385f35fb4")
+    @objid ("901b8f41-42d0-41cb-b274-ea9418a13515")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_ROUTINECONNECTSERVICES = "InterruptResource_Association_routineConnectServices";
 
-    @objid ("968c4560-83c3-4a91-9e57-ab75eea208fb")
+    @objid ("d60b9eeb-34cf-49cc-9884-3f9726f90101")
     public static final String INTERRUPTRESOURCE_ASSOCIATION_INTERRUPTRESOURCE_ASSOCIATION_ROUTINEDISCONNECTSERVICES = "InterruptResource_Association_routineDisconnectServices";
 
-    @objid ("8495a3a2-e66c-4abf-aca9-a0fa10d2794a")
+    @objid ("0d57d904-0a4b-45f7-bc7f-80b88f749b75")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_KIND = "InterruptResource_AssociationEnd_kind";
 
-    @objid ("8ad3b730-5e3d-4ae8-b53d-b5c51906af17")
+    @objid ("18601e5b-6cc0-4064-ae67-914f04edfbc2")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_ISMASKABLE = "InterruptResource_AssociationEnd_isMaskable";
 
-    @objid ("bc8f43b2-b002-4022-bdd4-400e55dcc6c0")
+    @objid ("64652228-e6dc-4196-968b-0ed687471d5e")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_VECTORELEMENTS = "InterruptResource_AssociationEnd_vectorElements";
 
-    @objid ("574271b0-4e8d-41b1-80e5-ff64c7b29b45")
+    @objid ("cde9ea33-4855-427e-b292-4e4198baeb5c")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_MASKELEMENTS = "InterruptResource_AssociationEnd_maskElements";
 
-    @objid ("c1e19f74-fc03-450d-af54-020249e35d2b")
+    @objid ("38056540-9e88-480c-ab0b-bc443fb4bb26")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_ROUTINECONNECTSERVICES = "InterruptResource_AssociationEnd_routineConnectServices";
 
-    @objid ("ab5b4f84-8e0e-4cb0-ad61-7f37d21187b3")
+    @objid ("2315784d-7e4b-406d-b2f4-19a28a5ee5e4")
     public static final String INTERRUPTRESOURCE_ASSOCIATIONEND_INTERRUPTRESOURCE_ASSOCIATIONEND_ROUTINEDISCONNECTSERVICES = "InterruptResource_AssociationEnd_routineDisconnectServices";
 
-    @objid ("e6b3b6db-c076-4355-8a2e-a3328b1f81bf")
+    @objid ("8907f32b-18e7-4670-b22b-af13594938ea")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_KIND = "InterruptResource_Attribute_kind";
 
-    @objid ("5eb99828-6ee2-48d0-aafc-e6b657ab81cc")
+    @objid ("c72f1d3c-ce9c-48c4-89a0-ae217cb4ed12")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_ISMASKABLE = "InterruptResource_Attribute_isMaskable";
 
-    @objid ("cdc6ff29-92f1-4d62-aa22-95c9ec596378")
+    @objid ("990aaca7-d079-417c-8b39-3b028e208c6b")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_VECTORELEMENTS = "InterruptResource_Attribute_vectorElements";
 
-    @objid ("2d478293-46f7-4897-8d8d-c05e4c2c3797")
+    @objid ("867cc84b-54a8-46fa-b0bd-36d4d166def4")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_MASKELEMENTS = "InterruptResource_Attribute_maskElements";
 
-    @objid ("da211630-cfd4-427f-a951-c2b23ffce2c0")
+    @objid ("1057ca9f-1cea-4ee9-ab9b-390b30357b8f")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_ROUTINECONNECTSERVICES = "InterruptResource_Attribute_routineConnectServices";
 
-    @objid ("0aa58761-381a-49af-89f5-c96271e0030d")
+    @objid ("fa1f50e9-476d-478d-a13c-9a953fa0e9db")
     public static final String INTERRUPTRESOURCE_ATTRIBUTE_INTERRUPTRESOURCE_ATTRIBUTE_ROUTINEDISCONNECTSERVICES = "InterruptResource_Attribute_routineDisconnectServices";
 
-    @objid ("6e21bdcc-1ddf-465d-bc49-69b5392d2280")
+    @objid ("7381cca2-c11f-4729-9569-dcf452b56776")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_KIND = "InterruptResource_Classifier_kind";
 
-    @objid ("f4c4e7d1-3972-4723-867f-4af1b6f2b033")
+    @objid ("0fdc64ef-1150-4e48-964a-e11d07ac9407")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_ISMASKABLE = "InterruptResource_Classifier_isMaskable";
 
-    @objid ("db064b6a-2d12-41c6-8b19-6159977ca980")
+    @objid ("89f269b0-44a8-47ff-b58c-e02ae73b8de1")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_VECTORELEMENTS = "InterruptResource_Classifier_vectorElements";
 
-    @objid ("b334f5e0-faea-4b57-8e06-9b6abcec8981")
+    @objid ("36d03c30-f524-4e32-a12c-d8784d47fc5a")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_MASKELEMENTS = "InterruptResource_Classifier_maskElements";
 
-    @objid ("fd912bd3-ca67-427a-8dc4-992f2b58f3d4")
+    @objid ("893fcfd2-3d26-450d-b40d-adaf69fc7c4c")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_ROUTINECONNECTSERVICES = "InterruptResource_Classifier_routineConnectServices";
 
-    @objid ("f9366263-66c2-4950-af8c-6209613c6356")
+    @objid ("34f9a384-d965-4a88-a1d5-10d710888e8c")
     public static final String INTERRUPTRESOURCE_CLASSIFIER_INTERRUPTRESOURCE_CLASSIFIER_ROUTINEDISCONNECTSERVICES = "InterruptResource_Classifier_routineDisconnectServices";
 
-    @objid ("beba5f53-1fd6-47ef-ac88-b97957e99566")
+    @objid ("c790527c-c47d-45cf-9971-d9188ce562e8")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_KIND = "InterruptResource_Instance_kind";
 
-    @objid ("6b8f3e27-0eb8-4451-89bd-29c71a4b58f5")
+    @objid ("60ef0635-4c54-4faf-a761-7cfc4ebd9cba")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_ISMASKABLE = "InterruptResource_Instance_isMaskable";
 
-    @objid ("8fb05b08-04ee-4510-9ede-e816e2102eb1")
+    @objid ("1ec347e9-3cc2-41e3-8d90-74c0356e6787")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_VECTORELEMENTS = "InterruptResource_Instance_vectorElements";
 
-    @objid ("fceaf710-71fd-4585-b35a-64f96ab0dc0c")
+    @objid ("55ff4ba5-b79b-4638-b054-441f59c54de6")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_MASKELEMENTS = "InterruptResource_Instance_maskElements";
 
-    @objid ("a3e90a67-99ff-40ba-9422-61b58ddbe445")
+    @objid ("dbcc46a9-673e-45d4-986f-c81e639062d9")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_ROUTINECONNECTSERVICES = "InterruptResource_Instance_routineConnectServices";
 
-    @objid ("be85444b-bb02-4ce7-ae6a-17cf865c6544")
+    @objid ("c7d71e8c-f71f-4250-91eb-922f762c4ee3")
     public static final String INTERRUPTRESOURCE_INSTANCE_INTERRUPTRESOURCE_INSTANCE_ROUTINEDISCONNECTSERVICES = "InterruptResource_Instance_routineDisconnectServices";
 
-    @objid ("9397cf2b-f639-4f17-bd3b-eb1a972c6256")
+    @objid ("b754b771-eef6-4511-bc32-611e1c9e1d66")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_KIND = "InterruptResource_Lifeline_kind";
 
-    @objid ("1381100c-8587-4c4a-8842-86d8c849f367")
+    @objid ("f527b52d-86ce-40bb-9470-1c444d65a6d6")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_ISMASKABLE = "InterruptResource_Lifeline_isMaskable";
 
-    @objid ("079a0017-b526-4b4b-912d-ae5068dd605b")
+    @objid ("99aeb513-93de-44d1-b17e-1cfe89062f22")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_VECTORELEMENTS = "InterruptResource_Lifeline_vectorElements";
 
-    @objid ("65eb0694-eaf9-4f35-afa9-5f0a900f26ef")
+    @objid ("4a904c7e-3e06-4172-b5b9-063d72170435")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_MASKELEMENTS = "InterruptResource_Lifeline_maskElements";
 
-    @objid ("88c2d3a4-48d6-488a-b9d9-ec1dea946d14")
+    @objid ("666e2b6c-d068-4d80-89aa-c55bb0131d62")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_ROUTINECONNECTSERVICES = "InterruptResource_Lifeline_routineConnectServices";
 
-    @objid ("c7367245-5b01-483a-b77e-6251d1a7823f")
+    @objid ("b26aeb91-3c90-4473-b8cc-50d2be9880cc")
     public static final String INTERRUPTRESOURCE_LIFELINE_INTERRUPTRESOURCE_LIFELINE_ROUTINEDISCONNECTSERVICES = "InterruptResource_Lifeline_routineDisconnectServices";
 
-    @objid ("bdea7711-2a6d-4a5e-80a5-d19632f4e723")
+    @objid ("78bffcea-61b6-48d1-91a2-71de5f3af2c0")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_KIND = "InterruptResource_Link_kind";
 
-    @objid ("249724fe-2b12-404b-ae94-b714271ea31c")
+    @objid ("645b5392-34ec-44dd-a26c-f122ff3e5ef7")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_ISMASKABLE = "InterruptResource_Link_isMaskable";
 
-    @objid ("30e945ba-56e5-4f23-b880-eb9145b11f6d")
+    @objid ("e9ac7b8e-3195-4221-95e5-2e3810e81806")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_VECTORELEMENTS = "InterruptResource_Link_vectorElements";
 
-    @objid ("7d4803dc-fa99-422b-a6da-435069239dc8")
+    @objid ("a3b4f738-2c14-4a73-ae69-e93734631974")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_MASKELEMENTS = "InterruptResource_Link_maskElements";
 
-    @objid ("cc464fe5-bdb4-4cae-b7cd-ce74cc5c14c5")
+    @objid ("5746e005-32eb-465c-80f4-acf98a5b7d07")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_ROUTINECONNECTSERVICES = "InterruptResource_Link_routineConnectServices";
 
-    @objid ("6433d3af-81fc-44ea-80d0-ef84ea6a1770")
+    @objid ("fb52e44c-1275-4736-b912-15b6c7fe15ae")
     public static final String INTERRUPTRESOURCE_LINK_INTERRUPTRESOURCE_LINK_ROUTINEDISCONNECTSERVICES = "InterruptResource_Link_routineDisconnectServices";
 
-    @objid ("7f356877-c6b2-4d70-baf3-a93cd76b5d1c")
+    @objid ("68a7839e-e641-4c69-a7bc-f4efe786a2ce")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_KIND = "InterruptResource_Parameter_kind";
 
-    @objid ("fa90539c-2e02-4fe7-9c78-3ee7918acabd")
+    @objid ("953df446-16bb-4b66-99e4-4f4bbe16ceba")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_ISMASKABLE = "InterruptResource_Parameter_isMaskable";
 
-    @objid ("6980cbea-0a4c-4190-aa95-5a81cf6821ac")
+    @objid ("e55f7836-cc55-4a75-bc25-212ac6d23902")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_VECTORELEMENTS = "InterruptResource_Parameter_vectorElements";
 
-    @objid ("f2680977-f8db-46fe-8c6a-b7a2d7817f7a")
+    @objid ("94258cc0-f6df-48b4-9d27-866ee47408a1")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_MASKELEMENTS = "InterruptResource_Parameter_maskElements";
 
-    @objid ("825ac251-1450-4e03-b43c-73b922ff5618")
+    @objid ("0676e746-4fe4-466b-bf9a-ac5668582b88")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_ROUTINECONNECTSERVICES = "InterruptResource_Parameter_routineConnectServices";
 
-    @objid ("b7294822-8900-46e4-8c6c-077bfb1bac61")
+    @objid ("ac761da5-1fbb-4ea0-852c-05f5954ea1f0")
     public static final String INTERRUPTRESOURCE_PARAMETER_INTERRUPTRESOURCE_PARAMETER_ROUTINEDISCONNECTSERVICES = "InterruptResource_Parameter_routineDisconnectServices";
 
-    @objid ("c78c5c19-c477-4629-beb6-6b3a5fa6399d")
+    @objid ("4da838ab-cf16-44ae-856a-f00e1d7dd99e")
     public static final String MEMORYPARTITION_ASSOCIATION_MEMORYPARTITION_ASSOCIATION_CONCURRENTRESOURCES = "MemoryPartition_Association_concurrentResources";
 
-    @objid ("a7fd2c2d-df18-48f7-9a49-bc5e6a1ae7d9")
+    @objid ("fdf3a9c8-15a6-4f1b-b69b-89cd26c5e770")
     public static final String MEMORYPARTITION_ASSOCIATION_MEMORYPARTITION_ASSOCIATION_MEMORYSPACES = "MemoryPartition_Association_memorySpaces";
 
-    @objid ("2689ae5b-0c43-42e7-92f8-08d7f3413b50")
+    @objid ("b0b7377d-9959-45c8-9094-479691366499")
     public static final String MEMORYPARTITION_ASSOCIATION_MEMORYPARTITION_ASSOCIATION_FORK = "MemoryPartition_Association_fork";
 
-    @objid ("b637a12e-bf99-497e-96f8-e4d907033a68")
+    @objid ("6ea4ca48-445c-48a9-84c5-734900f5ebf6")
     public static final String MEMORYPARTITION_ASSOCIATION_MEMORYPARTITION_ASSOCIATION_EXIT = "MemoryPartition_Association_exit";
 
-    @objid ("eb29258c-2ae7-443c-8964-93a56f91c1ae")
+    @objid ("279c10c9-9fca-4ce0-92d7-d14830cc2a0e")
     public static final String MEMORYPARTITION_ASSOCIATIONEND_MEMORYPARTITION_ASSOCIATIONEND_CONCURRENTRESOURCES = "MemoryPartition_AssociationEnd_concurrentResources";
 
-    @objid ("6fdeba06-5c1b-44e3-b118-fa73e6f7eb8d")
+    @objid ("a134658a-18a6-4e55-8e28-0e335871b757")
     public static final String MEMORYPARTITION_ASSOCIATIONEND_MEMORYPARTITION_ASSOCIATIONEND_MEMORYSPACES = "MemoryPartition_AssociationEnd_memorySpaces";
 
-    @objid ("1b4c8a8f-3229-4a38-9c58-2274c063f67d")
+    @objid ("1debc1e6-8332-43e6-904d-981c5cc5fc41")
     public static final String MEMORYPARTITION_ASSOCIATIONEND_MEMORYPARTITION_ASSOCIATIONEND_FORK = "MemoryPartition_AssociationEnd_fork";
 
-    @objid ("450c977f-fad2-44c4-b07b-52d444acdaa4")
+    @objid ("683ea5d9-3686-4fb2-b7d4-c34949357480")
     public static final String MEMORYPARTITION_ASSOCIATIONEND_MEMORYPARTITION_ASSOCIATIONEND_EXIT = "MemoryPartition_AssociationEnd_exit";
 
-    @objid ("2c065cc0-3a7a-4c78-b253-58ca92b9e468")
+    @objid ("3abfa8e3-c731-4764-8954-e14d2503fb79")
     public static final String MEMORYPARTITION_ATTRIBUTE_MEMORYPARTITION_ATTRIBUTE_CONCURRENTRESOURCES = "MemoryPartition_Attribute_concurrentResources";
 
-    @objid ("e1077048-e16d-41fd-9eb4-6fab706f3379")
+    @objid ("4a2c2de3-8c62-4d2c-96f4-e2d7c3ecdbf8")
     public static final String MEMORYPARTITION_ATTRIBUTE_MEMORYPARTITION_ATTRIBUTE_MEMORYSPACES = "MemoryPartition_Attribute_memorySpaces";
 
-    @objid ("e4288e94-5a39-474f-a0cc-e0955ac5b66e")
+    @objid ("d1e6b820-56db-488d-9ee5-c11f3e8d23f7")
     public static final String MEMORYPARTITION_ATTRIBUTE_MEMORYPARTITION_ATTRIBUTE_FORK = "MemoryPartition_Attribute_fork";
 
-    @objid ("6c0202bc-8641-4b11-b185-6295e50a5f74")
+    @objid ("c24d3002-554b-4f17-b69b-c8ffef8858ae")
     public static final String MEMORYPARTITION_ATTRIBUTE_MEMORYPARTITION_ATTRIBUTE_EXIT = "MemoryPartition_Attribute_exit";
 
-    @objid ("2e9c5076-3d38-4643-af3e-a9fcf8e3dbc0")
+    @objid ("55f550d5-ffec-452c-b432-f96c269771c2")
     public static final String MEMORYPARTITION_INSTANCE_MEMORYPARTITION_INSTANCE_CONCURRENTRESOURCES = "MemoryPartition_Instance_concurrentResources";
 
-    @objid ("0d63d51a-a426-4ad6-9dd6-511b6b33dc28")
+    @objid ("b9e89f5c-cd4d-4315-9f69-d888c0e8d071")
     public static final String MEMORYPARTITION_INSTANCE_MEMORYPARTITION_INSTANCE_MEMORYSPACES = "MemoryPartition_Instance_memorySpaces";
 
-    @objid ("a8e4c393-b9df-4732-bb0d-bb4d863879a7")
+    @objid ("7dfef14a-f329-4649-b069-6f3b57ad9b90")
     public static final String MEMORYPARTITION_INSTANCE_MEMORYPARTITION_INSTANCE_FORK = "MemoryPartition_Instance_fork";
 
-    @objid ("51f3773e-4977-4ff6-a2ef-dacf039f7ee1")
+    @objid ("015343d0-20ec-4962-8ae6-6896a0fa1bc8")
     public static final String MEMORYPARTITION_INSTANCE_MEMORYPARTITION_INSTANCE_EXIT = "MemoryPartition_Instance_exit";
 
-    @objid ("9c8c6d5a-41ea-4d3e-a4e8-d1f43ab7f469")
+    @objid ("b593b78f-5a5d-4323-a567-a6af50c03c2c")
     public static final String MEMORYPARTITION_LIFELINE_MEMORYPARTITION_LIFELINE_CONCURRENTRESOURCES = "MemoryPartition_Lifeline_concurrentResources";
 
-    @objid ("8ca6dc2f-8acd-4bf8-a9df-ffd097bd42ef")
+    @objid ("c4bd630b-c052-43e6-8c56-2d1d17c4ea78")
     public static final String MEMORYPARTITION_LIFELINE_MEMORYPARTITION_LIFELINE_MEMORYSPACES = "MemoryPartition_Lifeline_memorySpaces";
 
-    @objid ("e7d2be89-b04c-4373-a4ee-07f84daebd3c")
+    @objid ("c18c1f29-a3cf-4d27-80c2-d3ead2c91866")
     public static final String MEMORYPARTITION_LIFELINE_MEMORYPARTITION_LIFELINE_FORK = "MemoryPartition_Lifeline_fork";
 
-    @objid ("bacf939f-d836-474a-bf4e-6e919867af1c")
+    @objid ("87780d10-ebee-41ed-9640-292038668101")
     public static final String MEMORYPARTITION_LIFELINE_MEMORYPARTITION_LIFELINE_EXIT = "MemoryPartition_Lifeline_exit";
 
-    @objid ("5e42163a-6b25-42bd-ae4c-d4fe2b403f98")
+    @objid ("a4886ae5-84ec-415b-afac-b0edcc29d6d4")
     public static final String MEMORYPARTITION_LINK_MEMORYPARTITION_LINK_CONCURRENTRESOURCES = "MemoryPartition_Link_concurrentResources";
 
-    @objid ("c5010695-999e-471c-b284-dcc430e83fff")
+    @objid ("8f2e9123-9bfe-4edc-8bdf-82dfe05150ac")
     public static final String MEMORYPARTITION_LINK_MEMORYPARTITION_LINK_MEMORYSPACES = "MemoryPartition_Link_memorySpaces";
 
-    @objid ("18dd1b66-967b-4c70-90f2-a980bdf7c1c6")
+    @objid ("b125f92d-e290-4d35-8992-6b2db55df343")
     public static final String MEMORYPARTITION_LINK_MEMORYPARTITION_LINK_FORK = "MemoryPartition_Link_fork";
 
-    @objid ("a846e4be-b8f8-4ec7-b973-bb17724bd0c6")
+    @objid ("a5d74a1c-d5b0-4843-a7c5-9a8e95d3f21a")
     public static final String MEMORYPARTITION_LINK_MEMORYPARTITION_LINK_EXIT = "MemoryPartition_Link_exit";
 
-    @objid ("c2de8a57-28d8-40a8-8283-e065809ad0c7")
+    @objid ("741c3c30-ebc9-4d6b-9444-635c8e298223")
     public static final String MEMORYPARTITION_PARAMETER_MEMORYPARTITION_PARAMETER_CONCURRENTRESOURCES = "MemoryPartition_Parameter_concurrentResources";
 
-    @objid ("7a109bc9-0b2a-489b-bf86-527213d8f8e5")
+    @objid ("043c9c4e-d7e8-453d-9d61-40512ef578d2")
     public static final String MEMORYPARTITION_PARAMETER_MEMORYPARTITION_PARAMETER_MEMORYSPACES = "MemoryPartition_Parameter_memorySpaces";
 
-    @objid ("009605f2-d5fa-4ccf-a7dc-6d466c94a499")
+    @objid ("5aeef804-cc50-4cfc-9a20-91a453bb7555")
     public static final String MEMORYPARTITION_PARAMETER_MEMORYPARTITION_PARAMETER_FORK = "MemoryPartition_Parameter_fork";
 
-    @objid ("5254005f-4348-4faf-81ba-876330fab6ba")
+    @objid ("104109d6-658f-47cd-8279-06f0e08bbb42")
     public static final String MEMORYPARTITION_PARAMETER_MEMORYPARTITION_PARAMETER_EXIT = "MemoryPartition_Parameter_exit";
 
-    @objid ("7e689340-1696-4bfe-910e-ff877b391072")
+    @objid ("a89e9673-9db0-4e91-897b-16a47c5c519f")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_TYPE = "SwConcurrentResource_Association_type";
 
-    @objid ("078d0f65-f4f1-40dc-9695-cbaef60a9e04")
+    @objid ("1628aa2e-85c1-4812-b338-5941a533d0d9")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_ACTIVATIONCAPACITY = "SwConcurrentResource_Association_activationCapacity";
 
-    @objid ("82892b66-c749-41e6-8164-dbb657e8fa36")
+    @objid ("1ea66a46-4b99-4e1e-8e1b-2cc9ce3fc4a0")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_ENTRYPOINTS = "SwConcurrentResource_Association_entryPoints";
 
-    @objid ("a57a7340-a85a-44db-b8aa-aa7093458eae")
+    @objid ("5041f93b-0e86-48bb-927d-490dd0149dfa")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_ADRESSSPACE = "SwConcurrentResource_Association_adressSpace";
 
-    @objid ("97a38f21-13a5-43fb-8832-5d77980db455")
+    @objid ("9b58114b-9aec-44fe-8d92-38b583e5bf3e")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_PERIODELEMENTS = "SwConcurrentResource_Association_periodElements";
 
-    @objid ("c90b384c-406d-4ae2-a3b2-8b23eb34ae59")
+    @objid ("89d2b626-f691-4947-858d-c47d2dbcc307")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_PRIORITYELEMENTS = "SwConcurrentResource_Association_priorityElements";
 
-    @objid ("a51962f9-6cdf-40d3-9b8a-c9010305d7f9")
+    @objid ("43085713-6865-4350-b3c3-97044ee716f8")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_STACKSIZEELEMENTS = "SwConcurrentResource_Association_stackSizeElements";
 
-    @objid ("3e75dcd3-adc8-429a-b250-fa8936fd7cfe")
+    @objid ("03400a0c-29d7-41a5-8d28-249934c81674")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_ACTIVATESERVICES = "SwConcurrentResource_Association_activateServices";
 
-    @objid ("41cb1495-58cc-45de-a9b6-9855be966773")
+    @objid ("d330c6ff-1341-439c-ac07-fdeb9de25cd0")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Association_enableConcurrencyServices";
 
-    @objid ("7189eb9b-e14f-4f76-8661-69f07229e752")
+    @objid ("47c36468-8605-4b8c-9cd6-9cdbac17c13f")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_RESUMESERVICES = "SwConcurrentResource_Association_resumeServices";
 
-    @objid ("c6ca1859-b7e0-472f-97e0-a8f439a8ae57")
+    @objid ("d055ef49-a72f-44c0-9a5c-94c1d4526a2a")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_SUSPENDSERVICES = "SwConcurrentResource_Association_suspendServices";
 
-    @objid ("a183fbf1-0d77-4d47-8c65-d3da6e8d200f")
+    @objid ("e739712c-5d33-4544-8ab8-a2c86a561a39")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_TERMINATESERVICES = "SwConcurrentResource_Association_terminateServices";
 
-    @objid ("337f64d5-137e-4925-b096-b14ffa04b1c8")
+    @objid ("8df7e455-b6bd-41ac-8658-85632e9c2ed6")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Association_disableConcurrencyServices";
 
-    @objid ("8cb3f974-6c8a-4b4b-8995-aef2d3500ec4")
+    @objid ("dc0890a9-2acf-4d22-a719-337eafa77da2")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_SHAREDATARESOURCES = "SwConcurrentResource_Association_shareDataResources";
 
-    @objid ("cb01f9e8-96fa-43de-996c-a1eb83f58ca0")
+    @objid ("28164ca7-fb39-44ea-8c9c-85fbf1b30353")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_MESSAGERESOURCES = "SwConcurrentResource_Association_messageResources";
 
-    @objid ("83823b1f-6fdf-4b6a-87cd-5aef6cec7829")
+    @objid ("a4917da8-e068-4994-841e-13d34f740232")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Association_mutualExclusionResources";
 
-    @objid ("75271c50-fe4f-4b8c-8475-f3c6c18b2255")
+    @objid ("f0b7a294-ed98-4f5d-a969-7e6235cb64e0")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCES = "SwConcurrentResource_Association_notificationResources";
 
-    @objid ("62914c60-d4d9-48f4-8486-9005d6569119")
+    @objid ("2a83cc6e-04e4-4419-800c-cec321f8dd66")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATION_SWCONCURRENTRESOURCE_ASSOCIATION_HEAPSIZEELEMENTS = "SwConcurrentResource_Association_heapSizeElements";
 
-    @objid ("edc19099-c0c3-4924-a1c4-686cbe403549")
+    @objid ("96771a3f-3ec0-48bd-9a95-ac9f35187369")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_TYPE = "SwConcurrentResource_AssociationEnd_type";
 
-    @objid ("f1c3acf2-ff88-4a64-92a1-8d6a5215046b")
+    @objid ("a8860a88-67f0-45bc-a9ed-0c274b4e5980")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_ACTIVATIONCAPACITY = "SwConcurrentResource_AssociationEnd_activationCapacity";
 
-    @objid ("0c32e12a-8fdf-4208-b16f-7603c7d9cd26")
+    @objid ("571d415f-82f0-4942-aa00-9cbe7d52d10c")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_ENTRYPOINTS = "SwConcurrentResource_AssociationEnd_entryPoints";
 
-    @objid ("e2872186-2574-4e2e-a058-59308a49b792")
+    @objid ("c9c581df-a8fa-41c3-ab5c-851b7ebbea05")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_ADRESSSPACE = "SwConcurrentResource_AssociationEnd_adressSpace";
 
-    @objid ("e05ba3c7-a2c4-40ea-93b4-4080178839b1")
+    @objid ("57591c9d-31df-4545-908d-8d561db6e53b")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_PERIODELEMENTS = "SwConcurrentResource_AssociationEnd_periodElements";
 
-    @objid ("025d7140-0c37-4dec-930d-ccfac8c62480")
+    @objid ("0b804d3a-373d-46f8-bb9e-b289e0b0056d")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_PRIORITYELEMENTS = "SwConcurrentResource_AssociationEnd_priorityElements";
 
-    @objid ("21a59278-c0ca-4588-81ad-26828c69ac2c")
+    @objid ("a847f9d3-137d-40cc-b2c5-c76dd1ffe07f")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_STACKSIZEELEMENTS = "SwConcurrentResource_AssociationEnd_stackSizeElements";
 
-    @objid ("93a8360d-6e19-463b-847a-958c2c8326b7")
+    @objid ("69576ddd-b631-478e-8af1-0ff9867093e7")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_ACTIVATESERVICES = "SwConcurrentResource_AssociationEnd_activateServices";
 
-    @objid ("80fef51e-3bef-43fc-bd5a-de8e9f0e5562")
+    @objid ("a89e3d51-86dd-4bad-acc2-b94b77648ed6")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_AssociationEnd_enableConcurrencyServices";
 
-    @objid ("58bfe0d2-aa26-43fb-bc91-1baca02ff8a6")
+    @objid ("8d53d50d-e21d-4f96-a88d-158c2289b5d8")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_RESUMESERVICES = "SwConcurrentResource_AssociationEnd_resumeServices";
 
-    @objid ("337700c6-bf7d-4572-b5dc-7b9b63974e5d")
+    @objid ("1333daf3-6012-4ac2-98b2-7eef17076ad4")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_SUSPENDSERVICES = "SwConcurrentResource_AssociationEnd_suspendServices";
 
-    @objid ("f07733c2-d3db-474c-a4b0-662d02f8bc15")
+    @objid ("6ff8c6a3-208d-441a-88dd-83b82eaabe61")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_TERMINATESERVICES = "SwConcurrentResource_AssociationEnd_terminateServices";
 
-    @objid ("b3887aad-25f3-4eb6-8180-5139ed353ea8")
+    @objid ("5b7ddfc0-111a-49b0-966c-8e068d16828d")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_AssociationEnd_disableConcurrencyServices";
 
-    @objid ("05e53a34-5ec5-4e67-b40f-7610e8633105")
+    @objid ("a5379f7c-7c40-496c-87a5-708392a6dab5")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_SHAREDATARESOURCES = "SwConcurrentResource_AssociationEnd_shareDataResources";
 
-    @objid ("857a2526-22f7-446a-b2fd-1dd3f52cdf2e")
+    @objid ("fbffbf00-9d9c-40af-8ac2-4564f80ad449")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_MESSAGERESOURCES = "SwConcurrentResource_AssociationEnd_messageResources";
 
-    @objid ("c2cbe174-2267-445b-9413-eb23eecdbc5f")
+    @objid ("82ee5c94-c6bd-4b80-877c-9e3a72010e9f")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_AssociationEnd_mutualExclusionResources";
 
-    @objid ("a5661b2e-37b8-4f7b-82c2-1852077a9f22")
+    @objid ("10e915e0-f2df-4b53-8071-74b16ab2d316")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCES = "SwConcurrentResource_AssociationEnd_notificationResources";
 
-    @objid ("66ed873c-af78-43f2-90fd-b85248ec3690")
+    @objid ("96148c97-3039-4cb8-af9c-b4088ad79e7a")
     public static final String SWCONCURRENTRESOURCE_ASSOCIATIONEND_SWCONCURRENTRESOURCE_ASSOCIATIONEND_HEAPSIZEELEMENTS = "SwConcurrentResource_AssociationEnd_heapSizeElements";
 
-    @objid ("dbf501bc-359c-4d49-97ae-6166e92fb631")
+    @objid ("4007def8-fdad-46b1-9166-fc976d0d14fd")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_TYPE = "SwConcurrentResource_Attribute_type";
 
-    @objid ("8129eed6-8c3b-4667-9143-4092e07d8faa")
+    @objid ("8e2085a1-78ae-4827-b528-34641241777c")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_ACTIVATIONCAPACITY = "SwConcurrentResource_Attribute_activationCapacity";
 
-    @objid ("75d4d85c-d8d5-4ef1-b114-e692d3cfcd3f")
+    @objid ("7a7f75d0-6ea8-4565-ab6d-b7fcb5c06bc3")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_ENTRYPOINTS = "SwConcurrentResource_Attribute_entryPoints";
 
-    @objid ("e99da158-4425-4603-af4b-736a6279c932")
+    @objid ("e154994a-5b54-477e-b428-9064cfde9656")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_ADRESSSPACE = "SwConcurrentResource_Attribute_adressSpace";
 
-    @objid ("af65af89-53fc-4cae-bc90-04a156535105")
+    @objid ("2621e0b8-68a6-4122-8936-d326827b4790")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_PERIODELEMENTS = "SwConcurrentResource_Attribute_periodElements";
 
-    @objid ("158206aa-a7ae-49b1-b876-455a7c3eca5d")
+    @objid ("ff43152c-9c4e-430c-9caa-92f36c8dac38")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_PRIORITYELEMENTS = "SwConcurrentResource_Attribute_priorityElements";
 
-    @objid ("37e02fbe-939b-4060-8a97-fabaa75e5eec")
+    @objid ("e29381f4-709e-4cb6-9829-d4867580eaea")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_STACKSIZEELEMENTS = "SwConcurrentResource_Attribute_stackSizeElements";
 
-    @objid ("86b5e4f5-d9f9-4b7a-9ae6-fe77a9be47d9")
+    @objid ("960b2f01-23ed-4809-b7ef-c27dd60cfc31")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_ACTIVATESERVICES = "SwConcurrentResource_Attribute_activateServices";
 
-    @objid ("b7bf78ab-831d-4c40-9e15-56dd9dba0328")
+    @objid ("998f649f-80e1-4404-9063-742c16d23a01")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Attribute_enableConcurrencyServices";
 
-    @objid ("9c659132-1a2b-4b10-b3fd-8cf0b19cfa6e")
+    @objid ("3428c629-c6db-4ca9-a794-6f9ee30ec126")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_RESUMESERVICES = "SwConcurrentResource_Attribute_resumeServices";
 
-    @objid ("5d6e5d92-4038-47f2-a8be-43bddf13117a")
+    @objid ("4f2172cd-dbe4-4e49-9034-42343b5d2d28")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_SUSPENDSERVICES = "SwConcurrentResource_Attribute_suspendServices";
 
-    @objid ("66f52489-84ef-4f70-81f5-5673eaac1729")
+    @objid ("64d38715-d844-435a-8603-c3b2ab6b89d3")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_TERMINATESERVICES = "SwConcurrentResource_Attribute_terminateServices";
 
-    @objid ("34a87541-e92f-491f-b733-c2f442b8190d")
+    @objid ("ca6d4b41-40a7-4093-b67f-2f0f438f92d2")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Attribute_disableConcurrencyServices";
 
-    @objid ("bb58f7fb-b8c1-41e4-810f-16c11961a941")
+    @objid ("197881f3-7d21-4f19-8346-7b9c0451b597")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_SHAREDATARESOURCES = "SwConcurrentResource_Attribute_shareDataResources";
 
-    @objid ("bdd3a689-0976-4f5a-adf3-0297a434a42d")
+    @objid ("e6fb776f-38bc-45ff-8e5f-4eabd027fa0b")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_MESSAGERESOURCES = "SwConcurrentResource_Attribute_messageResources";
 
-    @objid ("b2b2f5e8-f044-41c7-84d0-e3ffeabd2d0e")
+    @objid ("fa1b9773-2514-4b75-a3fa-0961627e87ce")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Attribute_mutualExclusionResources";
 
-    @objid ("24b65bc9-bbaa-4bfb-ad98-8c1ea1cc6ab5")
+    @objid ("6145eb45-47b1-4e0f-b692-a9eb881dbc65")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCES = "SwConcurrentResource_Attribute_notificationResources";
 
-    @objid ("a22d81ef-cb3e-4ccf-a4fe-462a04b372c1")
+    @objid ("03878077-21cd-4041-9bee-199a9997558f")
     public static final String SWCONCURRENTRESOURCE_ATTRIBUTE_SWCONCURRENTRESOURCE_ATTRIBUTE_HEAPSIZEELEMENTS = "SwConcurrentResource_Attribute_heapSizeElements";
 
-    @objid ("93142114-f12d-4002-bd36-34574b8e39bb")
+    @objid ("aa515695-5ae1-4676-a8e7-f3060d771614")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_TYPE = "SwConcurrentResource_Classifier_type";
 
-    @objid ("57f20c8b-a742-42ee-9e01-25ce6ec3ce06")
+    @objid ("ae527fd5-e2c0-4851-9b6c-ac94b336584d")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATIONCAPACITY = "SwConcurrentResource_Classifier_activationCapacity";
 
-    @objid ("52443eb8-30d1-4fc1-ac23-5bc1923a17af")
+    @objid ("50659511-f7c5-412c-93b0-078ed9767d72")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_ENTRYPOINTS = "SwConcurrentResource_Classifier_entryPoints";
 
-    @objid ("effd1bd3-a72e-429b-b80d-a5ac39341197")
+    @objid ("832c1192-2ef3-49e0-821f-0bef49c065fb")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_ADRESSSPACE = "SwConcurrentResource_Classifier_adressSpace";
 
-    @objid ("fc949880-3fc3-41f1-b22a-f46e6d886199")
+    @objid ("e005c848-af25-4fe4-ab03-081b5a645916")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_PERIODELEMENTS = "SwConcurrentResource_Classifier_periodElements";
 
-    @objid ("9955400b-b467-4cf9-97d8-ea4f4d0426e0")
+    @objid ("f773ed5e-eced-403b-ae03-77d5fd959798")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_PRIORITYELEMENTS = "SwConcurrentResource_Classifier_priorityElements";
 
-    @objid ("63b813af-be4d-4f29-ac74-45813f9d52bd")
+    @objid ("83f19168-ead4-4d3f-9c5d-ff757e6d0299")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_STACKSIZEELEMENTS = "SwConcurrentResource_Classifier_stackSizeElements";
 
-    @objid ("979e21c6-46ef-48dd-8184-f9ebd81b3c8a")
+    @objid ("2470fa48-1f87-4475-8a7d-22fd0a6ff0b1")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATESERVICES = "SwConcurrentResource_Classifier_activateServices";
 
-    @objid ("eefd567d-84af-49cd-b4f1-2e9ea2a88ded")
+    @objid ("deea3590-cc62-4ce3-b7fe-bb6b11d86d1a")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Classifier_enableConcurrencyServices";
 
-    @objid ("9bb5e332-b935-4094-b1e2-17a08b3581da")
+    @objid ("a02d20bc-9ec7-4609-bd53-12d35e275375")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_RESUMESERVICES = "SwConcurrentResource_Classifier_resumeServices";
 
-    @objid ("45d249f3-7680-4e3f-aeb4-50a73fcaaa6a")
+    @objid ("f4a02977-0df4-4e48-bda4-daa064eafc4e")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_SUSPENDSERVICES = "SwConcurrentResource_Classifier_suspendServices";
 
-    @objid ("c8152d9f-43ce-48d8-9c53-f06a52b7f916")
+    @objid ("be4cdfd1-e9a9-4c00-9071-0eaddd2339a5")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_TERMINATESERVICES = "SwConcurrentResource_Classifier_terminateServices";
 
-    @objid ("ebbba34f-ca4b-4b0f-ac90-239cc4a03d55")
+    @objid ("c41d2122-e52e-46f8-be3a-ba4947518270")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Classifier_disableConcurrencyServices";
 
-    @objid ("ba7b3e17-7a47-45ba-a3c7-309e87fd692b")
+    @objid ("4785cccc-fcf1-4c5a-bc15-efcc22563077")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_SHAREDATARESOURCES = "SwConcurrentResource_Classifier_shareDataResources";
 
-    @objid ("a817db66-5e1f-408d-b7db-ed065a0b2fb4")
+    @objid ("fad489be-5eb1-40c1-94aa-041000dbb2a0")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_MESSAGERESOURCES = "SwConcurrentResource_Classifier_messageResources";
 
-    @objid ("60bd39c5-390b-4c2c-9b3d-43a0e7cbdcb3")
+    @objid ("0ca31859-2f3a-4062-b8df-024b965d050d")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Classifier_mutualExclusionResources";
 
-    @objid ("edcc3b10-425e-4766-8d57-c7f1489edb04")
+    @objid ("5932a5ce-2fd0-4a74-80eb-3c722e93ec29")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCES = "SwConcurrentResource_Classifier_notificationResources";
 
-    @objid ("75c037d3-32e1-442b-8f86-6d9d54ce0f83")
+    @objid ("7aa0c529-e7a5-4fe9-a04d-241d18013265")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SWCONCURRENTRESOURCE_CLASSIFIER_HEAPSIZEELEMENTS = "SwConcurrentResource_Classifier_heapSizeElements";
 
-    @objid ("40c6574a-329e-42a0-b89f-91ad5b58febf")
+    @objid ("0d9cf47f-d3a3-48c0-a42d-e93ee5c34f2d")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_TYPE = "SwConcurrentResource_Instance_type";
 
-    @objid ("acbf5394-fb28-4554-86f6-bf72f04d8bc8")
+    @objid ("889eafd4-e575-4fd7-a2cc-359d5c016022")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_ACTIVATIONCAPACITY = "SwConcurrentResource_Instance_activationCapacity";
 
-    @objid ("2c8ed071-3be5-4106-be4c-b5a9c14a9fac")
+    @objid ("ceb504e5-db8f-447d-b805-0cc7ad5d3333")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_ENTRYPOINTS = "SwConcurrentResource_Instance_entryPoints";
 
-    @objid ("b206ee0f-a058-460c-8e9b-a9d4fc06e44d")
+    @objid ("71fa0a1c-a83c-48ec-849a-6ea0a67e3b6b")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_ADRESSSPACE = "SwConcurrentResource_Instance_adressSpace";
 
-    @objid ("19711063-7ac1-444e-972d-5ccb76aa0bb1")
+    @objid ("f968f0ce-f17f-4b12-b9f5-ecd600e96444")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_PERIODELEMENTS = "SwConcurrentResource_Instance_periodElements";
 
-    @objid ("a33ade40-d5bc-46cd-9275-12eb3152e2ea")
+    @objid ("ebd1e54c-cba3-4d84-a7bc-75aba4fc4184")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_PRIORITYELEMENTS = "SwConcurrentResource_Instance_priorityElements";
 
-    @objid ("ce5a0d9c-8bba-42e5-9324-4022c3312fe8")
+    @objid ("011f6406-be17-4a6a-9705-f3479a42d6cb")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_STACKSIZEELEMENTS = "SwConcurrentResource_Instance_stackSizeElements";
 
-    @objid ("4eb02820-5baa-4bf1-ab21-1bdeae32911c")
+    @objid ("9f6d0375-1828-42f9-bf6b-b46fd86c728e")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_ACTIVATESERVICES = "SwConcurrentResource_Instance_activateServices";
 
-    @objid ("f72b5f63-ef7c-48f0-b697-77131482dd81")
+    @objid ("69a91f04-a6a0-4a5c-9013-81d1ae370dde")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Instance_enableConcurrencyServices";
 
-    @objid ("5b0d40a6-3d54-4949-8fd6-d087108ed37a")
+    @objid ("e5ab1477-0cc7-466b-81f4-64713769660e")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_RESUMESERVICES = "SwConcurrentResource_Instance_resumeServices";
 
-    @objid ("c2bd2de7-3225-412b-8d9e-3a9dedab2586")
+    @objid ("4834ebcc-6596-40fc-a08b-769b692f9ab0")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_SUSPENDSERVICES = "SwConcurrentResource_Instance_suspendServices";
 
-    @objid ("63cef737-9108-4541-85e1-e8d49dc3ace1")
+    @objid ("22fb284c-87c6-4cf9-bae0-bdbab67a38b2")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_TERMINATESERVICES = "SwConcurrentResource_Instance_terminateServices";
 
-    @objid ("ecf9103f-fca1-4d28-9eea-633f72bd7121")
+    @objid ("0681e223-645d-480a-a284-31ae39cb9913")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Instance_disableConcurrencyServices";
 
-    @objid ("340c2e44-09b0-47df-8e0d-acaea837da71")
+    @objid ("08ef5908-68f9-4d06-9ddc-e0f64c77bf48")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_SHAREDATARESOURCES = "SwConcurrentResource_Instance_shareDataResources";
 
-    @objid ("712a3211-bf2b-4ff8-9b44-3402b11bbd49")
+    @objid ("10c79341-1aa3-42f8-98bd-1ffa19a1d44d")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_MESSAGERESOURCES = "SwConcurrentResource_Instance_messageResources";
 
-    @objid ("56e4a842-38aa-4ec0-af65-7e5c371a8ee8")
+    @objid ("b4ea3127-6262-466f-af48-57b3b8a1a557")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Instance_mutualExclusionResources";
 
-    @objid ("61b1461a-a00d-4d8f-b224-81efff025225")
+    @objid ("f51e4d30-689f-4885-9979-06675fb40fac")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_NOTIFICATIONRESOURCES = "SwConcurrentResource_Instance_notificationResources";
 
-    @objid ("12e7cf0a-11e4-4cfe-9751-a0c275295edf")
+    @objid ("b162a497-a478-4240-a46b-e4616db1b311")
     public static final String SWCONCURRENTRESOURCE_INSTANCE_SWCONCURRENTRESOURCE_INSTANCE_HEAPSIZEELEMENTS = "SwConcurrentResource_Instance_heapSizeElements";
 
-    @objid ("abdb7b5f-c46e-46ae-b139-2419d553b380")
+    @objid ("4bb63d91-bf96-4bf2-853d-0c4dcfb2fa46")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_TYPE = "SwConcurrentResource_Lifeline_type";
 
-    @objid ("cd445eab-f144-4118-86f3-4bbd5c4cebc0")
+    @objid ("e93bc386-a2f1-4ad6-8b51-fdf22051bcef")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_ACTIVATIONCAPACITY = "SwConcurrentResource_Lifeline_activationCapacity";
 
-    @objid ("ad66d8dc-7d69-4c51-8179-f8b8738681e8")
+    @objid ("aaa78084-c43b-4e96-8d11-861e84985072")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_ENTRYPOINTS = "SwConcurrentResource_Lifeline_entryPoints";
 
-    @objid ("ff1329a0-fef6-4a9a-bad0-45e6de559440")
+    @objid ("33a8ddbd-9994-491c-8772-b5e162b290d2")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_ADRESSSPACE = "SwConcurrentResource_Lifeline_adressSpace";
 
-    @objid ("8134d0ab-811d-4977-b094-46c42795171c")
+    @objid ("b26abc41-242a-4083-8851-5da5980054f7")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_PERIODELEMENTS = "SwConcurrentResource_Lifeline_periodElements";
 
-    @objid ("6bd8e9e7-5010-4124-b3d3-60fc773f5a1a")
+    @objid ("6bb11d57-bea4-46d7-a78a-c64c4c4be86c")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_PRIORITYELEMENTS = "SwConcurrentResource_Lifeline_priorityElements";
 
-    @objid ("9de923f9-ead3-4aa4-addf-212e10ed4ccf")
+    @objid ("f9dc4f89-35a3-4d1c-b7f4-6b3deae4bd18")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_STACKSIZEELEMENTS = "SwConcurrentResource_Lifeline_stackSizeElements";
 
-    @objid ("f161e86a-104a-4b1b-930c-4fba586fc52c")
+    @objid ("09071792-63ed-451e-9329-bc675a81c152")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_ACTIVATESERVICES = "SwConcurrentResource_Lifeline_activateServices";
 
-    @objid ("92050d0a-242f-41a4-ab16-57e814bece99")
+    @objid ("e6444c30-4f16-4398-a080-9aadfdeba70c")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Lifeline_enableConcurrencyServices";
 
-    @objid ("c6c57171-206e-4d66-9c60-35cc9107e4df")
+    @objid ("a9cc070e-c65d-4a7b-a5cb-cbc9bf000dc0")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_RESUMESERVICES = "SwConcurrentResource_Lifeline_resumeServices";
 
-    @objid ("4a2f7d13-ca48-4efa-89d0-05b97b35b37a")
+    @objid ("9680fc80-da25-4e85-a297-45ec9634f8fa")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_SUSPENDSERVICES = "SwConcurrentResource_Lifeline_suspendServices";
 
-    @objid ("80e4b029-71db-4231-9829-a67cdcbd1862")
+    @objid ("5967696b-720d-4d0e-aafd-7593e85e4453")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_TERMINATESERVICES = "SwConcurrentResource_Lifeline_terminateServices";
 
-    @objid ("5b2fab5b-559d-4160-aca0-f4f7500a4fa2")
+    @objid ("3dc92cc9-f59c-46d7-98d8-f1d860c760b0")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Lifeline_disableConcurrencyServices";
 
-    @objid ("e8db78d4-ef7a-4ef2-bcf6-efee31e21050")
+    @objid ("f7d9c0e5-9ed9-4ca8-a548-a8274ae44a9a")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_SHAREDATARESOURCES = "SwConcurrentResource_Lifeline_shareDataResources";
 
-    @objid ("b7940518-9b22-497b-a105-4b9d349db6e0")
+    @objid ("ef900b7b-99db-4c40-ae61-d2aaebde697e")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_MESSAGERESOURCES = "SwConcurrentResource_Lifeline_messageResources";
 
-    @objid ("affe99c7-2c36-45f7-91c5-6bd9b4e49c64")
+    @objid ("2914065e-4852-476d-94ab-4cf6bf103a06")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Lifeline_mutualExclusionResources";
 
-    @objid ("dfb496b7-222d-471a-a251-faa8e2b22637")
+    @objid ("74bd0f1b-ed2e-47c6-a13e-995508120d86")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_NOTIFICATIONRESOURCES = "SwConcurrentResource_Lifeline_notificationResources";
 
-    @objid ("bddd96cb-550c-4234-b194-30d0e6a7e123")
+    @objid ("5b22354c-375f-473f-9bcd-21895d5e8591")
     public static final String SWCONCURRENTRESOURCE_LIFELINE_SWCONCURRENTRESOURCE_LIFELINE_HEAPSIZEELEMENTS = "SwConcurrentResource_Lifeline_heapSizeElements";
 
-    @objid ("8b5a72f8-4e1d-40ab-8759-4fc04cc1f0a9")
+    @objid ("c8dd8178-d1b1-49b3-b32f-6ed39bb116a4")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_TYPE = "SwConcurrentResource_Link_type";
 
-    @objid ("99c9685e-0721-42a2-ba4c-cd19e876572a")
+    @objid ("f280793b-2937-4d48-a229-58596910778c")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_ACTIVATIONCAPACITY = "SwConcurrentResource_Link_activationCapacity";
 
-    @objid ("8c255637-3759-490b-ab17-80590b6b34da")
+    @objid ("53f54a6b-be6d-4d8a-8049-ec67deafd392")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_ENTRYPOINTS = "SwConcurrentResource_Link_entryPoints";
 
-    @objid ("f9a19253-da55-4745-8357-75a497806069")
+    @objid ("51bdf316-3dd0-4a5e-8b3f-2a592c8b8bf0")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_ADRESSSPACE = "SwConcurrentResource_Link_adressSpace";
 
-    @objid ("ff6ce01a-7ea4-460c-b971-5feed47be9e7")
+    @objid ("9efe1628-16a8-4ebb-8f37-da7bd42a6e00")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_PERIODELEMENTS = "SwConcurrentResource_Link_periodElements";
 
-    @objid ("4ff7151e-8d75-4cce-a81c-9226f24f863e")
+    @objid ("a313dce2-213b-4962-9a4c-ce3d022ea7ae")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_PRIORITYELEMENTS = "SwConcurrentResource_Link_priorityElements";
 
-    @objid ("cdaa2dbb-1825-47c6-9c6a-6c160b54fbde")
+    @objid ("4596a857-7779-4135-8357-bbdb1e26db78")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_STACKSIZEELEMENTS = "SwConcurrentResource_Link_stackSizeElements";
 
-    @objid ("ceaad7ec-9582-489f-aa2e-0fe1e154eee9")
+    @objid ("f950d3e1-55ed-4e9b-91ed-302a2881475d")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_ACTIVATESERVICES = "SwConcurrentResource_Link_activateServices";
 
-    @objid ("b7b97aff-86be-4450-b5a4-dfb91f3addc9")
+    @objid ("6c2aa20f-193a-4b20-8a7f-8346170df6fc")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Link_enableConcurrencyServices";
 
-    @objid ("a405d88b-5b55-42cf-a1a0-cc94947c90e8")
+    @objid ("ddfdab68-b83e-4b0b-8efa-9ccdee41f253")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_RESUMESERVICES = "SwConcurrentResource_Link_resumeServices";
 
-    @objid ("419c24f8-46db-4106-b0bc-d95d877dd491")
+    @objid ("a362efdb-fdb0-4522-aa2d-a0ed04c22b1a")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_SUSPENDSERVICES = "SwConcurrentResource_Link_suspendServices";
 
-    @objid ("0bb2bdf0-cd78-4c0b-9fd5-33252eba172e")
+    @objid ("f37baa34-ab06-41b2-81bb-f5338b4a1bc9")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_TERMINATESERVICES = "SwConcurrentResource_Link_terminateServices";
 
-    @objid ("79ba756d-b426-4581-8e75-196f5a022094")
+    @objid ("049da581-5dd1-4aa8-9ef9-7a8882982240")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Link_disableConcurrencyServices";
 
-    @objid ("893cfb3e-5c58-43a3-a0c1-c2acb416b30e")
+    @objid ("01cdfbc1-f652-404e-82a3-94c355bd40b3")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_SHAREDATARESOURCES = "SwConcurrentResource_Link_shareDataResources";
 
-    @objid ("a0ba9979-2249-45bc-a526-54cc5c664f29")
+    @objid ("55fbc004-f614-4f86-bf01-d987e21edc66")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_MESSAGERESOURCES = "SwConcurrentResource_Link_messageResources";
 
-    @objid ("a81cde59-e7b8-4bed-a2c9-61672daf4d53")
+    @objid ("1fec84e2-16a4-41ac-b9e1-4d4499b570a0")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Link_mutualExclusionResources";
 
-    @objid ("0082411e-0dde-4100-a00e-898d1fd446b6")
+    @objid ("559ad37f-04e5-4b1a-a8af-884e36e06073")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_NOTIFICATIONRESOURCES = "SwConcurrentResource_Link_notificationResources";
 
-    @objid ("4bdf9672-723a-4de0-892b-0fd347c2d418")
+    @objid ("65909f88-8f1b-449d-bebb-0ea72eedec60")
     public static final String SWCONCURRENTRESOURCE_LINK_SWCONCURRENTRESOURCE_LINK_HEAPSIZEELEMENTS = "SwConcurrentResource_Link_heapSizeElements";
 
-    @objid ("0a2db0bf-4286-4168-b126-27339fead2b2")
+    @objid ("99c0f229-0a41-4265-8fba-2216adbb1ab8")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_TYPE = "SwConcurrentResource_Parameter_type";
 
-    @objid ("61ebb880-3d82-4b48-b623-6282017108c3")
+    @objid ("f7bac556-fbff-44f4-998d-8a47bc473a06")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_ACTIVATIONCAPACITY = "SwConcurrentResource_Parameter_activationCapacity";
 
-    @objid ("b2cb467a-c489-4f87-bfe4-edcfaadea1d6")
+    @objid ("7c2fc997-6e54-4562-af4e-1c462507638c")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_ENTRYPOINTS = "SwConcurrentResource_Parameter_entryPoints";
 
-    @objid ("b5938d68-bf72-4b6d-8947-2ca220fc82e1")
+    @objid ("984cd400-f8ff-4c83-9c14-bca4c96e2952")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_ADRESSSPACE = "SwConcurrentResource_Parameter_adressSpace";
 
-    @objid ("094fe46c-90db-42c4-9a5f-360c7ecf6ef5")
+    @objid ("06cb8e0b-465a-44e0-a8b1-e1ea7af9e31f")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_PERIODELEMENTS = "SwConcurrentResource_Parameter_periodElements";
 
-    @objid ("ffb962a4-387b-41a2-b317-7f9bc317d1e4")
+    @objid ("76644f14-eb65-4412-8c2d-1d30727d8e2a")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_PRIORITYELEMENTS = "SwConcurrentResource_Parameter_priorityElements";
 
-    @objid ("dc64c5e0-cc2d-43f0-8136-1ce337d5be3b")
+    @objid ("a1b6db0c-014b-4d14-8435-d15763cfbe10")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_STACKSIZEELEMENTS = "SwConcurrentResource_Parameter_stackSizeElements";
 
-    @objid ("e3c536d2-2a17-4957-8300-f7d8dd0f43ad")
+    @objid ("919a76dc-f1de-4b55-ac7f-d14224184fe9")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_ACTIVATESERVICES = "SwConcurrentResource_Parameter_activateServices";
 
-    @objid ("cd568d6f-36dc-4883-8c1d-c02f13780e1a")
+    @objid ("6cc505bf-3c63-41e2-b3eb-897d5daa8fad")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_ENABLECONCURRENCYSERVICES = "SwConcurrentResource_Parameter_enableConcurrencyServices";
 
-    @objid ("5c3e644b-7dcb-4c44-ba92-559714c90b02")
+    @objid ("ec75b024-da1a-470f-9ad5-02eb3b6fecd3")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_RESUMESERVICES = "SwConcurrentResource_Parameter_resumeServices";
 
-    @objid ("a3311c80-0bdb-4a8b-9f5c-87aa5a25b36d")
+    @objid ("c434f08c-8c64-4fd5-8086-fb4d2c5afd6a")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_SUSPENDSERVICES = "SwConcurrentResource_Parameter_suspendServices";
 
-    @objid ("2aaa5b04-2a5d-4b4a-906c-859268319232")
+    @objid ("ab709089-c8f1-4a25-99a5-9b941883e858")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_TERMINATESERVICES = "SwConcurrentResource_Parameter_terminateServices";
 
-    @objid ("f5d8d7b1-40a4-4816-b544-3ba2ea51edbd")
+    @objid ("d74575e6-b022-44a8-9020-b4a09bafdaa8")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_DISABLECONCURRENCYSERVICES = "SwConcurrentResource_Parameter_disableConcurrencyServices";
 
-    @objid ("19b3af26-648b-4d46-8df2-a1517a60b058")
+    @objid ("1175c802-43f4-4586-be19-66f33c25cde6")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_SHAREDATARESOURCES = "SwConcurrentResource_Parameter_shareDataResources";
 
-    @objid ("c4d27045-5cb9-470a-857f-f3766a3e62ec")
+    @objid ("af182ee7-65b6-439e-85c8-5efc562e313e")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_MESSAGERESOURCES = "SwConcurrentResource_Parameter_messageResources";
 
-    @objid ("5f77f183-6a5d-435f-9e4c-1d22b4a5ec31")
+    @objid ("f9c68bb7-99e9-4631-9286-ee6883b2367e")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_MUTUALEXCLUSIONRESOURCES = "SwConcurrentResource_Parameter_mutualExclusionResources";
 
-    @objid ("baf01312-369a-4e42-b363-73102bc0335d")
+    @objid ("39ae7713-5b9b-4f5e-b6a8-dc36f638ce69")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_NOTIFICATIONRESOURCES = "SwConcurrentResource_Parameter_notificationResources";
 
-    @objid ("a7c76dd7-c5f0-4fd9-a406-14e2213dfc8e")
+    @objid ("023d4408-3a5b-4bfa-b54c-3a607948674c")
     public static final String SWCONCURRENTRESOURCE_PARAMETER_SWCONCURRENTRESOURCE_PARAMETER_HEAPSIZEELEMENTS = "SwConcurrentResource_Parameter_heapSizeElements";
 
-    @objid ("51f5599e-d640-41a0-8fba-abdc15b34733")
+    @objid ("10a61383-a3bb-4271-a6cc-ee00a976e74a")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Association_isStaticSchedulingFeature";
 
-    @objid ("670a850f-c6bc-49e5-83aa-36aaf1fd5991")
+    @objid ("db67c89e-8eb5-4b6f-b981-13ca8a3f12ad")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_ISPREEMPTABLE = "SwSchedulableResource_Association_isPreemptable";
 
-    @objid ("eb90f5c2-c099-4db1-b965-a579bb457161")
+    @objid ("980c0b98-27a1-4b57-bd38-c560edf1e2ba")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_SCHEDULERS = "SwSchedulableResource_Association_schedulers";
 
-    @objid ("74d74112-470b-414c-be08-3b0898343319")
+    @objid ("bb72703f-3ede-487d-8036-1e5fb64a5d37")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_DEADLINEELEMENTS = "SwSchedulableResource_Association_deadlineElements";
 
-    @objid ("7cb9400c-dbce-4f54-8d79-e16cf57e701f")
+    @objid ("087014ec-ee09-45d0-9a34-595aaa0f7c26")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_DEADLINETYPEELEMENTS = "SwSchedulableResource_Association_deadlineTypeElements";
 
-    @objid ("bf201ef8-bd71-4ceb-a903-9b9fb969aa41")
+    @objid ("e12d57e3-7aa5-434e-932f-8764ed894e91")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_TIMESLICEELEMENTS = "SwSchedulableResource_Association_timeSliceElements";
 
-    @objid ("caa3f398-7ceb-41d1-a0c1-0fde04bc4de6")
+    @objid ("2bf77244-331f-44de-9ed7-eb66d49e9eee")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_DELAYSERVICES = "SwSchedulableResource_Association_delayServices";
 
-    @objid ("254c2f73-78d7-41b7-a8d6-516d65ebfe0d")
+    @objid ("6d89cce9-7e37-4fb4-8614-be9b3e105479")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_JOINSERVICES = "SwSchedulableResource_Association_joinServices";
 
-    @objid ("8e7b73e4-f2ac-4371-92d7-3f2546de0b56")
+    @objid ("bf3e6a01-358e-4240-aad4-18d9e0e09023")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_YIELDSERVICES = "SwSchedulableResource_Association_yieldServices";
 
-    @objid ("33127e60-f66e-433c-acb9-64a82f4bc921")
+    @objid ("fe14e333-cf03-4c48-99f3-258c661a5ef6")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_SCHEDPARAMS = "SwSchedulableResource_Association_schedParams";
 
-    @objid ("4289664b-2abe-48e9-b0c0-1fff1c54cc35")
+    @objid ("085ae4b6-b763-4950-8b29-a4c58a6246a2")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_HOST = "SwSchedulableResource_Association_host";
 
-    @objid ("80aff74f-5fdb-4529-be96-e2935b8a87d4")
+    @objid ("08acea2d-2461-4b2c-985d-e385a17d1b7d")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATION_SWSCHEDULABLERESOURCE_ASSOCIATION_DEPENDENTSCHEDULER = "SwSchedulableResource_Association_dependentScheduler";
 
-    @objid ("caf0b8e9-3f8a-4fdb-8e3f-4eb43d7e66a2")
+    @objid ("9d2a6e6d-f597-47e6-bb13-072e66a86273")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_AssociationEnd_isStaticSchedulingFeature";
 
-    @objid ("ae63fa25-1076-4038-a3d9-ab646991c6a1")
+    @objid ("b1819a1a-fb31-4aa4-97ed-3f6fac39d079")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_ISPREEMPTABLE = "SwSchedulableResource_AssociationEnd_isPreemptable";
 
-    @objid ("5c3ae38b-3e1c-4aed-86f7-f02fe858809f")
+    @objid ("d66963d2-9c3b-4e1d-9599-3b030f818ccd")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDULERS = "SwSchedulableResource_AssociationEnd_schedulers";
 
-    @objid ("83d289fd-2f3e-423b-abeb-6233d869451b")
+    @objid ("7ce5eb86-bc6d-4878-8f49-27d3ec7bbccd")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_DEADLINEELEMENTS = "SwSchedulableResource_AssociationEnd_deadlineElements";
 
-    @objid ("2d704d63-b278-4c86-813a-c333373ea85d")
+    @objid ("00e43169-51dd-45a1-856a-f33d3cd420c6")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_DEADLINETYPEELEMENTS = "SwSchedulableResource_AssociationEnd_deadlineTypeElements";
 
-    @objid ("8a2f6c88-138f-4a71-ad09-ef25ef766505")
+    @objid ("62f7393a-be5c-4074-a7c0-4506c9e8ca7e")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_TIMESLICEELEMENTS = "SwSchedulableResource_AssociationEnd_timeSliceElements";
 
-    @objid ("4dcfe10f-aede-44c5-af6b-667f46329c87")
+    @objid ("9a6a71d0-7711-4d7b-ad52-fe7f3161f1c1")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_DELAYSERVICES = "SwSchedulableResource_AssociationEnd_delayServices";
 
-    @objid ("03fc8d42-6075-4499-8163-6004da7be6ec")
+    @objid ("74dca86a-3dd1-4979-85d8-5182cc356f82")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_JOINSERVICES = "SwSchedulableResource_AssociationEnd_joinServices";
 
-    @objid ("4c57d110-67f0-4eca-9f86-ee15d1c4078b")
+    @objid ("b75614c5-0e45-42f5-9563-5981acf36a63")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_YIELDSERVICES = "SwSchedulableResource_AssociationEnd_yieldServices";
 
-    @objid ("7b38e6b4-bd19-4921-89af-066ff71dfae1")
+    @objid ("0e10032e-6203-43ac-855f-ea2f186a9884")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SCHEDPARAMS = "SwSchedulableResource_AssociationEnd_schedParams";
 
-    @objid ("1c1cad9d-2449-4ae2-98fb-d379e1a80797")
+    @objid ("718b2f3d-72dc-46b8-9903-38ee67626394")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_HOST = "SwSchedulableResource_AssociationEnd_host";
 
-    @objid ("ae57fd07-0ef9-4bab-ba66-7882e687a164")
+    @objid ("71a4d63b-ab2f-4e5a-b9cb-11e6b4dffbf8")
     public static final String SWSCHEDULABLERESOURCE_ASSOCIATIONEND_SWSCHEDULABLERESOURCE_ASSOCIATIONEND_DEPENDENTSCHEDULER = "SwSchedulableResource_AssociationEnd_dependentScheduler";
 
-    @objid ("c90ac5e7-cf85-4897-9b14-7ba198f32e19")
+    @objid ("1b4d5fde-3a2e-4ceb-97ad-aa2b7aab6f33")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Attribute_isStaticSchedulingFeature";
 
-    @objid ("fb309c37-ece5-44b1-b7ed-5a92b08b1daf")
+    @objid ("ce66ecd8-3794-4301-b22d-ef5827452c9b")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_ISPREEMPTABLE = "SwSchedulableResource_Attribute_isPreemptable";
 
-    @objid ("95756a92-87c9-4678-a910-41d8117a039d")
+    @objid ("3c734f39-43af-4017-91d7-279b6737b00f")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_SCHEDULERS = "SwSchedulableResource_Attribute_schedulers";
 
-    @objid ("d8c4b296-bb96-42ca-8d52-a28576497e6f")
+    @objid ("3479dd0f-9c84-4f95-9460-418f5f1132d2")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_DEADLINEELEMENTS = "SwSchedulableResource_Attribute_deadlineElements";
 
-    @objid ("61dcd50c-4edc-4265-947b-56a845ea4666")
+    @objid ("acdd82ee-e234-4888-9b25-193546d619f1")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_DEADLINETYPEELEMENTS = "SwSchedulableResource_Attribute_deadlineTypeElements";
 
-    @objid ("e91991b8-5a6f-4b2e-91dd-c465ed1872b0")
+    @objid ("bfbb3a94-965f-4e83-871b-45b3bc4f5ca8")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_TIMESLICEELEMENTS = "SwSchedulableResource_Attribute_timeSliceElements";
 
-    @objid ("6544453b-5f56-4caf-bcb7-a92d2eb0f1e2")
+    @objid ("c57ac3b7-224d-4a44-a423-9763f339bdd5")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_DELAYSERVICES = "SwSchedulableResource_Attribute_delayServices";
 
-    @objid ("62885f3d-e428-4076-81b1-0447dcf37892")
+    @objid ("f53a2345-ca09-4093-ac02-d76942b1113a")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_JOINSERVICES = "SwSchedulableResource_Attribute_joinServices";
 
-    @objid ("ad1de62a-e0b7-4aad-b901-6f6e140b334c")
+    @objid ("e565e46a-cc0d-4bb0-a3a3-23a275ca2c07")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_YIELDSERVICES = "SwSchedulableResource_Attribute_yieldServices";
 
-    @objid ("42517532-6ce5-4832-b325-a88de24deea7")
+    @objid ("d6b68893-5558-4fa1-a35a-da9e75cc38b3")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_SCHEDPARAMS = "SwSchedulableResource_Attribute_schedParams";
 
-    @objid ("1fb68eae-ffc4-45a8-bf16-fb2a18ad62e0")
+    @objid ("5f55dcec-15fd-4bd5-82ae-a7bd3881d903")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_HOST = "SwSchedulableResource_Attribute_host";
 
-    @objid ("6e1ba246-22c5-4182-b6f8-819a1b39a4b5")
+    @objid ("bd24cfd9-f1a2-43b4-8e50-a11533435857")
     public static final String SWSCHEDULABLERESOURCE_ATTRIBUTE_SWSCHEDULABLERESOURCE_ATTRIBUTE_DEPENDENTSCHEDULER = "SwSchedulableResource_Attribute_dependentScheduler";
 
-    @objid ("9f2be1a9-6124-4bbd-bf84-9be0e263c6ca")
+    @objid ("bebfebbd-bf9d-4100-92b6-64555012cdff")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Classifier_isStaticSchedulingFeature";
 
-    @objid ("e46f8ad4-14cb-4abb-9c74-ac35336e231d")
+    @objid ("fe076c21-7eea-4fe4-82c5-1d6690719364")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_ISPREEMPTABLE = "SwSchedulableResource_Classifier_isPreemptable";
 
-    @objid ("cdcbea36-f771-43cf-ad7d-7f973e3582a0")
+    @objid ("72a288ed-2f47-4439-844c-b7b82de53b46")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_SCHEDULERS = "SwSchedulableResource_Classifier_schedulers";
 
-    @objid ("84f67dd4-c2a6-43cc-9cae-535729612694")
+    @objid ("e5ad6e3f-44b9-495c-814a-455325204e8b")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_DEADLINEELEMENTS = "SwSchedulableResource_Classifier_deadlineElements";
 
-    @objid ("aa0f9cb5-b4dc-473f-950e-704559ae3828")
+    @objid ("cf68c519-974d-4bf6-b504-0e09fd86f2c3")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_DEADLINETYPEELEMENTS = "SwSchedulableResource_Classifier_deadlineTypeElements";
 
-    @objid ("d94a3554-5949-47c6-a94e-1db1ed66ee26")
+    @objid ("e82089d8-07c9-4b75-80e2-d66e89c77dcb")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_TIMESLICEELEMENTS = "SwSchedulableResource_Classifier_timeSliceElements";
 
-    @objid ("905850ca-6b06-45a1-a3ee-6fc32eabb173")
+    @objid ("2cbe0a9d-c722-46af-91d5-6e100c77e6a1")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_DELAYSERVICES = "SwSchedulableResource_Classifier_delayServices";
 
-    @objid ("b59d4c32-cd81-46c3-99a4-2584dd1b1250")
+    @objid ("bcbb141b-bd80-4d3a-84ad-c8aaa85dcf09")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_JOINSERVICES = "SwSchedulableResource_Classifier_joinServices";
 
-    @objid ("82425e67-5b88-4ddb-9da6-09e24289d753")
+    @objid ("ab276925-7b08-443e-b881-2d357249a577")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_YIELDSERVICES = "SwSchedulableResource_Classifier_yieldServices";
 
-    @objid ("062565d8-ece1-46d2-9774-6073350432e7")
+    @objid ("0b612d19-72d9-4564-8e9b-cc3aa54b5b64")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_SCHEDPARAMS = "SwSchedulableResource_Classifier_schedParams";
 
-    @objid ("3bfdf7a1-645e-4efd-9540-4a52d499583a")
+    @objid ("773ed4bc-ca9e-44f4-99bd-fb28de9f209d")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_HOST = "SwSchedulableResource_Classifier_host";
 
-    @objid ("d7c0317a-cb8a-4ef8-8d3e-e422b3792bd1")
+    @objid ("7749e51e-d624-42fe-a322-31cfe38d99a5")
     public static final String SWSCHEDULABLERESOURCE_CLASSIFIER_SWSCHEDULABLERESOURCE_CLASSIFIER_DEPENDENTSCHEDULER = "SwSchedulableResource_Classifier_dependentScheduler";
 
-    @objid ("2fd4508d-9e69-4f8e-88b6-f6d91ff33b64")
+    @objid ("78bd595c-8352-48e6-bbcc-6e2768cb9acd")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Instance_isStaticSchedulingFeature";
 
-    @objid ("7fc8fd36-91b1-4ed6-aa24-c70418f9bde2")
+    @objid ("c329e25a-5d0b-4560-9290-4b56472a298e")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_ISPREEMPTABLE = "SwSchedulableResource_Instance_isPreemptable";
 
-    @objid ("b1d60e08-e0b5-415c-842c-5fe5f61452a6")
+    @objid ("870f8fb2-7dc4-4818-9898-b46b7559c5a4")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_SCHEDULERS = "SwSchedulableResource_Instance_schedulers";
 
-    @objid ("ac87cc75-b66d-4bf4-87f4-7959f01f19c2")
+    @objid ("776988cf-a6b7-4f94-bada-dae6f7bd08bf")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_DEADLINEELEMENTS = "SwSchedulableResource_Instance_deadlineElements";
 
-    @objid ("ae982a3d-e1f9-48af-92b1-174525092d97")
+    @objid ("e27e96e1-5d6f-4a23-a28f-f5b262785a90")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_DEADLINETYPEELEMENTS = "SwSchedulableResource_Instance_deadlineTypeElements";
 
-    @objid ("e54c6472-3dc6-4f3a-ab33-b2da30a9dd07")
+    @objid ("f781f2e8-9ab4-45e6-a245-733c571b1636")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_TIMESLICEELEMENTS = "SwSchedulableResource_Instance_timeSliceElements";
 
-    @objid ("e8f1bdd9-cb84-4fc0-9ba7-ad724067a5c2")
+    @objid ("5c0a463d-8791-49b8-a61e-24f917483753")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_DELAYSERVICES = "SwSchedulableResource_Instance_delayServices";
 
-    @objid ("94053da5-a07e-49b7-a1a0-9afcb66bb448")
+    @objid ("1e1d8d50-9972-4c8d-b9fb-f1e2a2bd90da")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_JOINSERVICES = "SwSchedulableResource_Instance_joinServices";
 
-    @objid ("27e97cb3-119c-4a87-9a24-273d96540550")
+    @objid ("fee88410-bdae-475d-8162-8446c39b602a")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_YIELDSERVICES = "SwSchedulableResource_Instance_yieldServices";
 
-    @objid ("6667c5e1-c1a5-4309-a522-c27be7f43717")
+    @objid ("ad631210-e622-4f60-b8a6-4d7a0461802b")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_SCHEDPARAMS = "SwSchedulableResource_Instance_schedParams";
 
-    @objid ("0739c33d-62d7-47c5-81ba-ebb7c91c8fc2")
+    @objid ("ad6fd242-dd7a-4246-9932-8462f67db4be")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_HOST = "SwSchedulableResource_Instance_host";
 
-    @objid ("1767fce1-3171-4e7c-8a20-7ab2face9f65")
+    @objid ("02c71e72-0621-4d54-842d-35594c2dd052")
     public static final String SWSCHEDULABLERESOURCE_INSTANCE_SWSCHEDULABLERESOURCE_INSTANCE_DEPENDENTSCHEDULER = "SwSchedulableResource_Instance_dependentScheduler";
 
-    @objid ("de7b62c7-b818-49fe-8e93-108f741bece4")
+    @objid ("a3727eaa-f6ed-4202-a571-2ca2c51b11c4")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Lifeline_isStaticSchedulingFeature";
 
-    @objid ("0c080e5e-5573-45d5-a128-c7095da45659")
+    @objid ("1ac933a1-88f9-4d00-b6b6-dde209fd8897")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_ISPREEMPTABLE = "SwSchedulableResource_Lifeline_isPreemptable";
 
-    @objid ("4be1f6f1-6d36-4872-a6ae-337dbbceac19")
+    @objid ("4e11089d-d8b4-4826-98fc-a9229024bcb1")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_SCHEDULERS = "SwSchedulableResource_Lifeline_schedulers";
 
-    @objid ("459c7653-0973-41b3-b074-5ad80730dea9")
+    @objid ("ab3c6949-0025-4852-8e4e-410c4d7cacd8")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_DEADLINEELEMENTS = "SwSchedulableResource_Lifeline_deadlineElements";
 
-    @objid ("d7ee7baf-27c2-4a76-a490-f731c08c3122")
+    @objid ("21f30dac-ee7e-4a41-820f-bce1fe3b3898")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_DEADLINETYPEELEMENTS = "SwSchedulableResource_Lifeline_deadlineTypeElements";
 
-    @objid ("c7e4134d-81fb-413a-8a38-3df5dc23ac77")
+    @objid ("21089220-2bfc-449e-9dac-0b71838fde0a")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_TIMESLICEELEMENTS = "SwSchedulableResource_Lifeline_timeSliceElements";
 
-    @objid ("e020bda8-1169-4a59-80fc-c8e7537a17fd")
+    @objid ("54170cad-a49a-49cf-884e-88e69612328d")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_DELAYSERVICES = "SwSchedulableResource_Lifeline_delayServices";
 
-    @objid ("35a638f5-d47d-4146-9d4d-7ed2c0ea76d9")
+    @objid ("6df67c7d-f945-4888-aa92-0e4eccc45ed3")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_JOINSERVICES = "SwSchedulableResource_Lifeline_joinServices";
 
-    @objid ("83f99bc9-7257-4403-a7d4-fc9758189f4c")
+    @objid ("b15ab7be-0470-4534-a5bb-c422da0de147")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_YIELDSERVICES = "SwSchedulableResource_Lifeline_yieldServices";
 
-    @objid ("cd54decb-0200-40c5-85b4-15fbe5ed3500")
+    @objid ("eca2d537-ff3c-42d6-9a63-4567753fff1b")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_SCHEDPARAMS = "SwSchedulableResource_Lifeline_schedParams";
 
-    @objid ("254a165c-d727-42ac-b036-66ad6b53a2ee")
+    @objid ("2a49c595-d231-4ab0-93cc-b35b02febb7d")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_HOST = "SwSchedulableResource_Lifeline_host";
 
-    @objid ("42f27b5d-e730-4ee3-bff6-7c79aca3eea8")
+    @objid ("497c05e4-593f-4137-8ae9-25396848d93e")
     public static final String SWSCHEDULABLERESOURCE_LIFELINE_SWSCHEDULABLERESOURCE_LIFELINE_DEPENDENTSCHEDULER = "SwSchedulableResource_Lifeline_dependentScheduler";
 
-    @objid ("6013f13a-9001-4e7a-b500-86dea106970e")
+    @objid ("5e911cc9-471a-4722-9bd8-4611f9156f36")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Link_isStaticSchedulingFeature";
 
-    @objid ("f371b657-6c38-449b-a2f4-915c7fc3f8dc")
+    @objid ("34463e08-cf33-459d-b14e-5699cf58983a")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_ISPREEMPTABLE = "SwSchedulableResource_Link_isPreemptable";
 
-    @objid ("2a68f178-f789-4438-9976-c4d52244412b")
+    @objid ("02902272-dafb-42a7-bcd6-0f4b2208c418")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_SCHEDULERS = "SwSchedulableResource_Link_schedulers";
 
-    @objid ("a079bec5-3a1c-48d5-a75c-5820b2d2d1ec")
+    @objid ("99c26098-1b5c-41a0-babc-2dfa4c6bc105")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_DEADLINEELEMENTS = "SwSchedulableResource_Link_deadlineElements";
 
-    @objid ("74258c79-8b63-4b76-9360-f1b3a7de8f75")
+    @objid ("7800c787-9b83-4a8d-9ded-e99e9f375aa2")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_DEADLINETYPEELEMENTS = "SwSchedulableResource_Link_deadlineTypeElements";
 
-    @objid ("7bc0b602-5c84-4e6e-bf05-228b6c9abdd2")
+    @objid ("5abb50b5-d632-4b29-b272-5194632a08c3")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_TIMESLICEELEMENTS = "SwSchedulableResource_Link_timeSliceElements";
 
-    @objid ("47cf9625-d0bf-4af0-a4b2-e37c7604103a")
+    @objid ("7fbbca60-f3e1-4681-82db-1787bd5f060d")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_DELAYSERVICES = "SwSchedulableResource_Link_delayServices";
 
-    @objid ("3ffdf9eb-30c4-4922-a435-4eb9a70a2bb8")
+    @objid ("a9464d88-eb7e-4b6d-85d9-e01e251ffac5")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_JOINSERVICES = "SwSchedulableResource_Link_joinServices";
 
-    @objid ("0ad7f780-5652-4cab-be4e-efc1f404e10d")
+    @objid ("782df494-56fb-4798-b05c-4cf32a7d594b")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_YIELDSERVICES = "SwSchedulableResource_Link_yieldServices";
 
-    @objid ("98909485-0d92-4c70-b56c-c48edad820ed")
+    @objid ("d6717959-b2b8-484f-a1d4-c5f392d43282")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_SCHEDPARAMS = "SwSchedulableResource_Link_schedParams";
 
-    @objid ("314a90df-b4c7-4d83-8122-a54d87fe3255")
+    @objid ("a1f68b81-b6f9-497b-a47a-301b9836b121")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_HOST = "SwSchedulableResource_Link_host";
 
-    @objid ("0cc636d6-f961-4c0e-b336-9029eb0eaf3f")
+    @objid ("24bede4a-c98a-4455-876b-895e584d1cc0")
     public static final String SWSCHEDULABLERESOURCE_LINK_SWSCHEDULABLERESOURCE_LINK_DEPENDENTSCHEDULER = "SwSchedulableResource_Link_dependentScheduler";
 
-    @objid ("ee765d97-8f12-49b4-b562-819800e57410")
+    @objid ("158e7fcb-2471-44f5-ac80-08144f3694d0")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_ISSTATICSCHEDULINGFEATURE = "SwSchedulableResource_Parameter_isStaticSchedulingFeature";
 
-    @objid ("6813a5b0-bf66-4ed6-9454-d622e3c0bab8")
+    @objid ("5cb07ed3-cc32-487c-b2ee-3b52f19506e6")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_ISPREEMPTABLE = "SwSchedulableResource_Parameter_isPreemptable";
 
-    @objid ("bfb7f119-86fb-4f13-8d93-2d75eebeecca")
+    @objid ("fe3c277a-6424-4c00-aa54-2759fae4b1b2")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_SCHEDULERS = "SwSchedulableResource_Parameter_schedulers";
 
-    @objid ("210c0370-c920-4e0f-8bd0-3f3ab7a4778a")
+    @objid ("b0f94cf2-be3e-4603-af6b-443d34b0bab0")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_DEADLINEELEMENTS = "SwSchedulableResource_Parameter_deadlineElements";
 
-    @objid ("6c1e7e74-776a-4537-991f-a01a8d7194f3")
+    @objid ("0ceb3026-f082-4725-8dd4-1768f6047c5f")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_DEADLINETYPEELEMENTS = "SwSchedulableResource_Parameter_deadlineTypeElements";
 
-    @objid ("c903b2bc-8037-4bbd-ae73-b775dd4a80f3")
+    @objid ("a362e147-60e5-4c6c-bfc2-d3a8d42c9e1b")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_TIMESLICEELEMENTS = "SwSchedulableResource_Parameter_timeSliceElements";
 
-    @objid ("31f2c58d-0bee-4f04-906e-a109b9edc327")
+    @objid ("a8d39ffd-1a7e-456d-9f11-31f87456e293")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_DELAYSERVICES = "SwSchedulableResource_Parameter_delayServices";
 
-    @objid ("c358cd35-d95b-4428-b386-7c855b6fcb2e")
+    @objid ("45a9adbf-e94d-4756-b61c-c4af73ba0489")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_JOINSERVICES = "SwSchedulableResource_Parameter_joinServices";
 
-    @objid ("4b8ea494-4bb8-46ca-9f86-e40f3577274c")
+    @objid ("aa108ef9-3993-4f0d-97ae-0c5327b7f65a")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_YIELDSERVICES = "SwSchedulableResource_Parameter_yieldServices";
 
-    @objid ("6e38cfa6-34c6-4b8f-8851-2044e3268e41")
+    @objid ("d914d659-277c-461b-8845-88972ae80384")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_SCHEDPARAMS = "SwSchedulableResource_Parameter_schedParams";
 
-    @objid ("202af053-e068-42b1-90a5-f6fc9efa486f")
+    @objid ("a5a6c13b-fdba-4e69-a4ea-9e49b9c90a0c")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_HOST = "SwSchedulableResource_Parameter_host";
 
-    @objid ("88d0b7b5-d8ec-4682-87da-c6a8e86465e1")
+    @objid ("676fceee-36d1-4312-b894-d5b414f19236")
     public static final String SWSCHEDULABLERESOURCE_PARAMETER_SWSCHEDULABLERESOURCE_PARAMETER_DEPENDENTSCHEDULER = "SwSchedulableResource_Parameter_dependentScheduler";
 
-    @objid ("313153d5-e431-4de1-81a8-30619b793bc6")
+    @objid ("15d4f283-f718-4551-9a45-6c28644234e7")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_ACCESSPOLICY = "DeviceBroker_Parameter_accessPolicy";
 
-    @objid ("78ec8bc6-2884-414d-a9e9-247ed0df5d59")
+    @objid ("ef8f5937-d0af-4772-b133-af6766a47cf9")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_ISBUFFERED = "DeviceBroker_Parameter_isBuffered";
 
-    @objid ("5d410ef7-a70c-42f7-8dd7-be8b5110eab6")
+    @objid ("a457f8de-b865-4264-865b-e2c519f8263c")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_DEVICES = "DeviceBroker_Parameter_devices";
 
-    @objid ("01379901-bff9-4521-8439-0417190e6a81")
+    @objid ("f26272fc-ba73-4d16-a842-55bd855f8112")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_CLOSESERVICES = "DeviceBroker_Parameter_closeServices";
 
-    @objid ("ab050b14-67a1-4c93-8cbd-28002fb75e1b")
+    @objid ("4192f033-9aa0-4487-82c3-5afe4ed04e48")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_CONTROLSERVICES = "DeviceBroker_Parameter_controlServices";
 
-    @objid ("ea572b69-bf81-40f9-b235-cf5ca74a2ada")
+    @objid ("f7355eae-734a-44ca-99c0-c4c94344898b")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_OPENSERVICES = "DeviceBroker_Parameter_openServices";
 
-    @objid ("dc28272d-6722-4a8b-bf2f-191acca55fab")
+    @objid ("17101a56-6c4b-4587-af06-824c03926645")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_READSERVICES = "DeviceBroker_Parameter_readServices";
 
-    @objid ("3a3101c2-089c-411a-9773-e7c8552e1dc7")
+    @objid ("27d1d490-ca99-47ee-814c-a7eba3a8c7b4")
     public static final String DEVICEBROKER_PARAMETER_DEVICEBROKER_PARAMETER_WRITESERVICES = "DeviceBroker_Parameter_writeServices";
 
-    @objid ("ebdf5c9b-0b3a-410d-98de-4c45b5ac6fd2")
+    @objid ("65bb34ab-9340-4c17-a175-aebfc8c838e5")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_ACCESSPOLICY = "DeviceBroker_AssociationEnd_accessPolicy";
 
-    @objid ("50233bfc-afff-45cd-89ec-dce388b9c656")
+    @objid ("75e848b2-84ae-44c7-9d6a-c97572dd83b1")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_ISBUFFERED = "DeviceBroker_AssociationEnd_isBuffered";
 
-    @objid ("004fe41e-4efb-4e39-b130-507c43e60b78")
+    @objid ("79dd8c94-eb2a-4adc-9126-12ab93f70fa0")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_DEVICES = "DeviceBroker_AssociationEnd_devices";
 
-    @objid ("5bb38987-9454-499f-ba6b-e36265bd9d68")
+    @objid ("5ea713fb-870d-4dbc-a14b-a55608ba83c5")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_CLOSESERVICES = "DeviceBroker_AssociationEnd_closeServices";
 
-    @objid ("e1dec8ec-494f-417b-a0f6-ce872895b61e")
+    @objid ("4ba54442-8611-4676-a6f5-2f92b2050b24")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_CONTROLSERVICES = "DeviceBroker_AssociationEnd_controlServices";
 
-    @objid ("553fe8ee-8d4a-48a7-9815-c6cd73a0ac99")
+    @objid ("a2ca1efb-89db-4424-b156-7935dce7996a")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_OPENSERVICES = "DeviceBroker_AssociationEnd_openServices";
 
-    @objid ("bca32d30-172d-482c-a95a-aa39c9200e09")
+    @objid ("4cc2ae9e-4836-40f4-a813-22d0645ed64c")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_READSERVICES = "DeviceBroker_AssociationEnd_readServices";
 
-    @objid ("4275bf0a-51d1-4a37-b0fe-94fb81c28b5d")
+    @objid ("7bd00bfc-35c0-4728-883c-1584857ea63e")
     public static final String DEVICEBROKER_ASSOCIATIONEND_DEVICEBROKER_ASSOCIATIONEND_WRITESERVICES = "DeviceBroker_AssociationEnd_writeServices";
 
-    @objid ("2a2f73eb-e49e-40e7-8155-deae85bac282")
+    @objid ("0dd4f57a-628e-43b3-b20b-fd19200bc94e")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_ACCESSPOLICY = "DeviceBroker_Attribute_accessPolicy";
 
-    @objid ("57040e2a-776b-4cad-88d3-56edb150a0b4")
+    @objid ("2b09df05-6876-4c6d-8ef8-8f841a0133b6")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_ISBUFFERED = "DeviceBroker_Attribute_isBuffered";
 
-    @objid ("e69dd7b7-a392-4a4f-855e-773a12b4c2dd")
+    @objid ("7ba895d3-f3f8-4232-85eb-c34a31d46ff2")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_DEVICES = "DeviceBroker_Attribute_devices";
 
-    @objid ("8283587f-0aad-4512-ab23-3b317e9c1dd7")
+    @objid ("88f3aa68-2142-4a42-ac70-c342eb0e5363")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_CLOSESERVICES = "DeviceBroker_Attribute_closeServices";
 
-    @objid ("b684ade6-39c3-4930-b2fb-c01f65306b1c")
+    @objid ("2e783f77-3df6-4a6a-985f-013cc8368be5")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_CONTROLSERVICES = "DeviceBroker_Attribute_controlServices";
 
-    @objid ("78994cdf-eaa9-4aa6-97dd-a5a613002b68")
+    @objid ("9632a903-d0b1-4b39-b8c5-b2aaafda4961")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_OPENSERVICES = "DeviceBroker_Attribute_openServices";
 
-    @objid ("d52f1f14-8a8f-4e18-819e-e86d5aaaf998")
+    @objid ("9bb862e9-fed1-45ea-97ba-b2dc9160ce51")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_READSERVICES = "DeviceBroker_Attribute_readServices";
 
-    @objid ("e1a0285f-887a-4c5c-b17c-3f417bf9cc06")
+    @objid ("c3b5b4ce-2a9b-4ce6-978d-0558cce4fc5a")
     public static final String DEVICEBROKER_ATTRIBUTE_DEVICEBROKER_ATTRIBUTE_WRITESERVICES = "DeviceBroker_Attribute_writeServices";
 
-    @objid ("fe37209c-2007-481f-b728-0ae4d8ff2c67")
+    @objid ("2170e0f3-705a-4fef-8497-2326e5122bb9")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_ACCESSPOLICY = "DeviceBroker_Link_accessPolicy";
 
-    @objid ("f92121d6-893e-4d6b-a63f-f6aaa823c56a")
+    @objid ("7b55048f-5c7a-47c1-b2cc-ee6e7b602047")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_ISBUFFERED = "DeviceBroker_Link_isBuffered";
 
-    @objid ("4ef6c8b8-3460-4125-a43e-4caf7831d635")
+    @objid ("4cbafa68-83c4-48a5-9162-7aafcdb177e3")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_DEVICES = "DeviceBroker_Link_devices";
 
-    @objid ("9179de98-40c8-4e91-a906-62301b326afd")
+    @objid ("09747599-7ad3-42a5-8fab-e1e10b1080e4")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_CLOSESERVICES = "DeviceBroker_Link_closeServices";
 
-    @objid ("d569f909-e6f0-4bd5-a644-b777edacc81f")
+    @objid ("d32d3520-43c5-4e7e-a51c-a838473276e1")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_CONTROLSERVICES = "DeviceBroker_Link_controlServices";
 
-    @objid ("a7988378-be49-4481-a1cb-2544a7517183")
+    @objid ("267b0d91-2be6-4e5d-8a95-38df8521974b")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_OPENSERVICES = "DeviceBroker_Link_openServices";
 
-    @objid ("b7d30c0a-2c06-4556-adcc-63bb2cf99827")
+    @objid ("0a1570ab-01cd-408c-87dc-8ef93dbb5836")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_READSERVICES = "DeviceBroker_Link_readServices";
 
-    @objid ("ec5400d5-d1ad-4973-8199-14fa71249382")
+    @objid ("c4315a13-34dd-4b1f-b040-0cd1d842ed19")
     public static final String DEVICEBROKER_LINK_DEVICEBROKER_LINK_WRITESERVICES = "DeviceBroker_Link_writeServices";
 
-    @objid ("bbf36bf8-e84f-4e0c-9fad-c3735283ba60")
+    @objid ("a3cb46d2-c11d-42d0-a201-15571d69e3f1")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_ACCESSPOLICY = "DeviceBroker_Instance_accessPolicy";
 
-    @objid ("74dcb423-ee41-47d3-b324-938ea8d1300f")
+    @objid ("8749c51b-b82f-4190-b2f3-ef4fa8a8e488")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_ISBUFFERED = "DeviceBroker_Instance_isBuffered";
 
-    @objid ("98864559-50cd-4689-b51e-1f29b7de6743")
+    @objid ("33c433d7-7c99-4f52-be44-f9d566063cf4")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_DEVICES = "DeviceBroker_Instance_devices";
 
-    @objid ("d3058689-dce4-44ea-83c9-f95071aac88b")
+    @objid ("b890f018-b57a-4f35-90a2-9933eb3e5ac9")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_CLOSESERVICES = "DeviceBroker_Instance_closeServices";
 
-    @objid ("a014636c-3156-485d-b5f6-a5368326f9d4")
+    @objid ("c0af5c02-d026-4910-bd67-0763c0a2198d")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_CONTROLSERVICES = "DeviceBroker_Instance_controlServices";
 
-    @objid ("c09d5ddf-6cc5-4ab9-ad76-10bb54a2fb25")
+    @objid ("47154110-2795-4c0e-8261-8bdb39cf1fc7")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_OPENSERVICES = "DeviceBroker_Instance_openServices";
 
-    @objid ("ffc108f6-88bf-4679-9043-74fd036f1840")
+    @objid ("24bed5d1-553c-4f15-9541-05050bb515b9")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_READSERVICES = "DeviceBroker_Instance_readServices";
 
-    @objid ("b29e039f-3788-4a76-9ebd-bafd399e1eb1")
+    @objid ("aeae73fb-ea9d-4077-be3d-ff6ee888cd33")
     public static final String DEVICEBROKER_INSTANCE_DEVICEBROKER_INSTANCE_WRITESERVICES = "DeviceBroker_Instance_writeServices";
 
-    @objid ("7c9711e9-f412-4a58-be90-86123a61060c")
+    @objid ("63ee8e8c-0c3b-41c0-a440-9d6302b7bde2")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_ACCESSPOLICY = "DeviceBroker_Association_accessPolicy";
 
-    @objid ("369eab32-231a-4b55-a08e-f56a1ae352ac")
+    @objid ("2b8d11ab-c8bb-4f18-9644-f56e76dd6c02")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_ISBUFFERED = "DeviceBroker_Association_isBuffered";
 
-    @objid ("52c25006-e223-46c7-8627-ee85aedfee14")
+    @objid ("019533db-b3a2-4428-85b8-2f06e21cd915")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_DEVICES = "DeviceBroker_Association_devices";
 
-    @objid ("db451615-4132-41c1-9f9c-9c0761c025c6")
+    @objid ("268890bf-1b25-46ff-8229-89c32cf049cb")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_CLOSESERVICES = "DeviceBroker_Association_closeServices";
 
-    @objid ("693e9a7b-fc08-4a8a-ad8a-da824ed6729c")
+    @objid ("e15b0297-b817-4f99-9471-309243929c5f")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_CONTROLSERVICES = "DeviceBroker_Association_controlServices";
 
-    @objid ("430564f6-d939-4b63-aca1-edf5aa2d2711")
+    @objid ("2c83134c-ffad-4fb4-85f2-91dd497b3009")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_OPENSERVICES = "DeviceBroker_Association_openServices";
 
-    @objid ("3277ef29-493f-418d-857a-d3cdd68d9871")
+    @objid ("92ac3a2f-ab34-41e8-a5f1-8ee6cf88a57e")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_READSERVICES = "DeviceBroker_Association_readServices";
 
-    @objid ("4ebaf2bb-83cd-4ad8-8313-4d979afa40eb")
+    @objid ("cda9dd51-16c6-470f-8d04-b8063f166489")
     public static final String DEVICEBROKER_ASSOCIATION_DEVICEBROKER_ASSOCIATION_WRITESERVICES = "DeviceBroker_Association_writeServices";
 
-    @objid ("e701f0f7-e7e2-462a-927c-f8304e195fc1")
+    @objid ("63a412f1-fe23-47e8-815a-27e661f579b2")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_ACCESSPOLICY = "DeviceBroker_Lifeline_accessPolicy";
 
-    @objid ("0c03528c-bdeb-4b15-8862-4cc3aa262750")
+    @objid ("2db42319-e9e9-4129-aeec-3718acc59a5f")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_ISBUFFERED = "DeviceBroker_Lifeline_isBuffered";
 
-    @objid ("d3a14acf-2c7d-4c0b-a26d-ca506b7093f6")
+    @objid ("e4ba5370-c47d-4aee-8385-d68698c9c73a")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_DEVICES = "DeviceBroker_Lifeline_devices";
 
-    @objid ("011f98f4-a561-4e6c-bdc0-5c36a9cc54af")
+    @objid ("b24a3ece-a562-4704-839c-76290816f7b5")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_CLOSESERVICES = "DeviceBroker_Lifeline_closeServices";
 
-    @objid ("bd2af20c-2dce-421c-9c63-70078f184e84")
+    @objid ("d7ddbb05-3865-46c4-9756-204d160b3f81")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_CONTROLSERVICES = "DeviceBroker_Lifeline_controlServices";
 
-    @objid ("1efb0afa-8ad6-43f5-89c0-3ec3c4da8fc3")
+    @objid ("56e0b8c1-6a33-4c05-92f1-b0c5aa7c9e16")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_OPENSERVICES = "DeviceBroker_Lifeline_openServices";
 
-    @objid ("0b73c3c0-9cef-435e-91a6-333ec503293b")
+    @objid ("f6798a3b-c5da-4071-a100-1e205e0f479d")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_READSERVICES = "DeviceBroker_Lifeline_readServices";
 
-    @objid ("17411873-6525-443b-b580-31c85aa3a297")
+    @objid ("4faa1520-1cd8-44f4-89ff-f0c5f61351a8")
     public static final String DEVICEBROKER_LIFELINE_DEVICEBROKER_LIFELINE_WRITESERVICES = "DeviceBroker_Lifeline_writeServices";
 
-    @objid ("0578adfa-e9be-4b29-9cbb-7acb9e1f819f")
+    @objid ("0090919b-afcc-4d04-9ca0-5a3905b7e882")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_ACCESSPOLICY = "DeviceBroker_Classifier_accessPolicy";
 
-    @objid ("78c67a7c-2af6-4309-8c18-d5ce84124a23")
+    @objid ("3cab3777-b478-435e-a283-5f6f892c52bf")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_ISBUFFERED = "DeviceBroker_Classifier_isBuffered";
 
-    @objid ("cffaf115-4248-4962-a243-8229304bf70c")
+    @objid ("4655298c-ef1d-456b-b441-3e793ef121cb")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_DEVICES = "DeviceBroker_Classifier_devices";
 
-    @objid ("dad07acf-0d75-4e15-bf9e-e2fcf81f64f4")
+    @objid ("b02f8ff5-2836-427f-8d06-11ed65bff29a")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_CLOSESERVICES = "DeviceBroker_Classifier_closeServices";
 
-    @objid ("25f579d8-d6b1-430b-9576-859cb3d50693")
+    @objid ("fe340b77-3c27-423a-9754-95d6787f9097")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_CONTROLSERVICES = "DeviceBroker_Classifier_controlServices";
 
-    @objid ("620dd12e-7548-4b4c-94c8-b0770d6064f7")
+    @objid ("f49fc494-6cd4-44f1-867f-d000730864c1")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_OPENSERVICES = "DeviceBroker_Classifier_openServices";
 
-    @objid ("bc1b4adc-6116-4e2a-8d8b-0d10b51e009b")
+    @objid ("9941735a-cfd3-47b2-82a2-6c9a8a6aa980")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_READSERVICES = "DeviceBroker_Classifier_readServices";
 
-    @objid ("d962a1b5-e576-439c-aa10-3daf1e45841f")
+    @objid ("8bcbd6da-dfe5-4bfe-835d-1d0a0eb4da56")
     public static final String DEVICEBROKER_CLASSIFIER_DEVICEBROKER_CLASSIFIER_WRITESERVICES = "DeviceBroker_Classifier_writeServices";
 
-    @objid ("99709f81-9145-42c2-9e0d-583484a03b10")
+    @objid ("7dd3fd04-6244-4ca7-8a79-dec079c6eed8")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_ACCESSPOLICY = "MemoryBroker_Parameter_accessPolicy";
 
-    @objid ("ecfc145c-e09a-49aa-8754-c14d05e4a948")
+    @objid ("148ca6d5-006c-4017-9d47-45bf79518ad3")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_MEMORIES = "MemoryBroker_Parameter_memories";
 
-    @objid ("337e35df-b62e-4e4c-aba9-aceb9ed6e569")
+    @objid ("95ec2f2f-aa7c-417c-b411-3649715646d7")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Parameter_memoryBlockAdressElements";
 
-    @objid ("2538b147-139b-4867-9a9f-419573a071fb")
+    @objid ("580dd44a-cc4f-422a-9183-5ca4bfa73913")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Parameter_memoryBlockSizeElements";
 
-    @objid ("255144df-03ef-452e-a27b-82e5b6a7f561")
+    @objid ("19c50a4f-85f5-4d08-9967-402b0a0ebe67")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_LOCKSERVICES = "MemoryBroker_Parameter_lockServices";
 
-    @objid ("c5a943eb-e67f-4df9-ab97-42a19e8f08c1")
+    @objid ("2eea5200-da7e-4091-8099-78a8fea727c4")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_UNLOCKSERVICES = "MemoryBroker_Parameter_unlockServices";
 
-    @objid ("0ccf3933-9d65-41ad-ab3c-9597ebb2256e")
+    @objid ("ef37b70b-6073-4d39-9679-46f88c1ec887")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_MAPSERVICES = "MemoryBroker_Parameter_mapServices";
 
-    @objid ("88e7ea69-90c5-48bc-96bd-f358fc4b64eb")
+    @objid ("33cb347b-2bca-4cb2-b566-c05a472b28fe")
     public static final String MEMORYBROKER_PARAMETER_MEMORYBROKER_PARAMETER_UNMAPSERVICES = "MemoryBroker_Parameter_unMapServices";
 
-    @objid ("2d4721a9-50f9-4128-9fb9-f60a49f9f460")
+    @objid ("2f9ead83-4e61-4a8b-a8c8-e1d45359ab72")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_ACCESSPOLICY = "MemoryBroker_AssociationEnd_accessPolicy";
 
-    @objid ("69680c78-c86a-4b98-84af-7248b2a50b41")
+    @objid ("3eec13b0-ec54-446c-95a4-79fb22219682")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_MEMORIES = "MemoryBroker_AssociationEnd_memories";
 
-    @objid ("72896f7f-ba67-4bfc-8a0b-ca10f541d0d9")
+    @objid ("04a747af-2565-4efc-b972-60ae25c56909")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_AssociationEnd_memoryBlockAdressElements";
 
-    @objid ("7b6173d6-fe7a-4585-beb7-419c920882d0")
+    @objid ("389ec4c3-9ae7-4186-9ab0-f0d60c289c50")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_AssociationEnd_memoryBlockSizeElements";
 
-    @objid ("1a39eec4-3f88-4458-a0dd-4b30f0f3a8ef")
+    @objid ("f3d57d30-4d25-470c-9477-b99ae512e88d")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_LOCKSERVICES = "MemoryBroker_AssociationEnd_lockServices";
 
-    @objid ("03680ba7-416c-4013-960b-82e8c9c7c750")
+    @objid ("b7ba2e25-a611-4bff-8d1e-2d76ad669cb9")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_UNLOCKSERVICES = "MemoryBroker_AssociationEnd_unlockServices";
 
-    @objid ("03f9d92e-4a8d-4394-9d73-0624d3e49653")
+    @objid ("eda0670e-0e12-4f64-a558-6b0c69ba7e70")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_MAPSERVICES = "MemoryBroker_AssociationEnd_mapServices";
 
-    @objid ("ca3721dd-5c02-4125-b2e7-eeb87c6a081e")
+    @objid ("f0a67667-76eb-4cb2-8174-eaebb2c7045f")
     public static final String MEMORYBROKER_ASSOCIATIONEND_MEMORYBROKER_ASSOCIATIONEND_UNMAPSERVICES = "MemoryBroker_AssociationEnd_unMapServices";
 
-    @objid ("7a07a4e3-f52b-48ab-a30a-91758fd8371a")
+    @objid ("44bd4705-23bc-4713-bf2f-2c6972e3cc14")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_ACCESSPOLICY = "MemoryBroker_Attribute_accessPolicy";
 
-    @objid ("fc383dba-3310-4751-b28d-f49c60815e44")
+    @objid ("f7fe5801-4b25-4e9f-b653-ad927ba03023")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_MEMORIES = "MemoryBroker_Attribute_memories";
 
-    @objid ("9cac6926-0512-45cc-9e8f-045d33a5caed")
+    @objid ("824b2085-44a4-4954-b901-79e80ad6a435")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Attribute_memoryBlockAdressElements";
 
-    @objid ("190bbfb0-4acb-4e46-8dd9-e3d41c3c0299")
+    @objid ("b93f1464-0a7f-4afc-b81c-724a7ae0da32")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Attribute_memoryBlockSizeElements";
 
-    @objid ("d434d999-4df9-40c6-a56f-5f6c79c5a453")
+    @objid ("2a8772b2-ee8e-4c1f-b946-de7c25df04bc")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_LOCKSERVICES = "MemoryBroker_Attribute_lockServices";
 
-    @objid ("a967e54a-3ed0-4b04-b88e-7936573edf92")
+    @objid ("2f574b0e-4f36-40f2-a0f6-f471308911af")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_UNLOCKSERVICES = "MemoryBroker_Attribute_unlockServices";
 
-    @objid ("08e24d09-7369-412e-b6bb-b4c5679642db")
+    @objid ("aef7d47e-3924-43d0-b45d-fc068db47096")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_MAPSERVICES = "MemoryBroker_Attribute_mapServices";
 
-    @objid ("ffb39317-0495-445e-b11d-37c62054e8b5")
+    @objid ("7234f508-6f58-45cf-9864-763a40b74162")
     public static final String MEMORYBROKER_ATTRIBUTE_MEMORYBROKER_ATTRIBUTE_UNMAPSERVICES = "MemoryBroker_Attribute_unMapServices";
 
-    @objid ("de17cae8-90b9-4407-8d0b-41f7061775e7")
+    @objid ("97b2e762-75f8-4e29-bf74-b84871cb3638")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_ACCESSPOLICY = "MemoryBroker_Link_accessPolicy";
 
-    @objid ("442e07a3-0c28-41f7-a4d1-e5f8ead23cd5")
+    @objid ("25e08776-3fa7-4753-8945-8106cd46cb80")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_MEMORIES = "MemoryBroker_Link_memories";
 
-    @objid ("35b7e398-179e-4511-9ba3-a0ee8a5d5689")
+    @objid ("ea847c2b-a63b-493a-8167-4bf7e2aa479c")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Link_memoryBlockAdressElements";
 
-    @objid ("2ea6738e-c902-429b-8da1-71a6f233db0b")
+    @objid ("f3d6b6a0-144e-4e71-bb4e-e7adaf1c7a16")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Link_memoryBlockSizeElements";
 
-    @objid ("218a266d-5554-4da9-9537-9b2b8a852fa5")
+    @objid ("2e644d43-bdfe-4115-a988-71f34902b6a8")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_LOCKSERVICES = "MemoryBroker_Link_lockServices";
 
-    @objid ("3b57a650-82c8-403a-b8e3-16f75d5b2415")
+    @objid ("d49de138-c4f1-4273-90fa-bccd6df0f3a2")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_UNLOCKSERVICES = "MemoryBroker_Link_unlockServices";
 
-    @objid ("a3029aa3-1e76-4101-b5bc-8be3a2e53c18")
+    @objid ("d20a23cb-d029-4349-8e8b-9b46506da3a5")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_MAPSERVICES = "MemoryBroker_Link_mapServices";
 
-    @objid ("a6e1d0eb-90da-4200-a40a-436090cf2f19")
+    @objid ("34b893f4-32f1-49d8-b44e-7a4cc271931f")
     public static final String MEMORYBROKER_LINK_MEMORYBROKER_LINK_UNMAPSERVICES = "MemoryBroker_Link_unMapServices";
 
-    @objid ("f0f70900-9487-45de-8a4b-23cb1a599443")
+    @objid ("a827d482-04f1-4e04-b580-099bdffe752e")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_ACCESSPOLICY = "MemoryBroker_Instance_accessPolicy";
 
-    @objid ("6608235d-325e-4d5b-b992-ca6bed0fd457")
+    @objid ("1a5b82c1-926b-46c8-b56d-d66a4e7bf1bc")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_MEMORIES = "MemoryBroker_Instance_memories";
 
-    @objid ("0b4503c5-9e25-4aeb-9896-2ccd07c3b145")
+    @objid ("29755ba9-54e1-461c-863b-8d41a3f06488")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Instance_memoryBlockAdressElements";
 
-    @objid ("c7497c5c-b9a3-4c80-91ec-dd0f3c2215f4")
+    @objid ("21a3298b-5fa0-46be-845b-e27d84b9d2bb")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Instance_memoryBlockSizeElements";
 
-    @objid ("ac07c29c-23cc-4825-9354-137f16c4e4d3")
+    @objid ("733b737c-b599-46c1-b2db-46fe667ec6ee")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_LOCKSERVICES = "MemoryBroker_Instance_lockServices";
 
-    @objid ("fb5b64a9-3d79-43d7-aae5-115802598a34")
+    @objid ("eecefb02-d4fe-45c0-a806-a3f4b7953e78")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_UNLOCKSERVICES = "MemoryBroker_Instance_unlockServices";
 
-    @objid ("23e041bf-1e3a-4c1b-91d2-936090197d92")
+    @objid ("cf11bcd4-fc07-462b-8846-ef6f5ce4a5c2")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_MAPSERVICES = "MemoryBroker_Instance_mapServices";
 
-    @objid ("ff323bb6-0d5e-435e-8c91-1f01d9bfa3bc")
+    @objid ("4a4a9ee5-a68e-4a89-ba7f-4d9899fbb966")
     public static final String MEMORYBROKER_INSTANCE_MEMORYBROKER_INSTANCE_UNMAPSERVICES = "MemoryBroker_Instance_unMapServices";
 
-    @objid ("83a72027-68e0-413d-b363-be1b17150014")
+    @objid ("8fa1f633-6271-4a3a-9342-9ce81ee57bf5")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_ACCESSPOLICY = "MemoryBroker_Association_accessPolicy";
 
-    @objid ("e604cd28-4985-4aa6-ac76-cbf463f299eb")
+    @objid ("000f6d31-1692-469e-bb72-45ea681ac6ce")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_MEMORIES = "MemoryBroker_Association_memories";
 
-    @objid ("2015d4aa-5cc6-4243-be3f-1ae7ca42f1a6")
+    @objid ("00bf163b-1d54-4185-aa4b-fa6c5dd0df81")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Association_memoryBlockAdressElements";
 
-    @objid ("1bc596fc-b535-4ed4-aad4-206313efd426")
+    @objid ("ec8f047d-186f-4865-8426-0c822d507f65")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Association_memoryBlockSizeElements";
 
-    @objid ("da52e1d0-39c3-4301-86ef-742909d7815f")
+    @objid ("1ccef0bf-c74a-4e04-95a1-f4682d7575a1")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_LOCKSERVICES = "MemoryBroker_Association_lockServices";
 
-    @objid ("b731b0a0-d3d1-4b6a-bd7a-30637024e21f")
+    @objid ("9d8a9182-df63-4d20-b894-5e8372a87acc")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_UNLOCKSERVICES = "MemoryBroker_Association_unlockServices";
 
-    @objid ("5c137d1f-b2b8-47f3-9883-96027d05c8fd")
+    @objid ("4043a998-ac2a-448b-8651-f97731654463")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_MAPSERVICES = "MemoryBroker_Association_mapServices";
 
-    @objid ("1913415a-e166-4888-a7bc-67e551914c6e")
+    @objid ("cd963d96-daf1-48db-a842-c3c76f722ed5")
     public static final String MEMORYBROKER_ASSOCIATION_MEMORYBROKER_ASSOCIATION_UNMAPSERVICES = "MemoryBroker_Association_unMapServices";
 
-    @objid ("08c53b05-d763-4ec8-a0d4-2e5f77369ba4")
+    @objid ("abe11f14-c1b4-4abb-9067-9d651197ff8a")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_ACCESSPOLICY = "MemoryBroker_Lifeline_accessPolicy";
 
-    @objid ("91b69554-91d0-4c22-a702-be6066465d14")
+    @objid ("b5ff28b5-29cb-45cb-88ed-ce05847f1884")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_MEMORIES = "MemoryBroker_Lifeline_memories";
 
-    @objid ("c79c5524-dff5-4001-aaa2-136bfe9c0940")
+    @objid ("016bf252-a92a-4126-9800-70c8efcc31cf")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Lifeline_memoryBlockAdressElements";
 
-    @objid ("020af40b-4808-488f-ae61-17a254e64c01")
+    @objid ("4c82a191-b3f2-48c2-8a30-56cb016501ea")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Lifeline_memoryBlockSizeElements";
 
-    @objid ("f48c2b09-c056-4341-ad20-b5c3e1bf9973")
+    @objid ("21e14450-7c61-4c4e-80fa-caa3d92f934f")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_LOCKSERVICES = "MemoryBroker_Lifeline_lockServices";
 
-    @objid ("e80b337e-ce03-4446-ad49-60c5b3673a55")
+    @objid ("8a6ca1ac-8c29-4855-a33f-99e807bb921c")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_UNLOCKSERVICES = "MemoryBroker_Lifeline_unlockServices";
 
-    @objid ("b4606f20-4ac8-4098-81c3-0157eeb80cca")
+    @objid ("0eb0f205-9544-4d6a-bd42-f60159cf34f8")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_MAPSERVICES = "MemoryBroker_Lifeline_mapServices";
 
-    @objid ("55eed44a-0d39-4696-826f-c49bcdc1d9ee")
+    @objid ("36c90559-142b-480c-93af-7fd9eda35c1a")
     public static final String MEMORYBROKER_LIFELINE_MEMORYBROKER_LIFELINE_UNMAPSERVICES = "MemoryBroker_Lifeline_unMapServices";
 
-    @objid ("0f9759e8-b787-44b5-826a-88abe5972a5b")
+    @objid ("375eb786-ed9d-4b45-b6ca-f10d517b4d15")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_ACCESSPOLICY = "MemoryBroker_Classifier_accessPolicy";
 
-    @objid ("1e23cd3b-96c7-4337-9c82-6efed851601e")
+    @objid ("d9663b8e-d0d6-47d9-abe0-ecfa21980c0c")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_MEMORIES = "MemoryBroker_Classifier_memories";
 
-    @objid ("d1078ea3-fa78-472b-bc9c-fc28d99aed7c")
+    @objid ("48a5525e-ebc2-4d41-b5c2-8dc0b7d226fe")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_MEMORYBLOCKADRESSELEMENTS = "MemoryBroker_Classifier_memoryBlockAdressElements";
 
-    @objid ("63baebe7-0028-4afc-abd5-66269f334bd1")
+    @objid ("08665ccb-bae3-49e8-813b-ffe3fc3063bb")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_MEMORYBLOCKSIZEELEMENTS = "MemoryBroker_Classifier_memoryBlockSizeElements";
 
-    @objid ("bb3c9818-0a3a-457d-acb9-e033127abab0")
+    @objid ("eee7db91-1ec1-4663-bfd6-724db4c253e6")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_LOCKSERVICES = "MemoryBroker_Classifier_lockServices";
 
-    @objid ("028b499a-d241-4fd1-92b4-b13220e3f92e")
+    @objid ("166e44f3-bff1-40a7-a730-28ec5114f19e")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_UNLOCKSERVICES = "MemoryBroker_Classifier_unlockServices";
 
-    @objid ("4b0ce1e9-8a52-41ab-8c3f-6fe7796e3204")
+    @objid ("e8869bd6-f237-4ea7-9d97-8e6d9c64f6c1")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_MAPSERVICES = "MemoryBroker_Classifier_mapServices";
 
-    @objid ("1843a547-c2cc-4cda-98bc-3235ab7cf9ad")
+    @objid ("976df2f5-904c-464a-908b-f539ba4f4261")
     public static final String MEMORYBROKER_CLASSIFIER_MEMORYBROKER_CLASSIFIER_UNMAPSERVICES = "MemoryBroker_Classifier_unMapServices";
 
-    @objid ("ca2c0ee5-6043-42a5-9b12-a2772a3207e8")
+    @objid ("8538cf12-f200-4606-bbb5-0b290d012270")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_ISFIXEDMESSAGESIZE = "MessageComResource_Association_isFixedMessageSize";
 
-    @objid ("0b4c07bc-69f2-4b1f-a33f-93db9223f579")
+    @objid ("77b1754b-6446-442e-b2c0-e11667afb8e3")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_MECHANISM = "MessageComResource_Association_mechanism";
 
-    @objid ("74b24ae3-79f2-49c9-95a3-364d656b578b")
+    @objid ("98a2feb5-72c6-4acd-85ff-d8969aa7ab9c")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_MESSAGESIZEELEMENTS = "MessageComResource_Association_messageSizeElements";
 
-    @objid ("d1590468-aaec-4eb9-b20e-478e2492ed36")
+    @objid ("e2e8d6eb-5027-40e7-b24f-e5e92bf2eeff")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Association_messageQueueCapacityElements";
 
-    @objid ("f8281255-e309-4da2-aa23-61c265edab83")
+    @objid ("3d1d516f-a652-49f0-85e6-e30c1e57885f")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_MESSAGEQUEUEPOLICY = "MessageComResource_Association_messageQueuePolicy";
 
-    @objid ("f1acf5be-d365-4999-8d54-1e52d2c75816")
+    @objid ("2d7df445-03db-4e0b-8b49-1edfdb884e0e")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_SENDSERVICES = "MessageComResource_Association_sendServices";
 
-    @objid ("8b6a12cb-670a-41cd-b1fd-e6db12380e97")
+    @objid ("1ca88280-1a4e-42ea-8338-7cd1705877db")
     public static final String MESSAGECOMRESOURCE_ASSOCIATION_MESSAGECOMRESOURCE_ASSOCIATION_RECEIVESERVICES = "MessageComResource_Association_receiveServices";
 
-    @objid ("ff9f4a2f-6aac-40b2-9715-322b1ec50e94")
+    @objid ("89bf7c32-0002-4ab6-a2fe-af7602c28570")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_ISFIXEDMESSAGESIZE = "MessageComResource_AssociationEnd_isFixedMessageSize";
 
-    @objid ("814a27c8-46a8-4a37-b862-f618c62a383c")
+    @objid ("d5aec3e4-6583-4233-a9c2-d5f959ed2923")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_MECHANISM = "MessageComResource_AssociationEnd_mechanism";
 
-    @objid ("768040ee-f72e-4aa7-a0f4-b6088e81cecd")
+    @objid ("b9872b7d-6694-490b-a8d2-0cd570353225")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGESIZEELEMENTS = "MessageComResource_AssociationEnd_messageSizeElements";
 
-    @objid ("93f518a3-d446-4719-bb45-86a303a2d4d9")
+    @objid ("12120535-5d20-4382-b7cf-4c28b19d4b7e")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_AssociationEnd_messageQueueCapacityElements";
 
-    @objid ("c6d7c150-acc9-4043-9f81-c77e7982ab9a")
+    @objid ("5ed5bce9-04f8-4de7-8cfc-3435bd15a542")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGEQUEUEPOLICY = "MessageComResource_AssociationEnd_messageQueuePolicy";
 
-    @objid ("941715ae-e5e5-40d1-b3d8-22663025dfaa")
+    @objid ("21a38b49-69ed-4177-af6b-b63c7186787b")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_SENDSERVICES = "MessageComResource_AssociationEnd_sendServices";
 
-    @objid ("a868d517-312d-4664-9ea2-45028c129791")
+    @objid ("bb2d8e30-4786-42e5-bf63-b237146d583b")
     public static final String MESSAGECOMRESOURCE_ASSOCIATIONEND_MESSAGECOMRESOURCE_ASSOCIATIONEND_RECEIVESERVICES = "MessageComResource_AssociationEnd_receiveServices";
 
-    @objid ("bbd495ac-2053-4e83-ad1f-b066bdd83ddb")
+    @objid ("0cae0f6a-7b9b-4d14-a171-59c68afcf165")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_ISFIXEDMESSAGESIZE = "MessageComResource_Attribute_isFixedMessageSize";
 
-    @objid ("3bfa872a-656b-4272-834c-b377fd7a361a")
+    @objid ("e215f605-4ca7-4e5c-9097-5a79648c8404")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_MECHANISM = "MessageComResource_Attribute_mechanism";
 
-    @objid ("52fffbaa-b147-40bc-a7de-15cc0d511801")
+    @objid ("32d0427f-7c1c-4889-a704-88effeff94c9")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGESIZEELEMENTS = "MessageComResource_Attribute_messageSizeElements";
 
-    @objid ("af53b283-2632-4be8-8c55-822061dcb992")
+    @objid ("ca6b59e7-0c39-44f0-b51f-64df16b4723a")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Attribute_messageQueueCapacityElements";
 
-    @objid ("d669209c-f793-4844-9ed1-dc6126c84799")
+    @objid ("adcd3673-f424-4c4b-8ded-108d39fda844")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGEQUEUEPOLICY = "MessageComResource_Attribute_messageQueuePolicy";
 
-    @objid ("de0eec18-323f-4cf6-884c-d7c25ff3861c")
+    @objid ("6342d00c-ffae-46bc-b31a-ceda9c5480fa")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_SENDSERVICES = "MessageComResource_Attribute_sendServices";
 
-    @objid ("f80d1f3f-8416-4a17-abda-18c4cbbe7a4b")
+    @objid ("dab8e483-d3fe-41dd-8075-46bb54396675")
     public static final String MESSAGECOMRESOURCE_ATTRIBUTE_MESSAGECOMRESOURCE_ATTRIBUTE_RECEIVESERVICES = "MessageComResource_Attribute_receiveServices";
 
-    @objid ("fb40e0db-a9fe-41c6-ae89-0c147ba49a4b")
+    @objid ("a5090bb8-696a-4ea0-9fe5-f68f43181880")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_ISFIXEDMESSAGESIZE = "MessageComResource_Classifier_isFixedMessageSize";
 
-    @objid ("51682290-7222-4c5a-8fb0-3ea729638200")
+    @objid ("d9e16356-f698-4cf8-9b20-fd9c41ea1338")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_MECHANISM = "MessageComResource_Classifier_mechanism";
 
-    @objid ("abc5a822-318e-4405-ad9f-0de7529bf340")
+    @objid ("9b040242-cd22-45cb-9312-824b1963aaf3")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_MESSAGESIZEELEMENTS = "MessageComResource_Classifier_messageSizeElements";
 
-    @objid ("5490be9a-b438-49b7-b4df-e4c10ef1ac63")
+    @objid ("a79c95cf-caed-4d7c-9eec-dbb304dc50e7")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Classifier_messageQueueCapacityElements";
 
-    @objid ("baab35e9-5392-4371-9579-83f59e487060")
+    @objid ("dc2fe10c-9c41-47b2-9a2e-db193d9b17f1")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_MESSAGEQUEUEPOLICY = "MessageComResource_Classifier_messageQueuePolicy";
 
-    @objid ("f01e289f-c3dc-469a-8977-7fae96c8a364")
+    @objid ("bcc91892-7536-449f-b475-41b7d98b0b03")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_SENDSERVICES = "MessageComResource_Classifier_sendServices";
 
-    @objid ("464cb881-64eb-43fb-8fc9-8879f6fe3381")
+    @objid ("fac80a32-260f-466b-805e-2dc408f33225")
     public static final String MESSAGECOMRESOURCE_CLASSIFIER_MESSAGECOMRESOURCE_CLASSIFIER_RECEIVESERVICES = "MessageComResource_Classifier_receiveServices";
 
-    @objid ("7d0ec0dd-5e57-4e61-be7c-4bd4a2ba6ae1")
+    @objid ("eefb453c-a850-4ab5-921a-06d14f584193")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_ISFIXEDMESSAGESIZE = "MessageComResource_Instance_isFixedMessageSize";
 
-    @objid ("dadbba2a-9ef3-4455-b830-074b40c3410b")
+    @objid ("729c0415-2771-4bb2-a935-d347874b28ae")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_MECHANISM = "MessageComResource_Instance_mechanism";
 
-    @objid ("4efe4e6c-07a6-49c4-a8f0-a2d69a1c1e6f")
+    @objid ("26839d1a-cf3d-4c89-bae5-f4ed7eb552d0")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_MESSAGESIZEELEMENTS = "MessageComResource_Instance_messageSizeElements";
 
-    @objid ("59a4e34a-e1c9-4ad9-a316-f94f6affccc7")
+    @objid ("0d85eeaa-695b-4e1c-90cf-5312ee5868f6")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Instance_messageQueueCapacityElements";
 
-    @objid ("e0efc631-16b9-4b80-932f-b53a43f9cc5e")
+    @objid ("5692d253-94d2-434b-9680-36f0e5d3331a")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_MESSAGEQUEUEPOLICY = "MessageComResource_Instance_messageQueuePolicy";
 
-    @objid ("6ed03066-f181-4667-a5be-68eb931ebb8a")
+    @objid ("cf759a73-5b86-4d0a-9d28-4f0ded28b37a")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_SENDSERVICES = "MessageComResource_Instance_sendServices";
 
-    @objid ("ce1ac7bc-d509-40ea-a96e-b8f8d450dab6")
+    @objid ("75711ac9-6a19-4db6-bd86-0de1264225ec")
     public static final String MESSAGECOMRESOURCE_INSTANCE_MESSAGECOMRESOURCE_INSTANCE_RECEIVESERVICES = "MessageComResource_Instance_receiveServices";
 
-    @objid ("d08e9997-6dd4-432b-9aa7-6fa3dcf1af1c")
+    @objid ("9d78b99f-2a33-418c-a41a-f20f78a44a49")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_ISFIXEDMESSAGESIZE = "MessageComResource_Lifeline_isFixedMessageSize";
 
-    @objid ("299f1109-ea57-4392-b9a9-83f9dbfa8d1b")
+    @objid ("eddddb34-9506-4455-9df7-a7ea122aa025")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_MECHANISM = "MessageComResource_Lifeline_mechanism";
 
-    @objid ("edd03dca-03e5-498a-abaa-4ca3a6bf04a0")
+    @objid ("7f7d64e2-540a-4321-907d-4ef08705baa0")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_MESSAGESIZEELEMENTS = "MessageComResource_Lifeline_messageSizeElements";
 
-    @objid ("46e66221-f2ff-4d15-8d61-342e32530ce6")
+    @objid ("b1cb2f4a-5654-424c-8841-19ec99f93106")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Lifeline_messageQueueCapacityElements";
 
-    @objid ("92cbc147-e100-483a-b7a1-148ec27d7198")
+    @objid ("d9aba586-99eb-4bbc-abb4-ceb6dea08e86")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_MESSAGEQUEUEPOLICY = "MessageComResource_Lifeline_messageQueuePolicy";
 
-    @objid ("730a4f3c-8fef-440d-90bd-491b89a354d2")
+    @objid ("1300047a-615d-4f63-9e8d-65cdaf1cbfd2")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_SENDSERVICES = "MessageComResource_Lifeline_sendServices";
 
-    @objid ("643c4f48-d01a-423c-96b7-eda46aa631a1")
+    @objid ("f3af431a-c86c-4aa2-b1c7-1cc1f3f60a2c")
     public static final String MESSAGECOMRESOURCE_LIFELINE_MESSAGECOMRESOURCE_LIFELINE_RECEIVESERVICES = "MessageComResource_Lifeline_receiveServices";
 
-    @objid ("0d2088ee-e0ce-4370-b1f4-5fc7381a3537")
+    @objid ("98e11c9b-06fe-42d9-81de-adf9f9c4a488")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_ISFIXEDMESSAGESIZE = "MessageComResource_Link_isFixedMessageSize";
 
-    @objid ("a4c9bb4c-984d-4058-8a0b-ee65a905ed62")
+    @objid ("bef3aefc-5d31-4853-b66b-cbd999bf98eb")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_MECHANISM = "MessageComResource_Link_mechanism";
 
-    @objid ("93e941e6-6459-4ec8-8af8-e749aef5cb5a")
+    @objid ("7ac82749-6078-4a13-b1b8-8e1da5c73280")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_MESSAGESIZEELEMENTS = "MessageComResource_Link_messageSizeElements";
 
-    @objid ("497cca6f-1741-498c-b822-a69863ea28d6")
+    @objid ("d2d0f06b-53d2-4d4b-9a78-29cbe7b3d575")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Link_messageQueueCapacityElements";
 
-    @objid ("872939dd-84df-496f-af3c-503cad4496e2")
+    @objid ("4db41b5b-6724-493a-b0d0-2c156e68613a")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_MESSAGEQUEUEPOLICY = "MessageComResource_Link_messageQueuePolicy";
 
-    @objid ("42b63eef-8740-4fab-a7ca-e03702d386c2")
+    @objid ("9ee5ecf2-8f90-4a88-b337-9809bdef0a19")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_SENDSERVICES = "MessageComResource_Link_sendServices";
 
-    @objid ("2110eb2c-10e9-4517-9618-823edd595025")
+    @objid ("dd30253b-d73b-4ea7-9cc5-5430f0d54183")
     public static final String MESSAGECOMRESOURCE_LINK_MESSAGECOMRESOURCE_LINK_RECEIVESERVICES = "MessageComResource_Link_receiveServices";
 
-    @objid ("113fe278-6f8f-4152-ba50-9c96bca3b9f8")
+    @objid ("f49c60c9-05ad-43e8-b3a2-c779df142d57")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_ISFIXEDMESSAGESIZE = "MessageComResource_Parameter_isFixedMessageSize";
 
-    @objid ("6cd6b2f3-8ff3-4885-ac88-ea0f557fed9c")
+    @objid ("56f69627-0c08-47cf-ae77-ae5ca441e6ef")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_MECHANISM = "MessageComResource_Parameter_mechanism";
 
-    @objid ("70cc40ec-2b4c-436b-a28a-cc0a5b4289c4")
+    @objid ("58633ae5-66cf-460d-b2d2-25b0b1465d0a")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_MESSAGESIZEELEMENTS = "MessageComResource_Parameter_messageSizeElements";
 
-    @objid ("76dd28c7-90dc-4de3-88c8-a2d16d036c84")
+    @objid ("f42fe2a5-6edb-4cb2-a1d9-4f01cfdf8096")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_MESSAGEQUEUECAPACITYELEMENTS = "MessageComResource_Parameter_messageQueueCapacityElements";
 
-    @objid ("19d7113f-b0e8-47f7-8581-514898babb70")
+    @objid ("8965c85e-2cb6-4240-affc-0614e0747e05")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_MESSAGEQUEUEPOLICY = "MessageComResource_Parameter_messageQueuePolicy";
 
-    @objid ("9745113e-457b-4b27-821d-b2427bca65c6")
+    @objid ("e785da54-1a7b-4fa0-9539-7d817f0c0cf2")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_SENDSERVICES = "MessageComResource_Parameter_sendServices";
 
-    @objid ("6cdd3dd9-99f2-4891-9dcc-89d6f62c1313")
+    @objid ("9fbb159d-eb23-43f9-9bcc-31945e9424af")
     public static final String MESSAGECOMRESOURCE_PARAMETER_MESSAGECOMRESOURCE_PARAMETER_RECEIVESERVICES = "MessageComResource_Parameter_receiveServices";
 
-    @objid ("34b6ca2f-9c7b-491d-80c2-14e123a96013")
+    @objid ("d34ce0d0-c062-4717-9ecb-14dfc9d8ba2b")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_OCCURENCE = "NotificationResource_Association_occurence";
 
-    @objid ("fd13e7d4-bec0-4dac-981a-9ca097e8c7a2")
+    @objid ("73e9cc2a-89ba-4767-b3e8-8c947a03dcdb")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_MECHANISM = "NotificationResource_Association_mechanism";
 
-    @objid ("fe7ee858-7ff8-4a75-aa33-42109472fc82")
+    @objid ("1b35bc47-2117-46dc-8c0e-405e3081c141")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_OCCURENCECOUNTELEMENTS = "NotificationResource_Association_occurenceCountElements";
 
-    @objid ("705aa17d-a0c8-44e0-9115-bb5c4df29f62")
+    @objid ("f4b6b63f-b44c-4cbb-ab7d-a6c6aa12258a")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_MASKELEMENTS = "NotificationResource_Association_maskElements";
 
-    @objid ("a45401d5-4b93-4614-8309-94fb988090fd")
+    @objid ("12d71f80-767d-4729-90c9-f3c648efcccd")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_FLUSHSERVICES = "NotificationResource_Association_flushServices";
 
-    @objid ("5a6933bf-57bb-4a74-8736-8c6c71f34ec0")
+    @objid ("f4b73dda-64d3-4178-b138-07f948095626")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_SIGNALSERVICES = "NotificationResource_Association_signalServices";
 
-    @objid ("97e417c8-8ff3-458d-a65f-39ac5c228ee2")
+    @objid ("3281131a-6269-4bd9-aeca-0c86331ad612")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_WAITSERVICES = "NotificationResource_Association_waitServices";
 
-    @objid ("1a05ed82-646b-4242-b5b9-931b2d908e90")
+    @objid ("a54b5796-5912-4582-9c76-bd67370ea12e")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATION_NOTIFICATIONRESOURCE_ASSOCIATION_CLEARSERVICES = "NotificationResource_Association_clearServices";
 
-    @objid ("aa517689-ef62-484b-8379-6753a098a04e")
+    @objid ("d1a55bf5-82b7-4f22-ad3d-044dcc6bdc4d")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_OCCURENCE = "NotificationResource_AssociationEnd_occurence";
 
-    @objid ("9934a33e-08f2-4574-bf7c-507e999d3c99")
+    @objid ("4c32e7bf-5c21-41d0-8753-2209463d198d")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_MECHANISM = "NotificationResource_AssociationEnd_mechanism";
 
-    @objid ("ddb14daa-c8af-447c-8da9-2123dd351bb4")
+    @objid ("92c84889-894c-4efd-bb67-6795ad13cfd3")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_OCCURENCECOUNTELEMENTS = "NotificationResource_AssociationEnd_occurenceCountElements";
 
-    @objid ("2fef892b-c1ab-4b42-8180-cc5d9b249f60")
+    @objid ("3832cb46-277c-419c-940e-abd2b2907297")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_MASKELEMENTS = "NotificationResource_AssociationEnd_maskElements";
 
-    @objid ("e905adaf-4b16-4db4-8d88-fd1f1e7581d3")
+    @objid ("67bd7c41-b45d-488c-ae74-3250935d8425")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_FLUSHSERVICES = "NotificationResource_AssociationEnd_flushServices";
 
-    @objid ("a5b006d4-d586-4128-893f-b41e9beedf3a")
+    @objid ("68e52799-af26-4022-977f-c3a062ab872b")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_SIGNALSERVICES = "NotificationResource_AssociationEnd_signalServices";
 
-    @objid ("d778098e-1357-4093-8f8e-7262e7596825")
+    @objid ("49cdb06f-d34a-4d28-abcf-f4a4f9c94038")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_WAITSERVICES = "NotificationResource_AssociationEnd_waitServices";
 
-    @objid ("9a6b1260-e402-449d-a686-6b9c20a4abfa")
+    @objid ("4c9033d1-e71a-4434-a582-2bf8e48a1255")
     public static final String NOTIFICATIONRESOURCE_ASSOCIATIONEND_NOTIFICATIONRESOURCE_ASSOCIATIONEND_CLEARSERVICES = "NotificationResource_AssociationEnd_clearServices";
 
-    @objid ("73ee793e-9f7b-46a8-85a4-eb2df858497e")
+    @objid ("c4501724-d854-4efd-b3f0-2aaa89980390")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_OCCURENCE = "NotificationResource_Attribute_occurence";
 
-    @objid ("90384609-bfa1-4e31-9d2b-eeed3b10489c")
+    @objid ("1c582529-7b2b-449d-bb91-8195be566eb0")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_MECHANISM = "NotificationResource_Attribute_mechanism";
 
-    @objid ("3bf18114-1b4f-41f5-a245-c82e2fa44aa2")
+    @objid ("cdbfb145-69b0-4c07-ac64-f74fcca4894d")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_OCCURENCECOUNTELEMENTS = "NotificationResource_Attribute_occurenceCountElements";
 
-    @objid ("d5982d8d-7843-40c1-845c-8d7907ca35a1")
+    @objid ("ae12bbac-3de5-4ea6-a912-c545d86bf402")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_MASKELEMENTS = "NotificationResource_Attribute_maskElements";
 
-    @objid ("ec2ba78d-6ce7-4342-a409-91d598736564")
+    @objid ("93eb5b89-2f39-447b-8f6a-28f5dc792f3c")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_FLUSHSERVICES = "NotificationResource_Attribute_flushServices";
 
-    @objid ("ea6e111b-f630-41cd-9d1c-272e0bdddbfe")
+    @objid ("361a3e28-cc45-464e-bc66-fc9c02e7871c")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_SIGNALSERVICES = "NotificationResource_Attribute_signalServices";
 
-    @objid ("743f3ec2-9ea4-4402-8b1a-e765f595a65c")
+    @objid ("39854137-b84d-4167-9939-80c0ed9ed1d8")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_WAITSERVICES = "NotificationResource_Attribute_waitServices";
 
-    @objid ("12e03ac3-27ae-4260-ad24-154daa58d8f8")
+    @objid ("299a451a-3771-442e-a9b6-5ac3b40d2772")
     public static final String NOTIFICATIONRESOURCE_ATTRIBUTE_NOTIFICATIONRESOURCE_ATTRIBUTE_CLEARSERVICES = "NotificationResource_Attribute_clearServices";
 
-    @objid ("d7b06c58-c2ed-42e7-93ec-1d044508190b")
+    @objid ("9a0811ae-e4aa-4612-b890-72810b33b052")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_OCCURENCE = "NotificationResource_Classifier_occurence";
 
-    @objid ("60f29a43-a12d-4dc8-919f-884df38618b7")
+    @objid ("da1d7151-4250-4964-a43e-0da96ca15cc3")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_MECHANISM = "NotificationResource_Classifier_mechanism";
 
-    @objid ("4f7c9874-7cf0-45f9-8f9d-1c4be4153f5d")
+    @objid ("3efe6bcf-661c-49f4-aba6-9d6f100084ef")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_OCCURENCECOUNTELEMENTS = "NotificationResource_Classifier_occurenceCountElements";
 
-    @objid ("94a42927-3559-48ce-a9a2-5d56e40d041a")
+    @objid ("49414838-e6e2-40dd-ab3d-77b7b58270d2")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_MASKELEMENTS = "NotificationResource_Classifier_maskElements";
 
-    @objid ("cc65a3f6-8373-4e12-9155-6ddd5b0f944c")
+    @objid ("ea47bb8c-78aa-40cf-8d57-b972c6965b40")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_FLUSHSERVICES = "NotificationResource_Classifier_flushServices";
 
-    @objid ("aec03fb3-89f2-4070-8791-c1a6aff14e39")
+    @objid ("24e1b39d-5edd-4931-865c-364ede047a90")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_SIGNALSERVICES = "NotificationResource_Classifier_signalServices";
 
-    @objid ("cc4dfb54-0a3b-4d90-a5cf-d0d3ae16ab52")
+    @objid ("df3ccfaf-cc8e-4836-89ac-2d7ab0a8f664")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_WAITSERVICES = "NotificationResource_Classifier_waitServices";
 
-    @objid ("c629e9a1-7217-4e17-8ebf-b57f9c4be077")
+    @objid ("8f695d4a-381c-4863-8190-9c1492cf71c4")
     public static final String NOTIFICATIONRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCE_CLASSIFIER_CLEARSERVICES = "NotificationResource_Classifier_clearServices";
 
-    @objid ("80c55c62-084c-4a4c-accf-af6d688a3380")
+    @objid ("57bd402a-c606-4e6b-a828-a9288e595587")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_OCCURENCE = "NotificationResource_Instance_occurence";
 
-    @objid ("fa8004f7-6178-4ece-8577-fe3e3e91a236")
+    @objid ("be35280f-03d3-4bf8-b9f0-eb9469c634e6")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_MECHANISM = "NotificationResource_Instance_mechanism";
 
-    @objid ("c7b4de2c-7285-4edf-8cf2-2c4cd3ab711e")
+    @objid ("1c4bfc02-9714-43b9-95f4-16b71e285e3c")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_OCCURENCECOUNTELEMENTS = "NotificationResource_Instance_occurenceCountElements";
 
-    @objid ("8acc782a-2056-4c34-83c7-410ea58817a1")
+    @objid ("c7c1e429-1d92-4658-8726-426187a5675b")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_MASKELEMENTS = "NotificationResource_Instance_maskElements";
 
-    @objid ("43e5ac50-1495-4f77-8ac4-d29c09c9038d")
+    @objid ("09a2903b-4a94-4b5d-b59d-c59ea57ff1b7")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_FLUSHSERVICES = "NotificationResource_Instance_flushServices";
 
-    @objid ("5271338e-f2da-46dd-bb8b-e3324001136e")
+    @objid ("87e3f048-4016-4227-b89f-4513c82822b9")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_SIGNALSERVICES = "NotificationResource_Instance_signalServices";
 
-    @objid ("74a2e78e-66a6-4381-99b8-60532b26635f")
+    @objid ("f9473b65-3ed6-435c-873b-6121f8184853")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_WAITSERVICES = "NotificationResource_Instance_waitServices";
 
-    @objid ("89532338-caba-4d53-8de0-7249dd9a323e")
+    @objid ("99aa9396-70c9-4dc8-8d26-4481cc8b3c17")
     public static final String NOTIFICATIONRESOURCE_INSTANCE_NOTIFICATIONRESOURCE_INSTANCE_CLEARSERVICES = "NotificationResource_Instance_clearServices";
 
-    @objid ("b9742834-78d3-41d3-812b-b4a12922632d")
+    @objid ("5619ced4-b131-4dfb-a65f-50fb4134e05c")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_OCCURENCE = "NotificationResource_Lifeline_occurence";
 
-    @objid ("277202b6-c705-4904-847a-95deacd5bd25")
+    @objid ("4c7d3025-c082-4322-9636-2dd9310f209e")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_MECHANISM = "NotificationResource_Lifeline_mechanism";
 
-    @objid ("2be7ac47-3730-450c-a877-0588e1d31621")
+    @objid ("a4ee351b-5259-45f3-86ff-8e11b11c0eac")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_OCCURENCECOUNTELEMENTS = "NotificationResource_Lifeline_occurenceCountElements";
 
-    @objid ("02f170cc-c36c-4f80-a604-543c5e72b6f5")
+    @objid ("4dbb0b91-16a8-4dfa-b61e-3b6fb549ec1d")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_MASKELEMENTS = "NotificationResource_Lifeline_maskElements";
 
-    @objid ("17828537-abc7-45b5-9c67-47bdf2d112fa")
+    @objid ("2febc6a0-ef76-423b-8f7e-8679f45f8cf9")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_FLUSHSERVICES = "NotificationResource_Lifeline_flushServices";
 
-    @objid ("47c70b16-05cb-4235-a3fd-14e865047f85")
+    @objid ("d418ecb3-907e-433c-9598-8a408ca9a667")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_SIGNALSERVICES = "NotificationResource_Lifeline_signalServices";
 
-    @objid ("211a8ec8-4d00-472c-9e40-a0d4ed425253")
+    @objid ("5bc2e961-a579-491d-a1b2-7de40d2ff7bd")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_WAITSERVICES = "NotificationResource_Lifeline_waitServices";
 
-    @objid ("ed42ffa4-e9f1-4029-a362-4c3bf1a11590")
+    @objid ("a33eb734-d5c1-4c7a-8d78-aea670802540")
     public static final String NOTIFICATIONRESOURCE_LIFELINE_NOTIFICATIONRESOURCE_LIFELINE_CLEARSERVICES = "NotificationResource_Lifeline_clearServices";
 
-    @objid ("c3869897-d0f8-4201-bd3d-4f2a11898e87")
+    @objid ("53d0d0a6-f99c-42f9-828f-40413780ae7d")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCE = "NotificationResource_Link_occurence";
 
-    @objid ("cccebd71-df6f-4dcf-9c6c-b7c64de62e21")
+    @objid ("47c9f6e6-4c19-4269-a852-7809e4e93d49")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MECHANISM = "NotificationResource_Link_mechanism";
 
-    @objid ("023f70f2-5a6a-4f7b-828d-41289c5c7d8e")
+    @objid ("0b7064b7-b096-4476-925e-d59051adb34a")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS = "NotificationResource_Link_occurenceCountElements";
 
-    @objid ("e14c7767-558d-49df-854c-4cbecbc2e7cc")
+    @objid ("12e634ea-cf00-4c6e-b2c1-ab3c961f607f")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_MASKELEMENTS = "NotificationResource_Link_maskElements";
 
-    @objid ("d1124c64-9d0d-49f5-a262-6c47b011b7f1")
+    @objid ("72e65eba-8858-4954-9330-e6b876a95179")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES = "NotificationResource_Link_flushServices";
 
-    @objid ("f030aafd-f0ff-4bbb-b639-a455475db3ef")
+    @objid ("1818a0a9-1c11-4623-8cd8-c0416d9c0878")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES = "NotificationResource_Link_signalServices";
 
-    @objid ("1a57da05-3d56-4ed7-bec7-a0171a5af780")
+    @objid ("220cc84f-a003-4025-b313-7ae8196f36d4")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_WAITSERVICES = "NotificationResource_Link_waitServices";
 
-    @objid ("31655a1e-76cc-48b9-9419-4d5ba9099d94")
+    @objid ("21db66ab-2f27-4d86-89eb-2e84de09ed99")
     public static final String NOTIFICATIONRESOURCE_LINK_NOTIFICATIONRESOURCE_LINK_CLEARSERVICES = "NotificationResource_Link_clearServices";
 
-    @objid ("50913d7f-211d-4513-8ded-d9389df4d963")
+    @objid ("8d730771-7932-4edd-827d-b08a6379cb66")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_OCCURENCE = "NotificationResource_Parameter_occurence";
 
-    @objid ("8a87de8f-677e-4c9e-8d73-7740bb100057")
+    @objid ("527c1a11-61c6-4937-858d-6a43333f8d17")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_MECHANISM = "NotificationResource_Parameter_mechanism";
 
-    @objid ("db65ee2b-85b5-4b40-aef0-c45ac425667a")
+    @objid ("f4a582ff-7048-42f6-a653-19394805d553")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_OCCURENCECOUNTELEMENTS = "NotificationResource_Parameter_occurenceCountElements";
 
-    @objid ("6495cb35-79e3-4c25-bb33-5290c543982f")
+    @objid ("247f1196-e429-4ad2-a167-50082f223b35")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_MASKELEMENTS = "NotificationResource_Parameter_maskElements";
 
-    @objid ("76d8a05c-05ac-4d3a-a62e-547a02de39fa")
+    @objid ("f6d378d3-ffb8-4f80-957f-b9e57f322c79")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_FLUSHSERVICES = "NotificationResource_Parameter_flushServices";
 
-    @objid ("49151447-1a71-4380-8a73-af6ceedb9863")
+    @objid ("fbcd2731-3d19-440e-a7e5-b859f7e63b94")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_SIGNALSERVICES = "NotificationResource_Parameter_signalServices";
 
-    @objid ("6da092e3-23ef-4899-ab42-f6302b99d4f8")
+    @objid ("627f68ca-d12d-42e7-9f0e-133c46b60414")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_WAITSERVICES = "NotificationResource_Parameter_waitServices";
 
-    @objid ("b4a86426-945f-453a-a163-bdebf4a84966")
+    @objid ("462968ac-72f9-4561-bd8d-a5e58064f4b6")
     public static final String NOTIFICATIONRESOURCE_PARAMETER_NOTIFICATIONRESOURCE_PARAMETER_CLEARSERVICES = "NotificationResource_Parameter_clearServices";
 
-    @objid ("d7abb4ad-8f55-4260-bca7-9ff24644df4c")
+    @objid ("322d8fb4-050e-4740-8782-cf2f15688f70")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATION_SHAREDDATACOMRESOURCE_ASSOCIATION_READSERVICES = "SharedDataComResource_Association_readServices";
 
-    @objid ("b04f8417-5db7-4c67-8323-34bf09616206")
+    @objid ("e3515963-e0ce-4d2a-b28b-77469b7ecbb1")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATION_SHAREDDATACOMRESOURCE_ASSOCIATION_WRITESERVICES = "SharedDataComResource_Association_writeServices";
 
-    @objid ("cf3508f2-23f1-4959-b9aa-724a0a30103d")
+    @objid ("e435bda3-ed50-4f87-b5d4-f129c3f76a7d")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATIONEND_SHAREDDATACOMRESOURCE_ASSOCIATIONEND_READSERVICES = "SharedDataComResource_AssociationEnd_readServices";
 
-    @objid ("92f44497-7316-4f66-8e55-92efda182380")
+    @objid ("39d40b29-6194-444e-b77c-752bb3783119")
     public static final String SHAREDDATACOMRESOURCE_ASSOCIATIONEND_SHAREDDATACOMRESOURCE_ASSOCIATIONEND_WRITESERVICES = "SharedDataComResource_AssociationEnd_writeServices";
 
-    @objid ("3cdf9525-806e-427b-b283-42db1ed65084")
+    @objid ("812b7e64-a5a0-4aaf-a3f8-a4d5dd6dd041")
     public static final String SHAREDDATACOMRESOURCE_ATTRIBUTE_SHAREDDATACOMRESOURCE_ATTRIBUTE_READSERVICES = "SharedDataComResource_Attribute_readServices";
 
-    @objid ("6f0f8b98-e296-457e-9f96-86d15429c239")
+    @objid ("8ba133bc-524e-4f7d-ac80-25a1c63a0d0d")
     public static final String SHAREDDATACOMRESOURCE_ATTRIBUTE_SHAREDDATACOMRESOURCE_ATTRIBUTE_WRITESERVICES = "SharedDataComResource_Attribute_writeServices";
 
-    @objid ("e7b819e1-2b64-4c07-98b1-16832a1bafa5")
+    @objid ("d0200cda-5275-4154-86b7-de1560689b94")
     public static final String SHAREDDATACOMRESOURCE_CLASSIFIER_SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES = "SharedDataComResource_Classifier_readServices";
 
-    @objid ("27a60854-fd8c-4470-9f8d-9819b0543ba6")
+    @objid ("d88eb8d6-2e79-4527-9c2d-19df204eda17")
     public static final String SHAREDDATACOMRESOURCE_CLASSIFIER_SHAREDDATACOMRESOURCE_CLASSIFIER_WRITESERVICES = "SharedDataComResource_Classifier_writeServices";
 
-    @objid ("7ddab328-49b1-4b1d-886d-b6ddb85ec84d")
+    @objid ("d59ed3ae-2d5d-4fc4-9dfa-948e6b0f1cc9")
     public static final String SHAREDDATACOMRESOURCE_INSTANCE_SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES = "SharedDataComResource_Instance_readServices";
 
-    @objid ("7da8fa75-16e1-46fa-8a06-f0fc740bc01b")
+    @objid ("2e4fd1a3-5956-4675-8903-fd06ae15b41d")
     public static final String SHAREDDATACOMRESOURCE_INSTANCE_SHAREDDATACOMRESOURCE_INSTANCE_WRITESERVICES = "SharedDataComResource_Instance_writeServices";
 
-    @objid ("569791b6-effb-42ea-a91c-1732a845cc5d")
+    @objid ("cf9903a2-a360-4ae7-8f75-7686e115b0f7")
     public static final String SHAREDDATACOMRESOURCE_LIFELINE_SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES = "SharedDataComResource_Lifeline_readServices";
 
-    @objid ("2da99d80-5434-44a2-9516-97352707720c")
+    @objid ("3c135dec-b973-48a1-b1af-b0f3b1654283")
     public static final String SHAREDDATACOMRESOURCE_LIFELINE_SHAREDDATACOMRESOURCE_LIFELINE_WRITESERVICES = "SharedDataComResource_Lifeline_writeServices";
 
-    @objid ("2b7e2d38-4003-4692-84e4-9fc5894ce5f3")
+    @objid ("aa26889f-77da-4b9e-b74e-69b03e458e65")
     public static final String SHAREDDATACOMRESOURCE_LINK_SHAREDDATACOMRESOURCE_LINK_READSERVICES = "SharedDataComResource_Link_readServices";
 
-    @objid ("8caf19b7-87a3-4005-a9c4-cdaed825fa98")
+    @objid ("f2f94935-c656-40c0-ab93-a35d217e0384")
     public static final String SHAREDDATACOMRESOURCE_LINK_SHAREDDATACOMRESOURCE_LINK_WRITESERVICES = "SharedDataComResource_Link_writeServices";
 
-    @objid ("6758c62d-0886-4d18-a8f8-65be1b16408f")
+    @objid ("f9c08cb5-4bba-46c5-8b28-67cd1a0d860a")
     public static final String SHAREDDATACOMRESOURCE_PARAMETER_SHAREDDATACOMRESOURCE_PARAMETER_READSERVICES = "SharedDataComResource_Parameter_readServices";
 
-    @objid ("896277a3-3843-473f-812e-67e297225b4e")
+    @objid ("5deed815-7bd9-4a8c-b147-c98ef3155f42")
     public static final String SHAREDDATACOMRESOURCE_PARAMETER_SHAREDDATACOMRESOURCE_PARAMETER_WRITESERVICES = "SharedDataComResource_Parameter_writeServices";
 
-    @objid ("ac1cd843-f1bf-451b-97e0-0de14d983894")
+    @objid ("fc13d5c2-7898-4bd4-a956-4c537467e4cf")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE = "SwCommunicationResource_Association_elementSize";
 
-    @objid ("75140541-74f3-4a74-97b4-c5cad6fcd435")
+    @objid ("59af8842-68dd-4d9c-8736-097c060f948b")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_TRANSMMODE = "SwCommunicationResource_Association_transmMode";
 
-    @objid ("9a17fde0-f3cd-4e50-b23a-07fea960b1e3")
+    @objid ("445aedec-b0f5-4f03-8e2b-7af8e86064cb")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_BLOCKT = "SwCommunicationResource_Association_blockT";
 
-    @objid ("3408abca-8fb4-40b0-adb0-813b47bfed68")
+    @objid ("8455f3ea-e195-4da8-aca7-4880cd37987c")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_PACKETT = "SwCommunicationResource_Association_packetT";
 
-    @objid ("c153ecc0-632b-4bfa-bd62-c704c6dbb826")
+    @objid ("9e065d27-7367-4666-93a2-534dd0e289ef")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_CAPACITY = "SwCommunicationResource_Association_capacity";
 
-    @objid ("ba9eeec6-4fff-4ff5-83c4-fa50aa3eb453")
+    @objid ("bd3ed10f-69c9-4205-916f-f45e64668f06")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_MAINSCHEDULER = "SwCommunicationResource_Association_mainScheduler";
 
-    @objid ("9400011d-04f7-4b21-b6c4-31a82a01f0ca")
+    @objid ("e1d74a9f-b0d4-4060-90ec-d2c4ad6f1d5b")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SWCOMMUNICATIONRESOURCE_ASSOCIATION_SPEEDFACTOR = "SwCommunicationResource_Association_speedFactor";
 
-    @objid ("f0d10e05-72bf-4ca8-bb22-fa3e02f751cd")
+    @objid ("f7a04e8d-2a0a-45f6-8481-08400245dbb6")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_BLOCKT = "SwCommunicationResource_AssociationEnd_blockT";
 
-    @objid ("50cc7333-0243-44d5-b74a-190207086453")
+    @objid ("9dd6354f-aabc-4d21-ac01-d21496239386")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_PACKETT = "SwCommunicationResource_AssociationEnd_packetT";
 
-    @objid ("8dc97441-5a84-448a-b445-aa16482453f9")
+    @objid ("263de90a-9acd-4ab4-a75d-6b66f0c25ef0")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_CAPACITY = "SwCommunicationResource_AssociationEnd_capacity";
 
-    @objid ("fe7ea787-38e5-441a-9f1b-59be3bbee3b5")
+    @objid ("18fdc6b1-bcff-45c9-83fd-0513ea516b21")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SPEEDFACTOR = "SwCommunicationResource_AssociationEnd_speedFactor";
 
-    @objid ("bfdfabe9-f1eb-42a0-89dd-1c90bc6f92fb")
+    @objid ("3734ed4f-20ea-4fda-9b7b-a2fee3fe92dc")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_MAINSCHEDULER = "SwCommunicationResource_AssociationEnd_mainScheduler";
 
-    @objid ("2f5da8e7-e75e-454b-911d-bb195a962bbd")
+    @objid ("4d4a9089-e379-4590-aac5-b5d6e4325e8b")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_ELEMENTSIZE = "SwCommunicationResource_AssociationEnd_elementSize";
 
-    @objid ("9e6424c8-79d8-41f9-abb4-e9874760357d")
+    @objid ("f2c18c23-99e1-4733-82dd-b19d9d531eb3")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_SWCOMMUNICATIONRESOURCE_ASSOCIATIONEND_TRANSMMODE = "SwCommunicationResource_AssociationEnd_transmMode";
 
-    @objid ("c6e253c5-71b8-4ef1-a1b6-84e676e51630")
+    @objid ("476a51fc-ae43-4c89-853d-eaad21ffbca9")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_BLOCKT = "SwCommunicationResource_Attribute_blockT";
 
-    @objid ("ca165673-2d11-44b1-9273-2409653b0d3a")
+    @objid ("24a82fbe-031e-4d12-8100-ea5876d3d5e8")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_PACKETT = "SwCommunicationResource_Attribute_packetT";
 
-    @objid ("c92ced55-0f5a-4002-b03f-19d8e23ff60c")
+    @objid ("a1b6d92a-dcfe-4b9c-95ce-2860ccceb27b")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_CAPACITY = "SwCommunicationResource_Attribute_capacity";
 
-    @objid ("6f1fb0c1-6ed1-4458-921c-f784ca38e3df")
+    @objid ("8abdcda6-5b34-488d-bb68-7c93518dca71")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SPEEDFACTOR = "SwCommunicationResource_Attribute_speedFactor";
 
-    @objid ("e0edfa20-ebf5-47ba-984a-42a9aecf76cf")
+    @objid ("326ccba4-deff-4edd-a3f0-8e039b73fb78")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_MAINSCHEDULER = "SwCommunicationResource_Attribute_mainScheduler";
 
-    @objid ("dd7a9750-5462-4b6f-ba69-a8c89e74fd9b")
+    @objid ("fdd86265-6e62-4130-abc3-1a28025fc420")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_ELEMENTSIZE = "SwCommunicationResource_Attribute_elementSize";
 
-    @objid ("7c2fe228-9481-4c30-ae20-8fc48cad98f9")
+    @objid ("d14a93fe-eb73-4a49-bbd5-646b95ca3f7e")
     public static final String SWCOMMUNICATIONRESOURCE_ATTRIBUTE_SWCOMMUNICATIONRESOURCE_ATTRIBUTE_TRANSMMODE = "SwCommunicationResource_Attribute_transmMode";
 
-    @objid ("aa822b81-88e0-47ea-ba7c-1f1a605f17be")
+    @objid ("e30ddea4-af88-46e0-8044-6a2170888c3d")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_BLOCKT = "SwCommunicationResource_Classifier_blockT";
 
-    @objid ("74fdef3c-0b6f-4c74-a0dd-9a100a50eb8f")
+    @objid ("b71bf440-1f2c-4141-9760-38498c321b74")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_PACKETT = "SwCommunicationResource_Classifier_packetT";
 
-    @objid ("263af753-5286-4c3d-8b22-bcdab040d021")
+    @objid ("71f8d334-5f53-4a09-a31c-38642f0bf637")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_CAPACITY = "SwCommunicationResource_Classifier_capacity";
 
-    @objid ("8a88357b-ebce-4dad-8344-b6dc79aaec7b")
+    @objid ("f6924ce8-9769-475b-be90-794b90ba9de0")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_SPEEDFACTOR = "SwCommunicationResource_Classifier_speedFactor";
 
-    @objid ("01292789-1f44-4773-b3b0-7babbb30bcf4")
+    @objid ("c39f3850-6b7c-4e01-a840-6e7102a353e2")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_MAINSCHEDULER = "SwCommunicationResource_Classifier_mainScheduler";
 
-    @objid ("b427bf7d-82b3-4210-beda-a3105b99535f")
+    @objid ("aff24aef-ccac-47f5-8589-ed33c67dfdeb")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_ELEMENTSIZE = "SwCommunicationResource_Classifier_elementSize";
 
-    @objid ("83386f7c-fcb4-4267-a7ec-8741a874438d")
+    @objid ("16136624-1d65-4a83-88ce-2c9ca4f4bd46")
     public static final String SWCOMMUNICATIONRESOURCE_CLASSIFIER_SWCOMMUNICATIONRESOURCE_CLASSIFIER_TRANSMMODE = "SwCommunicationResource_Classifier_transmMode";
 
-    @objid ("78cbcbab-df56-4a71-a75d-7666a23b103f")
+    @objid ("3e597e5a-36e3-4b9c-aabc-97ffaca9da3e")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_BLOCKT = "SwCommunicationResource_Instance_blockT";
 
-    @objid ("0395c256-bb87-4381-a70f-ef63b348c952")
+    @objid ("0ed59583-4003-468b-bf5c-9f8020908832")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_PACKETT = "SwCommunicationResource_Instance_packetT";
 
-    @objid ("4b290125-f328-4d1f-a8c4-c098082af4f3")
+    @objid ("3f36c3d2-287b-4883-bec6-721ec636a529")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_CAPACITY = "SwCommunicationResource_Instance_capacity";
 
-    @objid ("c93a5954-b197-4137-bae5-44841d7dc70b")
+    @objid ("114c903b-f804-40cc-a231-85f0d55292ff")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_SPEEDFACTOR = "SwCommunicationResource_Instance_speedFactor";
 
-    @objid ("5c1eae0d-3df0-4b65-9be1-0db3808320fd")
+    @objid ("baa809a2-bcb1-4eaa-93a5-b6ae80924d3b")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_MAINSCHEDULER = "SwCommunicationResource_Instance_mainScheduler";
 
-    @objid ("df710ff5-0d3b-47d2-b30f-03c5ff8bf26f")
+    @objid ("10fff3dc-cd82-47b4-8f4a-5b0fca28012d")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_ELEMENTSIZE = "SwCommunicationResource_Instance_elementSize";
 
-    @objid ("7e2cf631-bd4c-4656-9c74-203c9c927d13")
+    @objid ("242a3c59-98fa-44c7-8a40-339306d665b2")
     public static final String SWCOMMUNICATIONRESOURCE_INSTANCE_SWCOMMUNICATIONRESOURCE_INSTANCE_TRANSMMODE = "SwCommunicationResource_Instance_transmMode";
 
-    @objid ("13bc68fa-483f-47ba-9c1d-af1079f24a9e")
+    @objid ("0269af75-6caf-4cf5-a09d-c524d1dde0ff")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT = "SwCommunicationResource_Lifeline_blockT";
 
-    @objid ("f93798bf-d08e-4df9-98bc-39f67e85db03")
+    @objid ("6e18adbc-10af-415c-9f16-3345ad2e7ae0")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_PACKETT = "SwCommunicationResource_Lifeline_packetT";
 
-    @objid ("ae96330a-cd6b-4c35-b6bf-2cebee1c9a46")
+    @objid ("202cabd5-cbff-4c9b-8e0c-a4a38a93d3fe")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_CAPACITY = "SwCommunicationResource_Lifeline_capacity";
 
-    @objid ("7612ee76-d451-4e17-91b3-14ae9004ddcc")
+    @objid ("b4fc5483-b891-4f98-aabd-7e5b06e44e17")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_SPEEDFACTOR = "SwCommunicationResource_Lifeline_speedFactor";
 
-    @objid ("06a512cd-50ab-443b-8a3b-d48dd044f794")
+    @objid ("e840624e-be61-4f91-8928-3511449af4aa")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_MAINSCHEDULER = "SwCommunicationResource_Lifeline_mainScheduler";
 
-    @objid ("64bf4d65-73cd-477d-b3c6-b27ff47537a5")
+    @objid ("32aa4de2-fb5a-4b1b-834f-027141fb5e17")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_ELEMENTSIZE = "SwCommunicationResource_Lifeline_elementSize";
 
-    @objid ("984bb01a-8067-4121-9b01-c11a00f935b8")
+    @objid ("bf550730-ef92-4824-9942-bfe877f334b5")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SWCOMMUNICATIONRESOURCE_LIFELINE_TRANSMMODE = "SwCommunicationResource_Lifeline_transmMode";
 
-    @objid ("7fd485e7-6226-4cc1-8389-6ac9c06a7b14")
+    @objid ("8d3c85b8-be31-43c9-8b70-0f6dc0a9a082")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_BLOCKT = "SwCommunicationResource_Link_blockT";
 
-    @objid ("4ead5a6b-e03c-449f-8df2-02fbd4512f06")
+    @objid ("d25c77d4-f6e6-4c84-8cb4-49da86300a92")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_PACKETT = "SwCommunicationResource_Link_packetT";
 
-    @objid ("7f3925f7-a919-4ed2-b4ff-b00d8a155f33")
+    @objid ("30d2eb01-b0ca-4ac9-9bcd-a3d2c7549fcf")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_CAPACITY = "SwCommunicationResource_Link_capacity";
 
-    @objid ("1e3400fa-721e-426e-83a3-d3cd1259238b")
+    @objid ("4f055e94-0f11-4377-8e97-314fe2088170")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_SPEEDFACTOR = "SwCommunicationResource_Link_speedFactor";
 
-    @objid ("886c0f2d-0aab-4689-b623-18d9e91490e2")
+    @objid ("cedb4774-a368-40e4-9ad8-c0f38d24689f")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_MAINSCHEDULER = "SwCommunicationResource_Link_mainScheduler";
 
-    @objid ("8553e25d-0eb1-48d5-8004-991977e08fcd")
+    @objid ("e717c934-112c-4ed7-a915-0b16c69c99f3")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_ELEMENTSIZE = "SwCommunicationResource_Link_elementSize";
 
-    @objid ("3635735c-d9e1-4a84-9331-e70d273bd0b1")
+    @objid ("12b1555f-f413-4479-8f51-b8538456663f")
     public static final String SWCOMMUNICATIONRESOURCE_LINK_SWCOMMUNICATIONRESOURCE_LINK_TRANSMMODE = "SwCommunicationResource_Link_transmMode";
 
-    @objid ("6349c4d5-7e10-4765-a7c6-a20280a388b8")
+    @objid ("4cf9ee98-17f2-4da8-876c-8d5233498215")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_BLOCKT = "SwCommunicationResource_Parameter_blockT";
 
-    @objid ("4f79aa77-195e-46c5-b312-3e6e1e94bcba")
+    @objid ("f8de10ed-e43c-4938-a6e3-eed7774917dc")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_PACKETT = "SwCommunicationResource_Parameter_packetT";
 
-    @objid ("163511d3-d27c-434d-b3a1-3f6a7f25c256")
+    @objid ("5e11633e-fd91-43cb-aea4-af120fa630bc")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_CAPACITY = "SwCommunicationResource_Parameter_capacity";
 
-    @objid ("cc3f92da-068c-4e4b-82d4-d252bf0feba2")
+    @objid ("c1447136-387f-4693-ac7b-d66dffbad238")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_SPEEDFACTOR = "SwCommunicationResource_Parameter_speedFactor";
 
-    @objid ("0e3830a3-24e4-4ddc-9f48-f2d864f21869")
+    @objid ("bc5bc399-b4d4-4bc8-b80c-92931bea9061")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_MAINSCHEDULER = "SwCommunicationResource_Parameter_mainScheduler";
 
-    @objid ("eae371cf-8060-4fd1-a2f0-d942b20cb79c")
+    @objid ("0eeb309a-3e82-44a9-9fbd-2456f98a9bbe")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_ELEMENTSIZE = "SwCommunicationResource_Parameter_elementSize";
 
-    @objid ("db3af530-0813-495f-b207-19d87d3c5082")
+    @objid ("50dc58bd-d1e8-4a27-8265-cb5b3c5e26e1")
     public static final String SWCOMMUNICATIONRESOURCE_PARAMETER_SWCOMMUNICATIONRESOURCE_PARAMETER_TRANSMMODE = "SwCommunicationResource_Parameter_transmMode";
 
-    @objid ("58a48627-aac7-4d30-a74c-96bcd5f74663")
+    @objid ("ac973728-b80a-4c17-9182-5f7c523196af")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATION_SWINTERACTIONRESOURCE_ASSOCIATION_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Association_isIntraMemoryPartitionInteraction";
 
-    @objid ("6702aa10-a2e4-4ece-acd1-ae702c8e5c3d")
+    @objid ("f156e4df-d664-46b9-9fe4-21a795acdb82")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATION_SWINTERACTIONRESOURCE_ASSOCIATION_WAITINGQUEUEPOLICY = "SwInteractionResource_Association_waitingQueuePolicy";
 
-    @objid ("ab0e1b87-3c4b-406d-9542-238b170dd6cb")
+    @objid ("dbd9631b-724b-48c2-83d0-8a9bd238275b")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATION_SWINTERACTIONRESOURCE_ASSOCIATION_WAITINGQUEUECAPACITY = "SwInteractionResource_Association_waitingQueueCapacity";
 
-    @objid ("ad4adc21-3384-4ee4-80f9-8c45e8cfc7e7")
+    @objid ("abaab69d-e993-45e4-b667-db622a1b7e1c")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATION_SWINTERACTIONRESOURCE_ASSOCIATION_WAITINGPOLICYELEMENTS = "SwInteractionResource_Association_waitingPolicyElements";
 
-    @objid ("bc79bdd2-6f89-486c-87ee-e4dd29f4c13c")
+    @objid ("479adb6f-a415-40fc-8096-8bd20e439286")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_AssociationEnd_isIntraMemoryPartitionInteraction";
 
-    @objid ("09fed872-9994-49e0-ab8d-563d3e025d68")
+    @objid ("4382c43d-1d9f-4e7f-94f2-42064ce9fd7a")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUEPOLICY = "SwInteractionResource_AssociationEnd_waitingQueuePolicy";
 
-    @objid ("e2ee9c38-3875-4dad-82e8-882cd47070a4")
+    @objid ("0aace90a-3f63-4ebc-8db2-df62e3cb1d76")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGQUEUECAPACITY = "SwInteractionResource_AssociationEnd_waitingQueueCapacity";
 
-    @objid ("1cfb7b9a-83a0-4dab-9e6e-d7234fbda75c")
+    @objid ("9e14c20e-03a9-404a-bf41-90fd53a62e9c")
     public static final String SWINTERACTIONRESOURCE_ASSOCIATIONEND_SWINTERACTIONRESOURCE_ASSOCIATIONEND_WAITINGPOLICYELEMENTS = "SwInteractionResource_AssociationEnd_waitingPolicyElements";
 
-    @objid ("ff6a4f78-e58e-4621-b68f-fea0ddce2a39")
+    @objid ("6ea0482a-a07c-4813-89ee-d8f7237322ee")
     public static final String SWINTERACTIONRESOURCE_ATTRIBUTE_SWINTERACTIONRESOURCE_ATTRIBUTE_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Attribute_isIntraMemoryPartitionInteraction";
 
-    @objid ("0e803e19-5983-48c2-98c1-3a8cbaafd2e3")
+    @objid ("2295ceb4-df13-4e89-86c3-4f23ca5af8c1")
     public static final String SWINTERACTIONRESOURCE_ATTRIBUTE_SWINTERACTIONRESOURCE_ATTRIBUTE_WAITINGQUEUEPOLICY = "SwInteractionResource_Attribute_waitingQueuePolicy";
 
-    @objid ("4cabc1e2-5c71-4952-ab6c-cb787f910520")
+    @objid ("1e4ba075-d75e-4661-bf8a-6c115e1f887e")
     public static final String SWINTERACTIONRESOURCE_ATTRIBUTE_SWINTERACTIONRESOURCE_ATTRIBUTE_WAITINGQUEUECAPACITY = "SwInteractionResource_Attribute_waitingQueueCapacity";
 
-    @objid ("a0495b48-e0e9-4063-853a-8ba01980b9c5")
+    @objid ("635750d4-2661-4d56-9fbe-13ba6540ceb1")
     public static final String SWINTERACTIONRESOURCE_ATTRIBUTE_SWINTERACTIONRESOURCE_ATTRIBUTE_WAITINGPOLICYELEMENTS = "SwInteractionResource_Attribute_waitingPolicyElements";
 
-    @objid ("74ac64e2-2ce0-483c-89c9-7b35e7d656b1")
+    @objid ("116aff43-8e5a-443d-b579-fc19a94e92c9")
     public static final String SWINTERACTIONRESOURCE_CLASSIFIER_SWINTERACTIONRESOURCE_CLASSIFIER_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Classifier_isIntraMemoryPartitionInteraction";
 
-    @objid ("3ee05fba-f7b9-40d5-82f6-316d0201c232")
+    @objid ("27e15669-5487-4898-9d9a-fe85b938b81b")
     public static final String SWINTERACTIONRESOURCE_CLASSIFIER_SWINTERACTIONRESOURCE_CLASSIFIER_WAITINGQUEUEPOLICY = "SwInteractionResource_Classifier_waitingQueuePolicy";
 
-    @objid ("de368e60-74f7-4e4c-b501-ceddc6b98acb")
+    @objid ("8ea20064-68db-4277-a194-7b09827300b5")
     public static final String SWINTERACTIONRESOURCE_CLASSIFIER_SWINTERACTIONRESOURCE_CLASSIFIER_WAITINGQUEUECAPACITY = "SwInteractionResource_Classifier_waitingQueueCapacity";
 
-    @objid ("91fe17a6-a5ac-4643-bfde-05a518dd1a53")
+    @objid ("89eae937-95e7-4296-b417-840108ca829d")
     public static final String SWINTERACTIONRESOURCE_CLASSIFIER_SWINTERACTIONRESOURCE_CLASSIFIER_WAITINGPOLICYELEMENTS = "SwInteractionResource_Classifier_waitingPolicyElements";
 
-    @objid ("75cb2bc9-d923-41b1-a8a3-ce773c4374d5")
+    @objid ("f8b529e7-fdd9-4b18-8614-40cd8bc176d1")
     public static final String SWINTERACTIONRESOURCE_INSTANCE_SWINTERACTIONRESOURCE_INSTANCE_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Instance_isIntraMemoryPartitionInteraction";
 
-    @objid ("3d2b7625-f954-4b12-ba4e-76004bc988ba")
+    @objid ("07aa90bb-7291-4da7-bc32-a0f683843c41")
     public static final String SWINTERACTIONRESOURCE_INSTANCE_SWINTERACTIONRESOURCE_INSTANCE_WAITINGQUEUEPOLICY = "SwInteractionResource_Instance_waitingQueuePolicy";
 
-    @objid ("27b7f66c-be14-4175-8c2b-b31c629f8623")
+    @objid ("899a8331-2de1-44e2-97dd-9635eb690da0")
     public static final String SWINTERACTIONRESOURCE_INSTANCE_SWINTERACTIONRESOURCE_INSTANCE_WAITINGQUEUECAPACITY = "SwInteractionResource_Instance_waitingQueueCapacity";
 
-    @objid ("480c4fb8-ee79-4cb6-8606-e7eb7e8f28a7")
+    @objid ("8c97c13d-0a6d-41f4-8b7c-2a606d389620")
     public static final String SWINTERACTIONRESOURCE_INSTANCE_SWINTERACTIONRESOURCE_INSTANCE_WAITINGPOLICYELEMENTS = "SwInteractionResource_Instance_waitingPolicyElements";
 
-    @objid ("adabe7da-46f4-491d-8eda-97f5fcf81f57")
+    @objid ("f509fce4-bc60-4fa6-94cf-c14e26eceeee")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Lifeline_isIntraMemoryPartitionInteraction";
 
-    @objid ("917f8a36-ac7a-4c59-a388-3b1d04a294e2")
+    @objid ("5dc0b333-d396-43e8-be8e-d4d58d7a66de")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUEPOLICY = "SwInteractionResource_Lifeline_waitingQueuePolicy";
 
-    @objid ("c7d37fc5-e9ce-46e2-9b57-7ba0b2ebf863")
+    @objid ("3befe52d-a311-4b51-8fa0-912776b554ae")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUECAPACITY = "SwInteractionResource_Lifeline_waitingQueueCapacity";
 
-    @objid ("bf2a051b-cc86-4b1a-b975-9808408e606d")
+    @objid ("f35597f1-b498-4cfa-b959-b4a44682c6e6")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_SWINTERACTIONRESOURCE_LIFELINE_WAITINGPOLICYELEMENTS = "SwInteractionResource_Lifeline_waitingPolicyElements";
 
-    @objid ("f70a3907-8a5f-4a38-a3d4-9a5aa2a349f0")
+    @objid ("0aa06108-4659-47b2-be73-1ce624b91f8c")
     public static final String SWINTERACTIONRESOURCE_LINK_SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Link_isIntraMemoryPartitionInteraction";
 
-    @objid ("ca07b4dd-29d0-4175-b478-7bc5f3e70222")
+    @objid ("d3818f40-cdcb-454b-9ab9-41b1836610f8")
     public static final String SWINTERACTIONRESOURCE_LINK_SWINTERACTIONRESOURCE_LINK_WAITINGQUEUEPOLICY = "SwInteractionResource_Link_waitingQueuePolicy";
 
-    @objid ("18aef92e-1d6c-47ef-88ff-e91442d44468")
+    @objid ("a38985f3-dd72-483e-bd9d-103cc546fc15")
     public static final String SWINTERACTIONRESOURCE_LINK_SWINTERACTIONRESOURCE_LINK_WAITINGQUEUECAPACITY = "SwInteractionResource_Link_waitingQueueCapacity";
 
-    @objid ("765fcddb-8556-4174-83ee-951e1cc70e2e")
+    @objid ("ebc988ce-ff00-4aa1-bc1d-2598218213dc")
     public static final String SWINTERACTIONRESOURCE_LINK_SWINTERACTIONRESOURCE_LINK_WAITINGPOLICYELEMENTS = "SwInteractionResource_Link_waitingPolicyElements";
 
-    @objid ("54b23339-b993-4807-ae28-cc6f5dd7690e")
+    @objid ("2160af78-c89c-4371-946f-445ebb28f899")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION = "SwInteractionResource_Parameter_isIntraMemoryPartitionInteraction";
 
-    @objid ("3e3d1417-9ff5-4b7e-853d-69b341daba39")
+    @objid ("7d12f2ac-a822-4c63-9c49-c9733f6b9b84")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUEPOLICY = "SwInteractionResource_Parameter_waitingQueuePolicy";
 
-    @objid ("e9f8ff52-abe5-4cc2-b1c3-5516ba6a30f6")
+    @objid ("ea87949a-cf2d-4661-9489-2cc120b38617")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUECAPACITY = "SwInteractionResource_Parameter_waitingQueueCapacity";
 
-    @objid ("74fc811a-6246-439d-83c5-e5f398e01bff")
+    @objid ("3b3d53d9-b239-4369-b77e-0813a76af95e")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_SWINTERACTIONRESOURCE_PARAMETER_WAITINGPOLICYELEMENTS = "SwInteractionResource_Parameter_waitingPolicyElements";
 
-    @objid ("c0f26a3c-ecc0-42cf-b03d-df6ca795be4c")
+    @objid ("4f9b5c1d-7547-4080-bb8f-233c73b83040")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_MECHANISM = "SwMutualExclusionResource_Association_mechanism";
 
-    @objid ("1b6e6d34-d38c-421c-8cf1-1342d3508537")
+    @objid ("e8c361c6-73b4-4f62-8e34-70b4c86dcd23")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Association_concurrentAccessProtocol";
 
-    @objid ("2232117c-7d92-4241-bdb0-9a5744c187b9")
+    @objid ("04e143ec-b1d7-46d1-bfa6-7b6343114d42")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Association_accessTokenElements";
 
-    @objid ("d951d1a7-9857-436d-881b-33f1782811ea")
+    @objid ("312e82ea-429f-44ed-b5db-72fb9534e26d")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_RELEASESERVICES = "SwMutualExclusionResource_Association_releaseServices";
 
-    @objid ("1fe3e10e-1240-4931-bf8c-ff4fa7dacc72")
+    @objid ("9e04f880-afa0-4769-a2f1-175ce5d2df94")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_ACQUIRESERVICES = "SwMutualExclusionResource_Association_acquireServices";
 
-    @objid ("d3649673-f09a-490c-815f-f6e7a9ac72e6")
+    @objid ("164d0c05-e5ea-4afb-93a1-660beebe9e73")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_PROTECTKIND = "SwMutualExclusionResource_Association_protectKind";
 
-    @objid ("d2d2419e-2edf-4694-a418-53b9b4fd1c9a")
+    @objid ("9e3894e7-bdcf-4355-8a3b-4934c2895e3f")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_CEILING = "SwMutualExclusionResource_Association_ceiling";
 
-    @objid ("afab465c-0f5e-4e25-a77b-ec6d5fac7571")
+    @objid ("74210fc1-8bbb-44f1-81b5-8bb31b8224eb")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Association_otherProtectProtocol";
 
-    @objid ("6458c0f7-f9d5-4ed8-9e81-21900152f2e4")
+    @objid ("2fcbba68-3c4e-499e-85e7-e04439e8bfd5")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATION_SCHEDULER = "SwMutualExclusionResource_Association_scheduler";
 
-    @objid ("de6b9241-5c70-4aeb-87b5-720643cd9a39")
+    @objid ("acbc2418-d360-4e08-9276-61e82e8af336")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_MECHANISM = "SwMutualExclusionResource_AssociationEnd_mechanism";
 
-    @objid ("e68aac80-0ded-41ce-bdae-535b6e8b184c")
+    @objid ("740b0490-9aa4-47bc-b216-50c1717a1436")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_AssociationEnd_concurrentAccessProtocol";
 
-    @objid ("406b765c-5ddb-49b2-999e-92da72a0e25e")
+    @objid ("8246cb55-7393-4089-9dd7-0505f8eb807b")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_AssociationEnd_accessTokenElements";
 
-    @objid ("f91bb20c-1342-47b6-8311-615664250740")
+    @objid ("e89b5047-7c3d-4f46-bc35-8653f9c07731")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_RELEASESERVICES = "SwMutualExclusionResource_AssociationEnd_releaseServices";
 
-    @objid ("d1370b68-5e33-4a37-8d70-e0d0f71cbda9")
+    @objid ("f4e1d66e-8538-41a0-88d3-f29440fed9b0")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_ACQUIRESERVICES = "SwMutualExclusionResource_AssociationEnd_acquireServices";
 
-    @objid ("5a21aa35-0e58-4563-acd3-55370e1c2f94")
+    @objid ("7a2986f6-ac84-4405-b0a1-8bab4c5adedf")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_PROTECTKIND = "SwMutualExclusionResource_AssociationEnd_protectKind";
 
-    @objid ("b2151338-18eb-47dc-b608-1916f5605634")
+    @objid ("a0206dde-834c-4127-9240-96ad18ff7644")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_CEILING = "SwMutualExclusionResource_AssociationEnd_ceiling";
 
-    @objid ("f2e29a46-78f4-4d68-b152-62fe22e53197")
+    @objid ("a801b794-e6f3-481a-ad51-c6f08f15252a")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_AssociationEnd_otherProtectProtocol";
 
-    @objid ("f667aa62-37be-4269-abe5-1218251ac731")
+    @objid ("1a9ab417-c368-41a6-9fc4-9c05bef9bc4d")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SWMUTUALEXCLUSIONRESOURCE_ASSOCIATIONEND_SCHEDULER = "SwMutualExclusionResource_AssociationEnd_scheduler";
 
-    @objid ("53993be0-c60c-477b-bac9-315781d2b949")
+    @objid ("756286d6-6c2c-4093-bf69-581cb3a9ab29")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_MECHANISM = "SwMutualExclusionResource_Attribute_mechanism";
 
-    @objid ("be6b3ce9-c758-42c4-acbb-e0b40b06523f")
+    @objid ("ea917a0c-a0d2-4b41-a1af-ebf4bab760b6")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Attribute_concurrentAccessProtocol";
 
-    @objid ("1c2b20d9-267a-4625-9ecb-7d7572965e97")
+    @objid ("b86a0a0a-52b5-4629-9217-4ab1f53e113a")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Attribute_accessTokenElements";
 
-    @objid ("5cc8852e-bb03-4a3d-99c8-278e626149e2")
+    @objid ("b32b9fbe-dbaf-493e-a3a8-f1541eaf324a")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_RELEASESERVICES = "SwMutualExclusionResource_Attribute_releaseServices";
 
-    @objid ("cd1269bf-462f-4d37-bdb3-0375faafb6b2")
+    @objid ("6c1d2196-a81d-4913-bab3-da2fc40b58d5")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_ACQUIRESERVICES = "SwMutualExclusionResource_Attribute_acquireServices";
 
-    @objid ("466e8111-99b5-4bff-9b96-f2c0116d7f6b")
+    @objid ("09bf0652-ea05-4fbc-9d87-75c632bbd52b")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_PROTECTKIND = "SwMutualExclusionResource_Attribute_protectKind";
 
-    @objid ("c1960db6-0133-4ade-b0de-894cee4e40a2")
+    @objid ("117f9a42-976c-4ae6-b173-c5a0eefaafb1")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_CEILING = "SwMutualExclusionResource_Attribute_ceiling";
 
-    @objid ("7b64ebd0-5288-41b2-876e-15b0b95b558a")
+    @objid ("c356e8a9-f500-48a3-b14c-d90aa723bc20")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Attribute_otherProtectProtocol";
 
-    @objid ("9478d381-f0f9-4b9d-99c8-f3d102bb5da0")
+    @objid ("dd7e71ec-b234-4383-93b8-b4ca40571e40")
     public static final String SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SWMUTUALEXCLUSIONRESOURCE_ATTRIBUTE_SCHEDULER = "SwMutualExclusionResource_Attribute_scheduler";
 
-    @objid ("e7842241-87ae-4679-aadf-c0370d8cede9")
+    @objid ("0d1921bc-42f4-4be6-8172-9bc340f42f72")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_MECHANISM = "SwMutualExclusionResource_Classifier_mechanism";
 
-    @objid ("d73b5884-cbe3-4acf-ab88-0f403e3e0ce1")
+    @objid ("1a7209b2-8455-4f7b-b019-a6d892708d68")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Classifier_concurrentAccessProtocol";
 
-    @objid ("f1f91ede-30a9-46ab-9697-c8694767f335")
+    @objid ("8ad136fc-7b96-4e6a-8472-c7ddf905a7ea")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Classifier_accessTokenElements";
 
-    @objid ("fa04a6f6-2cd6-4648-b4c1-deae4af249aa")
+    @objid ("9edd09e3-97ac-4c93-9ede-097193f03e03")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_RELEASESERVICES = "SwMutualExclusionResource_Classifier_releaseServices";
 
-    @objid ("9388b523-d314-4ea9-a38a-3294f795e874")
+    @objid ("123dbe6b-98c8-4352-967e-506474e6c85f")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_ACQUIRESERVICES = "SwMutualExclusionResource_Classifier_acquireServices";
 
-    @objid ("fa0c9a45-5d1a-444b-9d3b-23aa9562ecb6")
+    @objid ("a6955cb2-cba5-425a-a95b-070135739de0")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_PROTECTKIND = "SwMutualExclusionResource_Classifier_protectKind";
 
-    @objid ("1cbcb6c7-189f-4d09-901e-7275423b4f5c")
+    @objid ("fc554bbe-dc6d-46b8-b851-149607e129f7")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_CEILING = "SwMutualExclusionResource_Classifier_ceiling";
 
-    @objid ("57a9c9c7-96b8-4e4a-83e7-b9dd3649082c")
+    @objid ("de2bb068-1da9-4f5b-a902-33430541f4fb")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Classifier_otherProtectProtocol";
 
-    @objid ("dd2f81dd-7d84-4cf1-949e-8b8153f94427")
+    @objid ("21f612b6-cb4e-46e1-aa23-84cc5faa22bc")
     public static final String SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SWMUTUALEXCLUSIONRESOURCE_CLASSIFIER_SCHEDULER = "SwMutualExclusionResource_Classifier_scheduler";
 
-    @objid ("92d0fe44-23af-44ab-9077-acc3571f1568")
+    @objid ("ef81ceb3-e0a7-4264-8abc-a6e99d5ff08c")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_MECHANISM = "SwMutualExclusionResource_Instance_mechanism";
 
-    @objid ("5d2d676a-95ef-4104-9229-cb5b72502616")
+    @objid ("758b6513-ff42-4b9e-8b12-5b65f21a2877")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Instance_concurrentAccessProtocol";
 
-    @objid ("10a3f7f2-272f-4186-9301-dbbe71d9a18f")
+    @objid ("28f28607-5305-482d-8359-19636b1eb0fd")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Instance_accessTokenElements";
 
-    @objid ("ce5e2808-5198-4d7b-be2e-8b6d091d57b5")
+    @objid ("59272491-6418-4ebe-9a4f-4e493c3a0268")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_RELEASESERVICES = "SwMutualExclusionResource_Instance_releaseServices";
 
-    @objid ("e4d8c0ba-8973-4c94-83f6-e3813fdb1043")
+    @objid ("56d70a5d-96d6-4524-b7b0-21a3171b3f30")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_ACQUIRESERVICES = "SwMutualExclusionResource_Instance_acquireServices";
 
-    @objid ("0febb7fc-3ae2-4ad5-8761-65856ea2e299")
+    @objid ("ae843d52-4ff6-492e-ac10-dd064b4c0b19")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_PROTECTKIND = "SwMutualExclusionResource_Instance_protectKind";
 
-    @objid ("769db1d2-f9f5-4b4f-9537-f6723de3c67e")
+    @objid ("abc83333-008e-44af-949f-3537cf60a31f")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_CEILING = "SwMutualExclusionResource_Instance_ceiling";
 
-    @objid ("727c6867-7968-405e-9f05-03f3bfa284ef")
+    @objid ("6a6605f2-85e5-4bc2-924b-852ca904eee6")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Instance_otherProtectProtocol";
 
-    @objid ("4b949a26-b1b7-47f8-8754-161c73926fe4")
+    @objid ("4e1a6a82-5c8b-41fa-8de3-25729e5038cd")
     public static final String SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SWMUTUALEXCLUSIONRESOURCE_INSTANCE_SCHEDULER = "SwMutualExclusionResource_Instance_scheduler";
 
-    @objid ("939faa5f-8bf3-4b93-9ea0-bee60f612379")
+    @objid ("281bc50c-1ec8-4e31-9f10-7bbd288e68b4")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM = "SwMutualExclusionResource_Lifeline_mechanism";
 
-    @objid ("9a058281-fc34-4ab9-97e5-1a6b534908b8")
+    @objid ("7a0e80cd-7030-444d-9683-10e5efe282bc")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Lifeline_concurrentAccessProtocol";
 
-    @objid ("ebf3aaf9-2e47-4ad4-a8b7-1ceb08f3af6a")
+    @objid ("cc3b224f-bc50-4d21-b7cd-18b5125a69f0")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Lifeline_accessTokenElements";
 
-    @objid ("e38dded3-1490-4b90-9fe0-481d5ed1f60f")
+    @objid ("ed94d529-1275-4f14-86b2-4d97025c1814")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_RELEASESERVICES = "SwMutualExclusionResource_Lifeline_releaseServices";
 
-    @objid ("1f4ba4b2-f20c-4698-9b47-bfae45aa890e")
+    @objid ("ac72e167-55fb-48c2-9930-da27d45562b8")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACQUIRESERVICES = "SwMutualExclusionResource_Lifeline_acquireServices";
 
-    @objid ("5cc6b2a2-186c-4a7c-b308-c74bfc067509")
+    @objid ("7f73c409-4483-4d7a-976a-8ddc223b1066")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND = "SwMutualExclusionResource_Lifeline_protectKind";
 
-    @objid ("a9aba379-b5c8-4201-a906-302ad17e5ae8")
+    @objid ("3d598421-0498-47a6-92de-0871a38fc39f")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING = "SwMutualExclusionResource_Lifeline_ceiling";
 
-    @objid ("011a1d05-d9bd-4a41-8556-1b8c55edc307")
+    @objid ("2b9af5da-aa02-4f5a-b55a-30e3e511d765")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Lifeline_otherProtectProtocol";
 
-    @objid ("0ad40c7e-e0fb-41f4-9555-dde6620887e0")
+    @objid ("ecd5c1ad-35e0-460e-810b-e051be868f0e")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER = "SwMutualExclusionResource_Lifeline_scheduler";
 
-    @objid ("2df7a990-60e3-450f-8bfb-955e510624c7")
+    @objid ("6c57b2a3-479e-4684-9982-bf58478ce1ad")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_MECHANISM = "SwMutualExclusionResource_Link_mechanism";
 
-    @objid ("c24a5e1c-a0ad-4476-b785-f54933ca3fa5")
+    @objid ("5f9f1d81-7648-467b-b045-68a410e7d9aa")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Link_concurrentAccessProtocol";
 
-    @objid ("64fce569-017d-409a-bbe5-854e107afe11")
+    @objid ("9e48619f-1655-4206-bf55-ea7de5ac5c62")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Link_accessTokenElements";
 
-    @objid ("46e2e2ff-3d76-47f7-a948-4ec3ff42b5ae")
+    @objid ("a558bca3-c942-4967-96a4-ce97523d3498")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_RELEASESERVICES = "SwMutualExclusionResource_Link_releaseServices";
 
-    @objid ("c7b68f07-e50a-42d9-a392-fca03d51e5a9")
+    @objid ("acbdccfe-a4f9-4da3-aec5-26ddfa422be2")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_ACQUIRESERVICES = "SwMutualExclusionResource_Link_acquireServices";
 
-    @objid ("a8f069e8-b3a2-4ab2-8f2b-37686aaadd16")
+    @objid ("5416fecb-8d4b-4566-babc-11d839614d1a")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_PROTECTKIND = "SwMutualExclusionResource_Link_protectKind";
 
-    @objid ("65cf78d7-68ba-447d-9beb-bf84e6a5d1d3")
+    @objid ("ca3818b0-fcc1-4b2d-b6d6-32d36130b2b7")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_CEILING = "SwMutualExclusionResource_Link_ceiling";
 
-    @objid ("b2c2c51b-8943-43b9-a274-47fe19baf94b")
+    @objid ("b3792b79-efdd-4b07-bb56-2e3965b7930f")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Link_otherProtectProtocol";
 
-    @objid ("f7ec8964-c505-4dac-9a41-a4bdfaba14b1")
+    @objid ("8d780f52-3e04-421c-8580-faeaaae81a97")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LINK_SWMUTUALEXCLUSIONRESOURCE_LINK_SCHEDULER = "SwMutualExclusionResource_Link_scheduler";
 
-    @objid ("4f3a4670-b426-4d46-8c30-eb493d905714")
+    @objid ("5da7226b-2c28-4823-88ef-7f72e4726c0a")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_MECHANISM = "SwMutualExclusionResource_Parameter_mechanism";
 
-    @objid ("528fb1d7-9c4e-420f-9514-e0e27696585f")
+    @objid ("3928a253-74de-41cd-bfef-02c9aea53920")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_CONCURRENTACCESSPROTOCOL = "SwMutualExclusionResource_Parameter_concurrentAccessProtocol";
 
-    @objid ("b4f475d2-c3b4-4273-9e9c-fc67888e2ea5")
+    @objid ("a9751dcd-df05-4022-ac73-b28559a72343")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_ACCESSTOKENELEMENTS = "SwMutualExclusionResource_Parameter_accessTokenElements";
 
-    @objid ("6bc53129-4d81-4130-84ab-a79c426120c7")
+    @objid ("6a4a0a52-817c-4be9-8428-1222b307060e")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_RELEASESERVICES = "SwMutualExclusionResource_Parameter_releaseServices";
 
-    @objid ("993c6012-d234-4c8e-b534-89e535cb308b")
+    @objid ("4ec11dd4-3510-4308-9dc7-c63daaf7e77d")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_ACQUIRESERVICES = "SwMutualExclusionResource_Parameter_acquireServices";
 
-    @objid ("9096cc1a-b437-4a12-8d9e-3f393d9588e5")
+    @objid ("0f9f026f-0f1b-40a8-900d-44724b48a9fd")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND = "SwMutualExclusionResource_Parameter_protectKind";
 
-    @objid ("497e2fb0-20de-4827-99eb-8e2fbe121304")
+    @objid ("b1350c9b-bf5f-4fce-ae66-499a6e8bee85")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING = "SwMutualExclusionResource_Parameter_ceiling";
 
-    @objid ("3e701724-42dd-4271-b963-2b04b0bf30c1")
+    @objid ("70e4bdeb-0d11-4b78-b725-4626a2e3032c")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL = "SwMutualExclusionResource_Parameter_otherProtectProtocol";
 
-    @objid ("e30a6d53-b4c9-49a9-9415-44112f0b7cdd")
+    @objid ("4ef5d11a-6884-439a-8b98-5eb456a246e9")
     public static final String SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SWMUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER = "SwMutualExclusionResource_Parameter_scheduler";
 
-    @objid ("30b6abaf-bba6-42e8-ad08-f095d2b458a7")
+    @objid ("065bc32c-0357-4520-ad95-6c6d5defd4b2")
     public static final String CLIENTSERVERFEATURE_OPERATION_CLIENTSERVERFEATURE_OPERATION_KIND = "ClientServerFeature_Operation_kind";
 
-    @objid ("88df7e17-8981-4082-bbf6-f63b8877a437")
+    @objid ("c5cc8673-6ce7-4bc9-a77f-1f14c90ae17d")
     public static final String CLIENTSERVERPORT_PORT_CLIENTSERVERPORT_PORT_SPECIFICATIONKIND = "ClientServerPort_Port_specificationKind";
 
-    @objid ("3a4f4f08-eaf7-4916-837c-4f86268e692f")
+    @objid ("316dfd0a-d69b-4367-917b-17c33430d04f")
     public static final String CLIENTSERVERPORT_PORT_CLIENTSERVERPORT_PORT_KIND = "ClientServerPort_Port_kind";
 
-    @objid ("e58de7bd-9600-4f2e-ab3a-9fc9b71f9624")
+    @objid ("c0a22260-65d8-474b-94a4-bd4885769ad0")
     public static final String CLIENTSERVERPORT_PORT_CLIENTSERVERPORT_PORT_PROVINTERFACE = "ClientServerPort_Port_provInterface";
 
-    @objid ("caa14daf-bbcb-4c71-87aa-d7f4aee9e782")
+    @objid ("dd002217-b25b-43cb-ad89-e1d47143829d")
     public static final String CLIENTSERVERPORT_PORT_CLIENTSERVERPORT_PORT_REQINTERFACE = "ClientServerPort_Port_reqInterface";
 
-    @objid ("987e0215-b565-4269-a6ac-63046f6198e2")
+    @objid ("1d7548ee-fda1-4c7b-8bc4-01063c225358")
     public static final String CLIENTSERVERPORT_PORT_CLIENTSERVERPORT_PORT_FEATURESSPEC = "ClientServerPort_Port_featuresSpec";
 
-    @objid ("53b56b37-1ca6-4225-bf97-6eef0b356c78")
+    @objid ("80ade468-7307-4b09-a863-2b5fa4f05f8e")
     public static final String DATAEVENT_EVENT_DATAEVENT_EVENT_CLASSIFIER = "DataEvent_Event_classifier";
 
-    @objid ("ca1c29ae-5249-42ed-a28f-4a08bfbb4000")
+    @objid ("aabc1e05-e443-43be-8579-a1975625a859")
     public static final String DATAPOOL_ASSOCIATIONEND_DATAPOOL_ASSOCIATIONEND_ORDERING = "DataPool_AssociationEnd_ordering";
 
-    @objid ("6d4a4667-f16b-410e-9a90-0c92fc81fc3d")
+    @objid ("f7af32d7-0bcf-44c1-a97e-7b8c1a656189")
     public static final String DATAPOOL_ASSOCIATIONEND_DATAPOOL_ASSOCIATIONEND_INSERTION = "DataPool_AssociationEnd_insertion";
 
-    @objid ("bc9dd3cd-29c9-44e0-88b3-8edb068f58ca")
+    @objid ("da83a56c-0c51-439e-8f44-7d8685461ff8")
     public static final String DATAPOOL_ASSOCIATIONEND_DATAPOOL_ASSOCIATIONEND_SELECTION = "DataPool_AssociationEnd_selection";
 
-    @objid ("55d17ce9-8831-4304-93dc-0e131bcae236")
+    @objid ("7c5920eb-a7c6-4053-bbfb-aa6331eadcb4")
     public static final String DATAPOOL_ATTRIBUTE_DATAPOOL_ATTRIBUTE_ORDERING = "DataPool_Attribute_ordering";
 
-    @objid ("248d8d8b-fbd7-4db2-b723-5c7ee5b724da")
+    @objid ("4263b959-e4bf-49b2-90a7-a935921b4fa1")
     public static final String DATAPOOL_ATTRIBUTE_DATAPOOL_ATTRIBUTE_INSERTION = "DataPool_Attribute_insertion";
 
-    @objid ("4934dd2f-aa03-4d63-8f48-00629115078f")
+    @objid ("22d506ba-dcf2-4411-80bc-856d09bd1115")
     public static final String DATAPOOL_ATTRIBUTE_DATAPOOL_ATTRIBUTE_SELECTION = "DataPool_Attribute_selection";
 
-    @objid ("ef938239-ddae-4184-b157-cb41da31dc0f")
+    @objid ("d8d1a773-97b7-430b-b464-b4e6a1545edc")
     public static final String DATAPOOL_BINDABLEINSTANCE_DATAPOOL_BINDABLEINSTANCE_ORDERING = "DataPool_BindableInstance_ordering";
 
-    @objid ("fad7925e-0b71-4a49-a9da-424888a942c7")
+    @objid ("1c66f19d-202d-490a-baf8-373875bcbece")
     public static final String DATAPOOL_BINDABLEINSTANCE_DATAPOOL_BINDABLEINSTANCE_INSERTION = "DataPool_BindableInstance_insertion";
 
-    @objid ("08d616ea-1800-4119-9275-6bc654884632")
+    @objid ("f4f07065-b717-4595-a508-42797596bdf0")
     public static final String DATAPOOL_BINDABLEINSTANCE_DATAPOOL_BINDABLEINSTANCE_SELECTION = "DataPool_BindableInstance_selection";
 
-    @objid ("b3f17e4c-b534-4ad0-b5f0-3847d56e23e0")
+    @objid ("db0d51ea-a551-436b-a5b6-85dbb645a629")
     public static final String FLOWPORT_PORT_FLOWPORT_PORT_ISATOMIC = "FlowPort_Port_isAtomic";
 
-    @objid ("e5ffe7b6-5420-4894-a45b-c760679d331d")
+    @objid ("b6d01a08-9b5f-4acc-86aa-e202afdb4a0f")
     public static final String FLOWPORT_PORT_FLOWPORT_PORT_DIRECTION = "FlowPort_Port_direction";
 
-    @objid ("8e718869-164c-4eec-8edc-1150daec15d2")
+    @objid ("da8b22d5-61b1-42a2-8db5-b77ce81a5d73")
     public static final String FLOWPROPERTY_ASSOCIATIONEND_FLOWPROPERTY_ASSOCIATIONEND_DIRECTION = "FlowProperty_AssociationEnd_direction";
 
-    @objid ("dc12a4df-900d-4c0f-bf71-c6e436512e49")
+    @objid ("3427f178-8452-4420-99e7-6d6973063349")
     public static final String FLOWPROPERTY_ATTRIBUTE_FLOWPROPERTY_ATTRIBUTE_DIRECTION = "FlowProperty_Attribute_direction";
 
-    @objid ("6ee4a862-1497-42c2-ae55-9a49e8c0fcff")
+    @objid ("1b252065-cf4d-4ae3-8963-eb897dbf6b5a")
     public static final String FLOWPROPERTY_BINDABLEINSTANCE_FLOWPROPERTY_BINDABLEINSTANCE_DIRECTION = "FlowProperty_BindableInstance_direction";
 
-    @objid ("569bc132-da3d-449a-aa03-3f91644647c5")
+    @objid ("48f9c7fa-d070-4c45-a33e-7b4b24eae312")
     public static final String GCMINVOCATINGBEHAVIOR_BEHAVIOR_GCMINVOCATINGBEHAVIOR_BEHAVIOR_ONFEATURE = "GCMInvocatingBehavior_Behavior_onFeature";
 
-    @objid ("4b013d8f-f050-4068-ac96-8ca10058a048")
+    @objid ("f2a39ae9-2b72-41a6-8fa3-b9dbf11b67b0")
     public static final String GCMINVOCATINGBEHAVIOR_BEHAVIOR_GCMINVOCATINGBEHAVIOR_BEHAVIOR_ONPORT = "GCMInvocatingBehavior_Behavior_onPort";
 
-    @objid ("ced8f1be-a96d-4cbf-b713-5d4b32cfaed3")
+    @objid ("977b1627-04c9-49b9-9781-34355168e445")
     public static final String GCMINVOCATINGBEHAVIOR_BEHAVIOR_GCMINVOCATINGBEHAVIOR_BEHAVIOR_INVOCATIONS = "GCMInvocatingBehavior_Behavior_invocations";
 
-    @objid ("8b5fea34-6341-4cee-8c31-b41255cb1436")
+    @objid ("4fa6b59e-289c-4232-8437-f75f4542285a")
     public static final String GCMINVOCATIONACTION_ACTIVITYACTION_GCMINVOCATIONACTION_ACTIVITYACTION_ONFEATURE = "GCMInvocationAction_ActivityAction_onFeature";
 
-    @objid ("fe349e49-9c9f-4ef0-a2df-1643e7822522")
+    @objid ("8e92f73b-8c2c-4632-8c77-05a6a4741615")
     public static final String GCMTRIGGER_DEPENDENCY_GCMTRIGGER_DEPENDENCY_FEATURE = "GCMTrigger_Dependency_feature";
 
-    @objid ("06e34adb-bf57-41b8-806b-2fa5a4877648")
+    @objid ("523261f6-67bd-4028-bd71-571d6bf6ca23")
     public static final String GCMTRIGGER_DEPENDENCY_GCMTRIGGER_DEPENDENCY_PORT = "GCMTrigger_Dependency_port";
 
-    @objid ("b09a4631-345c-4e08-89a0-c571d06253a6")
+    @objid ("5331c83b-4f9b-435f-b734-664f0a949481")
     public static final String GAACQSTEP_MODELELEMENT_GAACQSTEP_MODELELEMENT_ACQRES = "GaAcqStep_ModelElement_acqRes";
 
-    @objid ("2e16b3e7-a1d5-4a09-a8b0-351e311dce46")
+    @objid ("cd521843-9e32-4f56-ada1-4e542426a067")
     public static final String GAACQSTEP_MODELELEMENT_GAACQSTEP_MODELELEMENT_RESUNITS = "GaAcqStep_ModelElement_resUnits";
 
-    @objid ("e0d7ec4c-e4e6-42a0-88f0-e28fc009fe80")
+    @objid ("c27dcdab-7fab-4f58-871c-f14417aa6547")
     public static final String GAANALYSISCONTEXT_BEHAVIOR_GAANALYSISCONTEXT_BEHAVIOR_CONTEXTPARAMS = "GaAnalysisContext_Behavior_contextParams";
 
-    @objid ("d935b0c5-7174-43d5-a3b0-075a929feff4")
+    @objid ("58cee5d1-57b4-42ad-89fe-1bef91995f93")
     public static final String GAANALYSISCONTEXT_BEHAVIOR_GAANALYSISCONTEXT_BEHAVIOR_WORKLOAD = "GaAnalysisContext_Behavior_workload";
 
-    @objid ("7ff9b387-15c4-4f48-8455-eddbb330444e")
+    @objid ("70420c69-9a1c-4c2b-a4ca-768189344caa")
     public static final String GAANALYSISCONTEXT_BEHAVIOR_GAANALYSISCONTEXT_BEHAVIOR_PLATFORM = "GaAnalysisContext_Behavior_platform";
 
-    @objid ("b9386222-320f-4930-9231-9aed17208a47")
+    @objid ("7be150a5-6fb0-46a4-aebf-8586e5ac80ca")
     public static final String GAANALYSISCONTEXT_CLASS_GAANALYSISCONTEXT_CLASS_CONTEXTPARAMS = "GaAnalysisContext_Class_contextParams";
 
-    @objid ("3db75674-5873-41cd-82fd-49fa56f0c632")
+    @objid ("95ee93aa-285f-4452-b16c-6018c8853346")
     public static final String GAANALYSISCONTEXT_CLASS_GAANALYSISCONTEXT_CLASS_WORKLOAD = "GaAnalysisContext_Class_workload";
 
-    @objid ("6915725a-3392-43bf-b23d-23a0b64ed368")
+    @objid ("235f561f-f5b6-460a-8c60-c4774b78f9aa")
     public static final String GAANALYSISCONTEXT_CLASS_GAANALYSISCONTEXT_CLASS_PLATFORM = "GaAnalysisContext_Class_platform";
 
-    @objid ("32cadb11-26a6-43dd-aa23-5b6ba8f9d429")
+    @objid ("ffaf792f-e7ba-446d-abe0-b334f9bf6054")
     public static final String GAANALYSISCONTEXT_COLLABORATION_GAANALYSISCONTEXT_COLLABORATION_CONTEXTPARAMS = "GaAnalysisContext_Collaboration_contextParams";
 
-    @objid ("167f960e-ff31-4b1f-88fb-a36e17eb13bd")
+    @objid ("8e3551ac-4def-4710-a0a7-43c3fb913f93")
     public static final String GAANALYSISCONTEXT_COLLABORATION_GAANALYSISCONTEXT_COLLABORATION_WORKLOAD = "GaAnalysisContext_Collaboration_workload";
 
-    @objid ("e0d8452b-0f1e-43c0-9364-9fcf6f6f9852")
+    @objid ("0fe985a9-e95c-4740-8d24-799a12ac4e95")
     public static final String GAANALYSISCONTEXT_COLLABORATION_GAANALYSISCONTEXT_COLLABORATION_PLATFORM = "GaAnalysisContext_Collaboration_platform";
 
-    @objid ("57fe7435-2261-412c-af2f-3c9bcc19f0f2")
+    @objid ("73e82f2e-1056-4976-a4b5-fbc647cbc208")
     public static final String GAANALYSISCONTEXT_NODE_GAANALYSISCONTEXT_NODE_CONTEXTPARAMS = "GaAnalysisContext_Node_contextParams";
 
-    @objid ("4b3f9768-5442-4911-a844-77a7bfe324e2")
+    @objid ("09354aa9-0a97-4b37-9c83-921ea146f717")
     public static final String GAANALYSISCONTEXT_NODE_GAANALYSISCONTEXT_NODE_WORKLOAD = "GaAnalysisContext_Node_workload";
 
-    @objid ("5957756e-f98f-4305-9dcf-384599938434")
+    @objid ("a37388b4-2e13-4a18-aa8d-e6837056070f")
     public static final String GAANALYSISCONTEXT_NODE_GAANALYSISCONTEXT_NODE_PLATFORM = "GaAnalysisContext_Node_platform";
 
-    @objid ("df5bc964-fb5c-4d31-bb7a-95c098d9f50a")
+    @objid ("0678d13e-3c61-4e60-a129-6a96c33edf9b")
     public static final String GAANALYSISCONTEXT_PACKAGE_GAANALYSISCONTEXT_PACKAGE_CONTEXTPARAMS = "GaAnalysisContext_Package_contextParams";
 
-    @objid ("c3cb4e5c-87b0-4ca8-bb0a-ba2a5c713e30")
+    @objid ("838d7635-2547-464a-9ac0-a3b8ea716bb2")
     public static final String GAANALYSISCONTEXT_PACKAGE_GAANALYSISCONTEXT_PACKAGE_WORKLOAD = "GaAnalysisContext_Package_workload";
 
-    @objid ("67bdd98b-076f-4a93-989d-16e33570215b")
+    @objid ("40ff5d9a-4256-4c2f-9009-9c2b0085ee34")
     public static final String GAANALYSISCONTEXT_PACKAGE_GAANALYSISCONTEXT_PACKAGE_PLATFORM = "GaAnalysisContext_Package_platform";
 
-    @objid ("788ad2e0-3962-441a-8fcd-e8de4d6215cc")
+    @objid ("d27f7000-7c25-4af3-bc51-f83ea96b8cc6")
     public static final String GACOMMCHANNEL_ASSOCIATION_GACOMMCHANNEL_ASSOCIATION_PACKETSIZE = "GaCommChannel_Association_packetSize";
 
-    @objid ("d06a1af2-9049-4f05-93fa-a94bdaf3cd4d")
+    @objid ("fbb424c4-54e0-440f-b898-802480b8bbde")
     public static final String GACOMMCHANNEL_ASSOCIATION_GACOMMCHANNEL_ASSOCIATION_UTILIZATION = "GaCommChannel_Association_utilization";
 
-    @objid ("811c44f7-e247-4c55-bc5c-4d03fb49e7a4")
+    @objid ("7f0fcde5-8594-44fc-81f1-a243ec94b099")
     public static final String GACOMMCHANNEL_ASSOCIATIONEND_GACOMMCHANNEL_ASSOCIATIONEND_PACKETSIZE = "GaCommChannel_AssociationEnd_packetSize";
 
-    @objid ("c52e22f1-51b2-4042-8528-d92a49c46f29")
+    @objid ("b437532b-c7b2-4176-8e25-2048d7f60fa0")
     public static final String GACOMMCHANNEL_ASSOCIATIONEND_GACOMMCHANNEL_ASSOCIATIONEND_UTILIZATION = "GaCommChannel_AssociationEnd_utilization";
 
-    @objid ("866105bd-ec8a-4426-bbb5-2b1d54743de5")
+    @objid ("41118c6e-026c-4b72-96cc-0ab1347296af")
     public static final String GACOMMCHANNEL_ATTRIBUTE_GACOMMCHANNEL_ATTRIBUTE_PACKETSIZE = "GaCommChannel_Attribute_packetSize";
 
-    @objid ("84923d36-2630-4318-8a1a-e86962985e3b")
+    @objid ("928b9e1e-a1b1-403c-b45f-dbbbdb0dde44")
     public static final String GACOMMCHANNEL_ATTRIBUTE_GACOMMCHANNEL_ATTRIBUTE_UTILIZATION = "GaCommChannel_Attribute_utilization";
 
-    @objid ("aad943ce-1328-45c1-9226-770cdd15d080")
+    @objid ("c43a9b3b-1200-459f-a3bf-864d39cebd57")
     public static final String GACOMMCHANNEL_CLASSIFIER_GACOMMCHANNEL_CLASSIFIER_PACKETSIZE = "GaCommChannel_Classifier_packetSize";
 
-    @objid ("773d17b2-5a55-4064-a94a-61541023b78c")
+    @objid ("74016a9a-93a7-4d42-a183-3862eebd1c4e")
     public static final String GACOMMCHANNEL_CLASSIFIER_GACOMMCHANNEL_CLASSIFIER_UTILIZATION = "GaCommChannel_Classifier_utilization";
 
-    @objid ("6af7a757-4988-45fc-800c-928e934d4657")
+    @objid ("c541f1c9-f27a-47b0-92d1-a676072691d9")
     public static final String GACOMMCHANNEL_INSTANCE_GACOMMCHANNEL_INSTANCE_PACKETSIZE = "GaCommChannel_Instance_packetSize";
 
-    @objid ("4f358c83-d06b-471c-b7b7-9e64af96abda")
+    @objid ("1cba71cf-b738-44b8-82c8-cc8b51c8f966")
     public static final String GACOMMCHANNEL_INSTANCE_GACOMMCHANNEL_INSTANCE_UTILIZATION = "GaCommChannel_Instance_utilization";
 
-    @objid ("77b497ae-5226-4ceb-bfe3-e307e6bd4998")
+    @objid ("4113da50-3d57-4013-ad67-2518b9e45dd2")
     public static final String GACOMMCHANNEL_LIFELINE_GACOMMCHANNEL_LIFELINE_PACKETSIZE = "GaCommChannel_Lifeline_packetSize";
 
-    @objid ("9fc7d44c-c0b1-431b-82e5-3c0d3416a458")
+    @objid ("68a0a09b-cfe9-4377-9c5e-59555796a089")
     public static final String GACOMMCHANNEL_LIFELINE_GACOMMCHANNEL_LIFELINE_UTILIZATION = "GaCommChannel_Lifeline_utilization";
 
-    @objid ("d5acac98-3691-42d8-acad-b6827a097ed0")
+    @objid ("9d20f067-61ee-4c52-9339-f247b97cad2a")
     public static final String GACOMMCHANNEL_LINK_GACOMMCHANNEL_LINK_PACKETSIZE = "GaCommChannel_Link_packetSize";
 
-    @objid ("eae9c6db-fc06-4ed0-b069-22149e288f15")
+    @objid ("300539fe-05f9-4014-85b5-e424cc6ebc2e")
     public static final String GACOMMCHANNEL_LINK_GACOMMCHANNEL_LINK_UTILIZATION = "GaCommChannel_Link_utilization";
 
-    @objid ("3a296f21-9bc4-4df1-9549-014db95a1fae")
+    @objid ("2fb08cb5-264a-4a33-9485-876ea6636045")
     public static final String GACOMMCHANNEL_PARAMETER_GACOMMCHANNEL_PARAMETER_PACKETSIZE = "GaCommChannel_Parameter_packetSize";
 
-    @objid ("28f99720-ebec-417f-aa49-951eaf686311")
+    @objid ("cd516eb0-cf71-4945-9500-a09a022a5fae")
     public static final String GACOMMCHANNEL_PARAMETER_GACOMMCHANNEL_PARAMETER_UTILIZATION = "GaCommChannel_Parameter_utilization";
 
-    @objid ("8b896cd2-10bc-43f6-9b55-6822ea2d6a9a")
+    @objid ("098b43b5-7335-4cd4-84b5-9cc34448c694")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_THROUGHPUT = "GaCommHost_Association_throughput";
 
-    @objid ("26dc7402-897a-4a6e-a42a-8065998c6470")
+    @objid ("92ee2887-5c8d-42d6-86d1-ccf43814d6d2")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_UTILIZATION = "GaCommHost_Association_utilization";
 
-    @objid ("6b410157-831c-4936-8279-ac6b5f974219")
+    @objid ("ff61fd56-5a3a-4cb5-a7a4-103b528dad00")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_HOST = "GaCommHost_Association_host";
 
-    @objid ("799ccff6-737a-4420-bb5f-bead0533acb1")
+    @objid ("52c45b07-56d3-4c45-9287-e1a5b560e075")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_ISPREEMPTIBLE = "GaCommHost_Association_isPreemptible";
 
-    @objid ("82f301d4-f9a8-4c03-87cc-62fe0f306569")
+    @objid ("03013231-560a-4329-9729-e4417a98f50c")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_SCHEDPOLICY = "GaCommHost_Association_schedPolicy";
 
-    @objid ("53f30098-265d-48cb-876c-d5602fca83cb")
+    @objid ("905a1a03-bb63-4427-8000-894c672feba5")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_OTHERSCHEDPOLICY = "GaCommHost_Association_otherSchedPolicy";
 
-    @objid ("4c6dc3f7-8775-4f9e-9425-61385e154128")
+    @objid ("04f5492a-8acf-4e50-ae52-2a926d626a03")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_SCHEDULE = "GaCommHost_Association_schedule";
 
-    @objid ("29a28d52-50de-4b07-af27-b14ca49ecfaf")
+    @objid ("3a899274-6b5c-44ef-b0d2-907e03d67890")
     public static final String elt = "GaCommHost_Association_processingUnits";
 
-    @objid ("1f1716c1-fdfb-49f1-ae3b-c38675ebc600")
+    @objid ("1bddf769-bb4e-40df-8c10-422b7f4842d0")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_PROTECTEDSHAREDRESOURCES = "GaCommHost_Association_protectedSharedResources";
 
-    @objid ("ac25571a-d25f-4add-b22a-eaa506f628cc")
+    @objid ("695080a4-704b-4ec3-a4b3-6d47083aaa9b")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_SCHEDULABLERESOURCES = "GaCommHost_Association_schedulableResources";
 
-    @objid ("58ab2753-a804-4a3f-b5f0-ea6740b85d05")
+    @objid ("d951d6b5-0985-4e3e-834b-ba36c4674889")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_THROUGHPUT = "GaCommHost_AssociationEnd_throughput";
 
-    @objid ("90e9bf1d-8172-4490-9e2a-f11eb1780ebd")
+    @objid ("d7bafd5c-ab12-43db-bd4c-b904a0126b07")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_UTILIZATION = "GaCommHost_AssociationEnd_utilization";
 
-    @objid ("01f2bbd7-f1f8-4601-9879-cb1961b6ef45")
+    @objid ("69e2b8be-5f84-4261-bb2b-e8b3e09c27a3")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_ISPREEMPTIBLE = "GaCommHost_AssociationEnd_isPreemptible";
 
-    @objid ("81633fb0-a2b0-4c13-9192-4e3dd62de3db")
+    @objid ("96be6ae0-e7f2-4869-bf80-c9273de27b4a")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_SCHEDPOLICY = "GaCommHost_AssociationEnd_schedPolicy";
 
-    @objid ("861b26b7-3240-44ea-9c87-77949f4dff09")
+    @objid ("ac5aa21f-0b93-4c2a-8db3-ffb66010647d")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY = "GaCommHost_AssociationEnd_otherSchedPolicy";
 
-    @objid ("58f88b8c-3b12-41a3-884f-3c83f32067f4")
+    @objid ("2dc9e14b-4dbe-42d3-a4ae-a8c88771892c")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_SCHEDULE = "GaCommHost_AssociationEnd_schedule";
 
-    @objid ("267aebcf-7428-46c1-b294-55e1f0fe8556")
+    @objid ("d7622771-f562-4005-b947-6ca2b6e1ed3d")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_PROCESSINGUNITS = "GaCommHost_AssociationEnd_processingUnits";
 
-    @objid ("f1ffe2bf-c639-42dc-a709-aa845167ca84")
+    @objid ("e4484107-71bb-420b-a3a6-012378564d03")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_HOST = "GaCommHost_AssociationEnd_host";
 
-    @objid ("174f9837-ed16-40b5-8ae3-44d8da61840b")
+    @objid ("b1ade668-b602-4130-ada9-09b6f5779838")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES = "GaCommHost_AssociationEnd_protectedSharedResources";
 
-    @objid ("1a803c5b-3907-4c8a-b3a1-f5d102d85895")
+    @objid ("432fcc3a-0edf-4768-91ca-9a87c37089ba")
     public static final String GACOMMHOST_ASSOCIATIONEND_GACOMMHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES = "GaCommHost_AssociationEnd_schedulableResources";
 
-    @objid ("123c4363-2074-46ff-8ceb-fdb13ddb54f0")
+    @objid ("49874858-5e90-45ec-8714-85111bcb871d")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_THROUGHPUT = "GaCommHost_Attribute_throughput";
 
-    @objid ("15c0c5b7-7882-47d9-a8bd-a8c6ea7ec3ab")
+    @objid ("805cecad-6c24-4b5f-b17c-0a94dcc975fe")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_UTILIZATION = "GaCommHost_Attribute_utilization";
 
-    @objid ("188e5f0b-d1e6-446d-af9e-1d104f636e42")
+    @objid ("d0fca388-5b50-4c08-92b7-522b3d35cb3d")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_ISPREEMPTIBLE = "GaCommHost_Attribute_isPreemptible";
 
-    @objid ("79adb9bf-0ee1-4a41-b093-0a47477eb52d")
+    @objid ("c8f320f4-9455-4b87-a446-60519e172d0b")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_SCHEDPOLICY = "GaCommHost_Attribute_schedPolicy";
 
-    @objid ("1262c08f-871f-4652-8e0d-7ad0ac1c6963")
+    @objid ("b0a2d19f-81ca-4950-a5f5-02f22778c123")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_OTHERSCHEDPOLICY = "GaCommHost_Attribute_otherSchedPolicy";
 
-    @objid ("2be50e8e-e95c-4450-8af6-e53ba57bc2fe")
+    @objid ("e38773e3-cf00-4194-81b2-149cd3ac67ba")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_SCHEDULE = "GaCommHost_Attribute_schedule";
 
-    @objid ("92dbd8fd-01c4-4406-86fd-3e5bad4fe2d2")
+    @objid ("54f497d3-3704-4ad2-9a37-aa9af7afad01")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_PROCESSINGUNITS = "GaCommHost_Attribute_processingUnits";
 
-    @objid ("ff8d4147-f4a4-4bdd-ab31-f6128e132a4f")
+    @objid ("85ace81b-8ce0-4a81-b447-a5d68fdba10a")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_HOST = "GaCommHost_Attribute_host";
 
-    @objid ("46f074a3-0937-45d0-a9d0-73f1f3124db3")
+    @objid ("d29e1d38-d01c-48d0-b2a0-61e2324d24fc")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_PROTECTEDSHAREDRESOURCES = "GaCommHost_Attribute_protectedSharedResources";
 
-    @objid ("b7211026-eb9f-46c3-9267-264d2d2687e5")
+    @objid ("c496f919-43e0-4b21-aa93-617b88b6cf8f")
     public static final String GACOMMHOST_ATTRIBUTE_GACOMMHOST_ATTRIBUTE_SCHEDULABLERESOURCES = "GaCommHost_Attribute_schedulableResources";
 
-    @objid ("1b59d209-b8f6-4622-ab80-e4275d6c7be0")
+    @objid ("c66c38db-3356-44cb-b189-9e1b95175508")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_THROUGHPUT = "GaCommHost_Classifier_throughput";
 
-    @objid ("8764c526-70a5-433b-b4bd-d6903082a87e")
+    @objid ("a9d10936-3295-427b-836d-2126e93454c7")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_UTILIZATION = "GaCommHost_Classifier_utilization";
 
-    @objid ("270aec80-036f-40b4-9b6c-cfdd4a7b7e2e")
+    @objid ("aa655988-5caa-4e35-83aa-4452f8f60e30")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_ISPREEMPTIBLE = "GaCommHost_Classifier_isPreemptible";
 
-    @objid ("253ee402-1ebe-4b39-99e0-5ac13d162af6")
+    @objid ("352c01eb-e213-45c6-bd9e-0c8d4267ef05")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_SCHEDPOLICY = "GaCommHost_Classifier_schedPolicy";
 
-    @objid ("fd6da065-7719-439b-a6e6-372cb961b862")
+    @objid ("0cc79e0f-42b6-4918-bfb2-302ed10923a0")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_OTHERSCHEDPOLICY = "GaCommHost_Classifier_otherSchedPolicy";
 
-    @objid ("c0e61ddc-87b6-4929-a9e8-f8807c8ee627")
+    @objid ("7be684d0-db4c-4d88-8202-a0babe64e11d")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_SCHEDULE = "GaCommHost_Classifier_schedule";
 
-    @objid ("2cc277bc-f526-4c41-a42c-8c84846c0678")
+    @objid ("88d6ccaf-0400-4926-a6c4-fb724b892aa8")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_PROCESSINGUNITS = "GaCommHost_Classifier_processingUnits";
 
-    @objid ("79fd19c7-c78e-457a-99bf-4fc3246b1d80")
+    @objid ("43a6f120-b628-449b-9438-6d4a5f0ba4ae")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_HOST = "GaCommHost_Classifier_host";
 
-    @objid ("36396dde-f2d2-4b0e-94b9-c327a5ed97ec")
+    @objid ("e81df21f-8126-41e9-9b81-4b1e8cb0ec81")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_PROTECTEDSHAREDRESOURCES = "GaCommHost_Classifier_protectedSharedResources";
 
-    @objid ("155f177c-c19a-4e1c-92c3-c3431df9610f")
+    @objid ("0aaf096c-37d5-432f-909c-564744a3a888")
     public static final String GACOMMHOST_CLASSIFIER_GACOMMHOST_CLASSIFIER_SCHEDULABLERESOURCES = "GaCommHost_Classifier_schedulableResources";
 
-    @objid ("7de153f1-ef25-4446-ae6c-aeb8ec177bda")
+    @objid ("9bb13794-bbf0-466d-9244-260757b7ff82")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_THROUGHPUT = "GaCommHost_Instance_throughput";
 
-    @objid ("a6e1030b-2d18-4b7c-98c5-3a1c0b759279")
+    @objid ("61b57b59-67f3-4948-91ff-cca0cf249ce7")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_UTILIZATION = "GaCommHost_Instance_utilization";
 
-    @objid ("795eef93-e3d2-4b16-8a14-fc3842b4e65d")
+    @objid ("ae817f17-e245-4b8e-bbad-8c34d3698848")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_ISPREEMPTIBLE = "GaCommHost_Instance_isPreemptible";
 
-    @objid ("05b575e8-8d8c-40ce-a21f-1b9dfc6028f5")
+    @objid ("541c17d4-0718-495b-ad31-e4e6ac54d6ef")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_SCHEDPOLICY = "GaCommHost_Instance_schedPolicy";
 
-    @objid ("c6def0f2-d84f-4124-8b03-b94daaffa295")
+    @objid ("0918dc23-0816-40c5-abd8-3081be65878a")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_OTHERSCHEDPOLICY = "GaCommHost_Instance_otherSchedPolicy";
 
-    @objid ("b37ddcc5-a2f4-4e3f-9a82-3f48045160e5")
+    @objid ("058c5c67-f48a-4f5d-bc8e-3378a1c29977")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_SCHEDULE = "GaCommHost_Instance_schedule";
 
-    @objid ("6243635d-7307-48b1-ae1f-6ebad344e263")
+    @objid ("aea42222-8ee7-436d-a72f-d2183665a803")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_PROCESSINGUNITS = "GaCommHost_Instance_processingUnits";
 
-    @objid ("9213bb33-a046-4459-a50a-0f5f510c0102")
+    @objid ("fd75f8fa-62ab-4136-8bf1-b55b3182e778")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_HOST = "GaCommHost_Instance_host";
 
-    @objid ("7662cde7-99f0-4ffd-bf3e-3feaf507455a")
+    @objid ("35b0450d-b2f3-47d1-b755-72169e5e57c6")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_PROTECTEDSHAREDRESOURCES = "GaCommHost_Instance_protectedSharedResources";
 
-    @objid ("ae030351-d9c2-4e77-983b-470e6c79c74e")
+    @objid ("5e2966da-ce7e-49ea-810f-de1bdb968786")
     public static final String GACOMMHOST_INSTANCE_GACOMMHOST_INSTANCE_SCHEDULABLERESOURCES = "GaCommHost_Instance_schedulableResources";
 
-    @objid ("3a81335b-32b4-4b9b-a9f5-347c886f4f56")
+    @objid ("007bd47a-50a1-4964-8eb4-957fdcfee0d1")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_THROUGHPUT = "GaCommHost_Lifeline_throughput";
 
-    @objid ("7457f0ac-3487-4c0b-8374-6cb3fc42d803")
+    @objid ("5fdc9f22-4912-496c-9ed2-5e9ead0ad5db")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_UTILIZATION = "GaCommHost_Lifeline_utilization";
 
-    @objid ("d0ff897a-61e0-47a4-bd66-1f7fee45c65f")
+    @objid ("c3fb917d-022d-4f9b-9115-3ae04821670c")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_ISPREEMPTIBLE = "GaCommHost_Lifeline_isPreemptible";
 
-    @objid ("11524f4c-7dc9-45f2-8b16-c59e5f5728cb")
+    @objid ("bdab5016-754d-4a51-aa08-92783fbbac04")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_SCHEDPOLICY = "GaCommHost_Lifeline_schedPolicy";
 
-    @objid ("a9a60481-8a97-4c7c-b222-4e92b7dfbfcb")
+    @objid ("1f08ed97-a042-48be-abe6-4e2ca0f1ce96")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_OTHERSCHEDPOLICY = "GaCommHost_Lifeline_otherSchedPolicy";
 
-    @objid ("0b1f08cf-eee2-45f6-be79-919a6aa3dd24")
+    @objid ("0231350b-d4d4-48a3-8ec0-85a24ccbb055")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_SCHEDULE = "GaCommHost_Lifeline_schedule";
 
-    @objid ("846b814a-94e4-45ad-a04d-869eb34d0609")
+    @objid ("ef0b93eb-52a2-440d-86ca-d8ae8c902254")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_PROCESSINGUNITS = "GaCommHost_Lifeline_processingUnits";
 
-    @objid ("0682932d-879b-4dc3-80ec-6bcbe7b45073")
+    @objid ("93b91352-7fab-4ceb-8dfa-31a0b9038f32")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_HOST = "GaCommHost_Lifeline_host";
 
-    @objid ("c3f6dfc3-3bc6-4131-a19f-1da8681c1b6c")
+    @objid ("9fa7d527-3e4d-44f8-a7d5-20c2569b0ae1")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_PROTECTEDSHAREDRESOURCES = "GaCommHost_Lifeline_protectedSharedResources";
 
-    @objid ("74bdccb9-dee9-4b21-9ddc-2ff3701dde69")
+    @objid ("a8cf5aa6-4179-42dd-9793-f4486e529fdb")
     public static final String GACOMMHOST_LIFELINE_GACOMMHOST_LIFELINE_SCHEDULABLERESOURCES = "GaCommHost_Lifeline_schedulableResources";
 
-    @objid ("5ca99272-0649-40d1-b661-13d71729b931")
+    @objid ("ce82cd5d-f85a-4dac-9425-f5457a29b477")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_THROUGHPUT = "GaCommHost_Link_throughput";
 
-    @objid ("d7d34f69-c906-4bbf-89da-a532dbc8b33a")
+    @objid ("6d56d310-0575-43d7-8163-97e73327afdd")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_UTILIZATION = "GaCommHost_Link_utilization";
 
-    @objid ("bb543d6c-c919-4cd6-a3cd-85c011a08223")
+    @objid ("6362f4e2-fea0-4562-86de-51d41fbb9d9e")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_ISPREEMPTIBLE = "GaCommHost_Link_isPreemptible";
 
-    @objid ("dda1c414-4a94-4bd3-9688-5da34d43f926")
+    @objid ("f6309ec3-0e54-4ce6-bc05-3f9dd28c8b5e")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_SCHEDPOLICY = "GaCommHost_Link_schedPolicy";
 
-    @objid ("15689019-9a53-49b6-8e7d-3205abbc03c1")
+    @objid ("43769ced-1453-44a3-aa6a-004fc1de8914")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_OTHERSCHEDPOLICY = "GaCommHost_Link_otherSchedPolicy";
 
-    @objid ("201d553f-ae90-4b17-bde0-6859006b9ba2")
+    @objid ("7840d7cb-8049-489e-9a2a-7cdb4397b436")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_SCHEDULE = "GaCommHost_Link_schedule";
 
-    @objid ("7c05e977-4826-4aa8-a8b0-319f0838c8f4")
+    @objid ("e4110d67-45cd-4395-8ddc-f681ab1eb9e5")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_PROCESSINGUNITS = "GaCommHost_Link_processingUnits";
 
-    @objid ("5c7068a9-e881-4d55-ac15-67d923daefb4")
+    @objid ("d0cd21ed-0861-459c-bbc1-9cb7b46b6f60")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_HOST = "GaCommHost_Link_host";
 
-    @objid ("bfcba494-22ae-4282-bb2c-7a9ab5b2218c")
+    @objid ("32a1b2ec-b52f-40bf-a289-04bfcfe156b6")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_PROTECTEDSHAREDRESOURCES = "GaCommHost_Link_protectedSharedResources";
 
-    @objid ("d229c709-caab-4997-a2f5-5d0dec9aa3e4")
+    @objid ("d8e29788-933f-4d4b-a9a6-6ea5a9460d9a")
     public static final String GACOMMHOST_LINK_GACOMMHOST_LINK_SCHEDULABLERESOURCES = "GaCommHost_Link_schedulableResources";
 
-    @objid ("d0a2218c-a345-478b-ac14-0ccaaeeb20f1")
+    @objid ("4e9f7760-5fad-4fa8-b5f0-5401f7150e63")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_THROUGHPUT = "GaCommHost_Parameter_throughput";
 
-    @objid ("93c26dc1-cbb4-4bf5-b283-3fcf3da4b465")
+    @objid ("38c6e34a-4ca8-42ba-844a-7aa0f7e5fdca")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_UTILIZATION = "GaCommHost_Parameter_utilization";
 
-    @objid ("8219582b-785c-49cd-a35b-4d764376d928")
+    @objid ("19d38ed9-1b74-49a6-a361-3474910f62bb")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_ISPREEMPTIBLE = "GaCommHost_Parameter_isPreemptible";
 
-    @objid ("1d058f31-3fcb-48ab-8977-8a28fa49eaa3")
+    @objid ("7db8e673-4e21-41b6-b512-6d7a45833361")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_SCHEDPOLICY = "GaCommHost_Parameter_schedPolicy";
 
-    @objid ("08487a40-57cd-4041-843c-d78ef141dc3b")
+    @objid ("d7ff53ae-0f35-4719-8c71-abebcaaa3387")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_OTHERSCHEDPOLICY = "GaCommHost_Parameter_otherSchedPolicy";
 
-    @objid ("222bdf42-ca8b-4607-ba9c-adefa98696c9")
+    @objid ("b208d76a-2e1c-4e7b-ade7-30d24136a0ac")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_SCHEDULE = "GaCommHost_Parameter_schedule";
 
-    @objid ("29558d85-3c2a-41b0-90ff-13265d4e0090")
+    @objid ("d64fd75b-dbf0-43c0-a3c2-cd812b87ab79")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_PROCESSINGUNITS = "GaCommHost_Parameter_processingUnits";
 
-    @objid ("ca10debb-753a-4ed7-ae2d-0bd852d4c2ec")
+    @objid ("ce180a73-646a-44df-a62c-20301a6f5977")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_HOST = "GaCommHost_Parameter_host";
 
-    @objid ("dc2eef81-572e-4e24-bda7-949105a5aaa1")
+    @objid ("d6824715-ef66-4057-a2c9-951832742bde")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_PROTECTEDSHAREDRESOURCES = "GaCommHost_Parameter_protectedSharedResources";
 
-    @objid ("422356cc-b2a4-4e0c-ac41-0ad394418a75")
+    @objid ("466727aa-ee81-4577-a5e3-8fe280b0424c")
     public static final String GACOMMHOST_PARAMETER_GACOMMHOST_PARAMETER_SCHEDULABLERESOURCES = "GaCommHost_Parameter_schedulableResources";
 
-    @objid ("941d2409-8099-4a4d-b4d2-5e0d20c00786")
+    @objid ("47975ffa-4b9d-4a41-aab8-b28db49ef3f8")
     public static final String GAEVENTTRACE_MODELELEMENT_GAEVENTTRACE_MODELELEMENT_CONTENT = "GaEventTrace_ModelElement_content";
 
-    @objid ("ac8ae393-3ed4-4437-9bd5-c48ddc3d480c")
+    @objid ("7bc9f6ab-cd99-4700-bffb-b72c1ac7d20c")
     public static final String GAEVENTTRACE_MODELELEMENT_GAEVENTTRACE_MODELELEMENT_FORMAT = "GaEventTrace_ModelElement_format";
 
-    @objid ("cf06b1c0-8928-4b62-b7c8-da8e84e0691d")
+    @objid ("a3af08c3-1622-44c0-a230-fb5e853f8e17")
     public static final String GAEVENTTRACE_MODELELEMENT_GAEVENTTRACE_MODELELEMENT_LOCATION = "GaEventTrace_ModelElement_location";
 
-    @objid ("547f02de-743f-4cb4-988f-e11c864dab07")
+    @objid ("f81431a3-bf9f-4ece-9f0c-0abc1da5a6cd")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_COMMTXOVH = "GaExecHost_Association_commTxOvh";
 
-    @objid ("f20ac793-ef46-4d63-a488-8d8e78264bbe")
+    @objid ("279fe9d8-5c8b-433c-8cb4-8199cabe43b2")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_COMMRCVOVH = "GaExecHost_Association_commRcvOvh";
 
-    @objid ("212d3da8-05ab-41da-a41a-bd25ccc9e8fc")
+    @objid ("f00bc542-c042-46b2-9f42-5fd59e4ec696")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_CNTXTSWT = "GaExecHost_Association_cntxtSwT";
 
-    @objid ("9ddfa016-78b2-4f11-b754-9753d10d1b67")
+    @objid ("2f148e30-3376-4caa-ad4f-6a5056646ae2")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_CLOCKOVH = "GaExecHost_Association_clockOvh";
 
-    @objid ("18a6a575-e999-450b-b482-0b9d124e9d56")
+    @objid ("cde5bdb1-83c6-4d55-8fbc-68d7e74caf77")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_SCHEDPRIRANGE = "GaExecHost_Association_schedPriRange";
 
-    @objid ("a4a67a54-c80a-4322-be4a-a317889f63dd")
+    @objid ("8d8a220e-66f0-4e68-8a60-705c0de252c3")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_MEMSIZE = "GaExecHost_Association_memSize";
 
-    @objid ("4a7f16ef-e33b-4f1e-9fd4-6ba7aa659359")
+    @objid ("8f568ae1-aa74-4771-bab5-36ccc758315d")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_UTILIZATION = "GaExecHost_Association_utilization";
 
-    @objid ("c6096e39-f77e-4eb9-b8eb-140f0207e50c")
+    @objid ("429bc9a6-255f-4aa1-8276-3e552ee8b6c1")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_THROUGHPUT = "GaExecHost_Association_throughput";
 
-    @objid ("0ee1defa-8a8b-47da-9e40-a468e1883f61")
+    @objid ("dcf0e925-103d-4630-870c-a2d99d3adc27")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_ISPREEMPTIBLE = "GaExecHost_Association_isPreemptible";
 
-    @objid ("ece7c0b7-d471-44f5-a1f1-74acb28e17fc")
+    @objid ("71eeacd2-6356-4355-9cbf-000b4f551315")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_SCHEDPOLICY = "GaExecHost_Association_schedPolicy";
 
-    @objid ("0cd2a456-232e-4914-9313-126669d2fe58")
+    @objid ("9908058f-b692-49a5-8f61-162f970c20b2")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_OTHERSCHEDPOLICY = "GaExecHost_Association_otherSchedPolicy";
 
-    @objid ("1e82c427-3357-4c31-b85e-0d8772d5890d")
+    @objid ("b21483a1-4c86-481a-bfae-55200d0e19c5")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_SCHEDULE = "GaExecHost_Association_schedule";
 
-    @objid ("8f83efaa-78ef-4f1f-9eb2-9f30539be1f4")
+    @objid ("fca3fc8c-ddfd-4f24-a6b5-16d85c3902f5")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_PROCESSINGUNITS = "GaExecHost_Association_processingUnits";
 
-    @objid ("61ffac9f-c845-4f0a-b906-581e5bd47088")
+    @objid ("980a772b-dd00-493e-9c4d-b6ea5e0f4790")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_HOST = "GaExecHost_Association_host";
 
-    @objid ("3b224542-dded-430c-a9cb-438cfca24b6f")
+    @objid ("13016b1b-0ec4-4309-8c75-41fd3987a3c0")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_PROTECTEDSHAREDRESOURCES = "GaExecHost_Association_protectedSharedResources";
 
-    @objid ("773792f1-fdc7-4a40-b07e-6fec1cc70b16")
+    @objid ("8f430a65-954f-49b0-a7b2-7da58add76b3")
     public static final String GAEXECHOST_ASSOCIATION_GAEXECHOST_ASSOCIATION_SCHEDULABLERESOURCES = "GaExecHost_Association_schedulableResources";
 
-    @objid ("18c27dc5-98da-4152-8645-306f1a5818f3")
+    @objid ("9337563b-cc79-4e45-9b67-1062f3a4f293")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_COMMTXOVH = "GaExecHost_AssociationEnd_commTxOvh";
 
-    @objid ("0e4f85e5-4f28-4312-b91d-ac0a18568a25")
+    @objid ("285aac3c-daf7-4da5-a5eb-1ae66134f8e2")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_COMMRCVOVH = "GaExecHost_AssociationEnd_commRcvOvh";
 
-    @objid ("599f7507-06f0-444e-a590-0293ab13dda1")
+    @objid ("3b6f84b5-e1f5-430e-b55a-56ca1710301d")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_CNTXTSWT = "GaExecHost_AssociationEnd_cntxtSwT";
 
-    @objid ("cd2888a8-0484-4b98-a14a-de636e98e3ec")
+    @objid ("ebea6826-0843-43b4-b416-119e0f46c989")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_CLOCKOVH = "GaExecHost_AssociationEnd_clockOvh";
 
-    @objid ("1faa1d7c-cd8f-41ba-be4f-cdc4024964d2")
+    @objid ("3531a33e-4e23-4b96-8fee-b45e692a62c6")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_SCHEDPRIRANGE = "GaExecHost_AssociationEnd_schedPriRange";
 
-    @objid ("01d203ab-e4a1-41a6-9d26-302c9daedf1e")
+    @objid ("f592586d-38f9-469a-bc63-d57d67090b35")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_MEMSIZE = "GaExecHost_AssociationEnd_memSize";
 
-    @objid ("f23d6efa-3610-4917-9f58-4e16e9b26e13")
+    @objid ("f730023f-9366-4c73-a9ba-ef40c35dc413")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_UTILIZATION = "GaExecHost_AssociationEnd_utilization";
 
-    @objid ("593b3d09-a251-476b-94d8-2eca3eceffc8")
+    @objid ("644c6f3b-cfa1-4260-9b1f-88b8379e7fea")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_THROUGHPUT = "GaExecHost_AssociationEnd_throughput";
 
-    @objid ("c7626f52-9b88-4095-b871-e4d9d5bd6309")
+    @objid ("d7fa82b5-96a5-40fd-9eb1-0534fd8c8c33")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_ISPREEMPTIBLE = "GaExecHost_AssociationEnd_isPreemptible";
 
-    @objid ("67c0f072-c729-4c7e-ac73-275ac7bb58b1")
+    @objid ("0c5bb67f-4f4b-490c-9dfd-6ea3288131c3")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_SCHEDPOLICY = "GaExecHost_AssociationEnd_schedPolicy";
 
-    @objid ("8c4668e4-e867-45d1-8831-d6b97ba20eed")
+    @objid ("ed8b9729-356b-45f6-bd72-07816a5a6e1e")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_OTHERSCHEDPOLICY = "GaExecHost_AssociationEnd_otherSchedPolicy";
 
-    @objid ("2fe3013b-c261-4fdc-bdb0-c266338f01bf")
+    @objid ("f8dcae93-6468-4f10-946c-60cbbc0b0f4a")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_SCHEDULE = "GaExecHost_AssociationEnd_schedule";
 
-    @objid ("93a048c7-8905-4ea0-a0d0-daeac6b6ac32")
+    @objid ("2e0b92b4-e258-4e86-9e20-d14423b08fbb")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_PROCESSINGUNITS = "GaExecHost_AssociationEnd_processingUnits";
 
-    @objid ("1b4b4dec-78a3-4ab8-a780-c902a158ac0a")
+    @objid ("850cb404-da0e-47c3-81c2-c36b4b364069")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_HOST = "GaExecHost_AssociationEnd_host";
 
-    @objid ("20a7da86-971d-4891-aaf4-89da491084e7")
+    @objid ("7c46a664-bbf9-4286-a6b7-542d6f69e0e8")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES = "GaExecHost_AssociationEnd_protectedSharedResources";
 
-    @objid ("bdcf62e8-cbd0-48e8-9b3c-e9cc1a18ae60")
+    @objid ("5c8dd0e3-4f51-46f7-970e-1a996fc63b47")
     public static final String GAEXECHOST_ASSOCIATIONEND_GAEXECHOST_ASSOCIATIONEND_SCHEDULABLERESOURCES = "GaExecHost_AssociationEnd_schedulableResources";
 
-    @objid ("4c9853b4-edf6-4cd7-821d-4bfb27464c4a")
+    @objid ("9febb78c-a4a1-43ce-93dd-798cda0ec1d6")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_COMMTXOVH = "GaExecHost_Attribute_commTxOvh";
 
-    @objid ("6144e6dd-1b93-4dc8-8b0c-acd765189e8e")
+    @objid ("32ad062d-18c5-498e-82d4-f46b0344b529")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_COMMRCVOVH = "GaExecHost_Attribute_commRcvOvh";
 
-    @objid ("d5a26c11-b47f-4929-833a-44aafe3e4722")
+    @objid ("2e37b1b2-100f-4dda-9400-818634fad023")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_CNTXTSWT = "GaExecHost_Attribute_cntxtSwT";
 
-    @objid ("eaf66dc8-635c-4952-9e0d-25a5d45c416e")
+    @objid ("6ba89333-0f91-4747-b435-969e59e12971")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_CLOCKOVH = "GaExecHost_Attribute_clockOvh";
 
-    @objid ("863753c9-d623-4725-8a96-59d045b063ba")
+    @objid ("310f234b-b22d-48dc-a029-31c03e90188f")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_SCHEDPRIRANGE = "GaExecHost_Attribute_schedPriRange";
 
-    @objid ("841ea9b3-e728-44ed-8ca2-eed76606a760")
+    @objid ("9298e687-c6b1-4aac-b65a-d1f2e612673e")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_MEMSIZE = "GaExecHost_Attribute_memSize";
 
-    @objid ("d2710e83-61c5-491e-ac05-a7468750eba8")
+    @objid ("4ae3f87f-f33f-4ffb-b644-438dec2b9588")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_UTILIZATION = "GaExecHost_Attribute_utilization";
 
-    @objid ("fe5cf395-ae4e-4978-aeb8-991c132ce195")
+    @objid ("fa631c9e-4100-43e2-ad7f-949f63f8b1f2")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_THROUGHPUT = "GaExecHost_Attribute_throughput";
 
-    @objid ("a3d9ad6a-1153-42dc-8ecd-5c48a72a375a")
+    @objid ("092dfff4-1b35-41b5-8cb0-e74974f4e1e9")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_ISPREEMPTIBLE = "GaExecHost_Attribute_isPreemptible";
 
-    @objid ("534f06a4-0e62-4cbd-92ee-23bb9f3cdddb")
+    @objid ("f6663593-2132-4daa-8fc9-99ec25f3f301")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_SCHEDPOLICY = "GaExecHost_Attribute_schedPolicy";
 
-    @objid ("f14f5366-d158-4cfa-85ba-0b75f5d27b47")
+    @objid ("c88bf9db-3136-4daf-a3f4-b2efaad413d8")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_OTHERSCHEDPOLICY = "GaExecHost_Attribute_otherSchedPolicy";
 
-    @objid ("1609e4f1-3cdf-41ec-90ae-11b98086b52e")
+    @objid ("edf7df1f-8034-44e3-a1f1-3164cdfb45fe")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_SCHEDULE = "GaExecHost_Attribute_schedule";
 
-    @objid ("6c5f0111-17eb-40c1-9aca-b967ee6d6302")
+    @objid ("25133fcf-9681-4d18-bc3b-0a6bfa2b8fba")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_PROCESSINGUNITS = "GaExecHost_Attribute_processingUnits";
 
-    @objid ("f56357f7-515a-4db9-b2b8-1f0e318eda61")
+    @objid ("187aeacb-2c6f-48af-8653-4b1af0c64897")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_HOST = "GaExecHost_Attribute_host";
 
-    @objid ("08e7caeb-56e0-455c-94a1-b4eae6af38e2")
+    @objid ("c7f35843-c566-419c-9b4e-14794566239b")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_PROTECTEDSHAREDRESOURCES = "GaExecHost_Attribute_protectedSharedResources";
 
-    @objid ("0733b356-c9c5-46a7-80a3-d441e9f37e7e")
+    @objid ("793c69be-6c6a-44d2-b95c-36837b76b07d")
     public static final String GAEXECHOST_ATTRIBUTE_GAEXECHOST_ATTRIBUTE_SCHEDULABLERESOURCES = "GaExecHost_Attribute_schedulableResources";
 
-    @objid ("9ae064b0-73b8-4a73-b2b4-69965a82e72a")
+    @objid ("18ce8ecb-8ab7-460d-ae5c-adf5908d524a")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_COMMTXOVH = "GaExecHost_Classifier_commTxOvh";
 
-    @objid ("fe727035-8580-41c4-a284-3c88840799fd")
+    @objid ("caf74327-d619-4883-9445-750d0db257b8")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_COMMRCVOVH = "GaExecHost_Classifier_commRcvOvh";
 
-    @objid ("902bf0da-0464-468b-a97e-0b39d9a2d742")
+    @objid ("f21c42be-5753-4268-9cb1-eb9cb3f8fe92")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_CNTXTSWT = "GaExecHost_Classifier_cntxtSwT";
 
-    @objid ("b1152f80-b203-41b9-94fd-fb33bd7a872c")
+    @objid ("d4060dcf-1d06-49d5-a2b8-91ef57a8b13f")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_CLOCKOVH = "GaExecHost_Classifier_clockOvh";
 
-    @objid ("1f5a86bc-7f1d-4c1a-94bc-b00ee0b01033")
+    @objid ("7d30140b-9ba7-4ce5-a610-83986c6a7e20")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_SCHEDPRIRANGE = "GaExecHost_Classifier_schedPriRange";
 
-    @objid ("fbbb1525-c378-4d38-ab52-90143cfcc0aa")
+    @objid ("07313a87-92d3-4cf2-921f-19652f277358")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_MEMSIZE = "GaExecHost_Classifier_memSize";
 
-    @objid ("e6d0e638-c542-486d-8200-8c930a383c47")
+    @objid ("b39a3e1d-71d5-484b-a809-e0fbfe5f10a8")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_UTILIZATION = "GaExecHost_Classifier_utilization";
 
-    @objid ("ed92e8a4-b992-43a6-ba10-24c7c0c00683")
+    @objid ("b067f072-5c1c-40e8-8800-970624860ec6")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_THROUGHPUT = "GaExecHost_Classifier_throughput";
 
-    @objid ("695bac82-857f-4b4b-bcd1-181779f38c93")
+    @objid ("fb050c0c-cf70-4095-9b9f-483516e83b9a")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_ISPREEMPTIBLE = "GaExecHost_Classifier_isPreemptible";
 
-    @objid ("47316297-6d64-4a71-8839-f6e3ccc62d5a")
+    @objid ("37fa4f09-2af9-4016-bf27-26238a70bd0c")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_SCHEDPOLICY = "GaExecHost_Classifier_schedPolicy";
 
-    @objid ("1e13f19a-750d-460e-a9f7-5e2112368196")
+    @objid ("277d918e-aab1-4cdf-899f-4c0e1ac60dd1")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_OTHERSCHEDPOLICY = "GaExecHost_Classifier_otherSchedPolicy";
 
-    @objid ("81dda135-e5ea-4f2f-a496-9e3a302882f7")
+    @objid ("c237ceed-a130-4335-92ef-6bebe8bbb770")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_SCHEDULE = "GaExecHost_Classifier_schedule";
 
-    @objid ("bedb3b9a-9e24-44be-953d-b5bce971800b")
+    @objid ("6930d83a-2838-498f-a1cb-c5515978e3f5")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_PROCESSINGUNITS = "GaExecHost_Classifier_processingUnits";
 
-    @objid ("40e0e365-a495-484d-b87d-953c3afffbca")
+    @objid ("07e97021-7ba0-4208-9957-2cef08f2a950")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_HOST = "GaExecHost_Classifier_host";
 
-    @objid ("45e6ec15-5006-428f-8abc-ee24b8bfec89")
+    @objid ("7614475a-930b-47f6-86df-684a44b35887")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_PROTECTEDSHAREDRESOURCES = "GaExecHost_Classifier_protectedSharedResources";
 
-    @objid ("d855c633-39f9-4657-8841-ac1157126a0c")
+    @objid ("0b62e989-594a-4633-8fa9-6d84b7b7f399")
     public static final String GAEXECHOST_CLASSIFIER_GAEXECHOST_CLASSIFIER_SCHEDULABLERESOURCES = "GaExecHost_Classifier_schedulableResources";
 
-    @objid ("e02cd189-40dc-452f-8cfc-790a5cd5d818")
+    @objid ("2dc1b700-812d-4067-ba83-6e590b9e0eb2")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_COMMTXOVH = "GaExecHost_Instance_commTxOvh";
 
-    @objid ("d0ad7d47-5602-400c-8a6d-836b159fea46")
+    @objid ("5989bb20-480e-4a01-8976-bf433d7356fc")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_COMMRCVOVH = "GaExecHost_Instance_commRcvOvh";
 
-    @objid ("1d569192-424d-4e2d-bbe8-21007ce13615")
+    @objid ("10417aa4-70f7-4a75-94f0-3c05fb697070")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_CNTXTSWT = "GaExecHost_Instance_cntxtSwT";
 
-    @objid ("c1f44711-01dc-4bc3-aff6-544dda7e3028")
+    @objid ("201fe785-d8b0-4289-a12d-98e445ce39d2")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_CLOCKOVH = "GaExecHost_Instance_clockOvh";
 
-    @objid ("225f0369-3a76-48ad-ab7a-4f43c7a20903")
+    @objid ("1eaf187c-5c73-4e02-a4c1-90305a140737")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_SCHEDPRIRANGE = "GaExecHost_Instance_schedPriRange";
 
-    @objid ("4cb2fc06-d838-464e-afa7-26c7cdbc6bf6")
+    @objid ("2c75ec64-3374-45fa-8d64-a957f8905cd9")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_MEMSIZE = "GaExecHost_Instance_memSize";
 
-    @objid ("b5741dc4-9cb2-48c7-a72c-d0dcdb0fab22")
+    @objid ("393053d0-657e-4d41-93f8-7a63d359acf9")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_UTILIZATION = "GaExecHost_Instance_utilization";
 
-    @objid ("412eea2e-d043-487a-954e-b94d6fccca3c")
+    @objid ("46b9487a-36b6-42b3-b396-82dda0ecdd42")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_THROUGHPUT = "GaExecHost_Instance_throughput";
 
-    @objid ("b8f75d88-f99c-492b-8620-041d82d904e1")
+    @objid ("1ccddc76-3371-4489-9ba6-cdac070c05b0")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_ISPREEMPTIBLE = "GaExecHost_Instance_isPreemptible";
 
-    @objid ("0e94e8a3-a557-4454-a7e5-f0568c01a796")
+    @objid ("58f30ca3-01e9-4d14-9f22-507b17f439c6")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_SCHEDPOLICY = "GaExecHost_Instance_schedPolicy";
 
-    @objid ("62b476ac-a4c1-4ed7-adee-e9c2cef53773")
+    @objid ("8ad6cca3-1902-45aa-a238-f6e9b451724c")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_OTHERSCHEDPOLICY = "GaExecHost_Instance_otherSchedPolicy";
 
-    @objid ("a8ad4e35-ca9e-4426-b467-b9124057525e")
+    @objid ("68ebe334-8a5c-4b6f-aca5-62daaada7d52")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_SCHEDULE = "GaExecHost_Instance_schedule";
 
-    @objid ("f284e070-a70a-454c-84f2-de957020b0ce")
+    @objid ("da459eed-c90f-4993-bc20-dcf32715dd5d")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_PROCESSINGUNITS = "GaExecHost_Instance_processingUnits";
 
-    @objid ("882f9b15-cfad-4f6e-903c-c39a42840234")
+    @objid ("ccf859d5-87fa-4601-b4d7-0214c634837b")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_HOST = "GaExecHost_Instance_host";
 
-    @objid ("401c6fa8-c1e1-4f5e-8c8e-a023477a7ac1")
+    @objid ("75bdb3d7-14f0-4b7d-9fc7-fe11ecb80abd")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_PROTECTEDSHAREDRESOURCES = "GaExecHost_Instance_protectedSharedResources";
 
-    @objid ("d8febd1d-fe9b-4f6d-8b56-c58277d8d5f2")
+    @objid ("58aec607-1932-41ba-8073-faaf9a13a841")
     public static final String GAEXECHOST_INSTANCE_GAEXECHOST_INSTANCE_SCHEDULABLERESOURCES = "GaExecHost_Instance_schedulableResources";
 
-    @objid ("fcc0ee55-e09a-4e28-80f6-783f2a730baf")
+    @objid ("8ddacd2f-d925-4bbe-8842-1707fd2e72c5")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_COMMTXOVH = "GaExecHost_Lifeline_commTxOvh";
 
-    @objid ("02994800-5892-4347-b0ee-ed04cc791163")
+    @objid ("bb7f2149-5aa1-40a3-a702-ba678eab83bf")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_COMMRCVOVH = "GaExecHost_Lifeline_commRcvOvh";
 
-    @objid ("755b8085-59d2-4f1f-a082-5d7b817f5bce")
+    @objid ("ab592805-c202-4419-8124-cca75b024062")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_CNTXTSWT = "GaExecHost_Lifeline_cntxtSwT";
 
-    @objid ("78183c4d-640e-43c9-a9f8-4527fbe10031")
+    @objid ("32538fcc-eb84-47d9-9897-212c64a73ed0")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_CLOCKOVH = "GaExecHost_Lifeline_clockOvh";
 
-    @objid ("4c7068fd-2eb9-4df9-8234-ad2cd690b588")
+    @objid ("a3938021-70ce-4e18-bc72-b68c7cc3836e")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_SCHEDPRIRANGE = "GaExecHost_Lifeline_schedPriRange";
 
-    @objid ("140e21d1-9180-4655-931b-80c25e4aecb3")
+    @objid ("bb18453d-8c66-4874-a426-9d45b92a00e3")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_MEMSIZE = "GaExecHost_Lifeline_memSize";
 
-    @objid ("1de6c540-5f9e-4e66-bddf-8091b274ecfc")
+    @objid ("42085bf4-d40b-44a1-8d20-a111a34ea877")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_UTILIZATION = "GaExecHost_Lifeline_utilization";
 
-    @objid ("fdb594ae-fe7e-4961-abd8-d610c79d4d87")
+    @objid ("0ffbd057-4473-42f2-8f56-fd5820f5ee7b")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_THROUGHPUT = "GaExecHost_Lifeline_throughput";
 
-    @objid ("4bd4c74a-7181-4a55-9942-2ecde9e4b8c8")
+    @objid ("1a270098-715d-458c-a02e-467b9c68724c")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_ISPREEMPTIBLE = "GaExecHost_Lifeline_isPreemptible";
 
-    @objid ("8086e60a-4b1a-4334-9bcd-6379ad472842")
+    @objid ("c89e90e3-ad7c-4a75-84ef-620cdcd5df9c")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_SCHEDPOLICY = "GaExecHost_Lifeline_schedPolicy";
 
-    @objid ("5c0fc784-04a1-4708-b0f6-d2182cfc8338")
+    @objid ("9a770f96-717e-4c3a-bf63-a4325fecd7dd")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_OTHERSCHEDPOLICY = "GaExecHost_Lifeline_otherSchedPolicy";
 
-    @objid ("a3c35760-30d1-474f-9b9c-7f822f4dbe9e")
+    @objid ("8b68e613-a6bc-4b36-8673-c5b3ec7e4ef0")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_SCHEDULE = "GaExecHost_Lifeline_schedule";
 
-    @objid ("1c0207dc-40ba-461f-8a17-5867e7e8cc0d")
+    @objid ("b7d6bbba-1464-4ce8-b0f6-b7a8f13aadaf")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_PROCESSINGUNITS = "GaExecHost_Lifeline_processingUnits";
 
-    @objid ("8b714c8f-c9d9-47fc-be25-6ec673d8d141")
+    @objid ("b8a83b18-ae21-4af9-8c3a-ad5d4dcac870")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_HOST = "GaExecHost_Lifeline_host";
 
-    @objid ("355b9bff-9e40-473b-bd86-0202731c02d5")
+    @objid ("ae2129d6-4a2b-4af4-a0fe-189261024bbf")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_PROTECTEDSHAREDRESOURCES = "GaExecHost_Lifeline_protectedSharedResources";
 
-    @objid ("137dcc75-8a2c-4a87-98c4-ac6df6ed3491")
+    @objid ("3de3d528-f38e-4c5b-96e7-42f5b13ea18d")
     public static final String GAEXECHOST_LIFELINE_GAEXECHOST_LIFELINE_SCHEDULABLERESOURCES = "GaExecHost_Lifeline_schedulableResources";
 
-    @objid ("1c8a7ba7-a2d7-4615-ab1d-749ba7f8284c")
+    @objid ("12cf0705-5667-4019-b187-d91f58de441d")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_COMMTXOVH = "GaExecHost_Link_commTxOvh";
 
-    @objid ("252b045e-5ac0-4b51-9f44-1c84a64ce655")
+    @objid ("4701583a-f831-4a74-a504-34bde5e5a655")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_COMMRCVOVH = "GaExecHost_Link_commRcvOvh";
 
-    @objid ("83d28bc8-00b8-4921-9c8c-9103e2db76d5")
+    @objid ("78183fb1-bcb2-4c79-a9b5-ce1e24c4e129")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_CNTXTSWT = "GaExecHost_Link_cntxtSwT";
 
-    @objid ("b777fe3f-9d67-49c2-b4dc-50f1dfb01417")
+    @objid ("0d8c6f21-0b58-435e-a754-c448b826ee9d")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_CLOCKOVH = "GaExecHost_Link_clockOvh";
 
-    @objid ("c0accd1e-3730-4842-aec3-a032e9a09ad9")
+    @objid ("bc1cc01b-e8ec-4ae6-acbf-3469e286719e")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_SCHEDPRIRANGE = "GaExecHost_Link_schedPriRange";
 
-    @objid ("a66eea91-33f2-403e-b158-75e1b0eb3deb")
+    @objid ("ae129030-f5e0-42ba-a111-4ac27781f55b")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_MEMSIZE = "GaExecHost_Link_memSize";
 
-    @objid ("1b7fbcb1-16f5-4366-8bf7-cb64b907abfc")
+    @objid ("d7eb3960-6710-450e-a95b-6e27c3b467b0")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_UTILIZATION = "GaExecHost_Link_utilization";
 
-    @objid ("f5b6f9c1-9a6d-4e49-83e1-ca12333f4307")
+    @objid ("cbab3fc4-da4e-4a61-930f-8576de8cb2bc")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_THROUGHPUT = "GaExecHost_Link_throughput";
 
-    @objid ("4a6989aa-63db-4d59-8ea0-3d1e5a415bdb")
+    @objid ("d6943f94-77aa-45e2-8b38-dfe93ca8f17b")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_ISPREEMPTIBLE = "GaExecHost_Link_isPreemptible";
 
-    @objid ("de3f6cda-5918-4732-9dd9-0d276f9a6dd7")
+    @objid ("66e3323e-26fb-4484-8501-da2565dae8f7")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_SCHEDPOLICY = "GaExecHost_Link_schedPolicy";
 
-    @objid ("cb8e27a7-b589-4d96-84b3-816c57782d28")
+    @objid ("f39a6214-6f68-4bf7-b27e-422b21da76de")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_OTHERSCHEDPOLICY = "GaExecHost_Link_otherSchedPolicy";
 
-    @objid ("47ddf916-93b1-47a2-9d21-f7d77d6e094f")
+    @objid ("520b438e-f054-45f9-b8c5-30f790bc8fe4")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_SCHEDULE = "GaExecHost_Link_schedule";
 
-    @objid ("56cbd0f1-b2e7-48a2-86f5-2776b71940e1")
+    @objid ("80d484b6-5eb3-482e-a68c-68517b184040")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_PROCESSINGUNITS = "GaExecHost_Link_processingUnits";
 
-    @objid ("7e1d42e9-010f-4c48-8a48-34717a203429")
+    @objid ("1ce226e7-a93c-4687-8ebd-0a7ca74ece3d")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_HOST = "GaExecHost_Link_host";
 
-    @objid ("fa34f64d-d9e1-4f8f-866c-c1403762dfc1")
+    @objid ("40791eac-4858-408d-843f-527acb144ef8")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_PROTECTEDSHAREDRESOURCES = "GaExecHost_Link_protectedSharedResources";
 
-    @objid ("87eb2531-eb82-48cf-bde8-0ca7959c5ba8")
+    @objid ("25c32169-2420-4e0b-ab66-698d9bfa54d2")
     public static final String GAEXECHOST_LINK_GAEXECHOST_LINK_SCHEDULABLERESOURCES = "GaExecHost_Link_schedulableResources";
 
-    @objid ("cd84253b-e5e3-4147-9242-37584f446412")
+    @objid ("4ec83a24-1781-49dc-997c-6ce1bd3fb7b9")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_COMMTXOVH = "GaExecHost_Parameter_commTxOvh";
 
-    @objid ("7992a3fc-d058-4c96-a1a9-f917f230b059")
+    @objid ("af1f54dc-1b2c-4c9e-86f9-e3fdccb5acd5")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_COMMRCVOVH = "GaExecHost_Parameter_commRcvOvh";
 
-    @objid ("ec89224f-6aca-4db0-9cc8-6a984c6d3039")
+    @objid ("cd51adff-3f96-438d-a494-36c843002896")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_CNTXTSWT = "GaExecHost_Parameter_cntxtSwT";
 
-    @objid ("7c6f93c1-42b4-466a-9745-d7fb1242004f")
+    @objid ("7f768779-cb5f-4de9-a713-be2397fc376c")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_CLOCKOVH = "GaExecHost_Parameter_clockOvh";
 
-    @objid ("d476e3d1-4124-48f3-b768-222c4015bbdb")
+    @objid ("dedac369-0726-41b6-afef-c4d6b9443e67")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_SCHEDPRIRANGE = "GaExecHost_Parameter_schedPriRange";
 
-    @objid ("4f2480a5-b0d0-4fd6-96e5-e2f8ac94f55f")
+    @objid ("31812f2b-0748-4896-b15c-213e541bf741")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_MEMSIZE = "GaExecHost_Parameter_memSize";
 
-    @objid ("8560b83e-5726-468f-885a-f7d7ab44fb9b")
+    @objid ("ecd83d4f-d1da-4f3c-8f81-3b4f782fade5")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_UTILIZATION = "GaExecHost_Parameter_utilization";
 
-    @objid ("410a1872-41b4-450a-a0b7-d02a12c69bdc")
+    @objid ("a29a11ca-fd47-4a54-a321-e39ca2f514f1")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_THROUGHPUT = "GaExecHost_Parameter_throughput";
 
-    @objid ("860291a2-9339-4e85-b6e1-0f32daf84780")
+    @objid ("a5149296-ebce-46a4-a6d6-e67b55debb35")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_ISPREEMPTIBLE = "GaExecHost_Parameter_isPreemptible";
 
-    @objid ("8c43cae6-4f7b-4e27-8780-732fae218c47")
+    @objid ("37fd278e-1b52-4938-b9dc-61f52f080165")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_SCHEDPOLICY = "GaExecHost_Parameter_schedPolicy";
 
-    @objid ("05119435-aa4d-4ed3-aac7-682e5ed2fe5a")
+    @objid ("f5d43a86-fbeb-45ae-92d9-d4b54beebd2c")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_OTHERSCHEDPOLICY = "GaExecHost_Parameter_otherSchedPolicy";
 
-    @objid ("6439ed97-3c73-435b-a1a9-45c2d9edd6b4")
+    @objid ("47b6e93f-d7eb-4706-8dff-0a606ed5cdb6")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_SCHEDULE = "GaExecHost_Parameter_schedule";
 
-    @objid ("2d1debf5-93c9-4c82-acee-c21064806626")
+    @objid ("2e2888f1-806f-4d69-a3bc-f95f6c97d416")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_PROCESSINGUNITS = "GaExecHost_Parameter_processingUnits";
 
-    @objid ("d9843095-b8ce-4599-b8fe-0e01c762212d")
+    @objid ("858a29de-6beb-4b81-b3ac-a79a6caff9b0")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_HOST = "GaExecHost_Parameter_host";
 
-    @objid ("39eca5e3-4c22-4554-af9e-c0a1c58bc95d")
+    @objid ("3932a7e9-2abb-4fc5-b913-d5237385dae8")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_PROTECTEDSHAREDRESOURCES = "GaExecHost_Parameter_protectedSharedResources";
 
-    @objid ("5752a2a4-7544-46b5-ad7a-a7047ab84eaf")
+    @objid ("edd3242e-1e77-4c17-82fd-5ce1879bf23b")
     public static final String GAEXECHOST_PARAMETER_GAEXECHOST_PARAMETER_SCHEDULABLERESOURCES = "GaExecHost_Parameter_schedulableResources";
 
-    @objid ("b66dbbf6-77bd-44a0-be84-1064b61663d6")
+    @objid ("3179d396-465b-433e-9e91-69de8409f128")
     public static final String GALATENCYOBS_CONSTRAINT_GALATENCYOBS_CONSTRAINT_LATENCY = "GaLatencyObs_Constraint_latency";
 
-    @objid ("a10797a1-f0e4-48f8-b038-6a8254ee69db")
+    @objid ("f1529339-aa8e-4997-8a23-09a18600f205")
     public static final String GALATENCYOBS_CONSTRAINT_GALATENCYOBS_CONSTRAINT_MISS = "GaLatencyObs_Constraint_miss";
 
-    @objid ("020858ea-734f-4d8a-9b79-3978076d4fc0")
+    @objid ("76bb0b13-b9c5-48a4-b342-9998f2a4bd2b")
     public static final String GALATENCYOBS_CONSTRAINT_GALATENCYOBS_CONSTRAINT_UTILITY = "GaLatencyObs_Constraint_utility";
 
-    @objid ("1721d181-dd97-407c-af95-9204a4e44efb")
+    @objid ("fa36cc25-0d31-4243-a7d6-9de29bf33b51")
     public static final String GALATENCYOBS_CONSTRAINT_GALATENCYOBS_CONSTRAINT_MAXJITTER = "GaLatencyObs_Constraint_maxJitter";
 
-    @objid ("77ae2c92-866b-47d8-ab17-450e87764b9b")
+    @objid ("cff88fb2-339a-4d6a-94be-26058f1f2787")
     public static final String GARELSTEP_MODELELEMENT_GARELSTEP_MODELELEMENT_RELRES = "GaRelStep_ModelElement_relRes";
 
-    @objid ("b273093d-b58c-40cb-9295-5ea62cad7752")
+    @objid ("8c24ff0d-1baf-4ebe-b89d-244080c9929b")
     public static final String GARELSTEP_MODELELEMENT_GARELSTEP_MODELELEMENT_RESUNITS = "GaRelStep_ModelElement_resUnits";
 
-    @objid ("379205b1-d27f-43c2-ae3e-ed7ff735ac4d")
+    @objid ("0e85efde-48ab-4a41-aac5-b5dd4a1cff31")
     public static final String GARESOURCESPLATFORM_CLASSIFIER_GARESOURCESPLATFORM_CLASSIFIER_RESOURCES = "GaResourcesPlatform_Classifier_resources";
 
-    @objid ("6bb00018-5b79-4688-8268-55e1020a3427")
+    @objid ("a90fe840-b89a-4073-998f-f35d45b6cb94")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_CAUSE = "GaScenario_ModelElement_cause";
 
-    @objid ("0f5446af-6c1b-4a40-af2c-da06f047fbb4")
+    @objid ("74368ad1-7412-4694-a677-5f614bc883d7")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_HOSTDEMAND = "GaScenario_ModelElement_hostDemand";
 
-    @objid ("97113fbd-3a19-4771-a2fd-8be78a37701e")
+    @objid ("27bea676-43ee-4c6a-98cd-eeb028d5b4f6")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_HOSTDEMANDOPS = "GaScenario_ModelElement_hostDemandOps";
 
-    @objid ("31c5982b-3d97-4aae-8aba-2ee9cfa204fe")
+    @objid ("7eefed83-5ee3-4558-a524-c37d0e53adf9")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_INTEROCCT = "GaScenario_ModelElement_interOccT";
 
-    @objid ("6a5ab4d2-58f6-494a-a432-c8c12965a081")
+    @objid ("0887d0f1-147b-4899-a156-34bb6e776bb3")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_THROUGHPUT = "GaScenario_ModelElement_throughput";
 
-    @objid ("e110dbdc-8fef-43a9-be20-d6852fb9ecb9")
+    @objid ("604097e6-145f-4315-a603-8e6b57eb0fc4")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_RESPT = "GaScenario_ModelElement_respT";
 
-    @objid ("a4d83279-7cb3-456f-bd75-4f20cc364300")
+    @objid ("55017494-87c5-4d61-83a1-65757dd0b7d0")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_UTILIZATION = "GaScenario_ModelElement_utilization";
 
-    @objid ("8fa2505a-7044-47f1-945e-fc7d8c67016d")
+    @objid ("4cd3c92f-2a11-4ed8-9cb7-35237894b84c")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_UTILIZATIONONHOST = "GaScenario_ModelElement_utilizationOnHost";
 
-    @objid ("54653097-325d-41b6-a87e-e92f49c056a0")
+    @objid ("74869833-98a6-479b-9472-7099ca0f2144")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_ROOT = "GaScenario_ModelElement_root";
 
-    @objid ("3f67cef8-91d3-439e-bc7e-4bd6830f16c1")
+    @objid ("f54614fb-7a5b-419d-8455-bc2a52718734")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_TIMING = "GaScenario_ModelElement_timing";
 
-    @objid ("e01961f1-d23e-4b1e-a287-7d5dd3fbc9cf")
+    @objid ("67de71d0-f337-4c45-a5a3-55486cef04cb")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_EXECTIME = "GaScenario_ModelElement_execTime";
 
-    @objid ("14a74978-2e61-48d1-9ad9-369f86344d84")
+    @objid ("0607ff71-7f81-4fed-a30d-f4e2df5186da")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_ALLOCATEDMEMORY = "GaScenario_ModelElement_allocatedMemory";
 
-    @objid ("6022aa59-fff5-4779-8346-c3f8effd7d63")
+    @objid ("15b6f9a7-8060-449e-818b-a248ac962f6b")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_USEDMEMORY = "GaScenario_ModelElement_usedMemory";
 
-    @objid ("058ecaca-e218-4c00-98b1-1f8fcbcbd8b9")
+    @objid ("d9753181-1c0f-4fac-96ab-dbd46ee874c9")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_STEPS = "GaScenario_ModelElement_steps";
 
-    @objid ("fd4f6905-a95a-44af-b894-822daa30504f")
+    @objid ("a529d78d-7272-44b0-b68a-7362a6de3aca")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_PARENTSTEP = "GaScenario_ModelElement_parentStep";
 
-    @objid ("f02661bc-abb5-44f0-94f1-0b907ffc1452")
+    @objid ("d535cb3e-66d5-4da2-bc02-8d2a5a5c7a91")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_POWERPEAK = "GaScenario_ModelElement_powerPeak";
 
-    @objid ("a081c7ee-337b-4140-bbcd-14269ac2ab53")
+    @objid ("1b58b1cb-b653-48c6-b20d-8ff5554aaffe")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_ENERGY = "GaScenario_ModelElement_energy";
 
-    @objid ("e05f2cde-5b72-4984-bc13-502f7342420e")
+    @objid ("02819f7f-c551-4c7d-b119-7bae882629e5")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_SUBUSAGE = "GaScenario_ModelElement_subUsage";
 
-    @objid ("eca80d32-ff13-4988-a425-1eb3331c85d9")
+    @objid ("062a2f3a-3f83-4432-bd34-ae004dc4cfd0")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_USEDRESOURCES = "GaScenario_ModelElement_usedResources";
 
-    @objid ("7293ccc5-3414-47dd-bd42-b29f41bf6f38")
+    @objid ("fbe259dc-ea9d-4098-bbbd-2ed0c9826c5b")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_MSGSIZE = "GaScenario_ModelElement_msgSize";
 
-    @objid ("5c12e476-a916-4bfb-966b-d0a71d7339bd")
+    @objid ("4bda9e86-a5a7-4c85-adf3-a44dac6b50fb")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_DURATION = "GaScenario_ModelElement_duration";
 
-    @objid ("fdceaaa3-2dc4-44fa-a995-c1f54b2c4ac2")
+    @objid ("3817f4fa-97c2-474f-b32c-e22507aed91c")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_START = "GaScenario_ModelElement_start";
 
-    @objid ("17ba40f4-2531-4f9b-9685-0dd33149cac0")
+    @objid ("2bdcb6df-5c3a-4410-965e-ec28cbc06c8b")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_FINISH = "GaScenario_ModelElement_finish";
 
-    @objid ("ca31c340-74a3-4fc7-8f23-1b2dce2b03d4")
+    @objid ("342845ec-1a49-4e16-ae46-e27d6306a1f5")
     public static final String GASCENARIO_MODELELEMENT_GASCENARIO_MODELELEMENT_ON = "GaScenario_ModelElement_on";
 
-    @objid ("a8c4c806-a206-414b-beeb-08e82f846f97")
+    @objid ("64923731-d04b-4bfc-9ead-915901996ab3")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_ISATOMIC = "GaStep_ModelElement_isAtomic";
 
-    @objid ("703849b9-f64f-48c7-8fcc-97f8ef2d1612")
+    @objid ("0b90b40f-00cc-4636-a93c-bc8e611d2030")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_BLOCKT = "GaStep_ModelElement_blockT";
 
-    @objid ("6ecbcb4a-d5e7-4e4a-9f93-5942df5e92dc")
+    @objid ("07c5ab35-2b64-419a-9775-d2931e349c7f")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_REP = "GaStep_ModelElement_rep";
 
-    @objid ("994270b0-8cc1-46c8-9942-cc7b8fc51b7c")
+    @objid ("c745991f-6fa4-41a2-bf6c-b002fdf431d4")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_PROB = "GaStep_ModelElement_prob";
 
-    @objid ("02c4259f-443f-41c9-a46d-351ded023af8")
+    @objid ("57b7f39f-a759-4a93-beaa-557394a5b9f8")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_PRIORITY = "GaStep_ModelElement_priority";
 
-    @objid ("4196bb2d-d3f2-4651-9f4e-7951723cb4f8")
+    @objid ("ffa23d30-2d04-4057-9c64-34ec01dc2c59")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_CONCURRES = "GaStep_ModelElement_concurRes";
 
-    @objid ("da8e43ef-ed22-4df7-82fe-110bdaec2474")
+    @objid ("b76164ae-3cbf-4827-b103-61bf280881bc")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_HOST = "GaStep_ModelElement_host";
 
-    @objid ("4ae14d05-7046-42c6-a23d-3bf13ff72e38")
+    @objid ("ccee7001-502b-4092-b7f9-7f53df71cf0a")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_SERVDEMAND = "GaStep_ModelElement_servDemand";
 
-    @objid ("224c97c9-d7ad-492f-8333-6348f154e603")
+    @objid ("c68bf242-ecf8-4cba-8ff7-35e1e7f03fe1")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_SERVCOUNT = "GaStep_ModelElement_servCount";
 
-    @objid ("25524ad1-a75d-4907-a5dd-6dfcc7994567")
+    @objid ("d8ba5ebc-1ce7-4e9b-a3db-81f1b2b00ba6")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_CHILDSCENARIO = "GaStep_ModelElement_childScenario";
 
-    @objid ("e8a436ef-8e62-4cae-b714-bf6b361b79e8")
+    @objid ("f8dac100-9142-4ffe-b9c3-1f5df9a0eb8c")
     public static final String GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_SCENARIO = "GaStep_ModelElement_scenario";
 
-    @objid ("5ebfb811-3c47-4a7b-8257-ce16ce6659e8")
+    @objid ("bcce06bb-30ee-4b4c-80c9-ef2618ec3823")
     public static final String GATIMEDOBS_CONSTRAINT_GATIMEDOBS_CONSTRAINT_LAXITY = "GaTimedObs_Constraint_laxity";
 
-    @objid ("43f5b89d-093d-4d6d-80a3-9343fe2ee276")
+    @objid ("e20307f9-2116-42d3-936a-4deeb8681a26")
     public static final String GATIMEDOBS_CONSTRAINT_GATIMEDOBS_CONSTRAINT_STARTOBS = "GaTimedObs_Constraint_startObs";
 
-    @objid ("dc63e94a-cdbc-46bc-9b84-723f4c16f179")
+    @objid ("60a308d2-cd8c-4c19-aa2a-003f68307f7d")
     public static final String GATIMEDOBS_CONSTRAINT_GATIMEDOBS_CONSTRAINT_ENDOBS = "GaTimedObs_Constraint_endObs";
 
-    @objid ("2122aec1-54b1-49d9-b59f-0266dfeb84c1")
+    @objid ("d5291d91-6e16-4478-a6dc-4c162d94d34c")
     public static final String GAWORKLOADBEHAVIOR_MODELELEMENT_GAWORKLOADBEHAVIOR_MODELELEMENT_BEHAVIOR = "GaWorkloadBehavior_ModelElement_behavior";
 
-    @objid ("27732a83-b94b-40e8-a6db-4108c6a0ca7f")
+    @objid ("6dc9beeb-f5ec-4025-a87a-cd4fe47d5696")
     public static final String GAWORKLOADBEHAVIOR_MODELELEMENT_GAWORKLOADBEHAVIOR_MODELELEMENT_DEMAND = "GaWorkloadBehavior_ModelElement_demand";
 
-    @objid ("6d50ce7b-940b-4ba7-a19f-565f67d926fb")
+    @objid ("d8d12f54-5c1a-43c7-8bfa-91f28daca067")
     public static final String GAWORKLOADEVENT_MODELELEMENT_GAWORKLOADEVENT_MODELELEMENT_PATTERN = "GaWorkloadEvent_ModelElement_pattern";
 
-    @objid ("d949bbdf-3e9d-4cd0-a344-e74c01d63897")
+    @objid ("cbcf25ff-0c9f-4ea5-9315-b54e5ec58d28")
     public static final String GAWORKLOADEVENT_MODELELEMENT_GAWORKLOADEVENT_MODELELEMENT_GENERATOR = "GaWorkloadEvent_ModelElement_generator";
 
-    @objid ("e316994d-0f84-45d9-b1ef-56133678aee5")
+    @objid ("7b98c0c0-38b2-4bf7-8054-fac919ce6389")
     public static final String GAWORKLOADEVENT_MODELELEMENT_GAWORKLOADEVENT_MODELELEMENT_TRACE = "GaWorkloadEvent_ModelElement_trace";
 
-    @objid ("205c5a82-8db1-4bb1-99dc-4e5ca6fedca3")
+    @objid ("ee8c64bd-13a7-4d82-9b49-b196760427da")
     public static final String GAWORKLOADEVENT_MODELELEMENT_GAWORKLOADEVENT_MODELELEMENT_EFFECT = "GaWorkloadEvent_ModelElement_effect";
 
-    @objid ("5afd6989-a3c5-41fc-b651-56318bcc7110")
+    @objid ("a455fbd9-cdb2-48da-8c99-10d9602adee0")
     public static final String GAWORKLOADEVENT_MODELELEMENT_GAWORKLOADEVENT_MODELELEMENT_TIMEDEVENT = "GaWorkloadEvent_ModelElement_timedEvent";
 
-    @objid ("024eb8c5-6b81-44dd-967f-37ae197b5aad")
+    @objid ("0055a988-540b-4577-b522-9f100852fe7b")
     public static final String GAWORKLOADGENERATOR_BEHAVIOR_GAWORKLOADGENERATOR_BEHAVIOR_POP = "GaWorkloadGenerator_Behavior_pop";
 
-    @objid ("8a149dd7-a194-4084-98d5-49a03ba8df2a")
+    @objid ("2a264d3f-0928-47fa-91f5-d6690b821ffe")
     public static final String SAANALYSISCONTEXT_COLLABORATION_SAANALYSISCONTEXT_COLLABORATION_ISSCHED = "SaAnalysisContext_Collaboration_isSched";
 
-    @objid ("7933862c-78e6-49c4-a417-3a4a4cf7d02d")
+    @objid ("408ac57c-095a-4c3e-ad37-6704fd766a83")
     public static final String SAANALYSISCONTEXT_COLLABORATION_SAANALYSISCONTEXT_COLLABORATION_OPTCRITERION = "SaAnalysisContext_Collaboration_optCriterion";
 
-    @objid ("1c647912-2073-405b-be72-e72a295e19cb")
+    @objid ("985361c4-5abe-4fa6-b569-8cbe3a5db5df")
     public static final String SAANALYSISCONTEXT_PACKAGE_SAANALYSISCONTEXT_PACKAGE_ISSCHED = "SaAnalysisContext_Package_isSched";
 
-    @objid ("a7b5bcf4-c0f6-47b0-8133-6acd199ef14b")
+    @objid ("5f69357d-f824-4623-b52a-0b57e133f0d5")
     public static final String SAANALYSISCONTEXT_PACKAGE_SAANALYSISCONTEXT_PACKAGE_OPTCRITERION = "SaAnalysisContext_Package_optCriterion";
 
-    @objid ("2123b952-5364-4d7a-86a4-a9563a6c2ae2")
+    @objid ("235821dc-f7c7-4dd4-ad3a-8cd015559028")
     public static final String SAANALYSISCONTEXT_CLASS_SAANALYSISCONTEXT_CLASS_ISSCHED = "SaAnalysisContext_Class_isSched";
 
-    @objid ("5d465c25-d550-4bd2-894d-d7f8d768fec3")
+    @objid ("1c857bd7-7405-45b3-b237-325399a77553")
     public static final String SAANALYSISCONTEXT_CLASS_SAANALYSISCONTEXT_CLASS_OPTCRITERION = "SaAnalysisContext_Class_optCriterion";
 
-    @objid ("fe6a027d-9a64-4d10-b0c0-1bc07290dbcc")
+    @objid ("38636aac-c09d-446e-856c-f21d6987cf0d")
     public static final String SAANALYSISCONTEXT_NODE_SAANALYSISCONTEXT_NODE_ISSCHED = "SaAnalysisContext_Node_isSched";
 
-    @objid ("2f81d51f-b233-4cb1-98fc-08684af94249")
+    @objid ("fef7ba38-683a-4386-a940-bec780612f60")
     public static final String SAANALYSISCONTEXT_NODE_SAANALYSISCONTEXT_NODE_OPTCRITERION = "SaAnalysisContext_Node_optCriterion";
 
-    @objid ("ce74e67a-0786-44bd-8752-0385622ce5db")
+    @objid ("67a118e4-3dee-40ac-a0e2-73eb7c6fec4d")
     public static final String SAANALYSISCONTEXT_BEHAVIOR_SAANALYSISCONTEXT_BEHAVIOR_ISSCHED = "SaAnalysisContext_Behavior_isSched";
 
-    @objid ("8831ad4a-a831-4d85-895c-0328c21c75e6")
+    @objid ("26f3e171-af45-4bbb-82de-895dc30d8cd1")
     public static final String SAANALYSISCONTEXT_BEHAVIOR_SAANALYSISCONTEXT_BEHAVIOR_OPTCRITERION = "SaAnalysisContext_Behavior_optCriterion";
 
-    @objid ("52448d95-7887-4901-862c-52984bfa1b91")
+    @objid ("2870de67-7a6d-495e-8e9c-71bb2f43fa39")
     public static final String SACOMMHOST_PARAMETER_SACOMMHOST_PARAMETER_ISSCHED = "SaCommHost_Parameter_isSched";
 
-    @objid ("5af40c3f-8516-4852-b9f3-708134b62666")
+    @objid ("5e2d9008-2d3f-42fc-948c-ec02a905ef4b")
     public static final String SACOMMHOST_PARAMETER_SACOMMHOST_PARAMETER_SCHSLACK = "SaCommHost_Parameter_schSlack";
 
-    @objid ("f1413d55-809d-43e1-ba0b-5cd33354c1e7")
+    @objid ("3e77850d-2e2d-4087-8c2b-0210090f8faa")
     public static final String SACOMMHOST_ASSOCIATIONEND_SACOMMHOST_ASSOCIATIONEND_ISSCHED = "SaCommHost_AssociationEnd_isSched";
 
-    @objid ("5c9845e0-4c0d-40bf-ac4a-a414fa502190")
+    @objid ("74da8014-903e-4a9d-b566-880521a0996c")
     public static final String SACOMMHOST_ASSOCIATIONEND_SACOMMHOST_ASSOCIATIONEND_SCHSLACK = "SaCommHost_AssociationEnd_schSlack";
 
-    @objid ("ce1cad99-97c8-4a51-afaf-949a7c914d55")
+    @objid ("32db5ffd-9ea1-4abe-9d34-104ab2bb7e90")
     public static final String SACOMMHOST_ATTRIBUTE_SACOMMHOST_ATTRIBUTE_ISSCHED = "SaCommHost_Attribute_isSched";
 
-    @objid ("e9dbfec7-cb86-4258-9548-1fefb76b6fd7")
+    @objid ("69859908-aa7a-4b0b-a7d2-21c9b7e86110")
     public static final String SACOMMHOST_ATTRIBUTE_SACOMMHOST_ATTRIBUTE_SCHSLACK = "SaCommHost_Attribute_schSlack";
 
-    @objid ("6c34bdcc-b5a7-401c-9281-a720d0ad7a1a")
+    @objid ("a13fc7d3-e247-4311-a6dd-6b713735f51b")
     public static final String SACOMMHOST_LINK_SACOMMHOST_LINK_ISSCHED = "SaCommHost_Link_isSched";
 
-    @objid ("a03ad065-dacd-43e6-8aaa-893c8d82f336")
+    @objid ("cc827a7e-9220-4333-bb5a-ee1ad4a24b6a")
     public static final String SACOMMHOST_LINK_SACOMMHOST_LINK_SCHSLACK = "SaCommHost_Link_schSlack";
 
-    @objid ("410af9f6-f81e-42c7-95e1-d1e14066ac56")
+    @objid ("d85f887e-10c0-4f38-8da4-19fd14104ddb")
     public static final String SACOMMHOST_INSTANCE_SACOMMHOST_INSTANCE_ISSCHED = "SaCommHost_Instance_isSched";
 
-    @objid ("742bcacc-08fe-4761-9336-37bef2bdda45")
+    @objid ("f48fa285-f6d7-403d-9993-9b47d7bcf8e0")
     public static final String SACOMMHOST_INSTANCE_SACOMMHOST_INSTANCE_SCHSLACK = "SaCommHost_Instance_schSlack";
 
-    @objid ("5b154a70-57e4-4103-9436-62009da9ac9b")
+    @objid ("09f78a34-f3ac-4ba6-b583-56f4fffa850d")
     public static final String SACOMMHOST_ASSOCIATION_SACOMMHOST_ASSOCIATION_ISSCHED = "SaCommHost_Association_isSched";
 
-    @objid ("69577b2d-47d4-423f-945b-87f378afea41")
+    @objid ("c614e89e-8d14-46eb-94f7-cf455c1a4185")
     public static final String SACOMMHOST_ASSOCIATION_SACOMMHOST_ASSOCIATION_SCHSLACK = "SaCommHost_Association_schSlack";
 
-    @objid ("85a33f90-e18f-4468-a22a-95d5ac8603ff")
+    @objid ("fc9869e5-a71d-4547-ad8c-b15ffcbbb120")
     public static final String SACOMMHOST_LIFELINE_SACOMMHOST_LIFELINE_ISSCHED = "SaCommHost_Lifeline_isSched";
 
-    @objid ("aa893720-30d7-4f4d-842f-a5d7add65b4b")
+    @objid ("0c98966f-37cb-419a-be42-6d15899de7ce")
     public static final String SACOMMHOST_LIFELINE_SACOMMHOST_LIFELINE_SCHSLACK = "SaCommHost_Lifeline_schSlack";
 
-    @objid ("1bc69ab4-4a13-48f0-ba89-58868d568d5d")
+    @objid ("b4dfa0be-7266-42c3-bc57-6110d9bdf105")
     public static final String SACOMMHOST_CLASSIFIER_SACOMMHOST_CLASSIFIER_ISSCHED = "SaCommHost_Classifier_isSched";
 
-    @objid ("a89ead00-705a-48cf-818a-dfe829406d17")
+    @objid ("a2598632-2f93-4de1-a2d0-805e8f7aa158")
     public static final String SACOMMHOST_CLASSIFIER_SACOMMHOST_CLASSIFIER_SCHSLACK = "SaCommHost_Classifier_schSlack";
 
-    @objid ("5b97508f-7a53-4240-8252-9d0d38988022")
+    @objid ("dd69f679-d799-46ef-990a-57555efa051f")
     public static final String SACOMMSTEP_MODELELEMENT_SACOMMSTEP_MODELELEMENT_DEADLINE = "SaCommStep_ModelElement_deadline";
 
-    @objid ("9ef8f4d2-62de-4ec7-8a6a-6334e0fd8dae")
+    @objid ("95aec23a-c664-4171-98ff-53dc8b191e8a")
     public static final String SACOMMSTEP_MODELELEMENT_SACOMMSTEP_MODELELEMENT_SPARECAP = "SaCommStep_ModelElement_spareCap";
 
-    @objid ("fd89b862-ed93-4f2c-a929-ef115a2e5490")
+    @objid ("ef5c543a-384b-4266-813e-bd75db0c16f8")
     public static final String SACOMMSTEP_MODELELEMENT_SACOMMSTEP_MODELELEMENT_SCHSLACK = "SaCommStep_ModelElement_schSlack";
 
-    @objid ("5a1fb81d-0caf-45cb-ad13-811a2e04657d")
+    @objid ("d7027ea5-1767-45ed-8040-7db341e334ff")
     public static final String SAENDTOENDFLOW_MODELELEMENT_SAENDTOENDFLOW_MODELELEMENT_ISSCHED = "SaEndtoEndFlow_ModelElement_isSched";
 
-    @objid ("38f276d0-1322-49f2-8004-0ef541a547ac")
+    @objid ("31b70967-a751-4362-9471-1c8c9fa40b89")
     public static final String SAENDTOENDFLOW_MODELELEMENT_SAENDTOENDFLOW_MODELELEMENT_SCHSLACK = "SaEndtoEndFlow_ModelElement_schSlack";
 
-    @objid ("e2efce3a-579a-4b48-9ec4-cfd509891f56")
+    @objid ("69d81de8-5ea0-4fb0-b180-da2ddf99499b")
     public static final String SAENDTOENDFLOW_MODELELEMENT_SAENDTOENDFLOW_MODELELEMENT_ENDTOENDT = "SaEndtoEndFlow_ModelElement_endToEndT";
 
-    @objid ("5fa398e8-949a-4338-9075-cd5f2edf1bd5")
+    @objid ("b8e93675-1bf5-47a0-b0e0-9e498ba97c77")
     public static final String SAENDTOENDFLOW_MODELELEMENT_SAENDTOENDFLOW_MODELELEMENT_ENDTOENDD = "SaEndtoEndFlow_ModelElement_endToEndD";
 
-    @objid ("4e2c1455-81c8-4940-86ec-5effb62cba0c")
+    @objid ("2d4dd963-ceb7-4be3-9159-bdb165dfbbd7")
     public static final String SAENDTOENDFLOW_MODELELEMENT_SAENDTOENDFLOW_MODELELEMENT_TIMING = "SaEndtoEndFlow_ModelElement_timing";
 
-    @objid ("e02a8480-0c6b-4c3c-a14a-4579373a6539")
+    @objid ("aff79f95-2b71-4e0e-81f2-fb8700a331da")
     public static final String SAEXECHOST_ASSOCIATIONEND_SAEXECHOST_ASSOCIATIONEND_ISSCHED = "SaExecHost_AssociationEnd_isSched";
 
-    @objid ("32b9f2b9-1dc3-4b04-b273-e78e19b01c58")
+    @objid ("da374067-dbce-4459-93f1-ec673f6fce73")
     public static final String SAEXECHOST_ASSOCIATIONEND_SAEXECHOST_ASSOCIATIONEND_SCHSLACK = "SaExecHost_AssociationEnd_schSlack";
 
-    @objid ("31a85950-9cec-4d2a-bc2f-9c5f2ac26394")
+    @objid ("739d7999-3796-4b99-bb40-9c6a25fcd057")
     public static final String SAEXECHOST_ASSOCIATIONEND_SAEXECHOST_ASSOCIATIONEND_SCHEDUTILIZ = "SaExecHost_AssociationEnd_schedUtiliz";
 
-    @objid ("e44178fe-33cf-46e8-9725-984c48dafac1")
+    @objid ("3ec496f7-91dd-4583-94ce-356a7121a0b2")
     public static final String SAEXECHOST_ASSOCIATIONEND_SAEXECHOST_ASSOCIATIONEND_ISRSWITCHT = "SaExecHost_AssociationEnd_ISRswitchT";
 
-    @objid ("2c9f8758-7c83-4558-8e28-c08e8e688dee")
+    @objid ("6bf89a85-08a7-447d-ab7f-2308fedb8bfc")
     public static final String SAEXECHOST_ASSOCIATIONEND_SAEXECHOST_ASSOCIATIONEND_ISRPRIORANGE = "SaExecHost_AssociationEnd_ISRprioRange";
 
-    @objid ("9a71f379-54b3-4c7e-adcc-c5be324ccb01")
+    @objid ("e9824c2e-a9cf-406d-ba3e-574cc9243581")
     public static final String SAEXECHOST_ATTRIBUTE_SAEXECHOST_ATTRIBUTE_ISSCHED = "SaExecHost_Attribute_isSched";
 
-    @objid ("dc74bc87-467b-4d0d-9133-cf459647bdd1")
+    @objid ("2bdb717e-b1dd-421e-824c-b1bf79a18253")
     public static final String SAEXECHOST_ATTRIBUTE_SAEXECHOST_ATTRIBUTE_SCHSLACK = "SaExecHost_Attribute_schSlack";
 
-    @objid ("50b863e4-3b59-45a0-8603-307359293944")
+    @objid ("d20d33af-071d-4a56-8091-8069905784e6")
     public static final String SAEXECHOST_ATTRIBUTE_SAEXECHOST_ATTRIBUTE_SCHEDUTILIZ = "SaExecHost_Attribute_schedUtiliz";
 
-    @objid ("1050c363-8637-413a-b078-48eda5d6881f")
+    @objid ("fbba364c-8255-4c4d-8336-cfc035577485")
     public static final String SAEXECHOST_ATTRIBUTE_SAEXECHOST_ATTRIBUTE_ISRSWITCHT = "SaExecHost_Attribute_ISRswitchT";
 
-    @objid ("ddca26fa-2181-49ee-8758-481119165860")
+    @objid ("1303d552-52f6-49a0-82bc-a246c7a56f11")
     public static final String SAEXECHOST_ATTRIBUTE_SAEXECHOST_ATTRIBUTE_ISRPRIORANGE = "SaExecHost_Attribute_ISRprioRange";
 
-    @objid ("02ef1814-6a4f-4992-8dab-e402e3a9ce4b")
+    @objid ("f1fd84be-86f8-4d04-8e14-4f6467ac3877")
     public static final String SAEXECHOST_LINK_SAEXECHOST_LINK_ISSCHED = "SaExecHost_Link_isSched";
 
-    @objid ("cbc71960-aba9-4d91-aa67-206f89289c40")
+    @objid ("97e2afbe-4e9e-4212-a1b8-11ef742b3735")
     public static final String SAEXECHOST_LINK_SAEXECHOST_LINK_SCHSLACK = "SaExecHost_Link_schSlack";
 
-    @objid ("21370f85-d7e5-4c45-ac7b-613735efe6aa")
+    @objid ("612d6e08-7318-4ad6-afcd-839ee08ce28b")
     public static final String SAEXECHOST_LINK_SAEXECHOST_LINK_SCHEDUTILIZ = "SaExecHost_Link_schedUtiliz";
 
-    @objid ("ec47c7e1-0e95-4b6a-814d-eea9d5740c4a")
+    @objid ("d8ceb06a-a7ce-4c46-9df7-bc3c3ea42234")
     public static final String SAEXECHOST_LINK_SAEXECHOST_LINK_ISRSWITCHT = "SaExecHost_Link_ISRswitchT";
 
-    @objid ("60d1237b-36e9-404c-baae-7e33bbb80690")
+    @objid ("a4e144ba-be07-4fe6-9029-e4c6d1a8b9e0")
     public static final String SAEXECHOST_LINK_SAEXECHOST_LINK_ISRPRIORANGE = "SaExecHost_Link_ISRprioRange";
 
-    @objid ("2faa099f-78d6-43e9-b415-02f06050aa51")
+    @objid ("62ffe1dd-fad4-47e7-865a-7b6dbc54c235")
     public static final String SAEXECHOST_INSTANCE_SAEXECHOST_INSTANCE_ISSCHED = "SaExecHost_Instance_isSched";
 
-    @objid ("60b03d03-a82c-4bae-8639-b7931eab3f1c")
+    @objid ("88696ad1-bfe9-491e-8f97-b3e79e836313")
     public static final String SAEXECHOST_INSTANCE_SAEXECHOST_INSTANCE_SCHSLACK = "SaExecHost_Instance_schSlack";
 
-    @objid ("cfad1154-ed63-40b9-babd-6d0ec5177cb0")
+    @objid ("855543e2-b825-4529-9274-24779fc5354c")
     public static final String SAEXECHOST_INSTANCE_SAEXECHOST_INSTANCE_SCHEDUTILIZ = "SaExecHost_Instance_schedUtiliz";
 
-    @objid ("4f67e1b3-ae1b-4e6c-9e01-ca5fecd31f9c")
+    @objid ("4a46a1c8-c875-4ed3-86f9-74caa8c66937")
     public static final String SAEXECHOST_INSTANCE_SAEXECHOST_INSTANCE_ISRSWITCHT = "SaExecHost_Instance_ISRswitchT";
 
-    @objid ("fd5ea6cd-e99a-4fea-9fd8-5e8075accd09")
+    @objid ("764a305e-1882-4b50-a4d9-1b276c0b1785")
     public static final String SAEXECHOST_INSTANCE_SAEXECHOST_INSTANCE_ISRPRIORANGE = "SaExecHost_Instance_ISRprioRange";
 
-    @objid ("8d4c852b-2f46-40fe-a109-40afe57cc349")
+    @objid ("2a48935f-1c68-41c5-a64a-b4678dec63f9")
     public static final String SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_ISSCHED = "SaExecHost_Parameter_isSched";
 
-    @objid ("71d20ee4-9d15-40e8-b752-2583edc7f3c6")
+    @objid ("574727f1-5f56-4144-93c6-2302ac26c378")
     public static final String SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_SCHSLACK = "SaExecHost_Parameter_schSlack";
 
-    @objid ("ce2d6807-0beb-409d-86cf-3906aabe1251")
+    @objid ("bbc694fb-c626-4d9f-bc04-fba6b697383b")
     public static final String SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_SCHEDUTILIZ = "SaExecHost_Parameter_schedUtiliz";
 
-    @objid ("d84b254a-c2de-448a-9878-e860e9ce2abc")
+    @objid ("caa53214-5fba-4159-b928-b4a795ab01a0")
     public static final String SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_ISRSWITCHT = "SaExecHost_Parameter_ISRswitchT";
 
-    @objid ("f9f284ae-4b61-4380-8084-c940268f3f62")
+    @objid ("492ed70e-b63b-4d2f-b0a9-f6c3a73b1103")
     public static final String SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_ISRPRIORANGE = "SaExecHost_Parameter_ISRprioRange";
 
-    @objid ("a8f8012b-b235-4569-912d-65124dfb4426")
+    @objid ("95943c72-b01e-4c21-bd93-85f0565b3ffc")
     public static final String SAEXECHOST_ASSOCIATION_SAEXECHOST_ASSOCIATION_ISSCHED = "SaExecHost_Association_isSched";
 
-    @objid ("3bb1526b-9c1a-47a4-bc9d-b3d993b43de5")
+    @objid ("f0dbe3dc-44c1-4200-bcbd-4ebaa73af258")
     public static final String SAEXECHOST_ASSOCIATION_SAEXECHOST_ASSOCIATION_SCHSLACK = "SaExecHost_Association_schSlack";
 
-    @objid ("f3ff8f37-0519-4ffe-a950-1f0d2e44e4dd")
+    @objid ("d4f1368b-a439-47fb-9b30-4e246de98cab")
     public static final String SAEXECHOST_ASSOCIATION_SAEXECHOST_ASSOCIATION_SCHEDUTILIZ = "SaExecHost_Association_schedUtiliz";
 
-    @objid ("7a79c4f8-2838-40ce-8b9a-13a0b87d4442")
+    @objid ("a17880a6-0271-4edc-862b-eb88b1844888")
     public static final String SAEXECHOST_ASSOCIATION_SAEXECHOST_ASSOCIATION_ISRSWITCHT = "SaExecHost_Association_ISRswitchT";
 
-    @objid ("d9190a47-87de-46e0-9169-121c08433bf6")
+    @objid ("3fb159b9-52e8-407c-8bce-eb724f1e0af1")
     public static final String SAEXECHOST_ASSOCIATION_SAEXECHOST_ASSOCIATION_ISRPRIORANGE = "SaExecHost_Association_ISRprioRange";
 
-    @objid ("8aad8206-f148-4411-a27d-f79303da8e0d")
+    @objid ("f50cbecc-d021-4b36-891c-68394c30259c")
     public static final String SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_ISSCHED = "SaExecHost_Lifeline_isSched";
 
-    @objid ("4f6b91aa-4594-4701-becc-cf752b15addd")
+    @objid ("ec755919-189b-43ab-a5c1-b44371eef757")
     public static final String SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_SCHSLACK = "SaExecHost_Lifeline_schSlack";
 
-    @objid ("d2409468-b7ac-4aeb-bb7f-e1b1f0f5a0b9")
+    @objid ("03a0b28b-df38-4a0c-93de-2217de005bfe")
     public static final String SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_SCHEDUTILIZ = "SaExecHost_Lifeline_schedUtiliz";
 
-    @objid ("59618ffa-f9db-41fd-8055-96982e042131")
+    @objid ("344b6829-14f5-4399-827b-22a4f0fe18c1")
     public static final String SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_ISRSWITCHT = "SaExecHost_Lifeline_ISRswitchT";
 
-    @objid ("a515ccb0-ce83-4675-ab66-d9b910949f3d")
+    @objid ("30ee58ea-f94d-43ea-8479-b3574c257ab9")
     public static final String SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_ISRPRIORANGE = "SaExecHost_Lifeline_ISRprioRange";
 
-    @objid ("2278380e-f4fa-4f43-933f-3c571f19b1e8")
+    @objid ("ca7eb96d-41c3-4a8a-b1e2-2160d73714b5")
     public static final String SAEXECHOST_CLASSIFIER_SAEXECHOST_CLASSIFIER_ISSCHED = "SaExecHost_Classifier_isSched";
 
-    @objid ("c595d187-4927-4df5-8d02-c7f8570df1db")
+    @objid ("9219dafb-9807-4cd6-8776-d23274c223c8")
     public static final String SAEXECHOST_CLASSIFIER_SAEXECHOST_CLASSIFIER_SCHSLACK = "SaExecHost_Classifier_schSlack";
 
-    @objid ("9b126230-47c8-4eee-b246-bbfc0a2c3693")
+    @objid ("10e255a3-3dc7-465d-beab-c9b3c1c40829")
     public static final String SAEXECHOST_CLASSIFIER_SAEXECHOST_CLASSIFIER_SCHEDUTILIZ = "SaExecHost_Classifier_schedUtiliz";
 
-    @objid ("55ae7dea-770f-4881-92ea-4414e768a117")
+    @objid ("86e4e67e-70eb-4946-b9cb-2abb006214f3")
     public static final String SAEXECHOST_CLASSIFIER_SAEXECHOST_CLASSIFIER_ISRSWITCHT = "SaExecHost_Classifier_ISRswitchT";
 
-    @objid ("c9c0cca3-9c95-46e1-add2-1064c8fb640c")
+    @objid ("4768f3c8-9547-4be3-a4d8-dd6e46fb129b")
     public static final String SAEXECHOST_CLASSIFIER_SAEXECHOST_CLASSIFIER_ISRPRIORANGE = "SaExecHost_Classifier_ISRprioRange";
 
-    @objid ("1ffabadc-e2c1-4173-bdac-953b4b3341ba")
+    @objid ("6ed863b2-138a-4eb3-9adf-fb0290d01c81")
     public static final String SASCHEDOBS_CONSTRAINT_SASCHEDOBS_CONSTRAINT_SUSPENTIONS = "SaSchedObs_Constraint_suspentions";
 
-    @objid ("dfa83479-431e-4f0a-9a60-4307893a94c8")
+    @objid ("a6da7bda-e8e1-4922-ae83-328df27f9274")
     public static final String SASCHEDOBS_CONSTRAINT_SASCHEDOBS_CONSTRAINT_BLOCKT = "SaSchedObs_Constraint_blockT";
 
-    @objid ("afa59b56-8dac-47d0-ba6d-43cb6aa017ba")
+    @objid ("c8573257-92e9-491f-93dc-4136a1daa63a")
     public static final String SASCHEDOBS_CONSTRAINT_SASCHEDOBS_CONSTRAINT_OVERLAPS = "SaSchedObs_Constraint_overlaps";
 
-    @objid ("ec392a1c-7aa7-4b6c-a707-89f50dc9eec1")
+    @objid ("745e5f6f-df9e-42ce-81d2-b35b49134f8f")
     public static final String SASHAREDRESOURCE_PARAMETER_SASHAREDRESOURCE_PARAMETER_CAPACITY = "SaSharedResource_Parameter_capacity";
 
-    @objid ("977e3e63-7d04-4074-b781-b367d3917dab")
+    @objid ("0e9382bd-c1d4-41c1-af92-4c79758704a3")
     public static final String SASHAREDRESOURCE_PARAMETER_SASHAREDRESOURCE_PARAMETER_ISPREEMP = "SaSharedResource_Parameter_isPreemp";
 
-    @objid ("d0fa36a5-78dc-4f0a-aaa5-8c70b6132354")
+    @objid ("f68ab206-5690-49df-843c-3963e330568e")
     public static final String SASHAREDRESOURCE_PARAMETER_SASHAREDRESOURCE_PARAMETER_ISCONSUM = "SaSharedResource_Parameter_isConsum";
 
-    @objid ("a0f740f8-a109-40e2-88cd-24c1e66d84a4")
+    @objid ("1f0135ec-d424-4fa0-966d-05e5c50631d7")
     public static final String SASHAREDRESOURCE_PARAMETER_SASHAREDRESOURCE_PARAMETER_ACQUIST = "SaSharedResource_Parameter_acquisT";
 
-    @objid ("093cfd13-bc07-4892-a4ae-38b8e7d1d8d8")
+    @objid ("9baf42b9-e228-444a-a601-6335a5159210")
     public static final String SASHAREDRESOURCE_PARAMETER_SASHAREDRESOURCE_PARAMETER_RELEASET = "SaSharedResource_Parameter_releaseT";
 
-    @objid ("159f0729-a64b-4936-9d78-d655a6336067")
+    @objid ("05a76169-f864-4950-a628-845ab93a8f9a")
     public static final String SASHAREDRESOURCE_ASSOCIATIONEND_SASHAREDRESOURCE_ASSOCIATIONEND_CAPACITY = "SaSharedResource_AssociationEnd_capacity";
 
-    @objid ("134587ca-5fdc-4179-8df7-60db40e49b07")
+    @objid ("248113d2-fd28-4f9b-b11f-e92be2b14ddc")
     public static final String SASHAREDRESOURCE_ASSOCIATIONEND_SASHAREDRESOURCE_ASSOCIATIONEND_ISPREEMP = "SaSharedResource_AssociationEnd_isPreemp";
 
-    @objid ("616d6d4b-1f42-42d2-bfe0-da56e0df61f2")
+    @objid ("ebb40ffd-64ca-4016-9ec5-2ba395d224dc")
     public static final String SASHAREDRESOURCE_ASSOCIATIONEND_SASHAREDRESOURCE_ASSOCIATIONEND_ISCONSUM = "SaSharedResource_AssociationEnd_isConsum";
 
-    @objid ("c46eb8dd-6b12-4ea7-92ce-ecb8d37e7915")
+    @objid ("d66f9c39-1325-4849-b8c1-2ddd176d3dcc")
     public static final String SASHAREDRESOURCE_ASSOCIATIONEND_SASHAREDRESOURCE_ASSOCIATIONEND_ACQUIST = "SaSharedResource_AssociationEnd_acquisT";
 
-    @objid ("bb9aa9d3-fa9a-4f6e-8512-0ce914139679")
+    @objid ("7982944d-c4c1-4c76-8808-27563906946b")
     public static final String SASHAREDRESOURCE_ASSOCIATIONEND_SASHAREDRESOURCE_ASSOCIATIONEND_RELEASET = "SaSharedResource_AssociationEnd_releaseT";
 
-    @objid ("69d5356f-b765-4a58-9abd-bbca3d27837f")
+    @objid ("857bcaf9-10d9-40dc-b324-55207937003b")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_SASHAREDRESOURCE_ATTRIBUTE_CAPACITY = "SaSharedResource_Attribute_capacity";
 
-    @objid ("a6598115-a6ce-4a7d-a336-23612130ad1a")
+    @objid ("5aa68a93-256a-4765-9a96-c39793cc15f3")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_SASHAREDRESOURCE_ATTRIBUTE_ISPREEMP = "SaSharedResource_Attribute_isPreemp";
 
-    @objid ("da33f213-c625-4077-af16-cb62a46c8292")
+    @objid ("aedeb518-fdbe-4ca0-8d77-d3ff39aeb4ee")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_SASHAREDRESOURCE_ATTRIBUTE_ISCONSUM = "SaSharedResource_Attribute_isConsum";
 
-    @objid ("c3138dc7-8485-4de6-9724-f10359de56c9")
+    @objid ("a3fe9000-c125-4ac6-9000-9a804a8f17ca")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_SASHAREDRESOURCE_ATTRIBUTE_ACQUIST = "SaSharedResource_Attribute_acquisT";
 
-    @objid ("77bb5f62-f511-48c5-a3a2-d4d0f12da4f8")
+    @objid ("589bc394-fe4e-4de1-9645-f7dae039a505")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_SASHAREDRESOURCE_ATTRIBUTE_RELEASET = "SaSharedResource_Attribute_releaseT";
 
-    @objid ("d41ad172-95b7-4a6c-88c4-dd72d015929a")
+    @objid ("72d87847-602b-4774-8c4a-fac2fb2c1539")
     public static final String SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_CAPACITY = "SaSharedResource_Link_capacity";
 
-    @objid ("6437ae92-42eb-4a75-af8f-b2a1ad4fd9fb")
+    @objid ("e65e7639-ccba-49e6-b393-fc5ec4b0b2f2")
     public static final String SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_ISPREEMP = "SaSharedResource_Link_isPreemp";
 
-    @objid ("a5e96b57-3c42-4cda-b5ec-f44596fe67d7")
+    @objid ("b78fe981-fd11-4017-9349-04c8a7d4c8ce")
     public static final String SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_ISCONSUM = "SaSharedResource_Link_isConsum";
 
-    @objid ("e1ef56ff-1da0-4c09-9907-8e1ee2d60b52")
+    @objid ("f0fc4358-598c-4572-b0c7-fea7d2e9c44b")
     public static final String SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_ACQUIST = "SaSharedResource_Link_acquisT";
 
-    @objid ("ee7edae3-acc6-4bba-9239-1f26dc03282d")
+    @objid ("77859371-8af6-44ff-b917-e0c78b25a755")
     public static final String SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_RELEASET = "SaSharedResource_Link_releaseT";
 
-    @objid ("aee513da-78c2-4277-8a4b-ac796b8189c4")
+    @objid ("37ee1ba5-017c-44b6-b3da-9f66b39b7cb9")
     public static final String SASHAREDRESOURCE_INSTANCE_SASHAREDRESOURCE_INSTANCE_CAPACITY = "SaSharedResource_Instance_capacity";
 
-    @objid ("aa643d6e-b3fa-418f-8512-7f5f8f207b6f")
+    @objid ("305c620d-e862-4e77-8566-fdae0f23a0bf")
     public static final String SASHAREDRESOURCE_INSTANCE_SASHAREDRESOURCE_INSTANCE_ISPREEMP = "SaSharedResource_Instance_isPreemp";
 
-    @objid ("c497d032-fcf4-48f1-b6bc-59908d37f5a3")
+    @objid ("4225db62-8484-4d6b-8406-f27295b14852")
     public static final String SASHAREDRESOURCE_INSTANCE_SASHAREDRESOURCE_INSTANCE_ISCONSUM = "SaSharedResource_Instance_isConsum";
 
-    @objid ("3ba29d53-275e-4fd8-ad90-e90fe409c233")
+    @objid ("3b373cca-a5c7-4d4e-b35f-0484153f94b3")
     public static final String SASHAREDRESOURCE_INSTANCE_SASHAREDRESOURCE_INSTANCE_ACQUIST = "SaSharedResource_Instance_acquisT";
 
-    @objid ("d7b5f46c-59bc-4e51-8964-df21474d8a25")
+    @objid ("e999235a-2334-4499-8b3e-3292255c6a1b")
     public static final String SASHAREDRESOURCE_INSTANCE_SASHAREDRESOURCE_INSTANCE_RELEASET = "SaSharedResource_Instance_releaseT";
 
-    @objid ("76c56759-f633-496d-a220-acea6540b607")
+    @objid ("59a0c71a-1295-46df-b33c-b509a35af4d6")
     public static final String SASHAREDRESOURCE_ASSOCIATION_SASHAREDRESOURCE_ASSOCIATION_CAPACITY = "SaSharedResource_Association_capacity";
 
-    @objid ("23ebf713-67a9-454e-8b4b-ae8ce658a592")
+    @objid ("a38a1f66-8c7f-4a02-9b94-decf6532b787")
     public static final String SASHAREDRESOURCE_ASSOCIATION_SASHAREDRESOURCE_ASSOCIATION_ISPREEMP = "SaSharedResource_Association_isPreemp";
 
-    @objid ("41fe2b87-c50c-4af7-86f8-9772200c980c")
+    @objid ("1a5c9032-fa3a-4a38-ad8b-1e0630c490a4")
     public static final String SASHAREDRESOURCE_ASSOCIATION_SASHAREDRESOURCE_ASSOCIATION_ISCONSUM = "SaSharedResource_Association_isConsum";
 
-    @objid ("4e2f9f80-b969-48a9-8572-5aa41a4c86d3")
+    @objid ("d8c42fc1-a7bf-4aa5-a269-7930e335f7fb")
     public static final String SASHAREDRESOURCE_ASSOCIATION_SASHAREDRESOURCE_ASSOCIATION_ACQUIST = "SaSharedResource_Association_acquisT";
 
-    @objid ("88b59f0a-5039-4741-8959-eb0c979cbd5f")
+    @objid ("12160835-4bb8-4499-8612-339a60179de6")
     public static final String SASHAREDRESOURCE_ASSOCIATION_SASHAREDRESOURCE_ASSOCIATION_RELEASET = "SaSharedResource_Association_releaseT";
 
-    @objid ("03e00495-f735-4a36-b92e-5fa75f5ea05f")
+    @objid ("d5e117c3-3cf0-462c-9fcf-11d1b65c28bf")
     public static final String SASHAREDRESOURCE_LIFELINE_SASHAREDRESOURCE_LIFELINE_CAPACITY = "SaSharedResource_Lifeline_capacity";
 
-    @objid ("7292758c-c8e4-434f-860e-81ba59f092fa")
+    @objid ("e9a66847-473f-44ef-8633-3696075c2ba6")
     public static final String SASHAREDRESOURCE_LIFELINE_SASHAREDRESOURCE_LIFELINE_ISPREEMP = "SaSharedResource_Lifeline_isPreemp";
 
-    @objid ("ba92b167-4356-4c6e-9902-49e50628386f")
+    @objid ("e503a63b-7db2-4738-b5a2-df35e8e71701")
     public static final String SASHAREDRESOURCE_LIFELINE_SASHAREDRESOURCE_LIFELINE_ISCONSUM = "SaSharedResource_Lifeline_isConsum";
 
-    @objid ("32bc134b-2d29-4768-a263-25c0c00189af")
+    @objid ("70531608-6276-4d5d-b617-da338eac633d")
     public static final String SASHAREDRESOURCE_LIFELINE_SASHAREDRESOURCE_LIFELINE_ACQUIST = "SaSharedResource_Lifeline_acquisT";
 
-    @objid ("4b8d5926-8d6d-4699-b281-dc822366cb1c")
+    @objid ("de4c520c-d4f2-4f99-870e-e56ecc0f6e36")
     public static final String SASHAREDRESOURCE_LIFELINE_SASHAREDRESOURCE_LIFELINE_RELEASET = "SaSharedResource_Lifeline_releaseT";
 
-    @objid ("8899070f-792f-45c4-887d-c52a2edbd260")
+    @objid ("0052dc0a-3103-4661-ae98-dc7b8f7c5ccc")
     public static final String SASHAREDRESOURCE_CLASSIFIER_SASHAREDRESOURCE_CLASSIFIER_CAPACITY = "SaSharedResource_Classifier_capacity";
 
-    @objid ("e93f8c72-5a2f-4997-a7fb-c48f5cd6f657")
+    @objid ("f5690948-fa37-43c1-88cd-ae3d31293493")
     public static final String SASHAREDRESOURCE_CLASSIFIER_SASHAREDRESOURCE_CLASSIFIER_ISPREEMP = "SaSharedResource_Classifier_isPreemp";
 
-    @objid ("007c153c-be31-4798-ae1e-cad14b3643f1")
+    @objid ("97916de5-4499-4eb2-b46b-eb6a756683fb")
     public static final String SASHAREDRESOURCE_CLASSIFIER_SASHAREDRESOURCE_CLASSIFIER_ISCONSUM = "SaSharedResource_Classifier_isConsum";
 
-    @objid ("ced8bfcf-8603-4ba2-a52b-672b96bec641")
+    @objid ("862dde80-45fd-434b-a379-58df97e6e87c")
     public static final String SASHAREDRESOURCE_CLASSIFIER_SASHAREDRESOURCE_CLASSIFIER_ACQUIST = "SaSharedResource_Classifier_acquisT";
 
-    @objid ("7bb3f867-a387-435f-b8b6-ea7d892dd273")
+    @objid ("7da778b4-5fb8-4c63-8825-175d0a84f417")
     public static final String SASHAREDRESOURCE_CLASSIFIER_SASHAREDRESOURCE_CLASSIFIER_RELEASET = "SaSharedResource_Classifier_releaseT";
 
-    @objid ("d53861b3-c409-48f3-876b-1350b63e5e31")
+    @objid ("cb79190d-2eeb-4ccd-8c18-7b4adb567e93")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_DEADLINE = "SaStep_ModelElement_deadline";
 
-    @objid ("b73d693f-4800-4237-ae73-1fc8a05fad8b")
+    @objid ("592f5e89-2c5a-43f2-9530-f5070b4ed830")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SPARECAP = "SaStep_ModelElement_spareCap";
 
-    @objid ("e7660d91-1210-4040-8a97-e4111edbce36")
+    @objid ("6f9855d9-c7be-48e7-8081-276ad350cb9c")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SCHSLACK = "SaStep_ModelElement_schSlack";
 
-    @objid ("1a0b30df-8256-47cd-816d-c5c1c7603d4f")
+    @objid ("82ce0896-ca63-4c5e-8075-41f0b88ae6cc")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_PREEMPTT = "SaStep_ModelElement_preemptT";
 
-    @objid ("c5e5c1fc-cd3b-47d9-8cb7-9aec2aef94be")
+    @objid ("bc9e8bbd-4ab6-4295-a436-095715a4d1bf")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_READYT = "SaStep_ModelElement_readyT";
 
-    @objid ("2467710d-8849-4131-9312-3a3d8c1622e2")
+    @objid ("580d7fc1-6ef5-48d0-8e7e-1493d74818b4")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_NONPREEMPTIONBLOCKING = "SaStep_ModelElement_nonpreemptionBlocking";
 
-    @objid ("3420594e-dc5e-42b3-ad40-d8ca79011428")
+    @objid ("52d6c955-d3b6-40ec-89f6-cdf134fbdc6a")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SHAREDRES = "SaStep_ModelElement_sharedRes";
 
-    @objid ("41113337-dba0-495d-9d2f-963de32ac9f3")
+    @objid ("3d049c47-673a-400f-8f29-753ed21e5f5e")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SELFSUSPENSIONBLOCKING = "SaStep_ModelElement_selfSuspensionBlocking";
 
-    @objid ("e3aa3f45-47a7-435d-bc35-fce7475e52e4")
+    @objid ("b31d25fb-e8d0-4484-904d-7d0e9110b891")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_NUMBERSELFSUSPENSIONS = "SaStep_ModelElement_numberSelfSuspensions";
 
-    @objid ("2e3223e1-e380-4496-8e31-03e51c6e5034")
+    @objid ("25cda6d3-45f9-4d14-ad6f-f3e88b112b1b")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_ISATOMIC = "SaStep_ModelElement_isAtomic";
 
-    @objid ("349e7415-e874-4d55-b343-b25d271e579b")
+    @objid ("3c30c992-0648-4818-ab88-c209e93fe213")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_BLOCKT = "SaStep_ModelElement_blockT";
 
-    @objid ("4972c5a8-589d-48ed-b717-df161b6d2cc8")
+    @objid ("678b84d4-4b5b-4c22-8769-e8a58a58865e")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_REP = "SaStep_ModelElement_rep";
 
-    @objid ("935214f2-3242-4e00-9bea-588bdaa76d38")
+    @objid ("bda65641-6eba-4a58-a423-27b4fc3eb1da")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_PROB = "SaStep_ModelElement_prob";
 
-    @objid ("e73b9370-d199-4206-a9ae-bb6c8b6067da")
+    @objid ("7673b4d5-8fd3-40ef-8083-3164bc88d819")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_PRIORITY = "SaStep_ModelElement_priority";
 
-    @objid ("05e59e1e-7072-4d60-b9ab-5105bc5fef12")
+    @objid ("2a55b26b-edb0-40e4-a48c-1e14868a3865")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_CONCURRES = "SaStep_ModelElement_concurRes";
 
-    @objid ("28958d8b-5fe9-44ce-a642-2dd88a2d95a5")
+    @objid ("b6a80e81-1e7f-4762-9bb7-06465d9c59df")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_HOST = "SaStep_ModelElement_host";
 
-    @objid ("bf15bdb2-2f52-48c7-9c08-3be5c35feaee")
+    @objid ("28f053e5-514a-47e5-ad24-44d23a6444b0")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SERVDEMAND = "SaStep_ModelElement_servDemand";
 
-    @objid ("4356cfec-64fb-4f2d-bed4-376ec970dbef")
+    @objid ("c4c425ce-0245-4eb5-997d-1c0dd35fde88")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SERVCOUNT = "SaStep_ModelElement_servCount";
 
-    @objid ("343aecaf-6bbc-4bce-b56f-fe403a288adc")
+    @objid ("95986542-9c04-4aea-a818-76e6649d3298")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_BEHAVIOR = "SaStep_ModelElement_behavior";
 
-    @objid ("34ce3d34-31e1-459b-9a5d-fe828ec821ef")
+    @objid ("500a8f3f-57c8-4948-97ba-b26af1fa2bd2")
     public static final String SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_SELFDELAY = "SaStep_ModelElement_selfDelay";
 
-    @objid ("e77183ed-fdd0-4963-abc7-def187e5814d")
+    @objid ("b3a5f1ff-e01e-42d0-ba54-ab59404656c2")
     public static final String PACOMMSTEP_MODELELEMENT_PACOMMSTEP_MODELELEMENT_NOSYNC = "PaCommStep_ModelElement_noSync";
 
-    @objid ("e1c6b546-8b72-46f2-abfe-73398f85a6e6")
+    @objid ("34ec7b37-a80f-4bf7-a30f-f11ddf788887")
     public static final String PACOMMSTEP_MODELELEMENT_PACOMMSTEP_MODELELEMENT_EXTOPDEMAND = "PaCommStep_ModelElement_extOpDemand";
 
-    @objid ("d84ba00f-d023-4fc0-8e39-6ac50f0767a5")
+    @objid ("a4263018-228d-4c50-ada8-fe4bcf94e195")
     public static final String PACOMMSTEP_MODELELEMENT_PACOMMSTEP_MODELELEMENT_EXTOPCOUNT = "PaCommStep_ModelElement_extOpCount";
 
-    @objid ("a00f1766-e16b-4383-a468-55e68343a65b")
+    @objid ("472fbd85-8f6a-4e15-9271-14c8dd3808d3")
     public static final String PACOMMSTEP_MODELELEMENT_PACOMMSTEP_MODELELEMENT_BEHAVDEMAND = "PaCommStep_ModelElement_behavDemand";
 
-    @objid ("9b7b3c8e-de4f-48e0-9faa-e95c5e453f0a")
+    @objid ("30d0bd90-3864-4a27-b0b9-9a1d8c27fd4e")
     public static final String PACOMMSTEP_MODELELEMENT_PACOMMSTEP_MODELELEMENT_BEHAVCOUNT = "PaCommStep_ModelElement_behavCount";
 
-    @objid ("0b231b65-7578-43cd-b964-4cd6bfde68c6")
+    @objid ("35df767f-f94a-466b-8180-2370f4243a47")
     public static final String PALOGICALRESOURCE_ASSOCIATIONEND_PALOGICALRESOURCE_ASSOCIATIONEND_UTILIZATION = "PaLogicalResource_AssociationEnd_utilization";
 
-    @objid ("7281c894-6370-4e79-9c70-60e70fa2be08")
+    @objid ("0c64d6f2-48a8-4435-92c9-0e4a1223fc06")
     public static final String PALOGICALRESOURCE_ASSOCIATIONEND_PALOGICALRESOURCE_ASSOCIATIONEND_THROUGHPUT = "PaLogicalResource_AssociationEnd_throughput";
 
-    @objid ("da565270-ceab-4057-a90d-2dfab6edb26b")
+    @objid ("0e0177d7-cf9a-4a3a-b3c6-8ac1d3d62c75")
     public static final String PALOGICALRESOURCE_ASSOCIATIONEND_PALOGICALRESOURCE_ASSOCIATIONEND_POOLSIZE = "PaLogicalResource_AssociationEnd_poolSize";
 
-    @objid ("3a9e415d-9c1b-481a-988c-6ed069cfd37e")
+    @objid ("b33d1fca-9ed4-4472-a9ea-a6ded842dfb3")
     public static final String PALOGICALRESOURCE_ATTRIBUTE_PALOGICALRESOURCE_ATTRIBUTE_UTILIZATION = "PaLogicalResource_Attribute_utilization";
 
-    @objid ("dd4a974a-e81f-4d0c-b958-03bb2b2f0336")
+    @objid ("ec37e450-7375-450c-9fea-cfced17c91cb")
     public static final String PALOGICALRESOURCE_ATTRIBUTE_PALOGICALRESOURCE_ATTRIBUTE_THROUGHPUT = "PaLogicalResource_Attribute_throughput";
 
-    @objid ("1f0172b8-aa65-4991-a41f-a324e52a59be")
+    @objid ("0fb57061-9926-4ffb-8a1a-31fbcc44fb21")
     public static final String PALOGICALRESOURCE_ATTRIBUTE_PALOGICALRESOURCE_ATTRIBUTE_POOLSIZE = "PaLogicalResource_Attribute_poolSize";
 
-    @objid ("2bfaa3f1-8f1b-4104-b020-0c9dca79bc21")
+    @objid ("0a4835fb-d1a0-4e29-9080-bdc7e8360cd3")
     public static final String PALOGICALRESOURCE_LINK_PALOGICALRESOURCE_LINK_UTILIZATION = "PaLogicalResource_Link_utilization";
 
-    @objid ("c206517c-4d37-4b98-a3d8-48455b2c8c20")
+    @objid ("6c224bb2-0a8a-4aba-963e-a46aaa20f6fb")
     public static final String PALOGICALRESOURCE_LINK_PALOGICALRESOURCE_LINK_THROUGHPUT = "PaLogicalResource_Link_throughput";
 
-    @objid ("d84c1330-7400-485b-a65b-8b1d38a491ec")
+    @objid ("01f42d60-9bbb-4a0d-a4e7-8d5a4f59a94d")
     public static final String PALOGICALRESOURCE_LINK_PALOGICALRESOURCE_LINK_POOLSIZE = "PaLogicalResource_Link_poolSize";
 
-    @objid ("ed65d01d-443e-40d7-9cfa-5267031419c8")
+    @objid ("732324f1-203d-425b-ae8c-f8d9d6416dec")
     public static final String PALOGICALRESOURCE_INSTANCE_PALOGICALRESOURCE_INSTANCE_UTILIZATION = "PaLogicalResource_Instance_utilization";
 
-    @objid ("ada1ec3b-6a65-4e30-81ff-44bb36f31bb3")
+    @objid ("0d62100f-9597-4b11-ac09-48d5209a6b20")
     public static final String PALOGICALRESOURCE_INSTANCE_PALOGICALRESOURCE_INSTANCE_THROUGHPUT = "PaLogicalResource_Instance_throughput";
 
-    @objid ("ebdc195e-8ebf-4096-8acb-3af655dd52c4")
+    @objid ("153cb638-18f6-4200-ae8f-80e15b9d5a9a")
     public static final String PALOGICALRESOURCE_INSTANCE_PALOGICALRESOURCE_INSTANCE_POOLSIZE = "PaLogicalResource_Instance_poolSize";
 
-    @objid ("d3dba752-6986-45cd-b715-83b162d36210")
+    @objid ("808a0294-067d-4b0c-94ca-00c383652fde")
     public static final String PALOGICALRESOURCE_PARAMETER_PALOGICALRESOURCE_PARAMETER_UTILIZATION = "PaLogicalResource_Parameter_utilization";
 
-    @objid ("46a78548-4a55-4327-9526-50e5f315effb")
+    @objid ("8c6ceb08-dc73-40f5-9081-1d3f95d77326")
     public static final String PALOGICALRESOURCE_PARAMETER_PALOGICALRESOURCE_PARAMETER_THROUGHPUT = "PaLogicalResource_Parameter_throughput";
 
-    @objid ("08e96609-16d8-4582-96af-03d774114c94")
+    @objid ("1cbb86bb-f8bd-4b0e-9711-1d099bcbe913")
     public static final String PALOGICALRESOURCE_PARAMETER_PALOGICALRESOURCE_PARAMETER_POOLSIZE = "PaLogicalResource_Parameter_poolSize";
 
-    @objid ("1e8ef251-df67-4737-8557-d0f2faefae2d")
+    @objid ("63db9d7d-b2bc-4590-8843-874f40e5280b")
     public static final String PALOGICALRESOURCE_ASSOCIATION_PALOGICALRESOURCE_ASSOCIATION_UTILIZATION = "PaLogicalResource_Association_utilization";
 
-    @objid ("60f4c85c-d2d7-4afd-a21e-3e7575a66f2b")
+    @objid ("8e15f775-0c22-4425-980b-223e0ef91322")
     public static final String PALOGICALRESOURCE_ASSOCIATION_PALOGICALRESOURCE_ASSOCIATION_THROUGHPUT = "PaLogicalResource_Association_throughput";
 
-    @objid ("1fa1b159-d21b-4dfb-9dc1-b06c4cc97283")
+    @objid ("f8c77f85-58bf-46ef-b3eb-3138c473442c")
     public static final String PALOGICALRESOURCE_ASSOCIATION_PALOGICALRESOURCE_ASSOCIATION_POOLSIZE = "PaLogicalResource_Association_poolSize";
 
-    @objid ("400f143c-a54f-40c4-b38e-020fe1119173")
+    @objid ("b11745a6-7b12-46d8-ac18-6504b11cb6d3")
     public static final String PALOGICALRESOURCE_LIFELINE_PALOGICALRESOURCE_LIFELINE_UTILIZATION = "PaLogicalResource_Lifeline_utilization";
 
-    @objid ("7c1d1c24-2e87-4f66-8446-2b7ad1e23bbd")
+    @objid ("5c57f23f-6a56-442c-97cf-b01dfcac3535")
     public static final String PALOGICALRESOURCE_LIFELINE_PALOGICALRESOURCE_LIFELINE_THROUGHPUT = "PaLogicalResource_Lifeline_throughput";
 
-    @objid ("be4e36bc-f383-4eca-a5ba-826eabb4aba1")
+    @objid ("129344c7-d3ef-44a5-98da-4d2650c77d89")
     public static final String PALOGICALRESOURCE_LIFELINE_PALOGICALRESOURCE_LIFELINE_POOLSIZE = "PaLogicalResource_Lifeline_poolSize";
 
-    @objid ("c7eea7a7-6624-418d-834a-921968798aae")
+    @objid ("196a12ba-6a19-42ce-bab7-834b63e9de51")
     public static final String PALOGICALRESOURCE_CLASSIFIER_PALOGICALRESOURCE_CLASSIFIER_UTILIZATION = "PaLogicalResource_Classifier_utilization";
 
-    @objid ("a86f8cb0-73bb-46a4-a685-e36f2fbd9096")
+    @objid ("b2910f26-0362-43f3-8eb3-38ad99da7400")
     public static final String PALOGICALRESOURCE_CLASSIFIER_PALOGICALRESOURCE_CLASSIFIER_THROUGHPUT = "PaLogicalResource_Classifier_throughput";
 
-    @objid ("eaec18d2-16f7-4bf2-815d-94aeaa739461")
+    @objid ("d961685a-6118-4c9d-b472-29d14a09b713")
     public static final String PALOGICALRESOURCE_CLASSIFIER_PALOGICALRESOURCE_CLASSIFIER_POOLSIZE = "PaLogicalResource_Classifier_poolSize";
 
-    @objid ("682aef74-bd47-41fe-aed4-304d21bf1711")
+    @objid ("a0b03352-8998-4b1a-8fa9-d6b2e6e0dd3d")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC = "PaRequestedService_ModelElement_noSync";
 
-    @objid ("30cc1647-0165-4739-90b5-0cd4a7a7086f")
+    @objid ("bce70bd8-9fae-4894-a3c8-2b632f92a867")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_EXTOPDEMAND = "PaRequestedService_ModelElement_extOpDemand";
 
-    @objid ("4941e431-ae02-433d-baab-b9d9ea9d9444")
+    @objid ("b25b9ec6-c1ef-4a62-98b3-b56a5e4380de")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_EXTOPCOUNT = "PaRequestedService_ModelElement_extOpCount";
 
-    @objid ("185fb19b-2f1d-4c89-b503-3fcad1dcae94")
+    @objid ("f6b5e378-31d1-435f-b1df-ad6c4bb73267")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_BEHAVDEMAND = "PaRequestedService_ModelElement_behavDemand";
 
-    @objid ("2a8b4881-4ec6-4d82-9250-4b989512cf18")
+    @objid ("b7a38522-74ae-4e7a-8c3c-11bef6697eb8")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_BEHAVCOUNT = "PaRequestedService_ModelElement_behavCount";
 
-    @objid ("6a64065e-b88a-4d35-9f09-256b659268ab")
+    @objid ("4e7c7ccb-6dd1-4fb5-abbe-c75652a86781")
     public static final String PARESPASSSTEP_MODELELEMENT_PARESPASSSTEP_MODELELEMENT_RESOURCE = "PaResPassStep_ModelElement_resource";
 
-    @objid ("165bb888-4917-4c98-ac8e-dd52ba75e395")
+    @objid ("78152267-80fd-4a6f-a06b-51b707150430")
     public static final String PARESPASSSTEP_MODELELEMENT_PARESPASSSTEP_MODELELEMENT_RESUNITS = "PaResPassStep_ModelElement_resUnits";
 
-    @objid ("c1815f25-389d-4681-931b-f38e5d09f037")
+    @objid ("2ba7bd9b-2c1e-4ed0-a2f6-5e2cf841b452")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_POOLSIZE = "PaRunTInstance_ModelElement_poolSize";
 
-    @objid ("5d6fcb48-28e3-4c1e-9637-d803aefcd7b5")
+    @objid ("e2798722-0f33-4db9-a956-c538c3bed3b0")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_UNBDDPOOL = "PaRunTInstance_ModelElement_unbddPool";
 
-    @objid ("e14795da-631c-419e-b137-73dc096ae878")
+    @objid ("b79c3d91-3f63-4e50-badb-34ae61db10ee")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_INSTANCE = "PaRunTInstance_ModelElement_instance";
 
-    @objid ("5fc9be39-a79c-4496-bc8e-b48e751a870e")
+    @objid ("2d7ee582-bcf3-4174-acb6-c45237259aca")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_HOST = "PaRunTInstance_ModelElement_host";
 
-    @objid ("6fe64b0f-10be-438c-9acb-c6c44e9da3f8")
+    @objid ("cff4e768-6f91-4ccf-a345-6b342a257316")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_UTILIZATION = "PaRunTInstance_ModelElement_utilization";
 
-    @objid ("0d9c9d61-1aa6-44e6-9981-3da8a2f44642")
+    @objid ("175950a4-b87f-47ae-926e-bef261e9d86d")
     public static final String PARUNTINSTANCE_MODELELEMENT_PARUNTINSTANCE_MODELELEMENT_THROUGHPUT = "PaRunTInstance_ModelElement_throughput";
 
-    @objid ("ea0e727d-a4db-4ed1-9f29-2404e3d50c8c")
+    @objid ("2bcbb45f-70c7-4bd2-896c-db17d11b7e56")
     public static final String PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_NOSYNC = "PaStep_ModelElement_noSync";
 
-    @objid ("7a03a098-863f-4de5-90a6-5a3dc91fa6f2")
+    @objid ("6e737796-34c6-454c-bc6a-06dc63e0d904")
     public static final String PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_EXTOPDEMAND = "PaStep_ModelElement_extOpDemand";
 
-    @objid ("10ca1916-1c1f-4f98-8844-a9c6cbcba471")
+    @objid ("1cb008ec-e568-4b00-a27c-ceae379c11ee")
     public static final String PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_EXTOPCOUNT = "PaStep_ModelElement_extOpCount";
 
-    @objid ("da184f53-3405-4ed3-83ca-4d86f95d47a2")
+    @objid ("878ecf85-e736-42cd-95ac-3253c7ac2989")
     public static final String PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_BEHAVDEMAND = "PaStep_ModelElement_behavDemand";
 
-    @objid ("4695cff5-7e0d-4610-87d2-dc1d0fac06ff")
+    @objid ("b78153dc-d67b-44e7-a747-64c3d2ff8e9d")
     public static final String PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_BEHAVCOUNT = "PaStep_ModelElement_behavCount";
 
-    @objid ("19e60031-d3ae-4cd2-a558-3fefe03f94cb")
+    @objid ("a9c8b319-ab1a-4d19-975c-1bd545f50cd6")
     public static final String DISTRIBUTE_DEPENDENCY_DISTRIBUTE_DEPENDENCY_PATTERNSHAPE = "Distribute_Dependency_patternShape";
 
-    @objid ("6d5c82bf-cb1d-4155-a610-9c2c203b0a45")
+    @objid ("78c47511-39fc-414f-ac6c-73b77df62c3c")
     public static final String DISTRIBUTE_DEPENDENCY_DISTRIBUTE_DEPENDENCY_REPETITIONSPACE = "Distribute_Dependency_repetitionSpace";
 
-    @objid ("c701b3dd-8cf8-4038-8c34-abb0d5d51e94")
+    @objid ("489df212-c665-4a30-b6e1-20bd2191d623")
     public static final String DISTRIBUTE_DEPENDENCY_DISTRIBUTE_DEPENDENCY_FROMTILER = "Distribute_Dependency_fromTiler";
 
-    @objid ("ce638a4a-1725-4b94-87f8-68329b51f286")
+    @objid ("667d6d97-a45e-450f-b803-7ea07e3a2ec1")
     public static final String DISTRIBUTE_DEPENDENCY_DISTRIBUTE_DEPENDENCY_TOTILER = "Distribute_Dependency_toTiler";
 
-    @objid ("1232fed0-da6b-484d-995f-6493497a2784")
+    @objid ("2f378442-ca52-40fc-a074-c420173e3d88")
     public static final String DURATIONCONSTRAINT_CONSTRAINT_DURATIONCONSTRAINT_CONSTRAINT_FIRSTEVENT = "Duration_Constraint_FirstEvent";
 
-    @objid ("aedbe236-50d1-4b0d-b97f-b1307c8bc06b")
+    @objid ("65142f75-ab15-419d-898b-02d05478d05d")
     public static final String INTERREPETITION_CONNECTOR_INTERREPETITION_CONNECTOR_REPETITIONSHAPEDEPENDENCE = "InterRepetition_Connector_repetitionShapeDependence";
 
-    @objid ("2dcd9ca9-f4ec-4284-badc-c33e43059c2f")
+    @objid ("6e75a00a-bda2-4e58-9e51-4251bedaed70")
     public static final String INTERREPETITION_CONNECTOR_INTERREPETITION_CONNECTOR_ISMODULO = "InterRepetition_Connector_isModulo";
 
-    @objid ("6f9e6239-9355-41a0-bdb8-4f9453e2ff35")
+    @objid ("fc3057e0-0507-4f93-a0df-19c52269f4e5")
     public static final String RESHAPE_CONNECTOR_RESHAPE_CONNECTOR_PATTERNSHAPE = "Reshape_Connector_patternShape";
 
-    @objid ("b2677967-9498-4e7a-a377-84085b6f3ddf")
+    @objid ("94ac4d42-b310-430e-a105-2152c7627e6d")
     public static final String RESHAPE_CONNECTOR_RESHAPE_CONNECTOR_REPETITONSHAPE = "Reshape_Connector_repetitonShape";
 
-    @objid ("025e0525-61e4-4045-909d-02d5009e6f39")
+    @objid ("c19b1a40-ab59-4f6a-80d4-628bdc1363ba")
     public static final String SHAPED_ASSOCIATIONEND_SHAPED_ASSOCIATIONEND_SHAPE = "Shaped_AssociationEnd_shape";
 
-    @objid ("415c7cf2-75f9-40d5-b299-f0bacf577efc")
+    @objid ("9a5a6bf4-d99f-458e-a659-67dbc39440d9")
     public static final String SHAPED_ATTRIBUTE_SHAPED_ATTRIBUTE_SHAPE = "Shaped_Attribute_shape";
 
-    @objid ("02440421-f85a-4b06-a503-354ddf061848")
+    @objid ("48cdd97d-3105-4ad8-b284-92a351786563")
     public static final String SHAPED_BINDABLEINSTANCE_SHAPED_BINDABLEINSTANCE_SHAPE = "Shaped_BindableInstance_shape";
 
-    @objid ("43ac98f0-cca1-4582-a0d0-7bfc718e14c7")
+    @objid ("5246eab7-d1be-49b1-959b-bfa5a5b8ed6a")
     public static final String SHAPED_CONNECTOREND_SHAPED_CONNECTOREND_SHAPE = "Shaped_ConnectorEnd_shape";
 
-    @objid ("9c6b2c61-7d5d-4a33-8eea-d5f9428f3d34")
+    @objid ("6952f47d-1ec1-4e35-bc19-3b5944f7ba0b")
     public static final String SHAPED_PARAMETER_SHAPED_PARAMETER_SHAPE = "Shaped_Parameter_shape";
 
-    @objid ("bfbd46da-5b1d-49d5-b690-ac65a499473f")
+    @objid ("b866541e-846e-4781-9a70-bd3302ae3599")
     public static final String TILER_CONNECTOR_TILER_CONNECTOR_ORIGIN = "Tiler_Connector_origin";
 
-    @objid ("dfbc459c-89aa-40c8-8ffe-009bbad3667e")
+    @objid ("9aae15a2-497f-41a2-b981-5a8fd1d7a57c")
     public static final String TILER_CONNECTOR_TILER_CONNECTOR_PAVING = "Tiler_Connector_paving";
 
-    @objid ("881984d6-fc60-45c6-8fdb-92a5c9ffbd42")
+    @objid ("63517766-1cf5-42e1-9632-f0db0053901c")
     public static final String TILER_CONNECTOR_TILER_CONNECTOR_FITTING = "Tiler_Connector_fitting";
 
-    @objid ("78ce1698-b135-4f37-b464-4c123c3380ff")
+    @objid ("8242a739-8433-4947-b569-322a120dd06c")
     public static final String TILER_CONNECTOR_TILER_CONNECTOR_TILER = "Tiler_Connector_tiler";
 
-    @objid ("68807d61-6e09-40db-ae5f-b0dfcf3cc91c")
+    @objid ("f4acc83b-471a-44ea-aaa5-8f970c076cda")
     public static final String TILER_CONNECTOREND_TILER_CONNECTOREND_ORIGIN = "Tiler_ConnectorEnd_origin";
 
-    @objid ("7279a0ce-0cbb-40b5-8737-b61f3983afa6")
+    @objid ("9004f381-33cb-4c8d-a192-6dc335aea042")
     public static final String TILER_CONNECTOREND_TILER_CONNECTOREND_PAVING = "Tiler_ConnectorEnd_paving";
 
-    @objid ("1510bf81-aeda-4e44-95a4-dedde05c3929")
+    @objid ("fef61a83-8d50-4b00-bfc9-d3c85a01c76e")
     public static final String TILER_CONNECTOREND_TILER_CONNECTOREND_FITTING = "Tiler_ConnectorEnd_fitting";
 
-    @objid ("fdfe0ad3-0447-4dac-942e-1ded45c55426")
+    @objid ("d7a9f96b-69b1-4c5d-bd7a-414d6f6f851f")
     public static final String TILER_CONNECTOREND_TILER_CONNECTOREND_TILER = "Tiler_ConnectorEnd_tiler";
 
-    @objid ("00bcced7-f513-4d1e-a3a9-613255c5cc95")
+    @objid ("6d8f2980-8ee9-4dd3-b14e-520a4a01ca40")
     public static final String VAR_ASSOCIATIONEND_VAR_ASSOCIATIONEND_DIR = "Var_AssociationEnd_dir";
 
-    @objid ("d633ccfe-b305-43cc-b991-1c7185d7e8b9")
+    @objid ("c42286c4-aa21-426a-ad01-c25f00c84f95")
     public static final String VAR_BINDABLEINSTANCE_VAR_BINDABLEINSTANCE_DIR = "Var_BindableInstance_dir";
 
-    @objid ("c399da7e-6a0c-432d-b96f-63c115db7725")
+    @objid ("aea94b2a-227e-4960-8b39-de76f6610c9e")
     public static final String VAR_ATTRIBUTE_VAR_ATTRIBUTE_DIR = "Var_Attribute_dir";
 
-    @objid ("20e0e1ce-a3be-4831-9a58-800f19d95b64")
+    @objid ("cb8880e3-4ffd-47c4-9b8f-d7527191db87")
     public static final String BOUNDEDSUBTYPE_DATATYPE_BOUNDEDSUBTYPE_DATATYPE_BASETYPE = "BoundedSubtype_DataType_baseType";
 
-    @objid ("d089b988-f319-4a96-82d6-11756de35b58")
+    @objid ("f9e7dd9a-e391-456d-9470-ecf82f9602a5")
     public static final String BOUNDEDSUBTYPE_DATATYPE_BOUNDEDSUBTYPE_DATATYPE_MINVALUE = "BoundedSubtype_DataType_minValue";
 
-    @objid ("0d1ec125-98cd-4843-af8d-783acec0503c")
+    @objid ("0df60c98-3703-4243-8b0b-2d5ccea1b486")
     public static final String BOUNDEDSUBTYPE_DATATYPE_BOUNDEDSUBTYPE_DATATYPE_MAXVALUE = "BoundedSubtype_DataType_maxValue";
 
-    @objid ("f1fb7a1e-ee11-4e45-a580-203cc0b38325")
+    @objid ("f2a7e666-5f42-4b65-89e6-9e3bc400491e")
     public static final String BOUNDEDSUBTYPE_DATATYPE_BOUNDEDSUBTYPE_DATATYPE_ISMINOPEN = "BoundedSubtype_DataType_isMinOpen";
 
-    @objid ("fedb2661-e08f-4b99-98a1-18b619520d8f")
+    @objid ("32d688f4-cf94-4a49-872e-3147edf0694f")
     public static final String BOUNDEDSUBTYPE_DATATYPE_BOUNDEDSUBTYPE_DATATYPE_ISMAXOPEN = "BoundedSubtype_DataType_isMaxOpen";
 
-    @objid ("41f2568c-6e55-47d7-ae74-61f146a9a7b6")
+    @objid ("cc8c4c38-6f13-4b6b-b039-333a3ae70656")
     public static final String CHOICETYPE_DATATYPE_CHOICETYPE_DATATYPE_CHOICEATTRIB = "ChoiceType_DataType_choiceAttrib";
 
-    @objid ("ff318487-8e95-4522-97c7-71ae575c6315")
+    @objid ("7ae9093c-07ee-4e87-8a05-7462e3d6afea")
     public static final String CHOICETYPE_DATATYPE_CHOICETYPE_DATATYPE_DEFAULTATTRIB = "ChoiceType_DataType_defaultAttrib";
 
-    @objid ("9243bb0c-6ff3-4e3f-a893-918f11910b6c")
+    @objid ("bac24a63-7a4c-48c9-9030-55fe5cac0ac2")
     public static final String COLLECTIONTYPE_DATATYPE_COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB = "CollectionType_DataType_collectionAttrib";
 
-    @objid ("a2196e41-535d-46b5-bcb4-92e04e21777e")
+    @objid ("cca9216c-e5f9-40f4-b0b9-e5faadc3525a")
     public static final String INTERVALTYPE_DATATYPE_INTERVALTYPE_DATATYPE_INTERVALATTRIB = "IntervalType_DataType_intervalAttrib";
 
-    @objid ("5fcd77e1-d2f8-4152-b735-71e47a4a9a6b")
+    @objid ("7dec2c3e-a230-4041-a371-7409c3162438")
     public static final String TUPLETYPE_DATATYPE_TUPLETYPE_DATATYPE_TUPLEATTRIB = "TupleType_DataType_tupleAttrib";
 
-    @objid ("473ba667-f739-4fc4-8bca-2151d82bb079")
+    @objid ("6ceb1549-15e9-4553-bef3-11ebca83e87a")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_PROCESSINGUNITS = "GaCommHost_Association_ProcessingUnits";
 
 }

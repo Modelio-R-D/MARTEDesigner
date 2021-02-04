@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_nfps.standard.datatype;
 
@@ -34,27 +34,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("686cc32c-e601-467e-9664-2de6f78eb2e0")
 public class NfpTypeDataType extends TupleTypeDataType {
-    @objid ("6672718a-a8b2-4f87-bbf7-1284ca4dc455")
+    @objid ("a3100b45-a490-4c2c-b05f-4d6e81c1472e")
     public static final String STEREOTYPE_NAME = "NfpType_DataType";
 
-    @objid ("59cae0d3-1580-4434-9200-e160fecf821d")
+    @objid ("cd1d20aa-67ba-4c4f-b0ba-9a7478278163")
     public static final String NFPTYPE_DATATYPE_EXPRATTRIB_TAGTYPE = "NfpType_DataType_exprAttrib";
 
-    @objid ("ead3e50d-cccf-4a01-989b-e31c99574d75")
+    @objid ("d2024f5c-6b3d-4837-87eb-012415802edf")
     public static final String NFPTYPE_DATATYPE_UNITATTRIB_TAGTYPE = "NfpType_DataType_unitAttrib";
 
-    @objid ("22326d56-6135-4aa5-ae30-67f0161ee95a")
+    @objid ("b5dfa38d-57f5-4d51-98fa-52ea862962d9")
     public static final String NFPTYPE_DATATYPE_VALUEATTRIB_TAGTYPE = "NfpType_DataType_valueAttrib";
 
     /**
-     * Tells whether a {@link NfpTypeDataType proxy} can be instantiated from a {@link MObject} checking it is a {@link DataType} stereotyped << NfpType_DataType >>. 
+     * Tells whether a {@link NfpTypeDataType proxy} can be instantiated from a {@link MObject} checking it is a {@link DataType} stereotyped << NfpType_DataType >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2b0c6e8a-541d-4d70-bc54-290b447060f6")
+    @objid ("02d3dd61-9b0d-412a-8e90-20d58eb9884e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof DataType) && ((DataType) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, NfpTypeDataType.STEREOTYPE_NAME));
     }
@@ -64,21 +64,21 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * 
      * @return a {@link NfpTypeDataType} proxy on the created {@link DataType}.
      */
-    @objid ("7fc49de0-dfb8-4582-b510-9f3496b13130")
+    @objid ("1fc2bcb7-8cc5-48b7-b864-8618cf73e8f5")
     public static NfpTypeDataType create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("DataType");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.DataType");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, NfpTypeDataType.STEREOTYPE_NAME);
         return NfpTypeDataType.instantiate((DataType)e);
     }
 
     /**
-     * Tries to instantiate a {@link NfpTypeDataType} proxy from a {@link DataType} stereotyped << NfpType_DataType >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link NfpTypeDataType} proxy from a {@link DataType} stereotyped << NfpType_DataType >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a DataType
      * @return a {@link NfpTypeDataType} proxy or <i>null</i>.
      */
-    @objid ("c043432a-25d0-4933-b971-f5bedf2fad60")
+    @objid ("66ca42dd-ab68-4e80-bea7-eb066c9fc696")
     public static NfpTypeDataType instantiate(final DataType obj) {
         return NfpTypeDataType.canInstantiate(obj) ? new NfpTypeDataType(obj) : null;
     }
@@ -91,7 +91,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * @return a {@link NfpTypeDataType} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("2e92da53-56f3-4824-a9b1-54139fb59348")
+    @objid ("cfd26aa8-7e96-431b-a3f5-1cd7db0b476a")
     public static NfpTypeDataType safeInstantiate(final DataType obj) throws IllegalArgumentException {
         if (NfpTypeDataType.canInstantiate(obj))
         	return new NfpTypeDataType(obj);
@@ -99,7 +99,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
         	throw new IllegalArgumentException("NfpTypeDataType: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9dc62b03-7531-4164-8b9a-3fd06d31e5ec")
+    @objid ("7c2aa543-fe89-416b-b055-08a68ed630e2")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -119,7 +119,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * Get the underlying {@link DataType}. 
      * @return the DataType represented by this proxy, never null.
      */
-    @objid ("aaede1e0-4d0e-402c-8c1c-c936b6dd9395")
+    @objid ("98d6010b-099f-402c-8d8e-b3c5a81bdc3e")
     @Override
     public DataType getElement() {
         return (DataType)super.getElement();
@@ -130,7 +130,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cdf22607-2298-4493-bf41-fad8b492b9c6")
+    @objid ("4dbb578f-d2a9-4a55-8863-9b09390389bc")
     public String getNfpType_DataType_exprAttrib() {
         return this.elt.getTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_EXPRATTRIB_TAGTYPE_ELT);
     }
@@ -140,7 +140,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a2920774-19f6-4393-8594-861b49edf9a3")
+    @objid ("518f0bd6-53f9-4d15-b7ad-eb7aad19be4b")
     public String getNfpType_DataType_unitAttrib() {
         return this.elt.getTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_UNITATTRIB_TAGTYPE_ELT);
     }
@@ -150,12 +150,12 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0838e98d-b10b-42ad-a070-9388c6da9d7d")
+    @objid ("284fc494-06b3-4b20-a275-67d234b5fc78")
     public String getNfpType_DataType_valueAttrib() {
         return this.elt.getTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_VALUEATTRIB_TAGTYPE_ELT);
     }
 
-    @objid ("8d58b262-f7a9-4658-92b2-4663e891adfb")
+    @objid ("33ed3a88-fda7-4d95-815a-a92211b9f93d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -166,7 +166,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c6df68e9-8f84-4ee8-a4cc-8a02704cf4f9")
+    @objid ("81a94441-0166-4024-b298-4d1e07621b56")
     public void setNfpType_DataType_exprAttrib(final String value) {
         this.elt.putTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_EXPRATTRIB_TAGTYPE_ELT, value);
     }
@@ -176,7 +176,7 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("afc01ade-9e92-4096-82be-4295bf0defb1")
+    @objid ("7fd9c35a-aa7b-4aec-87bf-3a7def637129")
     public void setNfpType_DataType_unitAttrib(final String value) {
         this.elt.putTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_UNITATTRIB_TAGTYPE_ELT, value);
     }
@@ -186,37 +186,37 @@ public class NfpTypeDataType extends TupleTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9b5ea44e-1656-428b-9752-04daaeaf3f07")
+    @objid ("3e387009-d3e4-47b8-ad36-fe55f0bca1b8")
     public void setNfpType_DataType_valueAttrib(final String value) {
         this.elt.putTagValue(NfpTypeDataType.MdaTypes.NFPTYPE_DATATYPE_VALUEATTRIB_TAGTYPE_ELT, value);
     }
 
-    @objid ("c93f297a-9b0f-404c-863b-cd19e9958ed3")
+    @objid ("eda8dc0c-cee1-4463-b4b9-d159598c84a2")
     protected NfpTypeDataType(final DataType elt) {
         super(elt);
     }
 
     @objid ("fdb10adb-db23-4e44-8d9f-db5e5f883f0e")
     public static final class MdaTypes {
-        @objid ("646d54aa-cf9d-4f1d-94fc-91b2e28d4ce6")
+        @objid ("623bbce3-2d83-4732-9b02-dff99909326b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("5345453d-7de1-4eb9-9dec-82f24057ea2f")
+        @objid ("603c228c-45bd-4b87-8f15-c25d52c88ca2")
         public static TagType NFPTYPE_DATATYPE_VALUEATTRIB_TAGTYPE_ELT;
 
-        @objid ("8f38ab32-c4f9-4d7c-950f-94fedb05e3aa")
+        @objid ("d29cb80c-47d9-4617-916e-d5cd663c718f")
         public static TagType NFPTYPE_DATATYPE_UNITATTRIB_TAGTYPE_ELT;
 
-        @objid ("bda7778a-db5a-4e00-8706-1714a73c498c")
+        @objid ("55e6ba30-3fac-41b5-8787-b661ae8e68ed")
         public static TagType NFPTYPE_DATATYPE_EXPRATTRIB_TAGTYPE_ELT;
 
-        @objid ("a853fd91-e714-4491-bc1a-4feb351e250a")
+        @objid ("33404cf5-2422-42b1-97b3-5a71b1d0cf2c")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("ee45690f-589a-4161-b394-8a13e2d87bc9")
+        @objid ("9689d409-0579-443c-925a-bd55ef64c6ee")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("70c4fd1b-65c3-4e47-be2a-013d99bae1a4")
+        @objid ("2d720f66-44de-40cb-8ebd-46eceaffb5f0")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d9908614-0cce-11df-8525-001302895b2b");
             NFPTYPE_DATATYPE_VALUEATTRIB_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "d9908618-0cce-11df-8525-001302895b2b");

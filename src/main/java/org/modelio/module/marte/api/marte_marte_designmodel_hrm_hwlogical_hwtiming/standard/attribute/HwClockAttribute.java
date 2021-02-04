@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwtiming.standard.attribute;
 
@@ -33,21 +33,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("a451bf81-d5f7-49eb-a20c-c17958f70ce7")
 public class HwClockAttribute extends HwTimingResourceAttribute {
-    @objid ("e84d9b34-2335-40a8-ac7c-04785e765a1d")
+    @objid ("7f191d6a-5342-4284-93a0-bcec8abe0dcf")
     public static final String STEREOTYPE_NAME = "HwClock_Attribute";
 
-    @objid ("9239b4e4-3806-4dba-94bb-413736daf519")
+    @objid ("50204a6d-218b-48e8-b6aa-2116e045a561")
     public static final String HWCLOCK_ATTRIBUTE_FREQUENCY_TAGTYPE = "HwClock_Attribute_frequency";
 
     /**
-     * Tells whether a {@link HwClockAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwClock_Attribute >>. 
+     * Tells whether a {@link HwClockAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwClock_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b36db67e-565c-402b-9f66-9bbc773e5a2b")
+    @objid ("986be1e0-c43c-4498-847d-1fc83c37414d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwClockAttribute.STEREOTYPE_NAME));
     }
@@ -57,21 +57,21 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
      * 
      * @return a {@link HwClockAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("df679b86-28c8-4a9e-8a48-066d259dda6c")
+    @objid ("76327e52-6b5f-4918-a6af-7bed59348625")
     public static HwClockAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwClockAttribute.STEREOTYPE_NAME);
         return HwClockAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwClockAttribute} proxy from a {@link Attribute} stereotyped << HwClock_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwClockAttribute} proxy from a {@link Attribute} stereotyped << HwClock_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwClockAttribute} proxy or <i>null</i>.
      */
-    @objid ("45c04fef-2b8c-4a2a-a3ec-9451fed9b991")
+    @objid ("ac95fd6d-223e-4a18-a95a-b12d6a64b191")
     public static HwClockAttribute instantiate(final Attribute obj) {
         return HwClockAttribute.canInstantiate(obj) ? new HwClockAttribute(obj) : null;
     }
@@ -84,7 +84,7 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
      * @return a {@link HwClockAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("90ff2c1a-7109-4076-934e-6a4eed38686b")
+    @objid ("48e42a03-4401-42ff-9bf1-195822be907a")
     public static HwClockAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwClockAttribute.canInstantiate(obj))
         	return new HwClockAttribute(obj);
@@ -92,7 +92,7 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
         	throw new IllegalArgumentException("HwClockAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("425e71b3-08fa-49e4-a93e-82bd3cdba774")
+    @objid ("9f4a6a4b-f21c-45bf-b31f-34122be01a26")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -112,7 +112,7 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("1a2ea174-61a9-4544-89d3-bc9260c5f479")
+    @objid ("06af1543-5c90-433c-9425-e54d0987545f")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -123,12 +123,12 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("60af0409-4731-4831-a0db-d0b7879ff0d8")
+    @objid ("c388ca43-8069-4894-a2eb-fcd3f8c9a64d")
     public String getHwClock_Attribute_frequency() {
         return this.elt.getTagValue(HwClockAttribute.MdaTypes.HWCLOCK_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT);
     }
 
-    @objid ("98a8c8f8-4500-4a8d-b78c-91e15d14ef21")
+    @objid ("e0d8ed8a-e269-41f5-ad42-da7f597cc9a4")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +139,31 @@ public class HwClockAttribute extends HwTimingResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f36468a2-227f-45c9-8483-dcab86b963f0")
+    @objid ("49f40d28-1df1-459c-b521-894acf8d3532")
     public void setHwClock_Attribute_frequency(final String value) {
         this.elt.putTagValue(HwClockAttribute.MdaTypes.HWCLOCK_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT, value);
     }
 
-    @objid ("a573fbdf-4ebb-4875-a50c-9bc61717a46c")
+    @objid ("7a1f6c17-76e9-4e81-b045-5bab3b9560b9")
     protected HwClockAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("fff173da-1647-41e3-9b0e-1b574a5a9ab7")
     public static final class MdaTypes {
-        @objid ("35cb2743-058e-4380-8fc1-d609b2cc433b")
+        @objid ("830bf452-4e6c-483d-a05d-6b077f3f0603")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("d40429e5-302c-43b1-8d41-4e763951f25b")
+        @objid ("6ae1e3ef-02a1-4843-be8b-4b9211791d8e")
         public static TagType HWCLOCK_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("1f60b6e9-c65a-4e18-b18a-d952cf3e3274")
+        @objid ("67f10281-b52d-40c3-8bcd-5ab427498d93")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("35fb6de6-946f-45c9-8381-a0a6ee57fb9e")
+        @objid ("f2dac92c-06be-42fc-aac8-e41411f490e5")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("1c0de45e-1f89-44b6-b368-dfd4351ff4fa")
+        @objid ("830c8ccb-1ba4-4917-b254-43a273c8f571")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01272db7-0ccf-11df-8525-001302895b2b");
             HWCLOCK_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f4b4c162-123c-11df-8f55-0014222a9f79");

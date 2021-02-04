@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_time.standard.link;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("1a47ff18-cb69-4d8e-a6b8-198d88e02767")
 public class ClockLink {
-    @objid ("6983da71-a20f-4767-8a8c-e457d9b3bd96")
+    @objid ("ab9b4ca8-5a17-4726-afbd-c87fa8e08c96")
     public static final String STEREOTYPE_NAME = "Clock_Link";
 
-    @objid ("52da5fdd-00ab-474f-a57e-79301b2d438c")
+    @objid ("a603a9d9-a3de-4b2e-8144-7dfc0b33fb2d")
     public static final String CLOCK_LINK_STANDARD_TAGTYPE = "Clock_Link_standard";
 
-    @objid ("2f3f32f1-e00e-4c5a-b64a-645113965b41")
+    @objid ("7c7fd9ba-dca5-49ec-8fff-8b8cd317bceb")
     public static final String CLOCK_LINK_TYPE_TAGTYPE = "Clock_Link_type";
 
-    @objid ("e02fb5b0-db0a-4441-8e49-223f8cfefdd8")
+    @objid ("9ff2777f-5e19-46f1-a29c-22ccd6bc4604")
     public static final String CLOCK_LINK_UNIT_TAGTYPE = "Clock_Link_unit";
 
     /**
      * The underlying {@link Link} represented by this proxy, never null.
      */
-    @objid ("aa5a7c2e-8e88-4141-a20c-b68a265d7ae0")
+    @objid ("77df5ba9-c45d-4605-928a-f761c7a5321c")
     protected final Link elt;
 
     /**
-     * Tells whether a {@link ClockLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << Clock_Link >>. 
+     * Tells whether a {@link ClockLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << Clock_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b9a2e330-9980-4c4e-95dd-4b01b23daee6")
+    @objid ("f80a8f32-4e47-4656-b6b3-a8f575e28a26")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ClockLink.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class ClockLink {
      * 
      * @return a {@link ClockLink} proxy on the created {@link Link}.
      */
-    @objid ("c6fe4945-d566-4315-bf9e-3354cb1e0e76")
+    @objid ("34a5846e-7e25-4d5b-a589-d4d728bfe010")
     public static ClockLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ClockLink.STEREOTYPE_NAME);
         return ClockLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link ClockLink} proxy from a {@link Link} stereotyped << Clock_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ClockLink} proxy from a {@link Link} stereotyped << Clock_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link ClockLink} proxy or <i>null</i>.
      */
-    @objid ("6582f040-7f21-4057-9ae1-27a9df7f01d7")
+    @objid ("48bb363a-4c37-45f3-950f-6b8e3a120cf4")
     public static ClockLink instantiate(final Link obj) {
         return ClockLink.canInstantiate(obj) ? new ClockLink(obj) : null;
     }
@@ -96,7 +96,7 @@ public class ClockLink {
      * @return a {@link ClockLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("7a60d7e0-5136-45db-be52-d41d4a685e13")
+    @objid ("d351d716-00cb-4ccb-bd96-b31f3ed6b59d")
     public static ClockLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (ClockLink.canInstantiate(obj))
         	return new ClockLink(obj);
@@ -104,7 +104,7 @@ public class ClockLink {
         	throw new IllegalArgumentException("ClockLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("41b8e49c-65d3-4e76-9cc8-be9e71bf2a01")
+    @objid ("d6770eb2-e75e-4e63-b93d-9f7d3f9f466c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0fab1adc-6093-472f-9e6b-fab35cc6c9d0")
+    @objid ("e4f79d64-f049-40b7-b359-177ac9e4d7d4")
     public String getClock_Link_standard() {
         return this.elt.getTagValue(ClockLink.MdaTypes.CLOCK_LINK_STANDARD_TAGTYPE_ELT);
     }
@@ -135,7 +135,7 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3c895595-4095-4ba2-a386-1ecef32d05ff")
+    @objid ("89d8468e-9721-447d-8522-839dc4995dee")
     public String getClock_Link_type() {
         return this.elt.getTagValue(ClockLink.MdaTypes.CLOCK_LINK_TYPE_TAGTYPE_ELT);
     }
@@ -145,7 +145,7 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("92d74c51-5913-4384-9319-fbf3c2c390a1")
+    @objid ("117a19bc-110b-406f-a3b8-44c168b92709")
     public String getClock_Link_unit() {
         return this.elt.getTagValue(ClockLink.MdaTypes.CLOCK_LINK_UNIT_TAGTYPE_ELT);
     }
@@ -154,12 +154,12 @@ public class ClockLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("1fca97d5-97f8-4bdd-9f1a-672cf10eb6e6")
+    @objid ("6b143abf-e635-47c1-aeac-ea2881b17ed7")
     public Link getElement() {
         return this.elt;
     }
 
-    @objid ("aa5dfb2f-aec5-4cc0-a6e0-eccb54d0e832")
+    @objid ("2d181646-510a-4ce6-b990-da16916b653b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +170,7 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3e7a9bb8-8817-468b-b36e-edf574cae12b")
+    @objid ("ec6a800f-cf61-47e1-a747-9b81fc2dba64")
     public void setClock_Link_standard(final String value) {
         this.elt.putTagValue(ClockLink.MdaTypes.CLOCK_LINK_STANDARD_TAGTYPE_ELT, value);
     }
@@ -180,7 +180,7 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("629ae9cf-968b-44f3-badd-f2015a9a100f")
+    @objid ("7e98b7fd-2bc1-4c6a-80b5-7c2044d08bf3")
     public void setClock_Link_type(final String value) {
         this.elt.putTagValue(ClockLink.MdaTypes.CLOCK_LINK_TYPE_TAGTYPE_ELT, value);
     }
@@ -190,37 +190,37 @@ public class ClockLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7725778a-fc8d-473b-90bc-f8c8ac10a31d")
+    @objid ("afcaf5ae-0397-47bd-bad2-c8bcddb1e807")
     public void setClock_Link_unit(final String value) {
         this.elt.putTagValue(ClockLink.MdaTypes.CLOCK_LINK_UNIT_TAGTYPE_ELT, value);
     }
 
-    @objid ("224cc9dd-38d3-4675-9f4e-2fa01b21aa3d")
+    @objid ("80fee9a1-e162-4dc2-aafa-dd7e57b00574")
     protected ClockLink(final Link elt) {
         this.elt = elt;
     }
 
     @objid ("8b0f48a6-a2f2-4e0f-b094-3f75e03bdd4a")
     public static final class MdaTypes {
-        @objid ("f835c6fb-db02-444e-9018-2a52ddb12811")
+        @objid ("636ddde6-e5bf-46dc-8f87-0eaef9811186")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("846f4982-2205-4078-8641-f25695d66695")
+        @objid ("92f5e903-5c55-4bd5-89bc-b265a45b889e")
         public static TagType CLOCK_LINK_STANDARD_TAGTYPE_ELT;
 
-        @objid ("2d49458b-335e-45a3-98c8-7c22325a2b87")
+        @objid ("d7aeb006-8300-40d1-9ddb-91cc6d0d4eab")
         public static TagType CLOCK_LINK_TYPE_TAGTYPE_ELT;
 
-        @objid ("69b38157-f8af-4600-9168-7d5b7230fd63")
+        @objid ("680827e2-4ca9-41a5-8c37-5ee22e95a458")
         public static TagType CLOCK_LINK_UNIT_TAGTYPE_ELT;
 
-        @objid ("a9d9b10e-fd5e-4662-b7a3-485a7803e874")
+        @objid ("452ba0ad-543c-45ac-8558-71eda1929e8c")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("daf8ae99-aaf3-4d5c-be6e-6d5d2178ce99")
+        @objid ("e268f4ce-067f-4290-8976-729a12e2a808")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d4400948-d397-4639-9535-1353f1639654")
+        @objid ("ac0de1c1-e56d-4b44-80af-087cee498a6e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "dfdb017b-14cd-11df-9d54-0014222a9f79");
             CLOCK_LINK_STANDARD_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "dfdb017c-14cd-11df-9d54-0014222a9f79");

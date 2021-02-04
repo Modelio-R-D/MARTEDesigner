@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("8623130b-4ab8-499b-95c5-6544482c3038")
 public class ProfileAssociationIdentifierElementsSwResource {
-    @objid ("4d459b37-6dbe-46da-8236-606f4ae5dcf5")
+    @objid ("dda5228a-f3aa-4078-8792-df58c56f6386")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_identifierElements_SwResource";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("6b191428-fe46-4e3b-b384-93529d64006b")
+    @objid ("a5b44fb5-632b-4ddc-bc1b-e24fc9514e87")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationIdentifierElementsSwResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_identifierElements_SwResource >>. 
+     * Tells whether a {@link ProfileAssociationIdentifierElementsSwResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_identifierElements_SwResource >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d570597b-5217-4c74-b1be-3b09192a276d")
+    @objid ("fd75b525-ff49-487a-9128-acaa5ed43d8d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationIdentifierElementsSwResource.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationIdentifierElementsSwResource {
      * 
      * @return a {@link ProfileAssociationIdentifierElementsSwResource} proxy on the created {@link Dependency}.
      */
-    @objid ("6bc5c660-cadd-419f-8acf-888324c8463c")
+    @objid ("a4f45e98-aca0-4a67-825f-bf9e308aff27")
     public static ProfileAssociationIdentifierElementsSwResource create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationIdentifierElementsSwResource.STEREOTYPE_NAME);
         return ProfileAssociationIdentifierElementsSwResource.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationIdentifierElementsSwResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_identifierElements_SwResource >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationIdentifierElementsSwResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_identifierElements_SwResource >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationIdentifierElementsSwResource} proxy or <i>null</i>.
      */
-    @objid ("69cf1936-0523-4db7-842e-8fa9c2095e3b")
+    @objid ("e6cdfee7-1b42-4161-a050-24382c92bfc2")
     public static ProfileAssociationIdentifierElementsSwResource instantiate(final Dependency obj) {
         return ProfileAssociationIdentifierElementsSwResource.canInstantiate(obj) ? new ProfileAssociationIdentifierElementsSwResource(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationIdentifierElementsSwResource {
      * @return a {@link ProfileAssociationIdentifierElementsSwResource} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1ab2dbef-3ebf-4abc-aab8-cf00c7349583")
+    @objid ("b66bada6-78b1-48f1-936a-43dfa32f2839")
     public static ProfileAssociationIdentifierElementsSwResource safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationIdentifierElementsSwResource.canInstantiate(obj))
         	return new ProfileAssociationIdentifierElementsSwResource(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationIdentifierElementsSwResource {
         	throw new IllegalArgumentException("ProfileAssociationIdentifierElementsSwResource: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("67e4184e-c2ae-44a4-81a3-8122cf48f5e3")
+    @objid ("b7c43f98-d712-40d9-83bb-edf26bb8d38d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationIdentifierElementsSwResource {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("fef6dbf0-8e48-4637-aea5-1bf36e451053")
+    @objid ("cae7aee6-0983-474b-93d7-8c9a733b3de5")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("d2e834c5-6ae2-4242-8e57-8c3e52a205fe")
+    @objid ("50cf7182-496c-4c6b-8208-3838a117ec2e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("6459f8aa-7e4b-4ded-bc36-beba726989c8")
+    @objid ("e83a32a6-563d-4705-a5f5-e4426303ce5d")
     protected ProfileAssociationIdentifierElementsSwResource(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("fc47e763-179a-44fe-b200-fcd42ff005a9")
     public static final class MdaTypes {
-        @objid ("415df2bf-5fab-4795-acb3-ca1691d6a2a3")
+        @objid ("dbd713bb-2987-4680-bc48-5f7d4d27d7c2")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("e07aabb2-796b-47c6-86b1-ec4735d9ca74")
+        @objid ("bdee9279-11c2-4183-8d94-537f3e73a5d6")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("5a4dcc90-5cf0-475d-800e-67e801a30eeb")
+        @objid ("1eee4291-0f87-4343-a03e-38764022f8f3")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("9f650369-2739-4d46-b523-4df320bdd947")
+        @objid ("2b96f6eb-816b-4a90-993a-633e1e3e7203")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "970a972f-9755-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

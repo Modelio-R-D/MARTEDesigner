@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.classifier;
 
@@ -34,21 +34,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("81fff9a9-73dc-4600-b77a-13586c7f635d")
 public class HwBridgeClassifier extends HwMediaClassifier {
-    @objid ("f48eaf67-e21a-4d4e-9f00-40dacab9b282")
+    @objid ("1240733c-8988-4b9c-8098-df7adc432d6e")
     public static final String STEREOTYPE_NAME = "HwBridge_Classifier";
 
-    @objid ("c3ed66f3-1ce7-46ff-9f04-b9e185e1b8d5")
+    @objid ("881e0bf4-df10-421b-a352-3efa3f338f00")
     public static final String HWBRIDGE_CLASSIFIER_SIDES_TAGTYPE = "HwBridge_Classifier_sides";
 
     /**
-     * Tells whether a {@link HwBridgeClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwBridge_Classifier >>. 
+     * Tells whether a {@link HwBridgeClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwBridge_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("586d463c-96f7-467a-922d-0c41710fc3a0")
+    @objid ("eb16a442-5f11-421b-b974-a2cc093e2ddf")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeClassifier.STEREOTYPE_NAME));
     }
@@ -58,21 +58,21 @@ public class HwBridgeClassifier extends HwMediaClassifier {
      * 
      * @return a {@link HwBridgeClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("7744a3df-2212-46e2-8cc1-5166b89eb556")
+    @objid ("fe8580de-1366-4468-9b2c-317757a9d77e")
     public static HwBridgeClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeClassifier.STEREOTYPE_NAME);
         return HwBridgeClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBridgeClassifier} proxy from a {@link Classifier} stereotyped << HwBridge_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBridgeClassifier} proxy from a {@link Classifier} stereotyped << HwBridge_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwBridgeClassifier} proxy or <i>null</i>.
      */
-    @objid ("32d22267-7be6-489b-a0ca-246fe6218492")
+    @objid ("fa68744e-76ba-4bd7-adab-61d6fe51c4c1")
     public static HwBridgeClassifier instantiate(final Classifier obj) {
         return HwBridgeClassifier.canInstantiate(obj) ? new HwBridgeClassifier(obj) : null;
     }
@@ -85,7 +85,7 @@ public class HwBridgeClassifier extends HwMediaClassifier {
      * @return a {@link HwBridgeClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c4d1c08c-3dd3-43c5-83a7-96fb13d837b1")
+    @objid ("f6b9ea86-0828-4b03-8e60-a06b16458a6e")
     public static HwBridgeClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwBridgeClassifier.canInstantiate(obj))
         	return new HwBridgeClassifier(obj);
@@ -93,7 +93,7 @@ public class HwBridgeClassifier extends HwMediaClassifier {
         	throw new IllegalArgumentException("HwBridgeClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f58d5650-9dfd-4b3b-9f34-b5d1911db1c1")
+    @objid ("8fe86b52-c4a7-4ecd-a649-508719528543")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class HwBridgeClassifier extends HwMediaClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("7bafb9eb-8622-480b-a7f7-e3e6afeb7b45")
+    @objid ("83f2d836-a69d-4b28-aba4-1035616208a8")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -124,12 +124,12 @@ public class HwBridgeClassifier extends HwMediaClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("373c8b94-ccf8-44a7-96e7-669f316c7f48")
+    @objid ("05293648-c115-4a74-8e7c-9a0b65abafb7")
     public List<String> getHwBridge_Classifier_sides() {
         return this.elt.getTagValues(HwBridgeClassifier.MdaTypes.HWBRIDGE_CLASSIFIER_SIDES_TAGTYPE_ELT);
     }
 
-    @objid ("99051331-1323-449c-9971-4fb40acfee9d")
+    @objid ("8c68fbfc-9213-4f87-8c83-df32c4e86d32")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +140,31 @@ public class HwBridgeClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1d0c1709-123e-4ba1-9dc0-dfd766aceb82")
+    @objid ("49e5565e-0764-4782-b8d7-e474df54b034")
     public void setHwBridge_Classifier_sides(final List<String> values) {
         this.elt.putTagValues(HwBridgeClassifier.MdaTypes.HWBRIDGE_CLASSIFIER_SIDES_TAGTYPE_ELT, values);
     }
 
-    @objid ("99568cf8-e628-4c1d-be18-d1261a34ff62")
+    @objid ("be9c05d0-ddbf-4997-b026-0bcaf0ac6e24")
     protected HwBridgeClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("336feca2-661d-4b64-89b3-867022e27140")
     public static final class MdaTypes {
-        @objid ("82c246d8-a447-4eef-8376-64cdc8c06056")
+        @objid ("810a44c0-174f-4a8d-91f5-251ccd68d3e5")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("728da01c-8957-4e4f-9515-0cbfb81d468b")
+        @objid ("03614e29-49b4-4724-a9a7-a2b433a085b0")
         public static TagType HWBRIDGE_CLASSIFIER_SIDES_TAGTYPE_ELT;
 
-        @objid ("6b6909fe-f010-4e05-a81b-8ccfa079b9fd")
+        @objid ("84ebffbf-9a4f-4d2e-badc-5cee4c351685")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("425bdbc8-cbfe-42ee-ae57-c125242ea90d")
+        @objid ("45482a90-4e15-42bb-9a5b-a402f940be4a")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("555f17b1-c041-4fbf-9752-3f28383fb93b")
+        @objid ("f4a7ac62-0670-4a18-841e-e8accbd45eaa")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "e82bae31-10ac-11df-81d9-0014222a9f79");
             HWBRIDGE_CLASSIFIER_SIDES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "be54f8c4-1726-11df-b92a-0014222a9f79");

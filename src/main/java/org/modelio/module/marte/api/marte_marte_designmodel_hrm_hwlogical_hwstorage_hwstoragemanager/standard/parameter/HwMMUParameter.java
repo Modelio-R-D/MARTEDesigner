@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwstoragemanager.standard.parameter;
 
@@ -34,33 +34,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("3c0755ab-822b-4a94-8a54-dded929a6efa")
 public class HwMMUParameter extends HwStorageManagerParameter {
-    @objid ("4e61f3c0-55c1-4a50-9c97-c43d80ac1994")
+    @objid ("93757273-d161-4738-adf8-ff1e9ce8467c")
     public static final String STEREOTYPE_NAME = "HwMMU_Parameter";
 
-    @objid ("d3c1ce24-53e9-43ea-8a3c-17c594ffa2e6")
+    @objid ("1aec415f-74a5-4d98-b61e-29d632f0ff41")
     public static final String HWMMU_PARAMETER_MEMORYPROTECTION_TAGTYPE = "HwMMU_Parameter_memoryProtection";
 
-    @objid ("50245947-a12b-4fd0-84af-9a1fe20b028e")
+    @objid ("66e6342b-1e6e-4789-bfd8-d81bb1a249b9")
     public static final String HWMMU_PARAMETER_NBENTRIES_TAGTYPE = "HwMMU_Parameter_nbEntries";
 
-    @objid ("a36a9932-29de-4fa9-a926-581bc81a40ba")
+    @objid ("6287f7c9-e1ba-4fd6-a594-0a8d930216bb")
     public static final String HWMMU_PARAMETER_OWNEDTLBS_TAGTYPE = "HwMMU_Parameter_ownedTLBs";
 
-    @objid ("15602105-229d-4109-b7cf-42ea6b98c88d")
+    @objid ("5edf47ba-8d94-4fee-a8ea-3d6a25836bf9")
     public static final String HWMMU_PARAMETER_PHYSICALADDRSPACE_TAGTYPE = "HwMMU_Parameter_physicalAddrSpace";
 
-    @objid ("82434eea-545e-44c6-af68-eb15d499f510")
+    @objid ("24a38a89-c6ab-45f3-b9c6-c7798eb03203")
     public static final String HWMMU_PARAMETER_VIRTUALADDRSPACE_TAGTYPE = "HwMMU_Parameter_virtualAddrSpace";
 
     /**
-     * Tells whether a {@link HwMMUParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwMMU_Parameter >>. 
+     * Tells whether a {@link HwMMUParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwMMU_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("bf08358b-b794-47b5-b7e4-a8e8a5d0882c")
+    @objid ("6a9f11a7-20e1-43d4-8c35-34cc9addf403")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwMMUParameter.STEREOTYPE_NAME));
     }
@@ -70,21 +70,21 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * 
      * @return a {@link HwMMUParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("4dc959c8-9fcb-434c-b680-784590c476ba")
+    @objid ("08aa44eb-adc3-44a6-8f0c-276ac2030f84")
     public static HwMMUParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwMMUParameter.STEREOTYPE_NAME);
         return HwMMUParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwMMUParameter} proxy from a {@link Parameter} stereotyped << HwMMU_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwMMUParameter} proxy from a {@link Parameter} stereotyped << HwMMU_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link HwMMUParameter} proxy or <i>null</i>.
      */
-    @objid ("a2526036-b975-409c-a06d-573f0c510413")
+    @objid ("1eb0fbee-4bee-4d2f-ad16-7a67fbd6fd59")
     public static HwMMUParameter instantiate(final Parameter obj) {
         return HwMMUParameter.canInstantiate(obj) ? new HwMMUParameter(obj) : null;
     }
@@ -97,7 +97,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * @return a {@link HwMMUParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("3668ea53-7767-49e3-a441-99bc1832ddc5")
+    @objid ("ec5aedfe-320a-459a-bcd9-86541779a171")
     public static HwMMUParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (HwMMUParameter.canInstantiate(obj))
         	return new HwMMUParameter(obj);
@@ -105,7 +105,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
         	throw new IllegalArgumentException("HwMMUParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fe62b450-329c-4274-8434-010f8d3c946b")
+    @objid ("f6970542-8f30-47b9-b173-1cc7995f7d94")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("dd721d18-2c79-41f2-beea-dba940c32dbd")
+    @objid ("f1485689-d90f-4a76-a587-64e14a221c27")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -136,7 +136,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8aedac69-fbaa-4f24-87a6-673c6b13ddb2")
+    @objid ("e248dc74-4f02-45db-a7c4-1b56244ddbf7")
     public String getHwMMU_Parameter_nbEntries() {
         return this.elt.getTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_NBENTRIES_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("fadc4efb-863b-4713-a81b-a20905b8d099")
+    @objid ("f2c226fd-e431-40ff-82cc-d423759c7620")
     public List<String> getHwMMU_Parameter_ownedTLBs() {
         return this.elt.getTagValues(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_OWNEDTLBS_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0172025d-0162-4e26-aa39-13a4e978f6d1")
+    @objid ("ddafb850-2034-4e20-9a92-ae5024429318")
     public String getHwMMU_Parameter_physicalAddrSpace() {
         return this.elt.getTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_PHYSICALADDRSPACE_TAGTYPE_ELT);
     }
@@ -166,12 +166,12 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e27efd5a-b549-4787-bd84-0ac3fba117fc")
+    @objid ("1bc824cf-a389-45c7-8b41-d800c69129d5")
     public String getHwMMU_Parameter_virtualAddrSpace() {
         return this.elt.getTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_VIRTUALADDRSPACE_TAGTYPE_ELT);
     }
 
-    @objid ("40db1cda-1582-431c-b46f-25986b3d5ef8")
+    @objid ("d0e0796a-cb3c-4b4d-b2f6-e4c2e0012171")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -182,7 +182,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("daf9d3b2-a794-474a-8d62-9e70b97d0e4d")
+    @objid ("6139351b-1ce6-40b7-b597-4086b9466c18")
     public boolean isHwMMU_Parameter_memoryProtection() {
         return this.elt.isTagged(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_MEMORYPROTECTION_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("86fbe087-d8cb-4bf7-8a9b-e7990ddc517d")
+    @objid ("8298904f-1f32-4e64-943a-707a30dccf62")
     public void setHwMMU_Parameter_memoryProtection(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_MEMORYPROTECTION_TAGTYPE_ELT, this.elt);
@@ -205,7 +205,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("197f8305-d784-4a6a-bec3-72f14268b19d")
+    @objid ("f6589719-af6e-4c0c-b8dd-0483ffb5824f")
     public void setHwMMU_Parameter_nbEntries(final String value) {
         this.elt.putTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_NBENTRIES_TAGTYPE_ELT, value);
     }
@@ -215,7 +215,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("88996072-49c7-488b-8565-063eae788961")
+    @objid ("60cc4409-2914-4139-81df-69e1499bc182")
     public void setHwMMU_Parameter_ownedTLBs(final List<String> values) {
         this.elt.putTagValues(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_OWNEDTLBS_TAGTYPE_ELT, values);
     }
@@ -225,7 +225,7 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b0b9a7de-f325-4ede-a4eb-96433e8e5993")
+    @objid ("9d44276b-a3f1-45fe-97a5-e5a025ba7bd0")
     public void setHwMMU_Parameter_physicalAddrSpace(final String value) {
         this.elt.putTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_PHYSICALADDRSPACE_TAGTYPE_ELT, value);
     }
@@ -235,43 +235,43 @@ public class HwMMUParameter extends HwStorageManagerParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2253323c-51ac-4db3-bad7-0f9ade5e82b6")
+    @objid ("8a25594e-2851-4fad-bbca-18a693e606b7")
     public void setHwMMU_Parameter_virtualAddrSpace(final String value) {
         this.elt.putTagValue(HwMMUParameter.MdaTypes.HWMMU_PARAMETER_VIRTUALADDRSPACE_TAGTYPE_ELT, value);
     }
 
-    @objid ("3fbb9a1c-7bc9-4d93-af81-480c15807b88")
+    @objid ("56d72f6a-6c36-4cf6-8f3c-7da7fdc1aea4")
     protected HwMMUParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("a4b721ef-bfea-41d1-91b2-b474dcb6e178")
     public static final class MdaTypes {
-        @objid ("323e5682-cb69-44c8-89f5-d15c0ee96c51")
+        @objid ("97b3b7cd-bb81-4353-8006-f473915a5e2b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("dc6886ff-c6d9-4a08-8ffa-4e55a9124372")
+        @objid ("cb9a8bb6-27e3-4a1c-88e6-b3650328c31d")
         public static TagType HWMMU_PARAMETER_VIRTUALADDRSPACE_TAGTYPE_ELT;
 
-        @objid ("7e5375cc-30bc-4c77-af45-7cf6d3705096")
+        @objid ("2447d2ff-7133-4756-ad3b-4f7c4488b695")
         public static TagType HWMMU_PARAMETER_PHYSICALADDRSPACE_TAGTYPE_ELT;
 
-        @objid ("4bd281ee-ffdf-4bad-b2bb-cd92b6441a79")
+        @objid ("775bda82-23e3-4595-8843-4fc32ce00c35")
         public static TagType HWMMU_PARAMETER_NBENTRIES_TAGTYPE_ELT;
 
-        @objid ("e1b1e6a3-cc55-416c-8c0e-4b2dd0c39caf")
+        @objid ("3fb9d0c2-8252-4972-be4a-27b8b347dc7e")
         public static TagType HWMMU_PARAMETER_OWNEDTLBS_TAGTYPE_ELT;
 
-        @objid ("292df265-1746-4780-b76b-3398250fc581")
+        @objid ("280826a2-7d7b-440d-a4c7-b36c8de52485")
         public static TagType HWMMU_PARAMETER_MEMORYPROTECTION_TAGTYPE_ELT;
 
-        @objid ("febaf2ea-5d82-4bc3-914c-b2a10293b0a3")
+        @objid ("c2238572-a0bf-4a84-8093-87226ffe2783")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("113bc346-0c3c-4d35-ae1e-c42d71321a9f")
+        @objid ("4245437c-dc45-49ea-86a9-1362a99549ad")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e4b175d8-219c-4386-9c7b-d07d1e405870")
+        @objid ("0261cdc1-bc83-48fa-8963-5419745f1f08")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "017f638e-0ccf-11df-8525-001302895b2b");
             HWMMU_PARAMETER_VIRTUALADDRSPACE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01842838-0ccf-11df-8525-001302895b2b");

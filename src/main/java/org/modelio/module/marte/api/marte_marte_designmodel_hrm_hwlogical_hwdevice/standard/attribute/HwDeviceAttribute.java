@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdevice.standard.attribute;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b692c93e-aa0c-4e6c-aff2-8a7b2b0aec3b")
 public class HwDeviceAttribute extends HwResourceAttribute {
-    @objid ("3564575e-a555-454e-90f2-9dcd65940005")
+    @objid ("05b8e50f-97a4-4e0c-bc82-20763405b373")
     public static final String STEREOTYPE_NAME = "HwDevice_Attribute";
 
-    @objid ("4349ef0e-e81b-458f-9972-5709166aa016")
+    @objid ("2196a5c1-0fa1-4991-9f70-e71420979929")
     public static final String HWDEVICE_ATTRIBUTE_MAINSCHEDULER_TAGTYPE = "HwDevice_Attribute_mainScheduler";
 
-    @objid ("60d58adf-486e-42e9-8a97-57e16fcac0ad")
+    @objid ("8e4ca946-8a85-40c4-97b7-7b56589d41c0")
     public static final String HWDEVICE_ATTRIBUTE_SPEEDFACTOR_TAGTYPE = "HwDevice_Attribute_speedFactor";
 
     /**
-     * Tells whether a {@link HwDeviceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwDevice_Attribute >>. 
+     * Tells whether a {@link HwDeviceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwDevice_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1c4bd68b-a661-4944-b466-7670bf45d94d")
+    @objid ("d9840943-e9c3-47f5-9e34-9bcdd2e3ba01")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwDeviceAttribute.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * 
      * @return a {@link HwDeviceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("0fdb3cde-0add-413b-9442-b2d85a8f431b")
+    @objid ("b7dce503-c7ab-44e5-afde-fa4ed3fd8452")
     public static HwDeviceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwDeviceAttribute.STEREOTYPE_NAME);
         return HwDeviceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwDeviceAttribute} proxy from a {@link Attribute} stereotyped << HwDevice_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwDeviceAttribute} proxy from a {@link Attribute} stereotyped << HwDevice_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwDeviceAttribute} proxy or <i>null</i>.
      */
-    @objid ("f81d5c63-6a3e-49fa-9d7b-f8bd71b68b4a")
+    @objid ("691b450b-c30e-4d7b-aeb7-d32f420b37c9")
     public static HwDeviceAttribute instantiate(final Attribute obj) {
         return HwDeviceAttribute.canInstantiate(obj) ? new HwDeviceAttribute(obj) : null;
     }
@@ -88,7 +88,7 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * @return a {@link HwDeviceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("86a5a864-643d-4549-b9ca-cb44f13ce687")
+    @objid ("40535596-f389-4cb0-9a43-088c52c6ee6f")
     public static HwDeviceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwDeviceAttribute.canInstantiate(obj))
         	return new HwDeviceAttribute(obj);
@@ -96,7 +96,7 @@ public class HwDeviceAttribute extends HwResourceAttribute {
         	throw new IllegalArgumentException("HwDeviceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d8d94d71-c2f1-47dd-82c3-a63c7b8797d9")
+    @objid ("819c7d22-8874-4534-bb62-0988f956c131")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("7487d5ae-dfcb-4c0f-aed4-01136cb94ac8")
+    @objid ("eab2fcdf-6513-4967-b287-0405fe26487c")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -127,7 +127,7 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5137a408-d01a-42d4-bc67-749af98d4483")
+    @objid ("7dede164-7ee2-4d84-9e8d-a947986e7559")
     public String getHwDevice_Attribute_mainScheduler() {
         return this.elt.getTagValue(HwDeviceAttribute.MdaTypes.HWDEVICE_ATTRIBUTE_MAINSCHEDULER_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("43c1133b-b00f-4273-ab4f-ec089539a6a7")
+    @objid ("d633b5f0-4285-4d51-9ab7-9093ceb94609")
     public String getHwDevice_Attribute_speedFactor() {
         return this.elt.getTagValue(HwDeviceAttribute.MdaTypes.HWDEVICE_ATTRIBUTE_SPEEDFACTOR_TAGTYPE_ELT);
     }
 
-    @objid ("77deda89-3b2e-415a-8361-a123d27c34b0")
+    @objid ("6dd64de9-dffa-47f0-85c6-2a620ede5d6f")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fd6ce907-e36a-4512-90a6-8268c11e1dff")
+    @objid ("d148a711-c1cd-46cb-bef0-c7377698acf7")
     public void setHwDevice_Attribute_mainScheduler(final String value) {
         this.elt.putTagValue(HwDeviceAttribute.MdaTypes.HWDEVICE_ATTRIBUTE_MAINSCHEDULER_TAGTYPE_ELT, value);
     }
@@ -163,34 +163,34 @@ public class HwDeviceAttribute extends HwResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6131a381-499a-4232-bd98-1d900d15c3ae")
+    @objid ("c2596fef-649a-47a4-8d51-a7fd194bc685")
     public void setHwDevice_Attribute_speedFactor(final String value) {
         this.elt.putTagValue(HwDeviceAttribute.MdaTypes.HWDEVICE_ATTRIBUTE_SPEEDFACTOR_TAGTYPE_ELT, value);
     }
 
-    @objid ("8520eb81-f89c-41bb-af6b-a8eb4d01c3fb")
+    @objid ("73ef827d-1ff8-4613-80a8-4ce227c04116")
     protected HwDeviceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("5ad8343e-a472-4581-ad0f-9448a8bd01e2")
     public static final class MdaTypes {
-        @objid ("2fa8a879-b12a-4784-b7ab-6f336de0ef62")
+        @objid ("b0ba2c3e-2e38-4aa4-a210-61657fbe9b49")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("631dd5aa-4dfe-4e35-b777-19f33ff900ed")
+        @objid ("e2c1c376-3c10-4e83-be31-998c9b513b91")
         public static TagType HWDEVICE_ATTRIBUTE_SPEEDFACTOR_TAGTYPE_ELT;
 
-        @objid ("c7eb1be5-9797-46fa-81e1-65982adaba81")
+        @objid ("8c597d6f-6217-4aef-957e-6f71353c5fa2")
         public static TagType HWDEVICE_ATTRIBUTE_MAINSCHEDULER_TAGTYPE_ELT;
 
-        @objid ("0ec5aecc-25cd-4166-8a0d-fc1b58946b95")
+        @objid ("dde6e0f7-bce5-4f20-a5e3-9588c6b3ad1b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("6d277e84-a390-43ac-aa9a-87e594fa57e7")
+        @objid ("5cc74dc3-6afe-428e-86e9-0988ec5990d5")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("42af1059-effd-4c77-9ce4-33e18407c72f")
+        @objid ("43b57457-e16f-4573-8aed-2286edd2eb7a")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0130b6ff-0ccf-11df-8525-001302895b2b");
             HWDEVICE_ATTRIBUTE_SPEEDFACTOR_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "50e16d75-92ab-11e0-a69d-0027103f347c");

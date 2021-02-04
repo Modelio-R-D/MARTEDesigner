@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("62a7f6bb-140c-44ea-8f3c-4b019b226adb")
 public class ProfileAssociationTerminateServicesSwConcurrentResource {
-    @objid ("39e534c9-875d-4583-b32c-96a0b1a51c28")
+    @objid ("b1cea4ff-983d-4c68-abb3-b3e547a65b65")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_terminateServices_SwConcurrentResource";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("49706507-c7f0-4f88-9f87-5dfa3f2b4731")
+    @objid ("4faeed24-5b20-4ceb-8b5f-1ce82ab06cf1")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationTerminateServicesSwConcurrentResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_terminateServices_SwConcurrentResource >>. 
+     * Tells whether a {@link ProfileAssociationTerminateServicesSwConcurrentResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_terminateServices_SwConcurrentResource >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f63d3c08-dfdf-4aae-b002-723f837e1f20")
+    @objid ("59115ef7-a7ad-45c4-a5cd-3361bb321204")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationTerminateServicesSwConcurrentResource.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationTerminateServicesSwConcurrentResource {
      * 
      * @return a {@link ProfileAssociationTerminateServicesSwConcurrentResource} proxy on the created {@link Dependency}.
      */
-    @objid ("29ee1afa-99e3-4147-a29a-af7912793916")
+    @objid ("c5c9f5e8-9c30-4764-ae4f-2b332e882c93")
     public static ProfileAssociationTerminateServicesSwConcurrentResource create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationTerminateServicesSwConcurrentResource.STEREOTYPE_NAME);
         return ProfileAssociationTerminateServicesSwConcurrentResource.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationTerminateServicesSwConcurrentResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_terminateServices_SwConcurrentResource >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationTerminateServicesSwConcurrentResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_terminateServices_SwConcurrentResource >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationTerminateServicesSwConcurrentResource} proxy or <i>null</i>.
      */
-    @objid ("f4c5c5fb-bdc0-4ec7-b7e7-79d97f11ce8c")
+    @objid ("05a934bd-01de-4327-931b-217223269705")
     public static ProfileAssociationTerminateServicesSwConcurrentResource instantiate(final Dependency obj) {
         return ProfileAssociationTerminateServicesSwConcurrentResource.canInstantiate(obj) ? new ProfileAssociationTerminateServicesSwConcurrentResource(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationTerminateServicesSwConcurrentResource {
      * @return a {@link ProfileAssociationTerminateServicesSwConcurrentResource} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c7dc26c3-55d6-46b9-b65f-980c71013c7c")
+    @objid ("f714f27c-bdb6-492e-80f6-67617ee5e4aa")
     public static ProfileAssociationTerminateServicesSwConcurrentResource safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationTerminateServicesSwConcurrentResource.canInstantiate(obj))
         	return new ProfileAssociationTerminateServicesSwConcurrentResource(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationTerminateServicesSwConcurrentResource {
         	throw new IllegalArgumentException("ProfileAssociationTerminateServicesSwConcurrentResource: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("6184439a-f9ff-40a5-b69c-bba8d415cc03")
+    @objid ("ff3c9333-5e5f-4fb2-8df6-5ae72109f7e1")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationTerminateServicesSwConcurrentResource {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("59e80f5b-8446-4e04-bb01-c889d322f937")
+    @objid ("a37ab5d6-9f9a-42ad-84ac-054ae0f0ad4e")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("2a443e3d-478c-459d-815a-de965eb2d863")
+    @objid ("f804b15b-665c-4b75-8df0-fcdb8f50285c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("73769d9f-d652-4789-a36b-a3837244da23")
+    @objid ("c9569a6d-b6f2-4e6c-b768-02f466aeb24a")
     protected ProfileAssociationTerminateServicesSwConcurrentResource(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("e651dc0f-6ff9-497b-957c-b8dd06f2dcb8")
     public static final class MdaTypes {
-        @objid ("2752fdf0-582f-44d8-a137-789748e3c2f2")
+        @objid ("4b851b4d-b088-4a32-bd8f-e764f948eec9")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f8905447-f91b-4b15-bc77-c8caf47e373f")
+        @objid ("7c9e3e49-ce1b-4997-99a9-c6fe7b4b634c")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3ff53bbf-3890-4e23-b943-bee87c3963a9")
+        @objid ("f09751b1-40b6-4488-9cec-d11800edaee7")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("fcd5ab22-e305-447a-93de-648293398d96")
+        @objid ("e5aa7657-ecf8-48cb-b692-effe434f9a86")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "98ddb727-9756-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

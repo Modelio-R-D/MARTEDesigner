@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("32bf79bd-71b8-42f8-b66d-0567c03b4814")
 public class ProfileAssociationManagedMemoriesHwStorageManagerHwMemory {
-    @objid ("a993e2d3-d1c9-4ba7-91d6-ba5c57dbaf21")
+    @objid ("8c43336a-cff9-48e3-9cb5-6bdd6d21cb28")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_managedMemories_HwStorageManager_HwMemory";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("105d9a9e-80e6-4a71-a7f4-fa6c1158bdb2")
+    @objid ("78d64adf-2ec5-42ac-b422-02dc78c3fc0d")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_managedMemories_HwStorageManager_HwMemory >>. 
+     * Tells whether a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_managedMemories_HwStorageManager_HwMemory >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("a9f7d86b-eca6-476e-b15f-e00e147cd2d0")
+    @objid ("a049d681-ca4c-4a78-9523-c1505a78a984")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationManagedMemoriesHwStorageManagerHwMemory.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationManagedMemoriesHwStorageManagerHwMemory {
      * 
      * @return a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory} proxy on the created {@link Dependency}.
      */
-    @objid ("f3b3764f-2425-4f01-8622-e8567a9d329a")
+    @objid ("7ae9e6fa-a4a3-4cec-997c-7e9333db0a62")
     public static ProfileAssociationManagedMemoriesHwStorageManagerHwMemory create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationManagedMemoriesHwStorageManagerHwMemory.STEREOTYPE_NAME);
         return ProfileAssociationManagedMemoriesHwStorageManagerHwMemory.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory} proxy from a {@link Dependency} stereotyped << ProfileAssociation_managedMemories_HwStorageManager_HwMemory >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory} proxy from a {@link Dependency} stereotyped << ProfileAssociation_managedMemories_HwStorageManager_HwMemory >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory} proxy or <i>null</i>.
      */
-    @objid ("b43adcb4-c503-4c02-bc83-ec43ecb9b434")
+    @objid ("c4ab0dc5-2be7-4a81-bf1b-58d44161b762")
     public static ProfileAssociationManagedMemoriesHwStorageManagerHwMemory instantiate(final Dependency obj) {
         return ProfileAssociationManagedMemoriesHwStorageManagerHwMemory.canInstantiate(obj) ? new ProfileAssociationManagedMemoriesHwStorageManagerHwMemory(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationManagedMemoriesHwStorageManagerHwMemory {
      * @return a {@link ProfileAssociationManagedMemoriesHwStorageManagerHwMemory} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a16497d4-d5c8-4ceb-aea3-c0245ae96a8e")
+    @objid ("62abfbb0-dc91-4424-8744-16bb4359202e")
     public static ProfileAssociationManagedMemoriesHwStorageManagerHwMemory safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationManagedMemoriesHwStorageManagerHwMemory.canInstantiate(obj))
         	return new ProfileAssociationManagedMemoriesHwStorageManagerHwMemory(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationManagedMemoriesHwStorageManagerHwMemory {
         	throw new IllegalArgumentException("ProfileAssociationManagedMemoriesHwStorageManagerHwMemory: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fa3acbf4-3154-47d4-bef4-74e94b7b55f0")
+    @objid ("0304b1cb-be16-4256-94bf-fceeaf489582")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationManagedMemoriesHwStorageManagerHwMemory {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("a50f3d30-8fbd-4547-a076-2fe0cfdfb175")
+    @objid ("edf673ed-6833-4f63-893d-874b2bf08af5")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("e16a7df2-3f09-4b08-ba0a-cb5bc130a9a4")
+    @objid ("f66c6bcb-1058-44c3-917b-e9743005b955")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("8b733bb7-986b-4926-be4d-bca557dabb5a")
+    @objid ("8a115cc2-f10f-4775-8ef3-779ff497ce7d")
     protected ProfileAssociationManagedMemoriesHwStorageManagerHwMemory(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("0caaff36-be2e-458a-b6b0-c86533f5e217")
     public static final class MdaTypes {
-        @objid ("ca2ea8ea-3a2c-4f48-9a4c-dbce84aa4924")
+        @objid ("7d7729d3-e6cf-4fdf-bb19-e4a0755ecdd2")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b91528a5-a7cc-4365-a17f-dc90ab1359f8")
+        @objid ("01903f73-6017-4aeb-a300-7734f6a5f01d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("2aca4c23-a09c-45c0-910d-b203e752e14b")
+        @objid ("78b10c36-7ea8-4c49-8c24-2aa3792b66ec")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("16062d60-965e-4147-b454-d323503110ab")
+        @objid ("818002d5-e22c-4a45-a4d3-52740561f13f")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "cd8c181d-936b-11e0-b960-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

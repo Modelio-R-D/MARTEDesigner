@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_annexes_rsm.standard.connectorend;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("338b838a-87d9-4833-80b3-88a1a27f079d")
 public class ShapedConnectorEnd {
-    @objid ("18426d22-cded-46f5-aa81-eb62ca7a3d1b")
+    @objid ("b70d40ff-96ed-408f-829e-6fc6c3c3ff1b")
     public static final String STEREOTYPE_NAME = "Shaped_ConnectorEnd";
 
-    @objid ("3890551c-1988-4f5d-a9e8-9572120495dc")
+    @objid ("5550a76c-e8d3-482c-aaaa-2f2477a55003")
     public static final String SHAPED_CONNECTOREND_SHAPE_TAGTYPE = "Shaped_ConnectorEnd_shape";
 
     /**
      * The underlying {@link ConnectorEnd} represented by this proxy, never null.
      */
-    @objid ("9112075e-f916-4403-803e-8640686f3ed9")
+    @objid ("80cab034-05ea-47c6-a1df-a7465c5298bf")
     protected final ConnectorEnd elt;
 
     /**
-     * Tells whether a {@link ShapedConnectorEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link ConnectorEnd} stereotyped << Shaped_ConnectorEnd >>. 
+     * Tells whether a {@link ShapedConnectorEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link ConnectorEnd} stereotyped << Shaped_ConnectorEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1973690c-e932-4a16-8fd0-2f0701adb029")
+    @objid ("4adf0572-1d4d-468f-8db5-d1e416d2c187")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ConnectorEnd) && ((ConnectorEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ShapedConnectorEnd.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class ShapedConnectorEnd {
      * 
      * @return a {@link ShapedConnectorEnd} proxy on the created {@link ConnectorEnd}.
      */
-    @objid ("f8a6bdae-6242-409d-bf75-b2cb4ee11855")
+    @objid ("a2dc3f03-9dfb-4de5-92d0-ed1ffebe47da")
     public static ShapedConnectorEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ConnectorEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.ConnectorEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ShapedConnectorEnd.STEREOTYPE_NAME);
         return ShapedConnectorEnd.instantiate((ConnectorEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link ShapedConnectorEnd} proxy from a {@link ConnectorEnd} stereotyped << Shaped_ConnectorEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ShapedConnectorEnd} proxy from a {@link ConnectorEnd} stereotyped << Shaped_ConnectorEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ConnectorEnd
      * @return a {@link ShapedConnectorEnd} proxy or <i>null</i>.
      */
-    @objid ("b8de82f9-58d8-43f6-9dfd-d700e0de5abe")
+    @objid ("649eb4ff-cb80-4a70-a1ac-eb0d582c3c4d")
     public static ShapedConnectorEnd instantiate(final ConnectorEnd obj) {
         return ShapedConnectorEnd.canInstantiate(obj) ? new ShapedConnectorEnd(obj) : null;
     }
@@ -90,7 +90,7 @@ public class ShapedConnectorEnd {
      * @return a {@link ShapedConnectorEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("59f6f524-86cd-4aab-aab7-30ac8e821ee5")
+    @objid ("05a285cf-638c-4baf-8023-e95deef3afa8")
     public static ShapedConnectorEnd safeInstantiate(final ConnectorEnd obj) throws IllegalArgumentException {
         if (ShapedConnectorEnd.canInstantiate(obj))
         	return new ShapedConnectorEnd(obj);
@@ -98,7 +98,7 @@ public class ShapedConnectorEnd {
         	throw new IllegalArgumentException("ShapedConnectorEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("778a08f9-d9de-40c8-8d4f-781c952bb4b8")
+    @objid ("bd087941-e60b-47a8-890f-ba7e823c2613")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -118,7 +118,7 @@ public class ShapedConnectorEnd {
      * Get the underlying {@link ConnectorEnd}. 
      * @return the ConnectorEnd represented by this proxy, never null.
      */
-    @objid ("fadfbeda-7df6-4570-bfbf-1bd577b41016")
+    @objid ("b5e9bdc9-fe3b-4f93-86f5-1109d86f4002")
     public ConnectorEnd getElement() {
         return this.elt;
     }
@@ -128,12 +128,12 @@ public class ShapedConnectorEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("226dcfc6-13e6-4f6a-a12e-faef30cf70a4")
+    @objid ("5cc9b9c2-51f6-40f3-b17a-4bf5fb623590")
     public String getShaped_ConnectorEnd_shape() {
         return this.elt.getTagValue(ShapedConnectorEnd.MdaTypes.SHAPED_CONNECTOREND_SHAPE_TAGTYPE_ELT);
     }
 
-    @objid ("b3e0e823-74d8-49f8-9624-f039c26e2bdf")
+    @objid ("43a5aa8a-ed16-4403-a8d3-bfc2921f1c29")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class ShapedConnectorEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("71bc2bbf-437e-4bad-afd6-27491dfeacf2")
+    @objid ("81b6309d-73b5-46f7-a98c-c2da7f029b92")
     public void setShaped_ConnectorEnd_shape(final String value) {
         this.elt.putTagValue(ShapedConnectorEnd.MdaTypes.SHAPED_CONNECTOREND_SHAPE_TAGTYPE_ELT, value);
     }
 
-    @objid ("f1421b70-49fa-49c2-b466-575d2f5b954f")
+    @objid ("2e73d16e-8479-46d5-be1a-3b9e23c3ccdb")
     protected ShapedConnectorEnd(final ConnectorEnd elt) {
         this.elt = elt;
     }
 
     @objid ("423c6cef-d75e-4070-973e-0ef047dd577b")
     public static final class MdaTypes {
-        @objid ("9fea431e-64e9-4a92-9558-4fb724152801")
+        @objid ("fafb15f4-0bbc-45a5-b24b-34213b2699f6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("fd789edd-4bf4-4f32-a58d-c3e1519b8ea7")
+        @objid ("9f1433c2-2562-44c4-b31e-ec1c75ddd747")
         public static TagType SHAPED_CONNECTOREND_SHAPE_TAGTYPE_ELT;
 
-        @objid ("bd2cfe9b-5e07-45c9-86ef-5ac8b6958008")
+        @objid ("0c007fa3-4959-4d53-bf2b-07f49fcc6146")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("16063767-3b56-4d83-89a0-22afba801a4d")
+        @objid ("6d846570-0bfd-453a-9471-2270941555ab")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("5781adbf-c196-4834-b85c-517c42b98bf7")
+        @objid ("ffa1f38c-daa1-447b-9fb3-e66fe5801eda")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03da8ea2-0ccf-11df-8525-001302895b2b");
             SHAPED_CONNECTOREND_SHAPE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03da8ea3-0ccf-11df-8525-001302895b2b");

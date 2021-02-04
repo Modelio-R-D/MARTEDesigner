@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.collaborationuse;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("a6f870be-d25f-4405-b9a4-d3111e0169e5")
 public class ReleaseCollaborationUse extends GrServiceCollaborationUse {
-    @objid ("b63a177e-231e-4383-a461-f38bbf214b3d")
+    @objid ("9bd9fd08-29e0-4cbb-9c35-7601c0a01c00")
     public static final String STEREOTYPE_NAME = "Release_CollaborationUse";
 
     /**
-     * Tells whether a {@link ReleaseCollaborationUse proxy} can be instantiated from a {@link MObject} checking it is a {@link CollaborationUse} stereotyped << Release_CollaborationUse >>. 
+     * Tells whether a {@link ReleaseCollaborationUse proxy} can be instantiated from a {@link MObject} checking it is a {@link CollaborationUse} stereotyped << Release_CollaborationUse >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("43f31957-08f7-48cf-8a0d-805931da3eaf")
+    @objid ("2088ede9-44cf-48cd-bb57-7aa3964802dd")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof CollaborationUse) && ((CollaborationUse) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseCollaborationUse.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class ReleaseCollaborationUse extends GrServiceCollaborationUse {
      * 
      * @return a {@link ReleaseCollaborationUse} proxy on the created {@link CollaborationUse}.
      */
-    @objid ("45f6f91e-2503-43cd-9d4f-e55b5832f1de")
+    @objid ("8e7a990c-e0db-44df-bccf-b71bda610459")
     public static ReleaseCollaborationUse create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("CollaborationUse");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.CollaborationUse");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseCollaborationUse.STEREOTYPE_NAME);
         return ReleaseCollaborationUse.instantiate((CollaborationUse)e);
     }
 
     /**
-     * Tries to instantiate a {@link ReleaseCollaborationUse} proxy from a {@link CollaborationUse} stereotyped << Release_CollaborationUse >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ReleaseCollaborationUse} proxy from a {@link CollaborationUse} stereotyped << Release_CollaborationUse >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a CollaborationUse
      * @return a {@link ReleaseCollaborationUse} proxy or <i>null</i>.
      */
-    @objid ("4365ace9-d903-4501-9efc-e72fb4e6bd2f")
+    @objid ("ad7f5e4f-1dab-4148-a582-00d2c8469c60")
     public static ReleaseCollaborationUse instantiate(final CollaborationUse obj) {
         return ReleaseCollaborationUse.canInstantiate(obj) ? new ReleaseCollaborationUse(obj) : null;
     }
@@ -81,7 +81,7 @@ public class ReleaseCollaborationUse extends GrServiceCollaborationUse {
      * @return a {@link ReleaseCollaborationUse} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a114a04e-083c-4338-8cb4-71f7e706348b")
+    @objid ("2a80201e-d417-46f7-8262-df7324bcb2f7")
     public static ReleaseCollaborationUse safeInstantiate(final CollaborationUse obj) throws IllegalArgumentException {
         if (ReleaseCollaborationUse.canInstantiate(obj))
         	return new ReleaseCollaborationUse(obj);
@@ -89,7 +89,7 @@ public class ReleaseCollaborationUse extends GrServiceCollaborationUse {
         	throw new IllegalArgumentException("ReleaseCollaborationUse: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("57e469ae-bc4b-4cbc-a14b-4cab7ad0b7a4")
+    @objid ("24cbedd2-03b5-4f0a-b28f-ccb6284d24ff")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class ReleaseCollaborationUse extends GrServiceCollaborationUse {
      * Get the underlying {@link CollaborationUse}. 
      * @return the CollaborationUse represented by this proxy, never null.
      */
-    @objid ("9e4c69cd-38e6-4ce1-a233-c4ccd80aa3c1")
+    @objid ("7a876113-b9be-421a-ad83-5d4c139e2dd0")
     @Override
     public CollaborationUse getElement() {
         return (CollaborationUse)super.getElement();
     }
 
-    @objid ("c2a878ef-8526-49bc-b47f-aee7bb0cd27a")
+    @objid ("7f937274-6cd3-4f18-9799-facbedb48592")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("c6e375a1-a3e5-4114-9045-80d44963f895")
+    @objid ("f2c908aa-e453-4e10-9388-089db1d7f843")
     protected ReleaseCollaborationUse(final CollaborationUse elt) {
         super(elt);
     }
 
     @objid ("7071420b-7ec3-4d56-9a3f-5fa6cff9f783")
     public static final class MdaTypes {
-        @objid ("e1650b46-ba34-49f2-be29-32613c1e36ec")
+        @objid ("a905966c-4a99-4040-bb0f-f5989f8afbac")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f0e11579-8f60-47cf-a1b2-681d6ed87598")
+        @objid ("57ed222d-d0cd-4904-b1e3-dd9cfab323ff")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3cd79e83-36a7-4f3f-8ba3-97bf9fdb5597")
+        @objid ("3be1dc4d-129e-4e92-8c5d-691d17225623")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("78b5c04b-d88c-4087-844e-7ec1474149f1")
+        @objid ("1b6561ab-b429-4fae-8048-c22e000da147")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "4c4fe163-0f30-11df-8c52-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

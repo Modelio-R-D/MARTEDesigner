@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.link;
 
@@ -33,36 +33,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c3479289-0935-4c52-a911-a91966379894")
 public class HwRAMLink extends HwMemoryLink {
-    @objid ("2dc47fc5-2747-4469-8772-467f2e518d4f")
+    @objid ("ef48a04c-62bc-4f43-919d-9e2e95ca14fb")
     public static final String STEREOTYPE_NAME = "HwRAM_Link";
 
-    @objid ("2c6ee8f7-b7a9-4bb0-bf86-8eb9a6230de8")
+    @objid ("7a5f2642-e5fc-404b-acdf-b45128c78d38")
     public static final String HWRAM_LINK_ISNONVOLATILE_TAGTYPE = "HwRAM_Link_isNonVolatile";
 
-    @objid ("f1214578-3d70-4f9a-9115-a0d400f3c2f8")
+    @objid ("865a8589-ebf0-4269-9dd6-1085dedfae21")
     public static final String HWRAM_LINK_ISSTATIC_TAGTYPE = "HwRAM_Link_isStatic";
 
-    @objid ("775a4dfe-e0a4-4d7c-a35a-289aa57df4f7")
+    @objid ("bbea32c4-8d07-45cb-bad6-d1a111682eba")
     public static final String HWRAM_LINK_ISSYNCHRONOUS_TAGTYPE = "HwRAM_Link_isSynchronous";
 
-    @objid ("66825ac1-bff9-4237-81b0-82a49913dd32")
+    @objid ("ec895fc9-d246-44b7-9c98-f8d9016d8375")
     public static final String HWRAM_LINK_ORGANIZATION_TAGTYPE = "HwRAM_Link_organization";
 
-    @objid ("5329f5d3-0f73-43f1-ab61-3d695ac62f9a")
+    @objid ("77c66b49-40dc-4d8b-9ac9-f398a37e70dd")
     public static final String HWRAM_LINK_REPL_POLICY_TAGTYPE = "HwRAM_Link_repl_Policy";
 
-    @objid ("143d6901-0eb1-4007-846b-d005ce29ea76")
+    @objid ("8edd6ecc-775b-41e9-82e8-0f6eafd63b7f")
     public static final String HWRAM_LINK_WRITEPOLICY_TAGTYPE = "HwRAM_Link_writePolicy";
 
     /**
-     * Tells whether a {@link HwRAMLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwRAM_Link >>. 
+     * Tells whether a {@link HwRAMLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwRAM_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("62402ff7-f81e-41a9-9bcb-30f339f7c17a")
+    @objid ("93047add-d970-4b5f-9218-d0772db2f229")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwRAMLink.STEREOTYPE_NAME));
     }
@@ -72,21 +72,21 @@ public class HwRAMLink extends HwMemoryLink {
      * 
      * @return a {@link HwRAMLink} proxy on the created {@link Link}.
      */
-    @objid ("73ce4617-94b9-4e98-a8e7-440c6db13512")
+    @objid ("2c13618c-6587-411f-a5ec-c234f1a14d60")
     public static HwRAMLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwRAMLink.STEREOTYPE_NAME);
         return HwRAMLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwRAMLink} proxy from a {@link Link} stereotyped << HwRAM_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwRAMLink} proxy from a {@link Link} stereotyped << HwRAM_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link HwRAMLink} proxy or <i>null</i>.
      */
-    @objid ("dd154c03-1817-4b0e-957a-6be6ad7a0834")
+    @objid ("649a6711-96cd-4f7d-b68d-f28a1d9e290e")
     public static HwRAMLink instantiate(final Link obj) {
         return HwRAMLink.canInstantiate(obj) ? new HwRAMLink(obj) : null;
     }
@@ -99,7 +99,7 @@ public class HwRAMLink extends HwMemoryLink {
      * @return a {@link HwRAMLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("255311c9-0684-438b-af4e-096b5b589b20")
+    @objid ("8915cf90-e14d-4e86-9f1c-7a2462a9616e")
     public static HwRAMLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwRAMLink.canInstantiate(obj))
         	return new HwRAMLink(obj);
@@ -107,7 +107,7 @@ public class HwRAMLink extends HwMemoryLink {
         	throw new IllegalArgumentException("HwRAMLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f1cdf3e7-377e-4a3b-9ed2-21974383cc14")
+    @objid ("0cad1f24-4ffd-4804-85df-29a624a2ada3")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -127,7 +127,7 @@ public class HwRAMLink extends HwMemoryLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("231c5200-311e-443d-9002-3f9cedc0bf71")
+    @objid ("c16aaa8a-1b14-4fc3-8afb-b5e82befbf27")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -138,7 +138,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e9a89f68-b1da-4683-ae49-1405cd4b85dd")
+    @objid ("32121c1b-fe5e-41dc-972b-52d9a94d8c96")
     public String getHwRAM_Link_organization() {
         return this.elt.getTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -148,7 +148,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f28ea583-64c6-4176-9d33-60541d17b99e")
+    @objid ("85cb4064-6306-4446-8500-aca25bf12f42")
     public String getHwRAM_Link_repl_Policy() {
         return this.elt.getTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_REPL_POLICY_TAGTYPE_ELT);
     }
@@ -158,12 +158,12 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("520626cc-03e9-4dc9-bfe3-b15d0c20fadf")
+    @objid ("dd14d8bd-ccc3-45be-9406-84c081ec3714")
     public String getHwRAM_Link_writePolicy() {
         return this.elt.getTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_WRITEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("9f29b241-74c7-491e-a56d-479720b56bd3")
+    @objid ("1c9ab789-5482-4f89-8de4-6efa449c6d04")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -174,7 +174,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1f73eacc-9c8e-440e-b4dd-855a7e645f1e")
+    @objid ("042d3140-eae6-4426-be6e-a5eeab4927f2")
     public boolean isHwRAM_Link_isNonVolatile() {
         return this.elt.isTagged(HwRAMLink.MdaTypes.HWRAM_LINK_ISNONVOLATILE_TAGTYPE_ELT);
     }
@@ -184,7 +184,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2f3708c9-548d-4454-9328-3d27de7f8e9d")
+    @objid ("d7950f9e-f6ce-4e59-a61f-2dfff1e9d6ca")
     public boolean isHwRAM_Link_isStatic() {
         return this.elt.isTagged(HwRAMLink.MdaTypes.HWRAM_LINK_ISSTATIC_TAGTYPE_ELT);
     }
@@ -194,7 +194,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5bc9563e-7113-45eb-b9f8-24277d3ba785")
+    @objid ("1bdf7a38-8306-4bc3-80af-68b45ae0bab1")
     public boolean isHwRAM_Link_isSynchronous() {
         return this.elt.isTagged(HwRAMLink.MdaTypes.HWRAM_LINK_ISSYNCHRONOUS_TAGTYPE_ELT);
     }
@@ -204,7 +204,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f4d51603-a9cc-4f02-94a5-e0a4582538e5")
+    @objid ("e5355288-816d-43c4-a806-dced4d7ea3d6")
     public void setHwRAM_Link_isNonVolatile(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwRAMLink.MdaTypes.HWRAM_LINK_ISNONVOLATILE_TAGTYPE_ELT, this.elt);
@@ -217,7 +217,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("db7462d3-fcc2-4246-8840-2394c0faaf75")
+    @objid ("11e2f59d-a40d-43d5-97b3-997be07660ce")
     public void setHwRAM_Link_isStatic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwRAMLink.MdaTypes.HWRAM_LINK_ISSTATIC_TAGTYPE_ELT, this.elt);
@@ -230,7 +230,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("58810e52-68b8-432a-bd20-3ded4e07108e")
+    @objid ("30e5a4d4-baf0-4115-bda3-4e3682677bfb")
     public void setHwRAM_Link_isSynchronous(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwRAMLink.MdaTypes.HWRAM_LINK_ISSYNCHRONOUS_TAGTYPE_ELT, this.elt);
@@ -243,7 +243,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("916a5b27-f1bd-4cc1-b982-7ce24beb2607")
+    @objid ("0047b3ea-d9bb-4191-b774-20b746a2e821")
     public void setHwRAM_Link_organization(final String value) {
         this.elt.putTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -253,7 +253,7 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8e13016f-0b00-485c-9d72-f4332f7ad69e")
+    @objid ("7b237831-76f5-4647-be97-59de090569e4")
     public void setHwRAM_Link_repl_Policy(final String value) {
         this.elt.putTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_REPL_POLICY_TAGTYPE_ELT, value);
     }
@@ -263,46 +263,46 @@ public class HwRAMLink extends HwMemoryLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("047191bc-596d-4d75-a53a-19813caf61ac")
+    @objid ("c171d450-e4d6-41e8-b01f-b7ebfc32414b")
     public void setHwRAM_Link_writePolicy(final String value) {
         this.elt.putTagValue(HwRAMLink.MdaTypes.HWRAM_LINK_WRITEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("6832de8a-848b-4ffe-ac04-5d639c6eea9a")
+    @objid ("c4b69c74-ea2d-4c10-921f-7f2ea5aba677")
     protected HwRAMLink(final Link elt) {
         super(elt);
     }
 
     @objid ("fae5df8d-a3c8-4835-ae82-088a51c9943a")
     public static final class MdaTypes {
-        @objid ("92705955-40ec-4503-a97a-e8f543e363cb")
+        @objid ("c2941d28-cd41-4d08-9789-04e3bdfa6d1c")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7cb71aaa-aa52-4e47-a450-e9270cbdcff6")
+        @objid ("bbae2743-7a9a-49e5-b0a9-a44056979bca")
         public static TagType HWRAM_LINK_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("b9ce2166-6653-423d-9c09-82cc7c1fe5f2")
+        @objid ("8afd5701-a7c5-42b6-865c-20267b0bd51a")
         public static TagType HWRAM_LINK_REPL_POLICY_TAGTYPE_ELT;
 
-        @objid ("9090416c-e92b-41fe-bfd3-f9ad51979860")
+        @objid ("c009351c-471a-48b7-94fb-049f01a200cd")
         public static TagType HWRAM_LINK_WRITEPOLICY_TAGTYPE_ELT;
 
-        @objid ("0606be17-f4ba-4b9e-8519-1e9006868ae6")
+        @objid ("b6d2398e-6227-4d4f-a517-5b7af698be0b")
         public static TagType HWRAM_LINK_ISSYNCHRONOUS_TAGTYPE_ELT;
 
-        @objid ("229af06e-7fa5-455b-87e0-20a5cf1d84a6")
+        @objid ("fb8a03a5-d210-4fe1-a537-fb4061b40c66")
         public static TagType HWRAM_LINK_ISSTATIC_TAGTYPE_ELT;
 
-        @objid ("22daa9b2-33be-4aab-bde6-b49cf7547d27")
+        @objid ("049d3d91-25f1-4ca3-bfdb-028a6a3e466f")
         public static TagType HWRAM_LINK_ISNONVOLATILE_TAGTYPE_ELT;
 
-        @objid ("cb1d3cf3-2e5c-497d-b2af-2e8ef9e27cfd")
+        @objid ("006a53d4-c5ad-411f-9b24-4815aa2bc481")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("19dfe5c7-876e-4497-8a31-5203cfce90b1")
+        @objid ("06785717-2f10-4c4e-be9a-ff2f765c2583")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("ee1a0c53-7e81-49b8-a63f-5d888944c724")
+        @objid ("021f2ae7-59c6-45b1-aac6-9b86165c0025")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01593e72-0ccf-11df-8525-001302895b2b");
             HWRAM_LINK_ORGANIZATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "015ba0c4-0ccf-11df-8525-001302895b2b");

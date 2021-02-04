@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwstoragemanager.standard.link;
 
@@ -35,39 +35,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c787dd95-4720-429e-82ea-8e1e1b74cc80")
 public class HwStorageManagerLink extends StorageResourceLink {
-    @objid ("8e18f321-c7db-4831-a6ab-416870c86465")
+    @objid ("edd8d074-5ded-4a71-8049-b865f2cff086")
     public static final String STEREOTYPE_NAME = "HwStorageManager_Link";
 
-    @objid ("280e34cc-38e7-431d-a3b3-f7711fcebfe4")
+    @objid ("fd661080-79aa-4e77-b306-feca4bb597f6")
     public static final String HWSTORAGEMANAGER_LINK_DESCRIPTION_TAGTYPE = "HwStorageManager_Link_description";
 
-    @objid ("464056ff-25aa-41e8-a08e-db33b2856b84")
+    @objid ("8c80f72d-946d-40f0-8250-85ca3d5a847e")
     public static final String HWSTORAGEMANAGER_LINK_ENDPOINTS_TAGTYPE = "HwStorageManager_Link_endPoints";
 
-    @objid ("249ce852-5e98-4fd3-95a7-4a42a18578cf")
+    @objid ("156a95af-c1f8-4af3-87f4-80198b90a209")
     public static final String HWSTORAGEMANAGER_LINK_FREQUENCY_TAGTYPE = "HwStorageManager_Link_frequency";
 
-    @objid ("5605f7c7-5a6b-4f32-b387-335d31de1722")
+    @objid ("86bd0956-367c-4b11-be74-46dadf34443d")
     public static final String HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES_TAGTYPE = "HwStorageManager_Link_managedMemories";
 
-    @objid ("84a3a338-d07a-4d72-87f2-f4514941471c")
+    @objid ("ae512e2c-c33a-4d45-9247-4aa475022355")
     public static final String HWSTORAGEMANAGER_LINK_OWNEDHW_TAGTYPE = "HwStorageManager_Link_ownedHW";
 
-    @objid ("b6bdb815-7264-453d-9878-3885a4beddb4")
+    @objid ("19ae4510-5e12-4e91-b99e-badf16b6e34c")
     public static final String HWSTORAGEMANAGER_LINK_P_HW_SERVICES_TAGTYPE = "HwStorageManager_Link_p_HW_Services";
 
-    @objid ("9ae6ab1a-7f72-4da0-8990-2a279d9e1fc5")
+    @objid ("f13e4581-35cf-4020-a8ae-63f29f908fed")
     public static final String HWSTORAGEMANAGER_LINK_R_HW_SERVICES_TAGTYPE = "HwStorageManager_Link_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwStorageManagerLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwStorageManager_Link >>. 
+     * Tells whether a {@link HwStorageManagerLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwStorageManager_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8c5563de-051c-4701-86f1-5e999b7be477")
+    @objid ("aa4fbc7a-33fa-4881-85d1-967586363d61")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwStorageManagerLink.STEREOTYPE_NAME));
     }
@@ -77,21 +77,21 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * 
      * @return a {@link HwStorageManagerLink} proxy on the created {@link Link}.
      */
-    @objid ("1d32000a-e170-450c-bccc-58e8c817946d")
+    @objid ("c7031149-534c-4f2e-80d2-6d26127f15cf")
     public static HwStorageManagerLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwStorageManagerLink.STEREOTYPE_NAME);
         return HwStorageManagerLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwStorageManagerLink} proxy from a {@link Link} stereotyped << HwStorageManager_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwStorageManagerLink} proxy from a {@link Link} stereotyped << HwStorageManager_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link HwStorageManagerLink} proxy or <i>null</i>.
      */
-    @objid ("7e1dc6cc-5edf-4b64-9208-d3ba0ec68b41")
+    @objid ("1ffedb06-2e0c-44e6-93fb-da18334db758")
     public static HwStorageManagerLink instantiate(final Link obj) {
         return HwStorageManagerLink.canInstantiate(obj) ? new HwStorageManagerLink(obj) : null;
     }
@@ -104,7 +104,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * @return a {@link HwStorageManagerLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("351ef09a-e49c-4ac4-b700-06609f93a3d4")
+    @objid ("bdd17df0-3cf5-4b60-a276-e91e940f280d")
     public static HwStorageManagerLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwStorageManagerLink.canInstantiate(obj))
         	return new HwStorageManagerLink(obj);
@@ -112,7 +112,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
         	throw new IllegalArgumentException("HwStorageManagerLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b402ea99-4964-4250-8107-e57482b5be28")
+    @objid ("2a5a0581-48e8-4f91-adf9-0510859ca34c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -132,7 +132,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("cd9af1a6-3b82-45a1-ab13-c069cf946e83")
+    @objid ("54552548-503b-487d-92ba-dcf6d6e3b5d3")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -143,7 +143,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a216f251-9c5a-4eb8-b664-68a2e09a2b86")
+    @objid ("e9a28cb3-f111-45fb-9a67-82159bff6209")
     public String getHwStorageManager_Link_description() {
         return this.elt.getTagValue(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -153,7 +153,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bccae00b-bfef-4f11-8981-3d0927a5f920")
+    @objid ("023427f2-354a-406a-a827-933adfd37b8f")
     public List<String> getHwStorageManager_Link_endPoints() {
         return this.elt.getTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -163,7 +163,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b9a4f17b-dae7-4b73-9e8e-715c59925acf")
+    @objid ("5319306d-071a-4f26-ad2e-e9e195a42681")
     public String getHwStorageManager_Link_frequency() {
         return this.elt.getTagValue(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_FREQUENCY_TAGTYPE_ELT);
     }
@@ -173,7 +173,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("fd15ee63-5a3b-4156-a412-6394d324891c")
+    @objid ("1de55dfb-7299-40c5-8f9b-da59248eb626")
     public List<String> getHwStorageManager_Link_managedMemories() {
         return this.elt.getTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("7208d043-04f8-4637-a5e8-6024637e2d29")
+    @objid ("c0c9cf84-aeb8-4e7f-98df-0236f7a5e9c8")
     public List<String> getHwStorageManager_Link_ownedHW() {
         return this.elt.getTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_OWNEDHW_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4cffd3b6-1532-4970-9dd6-65d40b651a36")
+    @objid ("3b0214c6-e3ee-415e-a054-80956b438812")
     public List<String> getHwStorageManager_Link_p_HW_Services() {
         return this.elt.getTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -203,12 +203,12 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("2f5f4c37-d11f-4f75-a64c-fde06efda775")
+    @objid ("4eacf24c-d004-41d8-a926-601111eb6e95")
     public List<String> getHwStorageManager_Link_r_HW_Services() {
         return this.elt.getTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("336bbbe9-36b7-432b-9637-15e498630ed6")
+    @objid ("d4a5221d-567c-43fe-a883-deb78c86dbcb")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -219,7 +219,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5af3d308-3c92-4cbf-a190-dd488f3b80b8")
+    @objid ("d6c16e64-4138-4d5b-8aea-2ec15ba7d5e8")
     public void setHwStorageManager_Link_description(final String value) {
         this.elt.putTagValue(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -229,7 +229,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("aa566f86-d28a-4251-9ea0-6bad6c90b800")
+    @objid ("e21c75bf-678b-43d0-a4a7-1f2b0d1f50b3")
     public void setHwStorageManager_Link_endPoints(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -239,7 +239,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5f1579ee-7d47-4c9e-b415-bb461197b934")
+    @objid ("0f62d3da-5460-4994-bc79-e9252d5d4aac")
     public void setHwStorageManager_Link_frequency(final String value) {
         this.elt.putTagValue(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -249,7 +249,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("180425d8-9119-4097-bae7-37db9fe7fa33")
+    @objid ("d56aabbb-ca46-4bc2-945d-fe156f02c1b1")
     public void setHwStorageManager_Link_managedMemories(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES_TAGTYPE_ELT, values);
     }
@@ -259,7 +259,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fd504b12-dc59-4258-a969-7c4ea5774e2d")
+    @objid ("042834ad-b743-4ef7-b7bb-39f4bdcbc4dc")
     public void setHwStorageManager_Link_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -269,7 +269,7 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0a86a621-df0c-4c3a-9945-0c84953ebbaf")
+    @objid ("21849a5e-f8dc-4aff-9bf9-0588bdbcfbd3")
     public void setHwStorageManager_Link_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -279,49 +279,49 @@ public class HwStorageManagerLink extends StorageResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9469b460-10e6-4871-a017-aceba4f8f3a3")
+    @objid ("8ee61a39-2c31-4352-820d-4437217c7528")
     public void setHwStorageManager_Link_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerLink.MdaTypes.HWSTORAGEMANAGER_LINK_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("6156f009-7910-4cdf-8893-82552decd9ac")
+    @objid ("51fe31e6-2f0b-4e73-bc72-3f04e025b595")
     protected HwStorageManagerLink(final Link elt) {
         super(elt);
     }
 
     @objid ("792beefe-c4ab-4949-a1c8-0c9e0e4862a5")
     public static final class MdaTypes {
-        @objid ("9fddbc6e-0107-4cc4-9656-68387b960fe8")
+        @objid ("4d8c7798-99c0-42d1-90f1-57d91937b3dc")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f3508577-6759-4b94-9d53-2905a0d651b7")
+        @objid ("4980f96f-3d6e-4e43-a434-c75399f45887")
         public static TagType HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES_TAGTYPE_ELT;
 
-        @objid ("d9355161-8cc5-4398-922e-bbcbbf5828c9")
+        @objid ("32d8670b-4a57-4c86-9382-19abec7c25f5")
         public static TagType HWSTORAGEMANAGER_LINK_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("0616a5f0-ba27-432e-9024-1a8394cb0de3")
+        @objid ("d44d97e4-d1aa-4f23-b01d-075d7e4711f3")
         public static TagType HWSTORAGEMANAGER_LINK_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("edc2951c-bd8a-425e-a9cc-7b0199fa0605")
+        @objid ("6ed9e4bd-1959-4e55-bbb3-c90063bcd21b")
         public static TagType HWSTORAGEMANAGER_LINK_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("de3be769-d096-4336-9fa2-a5478b1580d2")
+        @objid ("ea124c14-4ff0-4fa0-affc-9923da289909")
         public static TagType HWSTORAGEMANAGER_LINK_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("fd86a99e-c908-4adb-8b83-d4a2a50a1ae6")
+        @objid ("9ab4a6c1-adc7-4389-a392-07f80fe10f78")
         public static TagType HWSTORAGEMANAGER_LINK_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("877224c3-94bc-49ff-8ce0-08c39aeec515")
+        @objid ("20b8e739-4a46-4b0a-a6ac-23ad7add6bc3")
         public static TagType HWSTORAGEMANAGER_LINK_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("b70d99e9-97a8-4ef2-b75b-c9fa3bea39e1")
+        @objid ("ce2228a4-59d4-4f59-ae61-9a9585665102")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("59c90d79-fef0-4b63-9cb6-449ec343896c")
+        @objid ("92966aab-8760-40d7-9019-3e175d4f82e2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b6202b2b-0bd9-4bbb-90ef-13923ae2dcf0")
+        @objid ("b62384c3-6f37-41bf-b7ab-3e151fa66a06")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "017115a6-0ccf-11df-8525-001302895b2b");
             HWSTORAGEMANAGER_LINK_MANAGEDMEMORIES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "017377f9-0ccf-11df-8525-001302895b2b");

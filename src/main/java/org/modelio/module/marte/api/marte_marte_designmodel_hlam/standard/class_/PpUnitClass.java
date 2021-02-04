@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hlam.standard.class_;
 
@@ -33,30 +33,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("8c4f0308-0c2e-4513-89e2-3c4a7342a360")
 public class PpUnitClass {
-    @objid ("9d6519fd-2cd6-45d6-bb01-1b886b3deede")
+    @objid ("8aefecaa-7692-471d-8c4f-3f6cb716aa22")
     public static final String STEREOTYPE_NAME = "PpUnit_Class";
 
-    @objid ("4eb7944f-2bb4-4204-acca-debaac9c9184")
+    @objid ("2ca9e1ae-9002-4ca2-ac4d-8f9d34de6d17")
     public static final String PPUNIT_CLASS_CONCPOLICY_TAGTYPE = "PpUnit_Class_concPolicy";
 
-    @objid ("7a53d6ae-2016-4796-8a7a-56401f0d2d33")
+    @objid ("2f6312eb-96af-4754-941b-467c3400ef6b")
     public static final String PPUNIT_CLASS_MEMORYSIZE_TAGTYPE = "PpUnit_Class_memorySize";
 
     /**
      * The underlying {@link Class} represented by this proxy, never null.
      */
-    @objid ("4394fd1b-5ff4-41f4-b787-d57fdf4a6a7c")
+    @objid ("6e7e9b1d-1311-4362-94ef-8a5472825fa4")
     protected final Class elt;
 
     /**
-     * Tells whether a {@link PpUnitClass proxy} can be instantiated from a {@link MObject} checking it is a {@link Class} stereotyped << PpUnit_Class >>. 
+     * Tells whether a {@link PpUnitClass proxy} can be instantiated from a {@link MObject} checking it is a {@link Class} stereotyped << PpUnit_Class >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("7b45e7bf-2795-4a2d-9f8a-4571a0b21f14")
+    @objid ("c6b29b13-70e8-4e4f-bf0c-8e8783c4c1a4")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Class) && ((Class) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, PpUnitClass.STEREOTYPE_NAME));
     }
@@ -66,21 +66,21 @@ public class PpUnitClass {
      * 
      * @return a {@link PpUnitClass} proxy on the created {@link Class}.
      */
-    @objid ("641cbf87-913e-49fb-b26d-7ad05afac169")
+    @objid ("8634dfb2-ba5c-4003-8ebf-f69e6b80ab38")
     public static PpUnitClass create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Class");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Class");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, PpUnitClass.STEREOTYPE_NAME);
         return PpUnitClass.instantiate((Class)e);
     }
 
     /**
-     * Tries to instantiate a {@link PpUnitClass} proxy from a {@link Class} stereotyped << PpUnit_Class >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link PpUnitClass} proxy from a {@link Class} stereotyped << PpUnit_Class >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Class
      * @return a {@link PpUnitClass} proxy or <i>null</i>.
      */
-    @objid ("5a1507e1-a53a-4f46-8c3c-46c8576409bf")
+    @objid ("606ba737-b794-40ef-9b1e-be9928d85854")
     public static PpUnitClass instantiate(final Class obj) {
         return PpUnitClass.canInstantiate(obj) ? new PpUnitClass(obj) : null;
     }
@@ -93,7 +93,7 @@ public class PpUnitClass {
      * @return a {@link PpUnitClass} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4cc6991f-3f69-4e9f-899a-8537f8c6f8f4")
+    @objid ("cbf02b2a-e6b8-4020-b9e2-d0856ec9d552")
     public static PpUnitClass safeInstantiate(final Class obj) throws IllegalArgumentException {
         if (PpUnitClass.canInstantiate(obj))
         	return new PpUnitClass(obj);
@@ -101,7 +101,7 @@ public class PpUnitClass {
         	throw new IllegalArgumentException("PpUnitClass: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("860f58cc-d331-4352-b730-8a887f66637b")
+    @objid ("c980ede2-fb8a-41e9-99ba-635d3c32cd8d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -121,7 +121,7 @@ public class PpUnitClass {
      * Get the underlying {@link Class}. 
      * @return the Class represented by this proxy, never null.
      */
-    @objid ("3f9ab098-bb1e-43db-ab56-413f7da182e0")
+    @objid ("937b6170-6047-41a6-8653-da7e6e6faa90")
     public Class getElement() {
         return this.elt;
     }
@@ -131,7 +131,7 @@ public class PpUnitClass {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("906f0c39-74a2-4e1f-8f1a-88f7e0c545ed")
+    @objid ("aa89b396-6f8c-408d-97cc-3ece7d144b52")
     public String getPpUnit_Class_concPolicy() {
         return this.elt.getTagValue(PpUnitClass.MdaTypes.PPUNIT_CLASS_CONCPOLICY_TAGTYPE_ELT);
     }
@@ -141,12 +141,12 @@ public class PpUnitClass {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("badc3e22-b266-460f-bf84-f5a082a80689")
+    @objid ("a60e5396-0418-41b3-a539-64fceebea2f6")
     public String getPpUnit_Class_memorySize() {
         return this.elt.getTagValue(PpUnitClass.MdaTypes.PPUNIT_CLASS_MEMORYSIZE_TAGTYPE_ELT);
     }
 
-    @objid ("384fb580-2c75-4ba0-b73a-0dec421eeafa")
+    @objid ("66619cf2-eee3-4efc-aa6c-ca6bfdf7443e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -157,7 +157,7 @@ public class PpUnitClass {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("acf2d54e-2a61-4e3f-9b7f-232ba501278d")
+    @objid ("c1e2f69f-fb48-453f-bcd7-9d75954cb104")
     public void setPpUnit_Class_concPolicy(final String value) {
         this.elt.putTagValue(PpUnitClass.MdaTypes.PPUNIT_CLASS_CONCPOLICY_TAGTYPE_ELT, value);
     }
@@ -167,34 +167,34 @@ public class PpUnitClass {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3c25abe2-8358-4bf2-9d81-9d90efe72109")
+    @objid ("7e18e758-cefa-42bb-963c-e4301da02ecc")
     public void setPpUnit_Class_memorySize(final String value) {
         this.elt.putTagValue(PpUnitClass.MdaTypes.PPUNIT_CLASS_MEMORYSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("9911a42a-1d85-4a54-a07e-a4182fa46c6d")
+    @objid ("7c37806a-a749-4bcd-a3df-a58f0be8429b")
     protected PpUnitClass(final Class elt) {
         this.elt = elt;
     }
 
     @objid ("5c2bdaf9-1055-4e56-a8c7-369c8de3fda0")
     public static final class MdaTypes {
-        @objid ("0333bad4-61f3-474f-9230-2864c070dd60")
+        @objid ("28333b8d-2964-42d6-86ed-68c006922253")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("db9fcbe9-fd9c-4595-b40c-06c52aebf14b")
+        @objid ("e4f97c1e-148f-4816-a5c0-5b6b164dd86f")
         public static TagType PPUNIT_CLASS_CONCPOLICY_TAGTYPE_ELT;
 
-        @objid ("5b0d2c14-9827-4258-9fa3-d7da49cb994c")
+        @objid ("fb023298-789b-4bf9-83f1-8776c6e6b1a7")
         public static TagType PPUNIT_CLASS_MEMORYSIZE_TAGTYPE_ELT;
 
-        @objid ("7887084c-acff-451f-b664-cddddcd29d69")
+        @objid ("a8e02f77-2341-4766-ae5e-457b3d7e16c9")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c2dc5bf2-0deb-4093-b4dd-eb8d222c1051")
+        @objid ("6b7f9d39-fc7d-4eb1-9e65-a2ca16772fcf")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("dffb4e18-3e92-43ba-b0e1-1b7534c3fd2b")
+        @objid ("938e3feb-3b26-4e91-91f8-6c271c4e6b38")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d2b2763b-0ce9-11df-b742-001302895b2b");
             PPUNIT_CLASS_CONCPOLICY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "d2b2763c-0ce9-11df-b742-001302895b2b");

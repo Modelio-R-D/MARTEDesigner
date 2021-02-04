@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.association;
 
@@ -33,21 +33,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f055055b-bd7e-4082-99aa-6eb94d9c676c")
 public class CommunicationEndPointAssociation extends ResourceAssociation {
-    @objid ("8a8b5f7e-88b1-42db-a0d8-5ff4be897f07")
+    @objid ("2d8a741a-0bdc-40b7-82ca-b18d5c10e513")
     public static final String STEREOTYPE_NAME = "CommunicationEndPoint_Association";
 
-    @objid ("be9e1fa7-fc5b-4b0b-9048-2dd9084f048a")
+    @objid ("bab48294-8712-40c5-89bc-79535f20a2cf")
     public static final String COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE_TAGTYPE = "CommunicationEndPoint_Association_packetSize";
 
     /**
-     * Tells whether a {@link CommunicationEndPointAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << CommunicationEndPoint_Association >>. 
+     * Tells whether a {@link CommunicationEndPointAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << CommunicationEndPoint_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b9d0fe2e-f503-44ea-95a2-c391827f2277")
+    @objid ("1e0147f0-c52b-4321-bcd0-cbf14282c00f")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointAssociation.STEREOTYPE_NAME));
     }
@@ -57,21 +57,21 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
      * 
      * @return a {@link CommunicationEndPointAssociation} proxy on the created {@link Association}.
      */
-    @objid ("931bd8c4-269f-413e-84f7-529e2d6cf374")
+    @objid ("773f28a2-93a9-445e-9ca1-df9f01e2aa7a")
     public static CommunicationEndPointAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointAssociation.STEREOTYPE_NAME);
         return CommunicationEndPointAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link CommunicationEndPointAssociation} proxy from a {@link Association} stereotyped << CommunicationEndPoint_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link CommunicationEndPointAssociation} proxy from a {@link Association} stereotyped << CommunicationEndPoint_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link CommunicationEndPointAssociation} proxy or <i>null</i>.
      */
-    @objid ("f1394bea-b9a9-4b03-97a7-ed55e0060562")
+    @objid ("0a4c5a93-4a9b-4b1b-b10a-77db45188089")
     public static CommunicationEndPointAssociation instantiate(final Association obj) {
         return CommunicationEndPointAssociation.canInstantiate(obj) ? new CommunicationEndPointAssociation(obj) : null;
     }
@@ -84,7 +84,7 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
      * @return a {@link CommunicationEndPointAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("82d85924-1d3d-4dd7-ae62-7f5f0f5aaaba")
+    @objid ("29b5b229-e663-4279-9a97-27b12ab71ed3")
     public static CommunicationEndPointAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (CommunicationEndPointAssociation.canInstantiate(obj))
         	return new CommunicationEndPointAssociation(obj);
@@ -92,7 +92,7 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
         	throw new IllegalArgumentException("CommunicationEndPointAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("11d6933c-7680-4c58-b9bf-567f0762d2ca")
+    @objid ("999f8466-a918-4366-8d72-cabd32d4809b")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6cc11d75-9a73-470e-b5bf-062faa378dcc")
+    @objid ("f8d7c7f8-0a2f-4bab-8512-1246dfd2dbc6")
     public String getCommunicationEndPoint_Association_packetSize() {
         return this.elt.getTagValue(CommunicationEndPointAssociation.MdaTypes.COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -122,13 +122,13 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("35e31661-81bc-44e6-b8ae-c8c98f02de7a")
+    @objid ("ac2c69f0-668b-42b7-820d-efad90f949b3")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
     }
 
-    @objid ("c372a804-efd2-4384-8f35-7ada9f40158a")
+    @objid ("0279af30-830b-413b-9598-82c8399fc77a")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +139,31 @@ public class CommunicationEndPointAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("72c83a7f-375a-4300-97e8-108fb43667f7")
+    @objid ("9d3ebf28-8fc5-4dd3-b807-232d3017c3a6")
     public void setCommunicationEndPoint_Association_packetSize(final String value) {
         this.elt.putTagValue(CommunicationEndPointAssociation.MdaTypes.COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("4aed40ee-8df1-4f93-86e7-590849719a10")
+    @objid ("98f208df-50c9-4f90-9f04-74d02bdd62e2")
     protected CommunicationEndPointAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("3d4380b0-c558-4af3-aff8-334c5bae1241")
     public static final class MdaTypes {
-        @objid ("79fd3299-ecc6-4472-bcb7-34b07b48024b")
+        @objid ("4adc74ec-9a34-400e-9ee5-d18e4ca8cbb9")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b0aab049-2dd1-46b8-a8fe-7a818c5253aa")
+        @objid ("e2a2beeb-7199-4ca2-8ccd-3fbff0f824c7")
         public static TagType COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("09383ce2-0fa5-4f53-80b3-601dd3722833")
+        @objid ("a5807235-e189-45bf-a279-3cb01a2e4233")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8ac2ef1d-3be3-4826-a3fb-cdb146049462")
+        @objid ("cbf2b181-ec47-4f88-a607-a8fbb26f098f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("4061255d-ed11-474d-a307-732465443b55")
+        @objid ("5b3cfe21-5e8c-4d13-8d5a-fb9c45a7c182")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "a3e86d85-0f46-11df-8c52-0014222a9f79");
             COMMUNICATIONENDPOINT_ASSOCIATION_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "7cb845e5-0f47-11df-8c52-0014222a9f79");

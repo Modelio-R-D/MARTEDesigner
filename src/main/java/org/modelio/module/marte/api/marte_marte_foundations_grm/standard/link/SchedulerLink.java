@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.link;
 
@@ -34,42 +34,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f808ce72-3b99-4b35-bb23-3809cd8ebcfb")
 public class SchedulerLink extends ResourceLink {
-    @objid ("377b6c08-ce6f-4c13-9540-8d4f2624f9c0")
+    @objid ("d4c0cc28-0b86-4f5e-9433-555752ed78e0")
     public static final String STEREOTYPE_NAME = "Scheduler_Link";
 
-    @objid ("1edeea5d-6394-47f9-8baa-e86ea177b1fc")
+    @objid ("48d855b8-152b-42f7-9128-62ca2ede3c76")
     public static final String SCHEDULER_LINK_HOST_TAGTYPE = "Scheduler_Link_host";
 
-    @objid ("30e5f76c-fa43-4021-b22e-1cc619f0941c")
+    @objid ("2e44f7c6-afaa-46ce-88c2-08c815cb1f15")
     public static final String SCHEDULER_LINK_ISPREEMPTIBLE_TAGTYPE = "Scheduler_Link_isPreemptible";
 
-    @objid ("351e1340-0457-4176-bbd3-629ddb92e2dc")
+    @objid ("04993c5a-bbe0-4a01-ba90-e7ef9cc54799")
     public static final String SCHEDULER_LINK_OTHERSCHEDPOLICY_TAGTYPE = "Scheduler_Link_otherSchedPolicy";
 
-    @objid ("59b8ef7c-e4cf-488b-ad95-75066e32899e")
+    @objid ("84ff1704-1cbb-4e96-b5c4-cb0bdbf03022")
     public static final String SCHEDULER_LINK_PROCESSINGUNITS_TAGTYPE = "Scheduler_Link_processingUnits";
 
-    @objid ("2b891289-e8ab-4360-9870-fb22a8bd6c54")
+    @objid ("ceb72837-d989-4490-8512-e515b3634ddc")
     public static final String SCHEDULER_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE = "Scheduler_Link_protectedSharedResources";
 
-    @objid ("bab72039-ab1f-4ee9-a291-13e8a6f95e6e")
+    @objid ("3bbb63ed-988d-45b8-9993-abc63018e834")
     public static final String SCHEDULER_LINK_SCHEDPOLICY_TAGTYPE = "Scheduler_Link_schedPolicy";
 
-    @objid ("684c5067-de05-4c66-acd6-b645bdcbd171")
+    @objid ("c37399e8-0ef4-437b-827f-d4e92ce43a17")
     public static final String SCHEDULER_LINK_SCHEDULABLERESOURCES_TAGTYPE = "Scheduler_Link_schedulableResources";
 
-    @objid ("c9ad9272-bad4-4042-9c18-ed6fd0fc466b")
+    @objid ("b8bdab39-09f1-41cb-b921-eff8b2ef03d4")
     public static final String SCHEDULER_LINK_SCHEDULE_TAGTYPE = "Scheduler_Link_schedule";
 
     /**
-     * Tells whether a {@link SchedulerLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << Scheduler_Link >>. 
+     * Tells whether a {@link SchedulerLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << Scheduler_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("672b9865-d05d-4333-9e6d-ca7ab8f457d3")
+    @objid ("a7f5df0f-44b0-4812-88e6-6ff254b582c2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerLink.STEREOTYPE_NAME));
     }
@@ -79,21 +79,21 @@ public class SchedulerLink extends ResourceLink {
      * 
      * @return a {@link SchedulerLink} proxy on the created {@link Link}.
      */
-    @objid ("41d6662f-247a-4cb3-8b8c-091b6bed7fc3")
+    @objid ("e634a43a-1d28-431b-8665-b8c899b8a52e")
     public static SchedulerLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerLink.STEREOTYPE_NAME);
         return SchedulerLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link SchedulerLink} proxy from a {@link Link} stereotyped << Scheduler_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SchedulerLink} proxy from a {@link Link} stereotyped << Scheduler_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link SchedulerLink} proxy or <i>null</i>.
      */
-    @objid ("46505003-08cb-4f0a-ae5a-53f9236f0dfc")
+    @objid ("4f734137-048c-42a4-a94f-7813707cba80")
     public static SchedulerLink instantiate(final Link obj) {
         return SchedulerLink.canInstantiate(obj) ? new SchedulerLink(obj) : null;
     }
@@ -106,7 +106,7 @@ public class SchedulerLink extends ResourceLink {
      * @return a {@link SchedulerLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("cf3a3087-298f-4c81-a1a8-4fb311b5a7ce")
+    @objid ("53164994-7b38-49c0-9b66-480ad40385a8")
     public static SchedulerLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (SchedulerLink.canInstantiate(obj))
         	return new SchedulerLink(obj);
@@ -114,7 +114,7 @@ public class SchedulerLink extends ResourceLink {
         	throw new IllegalArgumentException("SchedulerLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("e3defa7c-727c-443f-a1bd-dd4ae009f13d")
+    @objid ("5721ff6f-2875-4316-a712-432128140af0")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -134,7 +134,7 @@ public class SchedulerLink extends ResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("3024cd11-8f34-48a4-b7a8-db21f61e5211")
+    @objid ("7c0adb24-733c-49d0-aec9-49ec7a98acb8")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -145,7 +145,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("53243e20-20a9-4a2d-9a69-481c4f7510a2")
+    @objid ("a9a772b4-8281-472d-a706-74c3d9db4076")
     public String getScheduler_Link_host() {
         return this.elt.getTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_HOST_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("144f9eeb-fcc3-42b6-bd92-798e30822be4")
+    @objid ("8947bc0b-2e11-46ef-816b-34863abde2fe")
     public String getScheduler_Link_otherSchedPolicy() {
         return this.elt.getTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c55fd141-6886-4914-8841-1094d0ad3d10")
+    @objid ("e103753d-cb47-4d4d-bd35-12594c935149")
     public List<String> getScheduler_Link_processingUnits() {
         return this.elt.getTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("64a0699d-51b9-46f6-8a7b-acdf1024737c")
+    @objid ("d9403815-55ec-41a5-9b5e-5bac9a5b8ed0")
     public List<String> getScheduler_Link_protectedSharedResources() {
         return this.elt.getTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("84d72990-6cb5-44aa-afe2-1dbbb0865a17")
+    @objid ("918dbed6-466d-4595-86d2-c5d2ef6f68b9")
     public String getScheduler_Link_schedPolicy() {
         return this.elt.getTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("18a78a85-e921-4e3d-a4ef-4fc3588868c8")
+    @objid ("7f596259-4b1f-4aba-90ed-0cc26ac7e472")
     public List<String> getScheduler_Link_schedulableResources() {
         return this.elt.getTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -205,12 +205,12 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("529befa4-6547-4161-bf73-c74180355a62")
+    @objid ("fdb203d2-acff-432b-8b11-21fd2fda3e59")
     public String getScheduler_Link_schedule() {
         return this.elt.getTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDULE_TAGTYPE_ELT);
     }
 
-    @objid ("73db5207-34c9-43e2-bfc2-5ae06ae466e4")
+    @objid ("c28ae152-a0a0-4b67-aed9-4cd87f458e05")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -221,7 +221,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1e5f75b9-fa2d-42ba-982e-03643d80d070")
+    @objid ("cf487592-e70a-4ade-b2d9-999b905c1eb5")
     public boolean isScheduler_Link_isPreemptible() {
         return this.elt.isTagged(SchedulerLink.MdaTypes.SCHEDULER_LINK_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -231,7 +231,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f495e8cf-407e-4e6d-884b-9109933bd3ce")
+    @objid ("461f0b68-4a4e-4d0f-a637-36edce3578ea")
     public void setScheduler_Link_host(final String value) {
         this.elt.putTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_HOST_TAGTYPE_ELT, value);
     }
@@ -241,7 +241,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("79cac788-258e-4a36-bb16-09be239a9cd8")
+    @objid ("9804ae0f-e421-4b0c-9e4c-835e17cc89ac")
     public void setScheduler_Link_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -254,7 +254,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("461b9e30-4714-40d1-85fe-6b6d1adfaedf")
+    @objid ("fcba8ab3-09f4-400e-b263-73f370b2ebb1")
     public void setScheduler_Link_otherSchedPolicy(final String value) {
         this.elt.putTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -264,7 +264,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("16e14740-9416-4c6f-b0a7-ce04be97a23e")
+    @objid ("79a0d721-e874-4325-8b59-43e570f3aace")
     public void setScheduler_Link_processingUnits(final List<String> values) {
         this.elt.putTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -274,7 +274,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("becaf8a9-297e-4b71-8f6d-1ff5769fe26c")
+    @objid ("973cbc2a-8dab-4aa9-af78-2f47010ad0d5")
     public void setScheduler_Link_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -284,7 +284,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fa512fb1-add7-4336-83fb-dade4fc550b4")
+    @objid ("def43d92-eb68-41ee-be94-d21dc40c92ef")
     public void setScheduler_Link_schedPolicy(final String value) {
         this.elt.putTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -294,7 +294,7 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fc46ca3b-2a6a-4c5d-8745-722def0f5cc8")
+    @objid ("9714c05f-7628-4b7f-a13c-58f4614ebe50")
     public void setScheduler_Link_schedulableResources(final List<String> values) {
         this.elt.putTagValues(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -304,52 +304,52 @@ public class SchedulerLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6575d791-9c03-4593-a23d-a96a57e35f33")
+    @objid ("0acea0a7-861d-44b0-8771-1812198c2a3c")
     public void setScheduler_Link_schedule(final String value) {
         this.elt.putTagValue(SchedulerLink.MdaTypes.SCHEDULER_LINK_SCHEDULE_TAGTYPE_ELT, value);
     }
 
-    @objid ("30d8e6e1-18c5-4d78-93bc-e32fbbaa3701")
+    @objid ("aae5994e-ae6c-417a-8c97-896ae018151f")
     protected SchedulerLink(final Link elt) {
         super(elt);
     }
 
     @objid ("f720b7f3-b37c-4d50-b001-b66c7288bfd6")
     public static final class MdaTypes {
-        @objid ("2b045afd-9f9c-4072-a593-43ac61b46689")
+        @objid ("d17fb103-c03c-41f7-a5e4-3d8c81cbd5e6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("1c2d40b7-4a16-421b-a9f5-9714317c90b2")
+        @objid ("155684db-115d-431f-8d9b-d47088e00149")
         public static TagType SCHEDULER_LINK_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("242eebd2-a55f-496a-aaa4-d0d98b1769ae")
+        @objid ("b088552c-a9de-4dca-a82d-f541655bd090")
         public static TagType SCHEDULER_LINK_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("7299f7cc-e1bd-449b-ba59-2265322bd598")
+        @objid ("be533df3-c9bf-43e7-aa43-cbc1dd8a1ca5")
         public static TagType SCHEDULER_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("4a26c02a-3af3-4b3a-bf59-d46e1a3a7673")
+        @objid ("abda1e48-2604-45cc-a2ea-4895eca1092e")
         public static TagType SCHEDULER_LINK_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("15fcb151-1ab8-47a9-a902-e20ff5748492")
+        @objid ("ecdd3098-a73d-4bb9-83eb-dd78fc1788cf")
         public static TagType SCHEDULER_LINK_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("97892b4c-2b8d-498f-b329-c78ba81df873")
+        @objid ("86b42b1e-5477-4a91-894c-01cb0c8799e8")
         public static TagType SCHEDULER_LINK_HOST_TAGTYPE_ELT;
 
-        @objid ("0b207ddf-33d0-4d58-af3a-2279fce08449")
+        @objid ("021c3b8d-9f63-461a-aaa9-256627ca6186")
         public static TagType SCHEDULER_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("eaf57f99-fbc8-45dc-855e-238d594081d3")
+        @objid ("de35e218-c181-44d2-aa84-1edab5b0132d")
         public static TagType SCHEDULER_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("8cb9761c-177a-488b-b11b-d4aac4481040")
+        @objid ("c7249cd9-c339-4463-ad74-01febaf9e51d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e2ab2f63-8275-4eba-9669-fe0e6bb7d571")
+        @objid ("6e1c03f0-6173-4168-a3a6-fe142ab352f7")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b16da68a-552f-4b3a-8898-69ff2fd53047")
+        @objid ("7493d251-1610-4b2e-b982-a69334d0748b")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0025b320-0ccf-11df-8525-001302895b2b");
             SCHEDULER_LINK_ISPREEMPTIBLE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0025b327-0ccf-11df-8525-001302895b2b");

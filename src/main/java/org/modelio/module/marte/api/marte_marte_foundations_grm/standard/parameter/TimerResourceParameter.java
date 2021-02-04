@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.parameter;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d1037ec8-3cd0-452e-b12b-aef05c9862b1")
 public class TimerResourceParameter extends TimingResourceParameter {
-    @objid ("9de69250-3e66-47e5-ade9-665296c3ef39")
+    @objid ("b9a8568d-4e81-47c4-a10f-53526d651ea1")
     public static final String STEREOTYPE_NAME = "TimerResource_Parameter";
 
-    @objid ("25da1229-b06a-4d9a-8509-40e06794b760")
+    @objid ("b4ae9045-89ab-491c-bfa5-2922d9f4356d")
     public static final String TIMERRESOURCE_PARAMETER_DURATION_TAGTYPE = "TimerResource_Parameter_duration";
 
-    @objid ("d0d3fe6c-6730-4f7b-a9db-3891b44bfcf2")
+    @objid ("e55c03b1-d043-4d3b-acdd-0c2881cecf4f")
     public static final String TIMERRESOURCE_PARAMETER_ISPERIODIC_TAGTYPE = "TimerResource_Parameter_isPeriodic";
 
     /**
-     * Tells whether a {@link TimerResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << TimerResource_Parameter >>. 
+     * Tells whether a {@link TimerResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << TimerResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4d48c12f-49ad-4b8f-bc2b-7652cbcb4cc1")
+    @objid ("b8cea3ae-b410-4c05-98fe-46dac864d67c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, TimerResourceParameter.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * 
      * @return a {@link TimerResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("6df583f2-bab2-4d8d-8c01-027c61e2f989")
+    @objid ("0c1187d5-fad6-4f30-9bdf-232ac0e1355f")
     public static TimerResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, TimerResourceParameter.STEREOTYPE_NAME);
         return TimerResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link TimerResourceParameter} proxy from a {@link Parameter} stereotyped << TimerResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link TimerResourceParameter} proxy from a {@link Parameter} stereotyped << TimerResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link TimerResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("c2b675cc-1066-43f8-80ae-fee43d7679f3")
+    @objid ("7771a8a7-a4ab-4348-bd52-dee86a652529")
     public static TimerResourceParameter instantiate(final Parameter obj) {
         return TimerResourceParameter.canInstantiate(obj) ? new TimerResourceParameter(obj) : null;
     }
@@ -87,7 +87,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * @return a {@link TimerResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("dbb71708-87f4-46c8-ae77-c9f59311145b")
+    @objid ("494a3f8b-0896-4d96-ab55-8e11bc143d81")
     public static TimerResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (TimerResourceParameter.canInstantiate(obj))
         	return new TimerResourceParameter(obj);
@@ -95,7 +95,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
         	throw new IllegalArgumentException("TimerResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("84ed1b36-215f-4419-91a1-b2bbe0aad212")
+    @objid ("f2971990-5422-4ac1-a85f-230ec4247573")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("5ae06be9-e4a1-4734-8445-d587e4e50e5d")
+    @objid ("15b494e4-49ad-4c67-bd63-04d3ece956d0")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -126,12 +126,12 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8eb186d0-ecda-4ac3-bb25-71ff27df9a89")
+    @objid ("6c7eb765-b7ec-4c1d-aee0-b457635d1675")
     public String getTimerResource_Parameter_duration() {
         return this.elt.getTagValue(TimerResourceParameter.MdaTypes.TIMERRESOURCE_PARAMETER_DURATION_TAGTYPE_ELT);
     }
 
-    @objid ("c1dc5e3a-44f4-4e21-9f7c-2926446f5007")
+    @objid ("4425777d-fb76-40df-8719-a4b0f935986a")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -142,7 +142,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("89a3af9e-3889-46f6-a4e5-1fbb8a7c980e")
+    @objid ("689ffe25-ab57-4c93-8a44-ebf79cb90ad7")
     public boolean isTimerResource_Parameter_isPeriodic() {
         return this.elt.isTagged(TimerResourceParameter.MdaTypes.TIMERRESOURCE_PARAMETER_ISPERIODIC_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f93225f3-a381-4a70-9ce2-89f16b1cef5c")
+    @objid ("eb2829d9-8998-45e6-aebe-c70414c84ed3")
     public void setTimerResource_Parameter_duration(final String value) {
         this.elt.putTagValue(TimerResourceParameter.MdaTypes.TIMERRESOURCE_PARAMETER_DURATION_TAGTYPE_ELT, value);
     }
@@ -162,7 +162,7 @@ public class TimerResourceParameter extends TimingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("04763787-2a70-49a1-b759-f2b6af858bd1")
+    @objid ("4324e0fa-a924-4234-84bd-9b0268426348")
     public void setTimerResource_Parameter_isPeriodic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(TimerResourceParameter.MdaTypes.TIMERRESOURCE_PARAMETER_ISPERIODIC_TAGTYPE_ELT, this.elt);
@@ -170,29 +170,29 @@ public class TimerResourceParameter extends TimingResourceParameter {
           this.elt.removeTags(TimerResourceParameter.MdaTypes.TIMERRESOURCE_PARAMETER_ISPERIODIC_TAGTYPE_ELT);
     }
 
-    @objid ("47d2d182-e668-432b-bacc-a6c12888dd85")
+    @objid ("6c4744e3-5978-4946-939d-f37b9a2b7b56")
     protected TimerResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("3ece2f10-abe4-43e4-9869-6190390911c7")
     public static final class MdaTypes {
-        @objid ("a4920a64-feae-4ed8-abfa-a4bccb6525c2")
+        @objid ("be7ed770-9d7f-49f5-ab7d-86885b40df23")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4a5902ee-9eab-40db-9139-94b48d5f75e8")
+        @objid ("1bb942f7-11b5-4861-8a98-b174a9166ad2")
         public static TagType TIMERRESOURCE_PARAMETER_DURATION_TAGTYPE_ELT;
 
-        @objid ("68a9596f-0ad3-4559-8a51-dce6a3e9e9bb")
+        @objid ("599fdcc2-8c80-4804-9565-02e35aa0ff5d")
         public static TagType TIMERRESOURCE_PARAMETER_ISPERIODIC_TAGTYPE_ELT;
 
-        @objid ("d4fcaedb-068a-4f80-bbb0-2af0a8af5c66")
+        @objid ("b37cd5fb-a5f7-4e6d-b310-4880fa2c8e18")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e18536f1-1509-437b-b8bb-54e076e0de57")
+        @objid ("656ef0e1-151c-4888-9cb3-3d33f729698b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2a48dee4-796a-4318-8f36-15b40701fdc3")
+        @objid ("7d409dbe-d859-4bda-8819-35b9133e3fbf")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00a1abca-0ccf-11df-8525-001302895b2b");
             TIMERRESOURCE_PARAMETER_DURATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00a1abd1-0ccf-11df-8525-001302895b2b");

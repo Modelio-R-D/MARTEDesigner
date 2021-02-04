@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.lifeline;
 
@@ -34,18 +34,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("7bf8a2c2-a8b0-4c8f-a7ae-3d9180bbc8a1")
 public class HwBranchPredictorLifeline extends HwResourceLifeline {
-    @objid ("417ad2ed-875f-46dd-a2df-92153a56ce9f")
+    @objid ("f16feed0-ef60-4d20-bef3-0fbc8db8d730")
     public static final String STEREOTYPE_NAME = "HwBranchPredictor_Lifeline";
 
     /**
-     * Tells whether a {@link HwBranchPredictorLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwBranchPredictor_Lifeline >>. 
+     * Tells whether a {@link HwBranchPredictorLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwBranchPredictor_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f2924228-45d3-407a-a05e-e7a44d03dacd")
+    @objid ("91deb034-adcd-412c-a33d-677e2f43d6a9")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBranchPredictorLifeline.STEREOTYPE_NAME));
     }
@@ -55,21 +55,21 @@ public class HwBranchPredictorLifeline extends HwResourceLifeline {
      * 
      * @return a {@link HwBranchPredictorLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("2b98c51e-2ade-451f-b424-599c087d3f78")
+    @objid ("17374bc6-a3e7-4561-aefb-f8fb10b7915c")
     public static HwBranchPredictorLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBranchPredictorLifeline.STEREOTYPE_NAME);
         return HwBranchPredictorLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBranchPredictorLifeline} proxy from a {@link Lifeline} stereotyped << HwBranchPredictor_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBranchPredictorLifeline} proxy from a {@link Lifeline} stereotyped << HwBranchPredictor_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwBranchPredictorLifeline} proxy or <i>null</i>.
      */
-    @objid ("9ed0655f-b864-4fde-a1d9-232dfae20df0")
+    @objid ("b0077f61-7dae-4e1b-8b06-d644d6d3a579")
     public static HwBranchPredictorLifeline instantiate(final Lifeline obj) {
         return HwBranchPredictorLifeline.canInstantiate(obj) ? new HwBranchPredictorLifeline(obj) : null;
     }
@@ -82,7 +82,7 @@ public class HwBranchPredictorLifeline extends HwResourceLifeline {
      * @return a {@link HwBranchPredictorLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9d14c031-0a33-47eb-9545-69856a097c26")
+    @objid ("889f0d4d-09dd-4b19-898f-a8f6022258d6")
     public static HwBranchPredictorLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwBranchPredictorLifeline.canInstantiate(obj))
         	return new HwBranchPredictorLifeline(obj);
@@ -90,7 +90,7 @@ public class HwBranchPredictorLifeline extends HwResourceLifeline {
         	throw new IllegalArgumentException("HwBranchPredictorLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ac9ed8c6-4ace-472f-9cf3-8ad0c544f78d")
+    @objid ("65c8fb86-4c5d-4b0b-88ad-a52cdfa23538")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -110,35 +110,35 @@ public class HwBranchPredictorLifeline extends HwResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("cad55abf-4e35-4074-af26-e810f2ddcdd9")
+    @objid ("a9708142-4cab-4e3a-99bf-7a0762b0f243")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
     }
 
-    @objid ("72c57172-c3f0-45cd-9a89-c789386203b8")
+    @objid ("7e188d8c-646e-454e-a7fa-bf2d3205e6d7")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("fe959cbe-f46b-40be-bc59-e5941465105d")
+    @objid ("8fcde734-b70b-4095-89ad-a9ba0c64d112")
     protected HwBranchPredictorLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("95560a36-c09a-4173-96cd-3a21ad827378")
     public static final class MdaTypes {
-        @objid ("31f86e3a-2e63-469b-9f38-3a4d69f15823")
+        @objid ("1437a61f-8f05-45af-9b2b-aafff9a508e3")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("95dac54d-e97e-4d5d-84af-1df9c51a6935")
+        @objid ("69f27764-42fa-4ff5-8d60-19cd01923eae")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("417518c9-6635-41e9-886d-bc39555fe31c")
+        @objid ("909c70d8-5d0d-4f33-a50a-c993c3c50e3b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f118ce24-bd67-4206-beec-da8bdd99e875")
+        @objid ("115be6de-73db-4598-b73e-395515d4b814")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "86d26684-10a7-11df-81d9-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

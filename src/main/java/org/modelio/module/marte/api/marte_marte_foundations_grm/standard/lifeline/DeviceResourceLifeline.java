@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.lifeline;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b0d440b4-63d3-43ad-9bca-7611257f2f23")
 public class DeviceResourceLifeline extends ProcessingResourceLifeline {
-    @objid ("a908c54f-a1e7-4ab6-bc11-a0abf8fa4040")
+    @objid ("5c0df4f8-d09a-4c21-a521-d7356ef52d08")
     public static final String STEREOTYPE_NAME = "DeviceResource_Lifeline";
 
     /**
-     * Tells whether a {@link DeviceResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << DeviceResource_Lifeline >>. 
+     * Tells whether a {@link DeviceResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << DeviceResource_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("21d22e2d-a114-4db2-845b-2d8d85d11646")
+    @objid ("871d4bd4-e394-423e-9206-9a9bb0af5cfc")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLifeline.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class DeviceResourceLifeline extends ProcessingResourceLifeline {
      * 
      * @return a {@link DeviceResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("c317e24c-789f-45a6-942b-f3a574751dc5")
+    @objid ("412a4b0c-f336-4d53-81a2-1c636e669c01")
     public static DeviceResourceLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLifeline.STEREOTYPE_NAME);
         return DeviceResourceLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link DeviceResourceLifeline} proxy from a {@link Lifeline} stereotyped << DeviceResource_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link DeviceResourceLifeline} proxy from a {@link Lifeline} stereotyped << DeviceResource_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link DeviceResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("1dcc606f-74b6-4349-b553-8c7c7e671175")
+    @objid ("5e70eac9-3b32-4e9e-88e0-77228d4822b4")
     public static DeviceResourceLifeline instantiate(final Lifeline obj) {
         return DeviceResourceLifeline.canInstantiate(obj) ? new DeviceResourceLifeline(obj) : null;
     }
@@ -81,7 +81,7 @@ public class DeviceResourceLifeline extends ProcessingResourceLifeline {
      * @return a {@link DeviceResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("b980a002-ea04-4cd1-93d2-095970a44d14")
+    @objid ("58b1e7ab-61a7-4cda-a80f-ce1adb2d1120")
     public static DeviceResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (DeviceResourceLifeline.canInstantiate(obj))
         	return new DeviceResourceLifeline(obj);
@@ -89,7 +89,7 @@ public class DeviceResourceLifeline extends ProcessingResourceLifeline {
         	throw new IllegalArgumentException("DeviceResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("483e3ebd-4a0e-4227-9ec8-b743dc2b4d93")
+    @objid ("de7c277e-d7e2-43e8-9429-aa60129a5e2b")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class DeviceResourceLifeline extends ProcessingResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("dde937cf-282a-4db1-ac83-d764967d1329")
+    @objid ("8c87b43f-6cd8-4e08-92e8-0579a1eb327f")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
     }
 
-    @objid ("2b617c9d-9c8d-4c69-a859-c73d44317a4b")
+    @objid ("08b31f75-292a-49e9-852d-04792e3e5d42")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("ffab4712-36ff-4259-bbb9-7052cfd89493")
+    @objid ("b61c2244-3649-4a65-b28f-f40aa0133a11")
     protected DeviceResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("9435f944-3221-4087-b8dc-45343f17b0f2")
     public static final class MdaTypes {
-        @objid ("d00a1bdd-05e4-4143-af7f-ea4478366b10")
+        @objid ("43c9f2b5-0881-438a-b738-b3fc5f321be5")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("67d24fa5-17cd-43af-9f59-2e3247be8855")
+        @objid ("5809e705-5e77-45a5-a767-e2d3d10da4fe")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("d8cdb4b7-ee9a-44f6-8ba0-febd6571387c")
+        @objid ("79009139-2e75-4c73-a529-4382f407708f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("44b6609d-4a9c-44c7-bc24-d8ded7da8c5e")
+        @objid ("2cd96019-a352-4e1b-afff-1056c0bd3e34")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84d5-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

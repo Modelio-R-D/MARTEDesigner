@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("03c35b77-fe7d-4a50-a596-c42f17a37766")
 public class ProfileAssociationUnMapServiceMemoryBroker {
-    @objid ("d8616986-fed3-4689-a116-1316a0a50cd3")
+    @objid ("03589fd4-5abb-4acb-ba07-72fe69e1c49a")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_unMapService_MemoryBroker";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("ac95b0cf-83e5-40d7-921a-cb33b1a3bd80")
+    @objid ("e101e134-42af-4276-9ac2-40c45281de2a")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationUnMapServiceMemoryBroker proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_unMapService_MemoryBroker >>. 
+     * Tells whether a {@link ProfileAssociationUnMapServiceMemoryBroker proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_unMapService_MemoryBroker >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e4672fca-6def-478a-8516-faa61c769036")
+    @objid ("d1369d09-1d14-464c-b8f1-8f7998de64ce")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationUnMapServiceMemoryBroker.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationUnMapServiceMemoryBroker {
      * 
      * @return a {@link ProfileAssociationUnMapServiceMemoryBroker} proxy on the created {@link Dependency}.
      */
-    @objid ("0ce08a03-4b08-480b-896a-61ffb4688fcc")
+    @objid ("85393cc3-c45f-4e1f-921a-261930b15bbe")
     public static ProfileAssociationUnMapServiceMemoryBroker create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationUnMapServiceMemoryBroker.STEREOTYPE_NAME);
         return ProfileAssociationUnMapServiceMemoryBroker.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationUnMapServiceMemoryBroker} proxy from a {@link Dependency} stereotyped << ProfileAssociation_unMapService_MemoryBroker >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationUnMapServiceMemoryBroker} proxy from a {@link Dependency} stereotyped << ProfileAssociation_unMapService_MemoryBroker >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationUnMapServiceMemoryBroker} proxy or <i>null</i>.
      */
-    @objid ("7e85ad84-0e7e-43f5-81d6-3a131f46e7b9")
+    @objid ("2a349c7a-d807-4a6a-b044-851998baf81d")
     public static ProfileAssociationUnMapServiceMemoryBroker instantiate(final Dependency obj) {
         return ProfileAssociationUnMapServiceMemoryBroker.canInstantiate(obj) ? new ProfileAssociationUnMapServiceMemoryBroker(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationUnMapServiceMemoryBroker {
      * @return a {@link ProfileAssociationUnMapServiceMemoryBroker} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("87f14c79-7e93-4005-b00c-58a1d85f69e9")
+    @objid ("b79c52ad-55f2-4f3b-bbf3-002f5ee57a24")
     public static ProfileAssociationUnMapServiceMemoryBroker safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationUnMapServiceMemoryBroker.canInstantiate(obj))
         	return new ProfileAssociationUnMapServiceMemoryBroker(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationUnMapServiceMemoryBroker {
         	throw new IllegalArgumentException("ProfileAssociationUnMapServiceMemoryBroker: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d50a7f45-f56f-498d-a7ba-578adbae4098")
+    @objid ("c595580b-47e0-4336-9b20-98805f8d764a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationUnMapServiceMemoryBroker {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("6f8e88ae-e8b3-4c30-a2d6-baa7140d6466")
+    @objid ("e8f47a60-8fbf-4fba-a0a1-b8a518fcd8ec")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("3f038178-d4ed-4cd8-8030-1e4feebee1db")
+    @objid ("c5936159-369b-4251-b4be-2a1bb03a2c6e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("055a47b2-a711-4146-8040-a1a14e6ae2fe")
+    @objid ("a076e8ea-51f1-4941-8bb7-5463f5a57566")
     protected ProfileAssociationUnMapServiceMemoryBroker(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("5542dd02-4d56-4563-b4a4-9c2cc3215079")
     public static final class MdaTypes {
-        @objid ("87dbfe5a-9552-429a-ae9b-578e00f481bd")
+        @objid ("214b5f52-fe5f-4c83-8267-6eefbc8c0d5e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4254ac2b-6cac-4a07-8683-2d353ea4a811")
+        @objid ("8c5775bb-46f2-4da4-8933-fea4f51ac940")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("5650a431-4ca7-4204-b893-e88a808e27cc")
+        @objid ("48bc65a2-df1e-4748-a977-df447203ea1b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("4f8a9a88-4bfa-4ec3-a817-a53927d15496")
+        @objid ("f2db3e86-47ae-474d-b2b3-a557e7a61123")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "edc75eae-9759-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

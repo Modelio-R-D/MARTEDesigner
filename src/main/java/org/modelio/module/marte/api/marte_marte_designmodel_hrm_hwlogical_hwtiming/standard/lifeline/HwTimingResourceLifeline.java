@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwtiming.standard.lifeline;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e4daac30-3570-46ef-b47d-252c53105bdd")
 public class HwTimingResourceLifeline extends TimingResourceLifeline {
-    @objid ("d4a33e3c-27c3-4eac-bbf8-6d86f01e8a3a")
+    @objid ("69065d69-6ecd-4739-9e77-4fefa9053787")
     public static final String STEREOTYPE_NAME = "HwTimingResource_Lifeline";
 
-    @objid ("55ad3a37-f797-4001-a0dc-d901fe9815f2")
+    @objid ("3a808bca-8884-4ef2-8fc6-fe1511b75fea")
     public static final String HWTIMINGRESOURCE_LIFELINE_DESCRIPTION_TAGTYPE = "HwTimingResource_Lifeline_description";
 
-    @objid ("a5c72c07-bfcb-47f6-b1d6-9bf3295cbec2")
+    @objid ("2bf1efb6-7967-4e6f-9f6c-133d38903c48")
     public static final String HWTIMINGRESOURCE_LIFELINE_ENDPOINTS_TAGTYPE = "HwTimingResource_Lifeline_endPoints";
 
-    @objid ("e4e18c6a-ad6d-4af2-a555-0e431c6d0486")
+    @objid ("08b7bc78-bada-40dc-a68c-9aae13263c17")
     public static final String HWTIMINGRESOURCE_LIFELINE_FREQUENCY_TAGTYPE = "HwTimingResource_Lifeline_frequency";
 
-    @objid ("49f6c76a-4a67-4d9d-b639-d4dc2e21fe78")
+    @objid ("14ee060f-114d-48fd-aedc-bf9b83b28073")
     public static final String HWTIMINGRESOURCE_LIFELINE_OWNEDHW_TAGTYPE = "HwTimingResource_Lifeline_ownedHW";
 
-    @objid ("96e60c90-b98b-4ba7-ada5-9ebb2510bb63")
+    @objid ("d1708379-1914-4f0a-948f-b149486d9236")
     public static final String HWTIMINGRESOURCE_LIFELINE_P_HW_SERVICES_TAGTYPE = "HwTimingResource_Lifeline_p_HW_Services";
 
-    @objid ("c22715a6-6942-462a-8b5f-a559c72c7a39")
+    @objid ("2b20ffce-3c4e-4f56-ae50-f6c68a41c5fd")
     public static final String HWTIMINGRESOURCE_LIFELINE_R_HW_SERVICES_TAGTYPE = "HwTimingResource_Lifeline_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwTimingResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwTimingResource_Lifeline >>. 
+     * Tells whether a {@link HwTimingResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwTimingResource_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2bd371d9-73a9-40ed-aa7d-c76b117b02c0")
+    @objid ("8da88c50-28fa-4984-8ddc-6f3607584c3f")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwTimingResourceLifeline.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * 
      * @return a {@link HwTimingResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("b6c5ec95-37fd-42df-857f-ca0044c25b25")
+    @objid ("078793d1-5b15-48ae-ab4c-7cf17c7a44ba")
     public static HwTimingResourceLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwTimingResourceLifeline.STEREOTYPE_NAME);
         return HwTimingResourceLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwTimingResourceLifeline} proxy from a {@link Lifeline} stereotyped << HwTimingResource_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwTimingResourceLifeline} proxy from a {@link Lifeline} stereotyped << HwTimingResource_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwTimingResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("7d0c779c-0ce7-46ed-b352-d9486bdecb23")
+    @objid ("6a7e8b63-ec53-42cd-b6a0-30362cca7626")
     public static HwTimingResourceLifeline instantiate(final Lifeline obj) {
         return HwTimingResourceLifeline.canInstantiate(obj) ? new HwTimingResourceLifeline(obj) : null;
     }
@@ -101,7 +101,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * @return a {@link HwTimingResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("d9e2c487-1e6e-43e3-87e5-e36d2501347a")
+    @objid ("fec363ea-0cd2-4325-a7b3-f19ea24112b6")
     public static HwTimingResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwTimingResourceLifeline.canInstantiate(obj))
         	return new HwTimingResourceLifeline(obj);
@@ -109,7 +109,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
         	throw new IllegalArgumentException("HwTimingResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("59a2dc52-2201-4ed7-9107-7c3fae8dae4c")
+    @objid ("d2242359-b8a5-4e34-a1bf-9359cf958d21")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("15e024bc-6f07-4021-b4d5-ef0c2be3b86e")
+    @objid ("2d5abed1-fb49-4c4c-9dea-38d902291c81")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -140,7 +140,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c6485d3d-5614-4710-b5c2-30e6b401205e")
+    @objid ("cb9ed337-a5c6-4833-9de6-90c6821b4813")
     public String getHwTimingResource_Lifeline_description() {
         return this.elt.getTagValue(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("81ee3d0d-c947-468b-a6d0-3e3b92663c87")
+    @objid ("52c92a1d-8fd1-44a4-8ab9-d5062f23c04c")
     public List<String> getHwTimingResource_Lifeline_endPoints() {
         return this.elt.getTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c25e2019-10a0-4de8-9192-605b5248ec21")
+    @objid ("8f99a449-9100-43bd-a798-d9632485eef8")
     public String getHwTimingResource_Lifeline_frequency() {
         return this.elt.getTagValue(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ae1d193b-da41-4cd4-850b-cde592b8f647")
+    @objid ("70e2797d-955f-42d5-8fa7-5cb97ed21898")
     public List<String> getHwTimingResource_Lifeline_ownedHW() {
         return this.elt.getTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("28597c50-4e3c-4c03-b2a8-904af453003a")
+    @objid ("9a4efa2c-a9cc-433b-88b5-83b804a79b00")
     public List<String> getHwTimingResource_Lifeline_p_HW_Services() {
         return this.elt.getTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bc370b8a-4a35-4bbe-a1aa-6ebef6cce361")
+    @objid ("8cb75e60-83c5-45a7-a208-53094ce497c1")
     public List<String> getHwTimingResource_Lifeline_r_HW_Services() {
         return this.elt.getTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("553f9835-f8e6-42e7-8a17-c8fab5439a94")
+    @objid ("3b009d4b-5ae5-4d01-8088-04f79900b1b8")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("37ef1278-e91a-497f-9dee-0d6bb8e8e756")
+    @objid ("2cc31c32-96cb-47b4-b6af-82d05e826e77")
     public void setHwTimingResource_Lifeline_description(final String value) {
         this.elt.putTagValue(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -216,7 +216,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ba5d2d23-2008-459f-a0ce-430ec2367f33")
+    @objid ("9d1d67db-503f-4aa0-8238-466486deaad0")
     public void setHwTimingResource_Lifeline_endPoints(final List<String> values) {
         this.elt.putTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -226,7 +226,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a75e2c8c-6d6d-4582-b38d-ebd5f2fa3c1b")
+    @objid ("b811ce24-86b6-4351-8ac6-a9e7d1016db6")
     public void setHwTimingResource_Lifeline_frequency(final String value) {
         this.elt.putTagValue(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +236,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c769a91c-ca4f-4dbf-991d-b0625379b912")
+    @objid ("6434a906-392e-4e35-9d6c-1c3ac90d2eff")
     public void setHwTimingResource_Lifeline_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fea943d0-5733-4c46-bfa0-5f3d88c6946d")
+    @objid ("7a6733b8-aebc-49ca-a044-735fac5bcc7e")
     public void setHwTimingResource_Lifeline_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +256,46 @@ public class HwTimingResourceLifeline extends TimingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1f0fd6eb-145d-4253-b759-0b05ef6de538")
+    @objid ("ece0906a-d1cd-4a22-863c-6d04f5a8712c")
     public void setHwTimingResource_Lifeline_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwTimingResourceLifeline.MdaTypes.HWTIMINGRESOURCE_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("90afc9a7-aa77-4e11-9972-39959093d823")
+    @objid ("189d6438-0075-496f-8af7-92b820bf1131")
     protected HwTimingResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("8a60c478-dbff-4fc6-86d1-cdb761c353cd")
     public static final class MdaTypes {
-        @objid ("61b0875e-b39c-4d28-970d-06da1a2b8a69")
+        @objid ("ae83313d-1c1e-4800-ac73-e9a1b7794115")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("a73f1dfa-f36e-415b-9637-5afb340f9084")
+        @objid ("f420c287-c378-487e-be5b-61fb09c5eff2")
         public static TagType HWTIMINGRESOURCE_LIFELINE_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("0de2b6e0-089e-4e56-9f3b-c036660df17b")
+        @objid ("fd974fcf-98d2-4432-a70d-fa6e0df8eb86")
         public static TagType HWTIMINGRESOURCE_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("9be97e69-29d0-42d8-ae3c-e43c9324d53b")
+        @objid ("4bffd922-9a31-4928-a9d7-71d2d7a4f634")
         public static TagType HWTIMINGRESOURCE_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("517c3169-097f-4d04-b166-7c7a7e8269f0")
+        @objid ("ef7a2648-8611-4f02-9140-a1d16fa360fe")
         public static TagType HWTIMINGRESOURCE_LIFELINE_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("a99c0afd-3fc9-4407-8294-fcd2c82159ff")
+        @objid ("a6760dbd-25ee-4946-85f4-eb63b0ff72ba")
         public static TagType HWTIMINGRESOURCE_LIFELINE_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("b2aec272-e792-49d2-a5de-a22004a4fcfa")
+        @objid ("066cd53f-fa97-4801-9d87-9b850e2102b6")
         public static TagType HWTIMINGRESOURCE_LIFELINE_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("728019b7-0c52-4695-9e70-ecb1894318d4")
+        @objid ("b2d59552-d9db-4c7c-ace2-af36c8e22ce8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("50916669-7003-476d-86e6-24ec713c0b37")
+        @objid ("7db45393-43b2-458f-9d69-e292b40932a9")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("52dc61bf-7add-4ebd-abec-54531c39cba2")
+        @objid ("16cf73db-5ea5-48ac-8090-bc61c053c03c")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "8a7f9a24-10ae-11df-81d9-0014222a9f79");
             HWTIMINGRESOURCE_LIFELINE_DESCRIPTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "462c55c1-162a-11df-b9be-0014222a9f79");

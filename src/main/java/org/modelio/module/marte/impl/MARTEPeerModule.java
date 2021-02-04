@@ -6,7 +6,7 @@ import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
 import org.modelio.vbasic.version.Version;
 
 @objid ("5b2e6669-d210-425d-8ae0-c0e8a4e1ef5d")
-public class MARTEPeerModule implements IMARTEDesignerPeerModule {
+public class MARTEPeerModule implements IMARTEDesignerPeerModule{
     @objid ("abc1d307-b35a-4b66-965a-e7dcaabbe9c8")
     private IModuleAPIConfiguration peerConfiguration;
 

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.classifier;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("3a0c3707-f2e3-40f5-bed4-858eefc8dd28")
 public class SharedDataComResourceClassifier extends SwCommunicationResourceClassifier {
-    @objid ("188c88d9-5209-4a5d-b6ef-79c99df0ce9b")
+    @objid ("fff4e5ab-5925-42f6-934b-174cc3ced013")
     public static final String STEREOTYPE_NAME = "SharedDataComResource_Classifier";
 
-    @objid ("f73a183a-670d-4962-9aef-63cb9ecaec85")
+    @objid ("001ffd4f-636a-4c43-a4bc-41fcaf8fd14a")
     public static final String SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES_TAGTYPE = "SharedDataComResource_Classifier_readServices";
 
-    @objid ("3bbd1f3d-d4a8-4ef6-9a3e-c04bb84b3ee0")
+    @objid ("657b4035-4793-4920-87bb-9bcdb1af7b9e")
     public static final String SHAREDDATACOMRESOURCE_CLASSIFIER_WRITESERVICES_TAGTYPE = "SharedDataComResource_Classifier_writeServices";
 
     /**
-     * Tells whether a {@link SharedDataComResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << SharedDataComResource_Classifier >>. 
+     * Tells whether a {@link SharedDataComResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << SharedDataComResource_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("657bfab2-46e2-42b2-97b7-98d1fcbe2606")
+    @objid ("0689325b-0ee5-431c-b5b7-d268325daa2d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceClassifier.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * 
      * @return a {@link SharedDataComResourceClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("49211a22-e376-43dc-a680-1f321f2f199c")
+    @objid ("c3ada59c-a37f-4d2c-ab29-f512422fe389")
     public static SharedDataComResourceClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceClassifier.STEREOTYPE_NAME);
         return SharedDataComResourceClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link SharedDataComResourceClassifier} proxy from a {@link Classifier} stereotyped << SharedDataComResource_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SharedDataComResourceClassifier} proxy from a {@link Classifier} stereotyped << SharedDataComResource_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link SharedDataComResourceClassifier} proxy or <i>null</i>.
      */
-    @objid ("93de85a7-cf54-4243-b0c9-1c3c11a34df0")
+    @objid ("994c7938-6f56-4aba-9dd0-4d24c0239cab")
     public static SharedDataComResourceClassifier instantiate(final Classifier obj) {
         return SharedDataComResourceClassifier.canInstantiate(obj) ? new SharedDataComResourceClassifier(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * @return a {@link SharedDataComResourceClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("30915a8d-5420-4686-af0c-220474b98038")
+    @objid ("b4d08006-7490-4654-87f4-21f71537ec2f")
     public static SharedDataComResourceClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (SharedDataComResourceClassifier.canInstantiate(obj))
         	return new SharedDataComResourceClassifier(obj);
@@ -96,7 +96,7 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
         	throw new IllegalArgumentException("SharedDataComResourceClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("e425ea5a-60f5-48e4-9c83-8fee9dc2b82c")
+    @objid ("91529936-8a7f-49ee-95e2-b15c8fbbb670")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("87abbe78-54f6-4b31-affd-40d861078c17")
+    @objid ("3ee66e11-fd97-48bb-b8d0-0e502576a547")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -127,7 +127,7 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("28968c8a-b0c1-451e-90c1-93843cba08f0")
+    @objid ("1a00b13f-4f13-4bfd-88b4-5005575fcfb7")
     public List<String> getSharedDataComResource_Classifier_readServices() {
         return this.elt.getTagValues(SharedDataComResourceClassifier.MdaTypes.SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("02d3b16d-d411-4e0e-b5f9-b5b133faa6c5")
+    @objid ("1c99933e-215f-4777-985e-5b717e3d9c40")
     public List<String> getSharedDataComResource_Classifier_writeServices() {
         return this.elt.getTagValues(SharedDataComResourceClassifier.MdaTypes.SHAREDDATACOMRESOURCE_CLASSIFIER_WRITESERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("137d3a00-90fa-4f51-b81f-63f92a9698cf")
+    @objid ("5333d856-ac17-4a62-88ad-cee0cf8439d5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("04892df1-6d45-4a71-b34b-90df0a9cc299")
+    @objid ("691ef074-5035-4bbc-b947-00820cb1b432")
     public void setSharedDataComResource_Classifier_readServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceClassifier.MdaTypes.SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES_TAGTYPE_ELT, values);
     }
@@ -163,34 +163,34 @@ public class SharedDataComResourceClassifier extends SwCommunicationResourceClas
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3d7c7314-ee08-4b8f-bb43-1851d8546537")
+    @objid ("010cdf4e-6787-4988-b129-e16b97630e3b")
     public void setSharedDataComResource_Classifier_writeServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceClassifier.MdaTypes.SHAREDDATACOMRESOURCE_CLASSIFIER_WRITESERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("6380b5a8-f72a-45e2-9ae1-43b4957d9a13")
+    @objid ("ab3e55f1-90e7-414e-9725-fe1cbaf164b3")
     protected SharedDataComResourceClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("92674742-39f3-40f6-9198-f277a707a570")
     public static final class MdaTypes {
-        @objid ("50921339-2784-4b65-94c6-4e54e3031e0a")
+        @objid ("9a3c5819-9340-4018-ba63-3f0b91f15eec")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("58ad91b7-feec-47be-a7d2-68e507d7f33e")
+        @objid ("a8e5aa93-7305-4a58-9078-f0db71e6f4ec")
         public static TagType SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES_TAGTYPE_ELT;
 
-        @objid ("f0ce1bf6-0891-4b99-b575-2bb20fbd03e1")
+        @objid ("893c3c00-acbf-417e-9ed4-81223decb0fb")
         public static TagType SHAREDDATACOMRESOURCE_CLASSIFIER_WRITESERVICES_TAGTYPE_ELT;
 
-        @objid ("f0e4a1ea-73a1-459c-a5f7-dfe925b6db8a")
+        @objid ("cc684761-ea92-4a34-8f02-9b0b6dd407d9")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f35d9c83-c325-41a6-9075-2de35ef5523d")
+        @objid ("decd5371-b63e-4632-88ba-82a95f5c1a93")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d6fce237-efff-484f-ae33-ac6f6a5a0f01")
+        @objid ("3c656ceb-18eb-4a5c-8dfe-663e56e9dd25")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "2dc3de00-10d8-11df-81d9-0014222a9f79");
             SHAREDDATACOMRESOURCE_CLASSIFIER_READSERVICES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "2dc3de01-10d8-11df-81d9-0014222a9f79");

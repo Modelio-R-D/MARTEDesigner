@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.instance;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("3fb7bd0a-d3ad-4175-b8c5-8ddb95edf7f2")
 public class ResourceInstance {
-    @objid ("4fa1a1df-f0d8-41f6-ba2b-280a9db22f9a")
+    @objid ("d594767a-b770-4990-9dc0-ac8152ee305b")
     public static final String STEREOTYPE_NAME = "Resource_Instance";
 
-    @objid ("9e5956ef-ca3b-4219-9e64-8d5cf635f27b")
+    @objid ("dc456e4f-d906-4403-82d2-0f90b5cbadf0")
     public static final String RESOURCE_INSTANCE_ISACTIVE_TAGTYPE = "Resource_Instance_isActive";
 
-    @objid ("7d01d71e-35d2-4c69-a696-31368285aded")
+    @objid ("e0fae5eb-90ae-49be-9ed4-5c0d872293a7")
     public static final String RESOURCE_INSTANCE_ISPROTECTED_TAGTYPE = "Resource_Instance_isProtected";
 
-    @objid ("ac7397d5-eca9-4d68-92c0-2811e375285d")
+    @objid ("16e8d505-1382-4e75-90be-e7491456253d")
     public static final String RESOURCE_INSTANCE_RESMULT_TAGTYPE = "Resource_Instance_resMult";
 
     /**
      * The underlying {@link Instance} represented by this proxy, never null.
      */
-    @objid ("a95f4a41-2873-4e5d-8c75-396065754138")
+    @objid ("d43714e1-a49e-4b8f-853e-efd63f535a3f")
     protected final Instance elt;
 
     /**
-     * Tells whether a {@link ResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << Resource_Instance >>. 
+     * Tells whether a {@link ResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << Resource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("55ce61ee-1034-4bfe-b26f-f96619e41597")
+    @objid ("4aad2b71-844d-4763-a82a-a57f63dec093")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ResourceInstance.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class ResourceInstance {
      * 
      * @return a {@link ResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("a832f8db-0bca-47b5-b490-91c9f340a811")
+    @objid ("94b16e2e-86db-401f-9be3-1e4b69dc2060")
     public static ResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ResourceInstance.STEREOTYPE_NAME);
         return ResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link ResourceInstance} proxy from a {@link Instance} stereotyped << Resource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ResourceInstance} proxy from a {@link Instance} stereotyped << Resource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link ResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("63324850-667d-4223-9ec3-ea88f60de060")
+    @objid ("ab6e770e-39cf-4d03-a6fc-915e76f092f0")
     public static ResourceInstance instantiate(final Instance obj) {
         return ResourceInstance.canInstantiate(obj) ? new ResourceInstance(obj) : null;
     }
@@ -96,7 +96,7 @@ public class ResourceInstance {
      * @return a {@link ResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("3c26d59b-6047-4b78-b58f-352b20092a98")
+    @objid ("51aaf35f-9276-4d78-ac82-6a91c1964146")
     public static ResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (ResourceInstance.canInstantiate(obj))
         	return new ResourceInstance(obj);
@@ -104,7 +104,7 @@ public class ResourceInstance {
         	throw new IllegalArgumentException("ResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("62f6d8e0-4320-43bc-8337-8b7ad81a789d")
+    @objid ("0bd4ad14-5b4d-4cbf-8d18-4a98a2f4a12a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +124,7 @@ public class ResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("47e63892-126a-42f4-bbb2-7064423d75b6")
+    @objid ("d23cd594-855c-4987-be63-61969369e072")
     public Instance getElement() {
         return this.elt;
     }
@@ -134,12 +134,12 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0d3804e3-e5bc-44b0-9290-24066558880a")
+    @objid ("dc23860a-688d-4b0c-a3e1-550fb5f028c7")
     public String getResource_Instance_resMult() {
         return this.elt.getTagValue(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_RESMULT_TAGTYPE_ELT);
     }
 
-    @objid ("1ed85af2-f29c-4fe2-9a70-fdb70c85ebfc")
+    @objid ("c89b71f0-c1a4-471a-98a4-cda6076eb4cd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -150,7 +150,7 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f1b57fc0-921e-4b22-b167-d28f1d565c98")
+    @objid ("5d08f398-ed42-48cd-b696-9cd98d704aa9")
     public boolean isResource_Instance_isActive() {
         return this.elt.isTagged(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_ISACTIVE_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4fd471d0-59d3-48a1-bb4c-b9bb5830fa98")
+    @objid ("388a8b9f-6143-44b4-9e45-4cf7667cdd66")
     public boolean isResource_Instance_isProtected() {
         return this.elt.isTagged(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_ISPROTECTED_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c67c899c-c256-4f05-9552-0d476d8c0be6")
+    @objid ("dcea90b5-5bf8-4b73-b6a0-ba06e4581337")
     public void setResource_Instance_isActive(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_ISACTIVE_TAGTYPE_ELT, this.elt);
@@ -183,7 +183,7 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9b832e97-9b04-4d75-9b4e-f7bf89383e03")
+    @objid ("5f34c25c-5318-494f-8376-bf81cfd7f5c8")
     public void setResource_Instance_isProtected(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_ISPROTECTED_TAGTYPE_ELT, this.elt);
@@ -196,37 +196,37 @@ public class ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("be2e5b51-80bf-49fe-976b-745ab192e115")
+    @objid ("642f40b4-0531-4e3d-a8a6-1c7fd4b4ae89")
     public void setResource_Instance_resMult(final String value) {
         this.elt.putTagValue(ResourceInstance.MdaTypes.RESOURCE_INSTANCE_RESMULT_TAGTYPE_ELT, value);
     }
 
-    @objid ("ffb80086-408a-4692-842a-252dec5c4dff")
+    @objid ("a782490d-61aa-4997-85f8-6cb5bce11baf")
     protected ResourceInstance(final Instance elt) {
         this.elt = elt;
     }
 
     @objid ("083fe16e-5f8e-4283-843f-d3593333554a")
     public static final class MdaTypes {
-        @objid ("7a311db5-ca6c-4a8a-9426-be81c0fa9157")
+        @objid ("d1ddff35-618c-4f39-a1c4-4f5e4ae616fd")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4c8affb9-8017-4a72-8c6c-cf281718afe7")
+        @objid ("3f8b6a3e-5fbf-41c0-9d06-c38d792d23f3")
         public static TagType RESOURCE_INSTANCE_RESMULT_TAGTYPE_ELT;
 
-        @objid ("ab6e459a-aeb5-46fb-98a9-e0691a42754e")
+        @objid ("f40bc760-540f-4026-b559-275e862b93d6")
         public static TagType RESOURCE_INSTANCE_ISPROTECTED_TAGTYPE_ELT;
 
-        @objid ("0e3ae554-1164-4b1b-8147-daa20015a3e9")
+        @objid ("6c4fcdae-17ce-40b3-816b-228b990a46b3")
         public static TagType RESOURCE_INSTANCE_ISACTIVE_TAGTYPE_ELT;
 
-        @objid ("5ba523bf-8907-4785-9d13-c57bf457a9c4")
+        @objid ("2dea7cc0-6383-4fa3-aa5e-f74d4f2a6b7a")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("21b15f4f-7a62-4572-b907-41a1ce112a34")
+        @objid ("53122480-bcb1-4036-a2d0-0e3295f510b2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("8d04c823-6e4b-4f88-9ee4-a605ed86a36a")
+        @objid ("53bae211-22c1-4811-bd47-305cefb6633a")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ff9dcee3-0cce-11df-8525-001302895b2b");
             RESOURCE_INSTANCE_RESMULT_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ffa2937f-0cce-11df-8525-001302895b2b");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdevice.standard.classifier;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d96c583b-febd-433d-953a-4bfed908c7d0")
 public class HwSupportClassifier extends HwDeviceClassifier {
-    @objid ("f5743fac-8863-4b50-8c1a-e7be033830a0")
+    @objid ("8f96b4b6-a5c1-4751-8560-8e9c0e7acc39")
     public static final String STEREOTYPE_NAME = "HwSupport_Classifier";
 
     /**
-     * Tells whether a {@link HwSupportClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwSupport_Classifier >>. 
+     * Tells whether a {@link HwSupportClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwSupport_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("fb3f2ce3-6fb1-4dca-8079-878daecb460b")
+    @objid ("5fbe2555-3c11-4f4f-930d-6a5ff8a7329e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwSupportClassifier.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class HwSupportClassifier extends HwDeviceClassifier {
      * 
      * @return a {@link HwSupportClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("6a44e44c-e202-423d-b711-5e916e025f1a")
+    @objid ("c1962dfa-e847-4532-adc1-4f1867e936e7")
     public static HwSupportClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwSupportClassifier.STEREOTYPE_NAME);
         return HwSupportClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwSupportClassifier} proxy from a {@link Classifier} stereotyped << HwSupport_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwSupportClassifier} proxy from a {@link Classifier} stereotyped << HwSupport_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwSupportClassifier} proxy or <i>null</i>.
      */
-    @objid ("7f98e46a-b53c-4e16-8e55-46dde96603af")
+    @objid ("873e0e08-5b61-40a6-a6f5-371d14682941")
     public static HwSupportClassifier instantiate(final Classifier obj) {
         return HwSupportClassifier.canInstantiate(obj) ? new HwSupportClassifier(obj) : null;
     }
@@ -81,7 +81,7 @@ public class HwSupportClassifier extends HwDeviceClassifier {
      * @return a {@link HwSupportClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("951983a1-8017-4745-9f5f-d7cdf00586e1")
+    @objid ("794b2275-c399-49ae-bb2e-6074df2ce4c8")
     public static HwSupportClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwSupportClassifier.canInstantiate(obj))
         	return new HwSupportClassifier(obj);
@@ -89,7 +89,7 @@ public class HwSupportClassifier extends HwDeviceClassifier {
         	throw new IllegalArgumentException("HwSupportClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b0203389-489c-46aa-ac32-d030a9dd0d40")
+    @objid ("428699d1-8d75-4060-a814-66b4daa513fc")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class HwSupportClassifier extends HwDeviceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("e1164abf-29a3-4eee-bf21-9b209aa9066d")
+    @objid ("1e848a4d-d16b-4417-884c-f5fc4e892814")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
     }
 
-    @objid ("8dfae581-6e92-471b-afa2-64866940a6a0")
+    @objid ("6851d3f1-3b74-421f-ab8d-8339351916fd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("e0843f71-95cb-478a-83c5-3b8b91cec139")
+    @objid ("79a682c3-e241-463d-9154-49134a1fe39e")
     protected HwSupportClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("a36475f2-8998-4d91-ada3-578f64c98349")
     public static final class MdaTypes {
-        @objid ("5280dd7b-33ca-46db-9366-bc30264419ce")
+        @objid ("b8957413-34bb-435d-b99e-6e75381d1ef6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("56cf7d37-7eae-4036-8836-3c2ac14105ef")
+        @objid ("d06adc49-01d8-48cb-91c0-083b6269978d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("75fcdb2a-6086-477b-8e6b-1ae179f7584a")
+        @objid ("659d6b96-e057-40fc-9028-4d2d9067c07e")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("96a9c445-7c2f-4812-ae18-6cb79e816369")
+        @objid ("0c657b64-41e7-430b-bdcc-0c27a09cf70e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "791c2674-10b0-11df-81d9-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -4,7 +4,7 @@
 
   <!-- definition -->
   <groupId>org.modelio.module</groupId>
-  <artifactId>martedesigner</artifactId>
+  <artifactId>marte</artifactId>
   <version>4.1.02</version>
   <name>MARTEDesigner</name>
   <repositories>

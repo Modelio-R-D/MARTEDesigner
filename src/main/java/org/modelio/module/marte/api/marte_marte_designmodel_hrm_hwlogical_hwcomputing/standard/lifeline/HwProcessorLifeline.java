@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.lifeline;
 
@@ -34,54 +34,54 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("dd4ebe3c-ffae-44b6-891a-88d371b19075")
 public class HwProcessorLifeline extends HwComputingResourceLifeline {
-    @objid ("d7e2b604-a8a2-4aa5-aaf7-547c326894c1")
+    @objid ("34b0907f-0573-4e39-9cfc-a11e09844f29")
     public static final String STEREOTYPE_NAME = "HwProcessor_Lifeline";
 
-    @objid ("9aa3c9aa-882f-4f48-be8d-62369893d5f1")
+    @objid ("5af0e040-4c39-4555-b9d6-d2843fa3f0f2")
     public static final String HWPROCESSOR_LIFELINE_ARCHITECTURE_TAGTYPE = "HwProcessor_Lifeline_architecture";
 
-    @objid ("0a02a20c-91a7-436f-990b-31566ec137ed")
+    @objid ("f09e3e45-1d3d-4afc-ba5a-ddb26c7474f7")
     public static final String HWPROCESSOR_LIFELINE_CACHES_TAGTYPE = "HwProcessor_Lifeline_caches";
 
-    @objid ("ddc29612-3937-4c5d-b28b-eaf33b7f61e6")
+    @objid ("c642b78f-2a8c-475f-bcfd-c942bcfbf3f5")
     public static final String HWPROCESSOR_LIFELINE_IPC_TAGTYPE = "HwProcessor_Lifeline_ipc";
 
-    @objid ("a8ce3ab6-008f-41c7-9490-caf633c99360")
+    @objid ("7eb18151-4561-41f1-8418-994df50b4b76")
     public static final String HWPROCESSOR_LIFELINE_MIPS_TAGTYPE = "HwProcessor_Lifeline_mips";
 
-    @objid ("19e00aca-8f16-43d6-b97f-2d3dab880a8e")
+    @objid ("4cf2efaf-9d7c-4e0e-b88c-cde25504a56b")
     public static final String HWPROCESSOR_LIFELINE_NBALUS_TAGTYPE = "HwProcessor_Lifeline_nbALUs";
 
-    @objid ("3b0e8f46-f57e-4d8b-a22d-8abfae7fe6f6")
+    @objid ("beee1edc-5c94-4aad-bef5-c0eb0756ef14")
     public static final String HWPROCESSOR_LIFELINE_NBCORES_TAGTYPE = "HwProcessor_Lifeline_nbCores";
 
-    @objid ("c326bb51-0c39-49cf-b0f5-ca55f7544775")
+    @objid ("f5b7aff4-0d88-4b06-9fe9-ef9a8289c20b")
     public static final String HWPROCESSOR_LIFELINE_NBFPUS_TAGTYPE = "HwProcessor_Lifeline_nbFPUs";
 
-    @objid ("702a1057-9532-43ed-b4c6-5756cdccdf6a")
+    @objid ("cb7a3336-4a0e-4152-a817-785945afea10")
     public static final String HWPROCESSOR_LIFELINE_NBPIPELINES_TAGTYPE = "HwProcessor_Lifeline_nbPipelines";
 
-    @objid ("5a552ec4-711a-4127-9a76-6254782abd53")
+    @objid ("5b1f6806-3787-406f-8e47-5916905fd07e")
     public static final String HWPROCESSOR_LIFELINE_NBSTAGES_TAGTYPE = "HwProcessor_Lifeline_nbStages";
 
-    @objid ("681d7a79-b115-487b-bb41-a41ea1c7490a")
+    @objid ("c558d0b2-1c91-432f-809c-5cfb391a5033")
     public static final String HWPROCESSOR_LIFELINE_OWNEDISAS_TAGTYPE = "HwProcessor_Lifeline_ownedISAs";
 
-    @objid ("e5c70df5-f082-4bdf-99dd-e3c8eab32fd6")
+    @objid ("e08fbfca-72e1-491a-9259-fdd25b817be3")
     public static final String HWPROCESSOR_LIFELINE_OWNEDMMUS_TAGTYPE = "HwProcessor_Lifeline_ownedMMUs";
 
-    @objid ("683d13be-b21a-4f26-b2bc-4bd44dc0f977")
+    @objid ("3f0866c0-9f46-4ec2-97f7-9f89387ef609")
     public static final String HWPROCESSOR_LIFELINE_PREDICTORS_TAGTYPE = "HwProcessor_Lifeline_predictors";
 
     /**
-     * Tells whether a {@link HwProcessorLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwProcessor_Lifeline >>. 
+     * Tells whether a {@link HwProcessorLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwProcessor_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e82989e3-4074-49a2-b4a6-06b3a0381164")
+    @objid ("bb09cec9-18c3-418f-913e-a53e6e81b41c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwProcessorLifeline.STEREOTYPE_NAME));
     }
@@ -91,21 +91,21 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * 
      * @return a {@link HwProcessorLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("ac753010-86f7-4079-bb7b-9f039907c878")
+    @objid ("9464cc38-763c-4fb2-9885-c8f89babfb76")
     public static HwProcessorLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwProcessorLifeline.STEREOTYPE_NAME);
         return HwProcessorLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwProcessorLifeline} proxy from a {@link Lifeline} stereotyped << HwProcessor_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwProcessorLifeline} proxy from a {@link Lifeline} stereotyped << HwProcessor_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwProcessorLifeline} proxy or <i>null</i>.
      */
-    @objid ("2795bb27-d8a4-4003-a390-6651a73239f9")
+    @objid ("411395d4-cb4e-47f8-bfe0-a0dcc5d05c42")
     public static HwProcessorLifeline instantiate(final Lifeline obj) {
         return HwProcessorLifeline.canInstantiate(obj) ? new HwProcessorLifeline(obj) : null;
     }
@@ -118,7 +118,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * @return a {@link HwProcessorLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("0ded62ba-2600-4ae0-8d6e-f2cc9ea65b8b")
+    @objid ("40da03b8-617a-4fd0-ae97-a026b0a66c0b")
     public static HwProcessorLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwProcessorLifeline.canInstantiate(obj))
         	return new HwProcessorLifeline(obj);
@@ -126,7 +126,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
         	throw new IllegalArgumentException("HwProcessorLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("db619d84-b261-4bb4-8cc6-4f1fe43a956b")
+    @objid ("921d79d6-c9dc-45d1-bffa-1e386f607170")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -146,7 +146,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("6d3d06ad-35bb-4f05-9752-79b012c2c426")
+    @objid ("9411267b-b443-438a-bb46-4c35230faf2b")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -157,7 +157,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5c9c30a2-d72d-4a08-a5a6-3bd193ae0518")
+    @objid ("b59bf4cf-372a-4a99-ac2f-532a2f61f6f7")
     public String getHwProcessor_Lifeline_architecture() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_ARCHITECTURE_TAGTYPE_ELT);
     }
@@ -167,7 +167,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("2bd4365c-9c59-452c-bb40-e562b8416f8c")
+    @objid ("b4c1b8d0-3fc9-4574-8b2e-7d4ee993a98f")
     public List<String> getHwProcessor_Lifeline_caches() {
         return this.elt.getTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_CACHES_TAGTYPE_ELT);
     }
@@ -177,7 +177,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2b3b2f3a-26d6-4ce9-90e8-2f0ab18aa7ec")
+    @objid ("81dedbe9-4fba-4295-92fc-a4924beba346")
     public String getHwProcessor_Lifeline_ipc() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_IPC_TAGTYPE_ELT);
     }
@@ -187,7 +187,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("81571fda-bef6-401c-9d2a-91304f1bc01b")
+    @objid ("cef15fe4-df46-4ed6-87c5-1425d38e9d9b")
     public String getHwProcessor_Lifeline_mips() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_MIPS_TAGTYPE_ELT);
     }
@@ -197,7 +197,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d15815cd-b858-43ec-8e45-64dd94666a8d")
+    @objid ("7529af30-ca2f-44d6-b749-c896350f4ff2")
     public String getHwProcessor_Lifeline_nbALUs() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBALUS_TAGTYPE_ELT);
     }
@@ -207,7 +207,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b44bf431-3788-4378-9fea-436b71bf5a50")
+    @objid ("f9377064-de7c-4112-aa39-3c0b5827541c")
     public String getHwProcessor_Lifeline_nbCores() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBCORES_TAGTYPE_ELT);
     }
@@ -217,7 +217,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4883d37d-10f0-4bfe-9d19-d8d3f19a70bc")
+    @objid ("7950080d-f90d-4df1-aced-7c078a63ff34")
     public String getHwProcessor_Lifeline_nbFPUs() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBFPUS_TAGTYPE_ELT);
     }
@@ -227,7 +227,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7206ad3d-beeb-4d90-878a-e098ecb2fb0d")
+    @objid ("45f3f79d-fb8b-4e2a-9c4c-e00b0ad09313")
     public String getHwProcessor_Lifeline_nbPipelines() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBPIPELINES_TAGTYPE_ELT);
     }
@@ -237,7 +237,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ef589224-1b26-4f10-9ef9-1afc66cbebdd")
+    @objid ("ca08f619-2d00-47d1-af67-4ee02977c100")
     public String getHwProcessor_Lifeline_nbStages() {
         return this.elt.getTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBSTAGES_TAGTYPE_ELT);
     }
@@ -247,7 +247,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("dd596d98-e293-44c1-bf57-c7c93cb56a2c")
+    @objid ("7e595d51-26c5-4c7e-a7f2-27efc42e131d")
     public List<String> getHwProcessor_Lifeline_ownedISAs() {
         return this.elt.getTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_OWNEDISAS_TAGTYPE_ELT);
     }
@@ -257,7 +257,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cfd242fe-20c9-4f16-9acf-69b8e96d5052")
+    @objid ("08f69ba4-5aac-4522-9706-bf1021f1c166")
     public List<String> getHwProcessor_Lifeline_ownedMMUs() {
         return this.elt.getTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_OWNEDMMUS_TAGTYPE_ELT);
     }
@@ -267,12 +267,12 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("34b48f00-f97e-425b-a144-9a4287a87398")
+    @objid ("9d9c31c8-27c3-4da6-ba42-68514db53a65")
     public List<String> getHwProcessor_Lifeline_predictors() {
         return this.elt.getTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_PREDICTORS_TAGTYPE_ELT);
     }
 
-    @objid ("0e437ee9-fa25-4382-b1a9-2ab5eea7a4bd")
+    @objid ("6fff3f47-de50-4726-9d84-a2b1ce2e3ba3")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -283,7 +283,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1598f326-4a4f-46f5-988c-ef26cd27e064")
+    @objid ("ebe48044-001c-4cd4-854c-d36bb3092b61")
     public void setHwProcessor_Lifeline_architecture(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_ARCHITECTURE_TAGTYPE_ELT, value);
     }
@@ -293,7 +293,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b0b9d0d9-0ec2-4277-a7e8-353b7d1bf7b4")
+    @objid ("d7507c19-bfce-41a1-8fc7-9f248361516b")
     public void setHwProcessor_Lifeline_caches(final List<String> values) {
         this.elt.putTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_CACHES_TAGTYPE_ELT, values);
     }
@@ -303,7 +303,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("abf0f2ee-6428-4136-81c3-d009bc83734a")
+    @objid ("7dfcc903-2bd1-4df0-8c32-a2230e194343")
     public void setHwProcessor_Lifeline_ipc(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_IPC_TAGTYPE_ELT, value);
     }
@@ -313,7 +313,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f4812e34-5d3f-4d93-a634-54e5bc420dcd")
+    @objid ("64dd96d7-8d12-43d9-8d70-1d792b16c837")
     public void setHwProcessor_Lifeline_mips(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_MIPS_TAGTYPE_ELT, value);
     }
@@ -323,7 +323,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f99457d6-08ed-4210-8e3a-674d0e912bd7")
+    @objid ("eb3c965d-4332-43b7-98a7-b87d258ed5d1")
     public void setHwProcessor_Lifeline_nbALUs(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBALUS_TAGTYPE_ELT, value);
     }
@@ -333,7 +333,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0c6a91cf-61da-4dbd-be89-8e4df97de948")
+    @objid ("e6f2c1d5-0d55-4c84-86f0-bff14a4d2c83")
     public void setHwProcessor_Lifeline_nbCores(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBCORES_TAGTYPE_ELT, value);
     }
@@ -343,7 +343,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("02a8a53f-a53c-490b-b00e-63db7269547e")
+    @objid ("1b2490ba-e3ef-4ba3-b63b-1f950bdcc322")
     public void setHwProcessor_Lifeline_nbFPUs(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBFPUS_TAGTYPE_ELT, value);
     }
@@ -353,7 +353,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("080d8584-4618-403e-a067-04c3e393b066")
+    @objid ("36f6e1c6-db2e-4446-ae98-8c830a44f81c")
     public void setHwProcessor_Lifeline_nbPipelines(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBPIPELINES_TAGTYPE_ELT, value);
     }
@@ -363,7 +363,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b0cb6c20-33d5-4404-aaeb-b056e474cb54")
+    @objid ("8a882ce8-406a-4569-9b36-7774728d8e79")
     public void setHwProcessor_Lifeline_nbStages(final String value) {
         this.elt.putTagValue(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_NBSTAGES_TAGTYPE_ELT, value);
     }
@@ -373,7 +373,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ca4f0fd2-a009-423c-9f0a-b150de53b937")
+    @objid ("9fb10556-d35c-4ebe-a388-dc704018b461")
     public void setHwProcessor_Lifeline_ownedISAs(final List<String> values) {
         this.elt.putTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_OWNEDISAS_TAGTYPE_ELT, values);
     }
@@ -383,7 +383,7 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c30253a9-edfd-4d49-aaab-c005b8ad28ec")
+    @objid ("3a04c5ef-7be5-4f82-a4d7-fce8ed71b982")
     public void setHwProcessor_Lifeline_ownedMMUs(final List<String> values) {
         this.elt.putTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_OWNEDMMUS_TAGTYPE_ELT, values);
     }
@@ -393,64 +393,64 @@ public class HwProcessorLifeline extends HwComputingResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1cee601c-6ece-4c3d-a8a0-2e2edf2b8b30")
+    @objid ("8ad83977-1f6c-4b68-b62e-525da92403f8")
     public void setHwProcessor_Lifeline_predictors(final List<String> values) {
         this.elt.putTagValues(HwProcessorLifeline.MdaTypes.HWPROCESSOR_LIFELINE_PREDICTORS_TAGTYPE_ELT, values);
     }
 
-    @objid ("b8466233-9717-4862-abe6-36ff331d776e")
+    @objid ("d9c66062-f9fb-4ba5-871a-39100bfc71e5")
     protected HwProcessorLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("2347a7a7-cf0a-4bfe-85af-eea85d1ee51a")
     public static final class MdaTypes {
-        @objid ("c02b5cf4-fb95-41a7-841f-e339e9645d30")
+        @objid ("87e09e14-e0b6-4bec-8609-4d8c9916bfe9")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("0bc703e8-662d-48f5-a5dd-224f14389e1c")
+        @objid ("93e8cb76-8bbb-4abd-8c7f-91ff749d7f32")
         public static TagType HWPROCESSOR_LIFELINE_ARCHITECTURE_TAGTYPE_ELT;
 
-        @objid ("997f639a-f424-4dde-bff6-b0ded39d4e52")
+        @objid ("39c7139d-8694-4b83-8d1a-202c62426ceb")
         public static TagType HWPROCESSOR_LIFELINE_MIPS_TAGTYPE_ELT;
 
-        @objid ("5fb5a93a-5026-4dc2-a991-1824335d7382")
+        @objid ("7c1b0db4-312c-44b1-bedd-3fea0bd14dce")
         public static TagType HWPROCESSOR_LIFELINE_IPC_TAGTYPE_ELT;
 
-        @objid ("da9b3676-d199-49fc-aea3-9ddfaf15063b")
+        @objid ("52dcf4e8-8dca-4f21-9b73-7ce6303283d5")
         public static TagType HWPROCESSOR_LIFELINE_NBCORES_TAGTYPE_ELT;
 
-        @objid ("437ed218-e5bf-4edc-9627-f695623af5d4")
+        @objid ("3a7a6d40-0343-4b8e-a145-2f23f248b7f5")
         public static TagType HWPROCESSOR_LIFELINE_NBPIPELINES_TAGTYPE_ELT;
 
-        @objid ("edeeb7e6-e245-427d-98c9-63e280a4f184")
+        @objid ("27f20d71-5247-459c-9d39-db849136ab3b")
         public static TagType HWPROCESSOR_LIFELINE_NBSTAGES_TAGTYPE_ELT;
 
-        @objid ("7e9db5b3-2822-498c-90d6-d2f8a8996a65")
+        @objid ("6521f56a-b2dd-4ebc-b1d2-eead17318b46")
         public static TagType HWPROCESSOR_LIFELINE_NBALUS_TAGTYPE_ELT;
 
-        @objid ("70fea9c7-994e-44a1-a9f8-1bab731cecfc")
+        @objid ("b8466566-8aa4-4676-bc0a-5371645b813c")
         public static TagType HWPROCESSOR_LIFELINE_NBFPUS_TAGTYPE_ELT;
 
-        @objid ("9620d430-b89b-4a53-b0dd-20b5e2ba9dee")
+        @objid ("9f1ca053-723d-4526-9b37-841e93742480")
         public static TagType HWPROCESSOR_LIFELINE_OWNEDISAS_TAGTYPE_ELT;
 
-        @objid ("d8b55234-9d1b-4dc1-8609-da665a9b34aa")
+        @objid ("417e4cab-5e0b-406f-a00d-fd9cd0894222")
         public static TagType HWPROCESSOR_LIFELINE_PREDICTORS_TAGTYPE_ELT;
 
-        @objid ("86658d16-c832-4a58-9ef6-3b4cb37176e5")
+        @objid ("bf43fbdd-c404-45c2-80c7-0741bd140d3d")
         public static TagType HWPROCESSOR_LIFELINE_CACHES_TAGTYPE_ELT;
 
-        @objid ("ae54ff21-0802-4757-9186-300d00fed92d")
+        @objid ("833ce7ff-dbfb-43a5-83a2-dab8274794e0")
         public static TagType HWPROCESSOR_LIFELINE_OWNEDMMUS_TAGTYPE_ELT;
 
-        @objid ("9dc07274-b012-4edd-8ed7-03bb92b29c95")
+        @objid ("b3ad7d00-7f05-44b8-b369-cc9b2dc99ff1")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3bda90c0-eee9-45d2-8621-bf207973c9f9")
+        @objid ("b658c709-f9b0-4b5b-bc04-778e6a4af696")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("883b8a8e-4d2b-40de-985c-5c95af742816")
+        @objid ("0f1d49d2-7ec5-4f22-b28d-f93cb88a8805")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "1043e6ce-10a3-11df-81d9-0014222a9f79");
             HWPROCESSOR_LIFELINE_ARCHITECTURE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "77d35759-10a3-11df-81d9-0014222a9f79");

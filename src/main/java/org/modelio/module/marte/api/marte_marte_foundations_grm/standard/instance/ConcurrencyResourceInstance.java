@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.instance;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("7f87e6ca-968c-45d4-bd8a-d1edf858d5db")
 public class ConcurrencyResourceInstance extends ResourceInstance {
-    @objid ("effcf4f1-417d-4ad7-b721-d9bcf8ded3fb")
+    @objid ("404bc497-75d1-4e17-88f8-47cd49e35d0b")
     public static final String STEREOTYPE_NAME = "ConcurrencyResource_Instance";
 
     /**
-     * Tells whether a {@link ConcurrencyResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << ConcurrencyResource_Instance >>. 
+     * Tells whether a {@link ConcurrencyResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << ConcurrencyResource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("17b24415-fac8-456b-8cfc-6e9fc72e92c6")
+    @objid ("735b6e9a-c055-491c-b96b-2a9e269e25de")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ConcurrencyResourceInstance.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class ConcurrencyResourceInstance extends ResourceInstance {
      * 
      * @return a {@link ConcurrencyResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("6f8965a4-4053-4784-8297-1b9201204708")
+    @objid ("9217ecfc-e8e3-415f-84f8-448471dd3669")
     public static ConcurrencyResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ConcurrencyResourceInstance.STEREOTYPE_NAME);
         return ConcurrencyResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link ConcurrencyResourceInstance} proxy from a {@link Instance} stereotyped << ConcurrencyResource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ConcurrencyResourceInstance} proxy from a {@link Instance} stereotyped << ConcurrencyResource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link ConcurrencyResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("7970ec7e-5b38-4f8b-b062-9d58d2c60317")
+    @objid ("129e0894-b181-4d05-81be-287b15c307f3")
     public static ConcurrencyResourceInstance instantiate(final Instance obj) {
         return ConcurrencyResourceInstance.canInstantiate(obj) ? new ConcurrencyResourceInstance(obj) : null;
     }
@@ -81,7 +81,7 @@ public class ConcurrencyResourceInstance extends ResourceInstance {
      * @return a {@link ConcurrencyResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("6434536f-0f06-4263-a7c1-b7e33125f895")
+    @objid ("52372df4-0e5a-4d19-b30a-9924d643d4a7")
     public static ConcurrencyResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (ConcurrencyResourceInstance.canInstantiate(obj))
         	return new ConcurrencyResourceInstance(obj);
@@ -89,7 +89,7 @@ public class ConcurrencyResourceInstance extends ResourceInstance {
         	throw new IllegalArgumentException("ConcurrencyResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ed2e3023-6488-402c-b266-f8317b4a80a0")
+    @objid ("86929cc4-d532-4e94-b607-2e9a17a453ca")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class ConcurrencyResourceInstance extends ResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("8d9f9121-ef37-4b91-ae45-f47c2661754f")
+    @objid ("a4c57d96-9278-4000-a0ca-020759f8286c")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
     }
 
-    @objid ("1105a195-9480-4b90-a12e-9ea693934c1a")
+    @objid ("18df904d-3a7a-4f7e-a58d-e867830480d9")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("06d0a385-12ad-4e04-9b93-8ed8cac20a98")
+    @objid ("bcba1cf7-fdcf-4c3d-947a-741d9a980a9e")
     protected ConcurrencyResourceInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("63bded10-f64c-40d0-8152-19de593af8ca")
     public static final class MdaTypes {
-        @objid ("562b416f-44d8-45e7-8c84-9dcfd01fe0d9")
+        @objid ("75951b22-4646-4427-bc09-9bece887349a")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("03ce4d0e-34ce-422b-93d6-c00091db6ea0")
+        @objid ("34d1a1f7-91fd-4d2b-8277-18b1f332f70b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("eae6cf15-1f6d-465d-b7a2-e4816b288df6")
+        @objid ("ea9ce032-e3f1-475a-955b-8d203b680ff1")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("7ebd24c3-99f7-40a7-9d02-2acb18d478d1")
+        @objid ("ed0a6e48-adff-48ff-a1ea-fde1e7d1e0f8")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "7ae7b6ff-0f3e-11df-8c52-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

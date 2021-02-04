@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdevice.standard.attribute;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("629b2c5f-b37e-4d0f-b5b2-6963dfccf5fa")
 public class HwIOAttribute extends HwDeviceAttribute {
-    @objid ("7b1e6d9d-4b35-4030-a7f4-c3e0173ad543")
+    @objid ("abdca9de-3054-40ce-a9f8-03d433bb5027")
     public static final String STEREOTYPE_NAME = "HwI_O_Attribute";
 
     /**
-     * Tells whether a {@link HwIOAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwI_O_Attribute >>. 
+     * Tells whether a {@link HwIOAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwI_O_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("85c54ebc-3651-4ae5-901c-7af1ac8eb99a")
+    @objid ("c84ca2c8-b63d-43ab-b2b8-8913b928ed30")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwIOAttribute.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class HwIOAttribute extends HwDeviceAttribute {
      * 
      * @return a {@link HwIOAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("df59e8ce-665e-4e9f-9bcd-cdb4b622f71a")
+    @objid ("ca7adc24-55ad-4d92-9875-3e7035673201")
     public static HwIOAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwIOAttribute.STEREOTYPE_NAME);
         return HwIOAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwIOAttribute} proxy from a {@link Attribute} stereotyped << HwI_O_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwIOAttribute} proxy from a {@link Attribute} stereotyped << HwI_O_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwIOAttribute} proxy or <i>null</i>.
      */
-    @objid ("e3f1f77d-2db5-40b4-90c2-6f24ca19ad39")
+    @objid ("488fbe44-d9ba-47d7-99b9-cb669e419275")
     public static HwIOAttribute instantiate(final Attribute obj) {
         return HwIOAttribute.canInstantiate(obj) ? new HwIOAttribute(obj) : null;
     }
@@ -81,7 +81,7 @@ public class HwIOAttribute extends HwDeviceAttribute {
      * @return a {@link HwIOAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ca837b39-ae06-428a-ae42-4131f31d017c")
+    @objid ("d2f95cf1-cf47-4ad8-9e37-5280f0741bc8")
     public static HwIOAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwIOAttribute.canInstantiate(obj))
         	return new HwIOAttribute(obj);
@@ -89,7 +89,7 @@ public class HwIOAttribute extends HwDeviceAttribute {
         	throw new IllegalArgumentException("HwIOAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2235fb90-d0f7-4624-9705-0d4f6f7a04b6")
+    @objid ("873763b3-90fc-4b4c-9cc5-3f5a23b914a8")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class HwIOAttribute extends HwDeviceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("a9e4009f-d267-434f-8310-18219155545b")
+    @objid ("06076f20-d14b-4f7a-84ab-11fc56933a81")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("1b896c81-29ae-48fd-b409-e56f1f6e8004")
+    @objid ("38216395-883e-4d83-8b1a-afeff2a0a2c1")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("86f0a932-388c-449e-8f18-22927c8af9e5")
+    @objid ("d395d1d2-6839-4be6-81e7-71f550c2634c")
     protected HwIOAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("2e17f25b-e585-4a34-86ea-845f3cd6510e")
     public static final class MdaTypes {
-        @objid ("97dd216a-f3e0-48d1-b3be-6afcc532da0a")
+        @objid ("19b72344-75d9-4ae3-b8f7-618903cfcb39")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("2fae9e4d-a6fc-46a4-862a-0fbe772eba76")
+        @objid ("e454592d-ce04-488a-9037-a48069e841a4")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("2345a8f0-ddb4-4c3c-9379-69b82c007c91")
+        @objid ("4c93cca7-6f62-4d6e-bb5e-8bafb7c1feb9")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d4c75601-52e0-43b4-8ac1-817426690120")
+        @objid ("456cfb86-2fd3-4be2-9881-eb1c5dcd3473")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0137ddf5-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwpower.standard.association;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("127781d2-1eae-4c61-8600-1a00e2ad4fc0")
 public class HwPowerSupplyAssociation extends HwComponentAssociation {
-    @objid ("5fc0c514-a9e3-4cde-8c50-cc4048951668")
+    @objid ("11914535-eecd-4d7e-a1e7-e0a8b4598870")
     public static final String STEREOTYPE_NAME = "HwPowerSupply_Association";
 
-    @objid ("cc038f61-11d9-4bc5-bd8a-8de875c38260")
+    @objid ("8a166401-8ef8-4b6c-81a8-a0fb4850abb6")
     public static final String HWPOWERSUPPLY_ASSOCIATION_CAPACITY_TAGTYPE = "HwPowerSupply_Association_capacity";
 
-    @objid ("f15e0b8a-5b4b-40b4-8ab7-1185cf93c97b")
+    @objid ("5b7d06f5-887c-4a8f-9485-bf75fe370e40")
     public static final String HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER_TAGTYPE = "HwPowerSupply_Association_suppliedPower";
 
     /**
-     * Tells whether a {@link HwPowerSupplyAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwPowerSupply_Association >>. 
+     * Tells whether a {@link HwPowerSupplyAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwPowerSupply_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1d5265cc-30bb-4274-8d56-696be2dc2d69")
+    @objid ("11587cad-2450-499a-8888-1a4f7da042d7")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwPowerSupplyAssociation.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * 
      * @return a {@link HwPowerSupplyAssociation} proxy on the created {@link Association}.
      */
-    @objid ("8e5d307b-b5b7-48e6-90fc-89e17d8c195a")
+    @objid ("ee40539c-0c39-4a6d-9b2d-e0a2ce05a50f")
     public static HwPowerSupplyAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwPowerSupplyAssociation.STEREOTYPE_NAME);
         return HwPowerSupplyAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwPowerSupplyAssociation} proxy from a {@link Association} stereotyped << HwPowerSupply_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwPowerSupplyAssociation} proxy from a {@link Association} stereotyped << HwPowerSupply_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link HwPowerSupplyAssociation} proxy or <i>null</i>.
      */
-    @objid ("831c9fa8-4728-4b95-b6a7-15cdf4eac6bd")
+    @objid ("3f3f1220-7446-4847-97b4-6d5e2ead3a9b")
     public static HwPowerSupplyAssociation instantiate(final Association obj) {
         return HwPowerSupplyAssociation.canInstantiate(obj) ? new HwPowerSupplyAssociation(obj) : null;
     }
@@ -88,7 +88,7 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * @return a {@link HwPowerSupplyAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("42e8c01a-9c01-4898-8644-c75305457470")
+    @objid ("87f28dc2-c6c3-4ac6-a377-3cab42ed0e84")
     public static HwPowerSupplyAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (HwPowerSupplyAssociation.canInstantiate(obj))
         	return new HwPowerSupplyAssociation(obj);
@@ -96,7 +96,7 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
         	throw new IllegalArgumentException("HwPowerSupplyAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fcaf2e73-fde1-4944-b168-a7110787a87f")
+    @objid ("bc4ec62c-c6a5-42bb-ad7c-23cd5629293d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("150923a5-86e2-4432-9142-edb7201efe41")
+    @objid ("d63103df-00ea-48b2-8aef-f596478e9ce2")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -127,7 +127,7 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8122345f-ec55-41ae-bb2b-18ac67d999f6")
+    @objid ("fef12b91-4488-4586-8cd8-ca693aea8461")
     public String getHwPowerSupply_Association_capacity() {
         return this.elt.getTagValue(HwPowerSupplyAssociation.MdaTypes.HWPOWERSUPPLY_ASSOCIATION_CAPACITY_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e28f7c0c-d719-43fa-a3c3-199923b0a7da")
+    @objid ("122d452a-4be1-4813-ad25-4ad010580b83")
     public String getHwPowerSupply_Association_suppliedPower() {
         return this.elt.getTagValue(HwPowerSupplyAssociation.MdaTypes.HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER_TAGTYPE_ELT);
     }
 
-    @objid ("0739adeb-aa03-4357-b4e0-ff0775456ec9")
+    @objid ("50046f47-9c07-4c5a-83be-466e0ef68945")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8d3b29d6-4911-4e91-a04d-a501a59e3d45")
+    @objid ("1eb595b8-f7e3-4c8f-a95e-0a462525c63c")
     public void setHwPowerSupply_Association_capacity(final String value) {
         this.elt.putTagValue(HwPowerSupplyAssociation.MdaTypes.HWPOWERSUPPLY_ASSOCIATION_CAPACITY_TAGTYPE_ELT, value);
     }
@@ -163,34 +163,34 @@ public class HwPowerSupplyAssociation extends HwComponentAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9bbea459-f8ab-48f7-a69f-e56ba5766be8")
+    @objid ("1703abd4-5403-4112-ba92-2f720d21eba7")
     public void setHwPowerSupply_Association_suppliedPower(final String value) {
         this.elt.putTagValue(HwPowerSupplyAssociation.MdaTypes.HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER_TAGTYPE_ELT, value);
     }
 
-    @objid ("e98311fa-c54d-4122-b8fb-53da2cb55b9b")
+    @objid ("f7f3ba29-9e48-4a34-ac2d-e4b0da3839dd")
     protected HwPowerSupplyAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("ebfe0ad0-69ce-458a-af95-8c0b3290dd8d")
     public static final class MdaTypes {
-        @objid ("be86ef71-9bad-456e-b0fc-6d13f37171b0")
+        @objid ("5d76f95e-f4eb-40f2-931c-9be2d7f04a09")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("0022c1e9-e135-4bd3-a577-68dfa81113f6")
+        @objid ("22cc3568-3272-4e57-9688-d2a9ee98a236")
         public static TagType HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER_TAGTYPE_ELT;
 
-        @objid ("b3338dbf-550d-44e0-8faf-22e3503adf96")
+        @objid ("c12c2ade-3b2a-4e0e-88ba-d829930df2c7")
         public static TagType HWPOWERSUPPLY_ASSOCIATION_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("3f820e49-0cdf-4f79-996a-5590f4a157f8")
+        @objid ("89f05978-5fb0-474f-96c6-44c7b527c8da")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("51ee9324-14e6-410b-87da-3df2c43f84bc")
+        @objid ("cb020b9b-8e2d-46ed-bc75-d43847fb2d7a")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("410aeb42-2258-4433-9d5f-8dd3a3edb73b")
+        @objid ("caedd528-26a6-45cc-a05b-1426ead8f83a")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "c0e88747-10bd-11df-81d9-0014222a9f79");
             HWPOWERSUPPLY_ASSOCIATION_SUPPLIEDPOWER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "c0e88749-10bd-11df-81d9-0014222a9f79");

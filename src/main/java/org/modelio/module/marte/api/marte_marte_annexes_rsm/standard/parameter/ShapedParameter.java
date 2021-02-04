@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_annexes_rsm.standard.parameter;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("97e58de5-eb18-44f9-8141-10420c059ae2")
 public class ShapedParameter {
-    @objid ("74c15795-61fc-42b2-bf20-590a7dd6b8ff")
+    @objid ("6f1278ad-afac-4c60-8575-2231b9ef5e07")
     public static final String STEREOTYPE_NAME = "Shaped_Parameter";
 
-    @objid ("43a6152f-3d65-4313-b834-066cbb7a6198")
+    @objid ("cf00db4f-8781-4e79-92c3-3f690f3bebb3")
     public static final String SHAPED_PARAMETER_SHAPE_TAGTYPE = "Shaped_Parameter_shape";
 
     /**
      * The underlying {@link Parameter} represented by this proxy, never null.
      */
-    @objid ("321a1fd4-0f69-4a6c-9730-2f444c4ea037")
+    @objid ("2b6e994b-76de-46a6-9d4f-76568e26d991")
     protected final Parameter elt;
 
     /**
-     * Tells whether a {@link ShapedParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << Shaped_Parameter >>. 
+     * Tells whether a {@link ShapedParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << Shaped_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f444fa06-2d8b-44de-b3a9-03a071ffe214")
+    @objid ("e4270425-6c53-47d8-8581-4cf019c94a4c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ShapedParameter.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class ShapedParameter {
      * 
      * @return a {@link ShapedParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("1dbc1f07-3968-4ec3-a341-ca3b9d07f627")
+    @objid ("fc9e1823-be7d-4f6b-9bb7-3711aa14c6fc")
     public static ShapedParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ShapedParameter.STEREOTYPE_NAME);
         return ShapedParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link ShapedParameter} proxy from a {@link Parameter} stereotyped << Shaped_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ShapedParameter} proxy from a {@link Parameter} stereotyped << Shaped_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link ShapedParameter} proxy or <i>null</i>.
      */
-    @objid ("41b5206e-2bbb-46fd-98a3-5d5f50f358c8")
+    @objid ("a3ae8a21-73a0-4958-a64c-db2bf761c28e")
     public static ShapedParameter instantiate(final Parameter obj) {
         return ShapedParameter.canInstantiate(obj) ? new ShapedParameter(obj) : null;
     }
@@ -90,7 +90,7 @@ public class ShapedParameter {
      * @return a {@link ShapedParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("194bf3c3-3a2a-48b2-b033-df4d4a7b82db")
+    @objid ("81768122-3074-4c1d-8f2f-5fdefa7e1e25")
     public static ShapedParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (ShapedParameter.canInstantiate(obj))
         	return new ShapedParameter(obj);
@@ -98,7 +98,7 @@ public class ShapedParameter {
         	throw new IllegalArgumentException("ShapedParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9b28ba5d-838b-40ab-9854-d6aedba7eb23")
+    @objid ("14352d36-e834-40dd-935c-7d47574c4060")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -118,7 +118,7 @@ public class ShapedParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("c30aa2fb-5b91-415c-a643-e03c2921c7e8")
+    @objid ("d4d71dd6-4605-4c12-9d04-6387de951019")
     public Parameter getElement() {
         return this.elt;
     }
@@ -128,12 +128,12 @@ public class ShapedParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6886f026-93d8-4c13-8c7b-21a4db2a21c0")
+    @objid ("9a4c264c-15f3-44de-b1b2-caaab2e1de54")
     public String getShaped_Parameter_shape() {
         return this.elt.getTagValue(ShapedParameter.MdaTypes.SHAPED_PARAMETER_SHAPE_TAGTYPE_ELT);
     }
 
-    @objid ("9265c914-d781-4bad-be0d-dbd5b3945855")
+    @objid ("a6bd5fee-d5e3-41fc-92e4-29adb3470be9")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class ShapedParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f41056b6-5521-4e22-b096-7c44dc06b3c0")
+    @objid ("3a14fdb8-ccdb-43e0-a7bf-69b8e7b70333")
     public void setShaped_Parameter_shape(final String value) {
         this.elt.putTagValue(ShapedParameter.MdaTypes.SHAPED_PARAMETER_SHAPE_TAGTYPE_ELT, value);
     }
 
-    @objid ("64d05e0c-f7f2-4b5a-b187-2eafe1e49ba6")
+    @objid ("29f68a78-1f27-4b16-a8f2-f313f81ed954")
     protected ShapedParameter(final Parameter elt) {
         this.elt = elt;
     }
 
     @objid ("5e3c1289-db17-4916-8f51-7e49376bc192")
     public static final class MdaTypes {
-        @objid ("7f681bda-c429-4731-bae4-1f0eb40d300d")
+        @objid ("adf92f3a-adfa-4851-ac45-bf45115237e6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("78506201-e1f0-4030-9e82-a4a92529b669")
+        @objid ("8dd7cc65-9905-4d39-9043-78a8809794d4")
         public static TagType SHAPED_PARAMETER_SHAPE_TAGTYPE_ELT;
 
-        @objid ("87777ec4-971e-45fe-b8e9-8339d6a7ffdf")
+        @objid ("08c3abe3-a766-4e1f-9514-c751fa9b4cc9")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a1782b70-bd20-4a43-bb83-cac3bf519974")
+        @objid ("a4ec12b1-428c-48d0-bb98-5db3b3c7438b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("a78889ba-3da3-4b78-9a13-b2bafe77f27c")
+        @objid ("2dc36a7f-dd80-4750-b31c-e3f6dfd63790")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0c7f2c71-14b5-11df-9d54-0014222a9f79");
             SHAPED_PARAMETER_SHAPE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0c7f2c72-14b5-11df-9d54-0014222a9f79");

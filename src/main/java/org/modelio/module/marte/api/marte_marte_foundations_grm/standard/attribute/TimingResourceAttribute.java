@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.attribute;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("612173a4-0092-4de0-af29-3607e0eb3efa")
 public class TimingResourceAttribute extends ResourceAttribute {
-    @objid ("962a3163-a80a-4742-a2ba-e4e8ebea8e9d")
+    @objid ("c5229112-85ff-492d-95fa-f4bf1cab4155")
     public static final String STEREOTYPE_NAME = "TimingResource_Attribute";
 
     /**
-     * Tells whether a {@link TimingResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << TimingResource_Attribute >>. 
+     * Tells whether a {@link TimingResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << TimingResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e2552c54-1470-41ab-a621-b5ee5e2c1bbd")
+    @objid ("a0458eee-340a-4250-86e0-dbfc15668b28")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, TimingResourceAttribute.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class TimingResourceAttribute extends ResourceAttribute {
      * 
      * @return a {@link TimingResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("7b8ce16e-f6f1-491c-ba0c-0c5be6e32b64")
+    @objid ("dc6154c8-5bc6-423c-8fba-442a6d97c99f")
     public static TimingResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, TimingResourceAttribute.STEREOTYPE_NAME);
         return TimingResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link TimingResourceAttribute} proxy from a {@link Attribute} stereotyped << TimingResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link TimingResourceAttribute} proxy from a {@link Attribute} stereotyped << TimingResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link TimingResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("5e800bd6-8eb5-4ed6-862d-3189ef998428")
+    @objid ("606568a1-4c55-4ee2-8ea4-30a3c31135d2")
     public static TimingResourceAttribute instantiate(final Attribute obj) {
         return TimingResourceAttribute.canInstantiate(obj) ? new TimingResourceAttribute(obj) : null;
     }
@@ -81,7 +81,7 @@ public class TimingResourceAttribute extends ResourceAttribute {
      * @return a {@link TimingResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("3a381542-9def-4cdf-ba13-21e90016e5a9")
+    @objid ("1b1444dd-e530-4d0b-9b62-2e413494454a")
     public static TimingResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (TimingResourceAttribute.canInstantiate(obj))
         	return new TimingResourceAttribute(obj);
@@ -89,7 +89,7 @@ public class TimingResourceAttribute extends ResourceAttribute {
         	throw new IllegalArgumentException("TimingResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("bb94e6a0-34eb-4b5e-b08a-c454d8998d4d")
+    @objid ("7850d58c-4cf9-4560-9453-5315e64690cd")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class TimingResourceAttribute extends ResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("ffebef75-9874-49fa-9713-2ac0e965147f")
+    @objid ("88f93da0-0b36-4ff3-b087-a2d92d30f2f0")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("c426a851-69f8-455e-aae2-e4c08b9e161d")
+    @objid ("79e5c9d4-6142-4a50-b529-961d34f105de")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("7a474f10-7499-4c45-bee1-c375d6e4b6df")
+    @objid ("a49dd667-56c3-4ce8-a2b9-cef7e6abd995")
     protected TimingResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("c9d217a0-1384-4efd-9328-daaaef14528b")
     public static final class MdaTypes {
-        @objid ("4ea2f495-1354-49d1-9bd2-95c3e909c231")
+        @objid ("28aea271-acfb-4fa1-b5fa-7b0ff04e62d2")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b7e3eaef-a4bc-4976-ab41-4e76b938b131")
+        @objid ("d0c650af-9650-44d4-afa4-40329e5afc9b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("4ab3d002-df75-4843-b219-21bfea551b96")
+        @objid ("127dcf7b-1604-418d-88eb-f7d94da1eac3")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("53a66f92-4b80-44aa-b3ad-e12ba475cb84")
+        @objid ("6f91c5fd-128f-4db5-ab42-2c1239ddef49")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009ce722-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

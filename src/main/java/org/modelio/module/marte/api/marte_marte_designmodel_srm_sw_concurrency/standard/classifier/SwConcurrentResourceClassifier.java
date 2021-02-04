@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.classifier;
 
@@ -35,72 +35,72 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("78fc3b80-24fa-454a-b6cf-2b9c70515a39")
 public class SwConcurrentResourceClassifier extends SwResourceClassifier {
-    @objid ("dc604ac1-bbc6-43b8-aefd-4843e94c3cea")
+    @objid ("7e1eec20-e5cf-417d-8695-6dbe146a1ffb")
     public static final String STEREOTYPE_NAME = "SwConcurrentResource_Classifier";
 
-    @objid ("c9997e00-d673-44ab-9681-c3ffa8c535a6")
+    @objid ("c8607de9-2e23-41de-b31d-9fe170f66e0c")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATESERVICES_TAGTYPE = "SwConcurrentResource_Classifier_activateServices";
 
-    @objid ("b92ad02f-3360-40c5-a111-083014eb96a9")
+    @objid ("552e29ea-891b-4263-8b40-d41b45d7aeb4")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATIONCAPACITY_TAGTYPE = "SwConcurrentResource_Classifier_activationCapacity";
 
-    @objid ("ce690832-af71-4509-83bc-0fcc54bb406e")
+    @objid ("978b1b82-644c-4152-b700-3d68fae51044")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_ADRESSSPACE_TAGTYPE = "SwConcurrentResource_Classifier_adressSpace";
 
-    @objid ("2e62af31-8170-4e6b-8569-7284faba49eb")
+    @objid ("caf4cc62-5a4d-47ee-99c3-9e5aac0ba0cc")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_DISABLECONCURRENCYSERVICES_TAGTYPE = "SwConcurrentResource_Classifier_disableConcurrencyServices";
 
-    @objid ("4a1990df-f2c3-4318-9c2a-96db9c4b7d36")
+    @objid ("84952ed4-49e2-420d-bc77-778580be8048")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_ENABLECONCURRENCYSERVICES_TAGTYPE = "SwConcurrentResource_Classifier_enableConcurrencyServices";
 
-    @objid ("83a20e51-83ba-4a0c-b29d-46d27d9fd3b5")
+    @objid ("4be7903e-cc8f-46d1-a804-dcdacbd93ee8")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_ENTRYPOINTS_TAGTYPE = "SwConcurrentResource_Classifier_entryPoints";
 
-    @objid ("f807a2ea-551a-438a-87b1-a4a823a37733")
+    @objid ("2667ceb9-debe-4fe1-932d-303dd2736bcc")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_HEAPSIZEELEMENTS_TAGTYPE = "SwConcurrentResource_Classifier_heapSizeElements";
 
-    @objid ("97af6b2d-a770-490d-9027-33696d9ddcce")
+    @objid ("56e26be7-cce4-471e-8210-889f97d26d58")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_MESSAGERESOURCES_TAGTYPE = "SwConcurrentResource_Classifier_messageResources";
 
-    @objid ("459a1bd2-71a5-462e-b30b-0a6a8c97628e")
+    @objid ("75dd3714-da39-4ed6-9565-7deb153312e5")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCES_TAGTYPE = "SwConcurrentResource_Classifier_mutualExclusionResources";
 
-    @objid ("f1fd84fb-bdbd-4ca0-b9ae-1452262e20e1")
+    @objid ("126ed6ad-9918-4a7f-846b-cf2ab3390a35")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCES_TAGTYPE = "SwConcurrentResource_Classifier_notificationResources";
 
-    @objid ("866c7497-83d0-4853-9d6f-92c35d354ef3")
+    @objid ("7bcadc6d-7e5b-4411-84b9-33950cfba785")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_PERIODELEMENTS_TAGTYPE = "SwConcurrentResource_Classifier_periodElements";
 
-    @objid ("20c05f46-1cc7-459b-ad1b-a7e0f77ee41c")
+    @objid ("80ec448e-f5f4-44a0-8382-17578a0cedc2")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_PRIORITYELEMENTS_TAGTYPE = "SwConcurrentResource_Classifier_priorityElements";
 
-    @objid ("784c0194-b2ed-4df5-aee4-33bae572761b")
+    @objid ("6ee44006-4131-4f00-bbc5-47f1448f0425")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_RESUMESERVICES_TAGTYPE = "SwConcurrentResource_Classifier_resumeServices";
 
-    @objid ("fc3fc1e0-2683-4820-84c7-b8b312373b02")
+    @objid ("d5674da5-57dd-46e3-966b-69e90e6bb797")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SHAREDATARESOURCES_TAGTYPE = "SwConcurrentResource_Classifier_shareDataResources";
 
-    @objid ("83cb7705-925f-4117-a075-94892303c998")
+    @objid ("e84c38d4-2a46-4617-a41d-cbd55aeeb731")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_STACKSIZEELEMENTS_TAGTYPE = "SwConcurrentResource_Classifier_stackSizeElements";
 
-    @objid ("d0bc0cf9-536a-44a0-84c8-986fe3691d8c")
+    @objid ("09d44fd8-dca3-4712-82b1-2d86d525f3ce")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_SUSPENDSERVICES_TAGTYPE = "SwConcurrentResource_Classifier_suspendServices";
 
-    @objid ("b3936dd1-75df-415b-a848-be30c4f561ac")
+    @objid ("22369bd6-1efa-43ca-b422-8515a0adb0ab")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_TERMINATESERVICES_TAGTYPE = "SwConcurrentResource_Classifier_terminateServices";
 
-    @objid ("0e5beace-0a83-4dde-9366-acb6098c6dbf")
+    @objid ("3eef4e62-e40a-4aad-b44f-eb78b2d70a83")
     public static final String SWCONCURRENTRESOURCE_CLASSIFIER_TYPE_TAGTYPE = "SwConcurrentResource_Classifier_type";
 
     /**
-     * Tells whether a {@link SwConcurrentResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << SwConcurrentResource_Classifier >>. 
+     * Tells whether a {@link SwConcurrentResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << SwConcurrentResource_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b6e25cd7-d5c7-4770-b072-c705a913cbb6")
+    @objid ("d11a0164-2906-4cf6-8454-7ed0df7044fc")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwConcurrentResourceClassifier.STEREOTYPE_NAME));
     }
@@ -110,21 +110,21 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * 
      * @return a {@link SwConcurrentResourceClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("d3a64cf1-be9b-4176-b766-010d54cff599")
+    @objid ("1defdd25-72d7-408e-9fe6-7f4ad0cb9b95")
     public static SwConcurrentResourceClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwConcurrentResourceClassifier.STEREOTYPE_NAME);
         return SwConcurrentResourceClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwConcurrentResourceClassifier} proxy from a {@link Classifier} stereotyped << SwConcurrentResource_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwConcurrentResourceClassifier} proxy from a {@link Classifier} stereotyped << SwConcurrentResource_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link SwConcurrentResourceClassifier} proxy or <i>null</i>.
      */
-    @objid ("539a495a-ed52-479b-91b6-26faedb7f1df")
+    @objid ("1b069cb7-0f99-40a1-b842-1a0ab89ce43d")
     public static SwConcurrentResourceClassifier instantiate(final Classifier obj) {
         return SwConcurrentResourceClassifier.canInstantiate(obj) ? new SwConcurrentResourceClassifier(obj) : null;
     }
@@ -137,7 +137,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * @return a {@link SwConcurrentResourceClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("787e07a7-f036-48b9-b624-7c13a30cc005")
+    @objid ("a67e96e9-c213-447f-9aba-9d125291acf1")
     public static SwConcurrentResourceClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (SwConcurrentResourceClassifier.canInstantiate(obj))
         	return new SwConcurrentResourceClassifier(obj);
@@ -145,7 +145,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
         	throw new IllegalArgumentException("SwConcurrentResourceClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("cb433ca2-5cb9-4c57-9350-aaa265438914")
+    @objid ("d6c1151b-2de1-4e05-871e-9bbd59dba44d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -165,7 +165,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("5ddddf30-7b88-4687-b5d1-03e867e7adcc")
+    @objid ("2bd2bad0-aca5-47da-a70d-ef7a2fca531b")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -176,7 +176,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("79df3a79-6ef4-4f00-a786-a9d04c2bf6e6")
+    @objid ("1fd66d22-98c4-42e4-9629-52d895c0164c")
     public List<String> getSwConcurrentResource_Classifier_activateServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATESERVICES_TAGTYPE_ELT);
     }
@@ -186,7 +186,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("248f6b73-1968-4933-8409-6786d66d008f")
+    @objid ("fac3bea3-4c60-423e-be02-07c0efaba845")
     public String getSwConcurrentResource_Classifier_activationCapacity() {
         return this.elt.getTagValue(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATIONCAPACITY_TAGTYPE_ELT);
     }
@@ -196,7 +196,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1d706f38-0889-46fd-9891-a7dc8333fc05")
+    @objid ("f496f9ec-d7fb-4bf0-a55e-df48ebb86ea2")
     public List<String> getSwConcurrentResource_Classifier_adressSpace() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ADRESSSPACE_TAGTYPE_ELT);
     }
@@ -206,7 +206,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c3ba3cfa-c602-4242-993a-bf3d35f98a2f")
+    @objid ("47f2b69d-6006-4bf2-8d9e-47f8c34c2ee5")
     public List<String> getSwConcurrentResource_Classifier_disableConcurrencyServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_DISABLECONCURRENCYSERVICES_TAGTYPE_ELT);
     }
@@ -216,7 +216,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("46b43db2-4df2-4245-a59d-a86b295580a5")
+    @objid ("86d352ff-5b67-4b3b-8da3-871922799bca")
     public List<String> getSwConcurrentResource_Classifier_enableConcurrencyServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ENABLECONCURRENCYSERVICES_TAGTYPE_ELT);
     }
@@ -226,7 +226,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("976d38bf-b8c6-4639-a670-5608afb9c067")
+    @objid ("5a27996a-c46f-47fc-b871-e3b63f8ab1a3")
     public List<String> getSwConcurrentResource_Classifier_entryPoints() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ENTRYPOINTS_TAGTYPE_ELT);
     }
@@ -236,7 +236,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("9816a7aa-28a9-4280-9411-3d476da27106")
+    @objid ("5c241c2f-a895-4186-9a6b-b20c2c55e706")
     public List<String> getSwConcurrentResource_Classifier_heapSizeElements() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_HEAPSIZEELEMENTS_TAGTYPE_ELT);
     }
@@ -246,7 +246,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("11d08828-cd70-49c3-9801-8a1d853f7f60")
+    @objid ("cde216db-90d3-49ec-b780-02b30d2012dd")
     public List<String> getSwConcurrentResource_Classifier_messageResources() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_MESSAGERESOURCES_TAGTYPE_ELT);
     }
@@ -256,7 +256,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("17855474-3c09-4080-a74e-478ebbc785c0")
+    @objid ("84ec5364-7bba-4776-a5bf-8908dfea1750")
     public List<String> getSwConcurrentResource_Classifier_mutualExclusionResources() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCES_TAGTYPE_ELT);
     }
@@ -266,7 +266,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("84966a5e-bea1-48d1-8983-1c5230441289")
+    @objid ("51027054-ab2e-4070-a439-54e1be943148")
     public List<String> getSwConcurrentResource_Classifier_notificationResources() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCES_TAGTYPE_ELT);
     }
@@ -276,7 +276,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("484b9df5-f9bc-47fa-9954-c31c7625c6da")
+    @objid ("3ee23673-9f7a-4901-bec1-fccd61f617e7")
     public List<String> getSwConcurrentResource_Classifier_periodElements() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_PERIODELEMENTS_TAGTYPE_ELT);
     }
@@ -286,7 +286,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cdc50b57-5d37-4247-9ecc-625ac353a9e9")
+    @objid ("60dbe34f-d54c-41bf-a982-ff093f22cdf6")
     public List<String> getSwConcurrentResource_Classifier_priorityElements() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_PRIORITYELEMENTS_TAGTYPE_ELT);
     }
@@ -296,7 +296,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d1b5cbd9-1471-445d-853d-e77d023c3e12")
+    @objid ("0a3cd732-1e6a-451b-87be-8a79b9d24bf8")
     public List<String> getSwConcurrentResource_Classifier_resumeServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_RESUMESERVICES_TAGTYPE_ELT);
     }
@@ -306,7 +306,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bccc4b0e-229e-43d5-8fbf-b466c3ee165b")
+    @objid ("9255e46c-e013-48fa-b4ff-73ac82081f73")
     public List<String> getSwConcurrentResource_Classifier_shareDataResources() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_SHAREDATARESOURCES_TAGTYPE_ELT);
     }
@@ -316,7 +316,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cc34be23-aecb-40b4-b319-c41aaff585be")
+    @objid ("2c5c7657-0d0f-4dbf-b11a-15a9574eee7a")
     public List<String> getSwConcurrentResource_Classifier_stackSizeElements() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_STACKSIZEELEMENTS_TAGTYPE_ELT);
     }
@@ -326,7 +326,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("86e89fa6-aeeb-4fc2-9ff5-a04a8c06ffd6")
+    @objid ("541e6f3d-e807-4d2c-b764-64185d9588f8")
     public List<String> getSwConcurrentResource_Classifier_suspendServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_SUSPENDSERVICES_TAGTYPE_ELT);
     }
@@ -336,7 +336,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("2f0f014a-2937-4a66-9c53-a26987e66a2b")
+    @objid ("a2894187-8ddd-4658-b1f9-adb363518e96")
     public List<String> getSwConcurrentResource_Classifier_terminateServices() {
         return this.elt.getTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_TERMINATESERVICES_TAGTYPE_ELT);
     }
@@ -346,12 +346,12 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("278117e9-bc73-452e-bc63-4290c9d4f795")
+    @objid ("a779094a-3591-498b-b175-d15ae39943d4")
     public String getSwConcurrentResource_Classifier_type() {
         return this.elt.getTagValue(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_TYPE_TAGTYPE_ELT);
     }
 
-    @objid ("909bf128-8ff9-4e4a-9e2d-090cd28752f8")
+    @objid ("934a5b7e-c97a-4037-bb57-62d2565e528b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -362,7 +362,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f5c57d62-645f-4e27-a570-fc402874ea0d")
+    @objid ("b1c0942f-7cc6-456c-91ca-38220cda3684")
     public void setSwConcurrentResource_Classifier_activateServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATESERVICES_TAGTYPE_ELT, values);
     }
@@ -372,7 +372,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8140cb47-edb7-430f-909f-1ff199ea271a")
+    @objid ("c6897ec8-c8c4-493e-b25d-d0c76fd6bd93")
     public void setSwConcurrentResource_Classifier_activationCapacity(final String value) {
         this.elt.putTagValue(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATIONCAPACITY_TAGTYPE_ELT, value);
     }
@@ -382,7 +382,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3fcb2b6f-f1fe-4040-8b2a-f310747cb0d3")
+    @objid ("787b8413-aaf3-4fd7-ace7-4b64f372d0a7")
     public void setSwConcurrentResource_Classifier_adressSpace(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ADRESSSPACE_TAGTYPE_ELT, values);
     }
@@ -392,7 +392,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5df30031-3ebd-4d30-98d1-e74ff38ba1eb")
+    @objid ("ccbb9ac5-1169-4de5-9738-0d173b2b8ef8")
     public void setSwConcurrentResource_Classifier_disableConcurrencyServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_DISABLECONCURRENCYSERVICES_TAGTYPE_ELT, values);
     }
@@ -402,7 +402,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2a306253-d40b-4bc0-b303-da48d543f341")
+    @objid ("026fa5fc-5ca1-436d-80b2-14bb213633e4")
     public void setSwConcurrentResource_Classifier_enableConcurrencyServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ENABLECONCURRENCYSERVICES_TAGTYPE_ELT, values);
     }
@@ -412,7 +412,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("270b704c-47d5-4c65-8aa4-c09138057737")
+    @objid ("a5be3c2c-01d3-4d57-8edb-92fc03eba606")
     public void setSwConcurrentResource_Classifier_entryPoints(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_ENTRYPOINTS_TAGTYPE_ELT, values);
     }
@@ -422,7 +422,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5bc80e22-71d3-4a99-aa91-0d933efb44df")
+    @objid ("bc595d1a-7987-4804-8fe2-4cca2edbb86f")
     public void setSwConcurrentResource_Classifier_heapSizeElements(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_HEAPSIZEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -432,7 +432,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dddb8f69-8e8c-45ab-ab17-80b6c0a98e6f")
+    @objid ("5d5361aa-997b-4aa1-a702-2887c177acb7")
     public void setSwConcurrentResource_Classifier_messageResources(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_MESSAGERESOURCES_TAGTYPE_ELT, values);
     }
@@ -442,7 +442,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("148e54f3-c725-47f8-ad3f-0a901ea0cde7")
+    @objid ("eed03009-cad7-408e-aaaf-c49cc19b5618")
     public void setSwConcurrentResource_Classifier_mutualExclusionResources(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCES_TAGTYPE_ELT, values);
     }
@@ -452,7 +452,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("26a25a02-46bf-42c6-b546-a03029fa0ca4")
+    @objid ("a8187bcb-dad6-48f5-86f8-69b5cb991ced")
     public void setSwConcurrentResource_Classifier_notificationResources(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCES_TAGTYPE_ELT, values);
     }
@@ -462,7 +462,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("91f8aea2-8918-41ce-981b-c52c9879d9c8")
+    @objid ("5038f27f-c7af-4b90-9bc9-63202a4f9c38")
     public void setSwConcurrentResource_Classifier_periodElements(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_PERIODELEMENTS_TAGTYPE_ELT, values);
     }
@@ -472,7 +472,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("73ed634a-4655-4eab-b459-cd73b405ad88")
+    @objid ("1c6c4704-9068-4d4d-a908-e7c96126e273")
     public void setSwConcurrentResource_Classifier_priorityElements(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_PRIORITYELEMENTS_TAGTYPE_ELT, values);
     }
@@ -482,7 +482,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e010616d-05af-455b-bba2-719eeb2104ff")
+    @objid ("5dd1c3e6-e44f-45fc-bea5-332d8a8e239e")
     public void setSwConcurrentResource_Classifier_resumeServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_RESUMESERVICES_TAGTYPE_ELT, values);
     }
@@ -492,7 +492,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("20e34ff0-4347-41aa-8f74-bac408ce90ae")
+    @objid ("99582167-0a2e-45de-9720-ab4d648d7e7c")
     public void setSwConcurrentResource_Classifier_shareDataResources(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_SHAREDATARESOURCES_TAGTYPE_ELT, values);
     }
@@ -502,7 +502,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b92b70e5-9694-4cee-93bf-b2caac0f630c")
+    @objid ("603dd130-ac43-48b8-8e8d-6921f2039245")
     public void setSwConcurrentResource_Classifier_stackSizeElements(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_STACKSIZEELEMENTS_TAGTYPE_ELT, values);
     }
@@ -512,7 +512,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eb5283d7-5907-4891-bf81-b408b909fd81")
+    @objid ("93d0112b-6155-45e9-832e-a431d6859ae0")
     public void setSwConcurrentResource_Classifier_suspendServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_SUSPENDSERVICES_TAGTYPE_ELT, values);
     }
@@ -522,7 +522,7 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8f8c1c3a-68cd-483a-8c57-fcfa7df512b2")
+    @objid ("67b19893-f825-4399-bee5-f13f7ac17611")
     public void setSwConcurrentResource_Classifier_terminateServices(final List<String> values) {
         this.elt.putTagValues(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_TERMINATESERVICES_TAGTYPE_ELT, values);
     }
@@ -532,82 +532,82 @@ public class SwConcurrentResourceClassifier extends SwResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("da782c6b-cfb6-40da-8dea-16a5bab70a02")
+    @objid ("e70fcc39-96d3-484d-933c-03962a27a135")
     public void setSwConcurrentResource_Classifier_type(final String value) {
         this.elt.putTagValue(SwConcurrentResourceClassifier.MdaTypes.SWCONCURRENTRESOURCE_CLASSIFIER_TYPE_TAGTYPE_ELT, value);
     }
 
-    @objid ("c43f59e3-621a-4f41-9437-159c49062ced")
+    @objid ("6d0115b2-43f9-4e52-a4c1-f672161a6fa6")
     protected SwConcurrentResourceClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("2fdf8a5f-209d-4cfa-85dc-1497e9a84832")
     public static final class MdaTypes {
-        @objid ("a7f2c889-78bd-4425-93f6-51b0a3fdec57")
+        @objid ("35785fca-38f6-4b52-be8b-5e84001c2492")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("d65bb8d5-7579-4ae6-8fb3-49840e524af2")
+        @objid ("efe43103-9d63-459a-bed7-2fcf1527bc55")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_TYPE_TAGTYPE_ELT;
 
-        @objid ("532a80d2-8a61-47b7-abae-679880cab3c4")
+        @objid ("3b9f8b8e-7c82-4fb6-a18c-bc222b86a3b8")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATIONCAPACITY_TAGTYPE_ELT;
 
-        @objid ("a46a9769-7bde-4763-b497-d1034d9eb966")
+        @objid ("27511a23-1023-4050-a0f6-5b0a0e591d4b")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_ENTRYPOINTS_TAGTYPE_ELT;
 
-        @objid ("6f025022-dbd8-422a-852e-51a15d11f9c5")
+        @objid ("c97363f8-105f-47a6-8185-d9b6babbf6c6")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_ADRESSSPACE_TAGTYPE_ELT;
 
-        @objid ("b7252073-21b5-4b3a-9d11-3f22c1523542")
+        @objid ("bf1d01f7-b5cd-47c9-ac80-dd342e3d4cb3")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_PERIODELEMENTS_TAGTYPE_ELT;
 
-        @objid ("5f7da130-2404-4ea5-81b3-3f20d6c16c77")
+        @objid ("d4cffaac-6a9d-4846-bd49-2859bf6e4dd0")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_PRIORITYELEMENTS_TAGTYPE_ELT;
 
-        @objid ("123f1e3a-b57d-42c8-812e-60673920ad14")
+        @objid ("95fda4b8-5b85-4043-95a7-c18c0e975180")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_STACKSIZEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("0ee7d995-4e41-4724-95bc-06dff29496f2")
+        @objid ("6809e04f-1928-4dcc-bb57-9f64219bf960")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_ACTIVATESERVICES_TAGTYPE_ELT;
 
-        @objid ("004d8879-5193-4b0f-9414-cacea90987b6")
+        @objid ("1023aeb4-c93a-40db-8d44-dce7a936b144")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_ENABLECONCURRENCYSERVICES_TAGTYPE_ELT;
 
-        @objid ("3ac57161-bc71-412f-be0a-ecd9a434e942")
+        @objid ("a4ce9a8e-43a5-4551-81ac-9fcf95c56b0b")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_RESUMESERVICES_TAGTYPE_ELT;
 
-        @objid ("e1e0ec0f-c11e-498d-b9d3-b9fb6f293623")
+        @objid ("35b67255-5804-45ce-a288-cc601ad9680f")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_SUSPENDSERVICES_TAGTYPE_ELT;
 
-        @objid ("3e2e90f3-cb10-40d1-81ff-a0a5f05e423d")
+        @objid ("37bd29c8-2044-4a93-a10e-61ecfb985e84")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_TERMINATESERVICES_TAGTYPE_ELT;
 
-        @objid ("df1c7a73-56bd-4160-93a2-4e3cd0015039")
+        @objid ("6e761c33-5d76-4ec6-8ddb-81d9e950accc")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_DISABLECONCURRENCYSERVICES_TAGTYPE_ELT;
 
-        @objid ("9013e159-04c4-4be4-bd3a-c9966ff44a3d")
+        @objid ("022f5b26-5dda-4fc9-a22f-af2963c19a35")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_SHAREDATARESOURCES_TAGTYPE_ELT;
 
-        @objid ("3a69055a-734c-427d-a444-1de113d7dfd9")
+        @objid ("9b91e998-b76d-44b8-a4fc-15101b1b2df7")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_MESSAGERESOURCES_TAGTYPE_ELT;
 
-        @objid ("0ca7b18f-c72a-410f-ac4e-fe491da37bac")
+        @objid ("73d83b84-c5f5-46f7-b754-7afda9c6a107")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_MUTUALEXCLUSIONRESOURCES_TAGTYPE_ELT;
 
-        @objid ("a4c928d5-b266-45bf-b31e-517d0c31b4f6")
+        @objid ("d7a6288c-1185-4aab-ae54-d30145ef5d78")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_NOTIFICATIONRESOURCES_TAGTYPE_ELT;
 
-        @objid ("ed38ae98-fe93-4e6b-9bf4-63827ea94aee")
+        @objid ("eb55a0fa-9d5b-4fb1-aaac-449c068b77b9")
         public static TagType SWCONCURRENTRESOURCE_CLASSIFIER_HEAPSIZEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("e0e335dd-7d15-4c48-8156-03b0836f8783")
+        @objid ("65ddb0e0-d65b-4d06-be97-34a920445044")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a0b9b803-efdf-40e9-b1ea-de7a2c47b9b4")
+        @objid ("5f25f2f0-fe8a-426f-b8da-b4d8bfae9c2d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("3a9aa757-bd69-4f81-a5b7-d65590c58de2")
+        @objid ("ff726bd5-539a-433f-9e16-1dfa5b0c021f")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "8804a949-10d0-11df-81d9-0014222a9f79");
             SWCONCURRENTRESOURCE_CLASSIFIER_TYPE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ccd9252d-172b-11df-b92a-0014222a9f79");

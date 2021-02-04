@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_alloc.infrastructure.modelelement;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("100f09fb-820d-4fbd-aef5-48630e3c7b9f")
 public class AllocatedModelElement {
-    @objid ("6af79b22-5778-48f1-8c27-65b527dc158a")
+    @objid ("7040b6a4-0448-44a2-a6c5-50943051862f")
     public static final String STEREOTYPE_NAME = "Allocated_ModelElement";
 
-    @objid ("02611168-3714-418c-b50e-8cb63ae40aac")
+    @objid ("be41f96b-bac7-4dcc-977e-31f522a109ed")
     public static final String ALLOCATED_MODELELEMENT_ALLOCATEDFROM_TAGTYPE = "Allocated_ModelElement_allocatedFrom";
 
-    @objid ("1e84bfa8-348a-4568-85b0-87a82cb2ed49")
+    @objid ("e30ccafe-e339-4405-9c53-6d80de504cea")
     public static final String ALLOCATED_MODELELEMENT_ALLOCATEDTO_TAGTYPE = "Allocated_ModelElement_allocatedTo";
 
-    @objid ("5ee575e7-a900-42bb-a942-5f7327f8d261")
+    @objid ("a5fda032-3330-49ee-b809-fb99507dff35")
     public static final String ALLOCATED_MODELELEMENT_KIND_TAGTYPE = "Allocated_ModelElement_kind";
 
     /**
      * The underlying {@link ModelElement} represented by this proxy, never null.
      */
-    @objid ("c3c8fbc6-9f59-4d56-a4d7-334ed0ea7f67")
+    @objid ("9b50bfe9-2306-4f4f-92e0-48f2b8b66333")
     protected final ModelElement elt;
 
     /**
-     * Tells whether a {@link AllocatedModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << Allocated_ModelElement >>. 
+     * Tells whether a {@link AllocatedModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << Allocated_ModelElement >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4022f216-f318-4eba-ad42-4357a8ff27e0")
+    @objid ("f420d553-ffcf-4a22-a356-ab1397315089")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ModelElement) && ((ModelElement) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, AllocatedModelElement.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class AllocatedModelElement {
      * 
      * @return a {@link AllocatedModelElement} proxy on the created {@link ModelElement}.
      */
-    @objid ("8551ddca-a661-48c4-9c71-8062a26d16eb")
+    @objid ("c2be88e6-adcd-4890-949d-100fd6d0ba93")
     public static AllocatedModelElement create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ModelElement");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.ModelElement");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, AllocatedModelElement.STEREOTYPE_NAME);
         return AllocatedModelElement.instantiate((ModelElement)e);
     }
 
     /**
-     * Tries to instantiate a {@link AllocatedModelElement} proxy from a {@link ModelElement} stereotyped << Allocated_ModelElement >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link AllocatedModelElement} proxy from a {@link ModelElement} stereotyped << Allocated_ModelElement >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ModelElement
      * @return a {@link AllocatedModelElement} proxy or <i>null</i>.
      */
-    @objid ("d85106ee-0964-4bde-b040-7efa70783988")
+    @objid ("b6ce995d-1148-4af2-abd3-bde672b88ab0")
     public static AllocatedModelElement instantiate(final ModelElement obj) {
         return AllocatedModelElement.canInstantiate(obj) ? new AllocatedModelElement(obj) : null;
     }
@@ -96,7 +96,7 @@ public class AllocatedModelElement {
      * @return a {@link AllocatedModelElement} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ca0fa03e-e49d-4082-ab0b-6b26864b86b7")
+    @objid ("c022f896-fb68-4d6b-b9b1-f6d46b6e297b")
     public static AllocatedModelElement safeInstantiate(final ModelElement obj) throws IllegalArgumentException {
         if (AllocatedModelElement.canInstantiate(obj))
         	return new AllocatedModelElement(obj);
@@ -104,7 +104,7 @@ public class AllocatedModelElement {
         	throw new IllegalArgumentException("AllocatedModelElement: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("67e29059-ae9e-43c7-a884-c3ca16a8b514")
+    @objid ("e57b4210-cc9e-40af-a375-d9294a18dd29")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class AllocatedModelElement {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("0c6299fb-af5b-47a9-9b96-49d4ff1d5f31")
+    @objid ("3ad5e659-0dd7-4107-a888-8b2d549e6f3a")
     public List<String> getAllocated_ModelElement_allocatedFrom() {
         return this.elt.getTagValues(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_ALLOCATEDFROM_TAGTYPE_ELT);
     }
@@ -135,7 +135,7 @@ public class AllocatedModelElement {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("a160072c-dd44-4bad-86af-bf60a3c54932")
+    @objid ("eab14f97-fc0a-4210-9129-52f36a17e357")
     public List<String> getAllocated_ModelElement_allocatedTo() {
         return this.elt.getTagValues(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_ALLOCATEDTO_TAGTYPE_ELT);
     }
@@ -145,7 +145,7 @@ public class AllocatedModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("df1af8de-0913-4ed1-8f89-89324cc2c879")
+    @objid ("39a42dd7-d1a7-4cd7-862f-a327ebab81c0")
     public String getAllocated_ModelElement_kind() {
         return this.elt.getTagValue(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_KIND_TAGTYPE_ELT);
     }
@@ -154,12 +154,12 @@ public class AllocatedModelElement {
      * Get the underlying {@link ModelElement}. 
      * @return the ModelElement represented by this proxy, never null.
      */
-    @objid ("14394615-13bf-4e94-9c31-0d1be0fe379d")
+    @objid ("3b20fe90-4a5a-488d-bdc0-32cfb7b171c9")
     public ModelElement getElement() {
         return this.elt;
     }
 
-    @objid ("f7aec979-ce51-41ea-96e9-30bb1da65f1b")
+    @objid ("c462bbe3-4841-4956-882a-20b94b31b525")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +170,7 @@ public class AllocatedModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("538fe179-3b57-42ef-bd43-6494e0425ced")
+    @objid ("702c4d6a-7e1f-452f-b151-623eea116e23")
     public void setAllocated_ModelElement_allocatedFrom(final List<String> values) {
         this.elt.putTagValues(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_ALLOCATEDFROM_TAGTYPE_ELT, values);
     }
@@ -180,7 +180,7 @@ public class AllocatedModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("47f00fb7-b141-4948-bd8f-a42cd5eaf956")
+    @objid ("06d6faf6-ae5d-4038-a957-6358099cd159")
     public void setAllocated_ModelElement_allocatedTo(final List<String> values) {
         this.elt.putTagValues(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_ALLOCATEDTO_TAGTYPE_ELT, values);
     }
@@ -190,37 +190,37 @@ public class AllocatedModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("808219e7-d0da-4bcc-8b6a-d0f1da11c647")
+    @objid ("274d1b51-1eb2-483f-a5be-f7420f08aa9d")
     public void setAllocated_ModelElement_kind(final String value) {
         this.elt.putTagValue(AllocatedModelElement.MdaTypes.ALLOCATED_MODELELEMENT_KIND_TAGTYPE_ELT, value);
     }
 
-    @objid ("3d7674d2-033d-4843-abc0-d703a0ffc054")
+    @objid ("3eb4524a-00a9-49c7-8335-02b7ff3845c8")
     protected AllocatedModelElement(final ModelElement elt) {
         this.elt = elt;
     }
 
     @objid ("bd4f888d-14a3-4f19-8fcd-7716fb8f8b48")
     public static final class MdaTypes {
-        @objid ("9b23e369-1b57-4819-9742-bcacbbded0a3")
+        @objid ("f0eed1a1-c1f3-430f-bd19-793a2e0f5c6d")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("942afb22-2067-4df1-81bb-ebea7537f3f6")
+        @objid ("4859447c-967b-4cb3-a7e6-c4e777b82c31")
         public static TagType ALLOCATED_MODELELEMENT_ALLOCATEDTO_TAGTYPE_ELT;
 
-        @objid ("46f474d1-a701-4513-a09e-2554f6636357")
+        @objid ("55461a49-f510-463f-b3dd-61378cd72672")
         public static TagType ALLOCATED_MODELELEMENT_ALLOCATEDFROM_TAGTYPE_ELT;
 
-        @objid ("0602ef33-48e4-48ae-b79c-81d8314305dc")
+        @objid ("091f509d-f0f6-4fca-8253-eb32c7d3f4f8")
         public static TagType ALLOCATED_MODELELEMENT_KIND_TAGTYPE_ELT;
 
-        @objid ("84cfb030-3032-4782-8c12-4f9b7c477a0f")
+        @objid ("77841b2e-0d9e-49a7-b924-9347a1fbeb4e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0afe0ab7-3825-4e28-86d7-08b91357ecd8")
+        @objid ("19939652-0456-42f2-aa76-af0c6412e435")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("dff340fd-469a-4b53-854c-91f3c70a59d5")
+        @objid ("851c1ebc-80fc-4752-9292-cddbbb8751cf")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00ad976a-0ccf-11df-8525-001302895b2b");
             ALLOCATED_MODELELEMENT_ALLOCATEDTO_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00aff9b0-0ccf-11df-8525-001302895b2b");

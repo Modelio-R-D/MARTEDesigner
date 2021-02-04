@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_resourcecore.standard.associationend;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b9827a27-4851-438f-b20a-dea2185c5a67")
 public class SwResourceAssociationEnd extends ResourceAssociationEnd {
-    @objid ("8a0aa7e4-e6a1-4962-b9fe-e90e0ece6c59")
+    @objid ("9aecae7a-e65b-401e-b534-8e51b3131b62")
     public static final String STEREOTYPE_NAME = "SwResource_AssociationEnd";
 
-    @objid ("f8c190ea-c805-450c-84a3-e0f0fb6a11d7")
+    @objid ("a3e47525-35a1-4b59-956e-785219ddbf38")
     public static final String SWRESOURCE_ASSOCIATIONEND_CREATESERVICES_TAGTYPE = "SwResource_AssociationEnd_createServices";
 
-    @objid ("2d2091af-580d-41dd-ac69-70ecd003263b")
+    @objid ("cd0bd35d-528a-49b5-bb59-1abd0b641ec7")
     public static final String SWRESOURCE_ASSOCIATIONEND_DELETESERVICES_TAGTYPE = "SwResource_AssociationEnd_deleteServices";
 
-    @objid ("b00fe2a0-663b-44ff-8c2e-765acccec53d")
+    @objid ("f9f6e867-be56-473f-8796-99b4e00ae3b7")
     public static final String SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS_TAGTYPE = "SwResource_AssociationEnd_identifierElements";
 
-    @objid ("98fc954b-0a47-45a2-b64f-e741f6691152")
+    @objid ("abd57ece-4ec4-4774-9f05-fc09ae18d46d")
     public static final String SWRESOURCE_ASSOCIATIONEND_INITIALIZESERVICES_TAGTYPE = "SwResource_AssociationEnd_initializeServices";
 
-    @objid ("31e105f1-fbe0-497f-9e8f-ff244dfc7a2f")
+    @objid ("4d13be72-0a5c-4e83-b179-6752575b9d2c")
     public static final String SWRESOURCE_ASSOCIATIONEND_MEMORYSIZEFOOTPRINT_TAGTYPE = "SwResource_AssociationEnd_memorySizeFootprint";
 
-    @objid ("053fe617-09cc-463c-91b3-90bee11d5d9a")
+    @objid ("748cd47f-d139-4166-8402-3b263318c3b8")
     public static final String SWRESOURCE_ASSOCIATIONEND_STATEELEMENTS_TAGTYPE = "SwResource_AssociationEnd_stateElements";
 
     /**
-     * Tells whether a {@link SwResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SwResource_AssociationEnd >>. 
+     * Tells whether a {@link SwResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SwResource_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("50a39367-f355-46b9-9420-d5ce3e334d21")
+    @objid ("3c2a1ddc-05c8-454e-84d2-b73fdcf8ddd7")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwResourceAssociationEnd.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * 
      * @return a {@link SwResourceAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("78d54664-a20c-4edf-be4d-6b08d5b145e4")
+    @objid ("c9d05ac7-a19e-49e4-835d-b3662bae88f8")
     public static SwResourceAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwResourceAssociationEnd.STEREOTYPE_NAME);
         return SwResourceAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SwResource_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SwResource_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link SwResourceAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("581c1389-e214-42f9-96b4-d2236bb1621a")
+    @objid ("05c028a0-e49a-4b5f-959f-53d1965c1271")
     public static SwResourceAssociationEnd instantiate(final AssociationEnd obj) {
         return SwResourceAssociationEnd.canInstantiate(obj) ? new SwResourceAssociationEnd(obj) : null;
     }
@@ -101,7 +101,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * @return a {@link SwResourceAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("89ad9421-fe8f-484b-aeea-eec4b6255887")
+    @objid ("cb4ba490-557e-4ffb-8a2f-bf1d0ec11be7")
     public static SwResourceAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (SwResourceAssociationEnd.canInstantiate(obj))
         	return new SwResourceAssociationEnd(obj);
@@ -109,7 +109,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
         	throw new IllegalArgumentException("SwResourceAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("7f096c9a-10af-409f-a517-9919644c5584")
+    @objid ("75e5205d-361c-48f9-b1d2-d8626c717b30")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("aedceaa9-1159-440f-8bc2-f77e2412108b")
+    @objid ("0888d7ab-e842-46a9-8c3f-b1df9d6a26ed")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -140,7 +140,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b0c025fc-dd1e-4d48-9aad-53f1839616fe")
+    @objid ("9faed199-c9cb-4228-ae57-7acd03843640")
     public List<String> getSwResource_AssociationEnd_createServices() {
         return this.elt.getTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_CREATESERVICES_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ae1a8241-50b0-4579-a820-ca1ee6f2ed5d")
+    @objid ("3f94f340-3d9e-41e7-8338-84132734640d")
     public List<String> getSwResource_AssociationEnd_deleteServices() {
         return this.elt.getTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_DELETESERVICES_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d7c09c51-39cd-4076-80e1-38f35ddc99c8")
+    @objid ("3d296d3a-db3f-4923-b3a9-f6a6fc0a33aa")
     public List<String> getSwResource_AssociationEnd_identifierElements() {
         return this.elt.getTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("b1c8a353-26cc-45e4-be52-46441856f11d")
+    @objid ("8196042b-d4f1-4d99-aaef-8c00e4d646e0")
     public List<String> getSwResource_AssociationEnd_initializeServices() {
         return this.elt.getTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_INITIALIZESERVICES_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f61e5e80-e49c-4111-93ec-ff4c84abd165")
+    @objid ("489965b2-fe50-4a3c-b456-ad7d9dec6b7a")
     public String getSwResource_AssociationEnd_memorySizeFootprint() {
         return this.elt.getTagValue(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_MEMORYSIZEFOOTPRINT_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("32300dd3-03a2-4a00-af5d-62936985a57e")
+    @objid ("7982fea3-acdc-4fdf-841e-4619f41c8581")
     public List<String> getSwResource_AssociationEnd_stateElements() {
         return this.elt.getTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_STATEELEMENTS_TAGTYPE_ELT);
     }
 
-    @objid ("f3c84f4d-1e2f-4e55-be90-3a14f77e1a45")
+    @objid ("5c98c7e0-1b6b-4c3c-984d-e5fedd93bd0d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8cdc181b-5379-47ce-a0b0-00a41f1128b4")
+    @objid ("98685d85-9b75-4fd3-9c3f-bba7dd47a67f")
     public void setSwResource_AssociationEnd_createServices(final List<String> values) {
         this.elt.putTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_CREATESERVICES_TAGTYPE_ELT, values);
     }
@@ -216,7 +216,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3a965610-28af-42ba-97ac-e4b0d5492884")
+    @objid ("6c3a058e-28af-4001-a3ca-cc6c6cf87cd5")
     public void setSwResource_AssociationEnd_deleteServices(final List<String> values) {
         this.elt.putTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_DELETESERVICES_TAGTYPE_ELT, values);
     }
@@ -226,7 +226,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("260325d1-ac14-4450-9fd6-9f8543364d11")
+    @objid ("92b3813e-0a23-4076-8406-db824d0e1671")
     public void setSwResource_AssociationEnd_identifierElements(final List<String> values) {
         this.elt.putTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS_TAGTYPE_ELT, values);
     }
@@ -236,7 +236,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f2fcd1f2-16a5-4cde-9718-ae292a3ddfad")
+    @objid ("b7fd3163-3eec-429e-b13c-87433c53b09f")
     public void setSwResource_AssociationEnd_initializeServices(final List<String> values) {
         this.elt.putTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_INITIALIZESERVICES_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("da8425ca-9bb3-4b1e-a06a-00eb9849c5e1")
+    @objid ("169c277c-c1ac-477d-b7be-e69b59c2a790")
     public void setSwResource_AssociationEnd_memorySizeFootprint(final String value) {
         this.elt.putTagValue(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_MEMORYSIZEFOOTPRINT_TAGTYPE_ELT, value);
     }
@@ -256,46 +256,46 @@ public class SwResourceAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("53194992-4b10-48d7-8988-2e1f1f418f07")
+    @objid ("f876fee7-be46-445b-a510-cf1dafcac3dd")
     public void setSwResource_AssociationEnd_stateElements(final List<String> values) {
         this.elt.putTagValues(SwResourceAssociationEnd.MdaTypes.SWRESOURCE_ASSOCIATIONEND_STATEELEMENTS_TAGTYPE_ELT, values);
     }
 
-    @objid ("c8f01552-f710-4b81-b826-420bb7334aab")
+    @objid ("e3c5b8ca-7b58-453a-b37a-1bb07ee2f7b7")
     protected SwResourceAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("dd190aaa-d0d9-4942-bbe9-121d83c742fe")
     public static final class MdaTypes {
-        @objid ("cbd3cb2b-8e62-4306-9726-2b87025b14d8")
+        @objid ("bc72855d-52c0-46c3-be72-083c9d4ebaaf")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("58b2ffd9-b41e-4a44-9eed-c6e8526eb4e1")
+        @objid ("27ec3ffe-91f7-462c-a7cb-3fd164d29b04")
         public static TagType SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS_TAGTYPE_ELT;
 
-        @objid ("84017be8-1f1f-4b49-b0a1-05da567ee343")
+        @objid ("8ee915b9-a600-4872-84bb-84cbd3250c52")
         public static TagType SWRESOURCE_ASSOCIATIONEND_STATEELEMENTS_TAGTYPE_ELT;
 
-        @objid ("8090cbc6-6fa6-4c1b-b3ae-bccd9d013820")
+        @objid ("b87b60ed-5407-468f-b722-88335e8ab197")
         public static TagType SWRESOURCE_ASSOCIATIONEND_MEMORYSIZEFOOTPRINT_TAGTYPE_ELT;
 
-        @objid ("586abb2e-8207-4a20-8a8c-afe61ab79500")
+        @objid ("92c65aa4-f8ec-4187-b37f-4e6d8dbd5b3f")
         public static TagType SWRESOURCE_ASSOCIATIONEND_CREATESERVICES_TAGTYPE_ELT;
 
-        @objid ("4403a7cd-4a09-4949-8194-2981554a42f5")
+        @objid ("396abe9e-dd9c-423c-99bf-8b3cba447516")
         public static TagType SWRESOURCE_ASSOCIATIONEND_DELETESERVICES_TAGTYPE_ELT;
 
-        @objid ("86ad948d-e800-4145-9ffc-8e92f02b5f20")
+        @objid ("294e5836-7df7-4aac-b20a-4d7e78d43c5e")
         public static TagType SWRESOURCE_ASSOCIATIONEND_INITIALIZESERVICES_TAGTYPE_ELT;
 
-        @objid ("411878a8-1704-4250-9f01-71858bf9e1e7")
+        @objid ("ac140691-4b96-4bc0-9f9f-47648581453b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("782704d8-b5fa-4982-ad1b-d9816cd2fa7d")
+        @objid ("2b96b4cf-1fa5-4928-9af1-a0957c907ee7")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("02ddcf30-acf2-4b9f-960c-0953ef982eb8")
+        @objid ("5ec996c4-40be-4a6a-86c6-80e946e07a3c")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01a3265c-0ccf-11df-8525-001302895b2b");
             SWRESOURCE_ASSOCIATIONEND_IDENTIFIERELEMENTS_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01a32663-0ccf-11df-8525-001302895b2b");

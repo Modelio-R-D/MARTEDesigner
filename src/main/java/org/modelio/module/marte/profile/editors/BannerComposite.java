@@ -14,7 +14,6 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.modelio.api.modelio.Modelio;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
-import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 
 /**
  * Provides a beautiful Modelio banner.

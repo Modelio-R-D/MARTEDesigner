@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hlam.standard.actor;
 
@@ -33,57 +33,57 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("ff75ccda-3f5c-4b3c-8de9-caccf161fa3a")
 public class RtUnitActor {
-    @objid ("d174e2bc-cd7e-4c85-aaf6-98e08d73906c")
+    @objid ("08ef45a2-173b-42ed-8e75-bc555d923634")
     public static final String STEREOTYPE_NAME = "RtUnit_Actor";
 
-    @objid ("d32879c7-5aaa-46cf-9d35-4f592a7fcf16")
+    @objid ("000d8a24-5387-4cc6-92c1-e2f714ed51f4")
     public static final String RTUNIT_ACTOR_ISDYNAMIC_TAGTYPE = "RtUnit_Actor_isDynamic";
 
-    @objid ("1343eab4-4491-4198-a108-4bf5c894cf8b")
+    @objid ("0ac4a383-1221-4148-82a0-2dc493efefab")
     public static final String RTUNIT_ACTOR_ISMAIN_TAGTYPE = "RtUnit_Actor_isMain";
 
-    @objid ("fa2d1801-fac5-4efe-b83a-7efc2527117c")
+    @objid ("cadbb5f7-5122-4d95-a500-d622bca36021")
     public static final String RTUNIT_ACTOR_MAIN_TAGTYPE = "RtUnit_Actor_main";
 
-    @objid ("37a0f1b1-eb51-4996-a472-cb36dad1ff7f")
+    @objid ("4bd47a07-3d7e-4698-8f5b-ff08e97692bb")
     public static final String RTUNIT_ACTOR_MEMORYSIZE_TAGTYPE = "RtUnit_Actor_memorySize";
 
-    @objid ("86b92c55-a1a8-44a7-ae13-5a14f556b3c1")
+    @objid ("096a190b-1087-4c63-8eb5-04842ca8c804")
     public static final String RTUNIT_ACTOR_MSGMAXSIZE_TAGTYPE = "RtUnit_Actor_msgMaxSize";
 
-    @objid ("bd544f3e-b474-45aa-8693-d63d124cad78")
+    @objid ("17ccb3f9-ef78-4f08-86de-c5a00bd8c176")
     public static final String RTUNIT_ACTOR_OPERATIONALMODE_TAGTYPE = "RtUnit_Actor_operationalMode";
 
-    @objid ("b77e20dc-163f-49ae-a04c-0a871f64f0a4")
+    @objid ("b795798d-74c0-447e-a717-fcb4ef09b7d3")
     public static final String RTUNIT_ACTOR_QUEUESCHEDPOLICY_TAGTYPE = "RtUnit_Actor_queueSchedPolicy";
 
-    @objid ("2a44f0a5-8c64-483b-bec2-eafffa249f0e")
+    @objid ("5ece4345-ca03-4b64-84e7-5faa41bb99b1")
     public static final String RTUNIT_ACTOR_QUEUESIZE_TAGTYPE = "RtUnit_Actor_queueSize";
 
-    @objid ("4c718d4b-4480-4cf5-aa04-bd288fc88cd9")
+    @objid ("35e55a71-84a7-42e9-b327-3f4c474d1ff6")
     public static final String RTUNIT_ACTOR_SRPOOLPOLICY_TAGTYPE = "RtUnit_Actor_srPoolPolicy";
 
-    @objid ("e193ce2f-996d-42e9-8fe7-53ec579c89a8")
+    @objid ("b77c62b1-90f5-4a6a-8f07-a9d2c31fd31f")
     public static final String RTUNIT_ACTOR_SRPOOLSIZE_TAGTYPE = "RtUnit_Actor_srPoolSize";
 
-    @objid ("5fd13d19-49c6-4b2f-bcfb-cd537e28cbee")
+    @objid ("319d5ff1-424c-44fb-b4e4-7149141b0117")
     public static final String RTUNIT_ACTOR_SRPOOLWAITINGTIME_TAGTYPE = "RtUnit_Actor_srPoolWaitingTime";
 
     /**
      * The underlying {@link Actor} represented by this proxy, never null.
      */
-    @objid ("c2722c5e-1fa7-4e82-80f2-1d672768c913")
+    @objid ("2edb9948-e3eb-4450-b3da-b4e58fada44a")
     protected final Actor elt;
 
     /**
-     * Tells whether a {@link RtUnitActor proxy} can be instantiated from a {@link MObject} checking it is a {@link Actor} stereotyped << RtUnit_Actor >>. 
+     * Tells whether a {@link RtUnitActor proxy} can be instantiated from a {@link MObject} checking it is a {@link Actor} stereotyped << RtUnit_Actor >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("564c0bb1-2afc-4d77-9785-557f72480390")
+    @objid ("d3aac143-b0b0-40a1-9f35-cf531a8f6d31")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Actor) && ((Actor) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, RtUnitActor.STEREOTYPE_NAME));
     }
@@ -93,21 +93,21 @@ public class RtUnitActor {
      * 
      * @return a {@link RtUnitActor} proxy on the created {@link Actor}.
      */
-    @objid ("31b6ce59-f8d5-4e95-9fe8-405a7768c59c")
+    @objid ("cc394d13-88e6-45f7-a33f-477b79e9700f")
     public static RtUnitActor create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Actor");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Actor");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, RtUnitActor.STEREOTYPE_NAME);
         return RtUnitActor.instantiate((Actor)e);
     }
 
     /**
-     * Tries to instantiate a {@link RtUnitActor} proxy from a {@link Actor} stereotyped << RtUnit_Actor >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link RtUnitActor} proxy from a {@link Actor} stereotyped << RtUnit_Actor >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Actor
      * @return a {@link RtUnitActor} proxy or <i>null</i>.
      */
-    @objid ("74ff83c4-5d4c-4b4e-8b00-6d777822a622")
+    @objid ("386fa844-78f6-4c8d-a4de-f34455365ea4")
     public static RtUnitActor instantiate(final Actor obj) {
         return RtUnitActor.canInstantiate(obj) ? new RtUnitActor(obj) : null;
     }
@@ -120,7 +120,7 @@ public class RtUnitActor {
      * @return a {@link RtUnitActor} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("e4765b56-e83f-44c9-92ff-5ddf413c1a8c")
+    @objid ("e0ce9f51-3401-43fa-b834-4461890184c3")
     public static RtUnitActor safeInstantiate(final Actor obj) throws IllegalArgumentException {
         if (RtUnitActor.canInstantiate(obj))
         	return new RtUnitActor(obj);
@@ -128,7 +128,7 @@ public class RtUnitActor {
         	throw new IllegalArgumentException("RtUnitActor: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d278d11d-6d62-4e99-9367-eaf0414e2fc8")
+    @objid ("028dac27-836a-4edc-aabe-4ef4a8e02333")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -148,7 +148,7 @@ public class RtUnitActor {
      * Get the underlying {@link Actor}. 
      * @return the Actor represented by this proxy, never null.
      */
-    @objid ("d1aa2bf2-9b41-4c29-9a63-63e5f7a93a3f")
+    @objid ("d46279e7-6c4d-458f-859c-fd4840bd9eea")
     public Actor getElement() {
         return this.elt;
     }
@@ -158,7 +158,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5d56dd5e-5311-4062-9905-bdb8c3686640")
+    @objid ("0cac35ee-4cec-40a1-b5d9-7b3b77771122")
     public String getRtUnit_Actor_main() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MAIN_TAGTYPE_ELT);
     }
@@ -168,7 +168,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("df17af60-94c6-472f-b855-d8eba8ce1e98")
+    @objid ("824d586b-50dc-4975-b581-c0be52d2f889")
     public String getRtUnit_Actor_memorySize() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MEMORYSIZE_TAGTYPE_ELT);
     }
@@ -178,7 +178,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b991f9dc-8e85-4383-bab6-d50d1ebed731")
+    @objid ("19ef049a-0a89-4959-aeaf-3d52da75dc87")
     public String getRtUnit_Actor_msgMaxSize() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MSGMAXSIZE_TAGTYPE_ELT);
     }
@@ -188,7 +188,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8641c096-1983-4a47-927c-2430c0decb31")
+    @objid ("f0d7f42d-8c5b-42be-bd88-ff6306ab86ea")
     public String getRtUnit_Actor_operationalMode() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_OPERATIONALMODE_TAGTYPE_ELT);
     }
@@ -198,7 +198,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ea6c9a64-2993-4d37-8faf-db5ae86c5d6e")
+    @objid ("278d5be1-7d9c-4f9d-a3a6-398114fc468c")
     public String getRtUnit_Actor_queueSchedPolicy() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_QUEUESCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -208,7 +208,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6fa01331-afb9-4e25-8439-219f702a9aed")
+    @objid ("67bed4bd-701e-4f09-a391-8e0298077e55")
     public String getRtUnit_Actor_queueSize() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_QUEUESIZE_TAGTYPE_ELT);
     }
@@ -218,7 +218,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("620e4c4d-4129-4031-812b-ef9f739eee4e")
+    @objid ("3cbaa4ae-2c36-48e6-bbe7-4ecd8e7d1e97")
     public String getRtUnit_Actor_srPoolPolicy() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLPOLICY_TAGTYPE_ELT);
     }
@@ -228,7 +228,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7b4f32b7-b76c-4776-a280-f6dc07ffce4c")
+    @objid ("efeaef01-8eaa-481d-bd6e-8d2c82829993")
     public String getRtUnit_Actor_srPoolSize() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLSIZE_TAGTYPE_ELT);
     }
@@ -238,12 +238,12 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("568a9b43-552a-4bcb-91a5-207647754173")
+    @objid ("1d08046e-7385-4792-8cc1-bc42c6b1e66e")
     public String getRtUnit_Actor_srPoolWaitingTime() {
         return this.elt.getTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLWAITINGTIME_TAGTYPE_ELT);
     }
 
-    @objid ("a23cddbf-fb21-4c43-87bd-8c7e223e7f8a")
+    @objid ("74b7e43d-99ab-4867-8b46-9c5e77b47027")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -254,7 +254,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a2a6a5b0-e4cb-4f2e-8df1-9c3771a23393")
+    @objid ("9ca81261-55b2-4056-aed6-ac7fe9aa583d")
     public boolean isRtUnit_Actor_isDynamic() {
         return this.elt.isTagged(RtUnitActor.MdaTypes.RTUNIT_ACTOR_ISDYNAMIC_TAGTYPE_ELT);
     }
@@ -264,7 +264,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f49827ab-bda3-46f5-98de-448b64794669")
+    @objid ("c2b107dc-22b4-41ac-95e2-0294f6435f88")
     public boolean isRtUnit_Actor_isMain() {
         return this.elt.isTagged(RtUnitActor.MdaTypes.RTUNIT_ACTOR_ISMAIN_TAGTYPE_ELT);
     }
@@ -274,7 +274,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8a653563-2e1d-4714-9468-eb2641dc8a6e")
+    @objid ("9185548f-e671-4446-917b-60079d95b6c5")
     public void setRtUnit_Actor_isDynamic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_ISDYNAMIC_TAGTYPE_ELT, this.elt);
@@ -287,7 +287,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4e1a679d-cc3f-4444-8213-5a055bde6d59")
+    @objid ("af3c393c-d991-44cd-9c7d-50c7e3147a3b")
     public void setRtUnit_Actor_isMain(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_ISMAIN_TAGTYPE_ELT, this.elt);
@@ -300,7 +300,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("81499479-d269-4bb7-9fc0-e85b87e3a0fd")
+    @objid ("39215d58-465a-4f0a-be56-3e659925ec1c")
     public void setRtUnit_Actor_main(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MAIN_TAGTYPE_ELT, value);
     }
@@ -310,7 +310,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("af80c9fc-cd7b-4386-9877-3b597eaa5cd4")
+    @objid ("52290328-bcca-48c4-9a93-f319f32d1869")
     public void setRtUnit_Actor_memorySize(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MEMORYSIZE_TAGTYPE_ELT, value);
     }
@@ -320,7 +320,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9bce73fa-9111-4afe-a59c-bd23f6e9dbb0")
+    @objid ("42983ff1-ab48-49e0-9874-7faf8848bb2a")
     public void setRtUnit_Actor_msgMaxSize(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_MSGMAXSIZE_TAGTYPE_ELT, value);
     }
@@ -330,7 +330,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("15f635f9-14d3-4846-a53c-f6134db94223")
+    @objid ("18808811-28a5-4027-90da-eb93d0dcd89b")
     public void setRtUnit_Actor_operationalMode(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_OPERATIONALMODE_TAGTYPE_ELT, value);
     }
@@ -340,7 +340,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e14ca8ec-4cf6-4ba0-b812-dd1b71ee016c")
+    @objid ("039c9d8e-d0f6-42ff-900d-53317e9a03ba")
     public void setRtUnit_Actor_queueSchedPolicy(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_QUEUESCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -350,7 +350,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f8808d6e-141f-41be-9dde-84ac7fb51eda")
+    @objid ("0edf4225-b1b8-4460-96df-eb2485ea3494")
     public void setRtUnit_Actor_queueSize(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_QUEUESIZE_TAGTYPE_ELT, value);
     }
@@ -360,7 +360,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c4f644d3-9fee-4d6e-8bd2-9d0556ee47bb")
+    @objid ("0835a6d5-7fdb-4e24-88fe-63ac3e1d1ca1")
     public void setRtUnit_Actor_srPoolPolicy(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLPOLICY_TAGTYPE_ELT, value);
     }
@@ -370,7 +370,7 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("33e44eca-d71d-4427-9ae1-b41dd366ad39")
+    @objid ("1df8f019-90f8-4fc6-99b2-3c8b6afe1671")
     public void setRtUnit_Actor_srPoolSize(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLSIZE_TAGTYPE_ELT, value);
     }
@@ -380,61 +380,61 @@ public class RtUnitActor {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8775e032-856a-4b07-9c1c-4e9cc9242456")
+    @objid ("6553e5c6-d068-4bf1-b77d-06e3c45a0298")
     public void setRtUnit_Actor_srPoolWaitingTime(final String value) {
         this.elt.putTagValue(RtUnitActor.MdaTypes.RTUNIT_ACTOR_SRPOOLWAITINGTIME_TAGTYPE_ELT, value);
     }
 
-    @objid ("fc1b2772-d62d-48a9-87ae-791de27db13d")
+    @objid ("0768c9f7-f216-4ecf-85b5-8bb0e3352f14")
     protected RtUnitActor(final Actor elt) {
         this.elt = elt;
     }
 
     @objid ("f1e85db7-0445-4cb5-ad04-63711981664b")
     public static final class MdaTypes {
-        @objid ("a66c0a7e-a8f7-4ee0-8002-12d8b9b5d144")
+        @objid ("6a2fca68-c4dd-4ff0-b73b-5956c4971ea7")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("22788cd7-78e0-4cfc-8e80-869b627dbe3d")
+        @objid ("3f0116ed-e809-4577-9284-9ea87e4f21ec")
         public static TagType RTUNIT_ACTOR_ISDYNAMIC_TAGTYPE_ELT;
 
-        @objid ("5b22e5c0-487c-4bba-a2d6-bfdd942e8578")
+        @objid ("f980723d-ab30-474e-91e4-c442fdcdcdc1")
         public static TagType RTUNIT_ACTOR_ISMAIN_TAGTYPE_ELT;
 
-        @objid ("4c235cb4-8b2c-47b9-aba9-5b0032896e54")
+        @objid ("b63a1743-ecab-404d-9f93-b380bc3d5bc1")
         public static TagType RTUNIT_ACTOR_SRPOOLSIZE_TAGTYPE_ELT;
 
-        @objid ("952313fd-9fa2-4b31-b9e6-fdafd512088e")
+        @objid ("744a6eca-8cc4-472e-95a9-e505228d2f95")
         public static TagType RTUNIT_ACTOR_SRPOOLPOLICY_TAGTYPE_ELT;
 
-        @objid ("a03185f3-9dc9-4312-8ad9-352e957cd424")
+        @objid ("f468f54b-23b9-455e-869d-eb5d29629caa")
         public static TagType RTUNIT_ACTOR_SRPOOLWAITINGTIME_TAGTYPE_ELT;
 
-        @objid ("83e53a42-12b9-4cf7-a6b2-2a3f9e01d351")
+        @objid ("28df6802-6f79-46e4-8ee3-63a533d3afb2")
         public static TagType RTUNIT_ACTOR_QUEUESCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("5827ffc0-5b4c-49db-a994-987daa9dcd7f")
+        @objid ("c17c947b-0027-4bb8-9ee4-3b31c9fb1527")
         public static TagType RTUNIT_ACTOR_QUEUESIZE_TAGTYPE_ELT;
 
-        @objid ("c6912f46-a295-48b2-a5c8-882b497f2913")
+        @objid ("a14da9ea-84b9-4bc9-892e-adc6a38bffe7")
         public static TagType RTUNIT_ACTOR_MSGMAXSIZE_TAGTYPE_ELT;
 
-        @objid ("3f6ba9d2-7a5a-4256-91f7-7a6eceadbf47")
+        @objid ("01bd1f60-4984-4694-94b4-51eaa8ffd3fe")
         public static TagType RTUNIT_ACTOR_OPERATIONALMODE_TAGTYPE_ELT;
 
-        @objid ("ebf1a73d-8277-4e7f-b231-e564a165edd9")
+        @objid ("4e3acc59-d601-48e8-97d4-1726cb565c9b")
         public static TagType RTUNIT_ACTOR_MAIN_TAGTYPE_ELT;
 
-        @objid ("27827518-1ed1-4d21-a127-e5d99e213f4a")
+        @objid ("73d7793c-3963-4648-b9cb-b88cf617d0c1")
         public static TagType RTUNIT_ACTOR_MEMORYSIZE_TAGTYPE_ELT;
 
-        @objid ("3e067dda-8568-47f7-bf2a-2ea6f8ae0320")
+        @objid ("e0c8b764-b86b-4ef1-af74-4173710f9731")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("4dd18167-d576-4667-9fcb-013af1ffb96b")
+        @objid ("4f3eeff0-ff00-47be-a1eb-b588603b1352")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("a6971730-d212-4b37-9d81-da18189656e3")
+        @objid ("203fa384-0262-4464-8f24-3390719350a6")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00c30c46-0ccf-11df-8525-001302895b2b");
             RTUNIT_ACTOR_ISDYNAMIC_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00c56e92-0ccf-11df-8525-001302895b2b");

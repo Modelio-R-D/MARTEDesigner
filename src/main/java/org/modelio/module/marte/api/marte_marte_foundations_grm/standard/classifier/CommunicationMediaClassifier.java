@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.classifier;
 
@@ -34,33 +34,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d08badd6-d915-43bd-8fe9-99cada0a9153")
 public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
-    @objid ("2b638bf0-fc6c-4bc4-93a6-c97b80522c2c")
+    @objid ("93e07c62-1870-4f0d-9370-47aa29f7edb2")
     public static final String STEREOTYPE_NAME = "CommunicationMedia_Classifier";
 
-    @objid ("7654d2b9-f824-4e0d-8886-52fee390eafd")
+    @objid ("79301861-4ff8-49a3-a2e5-40b1f251456b")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_BLOCKT_TAGTYPE = "CommunicationMedia_Classifier_blockT";
 
-    @objid ("d64fa128-a7e0-4ec0-ae3c-745d4536450d")
+    @objid ("8dd7243d-dc95-4fc5-9a49-947eb49685f9")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_CAPACITY_TAGTYPE = "CommunicationMedia_Classifier_capacity";
 
-    @objid ("0cc3e18d-f087-46a4-9609-c58a40805395")
+    @objid ("52a27bf1-4cdf-4b68-91dd-070c6951ea0e")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE_TAGTYPE = "CommunicationMedia_Classifier_elementSize";
 
-    @objid ("ce9aee5a-1235-4f46-9725-0c8cb3683521")
+    @objid ("1e97a69d-43b2-4876-bd61-23bc96b61667")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_PACKETT_TAGTYPE = "CommunicationMedia_Classifier_packetT";
 
-    @objid ("01e7f2a0-752c-482b-baa2-886da7019aaf")
+    @objid ("756681bd-db25-4766-887e-443fd42939d3")
     public static final String COMMUNICATIONMEDIA_CLASSIFIER_TRANSMMODE_TAGTYPE = "CommunicationMedia_Classifier_transmMode";
 
     /**
-     * Tells whether a {@link CommunicationMediaClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << CommunicationMedia_Classifier >>. 
+     * Tells whether a {@link CommunicationMediaClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << CommunicationMedia_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("a23a2e5d-9b9b-44ce-9f35-44aa62866be0")
+    @objid ("2c74b28b-f2ac-4f1e-bc70-f0f96bfe3b15")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationMediaClassifier.STEREOTYPE_NAME));
     }
@@ -70,21 +70,21 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * 
      * @return a {@link CommunicationMediaClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("e41d779d-6b29-4e98-8895-eda07e75d7ad")
+    @objid ("4fc39b5b-48a6-4902-b6c1-af99638fc473")
     public static CommunicationMediaClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationMediaClassifier.STEREOTYPE_NAME);
         return CommunicationMediaClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link CommunicationMediaClassifier} proxy from a {@link Classifier} stereotyped << CommunicationMedia_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link CommunicationMediaClassifier} proxy from a {@link Classifier} stereotyped << CommunicationMedia_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link CommunicationMediaClassifier} proxy or <i>null</i>.
      */
-    @objid ("a1369687-a87d-4b71-9a5e-827e22b9b3b4")
+    @objid ("f83ef566-f8fe-4625-bc2d-de698be3ad6a")
     public static CommunicationMediaClassifier instantiate(final Classifier obj) {
         return CommunicationMediaClassifier.canInstantiate(obj) ? new CommunicationMediaClassifier(obj) : null;
     }
@@ -97,7 +97,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * @return a {@link CommunicationMediaClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("1c570bb1-45d5-4445-aa3b-5dd73dd8ad01")
+    @objid ("d5988185-9e7f-45d5-9648-9a95dfb87627")
     public static CommunicationMediaClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (CommunicationMediaClassifier.canInstantiate(obj))
         	return new CommunicationMediaClassifier(obj);
@@ -105,7 +105,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
         	throw new IllegalArgumentException("CommunicationMediaClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("bad56597-c175-4ed7-9992-52f21f916c2d")
+    @objid ("cc13e064-07f9-4c20-a47b-1f03f3c1d800")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -126,7 +126,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d0248150-a7fd-4804-a763-50f6c8ba246c")
+    @objid ("4be0d572-6fae-42f6-8345-d76a134aaa36")
     public List<String> getCommunicationMedia_Classifier_blockT() {
         return this.elt.getTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_BLOCKT_TAGTYPE_ELT);
     }
@@ -136,7 +136,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d89f715c-ca66-4d6a-b1b1-ea8cd0e7950b")
+    @objid ("10a70b99-158f-4584-a98a-bbd09617cb40")
     public List<String> getCommunicationMedia_Classifier_capacity() {
         return this.elt.getTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_CAPACITY_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e871df7e-2cc3-4afb-af61-d75f93ec4694")
+    @objid ("fa68886c-9bbb-4f88-b0e9-e89a4b0e8ae5")
     public String getCommunicationMedia_Classifier_elementSize() {
         return this.elt.getTagValue(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("23a91d6c-6d7c-408e-b56b-64a025f0c541")
+    @objid ("29cedb42-1a76-4b57-93ff-1fc6a3ca0c53")
     public List<String> getCommunicationMedia_Classifier_packetT() {
         return this.elt.getTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_PACKETT_TAGTYPE_ELT);
     }
@@ -166,7 +166,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d0c4f84c-17fa-421d-9584-cf8a7917049b")
+    @objid ("1ea64075-5871-42b9-bd4b-3e4561466fc9")
     public String getCommunicationMedia_Classifier_transmMode() {
         return this.elt.getTagValue(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_TRANSMMODE_TAGTYPE_ELT);
     }
@@ -175,13 +175,13 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("f3cc92e8-0ea0-4bce-8ee7-42b3892ff9e1")
+    @objid ("f4d1a62e-906c-4c32-885c-0f429dff952b")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
     }
 
-    @objid ("7c30a6e9-246e-4280-98e5-38f9d600ce72")
+    @objid ("f4914995-38cf-49de-99fe-d69883d69d3c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -192,7 +192,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("00cc9880-ab2e-456d-ab40-4db5e314a34c")
+    @objid ("1eda3484-0eb1-45b3-8564-692b99dd02ff")
     public void setCommunicationMedia_Classifier_blockT(final List<String> values) {
         this.elt.putTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_BLOCKT_TAGTYPE_ELT, values);
     }
@@ -202,7 +202,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b6744751-cffd-4d1c-830f-b12ab6e93389")
+    @objid ("50fcbbcb-c1d0-40a2-a840-338062599b55")
     public void setCommunicationMedia_Classifier_capacity(final List<String> values) {
         this.elt.putTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_CAPACITY_TAGTYPE_ELT, values);
     }
@@ -212,7 +212,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c2a91786-016a-46f9-8da2-4df632815185")
+    @objid ("457b3d4a-e3ae-4cd2-ab2e-50728df3c45b")
     public void setCommunicationMedia_Classifier_elementSize(final String value) {
         this.elt.putTagValue(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE_TAGTYPE_ELT, value);
     }
@@ -222,7 +222,7 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("20a41c49-88cf-4372-89a2-5df22dba6780")
+    @objid ("8c5a6df1-fa27-4510-966a-fcb5824bc2ff")
     public void setCommunicationMedia_Classifier_packetT(final List<String> values) {
         this.elt.putTagValues(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_PACKETT_TAGTYPE_ELT, values);
     }
@@ -232,43 +232,43 @@ public class CommunicationMediaClassifier extends ProcessingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0996731f-7465-41f7-ad1a-bfd87908c8f2")
+    @objid ("1eb5de83-5396-453d-907f-9eaf4736910e")
     public void setCommunicationMedia_Classifier_transmMode(final String value) {
         this.elt.putTagValue(CommunicationMediaClassifier.MdaTypes.COMMUNICATIONMEDIA_CLASSIFIER_TRANSMMODE_TAGTYPE_ELT, value);
     }
 
-    @objid ("2d25a58f-4e56-4ef5-926c-83636522af38")
+    @objid ("8ae444ef-562b-4951-8755-3a480c672a55")
     protected CommunicationMediaClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("5d76f384-be11-49c3-82e2-92917d1c6163")
     public static final class MdaTypes {
-        @objid ("322d117b-c419-4c62-8da1-1eaec9838906")
+        @objid ("d9dc21a0-851f-4f5f-b588-fca7f287f473")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("652bd107-7a57-4f7c-af28-c3c83c2e4561")
+        @objid ("63ccc066-70ff-46d6-a6c9-a42e104d09b0")
         public static TagType COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE_TAGTYPE_ELT;
 
-        @objid ("73664b00-d506-40fc-8ae0-92bb31871852")
+        @objid ("512da04d-5b25-4ecf-9bc3-a71064258352")
         public static TagType COMMUNICATIONMEDIA_CLASSIFIER_TRANSMMODE_TAGTYPE_ELT;
 
-        @objid ("80a480bb-03c1-4250-8fb9-fd204ed780c7")
+        @objid ("ad339fa8-3457-477a-864e-9e43eaf4a0ff")
         public static TagType COMMUNICATIONMEDIA_CLASSIFIER_BLOCKT_TAGTYPE_ELT;
 
-        @objid ("6f050b58-0799-4db3-b607-e70c262d9cbf")
+        @objid ("1fceea27-fc13-4d71-96cc-6fe8fec73165")
         public static TagType COMMUNICATIONMEDIA_CLASSIFIER_PACKETT_TAGTYPE_ELT;
 
-        @objid ("9af81c7c-c642-418d-971f-21ebd59391a3")
+        @objid ("489a790b-5ed7-4a29-821f-a52c8290d33d")
         public static TagType COMMUNICATIONMEDIA_CLASSIFIER_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("3a4a9f75-57cc-415b-8b20-5c1cb2afb401")
+        @objid ("6b4d4b4a-2e6a-4505-ab95-11fba70db6d8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f83c4dcf-0246-4042-8cf5-47a198dc3d11")
+        @objid ("fd72eb54-b8fe-4a80-9c97-65b10461df30")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("bfcd2754-524e-49b8-8daa-2f79b15fd056")
+        @objid ("8c5a8c85-4dfc-4c99-9bd4-83fec2efe862")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "e136b5f3-0fdc-11df-86ac-0014222a9f79");
             COMMUNICATIONMEDIA_CLASSIFIER_ELEMENTSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f8da5102-0fdc-11df-86ac-0014222a9f79");

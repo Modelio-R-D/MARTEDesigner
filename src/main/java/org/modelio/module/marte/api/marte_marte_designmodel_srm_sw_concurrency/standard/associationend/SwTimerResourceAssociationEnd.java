@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.associationend;
 
@@ -34,18 +34,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("82dd1055-639c-4563-9e81-8e85e547b773")
 public class SwTimerResourceAssociationEnd extends TimerResourceAssociationEnd {
-    @objid ("5bc19810-5c18-4cab-92c0-a251c0d36b0d")
+    @objid ("a1d790ae-f543-4273-95f5-7ab13e2c5cb1")
     public static final String STEREOTYPE_NAME = "SwTimerResource_AssociationEnd";
 
     /**
-     * Tells whether a {@link SwTimerResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SwTimerResource_AssociationEnd >>. 
+     * Tells whether a {@link SwTimerResourceAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << SwTimerResource_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("70cc0af0-2e3c-4d02-9b1b-6eb567a5575f")
+    @objid ("62a06596-b4ec-40f2-9328-9a088ab07977")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceAssociationEnd.STEREOTYPE_NAME));
     }
@@ -55,21 +55,21 @@ public class SwTimerResourceAssociationEnd extends TimerResourceAssociationEnd {
      * 
      * @return a {@link SwTimerResourceAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("7a5ded71-9512-47a7-8827-bb1ce7d751cd")
+    @objid ("635d8864-11a5-43a7-9e8a-deb33eeebbff")
     public static SwTimerResourceAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceAssociationEnd.STEREOTYPE_NAME);
         return SwTimerResourceAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwTimerResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SwTimerResource_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwTimerResourceAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << SwTimerResource_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link SwTimerResourceAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("68e22b04-429e-49d4-b4da-012c5dc158cb")
+    @objid ("d04daa63-72de-45a2-87b8-6a9b91372a6c")
     public static SwTimerResourceAssociationEnd instantiate(final AssociationEnd obj) {
         return SwTimerResourceAssociationEnd.canInstantiate(obj) ? new SwTimerResourceAssociationEnd(obj) : null;
     }
@@ -82,7 +82,7 @@ public class SwTimerResourceAssociationEnd extends TimerResourceAssociationEnd {
      * @return a {@link SwTimerResourceAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9b3a54bd-78cb-44d8-a26e-a8f350355710")
+    @objid ("5aba4bc7-5e83-4975-8c1f-2950994486aa")
     public static SwTimerResourceAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (SwTimerResourceAssociationEnd.canInstantiate(obj))
         	return new SwTimerResourceAssociationEnd(obj);
@@ -90,7 +90,7 @@ public class SwTimerResourceAssociationEnd extends TimerResourceAssociationEnd {
         	throw new IllegalArgumentException("SwTimerResourceAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("28900d8f-8fd3-4336-9eb1-b648e73da86f")
+    @objid ("b86e3695-2970-4f97-9f0a-9380fa77b0a3")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -110,35 +110,35 @@ public class SwTimerResourceAssociationEnd extends TimerResourceAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("a50d78e4-9227-4dfa-87ba-9a117dbf9620")
+    @objid ("2ffa30a8-6f2a-4fe8-bcb6-f02776a3b207")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
     }
 
-    @objid ("dde01e26-3f14-409a-a076-b0bd063dc15c")
+    @objid ("b251b178-f5ec-4627-afd4-0c45146f853c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("79ddea33-8eeb-4457-8798-65c23857b55b")
+    @objid ("f630d271-e5c0-4af8-9112-e5f33985adcc")
     protected SwTimerResourceAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("7719b4fe-0926-4adb-99aa-bcdebeccaa05")
     public static final class MdaTypes {
-        @objid ("ed89f839-80cf-459c-b19f-cc2b642001bb")
+        @objid ("08cd5a08-2388-44ca-8e71-7e8380bbf4c6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b02b6e61-e77d-4697-b33b-3cd818b00e5f")
+        @objid ("4f32e4d5-9f0f-457d-81a4-1815b69bb8c3")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3d7c4f4a-6bb9-41ab-9aba-a75e8b9b15ef")
+        @objid ("fd75f9f9-1090-4770-b4f6-c0b542d15d52")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("7e889eac-6789-4494-8a31-2a9e00f77a73")
+        @objid ("0b1185bc-1e99-42dc-a5a6-e37c20fac7b6")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01dec05f-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

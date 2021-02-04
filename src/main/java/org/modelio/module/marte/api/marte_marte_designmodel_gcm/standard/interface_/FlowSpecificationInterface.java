@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_gcm.standard.interface_;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("9abdea82-77ac-4cba-b247-014a3f06c46d")
 public class FlowSpecificationInterface {
-    @objid ("41bb57ab-2258-43c1-9b81-5de8bcd9c92d")
+    @objid ("756f699b-b4e6-42b4-97ac-40bede2d2381")
     public static final String STEREOTYPE_NAME = "FlowSpecification_Interface";
 
     /**
      * The underlying {@link Interface} represented by this proxy, never null.
      */
-    @objid ("b68f08fb-1743-4257-a8eb-7db6cf000424")
+    @objid ("e5c78802-0e2d-432c-8eab-5da2640eed2d")
     protected final Interface elt;
 
     /**
-     * Tells whether a {@link FlowSpecificationInterface proxy} can be instantiated from a {@link MObject} checking it is a {@link Interface} stereotyped << FlowSpecification_Interface >>. 
+     * Tells whether a {@link FlowSpecificationInterface proxy} can be instantiated from a {@link MObject} checking it is a {@link Interface} stereotyped << FlowSpecification_Interface >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("87c9d7af-5085-4785-9945-a6e7dd4decb1")
+    @objid ("dc818665-fa7b-4e41-906f-fb4f6220cc54")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Interface) && ((Interface) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, FlowSpecificationInterface.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class FlowSpecificationInterface {
      * 
      * @return a {@link FlowSpecificationInterface} proxy on the created {@link Interface}.
      */
-    @objid ("06b42c6f-be4a-47d3-8068-dfb2f639e276")
+    @objid ("5e462a13-82db-4e72-a4c2-480373fedc35")
     public static FlowSpecificationInterface create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Interface");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Interface");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, FlowSpecificationInterface.STEREOTYPE_NAME);
         return FlowSpecificationInterface.instantiate((Interface)e);
     }
 
     /**
-     * Tries to instantiate a {@link FlowSpecificationInterface} proxy from a {@link Interface} stereotyped << FlowSpecification_Interface >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link FlowSpecificationInterface} proxy from a {@link Interface} stereotyped << FlowSpecification_Interface >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Interface
      * @return a {@link FlowSpecificationInterface} proxy or <i>null</i>.
      */
-    @objid ("a0812085-d65c-4ca2-9e9d-f935d3ea23b3")
+    @objid ("03d22165-4442-459f-b7fe-45e39baf656b")
     public static FlowSpecificationInterface instantiate(final Interface obj) {
         return FlowSpecificationInterface.canInstantiate(obj) ? new FlowSpecificationInterface(obj) : null;
     }
@@ -87,7 +87,7 @@ public class FlowSpecificationInterface {
      * @return a {@link FlowSpecificationInterface} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("8ad4b706-56a8-4059-a5de-44b73142a974")
+    @objid ("ee3eec34-99fd-450b-9d4e-25084e06df15")
     public static FlowSpecificationInterface safeInstantiate(final Interface obj) throws IllegalArgumentException {
         if (FlowSpecificationInterface.canInstantiate(obj))
         	return new FlowSpecificationInterface(obj);
@@ -95,7 +95,7 @@ public class FlowSpecificationInterface {
         	throw new IllegalArgumentException("FlowSpecificationInterface: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("285e5b0d-a6e9-440f-8c1e-5923aaf2493a")
+    @objid ("9a6bf5ec-0be7-450d-88b4-15c99c7f2228")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,34 +115,34 @@ public class FlowSpecificationInterface {
      * Get the underlying {@link Interface}. 
      * @return the Interface represented by this proxy, never null.
      */
-    @objid ("5b570e51-61fe-4a8d-be81-5c953451571b")
+    @objid ("73b1968a-e091-49db-9b54-7706ba34e6f8")
     public Interface getElement() {
         return this.elt;
     }
 
-    @objid ("3d9dc8c9-626f-4e77-ae8c-e67d3da015b3")
+    @objid ("ba712326-8bbc-4b48-bc45-cd3e28dd5ced")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("289f8997-6b8d-4cc6-b945-38a70337163d")
+    @objid ("183dbf0a-79a7-4f48-988e-9bbf063c8a57")
     protected FlowSpecificationInterface(final Interface elt) {
         this.elt = elt;
     }
 
     @objid ("4815af5c-5461-478f-a3aa-74cec96f3be9")
     public static final class MdaTypes {
-        @objid ("c1b16879-432e-493d-975b-07ece1fc9fd4")
+        @objid ("8dc31898-e252-4fc3-a13b-b0412595e412")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("775ae250-f051-4cb7-82d3-89adf34eaba2")
+        @objid ("36b6d527-d0a2-425a-be50-aaab4c5de6b5")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("94057b28-2c1a-4889-97de-6b7d7f179d7c")
+        @objid ("eee76822-db8e-4047-b685-e0d93cfd2ceb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("04ada1b4-1e9e-45dd-9470-113b4499ec94")
+        @objid ("f3a2680a-e995-45ae-8971-006e4b6c6c36")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0255f475-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

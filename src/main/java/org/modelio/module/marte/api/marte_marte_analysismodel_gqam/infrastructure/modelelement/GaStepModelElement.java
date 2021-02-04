@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_gqam.infrastructure.modelelement;
 
@@ -33,51 +33,51 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c5c91900-8b82-4cc3-8cf0-25f4510ed5d1")
 public class GaStepModelElement extends GaScenarioModelElement {
-    @objid ("3ea8803f-f276-434f-91a7-abbc9cf897ea")
+    @objid ("de0dcd15-4c01-4f6c-b475-b49d8c3e19a1")
     public static final String STEREOTYPE_NAME = "GaStep_ModelElement";
 
-    @objid ("efb17262-c0ce-4819-9ad2-60664f256f69")
+    @objid ("5e5468b1-579d-48ba-b8f6-907e0d4e52e8")
     public static final String GASTEP_MODELELEMENT_BLOCKT_TAGTYPE = "GaStep_ModelElement_blockT";
 
-    @objid ("58da7fb8-ef2d-4e2e-badf-911bc4de6be3")
+    @objid ("7a1b03af-729a-40f6-a67d-46ef05ff0a7a")
     public static final String GASTEP_MODELELEMENT_CHILDSCENARIO_TAGTYPE = "GaStep_ModelElement_childScenario";
 
-    @objid ("86140b61-511a-4509-830c-c38491150a8e")
+    @objid ("ce152147-03e8-4845-9220-99365e15d487")
     public static final String GASTEP_MODELELEMENT_CONCURRES_TAGTYPE = "GaStep_ModelElement_concurRes";
 
-    @objid ("3914b643-8aa4-48cb-9325-fbef6fb71a99")
+    @objid ("2a945889-7386-4996-8411-23fbbf4d26a8")
     public static final String GASTEP_MODELELEMENT_HOST_TAGTYPE = "GaStep_ModelElement_host";
 
-    @objid ("16dcf3ec-4fb5-4efa-9624-efea5f17f66c")
+    @objid ("f1ef003a-1926-4f56-95ab-fecff8119927")
     public static final String GASTEP_MODELELEMENT_ISATOMIC_TAGTYPE = "GaStep_ModelElement_isAtomic";
 
-    @objid ("554e4b40-999f-43e0-b7bf-5512b2e71358")
+    @objid ("7a087a0b-7b89-4c62-9254-b8dd877f2357")
     public static final String GASTEP_MODELELEMENT_PRIORITY_TAGTYPE = "GaStep_ModelElement_priority";
 
-    @objid ("1f1263bd-78c0-4973-89c7-6bc2525e547d")
+    @objid ("dbdd5464-3545-4b80-aeca-3f588f06d31b")
     public static final String GASTEP_MODELELEMENT_PROB_TAGTYPE = "GaStep_ModelElement_prob";
 
-    @objid ("8d989bca-ce2f-4885-bafa-9832bdf09243")
+    @objid ("7f752656-1e8d-4831-85c9-74f92167dbbc")
     public static final String GASTEP_MODELELEMENT_REP_TAGTYPE = "GaStep_ModelElement_rep";
 
-    @objid ("7151ee20-7db1-4969-a7fa-8497cb77ea7c")
+    @objid ("482dd273-81a7-4824-a754-5f1087ea946f")
     public static final String GASTEP_MODELELEMENT_SCENARIO_TAGTYPE = "GaStep_ModelElement_scenario";
 
-    @objid ("710639e6-7f56-4435-8d59-7cdc1f026db5")
+    @objid ("641bce17-163e-44c6-9bfa-d9cea0bd48f4")
     public static final String GASTEP_MODELELEMENT_SERVCOUNT_TAGTYPE = "GaStep_ModelElement_servCount";
 
-    @objid ("412864de-0158-468c-b2d9-dbb55869240d")
+    @objid ("9701016b-7fb9-4254-ac35-21ae5e932f30")
     public static final String GASTEP_MODELELEMENT_SERVDEMAND_TAGTYPE = "GaStep_ModelElement_servDemand";
 
     /**
-     * Tells whether a {@link GaStepModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << GaStep_ModelElement >>. 
+     * Tells whether a {@link GaStepModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << GaStep_ModelElement >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("16db91f2-ec3f-4efe-89ad-9eaa0b4030c0")
+    @objid ("8193d5d2-bf1d-4baf-a769-a943dfb1a352")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ModelElement) && ((ModelElement) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GaStepModelElement.STEREOTYPE_NAME));
     }
@@ -87,21 +87,21 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * 
      * @return a {@link GaStepModelElement} proxy on the created {@link ModelElement}.
      */
-    @objid ("3677baeb-f6f0-4d8b-b5e1-07af0b847473")
+    @objid ("2310473a-c8ed-4a8a-b3ef-24975e2fc914")
     public static GaStepModelElement create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ModelElement");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.ModelElement");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GaStepModelElement.STEREOTYPE_NAME);
         return GaStepModelElement.instantiate((ModelElement)e);
     }
 
     /**
-     * Tries to instantiate a {@link GaStepModelElement} proxy from a {@link ModelElement} stereotyped << GaStep_ModelElement >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link GaStepModelElement} proxy from a {@link ModelElement} stereotyped << GaStep_ModelElement >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ModelElement
      * @return a {@link GaStepModelElement} proxy or <i>null</i>.
      */
-    @objid ("091d66ca-09d3-42bb-a6db-3f45ff078bfb")
+    @objid ("94366bd6-4ea5-4fde-84a8-54d4e3f06eb0")
     public static GaStepModelElement instantiate(final ModelElement obj) {
         return GaStepModelElement.canInstantiate(obj) ? new GaStepModelElement(obj) : null;
     }
@@ -114,7 +114,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * @return a {@link GaStepModelElement} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("473f5ad8-bab3-40d0-b519-026500072501")
+    @objid ("74976baf-5247-40e9-93b7-6b88342ac6db")
     public static GaStepModelElement safeInstantiate(final ModelElement obj) throws IllegalArgumentException {
         if (GaStepModelElement.canInstantiate(obj))
         	return new GaStepModelElement(obj);
@@ -122,7 +122,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
         	throw new IllegalArgumentException("GaStepModelElement: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("37d52189-aa98-4dd3-ade3-131766a14d77")
+    @objid ("5b91d95f-702d-4a14-b22d-6d94bee1dc47")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -142,7 +142,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * Get the underlying {@link ModelElement}. 
      * @return the ModelElement represented by this proxy, never null.
      */
-    @objid ("552eb544-f5de-4455-8797-671b43c8d6ed")
+    @objid ("5bc35518-f8de-43f4-b1c3-fd4840173392")
     @Override
     public ModelElement getElement() {
         return (ModelElement)super.getElement();
@@ -153,7 +153,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("190e3d1d-c5ec-480b-8502-657274e70aca")
+    @objid ("a042c6aa-f643-43e1-9699-dd2e8d7c4d58")
     public String getGaStep_ModelElement_blockT() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_BLOCKT_TAGTYPE_ELT);
     }
@@ -163,7 +163,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a1fe28b6-4bc4-42ab-ae58-fca81fc43ae3")
+    @objid ("bf578a60-a9c2-4c9b-bd50-ebb5e48a2970")
     public String getGaStep_ModelElement_childScenario() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_CHILDSCENARIO_TAGTYPE_ELT);
     }
@@ -173,7 +173,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7c9f2a9a-ffcf-46bf-b857-05dc8853ce91")
+    @objid ("0f59fb95-ba47-44e4-bce0-957d0fc27ef8")
     public String getGaStep_ModelElement_concurRes() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_CONCURRES_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b4c87a64-39c7-4beb-bfcf-89ca6e3bad7f")
+    @objid ("2075bcb1-99ad-45b5-b149-1f1aa3245786")
     public String getGaStep_ModelElement_host() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_HOST_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("634bd44c-04e4-4960-9f37-965ca2cc5150")
+    @objid ("7d65ffa3-82f2-4b7b-98b6-27b2b632f8bd")
     public String getGaStep_ModelElement_priority() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_PRIORITY_TAGTYPE_ELT);
     }
@@ -203,7 +203,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dd72e89b-7f57-4e3d-9aba-ab3c8aad1c51")
+    @objid ("8810f043-f043-4798-b4f0-db78ebbb7af1")
     public String getGaStep_ModelElement_prob() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_PROB_TAGTYPE_ELT);
     }
@@ -213,7 +213,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("57e5327c-2d05-460f-90a6-c6d59dcf52bf")
+    @objid ("83b6cb73-2548-4d54-93db-a028a70a9cf9")
     public String getGaStep_ModelElement_rep() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_REP_TAGTYPE_ELT);
     }
@@ -223,7 +223,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d72c9093-cca0-4eec-a50c-ad57208fa194")
+    @objid ("62193ba0-7a83-4d33-8bfb-f1e283f754a0")
     public String getGaStep_ModelElement_scenario() {
         return this.elt.getTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SCENARIO_TAGTYPE_ELT);
     }
@@ -233,7 +233,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c60eddc0-7d4e-444b-a994-098e464234ee")
+    @objid ("e8119c9b-2778-457d-a6c2-0d47e11897c2")
     public List<String> getGaStep_ModelElement_servCount() {
         return this.elt.getTagValues(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SERVCOUNT_TAGTYPE_ELT);
     }
@@ -243,12 +243,12 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("a8d3c978-a3b0-405b-b04b-d08c46033b48")
+    @objid ("4546d5cc-b451-44a8-85cd-e592e9bafe96")
     public List<String> getGaStep_ModelElement_servDemand() {
         return this.elt.getTagValues(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SERVDEMAND_TAGTYPE_ELT);
     }
 
-    @objid ("d6d9fef7-9f6f-4adc-ad90-1e0628a585eb")
+    @objid ("99b534a7-8e61-4e9b-8be9-75644aec7f8b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -259,7 +259,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("30de2353-cc7d-4d60-897e-fe182f09db43")
+    @objid ("6eaf8095-f091-4dfe-a4b4-6e21facc8519")
     public boolean isGaStep_ModelElement_isAtomic() {
         return this.elt.isTagged(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_ISATOMIC_TAGTYPE_ELT);
     }
@@ -269,7 +269,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("75e85946-adf3-4214-9e26-7693ac15e27a")
+    @objid ("c22543c4-61ae-441f-9444-82fb33b71f66")
     public void setGaStep_ModelElement_blockT(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_BLOCKT_TAGTYPE_ELT, value);
     }
@@ -279,7 +279,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ec4f954f-b63c-4b08-9634-cc5f767c8921")
+    @objid ("aae82f1a-e442-4053-93a7-0d27558c12fe")
     public void setGaStep_ModelElement_childScenario(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_CHILDSCENARIO_TAGTYPE_ELT, value);
     }
@@ -289,7 +289,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("be3479c3-5c3b-4fd9-8617-704e8ccf35e2")
+    @objid ("46fb6e85-bad0-42b0-a7cf-6f7051e7d179")
     public void setGaStep_ModelElement_concurRes(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_CONCURRES_TAGTYPE_ELT, value);
     }
@@ -299,7 +299,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4f7d7ffa-1aeb-421b-9806-d376a83273e2")
+    @objid ("0298b6bf-6758-48d3-a337-e10c51fc55a0")
     public void setGaStep_ModelElement_host(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_HOST_TAGTYPE_ELT, value);
     }
@@ -309,7 +309,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a961269a-7ed1-4de2-a7ce-ee59ca3d3e2e")
+    @objid ("343954d6-d5b7-4702-8835-c39e4a4e6b5e")
     public void setGaStep_ModelElement_isAtomic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_ISATOMIC_TAGTYPE_ELT, this.elt);
@@ -322,7 +322,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ba7a6ab8-5673-4de4-914c-a58e9d99b63c")
+    @objid ("4ddb5f98-b2ec-4a5a-b2c2-3801129262b3")
     public void setGaStep_ModelElement_priority(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_PRIORITY_TAGTYPE_ELT, value);
     }
@@ -332,7 +332,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2291f243-d49b-402b-a313-e2a432688940")
+    @objid ("bfd92519-87f5-426a-a521-d8e8b0b23917")
     public void setGaStep_ModelElement_prob(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_PROB_TAGTYPE_ELT, value);
     }
@@ -342,7 +342,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ecb117c1-b683-4a11-be81-5f4be9210e5d")
+    @objid ("6ffffe5d-49d6-49f5-ac73-2f74a755c270")
     public void setGaStep_ModelElement_rep(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_REP_TAGTYPE_ELT, value);
     }
@@ -352,7 +352,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("418bc0eb-fee5-4c44-8202-d9a235493213")
+    @objid ("99e6d3c4-a907-45f1-802b-04b39bd06835")
     public void setGaStep_ModelElement_scenario(final String value) {
         this.elt.putTagValue(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SCENARIO_TAGTYPE_ELT, value);
     }
@@ -362,7 +362,7 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("63cbd6d1-34d6-48cc-ad34-44555b0c999b")
+    @objid ("c4483f30-3dae-49ee-a173-d4b7442379d6")
     public void setGaStep_ModelElement_servCount(final List<String> values) {
         this.elt.putTagValues(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SERVCOUNT_TAGTYPE_ELT, values);
     }
@@ -372,61 +372,61 @@ public class GaStepModelElement extends GaScenarioModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("719efb2f-6407-4f9b-8c71-313754e03134")
+    @objid ("64274d12-46db-4218-a4a4-36d8f83279cf")
     public void setGaStep_ModelElement_servDemand(final List<String> values) {
         this.elt.putTagValues(GaStepModelElement.MdaTypes.GASTEP_MODELELEMENT_SERVDEMAND_TAGTYPE_ELT, values);
     }
 
-    @objid ("472154b3-a9a8-414a-8203-b3eeaf27523d")
+    @objid ("f3ac5131-ad13-4b94-b03b-6e599f5d8a84")
     protected GaStepModelElement(final ModelElement elt) {
         super(elt);
     }
 
     @objid ("0a8808a5-7014-4618-8888-d81436ebbd5a")
     public static final class MdaTypes {
-        @objid ("f8674a24-5afc-4b44-bc2f-4549a700b277")
+        @objid ("aeb94cda-ff10-4ad1-9bef-799f7d407eca")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("3fd9e90a-2642-4dd4-9f86-f37a7cb27b78")
+        @objid ("a93c50bb-b4a0-4ae4-a2bf-187b3f8cd743")
         public static TagType GASTEP_MODELELEMENT_ISATOMIC_TAGTYPE_ELT;
 
-        @objid ("e8055d0a-b077-4d9b-90ab-6885d8e1fbe2")
+        @objid ("5fe9ee3b-c7bf-4df0-abb6-02305bf48123")
         public static TagType GASTEP_MODELELEMENT_BLOCKT_TAGTYPE_ELT;
 
-        @objid ("75cf99b1-ce48-499c-9e1a-6c23fec86e0a")
+        @objid ("63050f50-477d-4e81-9298-778bce42a16f")
         public static TagType GASTEP_MODELELEMENT_REP_TAGTYPE_ELT;
 
-        @objid ("94c79d5c-7dbd-4f1d-8322-20e1be1efb43")
+        @objid ("6bc786b0-df31-431e-affd-8689d937f8fa")
         public static TagType GASTEP_MODELELEMENT_PROB_TAGTYPE_ELT;
 
-        @objid ("ac0faf61-c684-4ad9-b779-36410e76d8db")
+        @objid ("6814cb5f-e582-49c4-9bef-ae224362a951")
         public static TagType GASTEP_MODELELEMENT_PRIORITY_TAGTYPE_ELT;
 
-        @objid ("388bf612-25d0-4d84-8410-53ca5c41a798")
+        @objid ("21291544-2a45-444c-ade8-ee4125dc9d89")
         public static TagType GASTEP_MODELELEMENT_CONCURRES_TAGTYPE_ELT;
 
-        @objid ("c1e61078-3970-4228-9b2d-aa03d20d399b")
+        @objid ("e0bc5e16-8568-43aa-a5f4-d4fe76d2d161")
         public static TagType GASTEP_MODELELEMENT_HOST_TAGTYPE_ELT;
 
-        @objid ("90d667ca-dd48-49cd-a55e-c7ac179aca95")
+        @objid ("8087ace8-0a4e-4ad0-ae3d-27f701e08616")
         public static TagType GASTEP_MODELELEMENT_SERVDEMAND_TAGTYPE_ELT;
 
-        @objid ("016a208c-eaa3-4b41-a33b-2a719ce67076")
+        @objid ("cdfcb8d0-cbc1-48cd-9287-9bb7443516a9")
         public static TagType GASTEP_MODELELEMENT_SERVCOUNT_TAGTYPE_ELT;
 
-        @objid ("3c7dcc3b-0dd1-4475-accb-a5bb901bb649")
+        @objid ("3ad0d650-d540-4693-b55c-8c19dcfe339a")
         public static TagType GASTEP_MODELELEMENT_CHILDSCENARIO_TAGTYPE_ELT;
 
-        @objid ("f63319a8-80b2-4dee-934a-b80604428828")
+        @objid ("e15e783e-f2e7-42e7-b4ac-4d242ad6b432")
         public static TagType GASTEP_MODELELEMENT_SCENARIO_TAGTYPE_ELT;
 
-        @objid ("fc03cdaf-9dc7-4f85-9a2b-f49c2f7ee235")
+        @objid ("121c85b4-2f70-42a6-8154-49ce75f9b418")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f3177adf-bf25-4d61-a9e5-c9ff1a43fa16")
+        @objid ("64051a52-8cc4-483b-baec-18703fb311f2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e01230a0-700b-4119-853c-0e54ea61044f")
+        @objid ("16b17f3d-abac-4a2f-879b-cabf7762dfa1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "33653420-14a8-11df-9d54-0014222a9f79");
             GASTEP_MODELELEMENT_ISATOMIC_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "33653421-14a8-11df-9d54-0014222a9f79");

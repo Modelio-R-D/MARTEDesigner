@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwpower.standard.classifier;
 
@@ -34,21 +34,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f8fa326d-a38d-4a88-9191-a464043b06d8")
 public class HwCoolingSupplyClassifier extends HwComponentClassifier {
-    @objid ("42e41172-5ece-43c5-b056-6e2b4eccd3e9")
+    @objid ("081a5e43-a84d-4d12-be02-938c63b7023c")
     public static final String STEREOTYPE_NAME = "HwCoolingSupply_Classifier";
 
-    @objid ("f4782193-f8ed-4b47-a83f-609242ddf033")
+    @objid ("552089bb-eaad-4e76-b7f8-2617a29ccc58")
     public static final String HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER_TAGTYPE = "HwCoolingSupply_Classifier_coolingPower";
 
     /**
-     * Tells whether a {@link HwCoolingSupplyClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwCoolingSupply_Classifier >>. 
+     * Tells whether a {@link HwCoolingSupplyClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwCoolingSupply_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("0fc5194a-1b5a-45b3-8f10-b3dfbafdb496")
+    @objid ("b8eb4096-34bc-41b3-ac82-f183151e9d6e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwCoolingSupplyClassifier.STEREOTYPE_NAME));
     }
@@ -58,21 +58,21 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
      * 
      * @return a {@link HwCoolingSupplyClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("78445319-8df4-42a4-9d43-b81c0be3e15b")
+    @objid ("e6cedb10-f65c-411e-9a16-c666aa624e29")
     public static HwCoolingSupplyClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwCoolingSupplyClassifier.STEREOTYPE_NAME);
         return HwCoolingSupplyClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwCoolingSupplyClassifier} proxy from a {@link Classifier} stereotyped << HwCoolingSupply_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwCoolingSupplyClassifier} proxy from a {@link Classifier} stereotyped << HwCoolingSupply_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwCoolingSupplyClassifier} proxy or <i>null</i>.
      */
-    @objid ("a9cd990a-09ec-4e11-895f-19d16f69a42d")
+    @objid ("020563d5-8fb0-4bf4-9722-09f0477b474c")
     public static HwCoolingSupplyClassifier instantiate(final Classifier obj) {
         return HwCoolingSupplyClassifier.canInstantiate(obj) ? new HwCoolingSupplyClassifier(obj) : null;
     }
@@ -85,7 +85,7 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
      * @return a {@link HwCoolingSupplyClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("5f65759e-f499-44a6-b711-42b3103e2039")
+    @objid ("66b34cbb-9b77-4ee2-bce1-2d19dd782a7a")
     public static HwCoolingSupplyClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwCoolingSupplyClassifier.canInstantiate(obj))
         	return new HwCoolingSupplyClassifier(obj);
@@ -93,7 +93,7 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
         	throw new IllegalArgumentException("HwCoolingSupplyClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("211b33be-e393-4ad9-8ae5-8c64375493c7")
+    @objid ("e66a5df4-3c50-403c-a754-ca8dc5d6b7a5")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("1844526d-099d-43c0-83c0-f0f76428a28d")
+    @objid ("f8d744bf-9fc4-45e0-a86d-2517994945ea")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -124,12 +124,12 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f1acd475-0649-48d8-951b-3044f8779e66")
+    @objid ("da59b50d-2105-4176-9fe0-aee83e3eedc1")
     public String getHwCoolingSupply_Classifier_coolingPower() {
         return this.elt.getTagValue(HwCoolingSupplyClassifier.MdaTypes.HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER_TAGTYPE_ELT);
     }
 
-    @objid ("385f486d-65c4-4301-a15d-1cbf02476991")
+    @objid ("6174f5bc-19bf-464a-9a82-100e4c6ba53d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +140,31 @@ public class HwCoolingSupplyClassifier extends HwComponentClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7927d968-14f4-4c83-9f85-b77c55fa0fb7")
+    @objid ("1b381fe2-e27a-47c6-8bcb-72076d860d60")
     public void setHwCoolingSupply_Classifier_coolingPower(final String value) {
         this.elt.putTagValue(HwCoolingSupplyClassifier.MdaTypes.HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER_TAGTYPE_ELT, value);
     }
 
-    @objid ("5f8add82-5983-4933-94c8-43e0c3d3f1d7")
+    @objid ("2453414b-212f-4b5f-a7b8-3dd122ca9d78")
     protected HwCoolingSupplyClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("6968b736-0356-47a9-8295-c61fb2ccd393")
     public static final class MdaTypes {
-        @objid ("d8095504-0fe4-4d19-9795-6bbf73b0299f")
+        @objid ("6c97acff-cefe-4079-a5f2-3d65552df7b4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f78112d1-6bc7-45a6-a263-08f4abc0ef91")
+        @objid ("f9c4fdc0-75e5-4e22-81d6-931860f54c04")
         public static TagType HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER_TAGTYPE_ELT;
 
-        @objid ("58f07717-9a11-4b64-b70e-6243cc0b3051")
+        @objid ("25d15118-e788-4c26-a5ce-790fea856a27")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("303d4007-91c4-4575-b6aa-e904ddc7fd01")
+        @objid ("5a0f799f-032b-402e-b77e-9d37ed416f94")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("6b950a4a-e2e3-48e8-9964-9edf5600d474")
+        @objid ("ed2584e2-0fb6-49b5-a1fa-c4e7d88575f9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "f32c24d3-10bd-11df-81d9-0014222a9f79");
             HWCOOLINGSUPPLY_CLASSIFIER_COOLINGPOWER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f32c24d4-10bd-11df-81d9-0014222a9f79");

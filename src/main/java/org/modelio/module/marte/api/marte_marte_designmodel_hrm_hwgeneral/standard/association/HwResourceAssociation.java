@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwgeneral.standard.association;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("205c663f-2886-43d9-8697-d6b08c7d10a5")
 public class HwResourceAssociation extends ResourceAssociation {
-    @objid ("b852110a-b5f5-4e41-8a73-8c818d1f1539")
+    @objid ("892f905d-864e-4865-88ed-0c7497a74d7c")
     public static final String STEREOTYPE_NAME = "HwResource_Association";
 
-    @objid ("2915985c-d4c9-4ab8-ab15-842a21ea6552")
+    @objid ("da88303d-d42a-4966-a11a-ac362f464de5")
     public static final String HWRESOURCE_ASSOCIATION_DESCRIPTION_TAGTYPE = "HwResource_Association_description";
 
-    @objid ("c26cf775-92c5-4fba-bad6-350899faf4cf")
+    @objid ("226176f1-baf6-481f-827c-4d0ddb5a400c")
     public static final String HWRESOURCE_ASSOCIATION_ENDPOINTS_TAGTYPE = "HwResource_Association_endPoints";
 
-    @objid ("8ebb0f1e-ecc8-47ef-b8e4-95991706e7a6")
+    @objid ("cbdbaa77-953b-485d-a95f-bed1aab6fc40")
     public static final String HWRESOURCE_ASSOCIATION_FREQUENCY_TAGTYPE = "HwResource_Association_frequency";
 
-    @objid ("7cfe56ac-e89c-4602-acc2-cd12495d2a9e")
+    @objid ("3cdac7a5-58fa-48b2-ae44-f8907e452c33")
     public static final String HWRESOURCE_ASSOCIATION_OWNEDHW_TAGTYPE = "HwResource_Association_ownedHW";
 
-    @objid ("bca4d682-3d6f-4538-a1bc-5b2216d894b4")
+    @objid ("2305086a-0ce9-46f4-9b1b-faf4d27a5454")
     public static final String HWRESOURCE_ASSOCIATION_P_HW_SERVICES_TAGTYPE = "HwResource_Association_p_HW_Services";
 
-    @objid ("3a71f8ec-8d82-4401-8bc1-8fa587475eea")
+    @objid ("ff1e8d2c-9ef1-491e-9a72-cac83709fbc4")
     public static final String HWRESOURCE_ASSOCIATION_R_HW_SERVICES_TAGTYPE = "HwResource_Association_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwResourceAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwResource_Association >>. 
+     * Tells whether a {@link HwResourceAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwResource_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("77ba2440-3bbd-4fda-b54f-35ebe3b7645e")
+    @objid ("4198871f-3535-46e9-9344-a4b3d8617a03")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceAssociation.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class HwResourceAssociation extends ResourceAssociation {
      * 
      * @return a {@link HwResourceAssociation} proxy on the created {@link Association}.
      */
-    @objid ("7ce614a8-cf2e-438b-8a44-963a3e550ba3")
+    @objid ("3cb807fe-173c-4d2a-a3f7-940998d363af")
     public static HwResourceAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceAssociation.STEREOTYPE_NAME);
         return HwResourceAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwResourceAssociation} proxy from a {@link Association} stereotyped << HwResource_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwResourceAssociation} proxy from a {@link Association} stereotyped << HwResource_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link HwResourceAssociation} proxy or <i>null</i>.
      */
-    @objid ("aae1b403-aba9-4754-8eaf-f347da33e886")
+    @objid ("8ebe6c9c-a31e-4466-bcbf-09404dd45814")
     public static HwResourceAssociation instantiate(final Association obj) {
         return HwResourceAssociation.canInstantiate(obj) ? new HwResourceAssociation(obj) : null;
     }
@@ -101,7 +101,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * @return a {@link HwResourceAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4a767ffc-fbd7-4929-89e0-9235b0148630")
+    @objid ("874e203d-0a5a-4d6a-8009-8321a242db40")
     public static HwResourceAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (HwResourceAssociation.canInstantiate(obj))
         	return new HwResourceAssociation(obj);
@@ -109,7 +109,7 @@ public class HwResourceAssociation extends ResourceAssociation {
         	throw new IllegalArgumentException("HwResourceAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("12c69a6c-33c9-40e2-9f06-cfc69ea74b94")
+    @objid ("a1b17546-b446-4cf8-a251-357f11088d7d")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("8473c841-85d5-4536-99d8-a2634534663f")
+    @objid ("9db73901-4a75-454c-9fcf-45d9d5e70f61")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -140,7 +140,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0d922acd-3454-4e5a-af5f-7adf80a11078")
+    @objid ("a62847c8-e70e-419e-88d1-92db3d98fe78")
     public String getHwResource_Association_description() {
         return this.elt.getTagValue(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("9ff5dfc7-e78c-41c8-b8d9-a750a2b1e8fa")
+    @objid ("65193764-be55-446a-a12d-3ba80cf8def5")
     public List<String> getHwResource_Association_endPoints() {
         return this.elt.getTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5d1ad92c-ae4b-4e8d-b3e0-3815374e0dc8")
+    @objid ("1f97e6e7-de28-451d-a5fc-bfb0c369158d")
     public String getHwResource_Association_frequency() {
         return this.elt.getTagValue(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("38ff75da-faf1-4b23-915c-e27c7328e678")
+    @objid ("34b6a24b-00aa-4880-93e0-880a82990695")
     public List<String> getHwResource_Association_ownedHW() {
         return this.elt.getTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("a9cc1e94-4c35-4ef8-8f0a-e358fe3e3e32")
+    @objid ("1d304dfc-22b9-480d-bcf0-961ed9aea6da")
     public List<String> getHwResource_Association_p_HW_Services() {
         return this.elt.getTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("5a5ca398-ab28-4447-bd02-5a051fc9572a")
+    @objid ("dd9ef7b0-ab19-4ae0-958d-052c04350c25")
     public List<String> getHwResource_Association_r_HW_Services() {
         return this.elt.getTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("5fd88139-a4cc-4493-bf41-20cd7aa3486a")
+    @objid ("d9dc6836-3abf-40b0-a866-1421f7af2666")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5a09cdc6-bfdf-41cd-b7d8-183180b5595d")
+    @objid ("0aa84c48-f23b-4bbf-904b-24cad8f418a2")
     public void setHwResource_Association_description(final String value) {
         this.elt.putTagValue(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -216,7 +216,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("68b3548d-ab5f-4ba1-aa1c-871e724290d0")
+    @objid ("ba61a4ec-e3e5-4289-b19c-0d1389f0e30c")
     public void setHwResource_Association_endPoints(final List<String> values) {
         this.elt.putTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -226,7 +226,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("89b578b7-ec6a-450c-82c3-f443071ec78b")
+    @objid ("e435f9bc-aee8-4dd0-963e-060722f7376c")
     public void setHwResource_Association_frequency(final String value) {
         this.elt.putTagValue(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +236,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bf73eb5c-c31b-4445-b712-4972eca04ec8")
+    @objid ("527f2bbf-21d2-4687-8da9-9f57904cdf08")
     public void setHwResource_Association_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("adb10a4a-ea08-489c-a585-a54146749467")
+    @objid ("22cdfcdc-1499-4003-9fd7-db5c663210db")
     public void setHwResource_Association_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +256,46 @@ public class HwResourceAssociation extends ResourceAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c3da7dd9-45e5-49fb-96a8-0f32f9e91405")
+    @objid ("fb11dd82-8cf9-441a-aff9-f3f8f66c100c")
     public void setHwResource_Association_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceAssociation.MdaTypes.HWRESOURCE_ASSOCIATION_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("c772f761-6a31-4a31-aa7c-651c31c419c6")
+    @objid ("ec04bd22-c704-4cf6-9c85-c4df17de344c")
     protected HwResourceAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("5189b4a1-210b-458b-a0e8-ef90240f1909")
     public static final class MdaTypes {
-        @objid ("3df3e2bd-fad1-4f3b-a905-a688d7a414f3")
+        @objid ("1b5c6b8e-8bad-466f-8c18-e151b2a82b6d")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("413d3bd6-6c17-417c-9c89-96480ecbc17c")
+        @objid ("df6c7aa8-1a0a-4de2-b413-f2140e9c6922")
         public static TagType HWRESOURCE_ASSOCIATION_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("dc792213-2b6e-4b61-aeec-a70c6519172e")
+        @objid ("893a271a-418c-456c-be69-90d6a590897c")
         public static TagType HWRESOURCE_ASSOCIATION_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("83874df5-492c-47a3-947b-12ce2b265f74")
+        @objid ("cde108bd-b50e-4782-aa8d-0f0ce6e15e85")
         public static TagType HWRESOURCE_ASSOCIATION_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("03f08e6d-b0e7-4d6f-be64-8a9ebaaccd66")
+        @objid ("f048590f-1de5-4b71-901c-0d7a37de36ee")
         public static TagType HWRESOURCE_ASSOCIATION_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("13c36ff3-3a8e-4f07-9543-11c8db0b394c")
+        @objid ("43bc2ca1-5330-4f53-af7e-f060dae56a0e")
         public static TagType HWRESOURCE_ASSOCIATION_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("2a6cfbb5-bd93-48de-8e49-560cd442921d")
+        @objid ("d9b9b509-3396-42ba-ac85-a49c79742a32")
         public static TagType HWRESOURCE_ASSOCIATION_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("290ec10d-de72-41fc-9199-b7c398b4a9c5")
+        @objid ("ac285c5c-1e25-4058-a5af-bbabbd4de427")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("372c4891-98f6-4369-9521-f937bc1a776e")
+        @objid ("81e91e07-b93e-4878-8b44-b9d1395c54eb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b8f05189-0468-4f8d-b7fe-9fdf43006c2c")
+        @objid ("6af2af29-9143-481c-86cd-3ad249968dbf")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "495b5f8b-1014-11df-86fe-0014222a9f79");
             HWRESOURCE_ASSOCIATION_DESCRIPTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "70448062-1014-11df-86fe-0014222a9f79");

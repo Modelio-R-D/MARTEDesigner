@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_sam.standard.attribute;
 
@@ -35,33 +35,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c1589d93-b3fc-4764-be95-b829332250d3")
 public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute {
-    @objid ("34929c63-557e-4ef7-9cb9-51d85fa94a69")
+    @objid ("8d6973d7-530b-4656-ba91-a8fd2f401c0a")
     public static final String STEREOTYPE_NAME = "SaSharedResource_Attribute";
 
-    @objid ("15a37375-9f58-47d5-bd4b-572aa53b2bf9")
+    @objid ("d7daf867-0f75-40a6-ac57-0232a21ce1df")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_ACQUIST_TAGTYPE = "SaSharedResource_Attribute_acquisT";
 
-    @objid ("08173699-c5ff-41d2-a914-2da5345bcf5c")
+    @objid ("e7f6f6f1-d45d-4dc1-9e0e-468b6a213d0f")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_CAPACITY_TAGTYPE = "SaSharedResource_Attribute_capacity";
 
-    @objid ("8e010868-63f6-42e7-930c-08b503205897")
+    @objid ("f639b34b-b352-49f0-9090-fe343f1bf2e9")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_ISCONSUM_TAGTYPE = "SaSharedResource_Attribute_isConsum";
 
-    @objid ("aab26f59-f8e3-4471-820a-2b3d296169b7")
+    @objid ("433699cf-bc8f-489c-bf48-1f0f59263e30")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_ISPREEMP_TAGTYPE = "SaSharedResource_Attribute_isPreemp";
 
-    @objid ("936d6255-0553-49a2-8c91-7e725518f788")
+    @objid ("2e65f264-4835-406a-888d-66f261ae0456")
     public static final String SASHAREDRESOURCE_ATTRIBUTE_RELEASET_TAGTYPE = "SaSharedResource_Attribute_releaseT";
 
     /**
-     * Tells whether a {@link SaSharedResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SaSharedResource_Attribute >>. 
+     * Tells whether a {@link SaSharedResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SaSharedResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2b77a4ff-71cd-43cc-9655-f9e01dcb9048")
+    @objid ("bb60705a-ff0d-4199-a397-6823849d76bc")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SaSharedResourceAttribute.STEREOTYPE_NAME));
     }
@@ -71,21 +71,21 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * 
      * @return a {@link SaSharedResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("1d59dd3e-ad60-493d-bcec-e3b64c95c56c")
+    @objid ("860bca73-c852-4dba-9eaa-1a3bf5a78f11")
     public static SaSharedResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SaSharedResourceAttribute.STEREOTYPE_NAME);
         return SaSharedResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link SaSharedResourceAttribute} proxy from a {@link Attribute} stereotyped << SaSharedResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SaSharedResourceAttribute} proxy from a {@link Attribute} stereotyped << SaSharedResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link SaSharedResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("2df3defa-da02-4f09-9f37-4a17a8a9dff8")
+    @objid ("1a596b72-f5b1-4c95-a31c-0bd512da5a75")
     public static SaSharedResourceAttribute instantiate(final Attribute obj) {
         return SaSharedResourceAttribute.canInstantiate(obj) ? new SaSharedResourceAttribute(obj) : null;
     }
@@ -98,7 +98,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * @return a {@link SaSharedResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("19505645-8159-4e3a-ae4b-8b2d4641d8da")
+    @objid ("b597c243-040f-41bc-aa70-68a026629066")
     public static SaSharedResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (SaSharedResourceAttribute.canInstantiate(obj))
         	return new SaSharedResourceAttribute(obj);
@@ -106,7 +106,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
         	throw new IllegalArgumentException("SaSharedResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3ba7084a-c3c3-4f20-a073-a3dcbe641c11")
+    @objid ("7bf5e34d-5e13-4267-a046-65b8741d99ec")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -126,7 +126,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("63690568-b8ac-41db-aa64-c4beba893a52")
+    @objid ("66e616ef-5ef9-4529-a2cb-c93abec34199")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -137,7 +137,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("f01affc8-d5a8-4e65-80dc-74216735d0bc")
+    @objid ("e0182845-a064-4d45-b600-9b8b94d09305")
     public List<String> getSaSharedResource_Attribute_acquisT() {
         return this.elt.getTagValues(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ACQUIST_TAGTYPE_ELT);
     }
@@ -147,7 +147,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("394c8f4c-2797-4b11-8623-a81a17ed7c14")
+    @objid ("9f4058fb-7484-4dfd-a04e-7ff1825ae406")
     public String getSaSharedResource_Attribute_capacity() {
         return this.elt.getTagValue(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_CAPACITY_TAGTYPE_ELT);
     }
@@ -157,12 +157,12 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("0e8044c9-efb8-4569-843b-ef9fcc44a1dd")
+    @objid ("70ca98c0-d269-4858-b3f5-4c0af53acdae")
     public List<String> getSaSharedResource_Attribute_releaseT() {
         return this.elt.getTagValues(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_RELEASET_TAGTYPE_ELT);
     }
 
-    @objid ("759c1666-83c6-40c6-8350-7dd80079554a")
+    @objid ("82964abb-b6c7-48bd-a5b0-e3d00e8f3d0e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -173,7 +173,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e679547e-9915-45b3-8387-298180fb40ce")
+    @objid ("d529c5bf-eb38-4a83-a4b5-59364e85500f")
     public boolean isSaSharedResource_Attribute_isConsum() {
         return this.elt.isTagged(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ISCONSUM_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("44aedd5b-1dc4-4181-a953-5e9ea77dd1b6")
+    @objid ("9a7c0eec-b6e7-4ab8-859c-75b6070e91a6")
     public boolean isSaSharedResource_Attribute_isPreemp() {
         return this.elt.isTagged(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ISPREEMP_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ab7d1c06-9399-455a-9cfc-0bad72c572f7")
+    @objid ("28e8ac9a-9897-4ec4-b120-de9532eda0e9")
     public void setSaSharedResource_Attribute_acquisT(final List<String> values) {
         this.elt.putTagValues(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ACQUIST_TAGTYPE_ELT, values);
     }
@@ -203,7 +203,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("602cec0f-f940-4e84-8ef3-7fddfee3104c")
+    @objid ("ff5e0751-eb29-400e-8e2c-9a768e89c593")
     public void setSaSharedResource_Attribute_capacity(final String value) {
         this.elt.putTagValue(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_CAPACITY_TAGTYPE_ELT, value);
     }
@@ -213,7 +213,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1048952c-9ca6-409c-aa05-28455803c2ec")
+    @objid ("123a370c-309e-4a58-84dc-e95cbaab366b")
     public void setSaSharedResource_Attribute_isConsum(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ISCONSUM_TAGTYPE_ELT, this.elt);
@@ -226,7 +226,7 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("aab70f8a-954f-40a5-810c-13680b66c33d")
+    @objid ("67ccd3a6-5d4b-4cfd-a52c-564741ba20da")
     public void setSaSharedResource_Attribute_isPreemp(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_ISPREEMP_TAGTYPE_ELT, this.elt);
@@ -239,43 +239,43 @@ public class SaSharedResourceAttribute extends MutualExclusionResourceAttribute 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("704568a5-2d03-4239-91a8-7f7515b6cb2b")
+    @objid ("097ea2c0-d2b5-409f-9e14-02a430b7142e")
     public void setSaSharedResource_Attribute_releaseT(final List<String> values) {
         this.elt.putTagValues(SaSharedResourceAttribute.MdaTypes.SASHAREDRESOURCE_ATTRIBUTE_RELEASET_TAGTYPE_ELT, values);
     }
 
-    @objid ("727f2bde-618c-4e99-a02f-0e212c4fc4ea")
+    @objid ("ef69b96c-84be-4cfc-9e03-03bbce8157ae")
     protected SaSharedResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("5debb989-aa83-4b2d-8e60-30e87ea1fbd1")
     public static final class MdaTypes {
-        @objid ("1d3433ad-5563-4500-9604-d0aedcc14a07")
+        @objid ("695eb2b2-8251-466e-97be-cc80568c5852")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f46ea21a-2278-4e49-a98b-9f29b0cb29a3")
+        @objid ("a644ebfb-6720-4c43-89b6-032112f81dda")
         public static TagType SASHAREDRESOURCE_ATTRIBUTE_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("38693c1d-f9c4-41c8-8f85-5ef4e230705e")
+        @objid ("9c0f9e31-45a4-4a00-bbc8-73f06561c668")
         public static TagType SASHAREDRESOURCE_ATTRIBUTE_ISPREEMP_TAGTYPE_ELT;
 
-        @objid ("6501016f-bd80-4560-96ad-70433c324ef5")
+        @objid ("9ded837c-0b37-49c9-a962-4a3c445aa514")
         public static TagType SASHAREDRESOURCE_ATTRIBUTE_ISCONSUM_TAGTYPE_ELT;
 
-        @objid ("e7ba7ae2-abf4-4190-ac27-d47e3fc474a5")
+        @objid ("c8e7b191-ef13-4ac4-8cd7-3cb1d8a28da4")
         public static TagType SASHAREDRESOURCE_ATTRIBUTE_ACQUIST_TAGTYPE_ELT;
 
-        @objid ("dd91643e-5509-4093-96fe-ce2e50749291")
+        @objid ("ba6d2257-1b20-4ebf-a8b1-5e745f1105bb")
         public static TagType SASHAREDRESOURCE_ATTRIBUTE_RELEASET_TAGTYPE_ELT;
 
-        @objid ("a3385de5-f22e-4fa9-88d3-092ae273820d")
+        @objid ("75d039aa-37a2-4d10-93ba-71d7a17670d1")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("58946437-084c-455a-b6a3-fa0bbea35b38")
+        @objid ("6fcafa9d-ebd5-41d0-8424-b25b0e24d11d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("af0c3664-980d-4280-bb0c-42faf39bac4d")
+        @objid ("f1407408-b9d5-451b-a859-9b15857cbd5e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03956b51-0ccf-11df-8525-001302895b2b");
             SASHAREDRESOURCE_ATTRIBUTE_CAPACITY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03956b58-0ccf-11df-8525-001302895b2b");

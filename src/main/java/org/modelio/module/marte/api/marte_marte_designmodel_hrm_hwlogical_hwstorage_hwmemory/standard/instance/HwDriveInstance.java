@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.instance;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("8d716408-9958-4ccf-8295-19269748d7e0")
 public class HwDriveInstance extends HwMemoryInstance {
-    @objid ("9715a63f-9aff-422b-81cc-c1090d73faf2")
+    @objid ("eb613ef5-5a39-429b-85e5-cd8624999354")
     public static final String STEREOTYPE_NAME = "HwDrive_Instance";
 
-    @objid ("6bb52a3a-9113-4ad6-b82f-4e3a6b9f1ec2")
+    @objid ("7c09c2b7-db9d-4ebf-b08d-5643361ea168")
     public static final String HWDRIVE_INSTANCE_BUFFER_TAGTYPE = "HwDrive_Instance_buffer";
 
-    @objid ("0db92796-4256-4c76-a86d-5f82b15a3e4b")
+    @objid ("686573dd-c084-42cc-8fd6-8ac4941ba8a8")
     public static final String HWDRIVE_INSTANCE_SECTORSIZE_TAGTYPE = "HwDrive_Instance_sectorSize";
 
     /**
-     * Tells whether a {@link HwDriveInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwDrive_Instance >>. 
+     * Tells whether a {@link HwDriveInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwDrive_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("ef3bc12d-416b-4ac5-aeac-549ca52a7072")
+    @objid ("f2d8c956-a92b-414d-b017-834153dac2f2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwDriveInstance.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class HwDriveInstance extends HwMemoryInstance {
      * 
      * @return a {@link HwDriveInstance} proxy on the created {@link Instance}.
      */
-    @objid ("c2fd4bf7-6eb7-4cfc-a339-94b969a78cec")
+    @objid ("1f64b3cf-52d0-45ba-9b84-5e215b1e0b57")
     public static HwDriveInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwDriveInstance.STEREOTYPE_NAME);
         return HwDriveInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwDriveInstance} proxy from a {@link Instance} stereotyped << HwDrive_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwDriveInstance} proxy from a {@link Instance} stereotyped << HwDrive_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link HwDriveInstance} proxy or <i>null</i>.
      */
-    @objid ("ef4d444f-fae0-4564-bf98-b4b2e2f6fc08")
+    @objid ("7af7985c-177e-4bc4-aae7-96acd5221fff")
     public static HwDriveInstance instantiate(final Instance obj) {
         return HwDriveInstance.canInstantiate(obj) ? new HwDriveInstance(obj) : null;
     }
@@ -87,7 +87,7 @@ public class HwDriveInstance extends HwMemoryInstance {
      * @return a {@link HwDriveInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("e5038d95-ffd6-4c81-99ef-ca8fd11543e7")
+    @objid ("7a68cdd8-c03a-4276-9aca-a7b97b572bbe")
     public static HwDriveInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (HwDriveInstance.canInstantiate(obj))
         	return new HwDriveInstance(obj);
@@ -95,7 +95,7 @@ public class HwDriveInstance extends HwMemoryInstance {
         	throw new IllegalArgumentException("HwDriveInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("38b5f4f1-005c-4a7d-942e-29876f997d27")
+    @objid ("900f130b-f2e9-4613-9538-8150dbb393a4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class HwDriveInstance extends HwMemoryInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("dc449f98-62c9-4a8c-a018-e0a8ef5e0956")
+    @objid ("732caeeb-002e-4e0c-a4d8-cc2d30cd9bc0")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
@@ -126,7 +126,7 @@ public class HwDriveInstance extends HwMemoryInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b3f38e80-3deb-4f52-b376-dd60d570b767")
+    @objid ("b95beed4-1b52-46ba-9384-5aec88914cd2")
     public String getHwDrive_Instance_buffer() {
         return this.elt.getTagValue(HwDriveInstance.MdaTypes.HWDRIVE_INSTANCE_BUFFER_TAGTYPE_ELT);
     }
@@ -136,12 +136,12 @@ public class HwDriveInstance extends HwMemoryInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b8f2c332-b6ba-4ed0-a62e-5ab6dafb7d6c")
+    @objid ("72fe4bf2-fc8a-4d78-95d9-4e9063f9db1c")
     public String getHwDrive_Instance_sectorSize() {
         return this.elt.getTagValue(HwDriveInstance.MdaTypes.HWDRIVE_INSTANCE_SECTORSIZE_TAGTYPE_ELT);
     }
 
-    @objid ("9f549ada-fdff-4cf4-a7d3-c4bd13cdad44")
+    @objid ("a8aa049e-5cd7-458a-a2e1-27269e583e9f")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -152,7 +152,7 @@ public class HwDriveInstance extends HwMemoryInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("76adbffb-5185-417a-a7bc-7a380cd55907")
+    @objid ("4854d337-765d-41f8-a6e3-0d497754f4b3")
     public void setHwDrive_Instance_buffer(final String value) {
         this.elt.putTagValue(HwDriveInstance.MdaTypes.HWDRIVE_INSTANCE_BUFFER_TAGTYPE_ELT, value);
     }
@@ -162,34 +162,34 @@ public class HwDriveInstance extends HwMemoryInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c721855b-ab3e-45bc-98ab-49bdd1645429")
+    @objid ("e380c00c-c0e0-4fdb-b9a3-478d11c4ce86")
     public void setHwDrive_Instance_sectorSize(final String value) {
         this.elt.putTagValue(HwDriveInstance.MdaTypes.HWDRIVE_INSTANCE_SECTORSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("9fe2d24e-9eca-4497-9ca4-37c1c986b99d")
+    @objid ("dab023ea-94cd-44f6-945e-3240200af038")
     protected HwDriveInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("76e6a70b-375a-4a32-9e71-0621fe1cd766")
     public static final class MdaTypes {
-        @objid ("83e73356-a998-4c5f-b2bd-289cfadd69de")
+        @objid ("0268944c-d710-477b-b8fc-7dd1f492f1a1")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("a4702b6b-1496-4aef-bd62-feeb1742f60a")
+        @objid ("3bbb56d5-bc6e-4f23-b7db-c2f4057fde78")
         public static TagType HWDRIVE_INSTANCE_SECTORSIZE_TAGTYPE_ELT;
 
-        @objid ("68d866de-d6cb-4e22-b552-8279d4e62bad")
+        @objid ("36d0a5b8-544d-4e50-b9cf-4f66a9e8854f")
         public static TagType HWDRIVE_INSTANCE_BUFFER_TAGTYPE_ELT;
 
-        @objid ("960c62b4-87ec-48c5-8d5a-ac346c4c414f")
+        @objid ("e80d9213-5dd8-4af2-9b78-1976c8a09643")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8c3350db-8f19-4316-81a7-576588b12162")
+        @objid ("40833515-950d-4a39-a12c-c8f9c83f8dff")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d98b5468-0894-472f-9a1f-17b01953ba45")
+        @objid ("40feff34-9e85-437d-ba1d-780076bd65fa")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "016eb355-0ccf-11df-8525-001302895b2b");
             HWDRIVE_INSTANCE_SECTORSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "016eb35c-0ccf-11df-8525-001302895b2b");

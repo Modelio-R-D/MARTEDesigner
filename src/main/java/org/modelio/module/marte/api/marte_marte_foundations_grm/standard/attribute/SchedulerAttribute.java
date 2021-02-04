@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.attribute;
 
@@ -34,42 +34,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("95da49e1-7b3d-473a-ae8b-757628d28d8b")
 public class SchedulerAttribute extends ResourceAttribute {
-    @objid ("7959dd53-c8b6-4e0a-8f2c-64dd4196053c")
+    @objid ("a62977ec-0fb9-4170-8317-d334c587f015")
     public static final String STEREOTYPE_NAME = "Scheduler_Attribute";
 
-    @objid ("b2053fd8-a2fe-4e5a-ac42-f700966821b8")
+    @objid ("ce26c68b-cae7-41ad-8b4e-d66d8097c450")
     public static final String SCHEDULER_ATTRIBUTE_HOST_TAGTYPE = "Scheduler_Attribute_host";
 
-    @objid ("8d30ca80-78d4-44fc-ae09-7e2bb8b25660")
+    @objid ("ca50420a-c11d-4a54-b121-a98481794ebc")
     public static final String SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE_TAGTYPE = "Scheduler_Attribute_isPreemptible";
 
-    @objid ("50415870-7b60-4e0c-9968-131e46de3ecd")
+    @objid ("c0949bca-e616-400d-9c1b-7168dd76775f")
     public static final String SCHEDULER_ATTRIBUTE_OTHERSCHEDPOLICY_TAGTYPE = "Scheduler_Attribute_otherSchedPolicy";
 
-    @objid ("8ddec707-3055-481d-accc-453742988c4d")
+    @objid ("a3ab6e16-2388-4e54-863d-8b0ad2be7070")
     public static final String SCHEDULER_ATTRIBUTE_PROCESSINGUNITS_TAGTYPE = "Scheduler_Attribute_processingUnits";
 
-    @objid ("66cec184-fe28-43c6-82cd-617c5d88968e")
+    @objid ("c69af116-5eac-493e-81a0-7e48c79ff808")
     public static final String SCHEDULER_ATTRIBUTE_PROTECTEDSHAREDRESOURCES_TAGTYPE = "Scheduler_Attribute_protectedSharedResources";
 
-    @objid ("b910f9df-377b-4658-835d-65612888a497")
+    @objid ("8af9a0bc-01ed-4ecb-ab56-4be0a610976c")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDPOLICY_TAGTYPE = "Scheduler_Attribute_schedPolicy";
 
-    @objid ("2a3408f2-d375-4abe-9a49-9b5a6b7de28f")
+    @objid ("18dec126-011d-4bf1-ac2d-e4d782d15044")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULABLERESOURCES_TAGTYPE = "Scheduler_Attribute_schedulableResources";
 
-    @objid ("95c8b903-d910-48a6-8def-31658f90e15d")
+    @objid ("4484a18f-f67e-447c-9ccc-0f7192589a52")
     public static final String SCHEDULER_ATTRIBUTE_SCHEDULE_TAGTYPE = "Scheduler_Attribute_schedule";
 
     /**
-     * Tells whether a {@link SchedulerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << Scheduler_Attribute >>. 
+     * Tells whether a {@link SchedulerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << Scheduler_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("19c07f30-2574-4ada-92c1-f9f1406d08af")
+    @objid ("db1c61ef-45e8-4df1-bbdc-5226a5ecf4ff")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerAttribute.STEREOTYPE_NAME));
     }
@@ -79,21 +79,21 @@ public class SchedulerAttribute extends ResourceAttribute {
      * 
      * @return a {@link SchedulerAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("2019f154-c447-4d77-bdfc-aeb9c63aec27")
+    @objid ("f7cd821a-7f1a-4062-964f-720dd43f3859")
     public static SchedulerAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerAttribute.STEREOTYPE_NAME);
         return SchedulerAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link SchedulerAttribute} proxy from a {@link Attribute} stereotyped << Scheduler_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SchedulerAttribute} proxy from a {@link Attribute} stereotyped << Scheduler_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link SchedulerAttribute} proxy or <i>null</i>.
      */
-    @objid ("3ca0ff34-de05-4180-b704-33556280a2c7")
+    @objid ("d43d5d1f-a832-4f7a-af8b-d4b2677ab227")
     public static SchedulerAttribute instantiate(final Attribute obj) {
         return SchedulerAttribute.canInstantiate(obj) ? new SchedulerAttribute(obj) : null;
     }
@@ -106,7 +106,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * @return a {@link SchedulerAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("df406972-fb55-49a4-af9d-3c974f9919e2")
+    @objid ("80f69a1a-37ca-42b7-b63a-508e3b9626e8")
     public static SchedulerAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (SchedulerAttribute.canInstantiate(obj))
         	return new SchedulerAttribute(obj);
@@ -114,7 +114,7 @@ public class SchedulerAttribute extends ResourceAttribute {
         	throw new IllegalArgumentException("SchedulerAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a9407a59-40c4-48eb-9b81-113fb620b9e6")
+    @objid ("07595b0c-da19-4db1-b7fc-4f87a1c15999")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -134,7 +134,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("1d1cdfa0-8899-4dc4-b0ce-73097c2bc7a9")
+    @objid ("a3062551-392f-4f5b-a58c-64d2e15711cc")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -145,7 +145,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a7419506-98e3-4f0e-b1eb-dfe32f9832af")
+    @objid ("8ffc651f-ab6c-4e88-b52f-358d24d6e729")
     public String getScheduler_Attribute_host() {
         return this.elt.getTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_HOST_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dac8ab1e-7850-4697-915a-8c2ea9daca71")
+    @objid ("e9b7571a-666c-441c-9e10-0e6f108ffe91")
     public String getScheduler_Attribute_otherSchedPolicy() {
         return this.elt.getTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("69250b8b-da6a-4217-915d-87e925714e30")
+    @objid ("01b8a850-f0ed-4463-b87b-f06d209700f9")
     public List<String> getScheduler_Attribute_processingUnits() {
         return this.elt.getTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("5b6a314a-2708-4ce3-a505-4954ef837c4b")
+    @objid ("932b05b0-6d58-4cbc-b424-5888b7a08437")
     public List<String> getScheduler_Attribute_protectedSharedResources() {
         return this.elt.getTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("462b4a78-169a-4e5e-8198-f80101b6cc64")
+    @objid ("4454865d-aa39-4f79-b23a-5ee8dddbd945")
     public String getScheduler_Attribute_schedPolicy() {
         return this.elt.getTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("914570da-ec6c-427c-9baa-f9e0f80a7522")
+    @objid ("e2d57b4a-36b8-4090-97be-8332d6e54df9")
     public List<String> getScheduler_Attribute_schedulableResources() {
         return this.elt.getTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -205,12 +205,12 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0f024c1e-9d3c-4c89-8ca6-cf9111de85db")
+    @objid ("a95ec7c6-ed72-4139-bbe3-066294bfdfe7")
     public String getScheduler_Attribute_schedule() {
         return this.elt.getTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDULE_TAGTYPE_ELT);
     }
 
-    @objid ("a84a16c4-6d17-4c61-9978-a7d45f921bc7")
+    @objid ("464e4043-2f0f-46da-a0b6-177596ffdfb2")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -221,7 +221,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dc9fa723-00ce-48fa-8f9e-8c792e0d78e9")
+    @objid ("86eec149-89c6-462c-9402-f22268c0b9cc")
     public boolean isScheduler_Attribute_isPreemptible() {
         return this.elt.isTagged(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -231,7 +231,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eab012c5-3bb4-4c2f-93ee-1abe1f277caf")
+    @objid ("2041c84e-d377-4aad-a5f9-88648b95b8f9")
     public void setScheduler_Attribute_host(final String value) {
         this.elt.putTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_HOST_TAGTYPE_ELT, value);
     }
@@ -241,7 +241,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("60b03ad7-fdbb-4eed-84e0-9efcfb61b5b6")
+    @objid ("d9b2e165-d3ed-4206-b297-21b5e4448fcd")
     public void setScheduler_Attribute_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -254,7 +254,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e562cd26-2888-49a3-8757-e8c340169beb")
+    @objid ("c30bd7c7-496b-4bf4-8ee3-d4e3c76dac95")
     public void setScheduler_Attribute_otherSchedPolicy(final String value) {
         this.elt.putTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -264,7 +264,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("168e72c4-37bf-4bd5-a591-8f77a0915062")
+    @objid ("3fa78e5a-e5d6-4ff2-a22b-38c0c262fdef")
     public void setScheduler_Attribute_processingUnits(final List<String> values) {
         this.elt.putTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -274,7 +274,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("20cb95f9-7e7d-4d2b-a339-7474ea06c5e8")
+    @objid ("8eb2b254-426a-4825-86e6-e293c1b55304")
     public void setScheduler_Attribute_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -284,7 +284,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c71171b8-d081-401a-9bd0-73067d4b7806")
+    @objid ("5b7dd9ca-c474-4ffe-87e4-2b2702ee903c")
     public void setScheduler_Attribute_schedPolicy(final String value) {
         this.elt.putTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -294,7 +294,7 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d556efeb-c12a-4de9-9145-080f096d652a")
+    @objid ("1ab29833-2fca-4bd6-b0fb-efaa1f94af42")
     public void setScheduler_Attribute_schedulableResources(final List<String> values) {
         this.elt.putTagValues(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -304,52 +304,52 @@ public class SchedulerAttribute extends ResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ab5a5856-3327-42a2-b293-578190d1d8e8")
+    @objid ("124a8be4-0d02-436e-ae6a-7a4b75caf505")
     public void setScheduler_Attribute_schedule(final String value) {
         this.elt.putTagValue(SchedulerAttribute.MdaTypes.SCHEDULER_ATTRIBUTE_SCHEDULE_TAGTYPE_ELT, value);
     }
 
-    @objid ("e9c6aeea-1c58-4564-9c6f-2dc1c17ba6e1")
+    @objid ("fc7f5713-13fb-4c23-94d1-48becf4654a1")
     protected SchedulerAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("f85d8006-103f-49ce-b8d6-fa72b4bdb9dd")
     public static final class MdaTypes {
-        @objid ("e77581e3-1f58-4dba-8885-86ceaacbe8c3")
+        @objid ("94694bee-cc98-4d11-8a7a-0405dfc73d61")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("bf7e4165-27b7-4de1-b296-a481df65aeac")
+        @objid ("0774464c-7082-477d-9736-755b65b6f07c")
         public static TagType SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("17939df7-0ec5-4ece-bc71-68162e36f798")
+        @objid ("7644594c-357b-4533-a88d-6aa957c08372")
         public static TagType SCHEDULER_ATTRIBUTE_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("338d2918-8bbe-40d6-9d43-037cc6239320")
+        @objid ("a01dde1b-2f15-41cf-a040-c15a14c46d5e")
         public static TagType SCHEDULER_ATTRIBUTE_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("e5bcee94-382a-4a82-b632-9158691ed3aa")
+        @objid ("8c124361-daf2-4c3d-9004-19de6472ceef")
         public static TagType SCHEDULER_ATTRIBUTE_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("ce1411b9-8e32-4069-8850-5ba711864b1f")
+        @objid ("1663096b-9ee0-4ac3-bfac-24576b68283f")
         public static TagType SCHEDULER_ATTRIBUTE_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("538f7c44-e82e-499e-bf0f-f93ca3ba82de")
+        @objid ("691da0d6-a5ba-4ff1-ba26-78e213b5e295")
         public static TagType SCHEDULER_ATTRIBUTE_HOST_TAGTYPE_ELT;
 
-        @objid ("8955e667-59bb-4be1-b40a-c4d7ce80caca")
+        @objid ("2b4339de-1713-4e84-86b0-53587523ac50")
         public static TagType SCHEDULER_ATTRIBUTE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("64c9c6dc-d226-4276-b8b1-a3d6c62b5ddf")
+        @objid ("497015ba-bf42-4b3d-be1f-b13ef1bcef83")
         public static TagType SCHEDULER_ATTRIBUTE_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("a7867ca5-eb5e-4465-9221-fa6ef8db431c")
+        @objid ("c368742c-ccdf-474a-acc7-59be2a500ec8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("d6efece9-37ef-4c7e-92c9-8a1830a5676d")
+        @objid ("8b61816c-acef-49bb-84dc-b16b151b20ba")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("8abd00df-48e4-44fc-8c6d-25ef4e293b72")
+        @objid ("6a4923e5-6172-49a7-a291-346c2e02860e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0025b31e-0ccf-11df-8525-001302895b2b");
             SCHEDULER_ATTRIBUTE_ISPREEMPTIBLE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0025b325-0ccf-11df-8525-001302895b2b");

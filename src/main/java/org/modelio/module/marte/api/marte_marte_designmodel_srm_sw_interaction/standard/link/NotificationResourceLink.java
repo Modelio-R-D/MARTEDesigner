@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.link;
 
@@ -34,42 +34,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("342d4431-45e1-429a-9424-9dce6a611cb3")
 public class NotificationResourceLink extends SwSynchronizationResourceLink {
-    @objid ("0823c30e-7dd8-4549-ae53-411e82172562")
+    @objid ("e0ca7089-ed5d-45f4-8438-873d370b925d")
     public static final String STEREOTYPE_NAME = "NotificationResource_Link";
 
-    @objid ("06704928-3357-42d4-a578-d9815c7d9a5a")
+    @objid ("501e4ae9-8c2d-4b03-8322-17bc622c57b8")
     public static final String NOTIFICATIONRESOURCE_LINK_CLEARSERVICES_TAGTYPE = "NotificationResource_Link_clearServices";
 
-    @objid ("3c998c02-2710-42d0-bf65-eb96f9c4d40c")
+    @objid ("de31a8c8-1075-4ab0-81b4-77fd475f1666")
     public static final String NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES_TAGTYPE = "NotificationResource_Link_flushServices";
 
-    @objid ("d899986b-943d-407f-ac3e-53e7c3f5205e")
+    @objid ("fd6f2ae5-1289-476d-86d7-298b1c87a773")
     public static final String NOTIFICATIONRESOURCE_LINK_MASKELEMENTS_TAGTYPE = "NotificationResource_Link_maskElements";
 
-    @objid ("f5ac8181-64ce-40bf-be80-1987d92f6aca")
+    @objid ("11b3a87d-4cf9-482f-b5d0-9a64d05c12d8")
     public static final String NOTIFICATIONRESOURCE_LINK_MECHANISM_TAGTYPE = "NotificationResource_Link_mechanism";
 
-    @objid ("5bb070ae-03bc-4070-9898-aaeedafcf760")
+    @objid ("f69076b5-0e3f-40a2-8cbe-23fbe1b2627a")
     public static final String NOTIFICATIONRESOURCE_LINK_OCCURENCE_TAGTYPE = "NotificationResource_Link_occurence";
 
-    @objid ("65086096-b91d-41fb-be29-17922e5fa632")
+    @objid ("e464091b-0e83-47a2-8eb5-2e8c2e98b91a")
     public static final String NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS_TAGTYPE = "NotificationResource_Link_occurenceCountElements";
 
-    @objid ("c792c8e2-915b-4cc4-8a17-3410113f68c9")
+    @objid ("1b1ca02e-3a1f-46ac-8904-d7939d44265e")
     public static final String NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES_TAGTYPE = "NotificationResource_Link_signalServices";
 
-    @objid ("13fbf9c3-a0fc-4d8f-8ae1-c4a4adf1622e")
+    @objid ("272575f9-8f60-48cb-b297-36b3e931975a")
     public static final String NOTIFICATIONRESOURCE_LINK_WAITSERVICES_TAGTYPE = "NotificationResource_Link_waitServices";
 
     /**
-     * Tells whether a {@link NotificationResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << NotificationResource_Link >>. 
+     * Tells whether a {@link NotificationResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << NotificationResource_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("22d93505-ca1c-426f-96fe-1df4730476e3")
+    @objid ("0c7a1764-576c-4276-9498-53cb52ca8edd")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, NotificationResourceLink.STEREOTYPE_NAME));
     }
@@ -79,21 +79,21 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * 
      * @return a {@link NotificationResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("804296b4-70a3-497e-bf72-ae815c4ce9b2")
+    @objid ("744f95cf-ee55-481b-8ed6-839690d4770d")
     public static NotificationResourceLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, NotificationResourceLink.STEREOTYPE_NAME);
         return NotificationResourceLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link NotificationResourceLink} proxy from a {@link Link} stereotyped << NotificationResource_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link NotificationResourceLink} proxy from a {@link Link} stereotyped << NotificationResource_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link NotificationResourceLink} proxy or <i>null</i>.
      */
-    @objid ("72abe713-8d36-4ee1-b158-824cdc71a316")
+    @objid ("5e7d1f77-f6a8-4fca-9164-8da9d8945b37")
     public static NotificationResourceLink instantiate(final Link obj) {
         return NotificationResourceLink.canInstantiate(obj) ? new NotificationResourceLink(obj) : null;
     }
@@ -106,7 +106,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * @return a {@link NotificationResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("89ff9c00-5e8f-47d0-9aba-3b12e997a723")
+    @objid ("ae47d489-e649-4397-90d9-5aabd01886a5")
     public static NotificationResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (NotificationResourceLink.canInstantiate(obj))
         	return new NotificationResourceLink(obj);
@@ -114,7 +114,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
         	throw new IllegalArgumentException("NotificationResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("52ca27c5-4595-44b4-9858-0e8674a8ca8d")
+    @objid ("62ce53e5-50cd-4c9b-8503-5b4c43cc311c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -134,7 +134,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("6b74468b-adf1-43f2-86d9-8d3057e851a3")
+    @objid ("7b0900b8-ec6c-4b3d-b6b7-a7e19dcfe8c3")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -145,7 +145,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bdddabcc-6dff-44bc-9607-babc4ab7c79b")
+    @objid ("d5b8f788-6eff-4384-b390-c7ba45bde93d")
     public List<String> getNotificationResource_Link_clearServices() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_CLEARSERVICES_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("7aac908a-70ef-42f0-9a14-79c0287ccc0d")
+    @objid ("5999ffd4-fabc-450b-97a3-1b621349d16b")
     public List<String> getNotificationResource_Link_flushServices() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8b649110-d8ce-484e-b42b-8b2c06e416fb")
+    @objid ("9f6cc758-38ed-4173-9a03-48aa25814a8f")
     public List<String> getNotificationResource_Link_maskElements() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_MASKELEMENTS_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c9b55473-8a74-4add-b4c2-94362c57b900")
+    @objid ("0ef7a89b-f90d-462a-843a-52fba3fbdaf6")
     public String getNotificationResource_Link_mechanism() {
         return this.elt.getTagValue(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_MECHANISM_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ea089d9a-a27d-4c60-875e-e35828561122")
+    @objid ("dff2227b-d039-4037-b7df-171b2d9b6882")
     public String getNotificationResource_Link_occurence() {
         return this.elt.getTagValue(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_OCCURENCE_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("7cf07b5e-139b-471d-850c-659a23d840b4")
+    @objid ("6017bc97-4611-4ad8-a78e-5ebdcd44ced5")
     public List<String> getNotificationResource_Link_occurenceCountElements() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS_TAGTYPE_ELT);
     }
@@ -205,7 +205,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("dbf10007-2d48-45a0-a195-d9195831aad1")
+    @objid ("1d0cc0be-2997-4631-a8ce-19587b94cf7c")
     public List<String> getNotificationResource_Link_signalServices() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES_TAGTYPE_ELT);
     }
@@ -215,12 +215,12 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c76e89e7-aa1a-4977-aba9-99006fe13a85")
+    @objid ("2fc9c1b2-6e24-4064-8940-6707e95aa053")
     public List<String> getNotificationResource_Link_waitServices() {
         return this.elt.getTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_WAITSERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("e3d4c722-c2d4-44c4-89b8-bead17e1c2cc")
+    @objid ("d930d44d-72a2-4175-904d-e1d6000d0482")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -231,7 +231,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c2f727e9-0c7b-4c34-ab6f-04728644cc8b")
+    @objid ("051f9c5f-aa94-4ec5-bd72-a312b5407d1c")
     public void setNotificationResource_Link_clearServices(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_CLEARSERVICES_TAGTYPE_ELT, values);
     }
@@ -241,7 +241,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2454ca7c-3956-47df-aa7f-e5ee237b6a07")
+    @objid ("25e39074-0eeb-45d9-8931-412f51b38a4d")
     public void setNotificationResource_Link_flushServices(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES_TAGTYPE_ELT, values);
     }
@@ -251,7 +251,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3c7ef5d7-3acd-4cfd-83e2-6de804f0b67b")
+    @objid ("954c2cc1-b123-46e5-bbde-712475833376")
     public void setNotificationResource_Link_maskElements(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_MASKELEMENTS_TAGTYPE_ELT, values);
     }
@@ -261,7 +261,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ff3b51ee-4dbf-4d5d-8254-cf0aac7370f2")
+    @objid ("c125ef4f-963e-4311-b1d7-c9485918b112")
     public void setNotificationResource_Link_mechanism(final String value) {
         this.elt.putTagValue(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_MECHANISM_TAGTYPE_ELT, value);
     }
@@ -271,7 +271,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4c96765f-2ed3-46ae-bfdf-e2059e8380fd")
+    @objid ("48167eb3-eecf-4c8d-87fe-64c79dbfca7f")
     public void setNotificationResource_Link_occurence(final String value) {
         this.elt.putTagValue(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_OCCURENCE_TAGTYPE_ELT, value);
     }
@@ -281,7 +281,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("31747426-63eb-4dd5-bfa8-b09ffe969d01")
+    @objid ("02965d4f-bbd7-40be-acfc-9b71dd651103")
     public void setNotificationResource_Link_occurenceCountElements(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS_TAGTYPE_ELT, values);
     }
@@ -291,7 +291,7 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8247dd79-8f4c-40ac-b379-f4515047f7dc")
+    @objid ("8b2e5b2a-00c4-42fb-a58b-89e36bad8c17")
     public void setNotificationResource_Link_signalServices(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES_TAGTYPE_ELT, values);
     }
@@ -301,52 +301,52 @@ public class NotificationResourceLink extends SwSynchronizationResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7fa81980-b30f-42fa-84bb-c4b2e54e56ad")
+    @objid ("3484ad05-d10b-4052-936b-5f0b8ae0636c")
     public void setNotificationResource_Link_waitServices(final List<String> values) {
         this.elt.putTagValues(NotificationResourceLink.MdaTypes.NOTIFICATIONRESOURCE_LINK_WAITSERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("533bcb4e-613f-4a46-82af-d1779f33350e")
+    @objid ("cfc94d88-c866-4e7c-8906-1df23295914b")
     protected NotificationResourceLink(final Link elt) {
         super(elt);
     }
 
     @objid ("bb766916-e58e-46e2-9510-4e6950150cde")
     public static final class MdaTypes {
-        @objid ("c1f30bdc-55a0-4cb9-b181-273ef809d3ba")
+        @objid ("1a1b724b-92b3-4a0d-aed5-4dcb88bba373")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f764cd48-faf9-4735-93bc-b6c087876c1f")
+        @objid ("be1b61a6-ebcd-43ff-b669-7909421e7e58")
         public static TagType NOTIFICATIONRESOURCE_LINK_OCCURENCE_TAGTYPE_ELT;
 
-        @objid ("b2ec8828-cb4d-45f0-b17d-55b26b5fb9e8")
+        @objid ("f2297666-d60d-4cfb-abc5-17d1d122eedc")
         public static TagType NOTIFICATIONRESOURCE_LINK_MECHANISM_TAGTYPE_ELT;
 
-        @objid ("8e842828-c2cc-4a84-beec-dbdda95d86e3")
+        @objid ("9a0bb939-a4b0-42ae-805f-2fb7c2fc95f1")
         public static TagType NOTIFICATIONRESOURCE_LINK_OCCURENCECOUNTELEMENTS_TAGTYPE_ELT;
 
-        @objid ("17ed1afd-13bd-46db-b993-ecc31b3e2e23")
+        @objid ("055181fb-afe3-4e1d-ad29-9de480064eeb")
         public static TagType NOTIFICATIONRESOURCE_LINK_MASKELEMENTS_TAGTYPE_ELT;
 
-        @objid ("b9615c24-9dd5-4c94-8e5b-6c9c5422f6c5")
+        @objid ("2d4a98f1-be12-4581-a0ae-5968a2790a2f")
         public static TagType NOTIFICATIONRESOURCE_LINK_FLUSHSERVICES_TAGTYPE_ELT;
 
-        @objid ("3d2b8e26-834c-41cc-bac1-22b02f72d88c")
+        @objid ("2a29cdf7-0e20-44ae-8e9a-cc9b048fb2f8")
         public static TagType NOTIFICATIONRESOURCE_LINK_SIGNALSERVICES_TAGTYPE_ELT;
 
-        @objid ("512c1f25-6ee3-4516-9f2a-a266eb56c92f")
+        @objid ("ef414ebc-4b6e-4a9f-9eca-9ee3e0740bdb")
         public static TagType NOTIFICATIONRESOURCE_LINK_WAITSERVICES_TAGTYPE_ELT;
 
-        @objid ("9c3f7ceb-538c-4b2e-b1ea-b27d91f80888")
+        @objid ("2a26d6c8-f9be-40e5-96c1-17a594b07dc1")
         public static TagType NOTIFICATIONRESOURCE_LINK_CLEARSERVICES_TAGTYPE_ELT;
 
-        @objid ("8b03f4d0-23b4-4d30-8baf-0c4e39d25d51")
+        @objid ("00f851d1-17eb-47bb-8e53-1af89046ed1a")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("ec1a2a6b-f497-48ba-8107-88175004718c")
+        @objid ("67b59414-83e2-49cd-8840-e4e44b3ded64")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("0c765e51-e0ae-49a5-9559-35be5e3b6748")
+        @objid ("10ea932d-36d5-4842-9df5-234708941978")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0236f63c-0ccf-11df-8525-001302895b2b");
             NOTIFICATIONRESOURCE_LINK_OCCURENCE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0236f643-0ccf-11df-8525-001302895b2b");

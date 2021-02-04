@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.classifier;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("aeda8c13-5c76-42ea-aba1-b493e885d494")
 public class HwPLDClassifier extends HwComputingResourceClassifier {
-    @objid ("aa374606-be55-4ef9-9365-d2aa47d48a0a")
+    @objid ("dd79c699-ba13-4cc2-81cc-10ad9cca171c")
     public static final String STEREOTYPE_NAME = "HwPLD_Classifier";
 
-    @objid ("02edc726-209f-4c1b-b7f9-566e289efe59")
+    @objid ("db97ab81-e566-4bd0-897d-65348f145514")
     public static final String HWPLD_CLASSIFIER_BLOCKSCOMPUTING_TAGTYPE = "HwPLD_Classifier_blocksComputing";
 
-    @objid ("3b2bab55-bc3d-497e-8a02-3bf3538c7eeb")
+    @objid ("a5bc94c9-511c-4fa9-9582-a402581fefa4")
     public static final String HWPLD_CLASSIFIER_BLOCKSRAM_TAGTYPE = "HwPLD_Classifier_blocksRAM";
 
-    @objid ("4fad41cf-ec34-4719-97a1-a59f2225b1f2")
+    @objid ("9b557d46-3d37-4bef-a7c2-82ac8f295db8")
     public static final String HWPLD_CLASSIFIER_NBFLIPFLOPS_TAGTYPE = "HwPLD_Classifier_nbFlipFlops";
 
-    @objid ("d25792c9-3cdd-43de-9a24-2e2ae18c2994")
+    @objid ("3a8555c2-0c27-4995-b241-825a4db4cfd3")
     public static final String HWPLD_CLASSIFIER_NBLUTS_TAGTYPE = "HwPLD_Classifier_nbLUTs";
 
-    @objid ("77d06ed6-7f99-4b45-9d29-8680d5984f8a")
+    @objid ("4565b62f-935d-4969-97ef-6a798c60cd87")
     public static final String HWPLD_CLASSIFIER_NDLUT_INPUTS_TAGTYPE = "HwPLD_Classifier_ndLUT_Inputs";
 
-    @objid ("192b1b8a-64f1-45b9-9d5a-d6c1ce380704")
+    @objid ("a7338b05-84fe-484c-8c55-47d3dd9cf383")
     public static final String HWPLD_CLASSIFIER_ORGANIZATION_TAGTYPE = "HwPLD_Classifier_organization";
 
-    @objid ("7699fdeb-bd91-4f35-b301-c31d4e7f692d")
+    @objid ("443536b8-ce74-453d-b2b7-055d56b7929b")
     public static final String HWPLD_CLASSIFIER_TECHNOLOGY_TAGTYPE = "HwPLD_Classifier_technology";
 
     /**
-     * Tells whether a {@link HwPLDClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwPLD_Classifier >>. 
+     * Tells whether a {@link HwPLDClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwPLD_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("7f18239f-6f9e-4fbc-88a5-4a87005af553")
+    @objid ("b0d5598c-1633-453d-b73d-a2b6db36e4a2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDClassifier.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * 
      * @return a {@link HwPLDClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("b7a59f8d-777d-4680-a4f6-9244fa79a546")
+    @objid ("a2cb129c-64a4-4cb7-b73d-311980d35333")
     public static HwPLDClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDClassifier.STEREOTYPE_NAME);
         return HwPLDClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwPLDClassifier} proxy from a {@link Classifier} stereotyped << HwPLD_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwPLDClassifier} proxy from a {@link Classifier} stereotyped << HwPLD_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwPLDClassifier} proxy or <i>null</i>.
      */
-    @objid ("79c0b89b-8d42-494e-b74a-d4d604ef7689")
+    @objid ("f9e38e57-b456-49e7-9b50-dbbec5a37bbc")
     public static HwPLDClassifier instantiate(final Classifier obj) {
         return HwPLDClassifier.canInstantiate(obj) ? new HwPLDClassifier(obj) : null;
     }
@@ -103,7 +103,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * @return a {@link HwPLDClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("2649084d-97c2-456c-ac2f-97222715a84e")
+    @objid ("349cd0e6-26c5-4e25-9364-74ff03fb9643")
     public static HwPLDClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwPLDClassifier.canInstantiate(obj))
         	return new HwPLDClassifier(obj);
@@ -111,7 +111,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
         	throw new IllegalArgumentException("HwPLDClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("0cdc82da-15da-4ebe-8e95-853a3db2625d")
+    @objid ("0bd1d7d5-a2bf-4d27-9c96-2a50534e14a3")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("2c3424ce-f211-48e9-9e7d-965a033805f7")
+    @objid ("365fc171-f8e6-4170-a67a-e83ac01c26b7")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -142,7 +142,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cb150d4d-5741-4456-87f8-80547739db19")
+    @objid ("e656d1a5-a2d8-41bf-ae4e-76449e00b73f")
     public List<String> getHwPLD_Classifier_blocksComputing() {
         return this.elt.getTagValues(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_BLOCKSCOMPUTING_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("bea44691-068e-41d7-82a2-140b6614df61")
+    @objid ("bc36ca9c-5a89-493c-913d-8eb0b0fb7182")
     public List<String> getHwPLD_Classifier_blocksRAM() {
         return this.elt.getTagValues(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_BLOCKSRAM_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ace09de3-9bd4-4d24-bd5e-b1fc7fadf70e")
+    @objid ("f2921fd6-2ccb-434d-baf5-42b92f602bfe")
     public String getHwPLD_Classifier_nbFlipFlops() {
         return this.elt.getTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NBFLIPFLOPS_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2daad25a-92a4-4999-9233-265bc72237f9")
+    @objid ("3b163e59-da05-47e3-adb5-9393997f88ea")
     public String getHwPLD_Classifier_nbLUTs() {
         return this.elt.getTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NBLUTS_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("962b1c2e-e230-4812-a0f3-231284d1ea3a")
+    @objid ("283938ab-3662-44a1-b126-9ca6a9df3b53")
     public String getHwPLD_Classifier_ndLUT_Inputs() {
         return this.elt.getTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NDLUT_INPUTS_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8c8ed726-df67-4b32-942b-17af6a206443")
+    @objid ("331181fd-ad91-4579-9e3b-b526f110fad4")
     public String getHwPLD_Classifier_organization() {
         return this.elt.getTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -202,12 +202,12 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("407e8602-004e-4b2b-a676-a4c759d1d118")
+    @objid ("5243c03e-cb66-4984-b2b9-d65f382f28ec")
     public String getHwPLD_Classifier_technology() {
         return this.elt.getTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_TECHNOLOGY_TAGTYPE_ELT);
     }
 
-    @objid ("c2658b51-7797-4dcb-9e0a-2e74d5ded29f")
+    @objid ("0415c180-cfda-4724-bef5-de871c558d3e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -218,7 +218,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fb0d540f-c764-4ae9-96e3-e84622733fa0")
+    @objid ("e641a879-8cb9-4e75-89ce-d095f9328c82")
     public void setHwPLD_Classifier_blocksComputing(final List<String> values) {
         this.elt.putTagValues(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_BLOCKSCOMPUTING_TAGTYPE_ELT, values);
     }
@@ -228,7 +228,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("311c5a40-4249-4207-98d0-31faa83b1a74")
+    @objid ("db6c095e-5ef1-49b7-9a25-cb83e80d0b20")
     public void setHwPLD_Classifier_blocksRAM(final List<String> values) {
         this.elt.putTagValues(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_BLOCKSRAM_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0caa0bbc-7758-46bf-9ca2-1980223960a5")
+    @objid ("3b991171-b903-40c0-929b-76aedcd41a30")
     public void setHwPLD_Classifier_nbFlipFlops(final String value) {
         this.elt.putTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NBFLIPFLOPS_TAGTYPE_ELT, value);
     }
@@ -248,7 +248,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e1f12591-b250-4ff6-98b6-bae1fcf24413")
+    @objid ("a1ab38a7-8332-40d8-8f0e-279c4c3ae318")
     public void setHwPLD_Classifier_nbLUTs(final String value) {
         this.elt.putTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NBLUTS_TAGTYPE_ELT, value);
     }
@@ -258,7 +258,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6a58b9e6-cea4-4be9-9a75-3c80ed479839")
+    @objid ("9c7b468c-a7b9-4330-8f0e-3d547de6dc97")
     public void setHwPLD_Classifier_ndLUT_Inputs(final String value) {
         this.elt.putTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_NDLUT_INPUTS_TAGTYPE_ELT, value);
     }
@@ -268,7 +268,7 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3f86dbff-79b9-4ed8-a0ae-46685908bf39")
+    @objid ("0b78c241-18e1-4beb-86c0-5dff31da8966")
     public void setHwPLD_Classifier_organization(final String value) {
         this.elt.putTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -278,49 +278,49 @@ public class HwPLDClassifier extends HwComputingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d63aaad8-0ff1-47e2-a9d7-f758f58fc0a9")
+    @objid ("340421b6-69f2-47d8-bf1e-002a2d441810")
     public void setHwPLD_Classifier_technology(final String value) {
         this.elt.putTagValue(HwPLDClassifier.MdaTypes.HWPLD_CLASSIFIER_TECHNOLOGY_TAGTYPE_ELT, value);
     }
 
-    @objid ("56908de2-3288-431b-9e88-67a107b09ec9")
+    @objid ("672a7b5c-7801-4e4e-a038-df4ec2dcbce8")
     protected HwPLDClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("65da2bf8-9599-4ed7-a44c-47072bb1ca28")
     public static final class MdaTypes {
-        @objid ("fc6ae6f1-28b5-4301-8b65-37c06a57e853")
+        @objid ("aaf3f2ca-f21f-4b45-a4d1-049cfe6056dc")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("cb80bc14-bcba-48f3-9d43-4b78bb50df8c")
+        @objid ("2354a16d-ed5e-4155-a151-1151ab6f1707")
         public static TagType HWPLD_CLASSIFIER_TECHNOLOGY_TAGTYPE_ELT;
 
-        @objid ("0a90afb5-c6b0-4199-9e1d-ebfd14fb4c9d")
+        @objid ("149f56b2-5a11-4e1e-81f5-e546e9280748")
         public static TagType HWPLD_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("d6bb316e-10f0-4b37-bc81-50f4250b73d3")
+        @objid ("5aa2039e-c588-4dac-9ed4-2d385c06837f")
         public static TagType HWPLD_CLASSIFIER_NBLUTS_TAGTYPE_ELT;
 
-        @objid ("307f6376-7204-4b41-876d-4969beec2e0c")
+        @objid ("0ed8b33e-79d3-4307-abec-7b5f3bf443c3")
         public static TagType HWPLD_CLASSIFIER_NDLUT_INPUTS_TAGTYPE_ELT;
 
-        @objid ("31376843-23be-4102-a266-9ce6d2a943cc")
+        @objid ("c316f46e-2cc8-426c-87d5-82a6f1d4ac45")
         public static TagType HWPLD_CLASSIFIER_NBFLIPFLOPS_TAGTYPE_ELT;
 
-        @objid ("13a15c20-daf3-4e5a-9883-437f32684d49")
+        @objid ("52f1c2e0-e875-4877-9f1b-b2bbddbd9c18")
         public static TagType HWPLD_CLASSIFIER_BLOCKSRAM_TAGTYPE_ELT;
 
-        @objid ("99c75bbb-f251-4f8b-b2ed-daafc91e3d7d")
+        @objid ("bc4df39c-3a1d-4296-a98f-5eee2cc58e7d")
         public static TagType HWPLD_CLASSIFIER_BLOCKSCOMPUTING_TAGTYPE_ELT;
 
-        @objid ("471185bd-9846-4fae-940f-f37091c1d446")
+        @objid ("222a9813-428e-4188-896b-0e897e739a54")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e6ade277-0194-4d8b-8612-2ccd86d7c5fe")
+        @objid ("3c3b814e-8aaf-454d-b806-41b0c9f4a44f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("c5afdf33-3e36-4277-8179-63123c7c31d7")
+        @objid ("ea222853-4bf0-4b94-a3f7-dd83094580e1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "7495c7c8-10a5-11df-81d9-0014222a9f79");
             HWPLD_CLASSIFIER_TECHNOLOGY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "7495c7c9-10a5-11df-81d9-0014222a9f79");

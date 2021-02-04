@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.executionspecification;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("027ef767-53a0-43ef-9818-293e3a0359e0")
 public class GrServiceExecutionSpecification {
-    @objid ("8d13adbf-12ad-40e0-9540-8eea1766006f")
+    @objid ("ea6eacf5-b0c5-4a90-a18b-559e88428362")
     public static final String STEREOTYPE_NAME = "GrService_ExecutionSpecification";
 
-    @objid ("2c41cd3c-5846-4b2a-964e-ae40b28fc7e1")
+    @objid ("4fe7dcc5-652c-478c-912b-58bf290840fc")
     public static final String GRSERVICE_EXECUTIONSPECIFICATION_OWNER_TAGTYPE = "GrService_ExecutionSpecification_owner";
 
     /**
      * The underlying {@link ExecutionSpecification} represented by this proxy, never null.
      */
-    @objid ("3ec7f8de-1b71-48cd-8bfc-740da48f2450")
+    @objid ("ac16499f-e39f-4760-9590-1fd02857f7f7")
     protected final ExecutionSpecification elt;
 
     /**
-     * Tells whether a {@link GrServiceExecutionSpecification proxy} can be instantiated from a {@link MObject} checking it is a {@link ExecutionSpecification} stereotyped << GrService_ExecutionSpecification >>. 
+     * Tells whether a {@link GrServiceExecutionSpecification proxy} can be instantiated from a {@link MObject} checking it is a {@link ExecutionSpecification} stereotyped << GrService_ExecutionSpecification >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4aa63ec3-8b96-4bd0-ab79-a7a8803fcd87")
+    @objid ("2fabada8-d7cb-44c2-a57f-b17f48a9db63")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ExecutionSpecification) && ((ExecutionSpecification) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GrServiceExecutionSpecification.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class GrServiceExecutionSpecification {
      * 
      * @return a {@link GrServiceExecutionSpecification} proxy on the created {@link ExecutionSpecification}.
      */
-    @objid ("8a93db0d-6918-464d-b468-9dca72742b56")
+    @objid ("08cff4ee-41b2-43d4-9f0b-cfca3654615e")
     public static GrServiceExecutionSpecification create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ExecutionSpecification");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.ExecutionSpecification");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GrServiceExecutionSpecification.STEREOTYPE_NAME);
         return GrServiceExecutionSpecification.instantiate((ExecutionSpecification)e);
     }
 
     /**
-     * Tries to instantiate a {@link GrServiceExecutionSpecification} proxy from a {@link ExecutionSpecification} stereotyped << GrService_ExecutionSpecification >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link GrServiceExecutionSpecification} proxy from a {@link ExecutionSpecification} stereotyped << GrService_ExecutionSpecification >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ExecutionSpecification
      * @return a {@link GrServiceExecutionSpecification} proxy or <i>null</i>.
      */
-    @objid ("6dd45d59-e8c2-49ba-8a0b-7bc324852bc6")
+    @objid ("a84a604f-e725-41e3-8e22-d84f241ca933")
     public static GrServiceExecutionSpecification instantiate(final ExecutionSpecification obj) {
         return GrServiceExecutionSpecification.canInstantiate(obj) ? new GrServiceExecutionSpecification(obj) : null;
     }
@@ -90,7 +90,7 @@ public class GrServiceExecutionSpecification {
      * @return a {@link GrServiceExecutionSpecification} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("7cf7803d-daa2-46a2-8413-b20f3303a772")
+    @objid ("89651558-fa7e-4135-b073-26735e911ddc")
     public static GrServiceExecutionSpecification safeInstantiate(final ExecutionSpecification obj) throws IllegalArgumentException {
         if (GrServiceExecutionSpecification.canInstantiate(obj))
         	return new GrServiceExecutionSpecification(obj);
@@ -98,7 +98,7 @@ public class GrServiceExecutionSpecification {
         	throw new IllegalArgumentException("GrServiceExecutionSpecification: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a3935c26-7505-4885-8e3a-3d7a4e8b8f6c")
+    @objid ("1225332b-c3d4-494f-98a5-6a5cebaa5731")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -118,7 +118,7 @@ public class GrServiceExecutionSpecification {
      * Get the underlying {@link ExecutionSpecification}. 
      * @return the ExecutionSpecification represented by this proxy, never null.
      */
-    @objid ("de4538a1-8326-4fa9-b32a-90e9cb10e6d1")
+    @objid ("98442c7f-2d22-43b4-9b08-fbb083d4e2d5")
     public ExecutionSpecification getElement() {
         return this.elt;
     }
@@ -128,12 +128,12 @@ public class GrServiceExecutionSpecification {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e010d14e-3502-4434-9cb6-402916f578d6")
+    @objid ("c9bd12db-deca-4633-b29f-2d78bb3ac3eb")
     public String getGrService_ExecutionSpecification_owner() {
         return this.elt.getTagValue(GrServiceExecutionSpecification.MdaTypes.GRSERVICE_EXECUTIONSPECIFICATION_OWNER_TAGTYPE_ELT);
     }
 
-    @objid ("b95fdbb6-577d-4e30-9a26-9722f5417ab1")
+    @objid ("c54e4cd4-ec34-4c9f-8f4e-9ef6c986157d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class GrServiceExecutionSpecification {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b1888015-2472-48da-8ff9-3143ebfc5fd9")
+    @objid ("dbbf1def-faa2-4f3a-80d2-ebd6b927cebe")
     public void setGrService_ExecutionSpecification_owner(final String value) {
         this.elt.putTagValue(GrServiceExecutionSpecification.MdaTypes.GRSERVICE_EXECUTIONSPECIFICATION_OWNER_TAGTYPE_ELT, value);
     }
 
-    @objid ("37ffc947-3004-43fe-87cc-e23664b4a01d")
+    @objid ("070844dc-dae2-4e19-a690-3ccb0da25340")
     protected GrServiceExecutionSpecification(final ExecutionSpecification elt) {
         this.elt = elt;
     }
 
     @objid ("fc4a11a0-20d9-4e94-a402-7be31615a09d")
     public static final class MdaTypes {
-        @objid ("265c5b39-8912-4bb9-aa71-c1ae59c70837")
+        @objid ("292849f0-a1f5-4855-a8bd-09b28ad3bde9")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b6e60d53-c189-417e-870d-89b7017c45e3")
+        @objid ("607185f2-a70c-45cc-a33c-5f378ca535be")
         public static TagType GRSERVICE_EXECUTIONSPECIFICATION_OWNER_TAGTYPE_ELT;
 
-        @objid ("e4679e17-27e8-48a3-9bdd-dfdd8328aa74")
+        @objid ("31ded3cb-f3e4-4ded-b231-bcd34d516c16")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b0ae7b61-da13-43be-a1e3-2dda433d39d0")
+        @objid ("6f39e14f-bebe-4ac2-80fd-a680e04f90ea")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("cfd82645-32ed-4d9f-8762-3c2228567c74")
+        @objid ("4fc63d5a-5877-4462-a71a-b8c977467672")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00a1abd9-0ccf-11df-8525-001302895b2b");
             GRSERVICE_EXECUTIONSPECIFICATION_OWNER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00a8d2bb-0ccf-11df-8525-001302895b2b");

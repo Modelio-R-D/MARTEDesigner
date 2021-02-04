@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.classifier;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("4bcfb7cd-9bd3-4d0b-9ae1-a77c018baefc")
 public class HwROMClassifier extends HwMemoryClassifier {
-    @objid ("9913ecd2-688e-43d1-a49d-ed7485460357")
+    @objid ("46c61b32-573d-4bbb-b207-d685621ad696")
     public static final String STEREOTYPE_NAME = "HwROM_Classifier";
 
-    @objid ("cf8f3b3e-1c99-4db5-a32e-810f98423a8d")
+    @objid ("5dd94ce5-91a3-4cc0-9e65-685d21922ab6")
     public static final String HWROM_CLASSIFIER_ORGANIZATION_TAGTYPE = "HwROM_Classifier_organization";
 
-    @objid ("0576357a-9a64-4e92-a91e-ae7971f2bd04")
+    @objid ("adb9aadb-f16f-4887-8290-7dae73ffd148")
     public static final String HWROM_CLASSIFIER_TYPE_TAGTYPE = "HwROM_Classifier_type";
 
     /**
-     * Tells whether a {@link HwROMClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwROM_Classifier >>. 
+     * Tells whether a {@link HwROMClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwROM_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d2057240-c5b2-45f1-af1a-244214d85896")
+    @objid ("d776d773-d96c-481d-b520-2788ad305f07")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwROMClassifier.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * 
      * @return a {@link HwROMClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("b72065c6-133d-47e7-b939-36d340d13d3a")
+    @objid ("bdb2fc52-8f77-4a7a-b030-40e46c1b7b82")
     public static HwROMClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwROMClassifier.STEREOTYPE_NAME);
         return HwROMClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwROMClassifier} proxy from a {@link Classifier} stereotyped << HwROM_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwROMClassifier} proxy from a {@link Classifier} stereotyped << HwROM_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwROMClassifier} proxy or <i>null</i>.
      */
-    @objid ("75022868-bba2-4269-ab6d-a058c4b25c86")
+    @objid ("1fb60b65-3637-42a7-873d-f358e8d7f6f6")
     public static HwROMClassifier instantiate(final Classifier obj) {
         return HwROMClassifier.canInstantiate(obj) ? new HwROMClassifier(obj) : null;
     }
@@ -87,7 +87,7 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * @return a {@link HwROMClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("8475b476-084b-4b74-b24b-1bb1042e5a9a")
+    @objid ("06bc7e3c-9085-45d3-8f5d-93aee4847688")
     public static HwROMClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwROMClassifier.canInstantiate(obj))
         	return new HwROMClassifier(obj);
@@ -95,7 +95,7 @@ public class HwROMClassifier extends HwMemoryClassifier {
         	throw new IllegalArgumentException("HwROMClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("0ed23e36-2ceb-43d2-8796-503f3c99f87a")
+    @objid ("6cfdc5a8-d0c2-4951-b8ca-c5b4a5a77743")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("48a2c3af-2185-4329-8c3a-33b49fe99902")
+    @objid ("bb3364ec-8054-4bdf-ab9c-616b5e97e3b9")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -126,7 +126,7 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5acf295f-0a83-4846-be5b-92efec2fb146")
+    @objid ("588966f3-0818-4641-93c1-7dfba57f0865")
     public String getHwROM_Classifier_organization() {
         return this.elt.getTagValue(HwROMClassifier.MdaTypes.HWROM_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -136,12 +136,12 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e7a2329b-e77d-45ad-9490-b9483064f7f3")
+    @objid ("34f42258-f003-4de6-9712-20eaf3cb2a87")
     public String getHwROM_Classifier_type() {
         return this.elt.getTagValue(HwROMClassifier.MdaTypes.HWROM_CLASSIFIER_TYPE_TAGTYPE_ELT);
     }
 
-    @objid ("36f0edb1-76de-4f6e-a885-efff0d0b332d")
+    @objid ("9a5cb9cb-e153-4432-b0f8-7c898ceca248")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -152,7 +152,7 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("65c7dd0f-5794-4f1c-aab1-9da9c1a534b0")
+    @objid ("8476c470-5230-40d2-b750-77db2f6926c3")
     public void setHwROM_Classifier_organization(final String value) {
         this.elt.putTagValue(HwROMClassifier.MdaTypes.HWROM_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -162,34 +162,34 @@ public class HwROMClassifier extends HwMemoryClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("76214cdc-eef4-4bd8-8302-457899cc8746")
+    @objid ("3f257879-c7f9-46cd-957f-ad3324ec4c6b")
     public void setHwROM_Classifier_type(final String value) {
         this.elt.putTagValue(HwROMClassifier.MdaTypes.HWROM_CLASSIFIER_TYPE_TAGTYPE_ELT, value);
     }
 
-    @objid ("57d07e40-849c-4c0c-ac27-f6b28f827238")
+    @objid ("53016f77-92e1-4351-9cae-d2ca9f7468f6")
     protected HwROMClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("f630ef88-1d9d-4fc1-8713-7bd382e3b66e")
     public static final class MdaTypes {
-        @objid ("cd59a4b4-79c5-41e8-bb6d-efa44362114c")
+        @objid ("219036b9-c982-40c9-b723-54a9fb4ddda0")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("87747d83-ca1b-4e32-b08a-2bdd32cb5f28")
+        @objid ("f7eab8ee-6f3a-4a44-b7f9-3b640d66d748")
         public static TagType HWROM_CLASSIFIER_TYPE_TAGTYPE_ELT;
 
-        @objid ("7b252855-5063-458b-89d6-5d4996a41b60")
+        @objid ("e12f7eaa-87bd-4914-853a-ff96455e0dc7")
         public static TagType HWROM_CLASSIFIER_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("72890cb1-ac6e-46d0-ba9b-0b60726c1b36")
+        @objid ("d9c3e926-ec8d-4bd8-835c-e08fc658531e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("07dd6d3a-f949-40ee-95f9-18376d4ce088")
+        @objid ("f1cca2f0-ea23-4252-adfe-03abd91bc73b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d84e04f1-4050-46c2-9fb7-e61c3fc3ce75")
+        @objid ("3b1e22eb-6b20-4118-bf7c-b29f0313d030")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "5eb5b1f7-1009-11df-86fe-0014222a9f79");
             HWROM_CLASSIFIER_TYPE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "910ed9dd-1009-11df-86fe-0014222a9f79");

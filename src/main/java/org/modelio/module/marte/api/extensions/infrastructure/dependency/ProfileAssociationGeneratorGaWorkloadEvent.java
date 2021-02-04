@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("23d3445f-fd56-4756-b282-1b0a97c6ceba")
 public class ProfileAssociationGeneratorGaWorkloadEvent {
-    @objid ("f6d19811-1e24-4e97-80c1-a798a681a17b")
+    @objid ("d45e38a5-84c4-478f-bdab-dbe098207875")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_generator_GaWorkloadEvent";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("836d044c-6724-40a4-a312-e8c1e0b57bba")
+    @objid ("f6df5a4d-2e5d-41d0-973f-0c4556558c55")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationGeneratorGaWorkloadEvent proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_generator_GaWorkloadEvent >>. 
+     * Tells whether a {@link ProfileAssociationGeneratorGaWorkloadEvent proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_generator_GaWorkloadEvent >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("50ed2999-8760-4ce4-9868-62d1fcac0d67")
+    @objid ("253e127f-01b0-42e7-97ba-560bb0a2077b")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationGeneratorGaWorkloadEvent.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationGeneratorGaWorkloadEvent {
      * 
      * @return a {@link ProfileAssociationGeneratorGaWorkloadEvent} proxy on the created {@link Dependency}.
      */
-    @objid ("93480e91-c85a-4dd8-bf94-ae615f79686c")
+    @objid ("1c29beac-7cbb-46ce-abef-e2a8708f03a0")
     public static ProfileAssociationGeneratorGaWorkloadEvent create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationGeneratorGaWorkloadEvent.STEREOTYPE_NAME);
         return ProfileAssociationGeneratorGaWorkloadEvent.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationGeneratorGaWorkloadEvent} proxy from a {@link Dependency} stereotyped << ProfileAssociation_generator_GaWorkloadEvent >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationGeneratorGaWorkloadEvent} proxy from a {@link Dependency} stereotyped << ProfileAssociation_generator_GaWorkloadEvent >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationGeneratorGaWorkloadEvent} proxy or <i>null</i>.
      */
-    @objid ("824e7147-2032-46c1-ba72-d2c49b255a22")
+    @objid ("5854d18b-c6f8-4439-b790-796c124c92e9")
     public static ProfileAssociationGeneratorGaWorkloadEvent instantiate(final Dependency obj) {
         return ProfileAssociationGeneratorGaWorkloadEvent.canInstantiate(obj) ? new ProfileAssociationGeneratorGaWorkloadEvent(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationGeneratorGaWorkloadEvent {
      * @return a {@link ProfileAssociationGeneratorGaWorkloadEvent} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("d9a1516f-7172-4f43-b0a5-6a202424e998")
+    @objid ("b5fb7160-17f1-4e8f-b015-bcf08422be8e")
     public static ProfileAssociationGeneratorGaWorkloadEvent safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationGeneratorGaWorkloadEvent.canInstantiate(obj))
         	return new ProfileAssociationGeneratorGaWorkloadEvent(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationGeneratorGaWorkloadEvent {
         	throw new IllegalArgumentException("ProfileAssociationGeneratorGaWorkloadEvent: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("765296da-d8e3-4c00-a20f-2b253ec51968")
+    @objid ("b9da08fb-a6af-4f72-acf8-76a55792f32c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationGeneratorGaWorkloadEvent {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("773818a4-7018-490d-a887-85952824548e")
+    @objid ("f40fa212-cf59-40dc-82e3-0c79df8fbe8c")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("a9443e5f-388f-4509-b6d8-e6419ebf88a9")
+    @objid ("1bd7638b-3f7f-45c1-9b96-11e998a39819")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("b85e881f-2ed3-4431-9136-d450f53c79a6")
+    @objid ("2c143308-2eef-48ea-babf-bea8f2d71eaf")
     protected ProfileAssociationGeneratorGaWorkloadEvent(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("451fd643-d609-489e-a5b5-6c0dc474d6ba")
     public static final class MdaTypes {
-        @objid ("cc1a003d-4f97-4bdf-8275-094ccdcb5c8c")
+        @objid ("399ae636-9727-4d74-b2ed-074235691b73")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("c2afa396-be07-4610-a180-c5e0b99a5854")
+        @objid ("2cf8a59c-22c6-4820-92c2-ac561a63b870")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8a1249d7-5cc1-440c-9866-016f6e71e13c")
+        @objid ("de7a6479-9fb4-419f-af79-d41953d13137")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("8b535db0-2f9b-4c9f-97df-aa7b8d1df832")
+        @objid ("0c76c457-4152-42a0-90bb-2e6865672c59")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "cf93afa5-dd1f-11e0-a2be-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

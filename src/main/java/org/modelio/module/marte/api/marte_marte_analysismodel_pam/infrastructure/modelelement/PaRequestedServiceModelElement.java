@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_pam.infrastructure.modelelement;
 
@@ -34,33 +34,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("4b6fbf64-0007-4816-af0e-6228d0e115e7")
 public class PaRequestedServiceModelElement extends GaRequestedServiceModelElement {
-    @objid ("e29d36c1-f0de-4c9e-be20-1f2a4b1a904d")
+    @objid ("3cdcf813-e401-4595-8211-27dcdcb1c336")
     public static final String STEREOTYPE_NAME = "PaRequestedService_ModelElement";
 
-    @objid ("b5397cb2-0da9-4ba2-9504-a3569df4b401")
+    @objid ("829b303c-f29a-4709-b49c-fc58668c04c1")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_BEHAVCOUNT_TAGTYPE = "PaRequestedService_ModelElement_behavCount";
 
-    @objid ("02b47424-e2df-43b4-a3d0-89123d666f90")
+    @objid ("4e560a54-fc23-459a-9db8-5ce6e40b9b9e")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_BEHAVDEMAND_TAGTYPE = "PaRequestedService_ModelElement_behavDemand";
 
-    @objid ("6702dade-3a8d-4e09-b235-3a2c71c16c89")
+    @objid ("9aaf04a4-77e3-49ca-9251-9343f11c025d")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_EXTOPCOUNT_TAGTYPE = "PaRequestedService_ModelElement_extOpCount";
 
-    @objid ("964364fd-0c31-4518-92ba-ca9b1bfa97c2")
+    @objid ("2385597b-299f-49b5-b1f7-f956ddd7ec98")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_EXTOPDEMAND_TAGTYPE = "PaRequestedService_ModelElement_extOpDemand";
 
-    @objid ("01e37910-5e9a-4d49-b148-9223f543220f")
+    @objid ("1f101080-c812-440c-bf6a-8b31a4b284d9")
     public static final String PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE = "PaRequestedService_ModelElement_noSync";
 
     /**
-     * Tells whether a {@link PaRequestedServiceModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << PaRequestedService_ModelElement >>. 
+     * Tells whether a {@link PaRequestedServiceModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << PaRequestedService_ModelElement >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8c65c661-1463-4bda-bcf4-24dee957dea9")
+    @objid ("193f4e87-be8f-4f67-bee7-8f5a3020e25a")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ModelElement) && ((ModelElement) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, PaRequestedServiceModelElement.STEREOTYPE_NAME));
     }
@@ -70,21 +70,21 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * 
      * @return a {@link PaRequestedServiceModelElement} proxy on the created {@link ModelElement}.
      */
-    @objid ("2b55a372-5657-41b9-984c-9726266d9e3e")
+    @objid ("b470a55c-ab2e-4da3-98d3-5a4cb77295bc")
     public static PaRequestedServiceModelElement create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ModelElement");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.ModelElement");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, PaRequestedServiceModelElement.STEREOTYPE_NAME);
         return PaRequestedServiceModelElement.instantiate((ModelElement)e);
     }
 
     /**
-     * Tries to instantiate a {@link PaRequestedServiceModelElement} proxy from a {@link ModelElement} stereotyped << PaRequestedService_ModelElement >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link PaRequestedServiceModelElement} proxy from a {@link ModelElement} stereotyped << PaRequestedService_ModelElement >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ModelElement
      * @return a {@link PaRequestedServiceModelElement} proxy or <i>null</i>.
      */
-    @objid ("ab5232dc-60a3-4ba7-8f82-40b41d45885f")
+    @objid ("b47d6143-c932-4234-936b-370528306926")
     public static PaRequestedServiceModelElement instantiate(final ModelElement obj) {
         return PaRequestedServiceModelElement.canInstantiate(obj) ? new PaRequestedServiceModelElement(obj) : null;
     }
@@ -97,7 +97,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * @return a {@link PaRequestedServiceModelElement} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a0d7d0c2-ba1d-4818-b5bd-a8d519f4fdbc")
+    @objid ("b92857e2-2094-4d27-a256-441a880663b2")
     public static PaRequestedServiceModelElement safeInstantiate(final ModelElement obj) throws IllegalArgumentException {
         if (PaRequestedServiceModelElement.canInstantiate(obj))
         	return new PaRequestedServiceModelElement(obj);
@@ -105,7 +105,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
         	throw new IllegalArgumentException("PaRequestedServiceModelElement: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("526d427f-94b6-435c-9ad4-ebe9afcf114a")
+    @objid ("c1f16440-438f-48e9-af97-8c4a5d6efb5b")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * Get the underlying {@link ModelElement}. 
      * @return the ModelElement represented by this proxy, never null.
      */
-    @objid ("1b119661-1a07-4b6c-b698-2ab29c92f009")
+    @objid ("0a47f3da-4ff7-4c1e-9bca-a4a34c4e632a")
     @Override
     public ModelElement getElement() {
         return (ModelElement)super.getElement();
@@ -136,7 +136,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1caf5ff8-c2f7-494b-92a6-806ce612f2c9")
+    @objid ("0290f999-b9a9-427a-a0b8-8e51e7603e58")
     public List<String> getPaRequestedService_ModelElement_behavCount() {
         return this.elt.getTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_BEHAVCOUNT_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("54578be0-9652-4101-8807-95574f5fa729")
+    @objid ("bcfe9acb-6695-4d4b-9d08-6220cb13e66d")
     public List<String> getPaRequestedService_ModelElement_behavDemand() {
         return this.elt.getTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_BEHAVDEMAND_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c3bfe884-c235-4c75-b453-13a25905c0e9")
+    @objid ("24f54bce-92ae-4d48-b2e4-16c01b12ce1f")
     public List<String> getPaRequestedService_ModelElement_extOpCount() {
         return this.elt.getTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_EXTOPCOUNT_TAGTYPE_ELT);
     }
@@ -166,12 +166,12 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("e9c3578e-feff-4ed5-bf4f-ecf6b1a951e5")
+    @objid ("2cfb2f27-5752-4f6b-9e94-ef3dba69821a")
     public List<String> getPaRequestedService_ModelElement_extOpDemand() {
         return this.elt.getTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_EXTOPDEMAND_TAGTYPE_ELT);
     }
 
-    @objid ("fc20fb20-7489-4d7c-97b8-cea40dc23c7d")
+    @objid ("0ffba5c4-bcd6-4aeb-a1ea-89fc75a6f5d0")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -182,7 +182,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("df34eae3-3428-497c-96eb-b0e70ef17bc9")
+    @objid ("3e38a58c-9954-4716-a2dd-7fc6dbb496cc")
     public boolean isPaRequestedService_ModelElement_noSync() {
         return this.elt.isTagged(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d5246d49-282e-4610-a591-fcf8c50b5f6f")
+    @objid ("d1f7e5f5-6d24-4e4b-9370-a2b1e76f6072")
     public void setPaRequestedService_ModelElement_behavCount(final List<String> values) {
         this.elt.putTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_BEHAVCOUNT_TAGTYPE_ELT, values);
     }
@@ -202,7 +202,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("be0f3779-526f-44e4-ab7d-e719c28b0aae")
+    @objid ("d9fba4b6-150b-40b0-9e00-3da92815a8c3")
     public void setPaRequestedService_ModelElement_behavDemand(final List<String> values) {
         this.elt.putTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_BEHAVDEMAND_TAGTYPE_ELT, values);
     }
@@ -212,7 +212,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ff8f764b-beb8-4ff0-9c21-7b0c8ae9b279")
+    @objid ("1c9e1d4b-ebab-4335-a3b1-da72a6554f43")
     public void setPaRequestedService_ModelElement_extOpCount(final List<String> values) {
         this.elt.putTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_EXTOPCOUNT_TAGTYPE_ELT, values);
     }
@@ -222,7 +222,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8f1a3aac-da4b-4102-96b0-14ee9cb6cbf0")
+    @objid ("ecf7d233-f796-4677-9f15-d0f2537a5c02")
     public void setPaRequestedService_ModelElement_extOpDemand(final List<String> values) {
         this.elt.putTagValues(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_EXTOPDEMAND_TAGTYPE_ELT, values);
     }
@@ -232,7 +232,7 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("17c5afcc-67ce-4615-b9ad-04c9b72216de")
+    @objid ("d2972541-4cd7-4247-9afb-516f8a0fb891")
     public void setPaRequestedService_ModelElement_noSync(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE_ELT, this.elt);
@@ -240,38 +240,38 @@ public class PaRequestedServiceModelElement extends GaRequestedServiceModelEleme
           this.elt.removeTags(PaRequestedServiceModelElement.MdaTypes.PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE_ELT);
     }
 
-    @objid ("7af2cb82-2625-442f-9765-5341b8989575")
+    @objid ("8449aae4-109f-44c8-9390-1c7126958550")
     protected PaRequestedServiceModelElement(final ModelElement elt) {
         super(elt);
     }
 
     @objid ("127b30e0-b1ca-4332-ba36-5ab38d901f72")
     public static final class MdaTypes {
-        @objid ("6304f684-9f4a-4612-ae92-612a772133fa")
+        @objid ("1cf02a91-e79e-4ce1-af13-e7b16cb37ffb")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("8dbb8fc8-5ea9-40db-93b8-0c543dd5962f")
+        @objid ("e3fddaa4-dd5a-4228-83a2-f8050f0d47b0")
         public static TagType PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE_ELT;
 
-        @objid ("032e5917-af4f-40b7-aa3c-ba3cb171e265")
+        @objid ("58832856-6163-46bb-b3c8-96d4d72985d9")
         public static TagType PAREQUESTEDSERVICE_MODELELEMENT_EXTOPDEMAND_TAGTYPE_ELT;
 
-        @objid ("0dad00e2-b596-498d-a250-e22f5fe4f838")
+        @objid ("fb5defe4-f99d-4d1f-b516-dd404b0e1b07")
         public static TagType PAREQUESTEDSERVICE_MODELELEMENT_EXTOPCOUNT_TAGTYPE_ELT;
 
-        @objid ("065e1ec4-999b-4b66-9c36-a742a10c8303")
+        @objid ("1e517cf1-d9de-47f6-b124-643320aa85c1")
         public static TagType PAREQUESTEDSERVICE_MODELELEMENT_BEHAVDEMAND_TAGTYPE_ELT;
 
-        @objid ("3d6b3565-d391-44fd-b0af-fc7bf0f73c61")
+        @objid ("29abe7c5-69dc-4f16-9f43-83bfab992efa")
         public static TagType PAREQUESTEDSERVICE_MODELELEMENT_BEHAVCOUNT_TAGTYPE_ELT;
 
-        @objid ("47ed3973-8b60-486d-bfd4-7c4501ee0481")
+        @objid ("6bfe1ab0-adee-4c56-b344-c10ba580a78d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("52bd2658-52aa-43e7-af6b-37963a24243b")
+        @objid ("84c43525-d54e-4197-b5c2-74e11fe964ed")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d0d95220-3656-4f5c-9e2b-5bbdc8758cac")
+        @objid ("83fd875d-3b13-4f82-ad41-5ac32fa4b1b5")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "7ba54cc4-14b1-11df-9d54-0014222a9f79");
             PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "e0f6d4dc-16ef-11df-b92a-0014222a9f79");

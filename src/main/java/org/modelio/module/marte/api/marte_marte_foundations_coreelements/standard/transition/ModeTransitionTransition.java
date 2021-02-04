@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_coreelements.standard.transition;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("3c5554fd-e705-4d63-a395-d4ebb4d27624")
 public class ModeTransitionTransition {
-    @objid ("aa9969dd-93f5-4728-97d8-5ef68fc117ba")
+    @objid ("f528c06b-94e9-4880-9b94-5e70480a523c")
     public static final String STEREOTYPE_NAME = "ModeTransition_Transition";
 
     /**
      * The underlying {@link Transition} represented by this proxy, never null.
      */
-    @objid ("488170a2-8033-4e2e-b2bf-25aa9fc23158")
+    @objid ("8a2f044c-65fc-4bfb-a053-a7423a5aea6f")
     protected final Transition elt;
 
     /**
-     * Tells whether a {@link ModeTransitionTransition proxy} can be instantiated from a {@link MObject} checking it is a {@link Transition} stereotyped << ModeTransition_Transition >>. 
+     * Tells whether a {@link ModeTransitionTransition proxy} can be instantiated from a {@link MObject} checking it is a {@link Transition} stereotyped << ModeTransition_Transition >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b4af8b2a-85b5-419e-8414-738cbae1f425")
+    @objid ("9627612e-770c-4e78-ac26-c0f9747f199c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Transition) && ((Transition) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ModeTransitionTransition.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class ModeTransitionTransition {
      * 
      * @return a {@link ModeTransitionTransition} proxy on the created {@link Transition}.
      */
-    @objid ("f432c2cd-0ad4-429d-85e9-e2e41fad41ec")
+    @objid ("632755c5-d3e0-4117-b1f2-a16ba6db3e82")
     public static ModeTransitionTransition create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Transition");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Transition");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ModeTransitionTransition.STEREOTYPE_NAME);
         return ModeTransitionTransition.instantiate((Transition)e);
     }
 
     /**
-     * Tries to instantiate a {@link ModeTransitionTransition} proxy from a {@link Transition} stereotyped << ModeTransition_Transition >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ModeTransitionTransition} proxy from a {@link Transition} stereotyped << ModeTransition_Transition >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Transition
      * @return a {@link ModeTransitionTransition} proxy or <i>null</i>.
      */
-    @objid ("0343c61f-8368-4823-a48e-443e9b227fff")
+    @objid ("9c653b23-4264-4d83-a31b-349772ee135d")
     public static ModeTransitionTransition instantiate(final Transition obj) {
         return ModeTransitionTransition.canInstantiate(obj) ? new ModeTransitionTransition(obj) : null;
     }
@@ -87,7 +87,7 @@ public class ModeTransitionTransition {
      * @return a {@link ModeTransitionTransition} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("64c4a5af-b3f0-4d91-bce3-5dd951b23ea9")
+    @objid ("a5d164a2-44ba-4af6-a2fc-efde4ffbddae")
     public static ModeTransitionTransition safeInstantiate(final Transition obj) throws IllegalArgumentException {
         if (ModeTransitionTransition.canInstantiate(obj))
         	return new ModeTransitionTransition(obj);
@@ -95,7 +95,7 @@ public class ModeTransitionTransition {
         	throw new IllegalArgumentException("ModeTransitionTransition: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("84b16d37-23f8-489c-bf1c-e81f759b7b55")
+    @objid ("0b1722f0-16a8-4ca1-acef-c526f4f8bff2")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,34 +115,34 @@ public class ModeTransitionTransition {
      * Get the underlying {@link Transition}. 
      * @return the Transition represented by this proxy, never null.
      */
-    @objid ("82cd4ed2-beba-4014-9f2b-be28315cfaec")
+    @objid ("749cf1f4-05b6-4b21-b65e-9481cb4a3444")
     public Transition getElement() {
         return this.elt;
     }
 
-    @objid ("9b7ec969-2331-44dd-a968-6e156b26fc14")
+    @objid ("616aae75-7377-4e96-aeae-83f68dac2e89")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("950c901c-dd2d-445a-ab35-51b3c8b95645")
+    @objid ("55bb3a8b-f4bc-4193-a403-c27a52065464")
     protected ModeTransitionTransition(final Transition elt) {
         this.elt = elt;
     }
 
     @objid ("a240aadd-c6d3-48d2-988d-8ceeb6749353")
     public static final class MdaTypes {
-        @objid ("1c472c13-d0f6-4d5c-9b5d-59cd73d408c4")
+        @objid ("c489e5ab-3eb0-409b-a918-d917bc670d5d")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("af4ebed7-6db7-49b1-880d-8096cd3eac1f")
+        @objid ("26188b81-aafc-44fe-8d13-8ee722303c61")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("51abf8f4-42c9-41df-b8b5-a2c122c58629")
+        @objid ("247dc5d5-f010-4fc0-83b8-d025737a38a8")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("faae6bd4-0e53-4d86-9ab5-fcc891853d26")
+        @objid ("4c024f22-813a-4359-ae41-b7b3979b1276")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00bbe54a-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.link;
 
@@ -35,30 +35,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("90d2c7eb-1c9a-42bf-b2df-113278aa0f5f")
 public class SwInteractionResourceLink extends SwResourceLink {
-    @objid ("f101a752-70d3-4fe9-868e-d64c2f4c749c")
+    @objid ("a3b54a9d-e669-4234-89d2-fb220d9e63ae")
     public static final String STEREOTYPE_NAME = "SwInteractionResource_Link";
 
-    @objid ("063a07ee-d12c-440e-9e89-6a96a81f47ee")
+    @objid ("3c418175-71b8-4597-8acb-c0cc0d14ca15")
     public static final String SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE = "SwInteractionResource_Link_isIntraMemoryPartitionInteraction";
 
-    @objid ("ae35e75f-7768-4a3a-859e-184cf7bf27b6")
+    @objid ("2e017e2e-ab88-4880-ba28-893b885163b9")
     public static final String SWINTERACTIONRESOURCE_LINK_WAITINGPOLICYELEMENTS_TAGTYPE = "SwInteractionResource_Link_waitingPolicyElements";
 
-    @objid ("38ba669d-05b2-4583-9b5a-ce99b0525a90")
+    @objid ("ce33425d-1191-4d40-953b-08dad1cc57a2")
     public static final String SWINTERACTIONRESOURCE_LINK_WAITINGQUEUECAPACITY_TAGTYPE = "SwInteractionResource_Link_waitingQueueCapacity";
 
-    @objid ("f9819c08-dfc5-4278-bfb5-6e6b6f698086")
+    @objid ("a2e4f12a-f8b5-4996-9e5d-e0ce45fc50e3")
     public static final String SWINTERACTIONRESOURCE_LINK_WAITINGQUEUEPOLICY_TAGTYPE = "SwInteractionResource_Link_waitingQueuePolicy";
 
     /**
-     * Tells whether a {@link SwInteractionResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << SwInteractionResource_Link >>. 
+     * Tells whether a {@link SwInteractionResourceLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << SwInteractionResource_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d1669aaa-bd5e-4549-811f-5e81e456e84b")
+    @objid ("64e3091f-bdbc-459d-881a-5fbbd5f5adbe")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceLink.STEREOTYPE_NAME));
     }
@@ -68,21 +68,21 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * 
      * @return a {@link SwInteractionResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("47f98615-b56b-4420-a139-7772f9b55119")
+    @objid ("594e5f92-b09b-4f75-b551-80eded7855bc")
     public static SwInteractionResourceLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceLink.STEREOTYPE_NAME);
         return SwInteractionResourceLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwInteractionResourceLink} proxy from a {@link Link} stereotyped << SwInteractionResource_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwInteractionResourceLink} proxy from a {@link Link} stereotyped << SwInteractionResource_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link SwInteractionResourceLink} proxy or <i>null</i>.
      */
-    @objid ("eb87dcff-eb8c-4724-abaf-52c01f22f0b8")
+    @objid ("5014b552-e923-4207-b0d8-b3cb8a11b30b")
     public static SwInteractionResourceLink instantiate(final Link obj) {
         return SwInteractionResourceLink.canInstantiate(obj) ? new SwInteractionResourceLink(obj) : null;
     }
@@ -95,7 +95,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * @return a {@link SwInteractionResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("28e566df-791d-4548-83db-41b02b219c30")
+    @objid ("79b520de-d599-4fd3-b03b-e3d83299ca3d")
     public static SwInteractionResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (SwInteractionResourceLink.canInstantiate(obj))
         	return new SwInteractionResourceLink(obj);
@@ -103,7 +103,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
         	throw new IllegalArgumentException("SwInteractionResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("30debaf9-ebf2-49bc-9551-14d51f184841")
+    @objid ("9d6d5d1a-8139-4e0d-9a34-035f1729b23c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -123,7 +123,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("a7214aa0-fa3d-4423-8d07-93c4e6a519fe")
+    @objid ("7cbedb5b-9587-4a4a-8530-f83e3854eb57")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -134,7 +134,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ce2350ea-4f65-4aac-9933-546f04761556")
+    @objid ("27e88dd0-47f0-4da2-9eaa-75d46180d7fa")
     public List<String> getSwInteractionResource_Link_waitingPolicyElements() {
         return this.elt.getTagValues(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGPOLICYELEMENTS_TAGTYPE_ELT);
     }
@@ -144,7 +144,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d3fac31e-5803-4564-87f1-6c2286c4c6c3")
+    @objid ("75388b8b-858d-4812-a15f-0351028e1059")
     public String getSwInteractionResource_Link_waitingQueueCapacity() {
         return this.elt.getTagValue(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGQUEUECAPACITY_TAGTYPE_ELT);
     }
@@ -154,12 +154,12 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("615f5e84-a35f-4193-85bd-75b8c68f2687")
+    @objid ("608884bc-541a-48fc-8d2b-cdf49cbd6f56")
     public String getSwInteractionResource_Link_waitingQueuePolicy() {
         return this.elt.getTagValue(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGQUEUEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("39bf848d-c5bd-4bc8-af17-4dc65c6af071")
+    @objid ("7bdbd432-eaa2-4fcd-92fd-475d91d2f4ef")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +170,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9c7b25e3-2862-4f04-b00d-2a923cbf8066")
+    @objid ("28a6372a-06cf-4641-aea8-0da79218c7fa")
     public boolean isSwInteractionResource_Link_isIntraMemoryPartitionInteraction() {
         return this.elt.isTagged(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2a04cd2a-ecae-4f28-87eb-5f3701166b3e")
+    @objid ("4faacf58-165e-42b9-bb6b-99ca547805e6")
     public void setSwInteractionResource_Link_isIntraMemoryPartitionInteraction(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT, this.elt);
@@ -193,7 +193,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f4338a7a-82ef-4e36-996f-14e582c15bed")
+    @objid ("2ffbf6e7-574f-4bc9-be7f-28075af67c62")
     public void setSwInteractionResource_Link_waitingPolicyElements(final List<String> values) {
         this.elt.putTagValues(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGPOLICYELEMENTS_TAGTYPE_ELT, values);
     }
@@ -203,7 +203,7 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8482f0ec-19c7-465a-b0f5-927fd2e35f04")
+    @objid ("cc00e173-ebf1-4705-ae9a-31c5ddf30f8d")
     public void setSwInteractionResource_Link_waitingQueueCapacity(final String value) {
         this.elt.putTagValue(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGQUEUECAPACITY_TAGTYPE_ELT, value);
     }
@@ -213,40 +213,40 @@ public class SwInteractionResourceLink extends SwResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1c9a2fa9-75f5-4d70-820f-62ab89c072c8")
+    @objid ("355e13dd-3ab7-4310-9f6f-6abde2f153ab")
     public void setSwInteractionResource_Link_waitingQueuePolicy(final String value) {
         this.elt.putTagValue(SwInteractionResourceLink.MdaTypes.SWINTERACTIONRESOURCE_LINK_WAITINGQUEUEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("7505065e-e589-4c99-8a66-b66a0cbb08ef")
+    @objid ("647d5b59-97ef-4f90-9ea6-1d37f5e38b4c")
     protected SwInteractionResourceLink(final Link elt) {
         super(elt);
     }
 
     @objid ("8aa18aa2-5949-41da-8e33-7752574f1cd0")
     public static final class MdaTypes {
-        @objid ("3a4c5818-1b9b-4f4b-8748-49fe7c109aaa")
+        @objid ("de12ac5f-2da3-42d7-8cae-7bd3dc342fdb")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("9e0a50af-8e4e-4388-987b-2323bba5e60b")
+        @objid ("cb032b56-3a98-4308-8516-350c4e238c80")
         public static TagType SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT;
 
-        @objid ("e94c00f4-f909-4c89-b15c-dc5665a0bbbe")
+        @objid ("46a7da8a-aa9f-4c5e-b0f4-a3dad29a9b4d")
         public static TagType SWINTERACTIONRESOURCE_LINK_WAITINGQUEUEPOLICY_TAGTYPE_ELT;
 
-        @objid ("0b4664f5-04ef-4016-b43e-cc036769a073")
+        @objid ("a25bd374-ba76-4c54-8c48-80295e06d8e9")
         public static TagType SWINTERACTIONRESOURCE_LINK_WAITINGQUEUECAPACITY_TAGTYPE_ELT;
 
-        @objid ("8c6a3b6a-3f3b-46ff-978e-1286147bd70a")
+        @objid ("f495ddc1-f138-49cf-8031-893b6fc28afd")
         public static TagType SWINTERACTIONRESOURCE_LINK_WAITINGPOLICYELEMENTS_TAGTYPE_ELT;
 
-        @objid ("65312812-6b97-4bc0-9c70-d30ade5a7e2c")
+        @objid ("9f6751e8-50a5-4427-b66f-7ec250d1acea")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("47c497ce-0172-4f84-8532-7bb6e2478bfb")
+        @objid ("9ee5fb1e-3b9b-4371-916b-cbe59d16846d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("bad175a6-16ff-4ef2-8fd1-e2f0fe247753")
+        @objid ("6b22ba18-3290-4886-8e54-d391f370f059")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "020c0c78-0ccf-11df-8525-001302895b2b");
             SWINTERACTIONRESOURCE_LINK_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "020c0c7f-0ccf-11df-8525-001302895b2b");

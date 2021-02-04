@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.associationend;
 
@@ -34,42 +34,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("234f5826-535a-4773-b839-dc1d20db6dd1")
 public class SchedulerAssociationEnd extends ResourceAssociationEnd {
-    @objid ("33c73f28-b090-4179-ba61-f2852f0fec3e")
+    @objid ("a14611c2-59b9-4157-b907-6064dbcc77ef")
     public static final String STEREOTYPE_NAME = "Scheduler_AssociationEnd";
 
-    @objid ("301d6a67-1936-44af-be7e-43bdb4da5789")
+    @objid ("71c2ac8b-021d-45a2-b6a5-135bec944668")
     public static final String SCHEDULER_ASSOCIATIONEND_HOST_TAGTYPE = "Scheduler_AssociationEnd_host";
 
-    @objid ("0599427a-5078-4396-903d-296121e0e4e9")
+    @objid ("f4959bcd-df8f-4c4f-99e9-0ce93adaa812")
     public static final String SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE = "Scheduler_AssociationEnd_isPreemptible";
 
-    @objid ("e97dc337-db0e-4fb0-8ce6-2b3a850b5f02")
+    @objid ("b8870179-130a-45ee-bbd3-bf9db7952ede")
     public static final String SCHEDULER_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE = "Scheduler_AssociationEnd_otherSchedPolicy";
 
-    @objid ("39176cd2-a1e7-4802-98b9-90d1beb17506")
+    @objid ("c14e13e4-cdd0-4a8c-b07e-670ce9139466")
     public static final String SCHEDULER_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE = "Scheduler_AssociationEnd_processingUnits";
 
-    @objid ("617b37b4-625f-4267-b4c7-de2bc42fe21d")
+    @objid ("992c6b48-af84-4566-ad43-216ca9ed6fcd")
     public static final String SCHEDULER_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE = "Scheduler_AssociationEnd_protectedSharedResources";
 
-    @objid ("44284040-3c50-4648-b22e-bb6408263efe")
+    @objid ("93956157-f746-4425-9641-ff11574eb660")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE = "Scheduler_AssociationEnd_schedPolicy";
 
-    @objid ("8289f2c0-b5da-4507-bcd9-07f19ef7f062")
+    @objid ("da4dd6ed-df44-4a8f-8973-13462141a107")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE = "Scheduler_AssociationEnd_schedulableResources";
 
-    @objid ("d33f54c3-1db8-48a2-872b-f5676ea43c83")
+    @objid ("8cd5d8d4-9a0b-4808-bcd2-1328da7553e2")
     public static final String SCHEDULER_ASSOCIATIONEND_SCHEDULE_TAGTYPE = "Scheduler_AssociationEnd_schedule";
 
     /**
-     * Tells whether a {@link SchedulerAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << Scheduler_AssociationEnd >>. 
+     * Tells whether a {@link SchedulerAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << Scheduler_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4df2080d-48b9-4304-a6d6-158316e2f7d7")
+    @objid ("6087192e-6322-49ac-9d8e-162d97d26161")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerAssociationEnd.STEREOTYPE_NAME));
     }
@@ -79,21 +79,21 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * 
      * @return a {@link SchedulerAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("53e41c64-e260-4685-9051-f2c68cc1b90d")
+    @objid ("c0690863-c386-428e-a1bd-34163098691d")
     public static SchedulerAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerAssociationEnd.STEREOTYPE_NAME);
         return SchedulerAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link SchedulerAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << Scheduler_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SchedulerAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << Scheduler_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link SchedulerAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("4ca6a5a1-53da-4d6e-adbf-47927ee019cc")
+    @objid ("805a2fd1-9faa-41ca-adc1-ca8d5da20285")
     public static SchedulerAssociationEnd instantiate(final AssociationEnd obj) {
         return SchedulerAssociationEnd.canInstantiate(obj) ? new SchedulerAssociationEnd(obj) : null;
     }
@@ -106,7 +106,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * @return a {@link SchedulerAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("f98300bf-8ba0-4bc9-8b90-61394cd102d6")
+    @objid ("b7448b8f-6cac-4752-919c-98ab1175a3c2")
     public static SchedulerAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (SchedulerAssociationEnd.canInstantiate(obj))
         	return new SchedulerAssociationEnd(obj);
@@ -114,7 +114,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
         	throw new IllegalArgumentException("SchedulerAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("49cd6d76-37e6-43d9-8fef-3bae0db759ad")
+    @objid ("47ce6ece-7339-4672-9be5-94f5a3281306")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -134,7 +134,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("fc4e3373-120d-4c49-a0fc-cc6cfe14157f")
+    @objid ("683b289e-2d45-4dae-8d72-e782ea5cdf7d")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -145,7 +145,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("db031fc2-e75a-4919-b896-d473963dbe04")
+    @objid ("6e811ca4-20ae-4a52-9032-1d9dda1ca4a2")
     public String getScheduler_AssociationEnd_host() {
         return this.elt.getTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_HOST_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("35b5f770-c43b-4145-95df-1a243679ff36")
+    @objid ("790051f6-2e1a-4af1-8a78-ee78ceb83ca2")
     public String getScheduler_AssociationEnd_otherSchedPolicy() {
         return this.elt.getTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("106683f1-dec3-40ed-98b5-e0cc4b71e338")
+    @objid ("454714f3-f728-469e-b77f-ba2caf889691")
     public List<String> getScheduler_AssociationEnd_processingUnits() {
         return this.elt.getTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("456032df-a2c6-422e-96ad-435dcdd52163")
+    @objid ("1aba387d-464d-446d-9656-0500fd83ead2")
     public List<String> getScheduler_AssociationEnd_protectedSharedResources() {
         return this.elt.getTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("66240ecc-e2ea-4940-aa62-421af4638585")
+    @objid ("8f3e2e96-106e-4f6b-b54e-13da22facba0")
     public String getScheduler_AssociationEnd_schedPolicy() {
         return this.elt.getTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("52a28b3c-3fcc-4fd3-add7-b687912c3e54")
+    @objid ("9feb9900-fa75-4dea-9dcb-4b8067dfe172")
     public List<String> getScheduler_AssociationEnd_schedulableResources() {
         return this.elt.getTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -205,12 +205,12 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d8fb5316-c86e-4e09-bd2f-5288c4008494")
+    @objid ("251ddb7b-905a-4faf-ad8c-29b2df591075")
     public String getScheduler_AssociationEnd_schedule() {
         return this.elt.getTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT);
     }
 
-    @objid ("0b43c287-1672-4d53-b6fd-da77756825fd")
+    @objid ("b2e1411c-d760-4915-8a76-9c53313622e3")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -221,7 +221,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c3f097f7-de21-45c9-8cf9-aaf46253c8fc")
+    @objid ("bfdf89ea-9266-47dd-862e-d99783e5a8a8")
     public boolean isScheduler_AssociationEnd_isPreemptible() {
         return this.elt.isTagged(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -231,7 +231,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("47ecf559-d282-49b6-9ba9-b4f8dd07bc90")
+    @objid ("3473c7ca-9adc-49cb-aace-057ff79edf60")
     public void setScheduler_AssociationEnd_host(final String value) {
         this.elt.putTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_HOST_TAGTYPE_ELT, value);
     }
@@ -241,7 +241,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("794b69b6-e53b-411e-a563-3897482018e8")
+    @objid ("ae5e072f-8bf6-46d1-834c-a4e31222dbc9")
     public void setScheduler_AssociationEnd_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -254,7 +254,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4573754f-caa2-4bc5-bc1a-5b0eabbac47a")
+    @objid ("dd0076e4-efaa-47fb-a02a-d96a6ca29267")
     public void setScheduler_AssociationEnd_otherSchedPolicy(final String value) {
         this.elt.putTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -264,7 +264,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("675d2848-5ee3-4f54-b715-c9eb8ba20f38")
+    @objid ("53134fcc-bc31-41f6-b820-d2de52e2aecc")
     public void setScheduler_AssociationEnd_processingUnits(final List<String> values) {
         this.elt.putTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -274,7 +274,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2855f1b4-5326-4547-9880-85930265b22c")
+    @objid ("9e3675c7-a754-4749-a7ed-292a0e7bbcd3")
     public void setScheduler_AssociationEnd_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -284,7 +284,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f7766265-1912-4610-b529-722b250a4e64")
+    @objid ("09e7fa04-0b6d-4ddf-872e-c3fbbbad59bd")
     public void setScheduler_AssociationEnd_schedPolicy(final String value) {
         this.elt.putTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -294,7 +294,7 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3deaf8db-ee0b-497a-936e-9e0eebc7476b")
+    @objid ("9e0d43b0-4157-4676-b63a-d8b82729db4c")
     public void setScheduler_AssociationEnd_schedulableResources(final List<String> values) {
         this.elt.putTagValues(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -304,52 +304,52 @@ public class SchedulerAssociationEnd extends ResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3011d34d-353a-4002-93c4-9641fdd0870d")
+    @objid ("d0215adb-b674-4312-a96e-a32788f4cd9f")
     public void setScheduler_AssociationEnd_schedule(final String value) {
         this.elt.putTagValue(SchedulerAssociationEnd.MdaTypes.SCHEDULER_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT, value);
     }
 
-    @objid ("c7c57824-0426-45fb-babf-483411df29ca")
+    @objid ("7d339ae9-f508-4c08-94b6-777735183da0")
     protected SchedulerAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("797a9eb3-d015-4ecd-898b-b5072268d6fd")
     public static final class MdaTypes {
-        @objid ("6830ffde-5aa2-44e9-85c6-72f67495be70")
+        @objid ("d7a71737-2b88-4455-b5d6-bed1c652b7c3")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("ee7fc6a9-8803-4a7f-b76c-cae7321c954f")
+        @objid ("2c1de132-28b0-422a-95f1-aab2fda6a060")
         public static TagType SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("1122c154-6647-43b9-88ad-3e9a7f311cc6")
+        @objid ("61c6ad40-d603-4ace-8951-0baa607db6e1")
         public static TagType SCHEDULER_ASSOCIATIONEND_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("94aa59aa-4741-45c6-ac00-3dd078b6ac27")
+        @objid ("71df671f-f9f3-4412-a92c-6e96316302d4")
         public static TagType SCHEDULER_ASSOCIATIONEND_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("07eb4e56-5636-4cd2-8247-3d886fb4bb9c")
+        @objid ("c4d89663-670b-4b82-b067-831a9b12bcaa")
         public static TagType SCHEDULER_ASSOCIATIONEND_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("66924761-9db5-486f-a412-4309fd836d60")
+        @objid ("b9cf3b69-2b16-447c-9184-17b9c74691df")
         public static TagType SCHEDULER_ASSOCIATIONEND_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("a05760fc-1731-4ee7-8b88-6e349b01dc15")
+        @objid ("126eab2f-7f0d-4fd3-b574-8b151d84a964")
         public static TagType SCHEDULER_ASSOCIATIONEND_HOST_TAGTYPE_ELT;
 
-        @objid ("d9ce916e-fc7c-4616-b4d0-b27dc1386231")
+        @objid ("15f49866-4e46-4753-a951-98d3774166dd")
         public static TagType SCHEDULER_ASSOCIATIONEND_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("9fe91739-085e-4e50-bb69-41b413056dd6")
+        @objid ("4a01f09c-613b-4a1d-aa1b-820ae583e7ed")
         public static TagType SCHEDULER_ASSOCIATIONEND_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("7ca991ce-27e1-407d-8550-eb101d591f12")
+        @objid ("31683d34-36a6-46a2-83db-dad7b9a194fc")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("36202bab-b863-48ac-96b1-c7b07de970d8")
+        @objid ("d4d99435-61a5-4c27-8afe-a15b0f389838")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("7ede931b-28b4-4574-b7c6-3a2ad943a0a3")
+        @objid ("a8f77b97-a629-4472-aabb-06036de17d11")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0025b31c-0ccf-11df-8525-001302895b2b");
             SCHEDULER_ASSOCIATIONEND_ISPREEMPTIBLE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0025b323-0ccf-11df-8525-001302895b2b");

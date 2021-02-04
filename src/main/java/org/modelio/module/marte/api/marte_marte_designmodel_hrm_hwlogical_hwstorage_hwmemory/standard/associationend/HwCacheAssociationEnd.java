@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwmemory.standard.associationend;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f68c9312-49c8-48fd-a0f1-6a271be10e79")
 public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
-    @objid ("6b499168-6a12-4bdc-b488-8717ae32dd60")
+    @objid ("1813e432-65b4-49ef-acbd-d486f44f6347")
     public static final String STEREOTYPE_NAME = "HwCache_AssociationEnd";
 
-    @objid ("59a08771-6599-4b7a-9a6c-f20bda55620b")
+    @objid ("a5a77afa-7146-476b-8750-0e6e366d56e2")
     public static final String HWCACHE_ASSOCIATIONEND_LEVEL_TAGTYPE = "HwCache_AssociationEnd_level";
 
-    @objid ("030a1f81-76c0-4e02-8152-2c2467638ced")
+    @objid ("c3db060a-7a60-4c2c-8ca1-aef5acd8bcad")
     public static final String HWCACHE_ASSOCIATIONEND_REPL_POLICY_TAGTYPE = "HwCache_AssociationEnd_repl_Policy";
 
-    @objid ("f03b9e10-9d19-454b-97ba-e7a457701a92")
+    @objid ("674c059d-cd08-4def-b28f-e20b9537af13")
     public static final String HWCACHE_ASSOCIATIONEND_STRUCTURE_TAGTYPE = "HwCache_AssociationEnd_structure";
 
-    @objid ("edd5ae90-6e4b-4186-b546-120f3ea08172")
+    @objid ("d452fdfe-3dfc-4fb8-bea7-b7472e356b32")
     public static final String HWCACHE_ASSOCIATIONEND_TYPE_TAGTYPE = "HwCache_AssociationEnd_type";
 
-    @objid ("65bcc3fd-ef3f-463a-a972-50e5e5014edc")
+    @objid ("fa410e22-df44-4292-b0c9-ef81718797f7")
     public static final String HWCACHE_ASSOCIATIONEND_WRITEPOLICY_TAGTYPE = "HwCache_AssociationEnd_writePolicy";
 
     /**
-     * Tells whether a {@link HwCacheAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwCache_AssociationEnd >>. 
+     * Tells whether a {@link HwCacheAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwCache_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e16d23d6-d71b-4d5a-8bd6-bc1e62cf7803")
+    @objid ("99b7e9f6-ac47-4e6b-99d0-d0ad1d0acf96")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwCacheAssociationEnd.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * 
      * @return a {@link HwCacheAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("c86657ba-31f6-4f39-b3f0-59a306c23fa2")
+    @objid ("4a41398e-7046-49d2-919b-c2167298067d")
     public static HwCacheAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwCacheAssociationEnd.STEREOTYPE_NAME);
         return HwCacheAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwCacheAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwCache_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwCacheAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwCache_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwCacheAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("d5dca439-30f1-4871-b596-2b4689448dde")
+    @objid ("9ef56242-cdda-4f36-aa1e-5f2b83bd9725")
     public static HwCacheAssociationEnd instantiate(final AssociationEnd obj) {
         return HwCacheAssociationEnd.canInstantiate(obj) ? new HwCacheAssociationEnd(obj) : null;
     }
@@ -96,7 +96,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * @return a {@link HwCacheAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("be2f9350-564d-4fd9-82ab-85377469ed33")
+    @objid ("7f85fd67-d73b-4893-a3bc-928f04558667")
     public static HwCacheAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwCacheAssociationEnd.canInstantiate(obj))
         	return new HwCacheAssociationEnd(obj);
@@ -104,7 +104,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
         	throw new IllegalArgumentException("HwCacheAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("263cf589-a733-412e-9d50-7f600c0eb959")
+    @objid ("cce23f53-5049-4370-af24-9671cfb8d42e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +124,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("2ca6ca42-584f-42d1-9b4e-b4ef78bb2e6c")
+    @objid ("4ad007dc-114f-49db-9eb2-d04084ef06bc")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -135,7 +135,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3334cc5a-be89-42f5-957e-7e5233d04a1e")
+    @objid ("85df1bb0-5dd9-46ab-8056-db555ac3ba3c")
     public String getHwCache_AssociationEnd_level() {
         return this.elt.getTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_LEVEL_TAGTYPE_ELT);
     }
@@ -145,7 +145,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("948d6b74-4467-4b05-a87c-a1c2f92ff4c0")
+    @objid ("819063cd-1a4c-458e-8ee7-103969b084c9")
     public String getHwCache_AssociationEnd_repl_Policy() {
         return this.elt.getTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_REPL_POLICY_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("363e29f4-74eb-4d59-973e-4a83756c6802")
+    @objid ("09652fce-93e0-4efa-863f-ea2c5bcd732c")
     public String getHwCache_AssociationEnd_structure() {
         return this.elt.getTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_STRUCTURE_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bce60230-ef71-45a6-80e4-5c6a3a93305f")
+    @objid ("8ff598a5-9a06-4d79-93dd-786a25bb29a4")
     public String getHwCache_AssociationEnd_type() {
         return this.elt.getTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_TYPE_TAGTYPE_ELT);
     }
@@ -175,12 +175,12 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b785dd7d-9794-40a4-b27a-d1d93615c00c")
+    @objid ("869e0ad8-ffa9-42a6-a588-34ec50a93fd6")
     public String getHwCache_AssociationEnd_writePolicy() {
         return this.elt.getTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_WRITEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("7dd2e849-f90b-4b97-8f68-5ddb8b82633d")
+    @objid ("ec55b36c-6fa4-4bee-a9c2-2b228eb6c50c")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -191,7 +191,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0220b247-fe9c-4f56-9cd1-18dab0a431c8")
+    @objid ("ada5753e-580e-4ef8-a7ca-a79b0d3fe1e4")
     public void setHwCache_AssociationEnd_level(final String value) {
         this.elt.putTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_LEVEL_TAGTYPE_ELT, value);
     }
@@ -201,7 +201,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d6330004-572f-4dba-9f0c-9926b1ccd56e")
+    @objid ("a393bf7c-3f59-4758-8df3-76b4f792eb4f")
     public void setHwCache_AssociationEnd_repl_Policy(final String value) {
         this.elt.putTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_REPL_POLICY_TAGTYPE_ELT, value);
     }
@@ -211,7 +211,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c17d2141-2f54-4b43-8d34-de6c6ec04c51")
+    @objid ("d5cceda9-9d77-4be7-bacc-6e6ff7f5b329")
     public void setHwCache_AssociationEnd_structure(final String value) {
         this.elt.putTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_STRUCTURE_TAGTYPE_ELT, value);
     }
@@ -221,7 +221,7 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d14a0126-1284-45b4-801a-8e0bb23dc012")
+    @objid ("0bcf6155-9bf0-4daf-be15-f63722e546fe")
     public void setHwCache_AssociationEnd_type(final String value) {
         this.elt.putTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_TYPE_TAGTYPE_ELT, value);
     }
@@ -231,43 +231,43 @@ public class HwCacheAssociationEnd extends HwMemoryAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3cdf0c89-d0b8-49be-ad21-074abc46ca9d")
+    @objid ("a27cb7b8-fb8b-47a1-a20f-431117a62f76")
     public void setHwCache_AssociationEnd_writePolicy(final String value) {
         this.elt.putTagValue(HwCacheAssociationEnd.MdaTypes.HWCACHE_ASSOCIATIONEND_WRITEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("da88f652-b757-46b8-85bc-1d594918e898")
+    @objid ("2e03deec-5036-4c44-85be-9c72197b6e4c")
     protected HwCacheAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("3bcd3f2a-c638-4761-8ce3-badef1598de0")
     public static final class MdaTypes {
-        @objid ("2cb8c2e9-6e1a-4c5a-b397-4a34648e4d18")
+        @objid ("ada8bbb2-a29a-4bea-880c-10da09952bd8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b3cb751d-ad23-4d03-bda1-a8550b6720f6")
+        @objid ("8d348436-fa03-4e3c-a2f6-41f4aa15b63e")
         public static TagType HWCACHE_ASSOCIATIONEND_LEVEL_TAGTYPE_ELT;
 
-        @objid ("d7ad2884-cfdc-4b16-b11d-1554b5dd3d3a")
+        @objid ("52c5340e-581d-4f81-95fc-9bd1943e0e8c")
         public static TagType HWCACHE_ASSOCIATIONEND_TYPE_TAGTYPE_ELT;
 
-        @objid ("144bc598-b6fa-43e0-b9c1-2fcaa3a093b5")
+        @objid ("b1339c0b-399e-48d6-80c0-761ba491088f")
         public static TagType HWCACHE_ASSOCIATIONEND_STRUCTURE_TAGTYPE_ELT;
 
-        @objid ("af312224-ee43-4ed1-a292-c6f4f688b7da")
+        @objid ("0afb78b5-e890-4c91-b277-ac8e38ca41cd")
         public static TagType HWCACHE_ASSOCIATIONEND_REPL_POLICY_TAGTYPE_ELT;
 
-        @objid ("8ebe937e-e0fe-49a0-9805-c1b544c4256b")
+        @objid ("be54b0b7-6a73-4ac1-9707-71c0c0382be8")
         public static TagType HWCACHE_ASSOCIATIONEND_WRITEPOLICY_TAGTYPE_ELT;
 
-        @objid ("9cc2a7a4-9d14-4bbe-9add-9b8861dac2dc")
+        @objid ("c60ee349-2143-4c16-9468-16900f166367")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e1198393-6653-4bb0-ba90-f2d2e13d1d23")
+        @objid ("95fbc4c0-8a90-4193-9359-d553a3a523e8")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e5f5a2df-4530-48de-9b28-acbefb14d8b1")
+        @objid ("46139d2e-888a-4b39-b01f-caa598b7cccf")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "015479ca-0ccf-11df-8525-001302895b2b");
             HWCACHE_ASSOCIATIONEND_LEVEL_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "015479d1-0ccf-11df-8525-001302895b2b");

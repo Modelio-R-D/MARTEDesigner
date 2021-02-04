@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwgeneral.standard.classifier;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("630b0429-bc50-4701-90fa-0d67ec455cd0")
 public class HwResourceClassifier extends ResourceClassifier {
-    @objid ("d3904bf6-04e6-4654-b30c-eea416712474")
+    @objid ("97b839f9-2a12-4133-aeaa-fc2bbb7588f7")
     public static final String STEREOTYPE_NAME = "HwResource_Classifier";
 
-    @objid ("1bede8ef-af6b-44f6-8f76-03fd5c07b6b7")
+    @objid ("7460880f-22cf-4a40-8563-784680421b95")
     public static final String HWRESOURCE_CLASSIFIER_DESCRIPTION_TAGTYPE = "HwResource_Classifier_description";
 
-    @objid ("6b36e307-da8f-42d4-97b3-477b5fc5ed9b")
+    @objid ("4bcf28f3-ae2b-4400-9a8e-c2ff5e2a8025")
     public static final String HWRESOURCE_CLASSIFIER_ENDPOINTS_TAGTYPE = "HwResource_Classifier_endPoints";
 
-    @objid ("22ebc458-d3bd-4a34-9e3b-e9c96cf2569d")
+    @objid ("b38d5bde-7b2d-40a3-a49e-672ad97801a1")
     public static final String HWRESOURCE_CLASSIFIER_FREQUENCY_TAGTYPE = "HwResource_Classifier_frequency";
 
-    @objid ("a7cd400d-34ce-4ac5-98e5-57d15fea20c3")
+    @objid ("7027c996-28b8-4c5e-9643-fb3bba3f42e8")
     public static final String HWRESOURCE_CLASSIFIER_OWNEDHW_TAGTYPE = "HwResource_Classifier_ownedHW";
 
-    @objid ("b346eda6-67c1-491e-807e-0dc01e7a0660")
+    @objid ("529e380e-64af-4a95-9197-5d4690416aa6")
     public static final String HWRESOURCE_CLASSIFIER_P_HW_SERVICES_TAGTYPE = "HwResource_Classifier_p_HW_Services";
 
-    @objid ("effd5736-57e5-41df-9816-d2940df57355")
+    @objid ("0dcccfa4-49f1-4707-b3ec-dbf8e97f2290")
     public static final String HWRESOURCE_CLASSIFIER_R_HW_SERVICES_TAGTYPE = "HwResource_Classifier_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwResource_Classifier >>. 
+     * Tells whether a {@link HwResourceClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwResource_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1594280c-7d8c-457d-a64b-bf5e2e3d101d")
+    @objid ("178fe095-032c-42de-833e-6c63e6783ad2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceClassifier.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class HwResourceClassifier extends ResourceClassifier {
      * 
      * @return a {@link HwResourceClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("07d94f32-4c84-4edc-806a-46a8c7990edf")
+    @objid ("7e4408ae-573a-4285-843b-ae2fc31b8c79")
     public static HwResourceClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceClassifier.STEREOTYPE_NAME);
         return HwResourceClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwResourceClassifier} proxy from a {@link Classifier} stereotyped << HwResource_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwResourceClassifier} proxy from a {@link Classifier} stereotyped << HwResource_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwResourceClassifier} proxy or <i>null</i>.
      */
-    @objid ("ea21b685-cdca-4739-92f1-6886d774a840")
+    @objid ("e0ec3f97-5e94-4638-8a14-a817ef4c1f34")
     public static HwResourceClassifier instantiate(final Classifier obj) {
         return HwResourceClassifier.canInstantiate(obj) ? new HwResourceClassifier(obj) : null;
     }
@@ -101,7 +101,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * @return a {@link HwResourceClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("89a44b1c-040d-4614-a457-a4b24df9cdda")
+    @objid ("b21b79b7-82f6-482c-9a25-90a85fc59fd6")
     public static HwResourceClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwResourceClassifier.canInstantiate(obj))
         	return new HwResourceClassifier(obj);
@@ -109,7 +109,7 @@ public class HwResourceClassifier extends ResourceClassifier {
         	throw new IllegalArgumentException("HwResourceClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("370b6bfb-f51e-4bc3-8925-0fed33bb4e4d")
+    @objid ("8d2deb7a-304e-47f8-b7da-651a18882271")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("4ef6e09c-c1e4-4554-8a68-15e38685b72e")
+    @objid ("139eff09-2e94-43f9-b2b7-56172fc6d393")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -140,7 +140,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b38041bc-cd7a-41f2-9943-219b48fb9893")
+    @objid ("2c38bfbf-7f87-4227-a07d-49119e59fcd7")
     public String getHwResource_Classifier_description() {
         return this.elt.getTagValue(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("092c21ee-b574-4981-a2db-b29f12941ead")
+    @objid ("186c7fd0-dec2-4b44-b3ed-c7f6f8103c1f")
     public List<String> getHwResource_Classifier_endPoints() {
         return this.elt.getTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c084fe43-c90b-4f78-a0ed-54c506f09538")
+    @objid ("9374add0-8921-489a-8cc0-189da43ca8fa")
     public String getHwResource_Classifier_frequency() {
         return this.elt.getTagValue(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1bb33301-f9dd-4a4e-a59d-f53ef6e39497")
+    @objid ("c796da83-64e8-4fa6-9c9b-5ccd8563fe52")
     public List<String> getHwResource_Classifier_ownedHW() {
         return this.elt.getTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("51ef0489-f059-405b-8527-03a52aa619ff")
+    @objid ("11d2cb5d-1edc-4ea3-8c93-65927dd97d3e")
     public List<String> getHwResource_Classifier_p_HW_Services() {
         return this.elt.getTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8dff369a-748b-438b-a40e-c7d2f01c855f")
+    @objid ("62add501-92be-4a5c-8991-9d0fe275784f")
     public List<String> getHwResource_Classifier_r_HW_Services() {
         return this.elt.getTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("1b09d4fc-9391-4a84-8ef2-94744d823d4a")
+    @objid ("b64f91ae-3870-412b-8cdb-af79a96bcf24")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b3bd7748-d5e6-48d6-b31f-2851cccf6ba4")
+    @objid ("084a30cd-4024-4bee-b5e6-b94cb6d48c06")
     public void setHwResource_Classifier_description(final String value) {
         this.elt.putTagValue(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -216,7 +216,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8b1997ea-58dd-405c-b01e-c50dd4228196")
+    @objid ("2521ea36-8f6d-420f-8982-bd94e22a2a5c")
     public void setHwResource_Classifier_endPoints(final List<String> values) {
         this.elt.putTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -226,7 +226,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("97a0309c-44bb-40d2-99c8-a865c6b6b8dd")
+    @objid ("68c948ed-fe8e-49d5-b0e2-31b200c743bc")
     public void setHwResource_Classifier_frequency(final String value) {
         this.elt.putTagValue(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +236,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5a7c65d1-68f1-44a7-89b6-7d81ce8b9203")
+    @objid ("de50ab51-2db1-4fb7-a233-ffcaaeba33da")
     public void setHwResource_Classifier_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("06d8f0ab-80fb-4deb-b148-bfaddbf23ec7")
+    @objid ("ed386e86-a71f-44b9-b8d5-d25c985eb3ab")
     public void setHwResource_Classifier_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +256,46 @@ public class HwResourceClassifier extends ResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("08a5456e-a520-44e4-8055-f764d485f782")
+    @objid ("8d9e31b1-2a7d-4e27-a13c-9c6e3b17b65f")
     public void setHwResource_Classifier_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwResourceClassifier.MdaTypes.HWRESOURCE_CLASSIFIER_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("afc642fc-452f-43db-9d5d-e97b3e314baf")
+    @objid ("02d5dfe4-63ae-4c9b-baf5-5a74c14dfce6")
     protected HwResourceClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("3a568f6c-ca6a-4cd2-9c90-c1adc0afe05a")
     public static final class MdaTypes {
-        @objid ("7a18787f-e1ef-4d8c-828e-f6e76a92098a")
+        @objid ("3bf85dce-c287-45e5-85e5-19b57799be1a")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4bc3222a-29fa-4af1-8e1c-8843db37c060")
+        @objid ("b2986f0c-e426-4fd2-98ea-919f7d34762c")
         public static TagType HWRESOURCE_CLASSIFIER_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("e576f7af-c43e-4a1e-bf30-423101bd8461")
+        @objid ("faece743-f32b-4906-a5cc-63fdead17892")
         public static TagType HWRESOURCE_CLASSIFIER_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("911d06fa-2bd8-4a2b-a5e1-82b609b5aec7")
+        @objid ("1b281958-22ab-4030-a358-ccf682797481")
         public static TagType HWRESOURCE_CLASSIFIER_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("d11e5093-cbc6-4331-818c-c1512a0e779b")
+        @objid ("dd3dd40b-2991-4ed4-be76-966b131262ff")
         public static TagType HWRESOURCE_CLASSIFIER_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("74072ea0-7e50-4d0b-8e6c-d3d939466403")
+        @objid ("cec7b9b5-31e8-437d-8bf1-bc493df544ba")
         public static TagType HWRESOURCE_CLASSIFIER_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("55d9c2a0-075e-4a12-832a-e405feddc74f")
+        @objid ("dd9b852d-4f1f-4e8e-9315-05dcc53ec4c9")
         public static TagType HWRESOURCE_CLASSIFIER_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("b4979187-677a-48a4-bf93-e0fd91c91919")
+        @objid ("6b11cc04-62d0-455c-98a5-c5a661481831")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c220eef3-435c-4ae3-a3dc-58ec7f7e5e7a")
+        @objid ("ad6ecc18-a96b-4590-befc-e3c791a00eba")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b8eba7be-9091-491f-9b79-3df29809983b")
+        @objid ("8591f66d-5163-4a5b-95a4-23dfc1422c7a")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "5b789d55-1014-11df-86fe-0014222a9f79");
             HWRESOURCE_CLASSIFIER_DESCRIPTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "735283b2-1014-11df-86fe-0014222a9f79");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwstoragemanager.standard.attribute;
 
@@ -35,39 +35,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d2a047a8-17a4-48b5-a148-371c8d01eb91")
 public class HwStorageManagerAttribute extends StorageResourceAttribute {
-    @objid ("b0931f04-310b-40cd-9af0-b1df2a84e42c")
+    @objid ("0fc7e1f9-8f13-4d1d-89cf-a2a8ffa06787")
     public static final String STEREOTYPE_NAME = "HwStorageManager_Attribute";
 
-    @objid ("11d31eee-fef2-492b-a691-7f2d182eba7d")
+    @objid ("10303f72-fd8b-4f26-a8ee-da117e59f1a2")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_DESCRIPTION_TAGTYPE = "HwStorageManager_Attribute_description";
 
-    @objid ("af343f60-98b1-4746-b2ca-4c0d49080849")
+    @objid ("16f78ff7-f2ad-4ee9-a1c4-43f9d8cbb01c")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_ENDPOINTS_TAGTYPE = "HwStorageManager_Attribute_endPoints";
 
-    @objid ("34385173-9bf5-4083-a3ec-9ed6a4ac5ca7")
+    @objid ("d7f2c2da-a735-4eba-b806-244ab23110c3")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_FREQUENCY_TAGTYPE = "HwStorageManager_Attribute_frequency";
 
-    @objid ("d09754a5-cd26-4868-a4c5-c7f34b84eb4c")
+    @objid ("699559ba-c1ae-475f-8951-a3313e239a50")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES_TAGTYPE = "HwStorageManager_Attribute_managedMemories";
 
-    @objid ("67ce1f83-0117-459c-a9e7-dcb02acd1962")
+    @objid ("a7916236-d18b-4147-8362-dc526c8b9508")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_OWNEDHW_TAGTYPE = "HwStorageManager_Attribute_ownedHW";
 
-    @objid ("795acbd0-8c15-4f39-82bd-bb519a6fd958")
+    @objid ("58069331-a0e5-4183-9c6c-47a98cccce71")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_P_HW_SERVICES_TAGTYPE = "HwStorageManager_Attribute_p_HW_Services";
 
-    @objid ("dadb9d36-fc84-4295-9f88-451fc1e3ae98")
+    @objid ("990a7fc1-b184-4fcf-9b1f-abe7aec70604")
     public static final String HWSTORAGEMANAGER_ATTRIBUTE_R_HW_SERVICES_TAGTYPE = "HwStorageManager_Attribute_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwStorageManagerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwStorageManager_Attribute >>. 
+     * Tells whether a {@link HwStorageManagerAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << HwStorageManager_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("275e7e7f-22a4-4fe8-9410-53d60fcf09e8")
+    @objid ("b2f103b0-792a-4a51-a4f9-892fe836b06e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwStorageManagerAttribute.STEREOTYPE_NAME));
     }
@@ -77,21 +77,21 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * 
      * @return a {@link HwStorageManagerAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("e6d7139c-0c68-482b-ad55-c990674a55c9")
+    @objid ("ca0e3067-0c32-4d38-a3ab-92c3535c188a")
     public static HwStorageManagerAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwStorageManagerAttribute.STEREOTYPE_NAME);
         return HwStorageManagerAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwStorageManagerAttribute} proxy from a {@link Attribute} stereotyped << HwStorageManager_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwStorageManagerAttribute} proxy from a {@link Attribute} stereotyped << HwStorageManager_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link HwStorageManagerAttribute} proxy or <i>null</i>.
      */
-    @objid ("39bbb46f-b074-496e-9542-49cee4c07204")
+    @objid ("032dafdb-0e69-4a98-b85b-db3ad4060155")
     public static HwStorageManagerAttribute instantiate(final Attribute obj) {
         return HwStorageManagerAttribute.canInstantiate(obj) ? new HwStorageManagerAttribute(obj) : null;
     }
@@ -104,7 +104,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * @return a {@link HwStorageManagerAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c6667a0d-64eb-4791-971b-1db0a0738413")
+    @objid ("7798b92a-56a6-4159-bfb0-4769a7d43953")
     public static HwStorageManagerAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwStorageManagerAttribute.canInstantiate(obj))
         	return new HwStorageManagerAttribute(obj);
@@ -112,7 +112,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
         	throw new IllegalArgumentException("HwStorageManagerAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b027f9d1-bd7f-4ddd-b812-bc623655d39b")
+    @objid ("b6a1777f-18c2-434f-af17-360ea145af8c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -132,7 +132,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("fe86c17e-499c-4a33-b91f-989225e2164d")
+    @objid ("ce34cd7c-8313-4089-9785-7c87ef20dc45")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
@@ -143,7 +143,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d01199e6-8135-4369-b7ab-c5203554266e")
+    @objid ("879cf177-d925-4a90-a617-efd1139d0e7c")
     public String getHwStorageManager_Attribute_description() {
         return this.elt.getTagValue(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -153,7 +153,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("57b5c861-d73a-472c-9ef6-028bbffaf0d3")
+    @objid ("3aeed759-3f12-4987-b01b-aa724d3d0802")
     public List<String> getHwStorageManager_Attribute_endPoints() {
         return this.elt.getTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -163,7 +163,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5dbb27cf-2a37-414f-84c4-afda6db88227")
+    @objid ("936ef279-f360-4e25-bd06-1a2699ee838c")
     public String getHwStorageManager_Attribute_frequency() {
         return this.elt.getTagValue(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT);
     }
@@ -173,7 +173,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8baace64-1a33-4151-89f3-374341c8cd63")
+    @objid ("c720ee2d-4d28-4d32-9f7a-62b9be0bb19f")
     public List<String> getHwStorageManager_Attribute_managedMemories() {
         return this.elt.getTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("e17bd600-3e0f-47e4-9e74-340578d5e7fc")
+    @objid ("84b66cff-73ce-4ca9-b6e6-15e87981b987")
     public List<String> getHwStorageManager_Attribute_ownedHW() {
         return this.elt.getTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cb3d0f26-f126-4384-a7e8-b93a68b90ecc")
+    @objid ("955d0425-9d44-48b5-9184-248233d6e6ac")
     public List<String> getHwStorageManager_Attribute_p_HW_Services() {
         return this.elt.getTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -203,12 +203,12 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("370978ce-0aaf-4239-be46-d1c827f6c3ca")
+    @objid ("952334fb-09bc-4cdf-9e7d-e75382b573c2")
     public List<String> getHwStorageManager_Attribute_r_HW_Services() {
         return this.elt.getTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("99fcc06d-22dc-4820-951d-a823a607f734")
+    @objid ("4a408d0a-e74c-4f5f-9479-d3aca7d3da5d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -219,7 +219,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6d80e8b0-caeb-4d61-b6cb-2eb169d88f67")
+    @objid ("6b27566c-6726-4923-abf6-9f65d23353fa")
     public void setHwStorageManager_Attribute_description(final String value) {
         this.elt.putTagValue(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -229,7 +229,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("db9aa7ea-1330-446d-92db-95321ebf763c")
+    @objid ("e273ac55-a644-44cc-a1e8-59ffc7f6a5b6")
     public void setHwStorageManager_Attribute_endPoints(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -239,7 +239,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fb2d33f8-e77d-4718-8b1b-d391598bf168")
+    @objid ("a3835c70-b75a-49e5-aaa0-555addd6b093")
     public void setHwStorageManager_Attribute_frequency(final String value) {
         this.elt.putTagValue(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -249,7 +249,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c9b24854-4d02-432b-933b-ac43b8cedc97")
+    @objid ("80099f60-0f3d-4e27-b4fb-d248f0c898dd")
     public void setHwStorageManager_Attribute_managedMemories(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES_TAGTYPE_ELT, values);
     }
@@ -259,7 +259,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("24e1613d-df48-447f-b77c-57aebc0564ca")
+    @objid ("e346fbb9-f720-49a6-b6d5-ba98e2996de5")
     public void setHwStorageManager_Attribute_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -269,7 +269,7 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8564b160-baa6-49f6-8991-2d8d3181fdab")
+    @objid ("212ebe3f-c330-43bc-9763-de157560fa37")
     public void setHwStorageManager_Attribute_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -279,49 +279,49 @@ public class HwStorageManagerAttribute extends StorageResourceAttribute {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("be8719ca-214f-456c-b98b-2772b95640f1")
+    @objid ("f838e54f-1537-4fe2-b06b-80077993a297")
     public void setHwStorageManager_Attribute_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwStorageManagerAttribute.MdaTypes.HWSTORAGEMANAGER_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("005ccef1-eab1-42b2-8bbd-cca5c30a67fa")
+    @objid ("b971b8a1-c126-4688-985b-731f1b706816")
     protected HwStorageManagerAttribute(final Attribute elt) {
         super(elt);
     }
 
     @objid ("55f0ee47-7ed2-4b14-8c48-1b44832f2c12")
     public static final class MdaTypes {
-        @objid ("101b66aa-c561-418f-8b24-200a1456c887")
+        @objid ("79e2c9b6-2f58-444b-8030-8078f980b6ae")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("c082746b-7756-460b-a5ba-e23269695c43")
+        @objid ("b74f25ff-ae28-484f-8854-327a3356b523")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES_TAGTYPE_ELT;
 
-        @objid ("0d9c46ce-166e-4e1e-b2d9-91aa7acc7634")
+        @objid ("6b09d870-d794-4e7c-a5c6-11eae249f34d")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("fa5691c8-61e0-4b19-a684-56b58bc74ab1")
+        @objid ("fac6ca0d-a9fe-4cef-9bb6-4a187ccdb84e")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("264532bf-9584-4a8a-8122-3b0734abe1d4")
+        @objid ("748fe781-d667-438c-b48e-10a20209ac3f")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("f6c64027-c6c3-4dcb-9575-168f7a0ba5f4")
+        @objid ("fa3c299e-9783-42f3-ac59-24397d991f4b")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("e2eec59a-57da-4409-bf22-236d3d3baf7d")
+        @objid ("9e66d1e6-3945-4fb3-b32c-51d748af30f5")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("196d1520-0ac0-43bc-8d34-bb02153d71e7")
+        @objid ("bf58804a-dbab-45b8-93bf-85bfedb0b02b")
         public static TagType HWSTORAGEMANAGER_ATTRIBUTE_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("57f15b26-77a1-451d-bf43-a4320f77c84a")
+        @objid ("82d5e81b-6b1b-41b9-a705-534e986b1f63")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f8e1a8ac-0595-4742-9927-3a6d88b8288c")
+        @objid ("f36d3cbd-7768-40bf-a36a-34dc9352fcd9")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("34edfedb-2980-4134-9b10-013ed5f07ebe")
+        @objid ("442e5aab-53a1-4c1d-8359-a7ab1157902e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "017115a4-0ccf-11df-8525-001302895b2b");
             HWSTORAGEMANAGER_ATTRIBUTE_MANAGEDMEMORIES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "017377f7-0ccf-11df-8525-001302895b2b");

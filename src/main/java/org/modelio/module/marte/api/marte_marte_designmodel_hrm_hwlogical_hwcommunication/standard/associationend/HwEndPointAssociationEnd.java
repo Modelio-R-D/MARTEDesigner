@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.associationend;
 
@@ -35,36 +35,36 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("66514926-27ab-49ed-8aad-2c5fb0f4d279")
 public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEnd {
-    @objid ("ed9a388e-5c15-48cd-a552-c9cd8df17aa1")
+    @objid ("84e6598e-ef47-4be9-907b-c863182848dc")
     public static final String STEREOTYPE_NAME = "HwEndPoint_AssociationEnd";
 
-    @objid ("135a9c6a-0bac-4c19-a50b-83ee6588b0a4")
+    @objid ("f9d798c2-a57d-4e4b-ae05-d0a92e573bbf")
     public static final String HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO_TAGTYPE = "HwEndPoint_AssociationEnd_connectedTo";
 
-    @objid ("57d3f9a4-1974-415e-b9dd-3011b0cb24e0")
+    @objid ("d5afe55c-079c-4eaa-9fb4-76b3868a2a3a")
     public static final String HWENDPOINT_ASSOCIATIONEND_DESCRIPTION_TAGTYPE = "HwEndPoint_AssociationEnd_description";
 
-    @objid ("c2d1338d-546d-4f53-a7d6-20598f315a3e")
+    @objid ("49d9a3bd-0a1a-46d5-a476-31d73c8e4a23")
     public static final String HWENDPOINT_ASSOCIATIONEND_FREQUENCY_TAGTYPE = "HwEndPoint_AssociationEnd_frequency";
 
-    @objid ("0e883457-b138-48b2-a0b2-c40186969e09")
+    @objid ("fb949623-fe86-476a-9be1-0ef74362c3e6")
     public static final String HWENDPOINT_ASSOCIATIONEND_OWNEDHW_TAGTYPE = "HwEndPoint_AssociationEnd_ownedHW";
 
-    @objid ("2f82507c-be60-40f0-b558-3c0fbbf421dc")
+    @objid ("e0b8441a-e8ad-4053-bf7f-250b8cf15f26")
     public static final String HWENDPOINT_ASSOCIATIONEND_P_HW_SERVICES_TAGTYPE = "HwEndPoint_AssociationEnd_p_HW_Services";
 
-    @objid ("df6b80ad-7acd-48c8-b2db-0ebe49da4c25")
+    @objid ("40e35894-5484-4368-9736-0e7e19d9677e")
     public static final String HWENDPOINT_ASSOCIATIONEND_R_HW_SERVICES_TAGTYPE = "HwEndPoint_AssociationEnd_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwEndPointAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwEndPoint_AssociationEnd >>. 
+     * Tells whether a {@link HwEndPointAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwEndPoint_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("a2b739fe-5a4b-4c16-89ef-5b391cca1f44")
+    @objid ("fdaff44f-e787-4659-b16b-411a03a5972a")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwEndPointAssociationEnd.STEREOTYPE_NAME));
     }
@@ -74,21 +74,21 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * 
      * @return a {@link HwEndPointAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("6df8e83f-50a2-418e-a5ff-3921427f3b28")
+    @objid ("0b7ab5f6-f8fb-4ca1-816e-ffec1d5b61e5")
     public static HwEndPointAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwEndPointAssociationEnd.STEREOTYPE_NAME);
         return HwEndPointAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwEndPointAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwEndPoint_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwEndPointAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwEndPoint_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwEndPointAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("7775aced-88a0-44b1-a960-f4ffa4e16677")
+    @objid ("db1cfd4c-e0d8-4f0c-bcff-56d270f12302")
     public static HwEndPointAssociationEnd instantiate(final AssociationEnd obj) {
         return HwEndPointAssociationEnd.canInstantiate(obj) ? new HwEndPointAssociationEnd(obj) : null;
     }
@@ -101,7 +101,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * @return a {@link HwEndPointAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("3d6d702f-18fb-4955-865c-d393884d5ddc")
+    @objid ("533c5c0c-8f8e-427f-be4e-52649e712f35")
     public static HwEndPointAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwEndPointAssociationEnd.canInstantiate(obj))
         	return new HwEndPointAssociationEnd(obj);
@@ -109,7 +109,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
         	throw new IllegalArgumentException("HwEndPointAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("7bc1f7dc-9c5b-4bc9-a892-af8f5cce4101")
+    @objid ("60b849ce-bffa-4a68-adcb-264b3253d230")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +129,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("3b023883-0c8f-481f-a339-0ec2504e989c")
+    @objid ("a2fcf480-078f-43bc-92c7-839595bc0571")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -140,7 +140,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("3f70f971-aefc-4403-b340-80cb886688a0")
+    @objid ("09283033-1732-416d-8bc9-9a8cdf9b359c")
     public List<String> getHwEndPoint_AssociationEnd_connectedTo() {
         return this.elt.getTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO_TAGTYPE_ELT);
     }
@@ -150,7 +150,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("34e05ff8-a327-4249-803e-edd508ff8af4")
+    @objid ("a2c3f949-a4d3-4fb9-b197-655b25a0275b")
     public String getHwEndPoint_AssociationEnd_description() {
         return this.elt.getTagValue(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -160,7 +160,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c1734bde-3009-4e39-85a5-475c2c206199")
+    @objid ("3efdbc42-d1d5-49c1-bd98-539a38de8e54")
     public String getHwEndPoint_AssociationEnd_frequency() {
         return this.elt.getTagValue(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("0b975466-407a-46d4-a361-07255cb4ac2f")
+    @objid ("3b289764-20ea-43ce-b79e-fe922199e806")
     public List<String> getHwEndPoint_AssociationEnd_ownedHW() {
         return this.elt.getTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("01fe6a48-425f-4a9a-804a-3cea935ca5ce")
+    @objid ("e1681532-13a8-4842-ae88-d5a490077df0")
     public List<String> getHwEndPoint_AssociationEnd_p_HW_Services() {
         return this.elt.getTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +190,12 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("caf7abd1-c79d-45dd-a5a9-7869c27d4c1e")
+    @objid ("764d6c4e-4229-40c9-8831-40836583dffa")
     public List<String> getHwEndPoint_AssociationEnd_r_HW_Services() {
         return this.elt.getTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("69440222-68e8-4be9-b4b0-d3977d32d6d8")
+    @objid ("29b125e3-ef59-4a60-b5cc-bb688bbd50f8")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +206,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("408cde50-a45d-496c-9e16-a6bea992d1c1")
+    @objid ("59126882-9842-4c28-b2ab-576c7ac5deab")
     public void setHwEndPoint_AssociationEnd_connectedTo(final List<String> values) {
         this.elt.putTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO_TAGTYPE_ELT, values);
     }
@@ -216,7 +216,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fffa5ef3-13d5-4696-9bf7-c1a22dc407df")
+    @objid ("cfea7739-b315-4103-845d-1a19da5a19e8")
     public void setHwEndPoint_AssociationEnd_description(final String value) {
         this.elt.putTagValue(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -226,7 +226,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d16914b5-801d-43e3-a0ca-4f53ca1faf39")
+    @objid ("ef915397-b213-4fca-840a-9653c47c9a45")
     public void setHwEndPoint_AssociationEnd_frequency(final String value) {
         this.elt.putTagValue(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +236,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c4855d2a-0a04-4441-9660-7a62f798a5cc")
+    @objid ("9088d8a3-9126-4f7a-9824-e25f914f9843")
     public void setHwEndPoint_AssociationEnd_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +246,7 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("10b8c61e-e246-433a-9a13-8647a08b467e")
+    @objid ("20a3e6d8-cba8-4b56-8019-85cc92a3fecf")
     public void setHwEndPoint_AssociationEnd_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +256,46 @@ public class HwEndPointAssociationEnd extends CommunicationEndPointAssociationEn
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b5e246bc-de24-483e-83b8-787e2244dc01")
+    @objid ("83654531-6ac4-48b4-80f7-721ba6239f8f")
     public void setHwEndPoint_AssociationEnd_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwEndPointAssociationEnd.MdaTypes.HWENDPOINT_ASSOCIATIONEND_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("552cc4c3-efb3-42f0-9a33-3f33f087265c")
+    @objid ("79a4c057-4134-4edb-aa99-766b8ff76b6e")
     protected HwEndPointAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("9b7a0c35-98cb-49ee-b311-c6f68927c683")
     public static final class MdaTypes {
-        @objid ("01982032-9206-4536-979a-5c628b6e0ff2")
+        @objid ("25da465f-66c6-471f-8d8a-514ccb18f961")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("24eb1505-6418-435d-834d-a95a5674968c")
+        @objid ("c8d44084-09c1-40e6-a34b-d1451a2e62f6")
         public static TagType HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO_TAGTYPE_ELT;
 
-        @objid ("b450a384-5c5b-4e5b-8d91-d6b2dfe30a8a")
+        @objid ("9c154e75-85d6-4b21-9bb8-5cc4c8453600")
         public static TagType HWENDPOINT_ASSOCIATIONEND_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("b05cb504-fecf-4e95-9954-f3234a7186fa")
+        @objid ("f72ba633-6c02-4fa6-bb79-8490be34d3a6")
         public static TagType HWENDPOINT_ASSOCIATIONEND_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("d237f138-63a9-4ec8-a7fc-2b014ce51ab3")
+        @objid ("3ba187d1-4fc2-4559-b648-540292cb68af")
         public static TagType HWENDPOINT_ASSOCIATIONEND_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("cdbf5b6c-9460-4539-b112-3ac2e0ba0e88")
+        @objid ("fe581ae2-65dd-42c8-9ef2-156950386fa2")
         public static TagType HWENDPOINT_ASSOCIATIONEND_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("7fd7176b-a784-4331-8112-abe901ed9f58")
+        @objid ("b1fa5507-21b1-407b-8c27-d653986a5eb0")
         public static TagType HWENDPOINT_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("6d370eab-1cb0-48a2-9ce0-798887dfc518")
+        @objid ("44a39a98-2d12-4abc-981f-99296ba97c52")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("62517164-6357-4ca0-b273-a70e9ecd136b")
+        @objid ("08d04282-4b02-4f8d-9d13-66db9d0f495f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("4e65371f-20b9-429f-876d-88c535852557")
+        @objid ("3b750d24-4252-425b-853b-8698539044c4")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "010cf42e-0ccf-11df-8525-001302895b2b");
             HWENDPOINT_ASSOCIATIONEND_CONNECTEDTO_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "010f5681-0ccf-11df-8525-001302895b2b");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwpower.standard.parameter;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("9455ae3c-322a-4aa2-87c3-c096f7917dc2")
 public class HwPowerSupplyParameter extends HwComponentParameter {
-    @objid ("d8e0e9f5-9695-43fc-b3b2-4ca783b36a33")
+    @objid ("0634531d-29cb-4977-b1ab-fd69e56f5acf")
     public static final String STEREOTYPE_NAME = "HwPowerSupply_Parameter";
 
-    @objid ("e76c52bc-368d-49eb-8c89-a6077cd915d4")
+    @objid ("758ffb0f-82f3-43df-8333-93fa6d699797")
     public static final String HWPOWERSUPPLY_PARAMETER_CAPACITY_TAGTYPE = "HwPowerSupply_Parameter_capacity";
 
-    @objid ("e59b18ea-4860-4a3c-817e-f9ed0ed11316")
+    @objid ("35652246-8772-4077-a63c-388b53bb81df")
     public static final String HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER_TAGTYPE = "HwPowerSupply_Parameter_suppliedPower";
 
     /**
-     * Tells whether a {@link HwPowerSupplyParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwPowerSupply_Parameter >>. 
+     * Tells whether a {@link HwPowerSupplyParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwPowerSupply_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f1f00e64-7cca-4b27-84fa-4964007744fa")
+    @objid ("6e42fb72-7003-4a27-8904-e1dd9f123447")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwPowerSupplyParameter.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * 
      * @return a {@link HwPowerSupplyParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("2c99f99e-91e3-4890-94e0-1af5bef3ecf7")
+    @objid ("54dbf0bc-882a-4e78-aad8-1a3116749f65")
     public static HwPowerSupplyParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwPowerSupplyParameter.STEREOTYPE_NAME);
         return HwPowerSupplyParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwPowerSupplyParameter} proxy from a {@link Parameter} stereotyped << HwPowerSupply_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwPowerSupplyParameter} proxy from a {@link Parameter} stereotyped << HwPowerSupply_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link HwPowerSupplyParameter} proxy or <i>null</i>.
      */
-    @objid ("2e011e03-0ec9-43d8-9ed6-1c669f33e3dc")
+    @objid ("c2bd3282-4257-4904-9ddb-6f1b81b4422e")
     public static HwPowerSupplyParameter instantiate(final Parameter obj) {
         return HwPowerSupplyParameter.canInstantiate(obj) ? new HwPowerSupplyParameter(obj) : null;
     }
@@ -88,7 +88,7 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * @return a {@link HwPowerSupplyParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c50b8f15-9549-43b5-bd22-02f04d6d7942")
+    @objid ("bd89db69-2fa3-498b-abea-6c729c04a525")
     public static HwPowerSupplyParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (HwPowerSupplyParameter.canInstantiate(obj))
         	return new HwPowerSupplyParameter(obj);
@@ -96,7 +96,7 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
         	throw new IllegalArgumentException("HwPowerSupplyParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("e214beea-79bc-4b44-97cd-42e1d3414ece")
+    @objid ("61564916-5ab1-42a4-a616-f1b82c2f7e7e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("ca39ed72-c9f8-4889-9685-8741a48a146d")
+    @objid ("70e93b82-5e60-4b60-bdc1-572f2de75201")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -127,7 +127,7 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ea679c4b-ea9c-4f32-b377-d25c1c88c73c")
+    @objid ("034f7be1-d0b7-4c32-823f-76e180e70ce7")
     public String getHwPowerSupply_Parameter_capacity() {
         return this.elt.getTagValue(HwPowerSupplyParameter.MdaTypes.HWPOWERSUPPLY_PARAMETER_CAPACITY_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b0fa704b-9eb3-446f-9e15-450e8df2dd94")
+    @objid ("8918614b-b5cb-4f03-82e6-6b97e64febea")
     public String getHwPowerSupply_Parameter_suppliedPower() {
         return this.elt.getTagValue(HwPowerSupplyParameter.MdaTypes.HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER_TAGTYPE_ELT);
     }
 
-    @objid ("8cf4fe90-8e39-492a-9297-c01e603a74f8")
+    @objid ("186fa8b7-b334-46be-9574-17200f2a4a69")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3751cec5-2bf8-4348-88bc-b2f2811328b6")
+    @objid ("5e9063d6-ecb4-43e2-93f7-bbb1e390a1b4")
     public void setHwPowerSupply_Parameter_capacity(final String value) {
         this.elt.putTagValue(HwPowerSupplyParameter.MdaTypes.HWPOWERSUPPLY_PARAMETER_CAPACITY_TAGTYPE_ELT, value);
     }
@@ -163,34 +163,34 @@ public class HwPowerSupplyParameter extends HwComponentParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cf72cd29-dd00-4a95-8e52-01e886b66a26")
+    @objid ("cd4b6bac-0992-4934-b414-0998324fb84a")
     public void setHwPowerSupply_Parameter_suppliedPower(final String value) {
         this.elt.putTagValue(HwPowerSupplyParameter.MdaTypes.HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER_TAGTYPE_ELT, value);
     }
 
-    @objid ("61ad13f6-3652-4c7b-a5e7-334c1eb3853e")
+    @objid ("c0508391-5f57-4cfe-b101-7a2439ce3067")
     protected HwPowerSupplyParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("9c408f41-ffdc-452c-a3f2-ae50c965617c")
     public static final class MdaTypes {
-        @objid ("3cbd6382-be07-4091-9617-52e10c12d712")
+        @objid ("733d5f36-3376-4d82-97d8-af5c4f018b03")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("ca59aa9e-63cd-4add-9b86-704666d1d1b4")
+        @objid ("80f8fbe5-0ed5-4a2e-8b3d-27b13539fe1a")
         public static TagType HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER_TAGTYPE_ELT;
 
-        @objid ("a56e9d15-5f2c-4729-a9b2-98573fc0f6d9")
+        @objid ("33056bbd-5047-4bc6-8f88-b0f48a50e83f")
         public static TagType HWPOWERSUPPLY_PARAMETER_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("bbd5c29c-a809-4e8d-b90a-5c17293f6ca1")
+        @objid ("353efd5d-e3eb-4665-b1d2-244626a42383")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a7e33767-5521-4162-a9ff-1e061e98f28e")
+        @objid ("5b0ece04-2be5-483f-9750-48a745d22681")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2f517f4d-f694-455a-93cc-fd1ee692ed3d")
+        @objid ("e3dd6bf0-57cc-4148-8e14-092b120ff3d8")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0192761e-0ccf-11df-8525-001302895b2b");
             HWPOWERSUPPLY_PARAMETER_SUPPLIEDPOWER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01927625-0ccf-11df-8525-001302895b2b");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.link;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("edd6c77a-ccda-466c-85d2-4f829772b47c")
 public class HwPLDLink extends HwComputingResourceLink {
-    @objid ("45b94240-d559-4c18-a604-62e26eccda44")
+    @objid ("2924eda8-295c-4c74-97c5-58751c4f4034")
     public static final String STEREOTYPE_NAME = "HwPLD_Link";
 
-    @objid ("9feb1ec9-bbe9-461b-9bf6-d9538df8a956")
+    @objid ("656b7830-a502-4bb2-845b-b1e04a9b4377")
     public static final String HWPLD_LINK_BLOCKSCOMPUTING_TAGTYPE = "HwPLD_Link_blocksComputing";
 
-    @objid ("876549f8-de29-4ecf-bb27-0af846d0f335")
+    @objid ("3f8cacb0-2fa7-4d5a-a3fc-6558d01536a6")
     public static final String HWPLD_LINK_BLOCKSRAM_TAGTYPE = "HwPLD_Link_blocksRAM";
 
-    @objid ("56f26a07-ee0b-4124-82ac-fb7d3b147557")
+    @objid ("350b1135-3bb8-4a30-9507-7a1d9b24bb83")
     public static final String HWPLD_LINK_NBFLIPFLOPS_TAGTYPE = "HwPLD_Link_nbFlipFlops";
 
-    @objid ("df108a2a-81e3-4a21-8a97-42242da00318")
+    @objid ("82db785d-a11f-4ad2-9473-b70eccd58709")
     public static final String HWPLD_LINK_NBLUTS_TAGTYPE = "HwPLD_Link_nbLUTs";
 
-    @objid ("7cebf29d-2dde-40fa-bfb1-674019187304")
+    @objid ("f74350fc-9928-4912-8a51-f276fa7e8534")
     public static final String HWPLD_LINK_NDLUT_INPUTS_TAGTYPE = "HwPLD_Link_ndLUT_Inputs";
 
-    @objid ("57d90e91-0986-4c8e-a1b2-bac7308935f6")
+    @objid ("8fc745cf-8546-4869-81ca-a66cdcfb63b1")
     public static final String HWPLD_LINK_ORGANIZATION_TAGTYPE = "HwPLD_Link_organization";
 
-    @objid ("476be158-b7c5-4bf2-a329-fbfbcddb8bc0")
+    @objid ("8a199c8f-85c0-4438-aa01-d15bfcecf799")
     public static final String HWPLD_LINK_TECHNOLOGY_TAGTYPE = "HwPLD_Link_technology";
 
     /**
-     * Tells whether a {@link HwPLDLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwPLD_Link >>. 
+     * Tells whether a {@link HwPLDLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwPLD_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e8a1ad09-7a9e-4630-833e-cf4d4fd40939")
+    @objid ("aad3b1a3-0828-4728-872a-6a5b021b57dd")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDLink.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class HwPLDLink extends HwComputingResourceLink {
      * 
      * @return a {@link HwPLDLink} proxy on the created {@link Link}.
      */
-    @objid ("a7957d92-79a5-4c56-b00e-7022ee7b772d")
+    @objid ("0086cf37-e237-49c2-9aad-77918f28ae2b")
     public static HwPLDLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwPLDLink.STEREOTYPE_NAME);
         return HwPLDLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwPLDLink} proxy from a {@link Link} stereotyped << HwPLD_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwPLDLink} proxy from a {@link Link} stereotyped << HwPLD_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link HwPLDLink} proxy or <i>null</i>.
      */
-    @objid ("9ce3d10d-a8a6-411e-8808-91741e65e652")
+    @objid ("0ac9c1df-f496-41ba-8c35-75b6393de8a2")
     public static HwPLDLink instantiate(final Link obj) {
         return HwPLDLink.canInstantiate(obj) ? new HwPLDLink(obj) : null;
     }
@@ -103,7 +103,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * @return a {@link HwPLDLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a8fd0350-063c-47c2-aad5-ee07172e8a26")
+    @objid ("e39ce17f-b93c-4460-a301-79bcffa22f89")
     public static HwPLDLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwPLDLink.canInstantiate(obj))
         	return new HwPLDLink(obj);
@@ -111,7 +111,7 @@ public class HwPLDLink extends HwComputingResourceLink {
         	throw new IllegalArgumentException("HwPLDLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("c61bafb3-d292-407f-bccb-4985e3dc58c0")
+    @objid ("3a6bf15c-b70e-4607-b192-2c9ca4fd1af9")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("ca0cf146-6734-4bfc-b6e1-db892854b85a")
+    @objid ("9b9a3d30-6686-4cbe-b6bd-d0b5e4adc6ca")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -142,7 +142,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1f1bff1c-09bb-44b3-a05f-8556cebdfe5a")
+    @objid ("6539014e-13dd-4b7c-b5fd-ced9e3c40c14")
     public List<String> getHwPLD_Link_blocksComputing() {
         return this.elt.getTagValues(HwPLDLink.MdaTypes.HWPLD_LINK_BLOCKSCOMPUTING_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("66e57528-fd57-433d-b0af-01777a4d3a11")
+    @objid ("1eaafcc3-3bff-424d-9e80-e73350ed4c44")
     public List<String> getHwPLD_Link_blocksRAM() {
         return this.elt.getTagValues(HwPLDLink.MdaTypes.HWPLD_LINK_BLOCKSRAM_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a68a2058-a6f1-4083-8f85-cbe19da6a0c4")
+    @objid ("b670b903-3e5f-489e-b4e0-ec3967a1876f")
     public String getHwPLD_Link_nbFlipFlops() {
         return this.elt.getTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NBFLIPFLOPS_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1f8c2126-82dc-4345-88c7-9131e5abe63b")
+    @objid ("0447f7ae-6e5b-434a-95c4-8146351cdc94")
     public String getHwPLD_Link_nbLUTs() {
         return this.elt.getTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NBLUTS_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7ccd0f9f-2cee-429a-8b55-d4077cbac1e9")
+    @objid ("4bd132cc-6853-4b7c-b934-faddd78b8624")
     public String getHwPLD_Link_ndLUT_Inputs() {
         return this.elt.getTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NDLUT_INPUTS_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2b718df0-ecc7-4888-9f24-6fa9da2af786")
+    @objid ("5b5544ae-409b-4159-8ff2-986db5ea9d39")
     public String getHwPLD_Link_organization() {
         return this.elt.getTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_ORGANIZATION_TAGTYPE_ELT);
     }
@@ -202,12 +202,12 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("40808ed8-9216-47ef-9939-361ee7f0fa68")
+    @objid ("6feac5c2-1e72-4bd6-bdd5-c60d1b4dd1df")
     public String getHwPLD_Link_technology() {
         return this.elt.getTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_TECHNOLOGY_TAGTYPE_ELT);
     }
 
-    @objid ("c88a2dd1-2cc5-499f-9a6d-5f75aca55155")
+    @objid ("d5f57412-cbf2-4648-a9ee-b0abb89d8388")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -218,7 +218,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ba9243ea-1e0d-4973-af77-07f10b71c78b")
+    @objid ("e910d3a4-dd8e-4da5-9c5d-2498f8b4eef0")
     public void setHwPLD_Link_blocksComputing(final List<String> values) {
         this.elt.putTagValues(HwPLDLink.MdaTypes.HWPLD_LINK_BLOCKSCOMPUTING_TAGTYPE_ELT, values);
     }
@@ -228,7 +228,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b214909d-6c19-44e0-b99f-da4aa40fdd74")
+    @objid ("475065d6-622f-4c20-be36-fc5f0eba7e8d")
     public void setHwPLD_Link_blocksRAM(final List<String> values) {
         this.elt.putTagValues(HwPLDLink.MdaTypes.HWPLD_LINK_BLOCKSRAM_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4e8e65f9-6990-4e01-bd97-df57a0424f74")
+    @objid ("d4044170-e223-4ace-a113-c0a42b0543dc")
     public void setHwPLD_Link_nbFlipFlops(final String value) {
         this.elt.putTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NBFLIPFLOPS_TAGTYPE_ELT, value);
     }
@@ -248,7 +248,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d2037d87-f6fd-40ec-8cc2-3af3d7a4b7ac")
+    @objid ("45d91d15-8c5c-4eee-a2c7-42c41ce7c3b2")
     public void setHwPLD_Link_nbLUTs(final String value) {
         this.elt.putTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NBLUTS_TAGTYPE_ELT, value);
     }
@@ -258,7 +258,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("76a597ba-f99b-4eef-b96d-8d4257fc3a4e")
+    @objid ("99cf36ef-a378-4b87-b69d-afdf6db010e5")
     public void setHwPLD_Link_ndLUT_Inputs(final String value) {
         this.elt.putTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_NDLUT_INPUTS_TAGTYPE_ELT, value);
     }
@@ -268,7 +268,7 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e117684a-787b-49fe-b35b-f29f6f7c6e79")
+    @objid ("67f4a9f4-1a09-4278-9743-216aff47aece")
     public void setHwPLD_Link_organization(final String value) {
         this.elt.putTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_ORGANIZATION_TAGTYPE_ELT, value);
     }
@@ -278,49 +278,49 @@ public class HwPLDLink extends HwComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e4a6b8d9-4eea-484e-b7cd-4453b4fc0405")
+    @objid ("eac0cd8b-5214-4b75-bea8-8efc80f8830d")
     public void setHwPLD_Link_technology(final String value) {
         this.elt.putTagValue(HwPLDLink.MdaTypes.HWPLD_LINK_TECHNOLOGY_TAGTYPE_ELT, value);
     }
 
-    @objid ("dcb05959-6993-4668-91af-48f031c2ce48")
+    @objid ("f4063071-cb97-4e81-ac44-f4cec85c33d5")
     protected HwPLDLink(final Link elt) {
         super(elt);
     }
 
     @objid ("a14b8ec1-eed0-4910-aca5-13103afcae3e")
     public static final class MdaTypes {
-        @objid ("7e25ff69-1fdb-4d32-bc2d-344ed6b502ec")
+        @objid ("a9a601ff-b275-45d9-9839-53b5b0fccbc0")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("1e45b781-2229-4d71-9c04-e6d36470c262")
+        @objid ("4484b8a1-c679-4225-9622-685af698bf10")
         public static TagType HWPLD_LINK_TECHNOLOGY_TAGTYPE_ELT;
 
-        @objid ("77894f65-66a7-47a4-8a9f-fa3a1c9f3ca6")
+        @objid ("177146c6-1639-407b-9e75-22c0ac91ac10")
         public static TagType HWPLD_LINK_ORGANIZATION_TAGTYPE_ELT;
 
-        @objid ("12feb114-567b-4602-928f-1ec1c4f80fb1")
+        @objid ("d91a7126-19c5-4d3c-86cf-be7be9853e1a")
         public static TagType HWPLD_LINK_NBLUTS_TAGTYPE_ELT;
 
-        @objid ("59244895-0e8f-40ed-bca4-a553d7dfc7e2")
+        @objid ("3afd105e-f183-4749-b503-5a2fc3e43138")
         public static TagType HWPLD_LINK_NDLUT_INPUTS_TAGTYPE_ELT;
 
-        @objid ("e4640a5f-f241-4422-87ce-762e814fe86c")
+        @objid ("26efc5c3-d98e-4813-bc1d-0b600bf56321")
         public static TagType HWPLD_LINK_NBFLIPFLOPS_TAGTYPE_ELT;
 
-        @objid ("752d72a3-b680-4e1c-b351-968e7c383851")
+        @objid ("cac95d53-fb39-47fb-8059-1176c07e2847")
         public static TagType HWPLD_LINK_BLOCKSRAM_TAGTYPE_ELT;
 
-        @objid ("69fb6de4-3067-421d-a1ff-d579d8ff1227")
+        @objid ("8538483e-256d-4b74-bdda-4ccb15547785")
         public static TagType HWPLD_LINK_BLOCKSCOMPUTING_TAGTYPE_ELT;
 
-        @objid ("d05c773a-e493-4823-8344-7c1abd58fdee")
+        @objid ("1b39dee3-c23c-4ae8-9bac-1eaba4f3938f")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("dc0cd51f-1f68-44fa-9c53-eb38ae8fc8a3")
+        @objid ("0aea6abe-2336-493c-a52c-5d9ef570387e")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("30cef9b5-3857-421d-9b4f-ff45e058b6a6")
+        @objid ("5994829e-4dfe-4791-9d4b-fe7616177451")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00f2baac-0ccf-11df-8525-001302895b2b");
             HWPLD_LINK_TECHNOLOGY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00f2bab3-0ccf-11df-8525-001302895b2b");

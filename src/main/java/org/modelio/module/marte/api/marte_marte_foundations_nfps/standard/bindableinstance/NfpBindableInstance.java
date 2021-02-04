@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_nfps.standard.bindableinstance;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("7ac11866-6b79-473f-b121-422cdbdd0f1e")
 public class NfpBindableInstance {
-    @objid ("c75cfac5-831e-43e9-9cd3-c85f3cfd1a73")
+    @objid ("4189f34c-713a-48d6-8bc7-4050aaf8ec66")
     public static final String STEREOTYPE_NAME = "Nfp_BindableInstance";
 
     /**
      * The underlying {@link BindableInstance} represented by this proxy, never null.
      */
-    @objid ("31e1055f-f67a-4342-8c86-d7f4af015f0a")
+    @objid ("b7f07aa5-575e-454d-bf19-afef73fb2da4")
     protected final BindableInstance elt;
 
     /**
-     * Tells whether a {@link NfpBindableInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link BindableInstance} stereotyped << Nfp_BindableInstance >>. 
+     * Tells whether a {@link NfpBindableInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link BindableInstance} stereotyped << Nfp_BindableInstance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("bcbab0f3-9682-48ca-95d6-018919bbc185")
+    @objid ("bc82d8c3-f29b-4e0e-92f3-827e09bc3ca7")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof BindableInstance) && ((BindableInstance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, NfpBindableInstance.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class NfpBindableInstance {
      * 
      * @return a {@link NfpBindableInstance} proxy on the created {@link BindableInstance}.
      */
-    @objid ("30dbbee0-e0a2-4c31-9d48-441390c2f436")
+    @objid ("824430ae-db0d-4d1b-b1e9-0306086d4da0")
     public static NfpBindableInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("BindableInstance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.BindableInstance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, NfpBindableInstance.STEREOTYPE_NAME);
         return NfpBindableInstance.instantiate((BindableInstance)e);
     }
 
     /**
-     * Tries to instantiate a {@link NfpBindableInstance} proxy from a {@link BindableInstance} stereotyped << Nfp_BindableInstance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link NfpBindableInstance} proxy from a {@link BindableInstance} stereotyped << Nfp_BindableInstance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a BindableInstance
      * @return a {@link NfpBindableInstance} proxy or <i>null</i>.
      */
-    @objid ("13be02db-cfcc-47e7-b02f-f13a6ee59694")
+    @objid ("e77e1aa0-de6f-49a9-8713-02ec5b37ca70")
     public static NfpBindableInstance instantiate(final BindableInstance obj) {
         return NfpBindableInstance.canInstantiate(obj) ? new NfpBindableInstance(obj) : null;
     }
@@ -87,7 +87,7 @@ public class NfpBindableInstance {
      * @return a {@link NfpBindableInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("0885a0da-1753-4a2e-97eb-2709e55e4ee9")
+    @objid ("8848b0a3-5795-4867-93ef-9baf848ea054")
     public static NfpBindableInstance safeInstantiate(final BindableInstance obj) throws IllegalArgumentException {
         if (NfpBindableInstance.canInstantiate(obj))
         	return new NfpBindableInstance(obj);
@@ -95,7 +95,7 @@ public class NfpBindableInstance {
         	throw new IllegalArgumentException("NfpBindableInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("5bcb612e-661e-48d5-94dc-2b69bdb6f63a")
+    @objid ("8525d197-fc37-4556-be9f-69853488b885")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,34 +115,34 @@ public class NfpBindableInstance {
      * Get the underlying {@link BindableInstance}. 
      * @return the BindableInstance represented by this proxy, never null.
      */
-    @objid ("91a906d4-e5f1-4b64-889c-db9a095789ee")
+    @objid ("2b1ffcb0-efa6-4b3a-a098-a9d36c70b281")
     public BindableInstance getElement() {
         return this.elt;
     }
 
-    @objid ("e985cb84-f6d1-4e6b-baea-d9945aebb462")
+    @objid ("f4bd8c71-1a1c-4c51-be93-1be3882b6fcd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("fe53cef0-836b-4128-96f9-56dcc65f96b9")
+    @objid ("5b79df14-e088-4a59-b45b-28dbc287bcc2")
     protected NfpBindableInstance(final BindableInstance elt) {
         this.elt = elt;
     }
 
     @objid ("7b41a3d4-509e-40f6-8b1b-1e0b6a1d14ca")
     public static final class MdaTypes {
-        @objid ("ebe6bd97-b6f0-4ec1-8bdf-f1cdc5b62268")
+        @objid ("94a062db-fbd4-4b09-a102-b256301d6055")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("1691b767-64c3-4ddd-bcfc-ea925278d9a2")
+        @objid ("e61afb7c-8f86-4541-be6b-1a1e13bc1641")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("fa3780cb-f468-405a-8a8c-2cd8549c9f7f")
+        @objid ("b49c1f99-3609-4e67-98f6-2adc8dda168f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d71776e3-af14-4260-863c-6a0336a63e28")
+        @objid ("34e99a64-2bb0-4e77-9788-0e5049726ee9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d9490073-0cce-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

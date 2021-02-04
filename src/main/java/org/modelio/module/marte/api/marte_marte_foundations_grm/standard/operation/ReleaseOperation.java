@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.operation;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("7f679249-6a8e-4124-a504-a4647fded63e")
 public class ReleaseOperation extends GrServiceOperation {
-    @objid ("fee844c9-de8c-4932-8031-78970c9fb22f")
+    @objid ("6fb37c71-2c4b-4b15-9054-7ecb1399204b")
     public static final String STEREOTYPE_NAME = "Release_Operation";
 
     /**
-     * Tells whether a {@link ReleaseOperation proxy} can be instantiated from a {@link MObject} checking it is a {@link Operation} stereotyped << Release_Operation >>. 
+     * Tells whether a {@link ReleaseOperation proxy} can be instantiated from a {@link MObject} checking it is a {@link Operation} stereotyped << Release_Operation >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8d27f5f7-57d7-4305-928a-4e5a041fe537")
+    @objid ("75c26033-82f0-41d0-a3f6-d35354e97bc0")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Operation) && ((Operation) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseOperation.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class ReleaseOperation extends GrServiceOperation {
      * 
      * @return a {@link ReleaseOperation} proxy on the created {@link Operation}.
      */
-    @objid ("de4b3188-90a9-4736-91c3-d5460aebd3ed")
+    @objid ("e6d20615-e2ca-41a5-8aeb-c07bd7f807a9")
     public static ReleaseOperation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Operation");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Operation");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseOperation.STEREOTYPE_NAME);
         return ReleaseOperation.instantiate((Operation)e);
     }
 
     /**
-     * Tries to instantiate a {@link ReleaseOperation} proxy from a {@link Operation} stereotyped << Release_Operation >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ReleaseOperation} proxy from a {@link Operation} stereotyped << Release_Operation >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Operation
      * @return a {@link ReleaseOperation} proxy or <i>null</i>.
      */
-    @objid ("cb1f198e-d1a7-4d85-964b-8f88f3302ce1")
+    @objid ("17ce5c3f-86bb-4c61-b69f-e5ff7b800035")
     public static ReleaseOperation instantiate(final Operation obj) {
         return ReleaseOperation.canInstantiate(obj) ? new ReleaseOperation(obj) : null;
     }
@@ -81,7 +81,7 @@ public class ReleaseOperation extends GrServiceOperation {
      * @return a {@link ReleaseOperation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("6b162b47-cf27-4b3c-a6d2-28bbd6236cc8")
+    @objid ("4c60e9e3-535c-4f43-a7b3-b74c2e7ebe7b")
     public static ReleaseOperation safeInstantiate(final Operation obj) throws IllegalArgumentException {
         if (ReleaseOperation.canInstantiate(obj))
         	return new ReleaseOperation(obj);
@@ -89,7 +89,7 @@ public class ReleaseOperation extends GrServiceOperation {
         	throw new IllegalArgumentException("ReleaseOperation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fb2c5c61-6d6f-4f1e-aaf8-6c0256cce46a")
+    @objid ("9020eec3-c929-4229-8f7c-6a54dbf7f2e4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class ReleaseOperation extends GrServiceOperation {
      * Get the underlying {@link Operation}. 
      * @return the Operation represented by this proxy, never null.
      */
-    @objid ("1541bce3-fbbc-4ffb-8990-68c481bf933d")
+    @objid ("34ee0635-0204-4dd3-b400-4f16e856e522")
     @Override
     public Operation getElement() {
         return (Operation)super.getElement();
     }
 
-    @objid ("d315152a-6d75-4559-b679-ce4617cc670b")
+    @objid ("1a30e3b5-ead1-4cbf-bc33-291ceddd5fdd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("cb899a04-b589-4fb9-9c70-b0a51d93648b")
+    @objid ("ff3aa453-8963-45a7-9336-11a37dd683fe")
     protected ReleaseOperation(final Operation elt) {
         super(elt);
     }
 
     @objid ("d2c4b653-bba5-42e7-9b5a-0a6500480437")
     public static final class MdaTypes {
-        @objid ("cd3f6262-571e-4531-96ec-4e95b959adbf")
+        @objid ("43477e4f-b3cd-4c78-8086-d5c71e293c11")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("e2d96437-86cf-435c-9891-1474bb0b2dc6")
+        @objid ("b0cd2033-a305-4584-b4dc-2a42059da894")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("9459b48d-67ba-4340-8bae-0096ea3847e7")
+        @objid ("cce69187-d3c9-4e1a-bb9b-fd454208bf24")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("6825084d-0ccb-4a6d-adbf-5f04e37c2d61")
+        @objid ("b040d1d3-5a89-4361-bd6a-71172392cee4")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "b1b05a9c-14bf-11df-92f7-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

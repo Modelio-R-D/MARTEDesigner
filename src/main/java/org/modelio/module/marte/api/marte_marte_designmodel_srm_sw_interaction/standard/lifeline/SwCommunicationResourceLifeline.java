@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.lifeline;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("4eaf77ad-c070-430f-9b7e-af0f3374485f")
 public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeline {
-    @objid ("0361b07f-7fbe-4876-b186-0173912ad06b")
+    @objid ("940c55c5-abca-43d4-a531-c8e910bb8c78")
     public static final String STEREOTYPE_NAME = "SwCommunicationResource_Lifeline";
 
-    @objid ("95cb998d-11cc-454e-85fd-c46b61169454")
+    @objid ("3b90532f-aeab-4012-a771-30f12991c99f")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT_TAGTYPE = "SwCommunicationResource_Lifeline_blockT";
 
-    @objid ("3a104da0-040f-4129-8908-f263b65de648")
+    @objid ("057feb29-1165-4df6-8fa4-c0fa4a22ddfe")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_CAPACITY_TAGTYPE = "SwCommunicationResource_Lifeline_capacity";
 
-    @objid ("b4f19a6a-1bc9-4e6d-b60f-b6392de2fdcd")
+    @objid ("0db7cfed-b360-4458-bce9-0fd91f5388d1")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_ELEMENTSIZE_TAGTYPE = "SwCommunicationResource_Lifeline_elementSize";
 
-    @objid ("05a6f37f-764d-4aac-bea8-da76a2a3373b")
+    @objid ("591cb3ed-984c-4b20-bd4b-88e7afb563f8")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_MAINSCHEDULER_TAGTYPE = "SwCommunicationResource_Lifeline_mainScheduler";
 
-    @objid ("39a77698-75f5-45c2-a275-65d3152b8dd3")
+    @objid ("21a1d81b-8b44-4c17-9930-d577e7f710e8")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_PACKETT_TAGTYPE = "SwCommunicationResource_Lifeline_packetT";
 
-    @objid ("0d5235c4-1481-47cf-a16b-adc0e5e9821e")
+    @objid ("f4b7c29a-aa6b-40d5-ac85-e4a68591608e")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_SPEEDFACTOR_TAGTYPE = "SwCommunicationResource_Lifeline_speedFactor";
 
-    @objid ("c8a5a79c-970c-4970-8c20-4143193829af")
+    @objid ("6da5ca32-cfc7-43c4-89ba-1b8054f04706")
     public static final String SWCOMMUNICATIONRESOURCE_LIFELINE_TRANSMMODE_TAGTYPE = "SwCommunicationResource_Lifeline_transmMode";
 
     /**
-     * Tells whether a {@link SwCommunicationResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SwCommunicationResource_Lifeline >>. 
+     * Tells whether a {@link SwCommunicationResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SwCommunicationResource_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("14677d5e-85c0-4e67-a9da-c2900e6adcf1")
+    @objid ("a816eb11-d85f-4729-ae64-d89238b9266f")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwCommunicationResourceLifeline.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * 
      * @return a {@link SwCommunicationResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("e9195736-492f-45bd-8000-1b2e454622fc")
+    @objid ("871af5da-38ea-4c4a-9298-b1015b0cae53")
     public static SwCommunicationResourceLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwCommunicationResourceLifeline.STEREOTYPE_NAME);
         return SwCommunicationResourceLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwCommunicationResourceLifeline} proxy from a {@link Lifeline} stereotyped << SwCommunicationResource_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwCommunicationResourceLifeline} proxy from a {@link Lifeline} stereotyped << SwCommunicationResource_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link SwCommunicationResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("52685e83-1827-43bc-9b0a-105b1d800687")
+    @objid ("6212875d-5fa6-4ce3-8e4f-19d310e7daaf")
     public static SwCommunicationResourceLifeline instantiate(final Lifeline obj) {
         return SwCommunicationResourceLifeline.canInstantiate(obj) ? new SwCommunicationResourceLifeline(obj) : null;
     }
@@ -103,7 +103,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * @return a {@link SwCommunicationResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("5d3c977b-c8aa-4ddf-9a73-68e4fd791ec5")
+    @objid ("9d4aff2d-2463-4a22-8f00-96404ee62a1b")
     public static SwCommunicationResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SwCommunicationResourceLifeline.canInstantiate(obj))
         	return new SwCommunicationResourceLifeline(obj);
@@ -111,7 +111,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
         	throw new IllegalArgumentException("SwCommunicationResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("09198d4c-cc7f-4ed0-9308-9a4bccb1bae9")
+    @objid ("322130af-fce5-4be5-bf8b-aee26be31a21")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("52fb2506-41f5-49c0-ad55-88a19f00e672")
+    @objid ("269357f1-1aac-409a-a446-a82c13c4ae37")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -142,7 +142,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1caf150f-a80e-4ec5-ac1a-316cf903ed8f")
+    @objid ("1f29f983-0c42-40c8-9bf4-72f1fcbb4db4")
     public List<String> getSwCommunicationResource_Lifeline_blockT() {
         return this.elt.getTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8e89cc6e-dc8c-411c-88e3-77fa1c46d002")
+    @objid ("a836c77e-67f6-4486-afb4-2a69190b9ab4")
     public List<String> getSwCommunicationResource_Lifeline_capacity() {
         return this.elt.getTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_CAPACITY_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("637962e3-75d7-4b6a-a980-1d80b196c06b")
+    @objid ("d10e34a4-28af-4076-8682-1550062d1eb7")
     public String getSwCommunicationResource_Lifeline_elementSize() {
         return this.elt.getTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_ELEMENTSIZE_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4e643331-e913-4ece-9aa4-a45564113d0e")
+    @objid ("5fe686f4-d6b5-4c37-9988-fd9158e4b092")
     public String getSwCommunicationResource_Lifeline_mainScheduler() {
         return this.elt.getTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_MAINSCHEDULER_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("a55ee74c-1e0c-4c91-80e5-b0125ac711e8")
+    @objid ("79acd309-1154-46d8-ae56-c33cecffb76b")
     public List<String> getSwCommunicationResource_Lifeline_packetT() {
         return this.elt.getTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_PACKETT_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fc057f22-986e-47bd-b1af-b488c12ae46d")
+    @objid ("0219c6bc-b799-4a4a-ae41-70b523381346")
     public String getSwCommunicationResource_Lifeline_speedFactor() {
         return this.elt.getTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_SPEEDFACTOR_TAGTYPE_ELT);
     }
@@ -202,12 +202,12 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a684583e-95f2-4141-a645-042d3e313ec9")
+    @objid ("32f90eb6-9699-487a-9e05-d0a7bd7781f8")
     public String getSwCommunicationResource_Lifeline_transmMode() {
         return this.elt.getTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_TRANSMMODE_TAGTYPE_ELT);
     }
 
-    @objid ("01406875-39ae-4d53-b50d-214e78cf958f")
+    @objid ("a600ecdd-d1bc-4722-861d-7d0f9a868f99")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -218,7 +218,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3534313a-3f63-4aef-9e3d-c0c4f9ef9389")
+    @objid ("c49848ec-df2b-440d-a235-1f7575e0e596")
     public void setSwCommunicationResource_Lifeline_blockT(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT_TAGTYPE_ELT, values);
     }
@@ -228,7 +228,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a41fa031-bb59-4561-acd5-6ad44bac1f1b")
+    @objid ("28248884-dacf-494d-83e4-df70d505de22")
     public void setSwCommunicationResource_Lifeline_capacity(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_CAPACITY_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0c154d04-2daa-4bc4-960f-43ba6b5b252d")
+    @objid ("cfb37549-ffea-49fd-a9ef-d369c492a051")
     public void setSwCommunicationResource_Lifeline_elementSize(final String value) {
         this.elt.putTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_ELEMENTSIZE_TAGTYPE_ELT, value);
     }
@@ -248,7 +248,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("777f7730-09bd-44c4-9a5b-25aba16f6bc6")
+    @objid ("24970f43-6501-4b28-adfe-2b20ebf3192e")
     public void setSwCommunicationResource_Lifeline_mainScheduler(final String value) {
         this.elt.putTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_MAINSCHEDULER_TAGTYPE_ELT, value);
     }
@@ -258,7 +258,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("150271fd-8503-4939-af71-08b713300da4")
+    @objid ("e3eb8b4c-0d8c-4e3a-b347-86d4fbeec540")
     public void setSwCommunicationResource_Lifeline_packetT(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_PACKETT_TAGTYPE_ELT, values);
     }
@@ -268,7 +268,7 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f10c1f70-b0b2-4d23-ab66-55d1949598b9")
+    @objid ("3864d13b-7f22-4186-9a76-fe2dca6ab443")
     public void setSwCommunicationResource_Lifeline_speedFactor(final String value) {
         this.elt.putTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_SPEEDFACTOR_TAGTYPE_ELT, value);
     }
@@ -278,49 +278,49 @@ public class SwCommunicationResourceLifeline extends SwInteractionResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d0bfc39b-f53a-4973-81d2-11d89d318ef8")
+    @objid ("4d938c14-8e56-4aeb-92a6-3f163005ad06")
     public void setSwCommunicationResource_Lifeline_transmMode(final String value) {
         this.elt.putTagValue(SwCommunicationResourceLifeline.MdaTypes.SWCOMMUNICATIONRESOURCE_LIFELINE_TRANSMMODE_TAGTYPE_ELT, value);
     }
 
-    @objid ("259651ab-bd35-4de1-99b1-f5dfa54e071e")
+    @objid ("d89a4a2c-aab4-41b0-8a50-7d7559331aa6")
     protected SwCommunicationResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("ce55357f-9445-4b1b-aa44-9950b2684890")
     public static final class MdaTypes {
-        @objid ("ef592358-bd37-4ecb-9256-b7d2a577e268")
+        @objid ("b7260ff0-bc14-4834-b084-6bcb2756cda1")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("719b2bfd-e333-4036-85de-42f4733f8a81")
+        @objid ("591fa6b1-099d-4e94-8c2f-c0888964fbc7")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT_TAGTYPE_ELT;
 
-        @objid ("e75e66a7-3861-4804-93a3-10afff9081b9")
+        @objid ("c073f200-1828-4279-8c19-f1bfe9859425")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_PACKETT_TAGTYPE_ELT;
 
-        @objid ("2ef3a462-3722-4b67-a2b0-53cce6858479")
+        @objid ("48caa671-874b-4e7e-a5a3-b3bcb4c38d63")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("1e73eccb-f608-45da-bbd7-8cd1262ad088")
+        @objid ("b8ca7edd-be8b-4e3b-8184-6a93f81d6288")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_SPEEDFACTOR_TAGTYPE_ELT;
 
-        @objid ("e8156f6d-e564-48e6-81a4-41a5ddbfcc21")
+        @objid ("6b6f4ce2-2503-4e36-a925-4e035355060f")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_MAINSCHEDULER_TAGTYPE_ELT;
 
-        @objid ("359a5bdf-c764-4fe5-921c-0c860dd14fda")
+        @objid ("f54871f2-6ffe-437e-bc33-204c5a7f4b1c")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_ELEMENTSIZE_TAGTYPE_ELT;
 
-        @objid ("c77efc54-9b74-496e-875f-4f8e73c9ae7a")
+        @objid ("268cba69-5362-4e9c-8c3b-b31832613796")
         public static TagType SWCOMMUNICATIONRESOURCE_LIFELINE_TRANSMMODE_TAGTYPE_ELT;
 
-        @objid ("41446a2a-0a95-4662-847d-df836ca83512")
+        @objid ("75e09789-5d80-4e2d-90fa-fdc737651b20")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("5e8cd18a-6b98-4f8d-a889-40adfdf0525b")
+        @objid ("802e9f21-a3a7-4c0b-a336-633e5beff351")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("acb632a0-15c8-4204-8ae0-ace5e478828f")
+        @objid ("2010df2e-9c12-437b-b3aa-5460d55d16d9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "597b733e-10d8-11df-81d9-0014222a9f79");
             SWCOMMUNICATIONRESOURCE_LIFELINE_BLOCKT_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "88b626dd-92ad-11e0-a69d-0027103f347c");

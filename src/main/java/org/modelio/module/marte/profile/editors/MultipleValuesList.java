@@ -16,7 +16,6 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.modelio.api.modelio.Modelio;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
-import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 
 /**
  * Provides a beautiful GUI for add/remove multiple values.

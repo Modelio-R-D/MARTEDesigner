@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.lifeline;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("1aea26d1-6bc6-4915-a336-13e4039daf1c")
 public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeline {
-    @objid ("1b823607-1643-48f3-98a0-d091a84a1a8e")
+    @objid ("fc9c69c6-bc82-42a1-83cc-e61a3ce394fb")
     public static final String STEREOTYPE_NAME = "SharedDataComResource_Lifeline";
 
-    @objid ("d796efc5-86b5-409a-a3a4-12f21f7fe398")
+    @objid ("06211603-b9c8-4e83-a4c9-5ab14392ee2f")
     public static final String SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES_TAGTYPE = "SharedDataComResource_Lifeline_readServices";
 
-    @objid ("e2ca7055-0a9e-4c40-8332-7d8446cdb6b5")
+    @objid ("580a5252-67ed-4bd7-a09d-df2632850282")
     public static final String SHAREDDATACOMRESOURCE_LIFELINE_WRITESERVICES_TAGTYPE = "SharedDataComResource_Lifeline_writeServices";
 
     /**
-     * Tells whether a {@link SharedDataComResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SharedDataComResource_Lifeline >>. 
+     * Tells whether a {@link SharedDataComResourceLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SharedDataComResource_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("0cbb7ddc-9190-4c8d-aa0d-6684c102aa7b")
+    @objid ("9935ac27-f363-4723-af1a-3e501b0aaa05")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceLifeline.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * 
      * @return a {@link SharedDataComResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("e95c9de9-bcb0-44c1-8147-fd9940a429d4")
+    @objid ("90c4e1cd-854e-4c47-aef6-a6239e61a060")
     public static SharedDataComResourceLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceLifeline.STEREOTYPE_NAME);
         return SharedDataComResourceLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link SharedDataComResourceLifeline} proxy from a {@link Lifeline} stereotyped << SharedDataComResource_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SharedDataComResourceLifeline} proxy from a {@link Lifeline} stereotyped << SharedDataComResource_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link SharedDataComResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("0388c24e-19b1-4dd7-a8c0-8911794746ed")
+    @objid ("c969fe4a-8179-4bbd-801f-fef213fa17ef")
     public static SharedDataComResourceLifeline instantiate(final Lifeline obj) {
         return SharedDataComResourceLifeline.canInstantiate(obj) ? new SharedDataComResourceLifeline(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * @return a {@link SharedDataComResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("95ab83c3-258a-4683-b247-e33a0b3f537a")
+    @objid ("9ca94a78-38e4-4499-9bd4-f039ba7f0b02")
     public static SharedDataComResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SharedDataComResourceLifeline.canInstantiate(obj))
         	return new SharedDataComResourceLifeline(obj);
@@ -96,7 +96,7 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
         	throw new IllegalArgumentException("SharedDataComResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f9da9d4a-23ad-4de8-91ee-19c70c6d7eeb")
+    @objid ("c572fbbb-2278-491b-a9e6-1c773e509047")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("23da40d5-3f3b-41f5-89ae-3c3df0e63368")
+    @objid ("ce4a2f57-3463-48ee-8c60-86d9ed8f9aa2")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -127,7 +127,7 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1e821193-adee-4cd1-84fc-76b5ecb01492")
+    @objid ("c139b086-79cf-4ee4-af13-b97435e8d758")
     public List<String> getSharedDataComResource_Lifeline_readServices() {
         return this.elt.getTagValues(SharedDataComResourceLifeline.MdaTypes.SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d83d37bf-6d81-478a-9c8e-8894f4a6526b")
+    @objid ("a6e985bf-9ff1-46cb-9e1c-a9e873047b51")
     public List<String> getSharedDataComResource_Lifeline_writeServices() {
         return this.elt.getTagValues(SharedDataComResourceLifeline.MdaTypes.SHAREDDATACOMRESOURCE_LIFELINE_WRITESERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("3303e399-145a-471a-ada4-2e6e83baffc4")
+    @objid ("98f01bb7-72ab-413d-a1cc-0146f4bc4439")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1bafaeb5-f655-4b80-a482-f3982b11a008")
+    @objid ("4cc2db86-e4c9-42b6-9dc4-47583237c8ac")
     public void setSharedDataComResource_Lifeline_readServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceLifeline.MdaTypes.SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES_TAGTYPE_ELT, values);
     }
@@ -163,34 +163,34 @@ public class SharedDataComResourceLifeline extends SwCommunicationResourceLifeli
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("96c5e2cf-54d4-48c2-a3d8-f497e6276646")
+    @objid ("21798bb0-11eb-4980-909f-573d9c6547a4")
     public void setSharedDataComResource_Lifeline_writeServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceLifeline.MdaTypes.SHAREDDATACOMRESOURCE_LIFELINE_WRITESERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("bc2c9ad3-bc10-499d-ab0a-f10f67b75a09")
+    @objid ("cc8d8d85-338d-40f6-a7de-4fb0413d4597")
     protected SharedDataComResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("2a274b08-7458-40e4-9e4f-0a6bffae7774")
     public static final class MdaTypes {
-        @objid ("f3d70a53-8aca-4a7c-9160-277ac164a9ab")
+        @objid ("6ca8d0fa-06db-451e-b880-db160a2d25fa")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("d541359e-ad3b-42e1-be95-db4dade50f73")
+        @objid ("51064a05-8183-4138-b26c-9bafc16c9242")
         public static TagType SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES_TAGTYPE_ELT;
 
-        @objid ("7257c326-4b2e-47dd-bbb3-0b90f2f8a931")
+        @objid ("e7364084-430e-4baa-9b7a-0a682ddccfc4")
         public static TagType SHAREDDATACOMRESOURCE_LIFELINE_WRITESERVICES_TAGTYPE_ELT;
 
-        @objid ("5a07129d-ca4d-461f-b20a-c68a1a46ea0f")
+        @objid ("1a806818-c3a2-4316-9b9c-f8c3a309b675")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("173a6d71-9593-49f1-ba0f-2c0f8cb3b7cb")
+        @objid ("2dcb0834-8ac1-42a5-9ec6-df31969a8836")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("03cca3c7-a41e-4c1f-bb81-9b15822afdb2")
+        @objid ("6e277173-4a60-44c2-aa3e-08c8c9aa3dd7")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "2da741a4-10d8-11df-81d9-0014222a9f79");
             SHAREDDATACOMRESOURCE_LIFELINE_READSERVICES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "2da741a5-10d8-11df-81d9-0014222a9f79");

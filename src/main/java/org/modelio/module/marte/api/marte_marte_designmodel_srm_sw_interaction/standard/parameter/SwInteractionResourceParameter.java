@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.parameter;
 
@@ -35,30 +35,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("da180dbb-bf38-49e8-9e8a-55cb7965b0a1")
 public class SwInteractionResourceParameter extends SwResourceParameter {
-    @objid ("be5661c9-ff23-4a74-8801-47771b373ceb")
+    @objid ("01298944-3a26-4d1e-bcea-33dfcbb35f41")
     public static final String STEREOTYPE_NAME = "SwInteractionResource_Parameter";
 
-    @objid ("cc683b3a-0024-434f-9611-2cb99465af11")
+    @objid ("9f8d3993-5433-43ec-aad5-6190f6404ca0")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE = "SwInteractionResource_Parameter_isIntraMemoryPartitionInteraction";
 
-    @objid ("5056c36f-862f-448f-aedc-80b336419aca")
+    @objid ("c51de3d1-871b-4a63-add0-bf015b6d4fad")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_WAITINGPOLICYELEMENTS_TAGTYPE = "SwInteractionResource_Parameter_waitingPolicyElements";
 
-    @objid ("759a1469-1db1-49b7-9247-f1ca7ca34fe8")
+    @objid ("21a90487-3756-4ebd-9851-e343f3775ab2")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUECAPACITY_TAGTYPE = "SwInteractionResource_Parameter_waitingQueueCapacity";
 
-    @objid ("306b5ce8-17fb-4f45-9b1a-d6db67526e7c")
+    @objid ("e256afb6-d3dd-4b1d-aac1-2bb2cb06052c")
     public static final String SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUEPOLICY_TAGTYPE = "SwInteractionResource_Parameter_waitingQueuePolicy";
 
     /**
-     * Tells whether a {@link SwInteractionResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << SwInteractionResource_Parameter >>. 
+     * Tells whether a {@link SwInteractionResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << SwInteractionResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("bc4a2791-e664-4ffc-8db9-5b307543aed9")
+    @objid ("18f9d117-9518-4c09-9920-d9013a8f528e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceParameter.STEREOTYPE_NAME));
     }
@@ -68,21 +68,21 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * 
      * @return a {@link SwInteractionResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("e4359f6d-2f23-4710-abc4-e021f440a5dd")
+    @objid ("d3cdbf18-c496-45c4-93c2-99e9f06f47ea")
     public static SwInteractionResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceParameter.STEREOTYPE_NAME);
         return SwInteractionResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwInteractionResourceParameter} proxy from a {@link Parameter} stereotyped << SwInteractionResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwInteractionResourceParameter} proxy from a {@link Parameter} stereotyped << SwInteractionResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link SwInteractionResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("83172b66-96d0-4c16-8b46-eaf959014c51")
+    @objid ("04479905-f977-47c5-9734-268d0443bdb2")
     public static SwInteractionResourceParameter instantiate(final Parameter obj) {
         return SwInteractionResourceParameter.canInstantiate(obj) ? new SwInteractionResourceParameter(obj) : null;
     }
@@ -95,7 +95,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * @return a {@link SwInteractionResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a2f75e2d-7380-4989-b812-726ee2839f57")
+    @objid ("52d849a9-3a52-47c2-bbbe-b15ac865c78e")
     public static SwInteractionResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (SwInteractionResourceParameter.canInstantiate(obj))
         	return new SwInteractionResourceParameter(obj);
@@ -103,7 +103,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
         	throw new IllegalArgumentException("SwInteractionResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a5c86967-2889-41c4-aea1-5fc05ebee550")
+    @objid ("6336e8b7-4555-469d-8b72-84eb76f1c853")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -123,7 +123,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("669c60b3-b250-45ed-a7d3-02a1cad17328")
+    @objid ("bda40f56-6268-4bde-b2b0-67f04e1d276d")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -134,7 +134,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("560da939-48db-4603-b58b-b75012338768")
+    @objid ("7b13297c-fe45-455d-81ec-e4248d5f32fd")
     public List<String> getSwInteractionResource_Parameter_waitingPolicyElements() {
         return this.elt.getTagValues(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGPOLICYELEMENTS_TAGTYPE_ELT);
     }
@@ -144,7 +144,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1f521613-6eee-470b-bae9-0b0bea7ef5d3")
+    @objid ("69c76536-f1cf-41c4-803f-a5379e0003ff")
     public String getSwInteractionResource_Parameter_waitingQueueCapacity() {
         return this.elt.getTagValue(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUECAPACITY_TAGTYPE_ELT);
     }
@@ -154,12 +154,12 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d7d8ab27-06c1-4dcd-98ee-1218df69a440")
+    @objid ("db4cd456-4fb7-40c6-a40e-2bb1fde9f5d7")
     public String getSwInteractionResource_Parameter_waitingQueuePolicy() {
         return this.elt.getTagValue(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("101fbace-46e6-48c3-ac16-172aa108c04d")
+    @objid ("c4d106c6-1f49-4f28-8bdf-17b5533d054f")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +170,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9c8b07cd-78b5-428e-a9ab-c48bb07d87ec")
+    @objid ("b4ca3df7-4c7f-45f4-9188-a8f91aca2eef")
     public boolean isSwInteractionResource_Parameter_isIntraMemoryPartitionInteraction() {
         return this.elt.isTagged(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3f2432e5-9e1f-4314-b72e-2c8952a5ea52")
+    @objid ("49784044-bcde-478c-81f3-8c2c5ce18878")
     public void setSwInteractionResource_Parameter_isIntraMemoryPartitionInteraction(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT, this.elt);
@@ -193,7 +193,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b8af8870-a22f-4631-9c1e-69a1cad19739")
+    @objid ("de318b97-7652-45b8-8ddf-20698451cd0f")
     public void setSwInteractionResource_Parameter_waitingPolicyElements(final List<String> values) {
         this.elt.putTagValues(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGPOLICYELEMENTS_TAGTYPE_ELT, values);
     }
@@ -203,7 +203,7 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ecbb0e92-8ee5-43d6-96c3-4f1a3e091e22")
+    @objid ("336620a5-2e7c-4c3a-9282-045c27aabb91")
     public void setSwInteractionResource_Parameter_waitingQueueCapacity(final String value) {
         this.elt.putTagValue(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUECAPACITY_TAGTYPE_ELT, value);
     }
@@ -213,40 +213,40 @@ public class SwInteractionResourceParameter extends SwResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a18dc63d-383b-4b03-8452-19b07f327f26")
+    @objid ("d942606d-707d-4279-b972-2c43e18cfe19")
     public void setSwInteractionResource_Parameter_waitingQueuePolicy(final String value) {
         this.elt.putTagValue(SwInteractionResourceParameter.MdaTypes.SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("835392e8-c6da-4850-88da-5fbcdb30456f")
+    @objid ("6b060c0f-7ea4-4cc7-bea9-62f59f73f989")
     protected SwInteractionResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("3f8d0d7a-6917-4919-ab2e-b2dd129b9924")
     public static final class MdaTypes {
-        @objid ("d7aac73d-60d9-4e00-8739-75aa4bfb727d")
+        @objid ("b39ddadc-06d2-435e-924c-8ceee5fc76b8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("ca5669b4-a8cb-4ba8-9d4b-f31f51e77f24")
+        @objid ("4947e10e-cc29-49d9-b618-b489cbbb99db")
         public static TagType SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT;
 
-        @objid ("1ea5805b-1a16-4f90-97d6-9ac36ba5e62d")
+        @objid ("afbf9e41-a6da-4c59-9966-c42fbce04dfd")
         public static TagType SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUEPOLICY_TAGTYPE_ELT;
 
-        @objid ("e7c261e6-1362-4d06-a28b-2b85db27d6ab")
+        @objid ("630ce13b-1965-4948-a228-34465e622829")
         public static TagType SWINTERACTIONRESOURCE_PARAMETER_WAITINGQUEUECAPACITY_TAGTYPE_ELT;
 
-        @objid ("e48a3934-047e-4fee-a9dd-a04b846ed764")
+        @objid ("b246a434-13f3-4c56-83c0-969cc2546069")
         public static TagType SWINTERACTIONRESOURCE_PARAMETER_WAITINGPOLICYELEMENTS_TAGTYPE_ELT;
 
-        @objid ("eb8d15c4-5517-4da7-b92c-38a06d75a266")
+        @objid ("13ce8d3e-4c9b-42b9-8c2a-64b637d35b15")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("472daeb6-6f7e-40d8-9ecc-f39b67010d94")
+        @objid ("d787fb60-eca9-44b1-b53e-a2c657ef1c7c")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("cb29566d-34af-4303-9cc6-7fdd8feaadfd")
+        @objid ("27ac8861-a6c1-4374-8aae-c41cedc22bd6")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "020747ec-0ccf-11df-8525-001302895b2b");
             SWINTERACTIONRESOURCE_PARAMETER_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "020c0c7a-0ccf-11df-8525-001302895b2b");

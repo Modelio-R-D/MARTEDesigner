@@ -18,7 +18,7 @@ public class AllocateActivityGroup_ActivityPartition {
     @objid ("7db1b89c-fef9-448c-9bbf-0e5c7712ddd3")
     public AllocateActivityGroup_ActivityPartition() {
         this.element = MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createActivityPartition();
-        ModelUtils.setStereotype(this.element,MARTEDesignerStereotypes.ALLOCATEACTIVITYGROUP_ACTIVITYPARTITION);
+        ModelUtils.setStereotype(this.element, MARTEDesignerStereotypes.ALLOCATEACTIVITYGROUP_ACTIVITYPARTITION);
         this.element.setName(MARTEResourceManager.getName("AllocateActivityGroup_ActivityPartition"));
     }
 

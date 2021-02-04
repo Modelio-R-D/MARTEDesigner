@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("5e546797-d241-4449-9587-b0c1304b7c34")
 public class ProfileAssociationCollectionAttribCollectionTypeAttribute {
-    @objid ("f6f4cf57-38b4-40bb-bfd7-9b7dc3a944e3")
+    @objid ("a9e8bf22-d2c8-49e8-a62a-32df25284ac1")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_collectionAttrib_CollectionType_Attribute";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("690c0420-b4a0-478a-8514-6c232f536b5f")
+    @objid ("b6e78497-83ec-4866-be0a-bcf8de01cc51")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_collectionAttrib_CollectionType_Attribute >>. 
+     * Tells whether a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_collectionAttrib_CollectionType_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b855075c-0da2-4721-b115-e6fe5d693a2e")
+    @objid ("28596612-4f49-42b5-b005-93d1e232aa4c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationCollectionAttribCollectionTypeAttribute.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationCollectionAttribCollectionTypeAttribute {
      * 
      * @return a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute} proxy on the created {@link Dependency}.
      */
-    @objid ("49e6d305-d9a9-47da-9673-c35ada9deec6")
+    @objid ("56a5f398-f413-4a76-836d-6e2909d15b1e")
     public static ProfileAssociationCollectionAttribCollectionTypeAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationCollectionAttribCollectionTypeAttribute.STEREOTYPE_NAME);
         return ProfileAssociationCollectionAttribCollectionTypeAttribute.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute} proxy from a {@link Dependency} stereotyped << ProfileAssociation_collectionAttrib_CollectionType_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute} proxy from a {@link Dependency} stereotyped << ProfileAssociation_collectionAttrib_CollectionType_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute} proxy or <i>null</i>.
      */
-    @objid ("9a67b084-1237-4305-ba7c-85a363c10b24")
+    @objid ("1e235fda-8870-4ce2-8a3a-82c688476f31")
     public static ProfileAssociationCollectionAttribCollectionTypeAttribute instantiate(final Dependency obj) {
         return ProfileAssociationCollectionAttribCollectionTypeAttribute.canInstantiate(obj) ? new ProfileAssociationCollectionAttribCollectionTypeAttribute(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationCollectionAttribCollectionTypeAttribute {
      * @return a {@link ProfileAssociationCollectionAttribCollectionTypeAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c66eefdd-9343-4fa7-87d6-9cca8d8935ba")
+    @objid ("3400ca54-7b81-40a1-bef6-8ed2381da5ab")
     public static ProfileAssociationCollectionAttribCollectionTypeAttribute safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationCollectionAttribCollectionTypeAttribute.canInstantiate(obj))
         	return new ProfileAssociationCollectionAttribCollectionTypeAttribute(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationCollectionAttribCollectionTypeAttribute {
         	throw new IllegalArgumentException("ProfileAssociationCollectionAttribCollectionTypeAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9f2865d6-1347-4939-82e8-be343ce2d4af")
+    @objid ("7d390d89-2153-476b-ada5-24b436c28ed6")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationCollectionAttribCollectionTypeAttribute {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("a72dc91e-26f7-4be2-98e2-c94e4535a03c")
+    @objid ("591de588-cc34-4538-b996-ed59cf87a14c")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("5b708d91-312b-44fb-8d32-e481d1d2bd4b")
+    @objid ("79099055-928d-4433-80ff-faf819d30c25")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("4e17c1db-c314-415a-9f5e-7a5ddb827612")
+    @objid ("7c0f3a30-fc96-4fb5-a9ef-bacf9e40c197")
     protected ProfileAssociationCollectionAttribCollectionTypeAttribute(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("419a9f16-2c50-4a60-a2ae-99717124dfde")
     public static final class MdaTypes {
-        @objid ("19e23639-e458-43be-8865-6a9eed76ff4e")
+        @objid ("73131329-3574-466f-adf3-13af031d39cc")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f3362ef9-1f4f-4634-a26b-ec0699be09ea")
+        @objid ("fd6a9dfe-6453-4501-a10f-2b3314936116")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("60dc1dc1-a511-4729-b9b4-94421f99daf7")
+        @objid ("14317a2e-b7b0-4563-a6c1-feed20dfa5dd")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("808455bd-cd0d-4c6b-a197-df916f731de8")
+        @objid ("88151744-55b1-4ed2-a329-4bc3e7396cb0")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d7b0443c-82b2-11df-b65a-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

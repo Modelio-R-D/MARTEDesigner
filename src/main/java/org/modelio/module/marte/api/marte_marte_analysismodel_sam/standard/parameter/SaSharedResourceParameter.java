@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_sam.standard.parameter;
 
@@ -35,33 +35,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("517c0c16-1880-454f-baa3-7198bdbde791")
 public class SaSharedResourceParameter extends MutualExclusionResourceParameter {
-    @objid ("26de68ad-c592-46bc-a97e-8f6273afa8a4")
+    @objid ("3740c034-16b8-4c51-a869-358d374be496")
     public static final String STEREOTYPE_NAME = "SaSharedResource_Parameter";
 
-    @objid ("9276ec7f-00e5-49a5-9bb1-e994ad5793c8")
+    @objid ("1a746fe2-9656-48bc-864c-e1c7f65fcb62")
     public static final String SASHAREDRESOURCE_PARAMETER_ACQUIST_TAGTYPE = "SaSharedResource_Parameter_acquisT";
 
-    @objid ("ecb3d244-b85c-46d4-bdd4-5cf22108e8cb")
+    @objid ("d54625c0-f607-450d-9209-5c89efc71eb5")
     public static final String SASHAREDRESOURCE_PARAMETER_CAPACITY_TAGTYPE = "SaSharedResource_Parameter_capacity";
 
-    @objid ("5660f29b-4ccb-4ce7-bcdc-0c99ab617f45")
+    @objid ("d842a1de-15da-42af-a279-64fb1db45785")
     public static final String SASHAREDRESOURCE_PARAMETER_ISCONSUM_TAGTYPE = "SaSharedResource_Parameter_isConsum";
 
-    @objid ("9dba6044-7238-460c-a2a5-a4ac79681587")
+    @objid ("38ccea8d-e6ee-4fa6-8b97-55043d530b4a")
     public static final String SASHAREDRESOURCE_PARAMETER_ISPREEMP_TAGTYPE = "SaSharedResource_Parameter_isPreemp";
 
-    @objid ("435ddddd-1f32-4050-b029-ad079e176010")
+    @objid ("460cbeb3-db96-4412-90d3-96306f3a8375")
     public static final String SASHAREDRESOURCE_PARAMETER_RELEASET_TAGTYPE = "SaSharedResource_Parameter_releaseT";
 
     /**
-     * Tells whether a {@link SaSharedResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << SaSharedResource_Parameter >>. 
+     * Tells whether a {@link SaSharedResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << SaSharedResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("6cde0c1a-bd57-4295-960e-1e56ad8e7f71")
+    @objid ("71afe7e3-ae2a-4bef-a002-f98ae3318c65")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SaSharedResourceParameter.STEREOTYPE_NAME));
     }
@@ -71,21 +71,21 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * 
      * @return a {@link SaSharedResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("afc639d9-da0c-44e5-a79e-c5636bfb5720")
+    @objid ("9a5da43c-85ed-4b86-89df-4e9c2e12e6e5")
     public static SaSharedResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SaSharedResourceParameter.STEREOTYPE_NAME);
         return SaSharedResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link SaSharedResourceParameter} proxy from a {@link Parameter} stereotyped << SaSharedResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SaSharedResourceParameter} proxy from a {@link Parameter} stereotyped << SaSharedResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link SaSharedResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("c7b8929e-5397-40fd-b3a2-522cae50fb15")
+    @objid ("f10d9d88-73d5-4a01-9948-bed6e2bc1047")
     public static SaSharedResourceParameter instantiate(final Parameter obj) {
         return SaSharedResourceParameter.canInstantiate(obj) ? new SaSharedResourceParameter(obj) : null;
     }
@@ -98,7 +98,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * @return a {@link SaSharedResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ccedbb09-be9d-4a7d-8811-e6d72fbfde9d")
+    @objid ("be24cd1a-bc3b-42f4-875f-7a63499a31ef")
     public static SaSharedResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (SaSharedResourceParameter.canInstantiate(obj))
         	return new SaSharedResourceParameter(obj);
@@ -106,7 +106,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
         	throw new IllegalArgumentException("SaSharedResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("c7f5f47a-da66-44fd-b5c0-79e25d5e1368")
+    @objid ("8bf9be74-fe67-4256-8040-8479c08ec87e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -126,7 +126,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("53100168-a557-420f-8c94-9bcd7a50125d")
+    @objid ("e1356f77-4609-41ae-b72d-e044c00a21db")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -137,7 +137,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("1a4d0a47-6dec-4b3d-969e-3ad608ba590f")
+    @objid ("d602608e-028c-4cbf-ac2c-6b207bb34b4b")
     public List<String> getSaSharedResource_Parameter_acquisT() {
         return this.elt.getTagValues(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ACQUIST_TAGTYPE_ELT);
     }
@@ -147,7 +147,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d8171e1b-5fc1-4b00-b2e6-f3720955245f")
+    @objid ("164654dd-5d1c-4ca8-beac-b0b1ba872471")
     public String getSaSharedResource_Parameter_capacity() {
         return this.elt.getTagValue(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_CAPACITY_TAGTYPE_ELT);
     }
@@ -157,12 +157,12 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ec0b1c0c-9073-4777-a021-dcb65d3f5dc1")
+    @objid ("e349596c-fd8a-46ec-8a0d-5eb10fe3e500")
     public List<String> getSaSharedResource_Parameter_releaseT() {
         return this.elt.getTagValues(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_RELEASET_TAGTYPE_ELT);
     }
 
-    @objid ("4faa5da6-280d-4575-b198-5ca1362e7d78")
+    @objid ("4f8efe70-1820-4050-8f8a-533ff510e3dc")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -173,7 +173,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("54ec0b84-4a41-4880-8dfb-f1c42b1bd259")
+    @objid ("9155d4af-c767-49bc-871b-d168032285ab")
     public boolean isSaSharedResource_Parameter_isConsum() {
         return this.elt.isTagged(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ISCONSUM_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9a483bec-398e-4bf1-b910-1c12d271431f")
+    @objid ("91520f19-4683-480a-8888-b9b18a97afaa")
     public boolean isSaSharedResource_Parameter_isPreemp() {
         return this.elt.isTagged(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ISPREEMP_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7e12cb4e-dc01-4353-a889-e1f77783df84")
+    @objid ("951ce5ed-28a7-4254-9e37-4ca13ab8df61")
     public void setSaSharedResource_Parameter_acquisT(final List<String> values) {
         this.elt.putTagValues(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ACQUIST_TAGTYPE_ELT, values);
     }
@@ -203,7 +203,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a173df21-f133-48ae-8019-0b6030454256")
+    @objid ("33f4a804-517b-4476-b723-3e7c5421d105")
     public void setSaSharedResource_Parameter_capacity(final String value) {
         this.elt.putTagValue(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_CAPACITY_TAGTYPE_ELT, value);
     }
@@ -213,7 +213,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a30d7aeb-314d-4a6f-b14e-7077cff88778")
+    @objid ("58687f58-c050-4288-a5b2-550e7e6f0f23")
     public void setSaSharedResource_Parameter_isConsum(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ISCONSUM_TAGTYPE_ELT, this.elt);
@@ -226,7 +226,7 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0d19066e-4363-4b28-899c-6da741ec853c")
+    @objid ("ca091410-927a-477e-8194-8da0e18b7010")
     public void setSaSharedResource_Parameter_isPreemp(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_ISPREEMP_TAGTYPE_ELT, this.elt);
@@ -239,43 +239,43 @@ public class SaSharedResourceParameter extends MutualExclusionResourceParameter 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("55c3629b-ed3f-48d7-a385-1cfab7b17bdd")
+    @objid ("5dbe152e-1317-4251-b50b-35b0edde1d2d")
     public void setSaSharedResource_Parameter_releaseT(final List<String> values) {
         this.elt.putTagValues(SaSharedResourceParameter.MdaTypes.SASHAREDRESOURCE_PARAMETER_RELEASET_TAGTYPE_ELT, values);
     }
 
-    @objid ("0c290698-466e-4fa1-84ce-b71cd4ef3820")
+    @objid ("00a69ce5-e8e8-4749-bc19-eedf80aade2a")
     protected SaSharedResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("0a8874e4-4c25-4944-aac5-edc51e951237")
     public static final class MdaTypes {
-        @objid ("2646c4d4-0f8e-46c8-8c8f-22d13b452f37")
+        @objid ("e9ea2a70-fbb8-4ac3-854c-8ccbafd9f79a")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("da742567-9256-40d2-953b-8a83124c89d4")
+        @objid ("0b33a681-7b10-4dcc-b040-04edab96a382")
         public static TagType SASHAREDRESOURCE_PARAMETER_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("b18051dd-c161-4099-aa6e-f3da505f0b4b")
+        @objid ("67bddd86-bdfa-4b0c-8139-53a8959f53b8")
         public static TagType SASHAREDRESOURCE_PARAMETER_ISPREEMP_TAGTYPE_ELT;
 
-        @objid ("6655a7d3-dde4-4400-ae61-09c0b3deccbe")
+        @objid ("ab6d492f-2c5e-44c8-a0d0-a05392f6365b")
         public static TagType SASHAREDRESOURCE_PARAMETER_ISCONSUM_TAGTYPE_ELT;
 
-        @objid ("f8ba5c97-0e16-46a0-9e48-10b60b110af6")
+        @objid ("72d5a5df-88de-4505-bb5e-1ac58a86da59")
         public static TagType SASHAREDRESOURCE_PARAMETER_ACQUIST_TAGTYPE_ELT;
 
-        @objid ("c13eb796-c95a-4e7e-8178-b4723ae31d44")
+        @objid ("3c5d7de8-0267-4c2a-b27b-046f6bc5cb0f")
         public static TagType SASHAREDRESOURCE_PARAMETER_RELEASET_TAGTYPE_ELT;
 
-        @objid ("b755f663-a53d-45af-8226-7fc44a771f4d")
+        @objid ("a1b536bb-4798-4ae8-87ec-a425c49eccd2")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("4bf426e5-52d5-4947-8d96-6bb77ad6686f")
+        @objid ("7f741861-8ca8-4e08-a56a-c3e3d17df2d6")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("8f5bc03c-4577-4d1c-83b5-4060923415ce")
+        @objid ("f73f490d-6dc8-4ead-8f5a-85f683776c07")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03956b4e-0ccf-11df-8525-001302895b2b");
             SASHAREDRESOURCE_PARAMETER_CAPACITY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03956b55-0ccf-11df-8525-001302895b2b");

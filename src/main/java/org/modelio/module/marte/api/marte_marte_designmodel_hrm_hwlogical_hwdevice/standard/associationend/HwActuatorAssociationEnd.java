@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdevice.standard.associationend;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("331c2ab3-e22e-4897-abfa-31f4b5092b81")
 public class HwActuatorAssociationEnd extends HwIOAssociationEnd {
-    @objid ("8780c25d-a588-4aaa-8514-2b5597ee7134")
+    @objid ("b659be07-7e6a-4f69-a552-00d3df0c13ed")
     public static final String STEREOTYPE_NAME = "HwActuator_AssociationEnd";
 
     /**
-     * Tells whether a {@link HwActuatorAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwActuator_AssociationEnd >>. 
+     * Tells whether a {@link HwActuatorAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwActuator_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b7e44ec4-2b94-488e-b299-b2307b707c27")
+    @objid ("468ae31a-ee90-4c64-be05-c1c482f47978")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwActuatorAssociationEnd.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class HwActuatorAssociationEnd extends HwIOAssociationEnd {
      * 
      * @return a {@link HwActuatorAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("ff303df9-cc9d-40cb-ade7-c5915804fcc4")
+    @objid ("aa0a4e50-1e67-4d19-96a6-d664a216f60d")
     public static HwActuatorAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwActuatorAssociationEnd.STEREOTYPE_NAME);
         return HwActuatorAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwActuatorAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwActuator_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwActuatorAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwActuator_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwActuatorAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("822246f0-f47c-4875-b268-f576e6eccc00")
+    @objid ("0ba2a4ae-cc0b-4be3-9084-b50e87e1afd4")
     public static HwActuatorAssociationEnd instantiate(final AssociationEnd obj) {
         return HwActuatorAssociationEnd.canInstantiate(obj) ? new HwActuatorAssociationEnd(obj) : null;
     }
@@ -81,7 +81,7 @@ public class HwActuatorAssociationEnd extends HwIOAssociationEnd {
      * @return a {@link HwActuatorAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("0638bf80-b941-48aa-b6b6-7f86b7299b1f")
+    @objid ("bc5528fd-e832-4e3f-896c-a4e366b5d9bc")
     public static HwActuatorAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwActuatorAssociationEnd.canInstantiate(obj))
         	return new HwActuatorAssociationEnd(obj);
@@ -89,7 +89,7 @@ public class HwActuatorAssociationEnd extends HwIOAssociationEnd {
         	throw new IllegalArgumentException("HwActuatorAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("f651c7e6-a994-46e6-b125-54856b06e9c3")
+    @objid ("ba9d7351-b891-4ee7-a523-9c5c623ed314")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class HwActuatorAssociationEnd extends HwIOAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("134fc384-a557-41f8-9cde-94ab2b54eeff")
+    @objid ("46181bfd-653f-4c20-9d88-3d0794682a75")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
     }
 
-    @objid ("ebd1d281-5863-46dc-aa33-bdfeb7c39419")
+    @objid ("2d73dd73-e5dd-46a5-ac89-598f666cabb5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("d03572dc-4f72-4ccc-8a5f-93c12a359863")
+    @objid ("11aea026-5167-48ff-bfd1-b44ed8df3041")
     protected HwActuatorAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("b0649772-3e70-40c6-a0fd-79ae5feefa0c")
     public static final class MdaTypes {
-        @objid ("423f7eee-d207-4a07-a1a2-17f5e4bf523d")
+        @objid ("dea95d5e-19da-4e9f-abf2-476ff3062bb8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("00ff97ef-9252-42c6-9cc0-ddae8d99e6fa")
+        @objid ("19d7a5f0-aabb-478b-b6d3-6e0b7a4cdba5")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("51321083-7e10-493b-8613-87612c106e2f")
+        @objid ("dbd56dba-a5e1-426f-a159-121e93e78c45")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("ea9550ba-99de-4cfc-b2a7-9d4162c1bbec")
+        @objid ("e58069b5-25cb-461d-bb52-0470932fb3a0")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "88a37410-c7ac-11df-ad39-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.instance;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("a2368ecb-5f7f-411d-aea9-6273d00de4d0")
 public class SharedDataComResourceInstance extends SwCommunicationResourceInstance {
-    @objid ("cb7569e4-e242-432a-af91-354110d9b801")
+    @objid ("9e00f1e6-0b40-49b7-9421-d67cfc7a66b3")
     public static final String STEREOTYPE_NAME = "SharedDataComResource_Instance";
 
-    @objid ("8dc62278-b229-4a30-aba6-26448a21e36b")
+    @objid ("df55ac90-68df-4c2b-a94c-33bce0b8d941")
     public static final String SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES_TAGTYPE = "SharedDataComResource_Instance_readServices";
 
-    @objid ("a53d1eb7-d52e-4ee6-acd5-9645d84714d6")
+    @objid ("d15f2410-c438-42da-9575-1e789ac8f2d0")
     public static final String SHAREDDATACOMRESOURCE_INSTANCE_WRITESERVICES_TAGTYPE = "SharedDataComResource_Instance_writeServices";
 
     /**
-     * Tells whether a {@link SharedDataComResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << SharedDataComResource_Instance >>. 
+     * Tells whether a {@link SharedDataComResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << SharedDataComResource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("9e152c91-9ada-454a-8205-872f91cf6d2e")
+    @objid ("2791fa33-6f59-44e5-9e21-6186e995531d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceInstance.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * 
      * @return a {@link SharedDataComResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("2ff96385-071e-44fc-8ef6-6c18200b404c")
+    @objid ("b137b1dc-f87d-4d74-83e2-bed4af50dd8b")
     public static SharedDataComResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SharedDataComResourceInstance.STEREOTYPE_NAME);
         return SharedDataComResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link SharedDataComResourceInstance} proxy from a {@link Instance} stereotyped << SharedDataComResource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SharedDataComResourceInstance} proxy from a {@link Instance} stereotyped << SharedDataComResource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link SharedDataComResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("10e79975-106b-45bd-a7e5-c9c1db98c2e8")
+    @objid ("e2ed6db4-18ed-494c-af46-eca077b8b06f")
     public static SharedDataComResourceInstance instantiate(final Instance obj) {
         return SharedDataComResourceInstance.canInstantiate(obj) ? new SharedDataComResourceInstance(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * @return a {@link SharedDataComResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("a927e8d1-98ea-41f3-95c6-609d8f3e7893")
+    @objid ("29925185-4afb-4af5-9bd6-50631aae2de7")
     public static SharedDataComResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (SharedDataComResourceInstance.canInstantiate(obj))
         	return new SharedDataComResourceInstance(obj);
@@ -96,7 +96,7 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
         	throw new IllegalArgumentException("SharedDataComResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("895739ad-bd2d-46ec-957d-fb3e3efec269")
+    @objid ("05adf8d2-ddfd-48cc-a138-9378f22af2a4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("061d5fe4-51d0-46b6-b98f-8da1f20e70d1")
+    @objid ("0ed633a5-33f7-4bd2-838b-7e73c5326351")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
@@ -127,7 +127,7 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("296ccdc5-8926-4e8d-8509-edd9478c52dd")
+    @objid ("0bef4f05-1811-4883-921c-b98b8871701b")
     public List<String> getSharedDataComResource_Instance_readServices() {
         return this.elt.getTagValues(SharedDataComResourceInstance.MdaTypes.SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("49c69e25-232d-4319-b72b-66f8da113648")
+    @objid ("44e1ab80-ff85-4206-be2e-b1b2cfe8c7a1")
     public List<String> getSharedDataComResource_Instance_writeServices() {
         return this.elt.getTagValues(SharedDataComResourceInstance.MdaTypes.SHAREDDATACOMRESOURCE_INSTANCE_WRITESERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("bf1f5118-110c-4c30-9e38-b03cc644a37c")
+    @objid ("1fe7ac10-9eb0-4035-a974-6ce932f028f9")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5c4d8980-0818-4150-8564-9d92268aca57")
+    @objid ("a8cb97b5-4620-4a97-91e5-c0a3441de098")
     public void setSharedDataComResource_Instance_readServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceInstance.MdaTypes.SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES_TAGTYPE_ELT, values);
     }
@@ -163,34 +163,34 @@ public class SharedDataComResourceInstance extends SwCommunicationResourceInstan
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1e65d15c-f90c-4781-aa08-12f7d0dd40a4")
+    @objid ("c4d2cfea-cc5e-407b-8e2b-fbe53817119c")
     public void setSharedDataComResource_Instance_writeServices(final List<String> values) {
         this.elt.putTagValues(SharedDataComResourceInstance.MdaTypes.SHAREDDATACOMRESOURCE_INSTANCE_WRITESERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("7a15dbba-2370-43d6-80c0-86cf212ed503")
+    @objid ("a5015810-aef1-4735-9791-d9012cbb8f16")
     protected SharedDataComResourceInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("6030a84e-f6c9-4627-b1b5-ab712979f2cc")
     public static final class MdaTypes {
-        @objid ("4a00a165-bd39-434d-a038-8150da704df8")
+        @objid ("d06a7110-2a14-4708-a16e-14d6a5c2283e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("0629806d-d1a4-48d7-a73d-2b9e0179506d")
+        @objid ("d9daf6a6-ebdd-46dd-a2dd-7290434db699")
         public static TagType SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES_TAGTYPE_ELT;
 
-        @objid ("dbbafe81-a13e-45d0-a756-f58da6565231")
+        @objid ("2b1ba6a5-a658-4aaf-b8a8-acf6ca855d84")
         public static TagType SHAREDDATACOMRESOURCE_INSTANCE_WRITESERVICES_TAGTYPE_ELT;
 
-        @objid ("44c4b8cf-5864-4190-97a7-52ad06d4f184")
+        @objid ("c8616a4b-7b83-4356-b0a1-64fb315396d6")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8bfdaef3-37bf-4c89-bcd0-0fb460b8b19c")
+        @objid ("108bd653-25cc-442a-a752-8095f31b0341")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("262ed125-202e-4fc4-9b04-14a76ee1962c")
+        @objid ("1ae2fd30-c4a8-425d-be1c-478be8f8ce52")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0221815b-0ccf-11df-8525-001302895b2b");
             SHAREDDATACOMRESOURCE_INSTANCE_READSERVICES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "02218162-0ccf-11df-8525-001302895b2b");

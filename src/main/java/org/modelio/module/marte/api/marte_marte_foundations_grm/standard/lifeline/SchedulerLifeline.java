@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.lifeline;
 
@@ -34,42 +34,42 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("f7ac3c71-cf6b-47fc-892f-562329557a1e")
 public class SchedulerLifeline extends ResourceLifeline {
-    @objid ("6a258470-6c91-493c-8e71-2f1e84bfaa0e")
+    @objid ("ba31f228-da1b-4e4e-a96e-682c43d74129")
     public static final String STEREOTYPE_NAME = "Scheduler_Lifeline";
 
-    @objid ("a40e808b-4839-436c-b3d2-ad027ea158bf")
+    @objid ("8a2ebdc2-6fc7-4152-bb1e-5b4bdbcaa324")
     public static final String SCHEDULER_LIFELINE_HOST_TAGTYPE = "Scheduler_Lifeline_host";
 
-    @objid ("16b7c17a-99c0-4688-bff3-c0ff560e43dc")
+    @objid ("58eff265-9dfa-46a6-9576-2e1a84d18eda")
     public static final String SCHEDULER_LIFELINE_ISPREEMPTIBLE_TAGTYPE = "Scheduler_Lifeline_isPreemptible";
 
-    @objid ("a4c75392-e5a3-409c-a446-329c8098b158")
+    @objid ("c8ee78d8-3656-40fd-ab22-ff7298556b60")
     public static final String SCHEDULER_LIFELINE_OTHERSCHEDPOLICY_TAGTYPE = "Scheduler_Lifeline_otherSchedPolicy";
 
-    @objid ("e7ab95ed-f22b-4836-9647-2e4999d03d2f")
+    @objid ("b5702807-0c11-4842-8c84-9bc4af6bb7d2")
     public static final String SCHEDULER_LIFELINE_PROCESSINGUNITS_TAGTYPE = "Scheduler_Lifeline_processingUnits";
 
-    @objid ("9daaedf5-f72d-4aed-b744-65d61e12254f")
+    @objid ("bf23ae0c-5867-4c36-a722-f105f492d9fe")
     public static final String SCHEDULER_LIFELINE_PROTECTEDSHAREDRESOURCES_TAGTYPE = "Scheduler_Lifeline_protectedSharedResources";
 
-    @objid ("ee5e7711-c2c9-4e0f-9518-b35874d9183c")
+    @objid ("abe09c7b-8f86-4063-bf3f-2db3aa203fc0")
     public static final String SCHEDULER_LIFELINE_SCHEDPOLICY_TAGTYPE = "Scheduler_Lifeline_schedPolicy";
 
-    @objid ("132b9fbe-90c1-42b6-8477-75081705d27f")
+    @objid ("2dfa99de-3ea8-4219-a576-c4d4bf7adfd4")
     public static final String SCHEDULER_LIFELINE_SCHEDULABLERESOURCES_TAGTYPE = "Scheduler_Lifeline_schedulableResources";
 
-    @objid ("9645cd2c-765e-4280-841c-2145d6376b27")
+    @objid ("b654b403-df8e-46e0-9b8d-f3685082457b")
     public static final String SCHEDULER_LIFELINE_SCHEDULE_TAGTYPE = "Scheduler_Lifeline_schedule";
 
     /**
-     * Tells whether a {@link SchedulerLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << Scheduler_Lifeline >>. 
+     * Tells whether a {@link SchedulerLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << Scheduler_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1e1ab3f2-a5ca-4faa-a538-27e0e5465d7d")
+    @objid ("e4a55c86-3493-4120-88f1-7797a02454ae")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerLifeline.STEREOTYPE_NAME));
     }
@@ -79,21 +79,21 @@ public class SchedulerLifeline extends ResourceLifeline {
      * 
      * @return a {@link SchedulerLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("a8ae44d3-a522-4453-bb6c-0bed3ae9ce0d")
+    @objid ("a6d29b37-0fee-4380-811a-2ae3e13d0798")
     public static SchedulerLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SchedulerLifeline.STEREOTYPE_NAME);
         return SchedulerLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link SchedulerLifeline} proxy from a {@link Lifeline} stereotyped << Scheduler_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SchedulerLifeline} proxy from a {@link Lifeline} stereotyped << Scheduler_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link SchedulerLifeline} proxy or <i>null</i>.
      */
-    @objid ("403fa564-22ad-468d-b6fe-7badd9151710")
+    @objid ("0a9654a5-29f7-41fb-832a-fbd40edcf651")
     public static SchedulerLifeline instantiate(final Lifeline obj) {
         return SchedulerLifeline.canInstantiate(obj) ? new SchedulerLifeline(obj) : null;
     }
@@ -106,7 +106,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * @return a {@link SchedulerLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("23c346f4-582a-416e-a1a4-35f3d475cc5a")
+    @objid ("7e9b019f-f53d-439e-bfe1-9c6adb22bd06")
     public static SchedulerLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SchedulerLifeline.canInstantiate(obj))
         	return new SchedulerLifeline(obj);
@@ -114,7 +114,7 @@ public class SchedulerLifeline extends ResourceLifeline {
         	throw new IllegalArgumentException("SchedulerLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d3a400e2-0cf6-4ea3-88a1-7ef1a0517141")
+    @objid ("da216097-e16e-4cbd-b1f5-e3bf9fd9ca29")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -134,7 +134,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("26d1afa8-4aed-4c21-87a7-64bfb67c16c8")
+    @objid ("e81439ae-3c43-4f07-bf4c-dd0ab1637eaf")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -145,7 +145,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("40e01c3e-1d15-4ce4-b444-22200fbe6049")
+    @objid ("fe8caf02-fc57-403a-9db3-644c34160926")
     public String getScheduler_Lifeline_host() {
         return this.elt.getTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_HOST_TAGTYPE_ELT);
     }
@@ -155,7 +155,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b9d932a8-86f6-4d3e-8cd7-315afcf10786")
+    @objid ("e5b88c3a-7a72-4c39-bdd9-7bc81c49b590")
     public String getScheduler_Lifeline_otherSchedPolicy() {
         return this.elt.getTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -165,7 +165,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("948cf38b-1483-46ce-9b2f-35b64cd98513")
+    @objid ("5facd467-2669-44c9-877d-397fa114c015")
     public List<String> getScheduler_Lifeline_processingUnits() {
         return this.elt.getTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -175,7 +175,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("9dace465-99a6-44bf-8a70-fed3faee25ab")
+    @objid ("ea06eeee-7266-485c-9262-82e352a3acca")
     public List<String> getScheduler_Lifeline_protectedSharedResources() {
         return this.elt.getTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -185,7 +185,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eef932fb-a377-4697-b408-edb24cb40be0")
+    @objid ("b3e2892e-08f9-4186-ad0e-930fdb38c75a")
     public String getScheduler_Lifeline_schedPolicy() {
         return this.elt.getTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -195,7 +195,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4ce1eb44-2432-42fa-a16b-672f0b4d72a0")
+    @objid ("57e3ca61-1729-4e5a-8659-e985f1080b88")
     public List<String> getScheduler_Lifeline_schedulableResources() {
         return this.elt.getTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -205,12 +205,12 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3ca1d777-d9cb-4339-b8b3-50a5c6fb3394")
+    @objid ("de41dfe3-85b9-4281-bd26-557dff292a53")
     public String getScheduler_Lifeline_schedule() {
         return this.elt.getTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDULE_TAGTYPE_ELT);
     }
 
-    @objid ("c6df60b8-396c-4def-bead-8c8a45335aba")
+    @objid ("64f06233-129b-4e69-8a2e-1883f610ac03")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -221,7 +221,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fcbcbb6a-a633-4d79-9818-4ca66d5c9b45")
+    @objid ("5aa2b50d-081d-45af-8fd9-c59d616249e7")
     public boolean isScheduler_Lifeline_isPreemptible() {
         return this.elt.isTagged(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -231,7 +231,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("98e2842a-a9e1-45ec-a4d0-72c61991c6bb")
+    @objid ("52ace7c6-5857-4911-a9c8-c428b994b39e")
     public void setScheduler_Lifeline_host(final String value) {
         this.elt.putTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_HOST_TAGTYPE_ELT, value);
     }
@@ -241,7 +241,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("61ca6836-954f-450d-96f6-d902c4fae26e")
+    @objid ("59a37e28-0dfe-4828-85e3-890be14efa6a")
     public void setScheduler_Lifeline_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -254,7 +254,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3233c726-72c6-4c9f-92b5-8e97b37b0680")
+    @objid ("efd9e351-07ca-49c0-bee5-8e39c1811847")
     public void setScheduler_Lifeline_otherSchedPolicy(final String value) {
         this.elt.putTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -264,7 +264,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("48ecf74a-75d5-49fb-9c3a-78bb3aebc2de")
+    @objid ("5cd34b2d-5247-49dd-8af3-90dae83cf62c")
     public void setScheduler_Lifeline_processingUnits(final List<String> values) {
         this.elt.putTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -274,7 +274,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1b2c5fa0-14bb-4e73-891b-90d5957e17af")
+    @objid ("06f00f84-3a9f-4063-b800-cc9c108b9cd1")
     public void setScheduler_Lifeline_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -284,7 +284,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d331383f-f69c-4ed7-9015-d55c8d89765b")
+    @objid ("dad61b11-d7a4-436a-ba55-7c88de23c744")
     public void setScheduler_Lifeline_schedPolicy(final String value) {
         this.elt.putTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -294,7 +294,7 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("87d7736f-b978-49f0-be80-5bab371c3ca8")
+    @objid ("9d9c4313-eb7c-4f32-96f1-5ab506ad250b")
     public void setScheduler_Lifeline_schedulableResources(final List<String> values) {
         this.elt.putTagValues(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -304,52 +304,52 @@ public class SchedulerLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cf6bfb14-d18e-4346-9f95-d23816a10d1f")
+    @objid ("fcbcfba0-8060-4a93-94af-3c2477bd430e")
     public void setScheduler_Lifeline_schedule(final String value) {
         this.elt.putTagValue(SchedulerLifeline.MdaTypes.SCHEDULER_LIFELINE_SCHEDULE_TAGTYPE_ELT, value);
     }
 
-    @objid ("aee95d65-214b-460f-a203-69ca9431ef98")
+    @objid ("5a5992be-c8fe-4b2b-90a1-a66551e5a75c")
     protected SchedulerLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("a11a11cd-2d5b-45bc-9895-2806a98e095f")
     public static final class MdaTypes {
-        @objid ("7e731a2e-b7e2-4f77-ad16-b16836912d4e")
+        @objid ("9c8ce946-b8d8-4a9a-b49d-ebf02d334aac")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b49f5ffd-02b8-4779-bd39-db33ac7496fe")
+        @objid ("90ee99fc-3043-4fc0-91a7-85ef226aeb42")
         public static TagType SCHEDULER_LIFELINE_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("51bd893e-8b97-4aa5-8720-242e806f04d5")
+        @objid ("77f35856-2afb-49df-b612-05f1151e7018")
         public static TagType SCHEDULER_LIFELINE_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("66382b9f-dac7-432e-a0bf-8dc4468be6a2")
+        @objid ("4e185764-7121-4fc1-b687-1e402ebf5f54")
         public static TagType SCHEDULER_LIFELINE_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("05ad3cff-ccbe-4595-9370-1e4c0eee9f9b")
+        @objid ("bd445261-9ce4-478b-bc36-2e33132e578d")
         public static TagType SCHEDULER_LIFELINE_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("fbc999f1-901c-4c38-9c88-826486dd4ed3")
+        @objid ("ac4fb07f-831c-4e4d-855a-e5265a4e6332")
         public static TagType SCHEDULER_LIFELINE_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("5ef5a168-b86c-400b-8fbd-d5f4197ff04d")
+        @objid ("73138cc4-b9a2-4d03-a4ab-972a608912f0")
         public static TagType SCHEDULER_LIFELINE_HOST_TAGTYPE_ELT;
 
-        @objid ("3328bb81-4a9e-494d-97e5-4321b8093812")
+        @objid ("5aa212ce-fc76-4ef4-a8c3-e0925af9cd25")
         public static TagType SCHEDULER_LIFELINE_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("2bba4937-d649-46d9-9db4-5c0bfebf27a0")
+        @objid ("6182a640-8359-49d0-9df6-70576c9bdbd8")
         public static TagType SCHEDULER_LIFELINE_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("4175a4a2-35f4-4966-92dc-5304e98c37a3")
+        @objid ("2592aff5-d8db-4beb-8c07-3bcf1067beff")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c0559fae-7e35-47ac-b6f1-ff0087c049ae")
+        @objid ("ee1c6e25-185b-44e0-a449-0c1b16ee1346")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("de708f3b-869f-4a8c-beeb-bd4ff713cfd0")
+        @objid ("747c6de9-a9e2-43ba-93d9-132e43193bf3")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "a2e9e3e4-1017-11df-86fe-0014222a9f79");
             SCHEDULER_LIFELINE_ISPREEMPTIBLE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "cfc1f717-1017-11df-86fe-0014222a9f79");

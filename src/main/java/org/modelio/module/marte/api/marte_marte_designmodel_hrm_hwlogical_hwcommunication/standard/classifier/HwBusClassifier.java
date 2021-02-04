@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.classifier;
 
@@ -33,30 +33,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("2f2dcaf3-c7ca-4e67-8588-aff7f7dbaed9")
 public class HwBusClassifier extends HwMediaClassifier {
-    @objid ("491bb948-3e0a-4f43-adb7-8cf7849dfec0")
+    @objid ("e43a8594-8c8d-44b6-a619-d5f39988899b")
     public static final String STEREOTYPE_NAME = "HwBus_Classifier";
 
-    @objid ("3f0ad808-048d-4409-9a24-6cfa75f96921")
+    @objid ("069aa48e-e537-44f4-b5c3-6168465ad8bd")
     public static final String HWBUS_CLASSIFIER_ADRESSWIDTH_TAGTYPE = "HwBus_Classifier_adressWidth";
 
-    @objid ("d77ec3f8-6b62-46a0-a96a-fa2973e31c77")
+    @objid ("04b44dad-64a5-4241-bf79-78b75b144553")
     public static final String HWBUS_CLASSIFIER_ISSERIAL_TAGTYPE = "HwBus_Classifier_isSerial";
 
-    @objid ("01fca72e-1e92-4483-af64-2c662e776033")
+    @objid ("d85c32a7-cead-4558-80d8-cb0847b16c55")
     public static final String HWBUS_CLASSIFIER_ISSYNCHRONOUS_TAGTYPE = "HwBus_Classifier_isSynchronous";
 
-    @objid ("6c1af182-a94d-4e80-aff8-464f2279cbae")
+    @objid ("ea7ff6a8-bc4f-49bb-b58b-91f441d4be55")
     public static final String HWBUS_CLASSIFIER_WORDWIDTH_TAGTYPE = "HwBus_Classifier_wordWidth";
 
     /**
-     * Tells whether a {@link HwBusClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwBus_Classifier >>. 
+     * Tells whether a {@link HwBusClassifier proxy} can be instantiated from a {@link MObject} checking it is a {@link Classifier} stereotyped << HwBus_Classifier >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d221a367-7ecf-4fb5-925c-f17d0d8ea7ff")
+    @objid ("66fb84c2-799c-4ed2-8af9-27249e585fff")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBusClassifier.STEREOTYPE_NAME));
     }
@@ -66,21 +66,21 @@ public class HwBusClassifier extends HwMediaClassifier {
      * 
      * @return a {@link HwBusClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("771997d9-f57d-4dca-9e61-c141d66adc13")
+    @objid ("02fb28b8-edb4-449f-9bac-c2966124d27e")
     public static HwBusClassifier create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Classifier");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBusClassifier.STEREOTYPE_NAME);
         return HwBusClassifier.instantiate((Classifier)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBusClassifier} proxy from a {@link Classifier} stereotyped << HwBus_Classifier >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBusClassifier} proxy from a {@link Classifier} stereotyped << HwBus_Classifier >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Classifier
      * @return a {@link HwBusClassifier} proxy or <i>null</i>.
      */
-    @objid ("c786d4a5-0a2d-454a-a6db-202f93094362")
+    @objid ("764771b5-c113-49eb-9e5e-1891e4048964")
     public static HwBusClassifier instantiate(final Classifier obj) {
         return HwBusClassifier.canInstantiate(obj) ? new HwBusClassifier(obj) : null;
     }
@@ -93,7 +93,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * @return a {@link HwBusClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("da10eb18-6765-42be-89eb-5c379665eb47")
+    @objid ("00abb9e2-2e87-493d-84c3-fdab275cda6f")
     public static HwBusClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (HwBusClassifier.canInstantiate(obj))
         	return new HwBusClassifier(obj);
@@ -101,7 +101,7 @@ public class HwBusClassifier extends HwMediaClassifier {
         	throw new IllegalArgumentException("HwBusClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("641511a8-d3d4-44cd-871e-e69c163fb882")
+    @objid ("9caec359-0c31-46e5-b482-31e277c03e9a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -121,7 +121,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("cd795913-90ed-4368-be81-14d81c156637")
+    @objid ("05613a1e-e95e-4e10-a0f6-e1343e387aff")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -132,7 +132,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dc72fb14-2a89-4247-9205-c364ff4bda1a")
+    @objid ("0b49f8b2-fbad-4589-a5ca-b140f8a4bd8d")
     public String getHwBus_Classifier_adressWidth() {
         return this.elt.getTagValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ADRESSWIDTH_TAGTYPE_ELT);
     }
@@ -142,12 +142,12 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5237639b-1409-4be6-a3d9-f9d07545c1c1")
+    @objid ("22d515a2-041e-426b-8ced-1d18dca54307")
     public String getHwBus_Classifier_wordWidth() {
         return this.elt.getTagValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_WORDWIDTH_TAGTYPE_ELT);
     }
 
-    @objid ("6346ad9a-9da4-4643-a0f7-98889e70411b")
+    @objid ("bafd86af-991f-4c74-a0af-8b70757a6b91")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -158,7 +158,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("043f0bba-3cfe-416b-aeeb-ed454aa99bdb")
+    @objid ("c8549eaf-d1bd-4c3e-9b8c-9f96ae0dd339")
     public boolean isHwBus_Classifier_isSerial() {
         return this.elt.isTagged(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ISSERIAL_TAGTYPE_ELT);
     }
@@ -168,7 +168,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7bb46463-31fc-4ae1-9086-3a2b7edc64f2")
+    @objid ("4f78cdb3-7dd9-4b7a-9e5d-5bcaeaec9672")
     public boolean isHwBus_Classifier_isSynchronous() {
         return this.elt.isTagged(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ISSYNCHRONOUS_TAGTYPE_ELT);
     }
@@ -178,7 +178,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("18b897ec-9454-4649-8f81-e82fa5833fae")
+    @objid ("b9e61135-3db1-4851-a356-c0569ae24a5c")
     public void setHwBus_Classifier_adressWidth(final String value) {
         this.elt.putTagValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ADRESSWIDTH_TAGTYPE_ELT, value);
     }
@@ -188,7 +188,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dd196c75-f25d-4ad0-8ddb-b5cad12b05a5")
+    @objid ("4624fa14-9d6d-4974-a71d-6f689ef77f10")
     public void setHwBus_Classifier_isSerial(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ISSERIAL_TAGTYPE_ELT, this.elt);
@@ -201,7 +201,7 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("222964b6-5b28-4f79-8019-e426bdc7ef67")
+    @objid ("8fe599ac-2510-4efe-9fb4-9c9276cc1d1c")
     public void setHwBus_Classifier_isSynchronous(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_ISSYNCHRONOUS_TAGTYPE_ELT, this.elt);
@@ -214,40 +214,40 @@ public class HwBusClassifier extends HwMediaClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7c29c60e-39ab-4ca5-b041-336c33f216e7")
+    @objid ("5ee8e13f-44a0-4299-920e-9d92edc38cfa")
     public void setHwBus_Classifier_wordWidth(final String value) {
         this.elt.putTagValue(HwBusClassifier.MdaTypes.HWBUS_CLASSIFIER_WORDWIDTH_TAGTYPE_ELT, value);
     }
 
-    @objid ("6c1bfd05-5c49-4a6a-9d59-d4c194e81180")
+    @objid ("010f1051-8e92-4c67-8b61-79a9a4ba74b0")
     protected HwBusClassifier(final Classifier elt) {
         super(elt);
     }
 
     @objid ("cfd24ae8-42a9-4f99-936b-2fc6972f3c25")
     public static final class MdaTypes {
-        @objid ("4b57239d-1efd-48e2-9227-76415b26ea55")
+        @objid ("ae35fd32-303a-4881-ad99-a018776fee80")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f058a15c-a48b-44a5-9e62-dbdbfcd4584f")
+        @objid ("70e8cad4-33cd-4978-ab34-b589f2cd9702")
         public static TagType HWBUS_CLASSIFIER_ADRESSWIDTH_TAGTYPE_ELT;
 
-        @objid ("c4297566-6025-490e-84da-025583954335")
+        @objid ("ea242826-498a-4f87-b6ff-4a0bfeeed49d")
         public static TagType HWBUS_CLASSIFIER_WORDWIDTH_TAGTYPE_ELT;
 
-        @objid ("a12d168a-7931-4c09-b5ab-522ca8f3e5e6")
+        @objid ("f65c2860-9f3d-45ea-87e0-fd4859384782")
         public static TagType HWBUS_CLASSIFIER_ISSYNCHRONOUS_TAGTYPE_ELT;
 
-        @objid ("cfc83313-b16d-40b2-9caa-3e4432eaf82c")
+        @objid ("394a6ea7-646a-4655-b029-4982a16dc824")
         public static TagType HWBUS_CLASSIFIER_ISSERIAL_TAGTYPE_ELT;
 
-        @objid ("6a1e8577-56b5-4a5d-9b48-07a8f1711c5b")
+        @objid ("11c05d22-a8f2-4ec4-b4e2-35cbc2be3c7e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1ef50706-4009-4463-be42-22554e4268ed")
+        @objid ("0bfd1042-74b1-4da6-994a-c3641ac605b3")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("97a3c557-1f44-427d-bafe-effa96c94c1f")
+        @objid ("10b34f11-7c63-47a6-a5b3-7c3e34f51d40")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "855b4eab-10ac-11df-81d9-0014222a9f79");
             HWBUS_CLASSIFIER_ADRESSWIDTH_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "855b4ead-10ac-11df-81d9-0014222a9f79");

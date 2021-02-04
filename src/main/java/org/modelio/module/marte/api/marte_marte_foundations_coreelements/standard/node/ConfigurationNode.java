@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_coreelements.standard.node;
 
@@ -34,27 +34,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("1376f455-7e78-4066-85c5-4d0333563a6f")
 public class ConfigurationNode {
-    @objid ("be18fb9b-62b2-4669-a148-8025acbfd0ed")
+    @objid ("b921389c-f0a6-4e0d-97a6-0f819659cc1c")
     public static final String STEREOTYPE_NAME = "Configuration_Node";
 
-    @objid ("863e1c72-cd2c-4eba-acda-7cbd76f39302")
+    @objid ("fc339bb0-2983-4477-9ae3-5f059ef498d5")
     public static final String CONFIGURATION_NODE_MODE_TAGTYPE = "Configuration_Node_mode";
 
     /**
      * The underlying {@link Node} represented by this proxy, never null.
      */
-    @objid ("c438fdfe-356b-49ce-b771-cbe93aaf5453")
+    @objid ("46ab5440-3515-461b-9fec-a3ed7a248920")
     protected final Node elt;
 
     /**
-     * Tells whether a {@link ConfigurationNode proxy} can be instantiated from a {@link MObject} checking it is a {@link Node} stereotyped << Configuration_Node >>. 
+     * Tells whether a {@link ConfigurationNode proxy} can be instantiated from a {@link MObject} checking it is a {@link Node} stereotyped << Configuration_Node >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8b00c707-dcdf-43ee-96db-8bae9e17e2a0")
+    @objid ("16c2d1f0-288d-4add-aeaa-1c5806a7c223")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Node) && ((Node) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ConfigurationNode.STEREOTYPE_NAME));
     }
@@ -64,21 +64,21 @@ public class ConfigurationNode {
      * 
      * @return a {@link ConfigurationNode} proxy on the created {@link Node}.
      */
-    @objid ("e9280fdb-12fa-4bdd-b3a3-d07d5c86c7a8")
+    @objid ("bf5a8935-e254-4395-a294-17197aa0c313")
     public static ConfigurationNode create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Node");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Node");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ConfigurationNode.STEREOTYPE_NAME);
         return ConfigurationNode.instantiate((Node)e);
     }
 
     /**
-     * Tries to instantiate a {@link ConfigurationNode} proxy from a {@link Node} stereotyped << Configuration_Node >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ConfigurationNode} proxy from a {@link Node} stereotyped << Configuration_Node >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Node
      * @return a {@link ConfigurationNode} proxy or <i>null</i>.
      */
-    @objid ("612cb679-92d8-425f-8433-2573c99a26e6")
+    @objid ("2c76e22e-9186-4c44-bf91-752c972059ee")
     public static ConfigurationNode instantiate(final Node obj) {
         return ConfigurationNode.canInstantiate(obj) ? new ConfigurationNode(obj) : null;
     }
@@ -91,7 +91,7 @@ public class ConfigurationNode {
      * @return a {@link ConfigurationNode} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("752e9155-bb0a-4357-b535-8af1281fc180")
+    @objid ("1f9652ec-0714-49e1-baa2-d210c3850df9")
     public static ConfigurationNode safeInstantiate(final Node obj) throws IllegalArgumentException {
         if (ConfigurationNode.canInstantiate(obj))
         	return new ConfigurationNode(obj);
@@ -99,7 +99,7 @@ public class ConfigurationNode {
         	throw new IllegalArgumentException("ConfigurationNode: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a93b6811-a95c-4da8-b2ab-2e8c22cbda14")
+    @objid ("4967fa5f-91b1-454f-a28b-35eec3b58a55")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -120,7 +120,7 @@ public class ConfigurationNode {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("03cf77f5-629b-4703-9458-3fc6f4386135")
+    @objid ("5cce95f1-5d6d-403f-8fde-c9cb983932d3")
     public List<String> getConfiguration_Node_mode() {
         return this.elt.getTagValues(ConfigurationNode.MdaTypes.CONFIGURATION_NODE_MODE_TAGTYPE_ELT);
     }
@@ -129,12 +129,12 @@ public class ConfigurationNode {
      * Get the underlying {@link Node}. 
      * @return the Node represented by this proxy, never null.
      */
-    @objid ("92ae56db-c325-4764-a4f4-39119431a2eb")
+    @objid ("0643565b-fa7c-47cf-9e93-cd056b1d09ee")
     public Node getElement() {
         return this.elt;
     }
 
-    @objid ("8de94668-920d-420d-bcc3-16d93f62f57f")
+    @objid ("5e749f3b-c387-4af4-b2cc-00c9cfd9888f")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -145,31 +145,31 @@ public class ConfigurationNode {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eb14325b-f97a-4be0-9e7b-d00ecafe32f1")
+    @objid ("fe20dbc2-99cb-49f1-a559-92655117e876")
     public void setConfiguration_Node_mode(final List<String> values) {
         this.elt.putTagValues(ConfigurationNode.MdaTypes.CONFIGURATION_NODE_MODE_TAGTYPE_ELT, values);
     }
 
-    @objid ("a28f3aec-9930-443b-8723-97b19514a94b")
+    @objid ("07cb3a8d-2a95-4bdc-a962-4617b6f04bc4")
     protected ConfigurationNode(final Node elt) {
         this.elt = elt;
     }
 
     @objid ("78881e8b-b727-488b-ada6-867c6081a0ef")
     public static final class MdaTypes {
-        @objid ("8cf2b626-c53c-472e-a05a-be1b41a0e219")
+        @objid ("8a1a1bc5-9135-432d-ac05-8e5e5b1be576")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("87672dd5-b6bb-487f-af65-ced23339ef57")
+        @objid ("f40299ec-f74a-40c6-a2b8-9dc3ff5d4b2e")
         public static TagType CONFIGURATION_NODE_MODE_TAGTYPE_ELT;
 
-        @objid ("2f1e8955-427e-4aec-b27d-d93a6c140aa5")
+        @objid ("19458eef-c8b4-425c-80c9-8f59a78a5037")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("9a7478f3-a007-4a97-9abe-561b81d19f6b")
+        @objid ("714848c1-0721-4c22-a1d3-c1f63da70d6f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("11ebe343-4d22-4885-b1a7-517ab5c38233")
+        @objid ("54907e3d-1ba4-4f14-8ddc-8228f519f129")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "f8727b4d-1562-11df-b173-0014222a9f79");
             CONFIGURATION_NODE_MODE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f8727b4e-1562-11df-b173-0014222a9f79");

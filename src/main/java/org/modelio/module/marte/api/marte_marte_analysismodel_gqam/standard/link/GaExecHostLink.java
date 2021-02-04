@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_gqam.standard.link;
 
@@ -35,66 +35,66 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("de375656-246a-4517-bed9-b87b730fb348")
 public class GaExecHostLink extends ComputingResourceLink {
-    @objid ("b6add2cc-0fe3-4523-9b92-7a4b187f1cb1")
+    @objid ("9c867f48-3f9a-4f25-855a-1b04d77bc65e")
     public static final String STEREOTYPE_NAME = "GaExecHost_Link";
 
-    @objid ("d509a6ab-2fd6-4a6b-afe6-f32bcf75dd2d")
+    @objid ("320bca08-9a2c-43b1-9011-1086ec2e816d")
     public static final String GAEXECHOST_LINK_CLOCKOVH_TAGTYPE = "GaExecHost_Link_clockOvh";
 
-    @objid ("869bbafc-e7ec-4be2-97ca-3dc904a8694d")
+    @objid ("54ee74cb-0763-4ac4-8b75-efa2241c314a")
     public static final String GAEXECHOST_LINK_CNTXTSWT_TAGTYPE = "GaExecHost_Link_cntxtSwT";
 
-    @objid ("70fb7476-1501-4eec-8c8b-d1761fbf97ea")
+    @objid ("73f835bc-dd91-4830-a31a-44f50907c1fe")
     public static final String GAEXECHOST_LINK_COMMRCVOVH_TAGTYPE = "GaExecHost_Link_commRcvOvh";
 
-    @objid ("c9a113ff-f720-4e20-8623-8b572a4e10d6")
+    @objid ("1738bd19-b469-4057-b475-1ebdc663170e")
     public static final String GAEXECHOST_LINK_COMMTXOVH_TAGTYPE = "GaExecHost_Link_commTxOvh";
 
-    @objid ("0cfe18b0-655d-4725-b1d8-173cd379f89d")
+    @objid ("b4347b01-0c42-4a57-9caa-0ca3f8cc8cad")
     public static final String GAEXECHOST_LINK_HOST_TAGTYPE = "GaExecHost_Link_host";
 
-    @objid ("85c0c3d2-aaa7-4dec-bfaf-f3c638787a86")
+    @objid ("fa1ac665-67a9-447a-96f7-75f8ebb3deaa")
     public static final String GAEXECHOST_LINK_ISPREEMPTIBLE_TAGTYPE = "GaExecHost_Link_isPreemptible";
 
-    @objid ("86da86bd-0ab8-4608-b99e-d0febd93a726")
+    @objid ("5cf436c6-816e-4db5-a319-6370afd679a7")
     public static final String GAEXECHOST_LINK_MEMSIZE_TAGTYPE = "GaExecHost_Link_memSize";
 
-    @objid ("80c22848-8b88-43d0-a26d-dff0ca73c596")
+    @objid ("3831087d-395e-403a-957a-f3e99bb84820")
     public static final String GAEXECHOST_LINK_OTHERSCHEDPOLICY_TAGTYPE = "GaExecHost_Link_otherSchedPolicy";
 
-    @objid ("0c406166-96d2-4d23-9fdb-e6cac0aaaaf9")
+    @objid ("02d4cdf5-d6bb-486d-9cc8-f6e35ffc1c97")
     public static final String GAEXECHOST_LINK_PROCESSINGUNITS_TAGTYPE = "GaExecHost_Link_processingUnits";
 
-    @objid ("aa9bb4b0-6388-45a7-aaa6-2d113284cac6")
+    @objid ("d1f54709-d0a0-4c9d-b5b3-111e6a874a43")
     public static final String GAEXECHOST_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE = "GaExecHost_Link_protectedSharedResources";
 
-    @objid ("9d9a7892-ba9f-472c-80d0-c78ce24d5ab5")
+    @objid ("b0841fce-0136-4ad5-89c4-340f8b54b97f")
     public static final String GAEXECHOST_LINK_SCHEDPOLICY_TAGTYPE = "GaExecHost_Link_schedPolicy";
 
-    @objid ("8d5ef251-154b-443d-b651-dc4ab5a74c50")
+    @objid ("fb60f428-5f1d-4f48-97a5-76c2b3e7f52b")
     public static final String GAEXECHOST_LINK_SCHEDPRIRANGE_TAGTYPE = "GaExecHost_Link_schedPriRange";
 
-    @objid ("d2a464e5-486b-4e21-980f-d8f193e1593d")
+    @objid ("3fd50114-6780-4344-9b4f-fd4c1155c1e1")
     public static final String GAEXECHOST_LINK_SCHEDULABLERESOURCES_TAGTYPE = "GaExecHost_Link_schedulableResources";
 
-    @objid ("121a7d1d-e460-47a2-bb38-1122d7f82a16")
+    @objid ("a1fe846f-29ac-492e-84c8-5d6277e511b4")
     public static final String GAEXECHOST_LINK_SCHEDULE_TAGTYPE = "GaExecHost_Link_schedule";
 
-    @objid ("16a58d8b-b90b-4837-8c95-12b2ae02f9c7")
+    @objid ("ebfe2c67-de08-4893-bd9d-fef5b4baf00f")
     public static final String GAEXECHOST_LINK_THROUGHPUT_TAGTYPE = "GaExecHost_Link_throughput";
 
-    @objid ("63b9557c-5949-4180-a5eb-881081202e36")
+    @objid ("efe32b0b-9899-4899-887c-684793106092")
     public static final String GAEXECHOST_LINK_UTILIZATION_TAGTYPE = "GaExecHost_Link_utilization";
 
     /**
-     * Tells whether a {@link GaExecHostLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << GaExecHost_Link >>. 
+     * Tells whether a {@link GaExecHostLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << GaExecHost_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("8ccffc75-914c-40bb-a7b1-9c981981cb44")
+    @objid ("724664da-e6fc-4e79-a5b7-9df3c97a5000")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GaExecHostLink.STEREOTYPE_NAME));
     }
@@ -104,21 +104,21 @@ public class GaExecHostLink extends ComputingResourceLink {
      * 
      * @return a {@link GaExecHostLink} proxy on the created {@link Link}.
      */
-    @objid ("88cfd118-4f23-4b35-9c9b-7c1168db16af")
+    @objid ("ee0f80f7-bcfa-4f9a-b187-48abcfabf6ab")
     public static GaExecHostLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GaExecHostLink.STEREOTYPE_NAME);
         return GaExecHostLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link GaExecHostLink} proxy from a {@link Link} stereotyped << GaExecHost_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link GaExecHostLink} proxy from a {@link Link} stereotyped << GaExecHost_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link GaExecHostLink} proxy or <i>null</i>.
      */
-    @objid ("eebbb733-cddd-4998-a75d-38adc8c15774")
+    @objid ("62174638-43f1-48ab-ac8d-b0d63f0a7ae3")
     public static GaExecHostLink instantiate(final Link obj) {
         return GaExecHostLink.canInstantiate(obj) ? new GaExecHostLink(obj) : null;
     }
@@ -131,7 +131,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * @return a {@link GaExecHostLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("6681899b-1de4-48cb-9582-79d725c91bec")
+    @objid ("7dceb27d-9aa9-4f76-8998-421b400acfed")
     public static GaExecHostLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (GaExecHostLink.canInstantiate(obj))
         	return new GaExecHostLink(obj);
@@ -139,7 +139,7 @@ public class GaExecHostLink extends ComputingResourceLink {
         	throw new IllegalArgumentException("GaExecHostLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("7b189548-747a-4d83-b53c-841dda5375e5")
+    @objid ("5ff85183-c5eb-44f7-ae12-d883dc430c37")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -159,7 +159,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("646c6a04-a0cb-49a4-a4b1-71f1d5fc9e12")
+    @objid ("97b6c575-50e3-4350-9ec4-eef99f721121")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -170,7 +170,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("850dd06e-2f82-4af2-b707-29bd78cdbaac")
+    @objid ("628c1544-5ac7-4d1c-bfdc-32e76cbff160")
     public String getGaExecHost_Link_clockOvh() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_CLOCKOVH_TAGTYPE_ELT);
     }
@@ -180,7 +180,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("80cf1136-ad44-47fe-8f6c-188d4757d74d")
+    @objid ("24d4fc32-0c8e-4b5e-bac4-abcad6b60798")
     public String getGaExecHost_Link_cntxtSwT() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_CNTXTSWT_TAGTYPE_ELT);
     }
@@ -190,7 +190,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dee83d61-8c49-45f0-b813-67c63758e8ed")
+    @objid ("131ea7f8-be28-46cb-9ee7-4598c504e37b")
     public String getGaExecHost_Link_commRcvOvh() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_COMMRCVOVH_TAGTYPE_ELT);
     }
@@ -200,7 +200,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e5b54ee8-e71c-4973-becf-257f1dc28caa")
+    @objid ("d83daa81-1b72-4ef0-941c-d7a1f79f70d5")
     public String getGaExecHost_Link_commTxOvh() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_COMMTXOVH_TAGTYPE_ELT);
     }
@@ -210,7 +210,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d7f8798f-0576-4cdd-b2db-b71f38d9f0d8")
+    @objid ("271f1d9f-c599-42b2-9a1b-d81e1e4846e5")
     public String getGaExecHost_Link_host() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_HOST_TAGTYPE_ELT);
     }
@@ -220,7 +220,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("512185d0-638c-4121-8332-21b7afb05f03")
+    @objid ("fa81fda5-6de0-44c1-8bf9-d9d95b0256e2")
     public String getGaExecHost_Link_memSize() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_MEMSIZE_TAGTYPE_ELT);
     }
@@ -230,7 +230,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("edec179e-12a3-44de-b9e2-2f2b0f35f68e")
+    @objid ("6c394126-d2f0-42c4-8c0f-19adf7c93dda")
     public String getGaExecHost_Link_otherSchedPolicy() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -240,7 +240,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6acecf3b-9607-4b3c-b9aa-c8207b418f2f")
+    @objid ("ab3f7c79-bd54-4639-bc6d-50db9ecb1ef3")
     public List<String> getGaExecHost_Link_processingUnits() {
         return this.elt.getTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_PROCESSINGUNITS_TAGTYPE_ELT);
     }
@@ -250,7 +250,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("e51ea816-5cc6-440e-baf3-dc9da6589218")
+    @objid ("4bb867fe-e1bb-4295-b40c-57fbfd7d5276")
     public List<String> getGaExecHost_Link_protectedSharedResources() {
         return this.elt.getTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT);
     }
@@ -260,7 +260,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("aa2ba788-d50f-4ab5-bf22-a7a4b510194e")
+    @objid ("f7f1ad2c-985d-4d68-9142-f8621c0bc2be")
     public String getGaExecHost_Link_schedPolicy() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDPOLICY_TAGTYPE_ELT);
     }
@@ -270,7 +270,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9ee4db3d-ce47-46f4-9249-110d5ee36d0f")
+    @objid ("a8439faf-4ec9-4c43-a947-6a718ed24898")
     public String getGaExecHost_Link_schedPriRange() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDPRIRANGE_TAGTYPE_ELT);
     }
@@ -280,7 +280,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d023ca74-d17e-482f-ade6-a84fbb968cb4")
+    @objid ("6a819ad9-c754-4b18-a340-89fe23618250")
     public List<String> getGaExecHost_Link_schedulableResources() {
         return this.elt.getTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT);
     }
@@ -290,7 +290,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("630765ec-5236-468b-852c-8e77eeb884bd")
+    @objid ("6dbf6368-319c-434a-9cf9-8cffe29578f1")
     public String getGaExecHost_Link_schedule() {
         return this.elt.getTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDULE_TAGTYPE_ELT);
     }
@@ -300,7 +300,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("3f8069d9-ad04-4a70-a610-b96c42e35dbf")
+    @objid ("eeecb94d-4a57-4389-9417-a57fc8f94df6")
     public List<String> getGaExecHost_Link_throughput() {
         return this.elt.getTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_THROUGHPUT_TAGTYPE_ELT);
     }
@@ -310,12 +310,12 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("4f858751-683e-4104-8302-b3001f1e8466")
+    @objid ("4b40b2f3-0f29-4c16-8cb2-78a1f34156dd")
     public List<String> getGaExecHost_Link_utilization() {
         return this.elt.getTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("a70e2b70-9399-4cfb-9575-cc742e6e521c")
+    @objid ("55b14f87-b76f-4267-bbe1-6191156ed3b4")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -326,7 +326,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5f8dc650-bf8f-4f5a-b71a-220188338759")
+    @objid ("08bd54d7-3f7e-44d6-aa0f-2a784f0c7d78")
     public boolean isGaExecHost_Link_isPreemptible() {
         return this.elt.isTagged(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_ISPREEMPTIBLE_TAGTYPE_ELT);
     }
@@ -336,7 +336,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7db04500-327b-40e2-a2c0-47952abf960b")
+    @objid ("e356bd3d-661b-4049-8795-a7f7ca48a610")
     public void setGaExecHost_Link_clockOvh(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_CLOCKOVH_TAGTYPE_ELT, value);
     }
@@ -346,7 +346,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fe849b1e-a5ae-4015-9280-20c6be919dbb")
+    @objid ("a693e814-6558-410f-8202-3b2289e30a4e")
     public void setGaExecHost_Link_cntxtSwT(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_CNTXTSWT_TAGTYPE_ELT, value);
     }
@@ -356,7 +356,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ec2679e3-cf0d-4bb5-80f9-551db05c279a")
+    @objid ("b0bcc504-a52d-4186-a921-04e70ea52374")
     public void setGaExecHost_Link_commRcvOvh(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_COMMRCVOVH_TAGTYPE_ELT, value);
     }
@@ -366,7 +366,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e1092255-7dfa-425e-9434-5a1480747394")
+    @objid ("3d9abea7-8402-4f6b-9a6f-2843045e0c19")
     public void setGaExecHost_Link_commTxOvh(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_COMMTXOVH_TAGTYPE_ELT, value);
     }
@@ -376,7 +376,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ab283655-0ee0-4a9f-961e-d447996c5828")
+    @objid ("47cc88be-a971-4338-bbe5-602f2a6b5254")
     public void setGaExecHost_Link_host(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_HOST_TAGTYPE_ELT, value);
     }
@@ -386,7 +386,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("48a6a29c-f8ba-468d-bdd4-1396559bec6f")
+    @objid ("6d62ce6f-8092-4599-aeaf-6ac2c649381d")
     public void setGaExecHost_Link_isPreemptible(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_ISPREEMPTIBLE_TAGTYPE_ELT, this.elt);
@@ -399,7 +399,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bfc17b07-4b28-4f69-b0f0-33b93ea7b06e")
+    @objid ("78f4d80f-a3ae-4ce8-b4cf-0d4b01b322fd")
     public void setGaExecHost_Link_memSize(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_MEMSIZE_TAGTYPE_ELT, value);
     }
@@ -409,7 +409,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0549f024-cad2-438c-a1fa-b610fc926056")
+    @objid ("9721ccb3-030b-41b4-ad35-e125a70a4c19")
     public void setGaExecHost_Link_otherSchedPolicy(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -419,7 +419,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("be632fdb-d1bc-4ca9-8dee-c86cc0eac749")
+    @objid ("ac35df38-4e23-4662-8a51-682d21c066be")
     public void setGaExecHost_Link_processingUnits(final List<String> values) {
         this.elt.putTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_PROCESSINGUNITS_TAGTYPE_ELT, values);
     }
@@ -429,7 +429,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e7ba303b-a2af-45c2-a51e-95804a44fc95")
+    @objid ("a3b84e37-3f8c-408e-95c3-e0a82a0ed862")
     public void setGaExecHost_Link_protectedSharedResources(final List<String> values) {
         this.elt.putTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT, values);
     }
@@ -439,7 +439,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f916f1ff-f638-423b-9598-fb00ed0cfc1e")
+    @objid ("0232b509-e274-4062-933b-f5de7ddb0750")
     public void setGaExecHost_Link_schedPolicy(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDPOLICY_TAGTYPE_ELT, value);
     }
@@ -449,7 +449,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4d53d6fd-a045-4abf-a406-d27dd0cac4de")
+    @objid ("3067f643-ac1f-4870-ae91-2e51944ec417")
     public void setGaExecHost_Link_schedPriRange(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDPRIRANGE_TAGTYPE_ELT, value);
     }
@@ -459,7 +459,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("651666d8-a289-48e4-b855-d942a6d12973")
+    @objid ("fffa6923-4f3d-4dbb-8382-56a1fe0ddddd")
     public void setGaExecHost_Link_schedulableResources(final List<String> values) {
         this.elt.putTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT, values);
     }
@@ -469,7 +469,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7847e2d4-98f8-4cd6-9980-2233ff4b40f8")
+    @objid ("fc807cd5-d891-4d5c-bbcf-9fcb7fd45ca0")
     public void setGaExecHost_Link_schedule(final String value) {
         this.elt.putTagValue(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_SCHEDULE_TAGTYPE_ELT, value);
     }
@@ -479,7 +479,7 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7e487dfe-730b-462d-89ec-4bba1691284e")
+    @objid ("ed588207-1be3-4004-8e0a-cf582e207973")
     public void setGaExecHost_Link_throughput(final List<String> values) {
         this.elt.putTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_THROUGHPUT_TAGTYPE_ELT, values);
     }
@@ -489,76 +489,76 @@ public class GaExecHostLink extends ComputingResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("361673e2-f376-4b9d-86ac-e8a7569ee4eb")
+    @objid ("98f80ff3-d1b6-4432-a9da-0b8a92213efb")
     public void setGaExecHost_Link_utilization(final List<String> values) {
         this.elt.putTagValues(GaExecHostLink.MdaTypes.GAEXECHOST_LINK_UTILIZATION_TAGTYPE_ELT, values);
     }
 
-    @objid ("8e73702b-b2d3-476c-8a5e-92feea977530")
+    @objid ("875b1382-4f41-4d27-8597-cd3cb36bb4c1")
     protected GaExecHostLink(final Link elt) {
         super(elt);
     }
 
     @objid ("ddf61e28-be06-4649-891a-483ecdca48c2")
     public static final class MdaTypes {
-        @objid ("be722b0a-38a5-452b-a009-dc9714949af0")
+        @objid ("ae9cd531-9c9f-4848-99fd-c32e07d0ff34")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("d83b60bb-3216-4098-a474-1996b04a4bb2")
+        @objid ("9fa11527-c87c-405f-b2dd-e2ec9e4e710f")
         public static TagType GAEXECHOST_LINK_COMMTXOVH_TAGTYPE_ELT;
 
-        @objid ("cd916293-7150-4596-949b-f346188b2962")
+        @objid ("2979f424-8c5e-45a9-a71c-8934d0e63cb0")
         public static TagType GAEXECHOST_LINK_COMMRCVOVH_TAGTYPE_ELT;
 
-        @objid ("7745a3ab-1272-4566-986d-3e881976a9b4")
+        @objid ("462c208f-cfd3-45bc-b9bc-67ebf4c3e66c")
         public static TagType GAEXECHOST_LINK_CNTXTSWT_TAGTYPE_ELT;
 
-        @objid ("7a248537-2f96-43e7-abc7-0910d4e40abd")
+        @objid ("95d9a816-7f66-4423-945b-6fd8a6339c23")
         public static TagType GAEXECHOST_LINK_CLOCKOVH_TAGTYPE_ELT;
 
-        @objid ("01c836a8-ed4b-43b3-adec-567075952df3")
+        @objid ("dead5fdd-9242-4236-96d2-cd01702dd133")
         public static TagType GAEXECHOST_LINK_SCHEDPRIRANGE_TAGTYPE_ELT;
 
-        @objid ("4959ee0c-0e2d-4dd0-9603-cc75af1b6512")
+        @objid ("53f46ac7-93a6-4d1f-914e-8161f1abadc4")
         public static TagType GAEXECHOST_LINK_MEMSIZE_TAGTYPE_ELT;
 
-        @objid ("0adf0dfd-b9a7-4316-aee6-6a704dda9110")
+        @objid ("0234e13d-b5b5-4a58-9c3e-781ccd1235f1")
         public static TagType GAEXECHOST_LINK_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("079fd34b-85bb-4c49-afee-b00ae897bd4e")
+        @objid ("8dc4dfb8-bde4-4fd6-91e3-aeff57aa82cf")
         public static TagType GAEXECHOST_LINK_THROUGHPUT_TAGTYPE_ELT;
 
-        @objid ("8a120b80-adfa-4aee-8f19-6b98ee3dbed4")
+        @objid ("b6402abc-d67e-41f4-b972-494442c5bfec")
         public static TagType GAEXECHOST_LINK_ISPREEMPTIBLE_TAGTYPE_ELT;
 
-        @objid ("cb3fd15c-32c5-42f5-b4e1-83932e180206")
+        @objid ("fdfc9630-6afa-42c1-8b72-8e6a40ce1da8")
         public static TagType GAEXECHOST_LINK_SCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("53306e8c-73cc-46d9-b65b-b8ab2c505186")
+        @objid ("cedcd32d-2446-49c7-ad19-d24f8b8eaa07")
         public static TagType GAEXECHOST_LINK_OTHERSCHEDPOLICY_TAGTYPE_ELT;
 
-        @objid ("a8ada7ce-bfbe-448b-82a2-89895f585d51")
+        @objid ("1b5bd86c-d250-444e-8823-a8d1a95fa8f3")
         public static TagType GAEXECHOST_LINK_SCHEDULE_TAGTYPE_ELT;
 
-        @objid ("201acbee-2c34-4ebf-87df-35ab81c1948b")
+        @objid ("cd1ebeab-4997-4fec-912c-8ce28db024bc")
         public static TagType GAEXECHOST_LINK_PROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("9c5a60c4-0c0d-4915-8852-8a206eae6fbc")
+        @objid ("73254034-81ad-4662-9624-d0805354ef1e")
         public static TagType GAEXECHOST_LINK_HOST_TAGTYPE_ELT;
 
-        @objid ("3c82ee8e-2a16-45a3-8fb4-5c77d3573fcb")
+        @objid ("d5bd2557-100d-41e7-ad26-546ba4f58736")
         public static TagType GAEXECHOST_LINK_PROTECTEDSHAREDRESOURCES_TAGTYPE_ELT;
 
-        @objid ("059cc4fe-335c-496a-a09b-fb0c0451b207")
+        @objid ("375800d6-3e72-4d1b-b50e-e2f05333250f")
         public static TagType GAEXECHOST_LINK_SCHEDULABLERESOURCES_TAGTYPE_ELT;
 
-        @objid ("198dc596-3838-4a97-a8d9-470e5be7d82b")
+        @objid ("cf0da735-7b47-44b9-ac49-a21b86c1c748")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e3bb2da5-ae4a-49f0-a7bd-d8b5a9613516")
+        @objid ("ba0ac37f-8903-4adb-8fd2-5d06814dd4a6")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("77270f71-e2fc-4eac-9dc3-11255c8c126d")
+        @objid ("ddb6b5de-5858-4d4a-81e3-b8820d5e46fb")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0360f847-0ccf-11df-8525-001302895b2b");
             GAEXECHOST_LINK_COMMTXOVH_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03635a99-0ccf-11df-8525-001302895b2b");

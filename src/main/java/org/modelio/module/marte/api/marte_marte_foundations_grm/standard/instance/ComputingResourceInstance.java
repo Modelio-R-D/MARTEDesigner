@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.instance;
 
@@ -33,18 +33,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("13d958be-a4a1-4362-a949-f283d553c926")
 public class ComputingResourceInstance extends ProcessingResourceInstance {
-    @objid ("9de848f0-0d24-4596-93ac-9dc70ca13c93")
+    @objid ("85dda0e5-bba3-4302-93e3-3589651928d2")
     public static final String STEREOTYPE_NAME = "ComputingResource_Instance";
 
     /**
-     * Tells whether a {@link ComputingResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << ComputingResource_Instance >>. 
+     * Tells whether a {@link ComputingResourceInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << ComputingResource_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("185d1975-eef9-4966-8798-ec0feebb385d")
+    @objid ("567cb66e-27e6-4a11-ad35-5c7a37434b8d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ComputingResourceInstance.STEREOTYPE_NAME));
     }
@@ -54,21 +54,21 @@ public class ComputingResourceInstance extends ProcessingResourceInstance {
      * 
      * @return a {@link ComputingResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("7e992c02-1773-4641-988a-822e5844f56a")
+    @objid ("645a5298-a850-4e9f-8931-e661cecf92d0")
     public static ComputingResourceInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ComputingResourceInstance.STEREOTYPE_NAME);
         return ComputingResourceInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link ComputingResourceInstance} proxy from a {@link Instance} stereotyped << ComputingResource_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ComputingResourceInstance} proxy from a {@link Instance} stereotyped << ComputingResource_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link ComputingResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("5540b806-2742-436a-b29f-61cd8be58762")
+    @objid ("f811c792-f098-4bb2-b40e-a924fad39542")
     public static ComputingResourceInstance instantiate(final Instance obj) {
         return ComputingResourceInstance.canInstantiate(obj) ? new ComputingResourceInstance(obj) : null;
     }
@@ -81,7 +81,7 @@ public class ComputingResourceInstance extends ProcessingResourceInstance {
      * @return a {@link ComputingResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("23b7de5c-fa14-4329-abec-ff520a2b5631")
+    @objid ("8e30ab99-428c-443f-9a44-e77d3897b6d2")
     public static ComputingResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (ComputingResourceInstance.canInstantiate(obj))
         	return new ComputingResourceInstance(obj);
@@ -89,7 +89,7 @@ public class ComputingResourceInstance extends ProcessingResourceInstance {
         	throw new IllegalArgumentException("ComputingResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("becfdf89-944a-4864-99fd-8097a40a2b11")
+    @objid ("abd46361-4693-47a5-943e-c15cb3c727f4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +109,35 @@ public class ComputingResourceInstance extends ProcessingResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("83a9c8df-f5c2-4ac6-8a9e-5790628f73e6")
+    @objid ("5fe7fb07-fba7-4019-a524-d7b06ed2a2a3")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
     }
 
-    @objid ("52e9333b-553e-464b-9e3c-b251f4bcdc6f")
+    @objid ("2b72117f-3524-4194-8ffc-82ba5c063023")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("cd4161bb-591f-4fc7-a80b-824198e97322")
+    @objid ("7f56743e-3cde-46e3-92c8-5552ae4b458c")
     protected ComputingResourceInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("87eaa2d1-b933-4edd-b3db-c00dbe58efc4")
     public static final class MdaTypes {
-        @objid ("73f58c75-5ba2-496d-b5f6-df25a85edf11")
+        @objid ("0403275d-18c0-4d38-b1aa-57ee4820de7e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7cdfe5e6-64a6-4126-a426-a9cb4dd109a0")
+        @objid ("190e5e7b-19b1-4408-8bca-e1f85df1d4aa")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("fff55ac1-b3d8-4a03-9d32-78403774b0d0")
+        @objid ("b474fc94-c562-4a7a-bd27-d81f0b23ac71")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("d2b29bb9-4552-4a35-b56c-ca1b01f804f3")
+        @objid ("88938804-ef07-49c7-bb01-4c041751d250")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84d4-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

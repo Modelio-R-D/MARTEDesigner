@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.parameter;
 
@@ -33,30 +33,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("1f3d8337-5d10-4142-a3f3-bb3dab655d8e")
 public class MutualExclusionResourceParameter extends ResourceParameter {
-    @objid ("498879f7-391f-4207-b5ed-6dd2019bb198")
+    @objid ("271ef5e4-1dae-4e0d-b782-7aa3d822471e")
     public static final String STEREOTYPE_NAME = "MutualExclusionResource_Parameter";
 
-    @objid ("8c2c2f5e-ec8d-4f92-818d-e5a018820d62")
+    @objid ("8d5907f8-1ce8-41f8-9849-0789891d58d0")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING_TAGTYPE = "MutualExclusionResource_Parameter_ceiling";
 
-    @objid ("898b7909-465e-4a3d-a9ee-1bf9849e8a3a")
+    @objid ("9243d528-2376-4071-ba75-7ce0e408efcb")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL_TAGTYPE = "MutualExclusionResource_Parameter_otherProtectProtocol";
 
-    @objid ("ffe237cc-630b-4a36-a30d-ee73c9f98763")
+    @objid ("d57ed6eb-f060-4e1d-8b32-eea84b052299")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND_TAGTYPE = "MutualExclusionResource_Parameter_protectKind";
 
-    @objid ("ac987c94-1fd3-4662-92bb-6185c8d3474f")
+    @objid ("666f55ec-23ee-4d45-a951-aa734fc21594")
     public static final String MUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER_TAGTYPE = "MutualExclusionResource_Parameter_scheduler";
 
     /**
-     * Tells whether a {@link MutualExclusionResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << MutualExclusionResource_Parameter >>. 
+     * Tells whether a {@link MutualExclusionResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << MutualExclusionResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d4f434d1-e112-40d5-97ab-c956fb1988e6")
+    @objid ("92ea35c0-3711-4c8b-8510-0b9c05094965")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, MutualExclusionResourceParameter.STEREOTYPE_NAME));
     }
@@ -66,21 +66,21 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * 
      * @return a {@link MutualExclusionResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("eaa178a9-a95e-45cd-80ac-df4d3d38f90b")
+    @objid ("bff44730-3288-42aa-bda1-2aaa1e5787a4")
     public static MutualExclusionResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, MutualExclusionResourceParameter.STEREOTYPE_NAME);
         return MutualExclusionResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link MutualExclusionResourceParameter} proxy from a {@link Parameter} stereotyped << MutualExclusionResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link MutualExclusionResourceParameter} proxy from a {@link Parameter} stereotyped << MutualExclusionResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link MutualExclusionResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("768e4358-2ff0-4319-af92-1f443fa7aa03")
+    @objid ("522790db-9ec7-4735-ae58-8f9d0cfdd40e")
     public static MutualExclusionResourceParameter instantiate(final Parameter obj) {
         return MutualExclusionResourceParameter.canInstantiate(obj) ? new MutualExclusionResourceParameter(obj) : null;
     }
@@ -93,7 +93,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * @return a {@link MutualExclusionResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9860af7c-4e5a-4eba-8d2d-ce825bb99c35")
+    @objid ("1b3438b8-bfbb-4431-8499-13682fee4901")
     public static MutualExclusionResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (MutualExclusionResourceParameter.canInstantiate(obj))
         	return new MutualExclusionResourceParameter(obj);
@@ -101,7 +101,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
         	throw new IllegalArgumentException("MutualExclusionResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("6aabb8d9-ee2f-4169-8011-017b92792398")
+    @objid ("77e8da61-f472-4732-ab1c-541b4966571c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -121,7 +121,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("07340b57-ad36-4060-8cc5-395dbce4e4ad")
+    @objid ("ff78f86e-a452-4c98-aa16-493155272a43")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -132,7 +132,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("51d67371-4224-4c64-a1b7-cafdcd708b09")
+    @objid ("0249e17b-24f0-4522-a4c6-5b208a01d550")
     public String getMutualExclusionResource_Parameter_ceiling() {
         return this.elt.getTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING_TAGTYPE_ELT);
     }
@@ -142,7 +142,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("01f527c8-f3ab-468a-bfc1-4a7a57ba81d5")
+    @objid ("5cc7e3cb-51e9-4ebc-88f3-6892c2f43102")
     public String getMutualExclusionResource_Parameter_otherProtectProtocol() {
         return this.elt.getTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("38cc2ffb-6e5a-41e9-a953-8b463cc71a67")
+    @objid ("4c0f4eee-b81e-43da-9343-4bc308762f5b")
     public String getMutualExclusionResource_Parameter_protectKind() {
         return this.elt.getTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND_TAGTYPE_ELT);
     }
@@ -162,12 +162,12 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c12515d8-70aa-41a8-bda5-358f2a1f8630")
+    @objid ("9ef63797-bb1d-4a07-9912-16dde26993a9")
     public String getMutualExclusionResource_Parameter_scheduler() {
         return this.elt.getTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER_TAGTYPE_ELT);
     }
 
-    @objid ("27823759-ef39-4d6c-a3c0-a4544d920a3d")
+    @objid ("6506d5b0-d577-4c08-a795-66ac2b8d1c00")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -178,7 +178,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c50ec299-1301-4e5b-bf5c-65252bbff813")
+    @objid ("85e3591f-73bd-45e5-a187-a658fa9ca629")
     public void setMutualExclusionResource_Parameter_ceiling(final String value) {
         this.elt.putTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING_TAGTYPE_ELT, value);
     }
@@ -188,7 +188,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("db5b5e2f-8311-4e46-b5ab-4ed8b5ea2589")
+    @objid ("f1edef60-868b-4448-ba7a-e02306abda35")
     public void setMutualExclusionResource_Parameter_otherProtectProtocol(final String value) {
         this.elt.putTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL_TAGTYPE_ELT, value);
     }
@@ -198,7 +198,7 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("50bf4bed-2419-47f7-b2a1-20e64b264ab5")
+    @objid ("80d6abb2-e48f-4ca5-b263-057e35fed776")
     public void setMutualExclusionResource_Parameter_protectKind(final String value) {
         this.elt.putTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND_TAGTYPE_ELT, value);
     }
@@ -208,40 +208,40 @@ public class MutualExclusionResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5dda462c-ff67-4f44-931a-bb42bb3ba9c7")
+    @objid ("354caf5b-661b-4363-9c5e-6145b8642e6e")
     public void setMutualExclusionResource_Parameter_scheduler(final String value) {
         this.elt.putTagValue(MutualExclusionResourceParameter.MdaTypes.MUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER_TAGTYPE_ELT, value);
     }
 
-    @objid ("fd7cdde3-369b-4166-af5b-58344ececc86")
+    @objid ("f0e8a8e3-d0b6-4e81-9df9-35a222edb251")
     protected MutualExclusionResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("30f51df0-8bd2-4420-97f8-0bf2dbd16724")
     public static final class MdaTypes {
-        @objid ("5dbbb6f2-f87b-4887-9359-ec1cf1692101")
+        @objid ("58ebb45d-df85-48f0-9ab5-7eeef0c9472b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("cc00477d-29e7-4577-ade7-62e499cf4e4f")
+        @objid ("2057de6c-9617-4d9d-ace6-212950aa1a2d")
         public static TagType MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND_TAGTYPE_ELT;
 
-        @objid ("90f59fff-9b67-4558-876a-4fa02219af74")
+        @objid ("c386bc05-b2da-4e1b-983f-6c303005e9a9")
         public static TagType MUTUALEXCLUSIONRESOURCE_PARAMETER_CEILING_TAGTYPE_ELT;
 
-        @objid ("72c4588f-f575-48b8-be4f-241a7558fa22")
+        @objid ("404c7cf0-4659-4ccb-9611-b3c5bf8dc811")
         public static TagType MUTUALEXCLUSIONRESOURCE_PARAMETER_OTHERPROTECTPROTOCOL_TAGTYPE_ELT;
 
-        @objid ("ba2f74d2-a445-4ddf-b0a1-7dd9f31d0e31")
+        @objid ("6af7ac37-218a-4932-89dc-1a8e5fa3fb14")
         public static TagType MUTUALEXCLUSIONRESOURCE_PARAMETER_SCHEDULER_TAGTYPE_ELT;
 
-        @objid ("52a5420a-4b31-43cf-afcd-177329a5fcd6")
+        @objid ("7db99e1d-2d4b-4e8f-87a1-1eefd30d4f0b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a3ec8bb0-1a0a-4f7a-bf64-f9d6ae4fcada")
+        @objid ("51c59371-42ef-4936-8c29-814a66a67e17")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("748e1686-c980-4c2f-a45a-f958084f1dad")
+        @objid ("a855e444-7937-499a-b31c-3ddf72cbf523")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "002a77c3-0ccf-11df-8525-001302895b2b");
             MUTUALEXCLUSIONRESOURCE_PARAMETER_PROTECTKIND_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "002a77ca-0ccf-11df-8525-001302895b2b");

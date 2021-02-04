@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_sam.standard.lifeline;
 
@@ -34,33 +34,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e00f5f0c-fc6e-42b9-95b6-f26230d69c22")
 public class SaExecHostLifeline extends GaExecHostLifeline {
-    @objid ("0a53198a-a13f-45a7-9956-5aa7a2cf87e5")
+    @objid ("3e271895-24a0-4f24-93f8-089f3905c12a")
     public static final String STEREOTYPE_NAME = "SaExecHost_Lifeline";
 
-    @objid ("3ef88b48-0c85-48b0-9457-405748fa875d")
+    @objid ("25a41f8e-9abd-49fb-88f4-7c0482e70447")
     public static final String SAEXECHOST_LIFELINE_ISRPRIORANGE_TAGTYPE = "SaExecHost_Lifeline_ISRprioRange";
 
-    @objid ("97789d1e-c5be-4c1e-9299-5a5932bf1304")
+    @objid ("979f17d4-4b51-459f-94a6-0f7b703ee19c")
     public static final String SAEXECHOST_LIFELINE_ISRSWITCHT_TAGTYPE = "SaExecHost_Lifeline_ISRswitchT";
 
-    @objid ("49e7ff26-79a7-4ba9-8abf-441c1a9e11d1")
+    @objid ("e8f0cf82-4f57-4221-b761-397415196298")
     public static final String SAEXECHOST_LIFELINE_ISSCHED_TAGTYPE = "SaExecHost_Lifeline_isSched";
 
-    @objid ("0b2d3f92-4e81-46f6-838b-d6bc315a2ddd")
+    @objid ("db39d813-3a25-4c50-b0f8-f671f1f4cb5f")
     public static final String SAEXECHOST_LIFELINE_SCHSLACK_TAGTYPE = "SaExecHost_Lifeline_schSlack";
 
-    @objid ("880a7110-760b-464f-839c-6d562c5c9077")
+    @objid ("00d86c15-95b9-484b-af3d-a46e95aa212f")
     public static final String SAEXECHOST_LIFELINE_SCHEDUTILIZ_TAGTYPE = "SaExecHost_Lifeline_schedUtiliz";
 
     /**
-     * Tells whether a {@link SaExecHostLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SaExecHost_Lifeline >>. 
+     * Tells whether a {@link SaExecHostLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SaExecHost_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2b53645a-9935-4738-8e8e-cd73f3edbb38")
+    @objid ("ec3b57fd-7c1c-4db3-873f-fc61ecd0dcf5")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SaExecHostLifeline.STEREOTYPE_NAME));
     }
@@ -70,21 +70,21 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * 
      * @return a {@link SaExecHostLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("6864feb5-a5a2-4410-b502-8b89e18e55d6")
+    @objid ("cd5fb208-b143-4787-999d-184c124f57bc")
     public static SaExecHostLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SaExecHostLifeline.STEREOTYPE_NAME);
         return SaExecHostLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link SaExecHostLifeline} proxy from a {@link Lifeline} stereotyped << SaExecHost_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SaExecHostLifeline} proxy from a {@link Lifeline} stereotyped << SaExecHost_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link SaExecHostLifeline} proxy or <i>null</i>.
      */
-    @objid ("871de9f4-8930-417b-987b-d5deef703c7b")
+    @objid ("0d9d6c25-90fc-4c67-8691-2c301aa7d9ab")
     public static SaExecHostLifeline instantiate(final Lifeline obj) {
         return SaExecHostLifeline.canInstantiate(obj) ? new SaExecHostLifeline(obj) : null;
     }
@@ -97,7 +97,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * @return a {@link SaExecHostLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("2d480025-22e2-4f5b-9286-f4ff274cbc7f")
+    @objid ("ff2ad906-1537-4392-b029-130c9c946a77")
     public static SaExecHostLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SaExecHostLifeline.canInstantiate(obj))
         	return new SaExecHostLifeline(obj);
@@ -105,7 +105,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
         	throw new IllegalArgumentException("SaExecHostLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("7517c854-9e4c-4a82-888e-ce1db3e89727")
+    @objid ("b114bb00-86fb-4682-9f0c-9ddcf505fce6")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -125,7 +125,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("056de36c-25b1-4b8d-95a0-961e94b45ebd")
+    @objid ("c124ff4b-dfc3-4a60-bba8-2aa95f6dc8f3")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -136,7 +136,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8987d58e-4197-4dfa-ba0b-30415ae1d664")
+    @objid ("4e2242ca-bbf3-4aa9-a614-5f609f7622b0")
     public String getSaExecHost_Lifeline_ISRprioRange() {
         return this.elt.getTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISRPRIORANGE_TAGTYPE_ELT);
     }
@@ -146,7 +146,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("084773fd-df2e-476c-beb7-1ca51f1c30fa")
+    @objid ("62baa20d-167b-4d56-af6d-c681c805d08b")
     public String getSaExecHost_Lifeline_ISRswitchT() {
         return this.elt.getTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISRSWITCHT_TAGTYPE_ELT);
     }
@@ -156,7 +156,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2611a700-8232-4eb7-92ea-a0cdf9e2ab46")
+    @objid ("a6c85675-8ca2-4f6b-b370-f01e314c6f72")
     public String getSaExecHost_Lifeline_schSlack() {
         return this.elt.getTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_SCHSLACK_TAGTYPE_ELT);
     }
@@ -166,12 +166,12 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b4bf0f2e-4888-4952-b959-4e80c44fd173")
+    @objid ("c6d928fe-0747-405e-821f-28bdae9d20d1")
     public String getSaExecHost_Lifeline_schedUtiliz() {
         return this.elt.getTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_SCHEDUTILIZ_TAGTYPE_ELT);
     }
 
-    @objid ("7fdd5688-a6f4-4a59-b8bc-4f3969ad8ad9")
+    @objid ("ab6a5827-6bae-4291-92fb-2990bd49e32b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -182,7 +182,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9ba60a8e-29a2-4ee2-a86e-2da2d738b765")
+    @objid ("fd2078a2-43fa-4110-8e06-e88d80246390")
     public boolean isSaExecHost_Lifeline_isSched() {
         return this.elt.isTagged(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISSCHED_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("21552fc1-ae9b-4f71-b326-ad4e06fe7907")
+    @objid ("5a9b211b-10de-43ed-94e3-825a29848afc")
     public void setSaExecHost_Lifeline_ISRprioRange(final String value) {
         this.elt.putTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISRPRIORANGE_TAGTYPE_ELT, value);
     }
@@ -202,7 +202,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("51120b61-3424-48f4-935d-ba9451821a16")
+    @objid ("c95ba599-9cfe-4e4a-9399-3de1abc74115")
     public void setSaExecHost_Lifeline_ISRswitchT(final String value) {
         this.elt.putTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISRSWITCHT_TAGTYPE_ELT, value);
     }
@@ -212,7 +212,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("aca9f3ec-5eca-497d-a80f-5faab16de31e")
+    @objid ("b087d3bf-3f45-4fe1-b775-e0ce0aa7367b")
     public void setSaExecHost_Lifeline_isSched(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_ISSCHED_TAGTYPE_ELT, this.elt);
@@ -225,7 +225,7 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d61f5246-0df3-436d-828d-b7b2729b26e7")
+    @objid ("6b789016-8501-41ba-91fa-824f2bb53d54")
     public void setSaExecHost_Lifeline_schSlack(final String value) {
         this.elt.putTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_SCHSLACK_TAGTYPE_ELT, value);
     }
@@ -235,43 +235,43 @@ public class SaExecHostLifeline extends GaExecHostLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c75ef5da-3ba5-4b1b-9496-964c9046f256")
+    @objid ("23df30b6-acbe-494e-87cc-2a63fb009446")
     public void setSaExecHost_Lifeline_schedUtiliz(final String value) {
         this.elt.putTagValue(SaExecHostLifeline.MdaTypes.SAEXECHOST_LIFELINE_SCHEDUTILIZ_TAGTYPE_ELT, value);
     }
 
-    @objid ("b86750de-8971-491a-88b8-ac80c1f6066a")
+    @objid ("1eaafa8c-3a31-474a-b57f-62d4ff9b84b2")
     protected SaExecHostLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("1e54b74b-4b59-481e-9789-c2c5a436d364")
     public static final class MdaTypes {
-        @objid ("9f39cec6-58cd-44fb-a849-6acd07f56e7f")
+        @objid ("22a55fef-36cb-4eb2-9891-83330621604c")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("abbe510e-cd39-4468-9875-e9779178932e")
+        @objid ("acc49b93-0bbd-43d5-9532-4103f9b59182")
         public static TagType SAEXECHOST_LIFELINE_ISSCHED_TAGTYPE_ELT;
 
-        @objid ("6014f01b-df12-457b-b6ba-421c7e97fe08")
+        @objid ("24ea833f-58bd-43bb-8653-a195b6e86b7f")
         public static TagType SAEXECHOST_LIFELINE_SCHSLACK_TAGTYPE_ELT;
 
-        @objid ("62b92c38-fcad-4ec0-974a-2edfa30e4fc9")
+        @objid ("7463ea79-7c52-42b8-aa74-14ede5de9f6b")
         public static TagType SAEXECHOST_LIFELINE_SCHEDUTILIZ_TAGTYPE_ELT;
 
-        @objid ("112519d5-752e-4bfb-a021-264a8168a225")
+        @objid ("e749a1ae-fd6d-4a32-b61d-c3fa2ac3357c")
         public static TagType SAEXECHOST_LIFELINE_ISRSWITCHT_TAGTYPE_ELT;
 
-        @objid ("f4cbb346-ef4c-44da-bf0d-86030fcdad2b")
+        @objid ("4fce7e6f-315f-4a86-9657-e8ec01ad40ec")
         public static TagType SAEXECHOST_LIFELINE_ISRPRIORANGE_TAGTYPE_ELT;
 
-        @objid ("45153dd3-a4f8-4da5-bcbb-3a784679f1c0")
+        @objid ("255c5d83-d8a2-4f25-a340-60e8fb05a2d7")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f597dc94-3def-4567-b670-04ef5a2d7878")
+        @objid ("853af807-e142-40a3-b82b-70c420c51c98")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f0d08084-1c3c-4f43-88f6-196393099988")
+        @objid ("72b68774-f238-4cfc-859e-50bf3f794aa1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "f87a163a-14ad-11df-9d54-0014222a9f79");
             SAEXECHOST_LIFELINE_ISSCHED_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f87a163b-14ad-11df-9d54-0014222a9f79");

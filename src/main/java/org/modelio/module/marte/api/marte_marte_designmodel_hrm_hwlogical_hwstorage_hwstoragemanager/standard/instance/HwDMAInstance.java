@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwstorage_hwstoragemanager.standard.instance;
 
@@ -35,33 +35,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("04db1cd6-02d8-4e46-abae-1c91e7caf9fa")
 public class HwDMAInstance extends HwArbiterInstance {
-    @objid ("143f6b74-6b73-4648-9dac-0790c02403f2")
+    @objid ("c56dede6-7927-4cfa-875c-82141209946b")
     public static final String STEREOTYPE_NAME = "HwDMA_Instance";
 
-    @objid ("e02268d7-4e2c-46ae-95b2-9674d5181abd")
+    @objid ("eb268a6b-86b7-4eed-862b-57da7539a05e")
     public static final String HWDMA_INSTANCE_DRIVENBY_TAGTYPE = "HwDMA_Instance_drivenBy";
 
-    @objid ("b1871019-9f7c-4caf-a397-36d53f45a8d2")
+    @objid ("9fc4988b-6007-4c77-8d1c-d270f9d47f0d")
     public static final String HWDMA_INSTANCE_ELEMENTSIZE_TAGTYPE = "HwDMA_Instance_elementSize";
 
-    @objid ("4cc4d485-e251-4467-ad0a-85054427127f")
+    @objid ("491eaef1-6212-4bc7-acdc-45f4810bcf26")
     public static final String HWDMA_INSTANCE_MANAGEDMEMORIES_TAGTYPE = "HwDMA_Instance_managedMemories";
 
-    @objid ("70bf038f-41fb-4489-9cda-cf3c1897b84a")
+    @objid ("50dede75-b19b-4b8b-98d9-ed988e02a394")
     public static final String HWDMA_INSTANCE_NBCHANNELS_TAGTYPE = "HwDMA_Instance_nbChannels";
 
-    @objid ("b33550e7-f839-4d9d-bdfb-7a3537aa3437")
+    @objid ("4898874e-b23a-45b1-a30d-aa81c41b1447")
     public static final String HWDMA_INSTANCE_TRANSFERWIDTH_TAGTYPE = "HwDMA_Instance_transferWidth";
 
     /**
-     * Tells whether a {@link HwDMAInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwDMA_Instance >>. 
+     * Tells whether a {@link HwDMAInstance proxy} can be instantiated from a {@link MObject} checking it is a {@link Instance} stereotyped << HwDMA_Instance >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("0425a6b5-3027-4799-93bb-7f3bb896d71c")
+    @objid ("845a5559-990a-4fb4-9a28-7037102cd2d3")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwDMAInstance.STEREOTYPE_NAME));
     }
@@ -71,21 +71,21 @@ public class HwDMAInstance extends HwArbiterInstance {
      * 
      * @return a {@link HwDMAInstance} proxy on the created {@link Instance}.
      */
-    @objid ("3109c7ff-c4d3-4013-831f-b5521746bb77")
+    @objid ("bd1b6b7e-7fea-40b8-a395-09032e02cf76")
     public static HwDMAInstance create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Instance");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwDMAInstance.STEREOTYPE_NAME);
         return HwDMAInstance.instantiate((Instance)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwDMAInstance} proxy from a {@link Instance} stereotyped << HwDMA_Instance >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwDMAInstance} proxy from a {@link Instance} stereotyped << HwDMA_Instance >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Instance
      * @return a {@link HwDMAInstance} proxy or <i>null</i>.
      */
-    @objid ("88ec3472-4ce0-45ae-8493-b94158324c9b")
+    @objid ("83e937d7-6f9f-4311-9000-7e757a9fed5e")
     public static HwDMAInstance instantiate(final Instance obj) {
         return HwDMAInstance.canInstantiate(obj) ? new HwDMAInstance(obj) : null;
     }
@@ -98,7 +98,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * @return a {@link HwDMAInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("08f0477a-1611-408e-97cd-93e1a7b03a3d")
+    @objid ("47cd1ed1-b661-459d-b4e6-ae2c2e175eb1")
     public static HwDMAInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (HwDMAInstance.canInstantiate(obj))
         	return new HwDMAInstance(obj);
@@ -106,7 +106,7 @@ public class HwDMAInstance extends HwArbiterInstance {
         	throw new IllegalArgumentException("HwDMAInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ae808ad9-fa27-46eb-9593-d6113519230a")
+    @objid ("51c14ce1-c90e-4bdf-901d-5fbf3c5df08f")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -126,7 +126,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("217c90c2-4ea9-431d-8918-16e1cbd8b76f")
+    @objid ("2f2c8937-ab91-4c2d-a113-0ff8269c6a67")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
@@ -137,7 +137,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("3df3114b-c032-425d-bf38-05e237ed7444")
+    @objid ("32a72cfb-e476-4b6c-a89d-374c2d931d68")
     public List<String> getHwDMA_Instance_drivenBy() {
         return this.elt.getTagValues(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_DRIVENBY_TAGTYPE_ELT);
     }
@@ -147,7 +147,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("648c23f8-438c-4452-a331-c2d5525a62d4")
+    @objid ("02b7e7c6-3b48-4229-a699-b1d23e36b0eb")
     public String getHwDMA_Instance_elementSize() {
         return this.elt.getTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT);
     }
@@ -157,7 +157,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cba84f81-5a5a-4722-82fe-bb158802408b")
+    @objid ("f1637e7f-6e00-4fe6-828c-7d14bffbc9f4")
     public List<String> getHwDMA_Instance_managedMemories() {
         return this.elt.getTagValues(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_MANAGEDMEMORIES_TAGTYPE_ELT);
     }
@@ -167,7 +167,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("60fa6173-6222-4afa-b399-4aa83cddcb6c")
+    @objid ("ecf3e9aa-bb5b-4561-a75e-542097d58902")
     public String getHwDMA_Instance_nbChannels() {
         return this.elt.getTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_NBCHANNELS_TAGTYPE_ELT);
     }
@@ -177,12 +177,12 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("40fda69f-322d-4649-8ab0-8254904f38fc")
+    @objid ("04773190-43b9-4b9b-b83a-07a2d2c232c8")
     public String getHwDMA_Instance_transferWidth() {
         return this.elt.getTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_TRANSFERWIDTH_TAGTYPE_ELT);
     }
 
-    @objid ("dba7b6b3-3a45-4fdf-9311-78a977ee7e2a")
+    @objid ("2736a393-493a-4a81-b6bf-0006f8f751a6")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -193,7 +193,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("357b3dd0-ac82-4b21-b84e-3593ff902683")
+    @objid ("7be82ff7-be45-4b20-94ae-c492650ae2d0")
     public void setHwDMA_Instance_drivenBy(final List<String> values) {
         this.elt.putTagValues(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_DRIVENBY_TAGTYPE_ELT, values);
     }
@@ -203,7 +203,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("56f3dde8-99c7-4335-940e-fbf485476d43")
+    @objid ("9fcd04ca-b8c3-42aa-bd9c-50a96d102ed4")
     public void setHwDMA_Instance_elementSize(final String value) {
         this.elt.putTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT, value);
     }
@@ -213,7 +213,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("78e645fe-20c7-4341-bf02-9a69835568a3")
+    @objid ("0452f906-eec7-4fcd-a7ab-69685087b484")
     public void setHwDMA_Instance_managedMemories(final List<String> values) {
         this.elt.putTagValues(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_MANAGEDMEMORIES_TAGTYPE_ELT, values);
     }
@@ -223,7 +223,7 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c17e1ef8-efab-441f-82a8-59dbc87221f6")
+    @objid ("22cf7cf3-e7dc-4802-bed2-c2419859ea87")
     public void setHwDMA_Instance_nbChannels(final String value) {
         this.elt.putTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_NBCHANNELS_TAGTYPE_ELT, value);
     }
@@ -233,43 +233,43 @@ public class HwDMAInstance extends HwArbiterInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("90ef24b8-27f4-4743-8788-394e841237b0")
+    @objid ("d8e83a22-8c21-4bd4-a057-511fb4005ad4")
     public void setHwDMA_Instance_transferWidth(final String value) {
         this.elt.putTagValue(HwDMAInstance.MdaTypes.HWDMA_INSTANCE_TRANSFERWIDTH_TAGTYPE_ELT, value);
     }
 
-    @objid ("a773ffac-b825-4aed-90fb-a4fd8bbc7804")
+    @objid ("f6a20a26-be06-475e-b24c-65777dc24acd")
     protected HwDMAInstance(final Instance elt) {
         super(elt);
     }
 
     @objid ("a29b77b6-73e3-44d2-9d42-421b0adaba6d")
     public static final class MdaTypes {
-        @objid ("7da60574-0de9-4d3b-a407-dc48e3eb0256")
+        @objid ("b02e5f86-e7bb-4494-ab73-5ac919e59d84")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("74ec7f8d-7964-477d-aa68-c1a1b57c281c")
+        @objid ("e9b922e8-219a-420f-9ded-02067ab7c039")
         public static TagType HWDMA_INSTANCE_NBCHANNELS_TAGTYPE_ELT;
 
-        @objid ("dd316b4f-e0f3-4e89-8a94-dd510ef297e4")
+        @objid ("20c343c9-9679-48c1-bc9b-86f9b7b1c3b9")
         public static TagType HWDMA_INSTANCE_TRANSFERWIDTH_TAGTYPE_ELT;
 
-        @objid ("546c15f9-3543-4591-a61a-744fbd37a167")
+        @objid ("f6db875e-80a1-4c9d-afb8-10b2e422fd30")
         public static TagType HWDMA_INSTANCE_DRIVENBY_TAGTYPE_ELT;
 
-        @objid ("6d8a9f06-6ab3-4b51-a2ea-36730888dd97")
+        @objid ("7a82eaf4-f6d6-46b4-871e-a2dd9c71da88")
         public static TagType HWDMA_INSTANCE_MANAGEDMEMORIES_TAGTYPE_ELT;
 
-        @objid ("4b622ec0-1b70-40b8-a02f-6ecc0c1b9f2a")
+        @objid ("20a02e8f-30aa-459c-bc5b-8d190bfda9a5")
         public static TagType HWDMA_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT;
 
-        @objid ("11bb5294-0f72-456f-982d-2cf7307a5486")
+        @objid ("ce6522ee-8a76-4731-8a9f-9797e8ebd94d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("cadd7b68-9c3d-49ec-8efd-2a2380855d3d")
+        @objid ("607d020b-2bdd-479e-9e70-429be2f1443f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b9910aa7-7500-4c58-87d6-c8547f672187")
+        @objid ("5527acdc-21a9-4ea3-a250-37fb2f214210")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01783c9d-0ccf-11df-8525-001302895b2b");
             HWDMA_INSTANCE_NBCHANNELS_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "017d0142-0ccf-11df-8525-001302895b2b");

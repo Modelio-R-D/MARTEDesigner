@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwtiming.standard.associationend;
 
@@ -33,21 +33,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("77c92383-8cce-4796-bd1f-b96f925559a4")
 public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
-    @objid ("c9fa2b45-9598-493c-92ed-f3558069e2dd")
+    @objid ("47ef4a1f-2ac3-4b9c-a182-a0cf6e07d129")
     public static final String STEREOTYPE_NAME = "HwClock_AssociationEnd";
 
-    @objid ("d45e8ad3-cc7d-40ff-9657-82d581daf106")
+    @objid ("52abdcd8-49c5-4d22-8a28-488259da2020")
     public static final String HWCLOCK_ASSOCIATIONEND_FREQUENCY_TAGTYPE = "HwClock_AssociationEnd_frequency";
 
     /**
-     * Tells whether a {@link HwClockAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwClock_AssociationEnd >>. 
+     * Tells whether a {@link HwClockAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwClock_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4626a2d1-07d7-47ba-b5bb-96979a5849f1")
+    @objid ("3c98ebe5-1d7e-4220-9b69-a252e1c028c9")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwClockAssociationEnd.STEREOTYPE_NAME));
     }
@@ -57,21 +57,21 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
      * 
      * @return a {@link HwClockAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("f5fb66d8-8382-48d2-9e02-c9539f92ad24")
+    @objid ("88b85363-bd23-4a61-8f5f-7b504352f014")
     public static HwClockAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwClockAssociationEnd.STEREOTYPE_NAME);
         return HwClockAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwClockAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwClock_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwClockAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwClock_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwClockAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("36f2aab2-eef4-4788-af86-f32096c51a57")
+    @objid ("a3fbe4af-abbf-415a-8ab8-884d303c1fe1")
     public static HwClockAssociationEnd instantiate(final AssociationEnd obj) {
         return HwClockAssociationEnd.canInstantiate(obj) ? new HwClockAssociationEnd(obj) : null;
     }
@@ -84,7 +84,7 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
      * @return a {@link HwClockAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c1b1d9ed-7308-4f23-93f3-5a32ec3d706d")
+    @objid ("ff346eda-c22a-4f90-ad9d-e4135e0a4945")
     public static HwClockAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwClockAssociationEnd.canInstantiate(obj))
         	return new HwClockAssociationEnd(obj);
@@ -92,7 +92,7 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
         	throw new IllegalArgumentException("HwClockAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("4db4f122-ca01-4838-85e2-f529ed2e2343")
+    @objid ("1fd33e8d-9521-44cc-92fa-8af0a589d014")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -112,7 +112,7 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("c1e38d6b-c19d-4189-8790-61d33b620f65")
+    @objid ("d92c6851-1c96-449e-ba55-4935038f3db4")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -123,12 +123,12 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bcfa15c2-b409-47e4-97ea-edc149b0bc02")
+    @objid ("e8672dd8-ca2b-429f-991a-2e4047b161f5")
     public String getHwClock_AssociationEnd_frequency() {
         return this.elt.getTagValue(HwClockAssociationEnd.MdaTypes.HWCLOCK_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT);
     }
 
-    @objid ("2a076d46-e4e3-4d86-8603-1551e2f45081")
+    @objid ("52f1e02f-6954-425b-9480-3eb29260273d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +139,31 @@ public class HwClockAssociationEnd extends HwTimingResourceAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9ea4d78d-30e1-42f7-9d2d-733e5dbc2907")
+    @objid ("0fa4664d-9182-4f14-8b77-de4274b93594")
     public void setHwClock_AssociationEnd_frequency(final String value) {
         this.elt.putTagValue(HwClockAssociationEnd.MdaTypes.HWCLOCK_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT, value);
     }
 
-    @objid ("271e3190-a68d-4d14-851c-aaf3df043b55")
+    @objid ("c257e19e-b557-4396-ac18-3a9e3a1052a3")
     protected HwClockAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("bfa0e88b-8633-4094-b973-a829e591c91d")
     public static final class MdaTypes {
-        @objid ("af61d313-4932-45d1-b037-c1988afaa080")
+        @objid ("3cb82fb3-a12f-4642-a6a7-64d8e0140dd8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("a40e5fb0-8c69-48d9-bd5e-5a84d5097b27")
+        @objid ("ad6bc0c8-5f45-4738-a13f-20a07c554e7b")
         public static TagType HWCLOCK_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("b4bad1e8-abde-4a28-980e-ccbcd6cf8bf0")
+        @objid ("600f15f7-7ddf-407c-b933-367965e6ab1e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("5d10cba7-9600-414c-b9c4-2e24f31efa48")
+        @objid ("b548b97d-84d5-4837-a6d1-0d80ce453f61")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("6c9070ed-c82e-4dd9-b727-83beb527469c")
+        @objid ("28b9f7e8-ce91-4404-956f-2a7e7006a01c")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01272db5-0ccf-11df-8525-001302895b2b");
             HWCLOCK_ASSOCIATIONEND_FREQUENCY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f31d169d-123c-11df-8f55-0014222a9f79");

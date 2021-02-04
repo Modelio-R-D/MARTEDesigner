@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_resourcecore.standard.collaboration;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e8e83996-5e41-4a72-87e1-e2d3e7e63cd5")
 public class SwAccessServiceCollaboration extends GrServiceCollaboration {
-    @objid ("362c7978-6ce6-42d3-bb8e-f87af9a8af0c")
+    @objid ("ba97d8fa-c371-4037-9a6b-2a38b624d402")
     public static final String STEREOTYPE_NAME = "SwAccessService_Collaboration";
 
-    @objid ("28e97e2f-cfec-4fd7-8a20-f377a9cded15")
+    @objid ("69505952-29b5-4f9d-9aff-a6387e0c90d1")
     public static final String SWACCESSSERVICE_COLLABORATION_ACCESSEDELEMENT_TAGTYPE = "SwAccessService_Collaboration_accessedElement";
 
-    @objid ("d4be846f-b4fd-4482-8563-ae15ea4b6786")
+    @objid ("65a84454-6420-49cc-9646-e0d429a50e61")
     public static final String SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE = "SwAccessService_Collaboration_isModifier";
 
     /**
-     * Tells whether a {@link SwAccessServiceCollaboration proxy} can be instantiated from a {@link MObject} checking it is a {@link Collaboration} stereotyped << SwAccessService_Collaboration >>. 
+     * Tells whether a {@link SwAccessServiceCollaboration proxy} can be instantiated from a {@link MObject} checking it is a {@link Collaboration} stereotyped << SwAccessService_Collaboration >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("200f7bfc-4316-4b6d-8d3f-6bc3a61b8179")
+    @objid ("9e593743-9c78-4461-899a-328897689eef")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Collaboration) && ((Collaboration) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwAccessServiceCollaboration.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * 
      * @return a {@link SwAccessServiceCollaboration} proxy on the created {@link Collaboration}.
      */
-    @objid ("aac46e10-1e61-4ae2-be35-ac9fa2206132")
+    @objid ("ba9b6f87-2df4-4df1-aa25-246963cb5fd6")
     public static SwAccessServiceCollaboration create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Collaboration");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Collaboration");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwAccessServiceCollaboration.STEREOTYPE_NAME);
         return SwAccessServiceCollaboration.instantiate((Collaboration)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwAccessServiceCollaboration} proxy from a {@link Collaboration} stereotyped << SwAccessService_Collaboration >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwAccessServiceCollaboration} proxy from a {@link Collaboration} stereotyped << SwAccessService_Collaboration >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Collaboration
      * @return a {@link SwAccessServiceCollaboration} proxy or <i>null</i>.
      */
-    @objid ("afed105b-59a6-42b3-b791-851680173db8")
+    @objid ("ca70c672-de22-4b19-a62f-18bf2b7ef17e")
     public static SwAccessServiceCollaboration instantiate(final Collaboration obj) {
         return SwAccessServiceCollaboration.canInstantiate(obj) ? new SwAccessServiceCollaboration(obj) : null;
     }
@@ -88,7 +88,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * @return a {@link SwAccessServiceCollaboration} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9e520444-9832-45f8-8e15-a23def4eae81")
+    @objid ("51a982eb-5b05-4ac0-812f-1df7219a7e48")
     public static SwAccessServiceCollaboration safeInstantiate(final Collaboration obj) throws IllegalArgumentException {
         if (SwAccessServiceCollaboration.canInstantiate(obj))
         	return new SwAccessServiceCollaboration(obj);
@@ -96,7 +96,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
         	throw new IllegalArgumentException("SwAccessServiceCollaboration: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("bf45b08c-ac42-4a3d-93f0-5af49dda0ba6")
+    @objid ("b6dea49c-daa1-41db-8f69-4b4a829a892a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * Get the underlying {@link Collaboration}. 
      * @return the Collaboration represented by this proxy, never null.
      */
-    @objid ("b24ec015-9704-455e-9858-c14da42ff1bf")
+    @objid ("c377326f-2a77-4b50-88c3-03b5cbb437a5")
     @Override
     public Collaboration getElement() {
         return (Collaboration)super.getElement();
@@ -127,12 +127,12 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("76e0abff-4bc5-4206-be60-9917b251ff8d")
+    @objid ("6850b68d-a785-4720-8015-23c0f40af10d")
     public String getSwAccessService_Collaboration_accessedElement() {
         return this.elt.getTagValue(SwAccessServiceCollaboration.MdaTypes.SWACCESSSERVICE_COLLABORATION_ACCESSEDELEMENT_TAGTYPE_ELT);
     }
 
-    @objid ("5bfba2be-5828-4e54-9a97-ac7532aabc2d")
+    @objid ("e6cf4d02-4b61-46e0-be62-1e3a3d6134ab")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -143,7 +143,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f546bff8-8e51-4cdc-8be0-4c030776fcd6")
+    @objid ("6482fa5b-cdba-4b2e-9e90-310881bb2954")
     public boolean isSwAccessService_Collaboration_isModifier() {
         return this.elt.isTagged(SwAccessServiceCollaboration.MdaTypes.SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE_ELT);
     }
@@ -153,7 +153,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a09428db-637e-4edf-ac08-ac18986c0601")
+    @objid ("8111d592-a1ed-46de-8dbe-c9d78c05ed44")
     public void setSwAccessService_Collaboration_accessedElement(final String value) {
         this.elt.putTagValue(SwAccessServiceCollaboration.MdaTypes.SWACCESSSERVICE_COLLABORATION_ACCESSEDELEMENT_TAGTYPE_ELT, value);
     }
@@ -163,7 +163,7 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eff0cc53-b1bb-4b59-8871-cdfcc6bedab1")
+    @objid ("fa29c2f7-705c-477a-81d6-7ab82cd12d7a")
     public void setSwAccessService_Collaboration_isModifier(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwAccessServiceCollaboration.MdaTypes.SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE_ELT, this.elt);
@@ -171,29 +171,29 @@ public class SwAccessServiceCollaboration extends GrServiceCollaboration {
           this.elt.removeTags(SwAccessServiceCollaboration.MdaTypes.SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE_ELT);
     }
 
-    @objid ("cd77c928-a643-4fed-89bc-f4c50807c3eb")
+    @objid ("d39f45fb-9e5f-48d1-95b2-abc778991672")
     protected SwAccessServiceCollaboration(final Collaboration elt) {
         super(elt);
     }
 
     @objid ("1365e5df-6c1c-49f8-9741-cbe07f23be5d")
     public static final class MdaTypes {
-        @objid ("458ac601-8927-4fed-beee-c826c9005d8b")
+        @objid ("d26cb02e-c046-4160-817f-c3133d428203")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("2490e227-63bf-4434-b42e-d6c0b6725376")
+        @objid ("e1636552-7dde-492f-a088-4d61054fc675")
         public static TagType SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE_ELT;
 
-        @objid ("691c65ed-c555-45aa-a2ab-5f2759f68c3e")
+        @objid ("28b99569-7667-4a29-96fc-2e720f783316")
         public static TagType SWACCESSSERVICE_COLLABORATION_ACCESSEDELEMENT_TAGTYPE_ELT;
 
-        @objid ("e91ddec7-8050-47c6-b307-0dfea269d18b")
+        @objid ("e9b8ed01-39c1-43bd-a934-151cc138275b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("2061eb56-de5e-4f6e-bb7c-9988db1f10e4")
+        @objid ("9c45ac7e-3388-4204-8adb-ebdd23ca7177")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("4d4f52e2-d38d-4655-b9de-7ec92625e213")
+        @objid ("075cda46-b011-4127-88d3-ec870b5b3bb9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01a7eb01-0ccf-11df-8525-001302895b2b");
             SWACCESSSERVICE_COLLABORATION_ISMODIFIER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01a7eb07-0ccf-11df-8525-001302895b2b");

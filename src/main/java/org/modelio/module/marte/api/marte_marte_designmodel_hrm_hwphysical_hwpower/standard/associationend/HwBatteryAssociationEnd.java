@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwpower.standard.associationend;
 
@@ -33,21 +33,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("c716a11a-7ba4-47f0-a6dd-65389de51db4")
 public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
-    @objid ("9639d898-e08e-4895-9627-02c831a795d0")
+    @objid ("91473752-9bd6-4850-a1f8-bf9220c86635")
     public static final String STEREOTYPE_NAME = "HwBattery_AssociationEnd";
 
-    @objid ("18f2bcbd-0f6b-4bc9-bffe-b10741492c44")
+    @objid ("d9f1db67-8fe7-4fb1-a16f-387c6b129e86")
     public static final String HWBATTERY_ASSOCIATIONEND_CAPACITY_TAGTYPE = "HwBattery_AssociationEnd_capacity";
 
     /**
-     * Tells whether a {@link HwBatteryAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwBattery_AssociationEnd >>. 
+     * Tells whether a {@link HwBatteryAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwBattery_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("952886ff-4543-40f7-baf7-add72adeaca2")
+    @objid ("6d7c58fd-8785-459e-b47a-a9865a192c03")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBatteryAssociationEnd.STEREOTYPE_NAME));
     }
@@ -57,21 +57,21 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
      * 
      * @return a {@link HwBatteryAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("a714bdce-e0a5-4ebf-95ce-c4c94590d10d")
+    @objid ("f2d16ac5-c5f1-4d54-8d45-97c281a19790")
     public static HwBatteryAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBatteryAssociationEnd.STEREOTYPE_NAME);
         return HwBatteryAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBatteryAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwBattery_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBatteryAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwBattery_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwBatteryAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("4a5c92e0-75aa-4414-aed8-67f71ab062eb")
+    @objid ("e1f2315a-c4d1-428a-9f9b-268a86631a38")
     public static HwBatteryAssociationEnd instantiate(final AssociationEnd obj) {
         return HwBatteryAssociationEnd.canInstantiate(obj) ? new HwBatteryAssociationEnd(obj) : null;
     }
@@ -84,7 +84,7 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
      * @return a {@link HwBatteryAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("41e39006-5d8d-4e74-80d9-d8fb0d37b686")
+    @objid ("9e982e6f-d123-4eb0-8975-080234344ecf")
     public static HwBatteryAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwBatteryAssociationEnd.canInstantiate(obj))
         	return new HwBatteryAssociationEnd(obj);
@@ -92,7 +92,7 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
         	throw new IllegalArgumentException("HwBatteryAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3ce21751-de87-4f35-a2d9-50887ed380d5")
+    @objid ("ffc97bfc-5208-4160-b4ac-a8d25f21ff0f")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -112,7 +112,7 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("c9cb5879-ee1c-45e2-98e0-4fe5e1ab464e")
+    @objid ("e95b16fe-36c3-47b6-8dc9-b117e588ce77")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -123,12 +123,12 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4fa3b424-110c-4035-9e3f-1b1afbb93b20")
+    @objid ("6d5de574-a18f-4fc0-bc83-c36a6b8ed535")
     public String getHwBattery_AssociationEnd_capacity() {
         return this.elt.getTagValue(HwBatteryAssociationEnd.MdaTypes.HWBATTERY_ASSOCIATIONEND_CAPACITY_TAGTYPE_ELT);
     }
 
-    @objid ("1cbcedcf-83a5-4e59-b637-f7c3da75251b")
+    @objid ("099ca472-6661-4e3c-8f2c-98d906b44c63")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +139,31 @@ public class HwBatteryAssociationEnd extends HwPowerSupplyAssociationEnd {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6928c49d-69de-400a-822a-dc4ec07a84d7")
+    @objid ("7e3a2c78-9b45-491a-9c29-83dc07c3565d")
     public void setHwBattery_AssociationEnd_capacity(final String value) {
         this.elt.putTagValue(HwBatteryAssociationEnd.MdaTypes.HWBATTERY_ASSOCIATIONEND_CAPACITY_TAGTYPE_ELT, value);
     }
 
-    @objid ("74b1a784-9668-4f9a-b7b3-0aa432d2de09")
+    @objid ("a8ab925c-10c0-4bbc-9481-45657a85ecf0")
     protected HwBatteryAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("398448b7-0516-482d-bfbf-c47ec1763241")
     public static final class MdaTypes {
-        @objid ("f5d31757-1f8c-4648-9d2a-a61ce5888407")
+        @objid ("8fb512f8-74f2-472f-8adb-7874ec4958b0")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f7a4ae79-53c7-499f-9d59-10dc091367d7")
+        @objid ("95ac1b45-cc99-47b0-9047-260705623af0")
         public static TagType HWBATTERY_ASSOCIATIONEND_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("75b24424-10f6-4b33-9cb9-9b8add241990")
+        @objid ("1a494513-87d1-4c55-9c28-083ac86fd0e3")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("78df6814-078a-4fbd-8da0-5bb140ce23a9")
+        @objid ("e67af8d6-20a6-464a-803b-86fcaaf56d4d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("27955631-cc5f-4f3d-b004-8fbd82e41b65")
+        @objid ("b88d1382-a390-4cf0-9b93-9283f491d72c")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "563acf1b-c7b2-11df-ad39-001302895b2b");
             HWBATTERY_ASSOCIATIONEND_CAPACITY_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "563acf24-c7b2-11df-ad39-001302895b2b");

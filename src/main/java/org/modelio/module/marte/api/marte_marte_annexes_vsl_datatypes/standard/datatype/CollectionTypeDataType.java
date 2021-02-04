@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_annexes_vsl_datatypes.standard.datatype;
 
@@ -33,27 +33,27 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("a157b457-857d-46ff-aafe-971ff50d1080")
 public class CollectionTypeDataType {
-    @objid ("75773efa-7b33-416e-9e8d-40cfb2c59275")
+    @objid ("25be6069-815f-41b6-92a7-10b16d609f17")
     public static final String STEREOTYPE_NAME = "CollectionType_DataType";
 
-    @objid ("0f75378b-6784-411f-b192-00a5ec5898dc")
+    @objid ("5cd72f33-babe-4f35-ac09-afcdb4388dbf")
     public static final String COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB_TAGTYPE = "CollectionType_DataType_collectionAttrib";
 
     /**
      * The underlying {@link DataType} represented by this proxy, never null.
      */
-    @objid ("f8435d1b-ff5d-4cbf-86e4-b0b1da1e8c9c")
+    @objid ("176cbfcd-0374-417d-9a1b-3ce97c14b84d")
     protected final DataType elt;
 
     /**
-     * Tells whether a {@link CollectionTypeDataType proxy} can be instantiated from a {@link MObject} checking it is a {@link DataType} stereotyped << CollectionType_DataType >>. 
+     * Tells whether a {@link CollectionTypeDataType proxy} can be instantiated from a {@link MObject} checking it is a {@link DataType} stereotyped << CollectionType_DataType >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("6ba1be76-2bcd-4a37-baa2-bb91652316d7")
+    @objid ("60e1395f-346f-4f55-81c1-66c6ecc2f90d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof DataType) && ((DataType) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CollectionTypeDataType.STEREOTYPE_NAME));
     }
@@ -63,21 +63,21 @@ public class CollectionTypeDataType {
      * 
      * @return a {@link CollectionTypeDataType} proxy on the created {@link DataType}.
      */
-    @objid ("343414db-521a-48cb-b44a-3f7985f6aa38")
+    @objid ("a8246cd4-62e1-4a6b-a436-25a25e8f0714")
     public static CollectionTypeDataType create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("DataType");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.DataType");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CollectionTypeDataType.STEREOTYPE_NAME);
         return CollectionTypeDataType.instantiate((DataType)e);
     }
 
     /**
-     * Tries to instantiate a {@link CollectionTypeDataType} proxy from a {@link DataType} stereotyped << CollectionType_DataType >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link CollectionTypeDataType} proxy from a {@link DataType} stereotyped << CollectionType_DataType >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a DataType
      * @return a {@link CollectionTypeDataType} proxy or <i>null</i>.
      */
-    @objid ("8fd1160a-4578-468a-a6e7-009fa891594c")
+    @objid ("3c10bb8f-8c79-4fe9-907b-94109ef05e78")
     public static CollectionTypeDataType instantiate(final DataType obj) {
         return CollectionTypeDataType.canInstantiate(obj) ? new CollectionTypeDataType(obj) : null;
     }
@@ -90,7 +90,7 @@ public class CollectionTypeDataType {
      * @return a {@link CollectionTypeDataType} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("393c3156-cea6-461e-9ada-536a3af41878")
+    @objid ("5442dd2f-2afd-4b58-ac89-d47132670701")
     public static CollectionTypeDataType safeInstantiate(final DataType obj) throws IllegalArgumentException {
         if (CollectionTypeDataType.canInstantiate(obj))
         	return new CollectionTypeDataType(obj);
@@ -98,7 +98,7 @@ public class CollectionTypeDataType {
         	throw new IllegalArgumentException("CollectionTypeDataType: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("32d14cb1-8cdd-4157-9f6e-e981ada7e315")
+    @objid ("3848b7b7-8742-47fe-b26a-dcf8af463290")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -119,7 +119,7 @@ public class CollectionTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("701bc888-106e-4e12-ad96-6f03cdcb98ff")
+    @objid ("c69ee25a-f2c3-4878-95ca-398c8ea57495")
     public String getCollectionType_DataType_collectionAttrib() {
         return this.elt.getTagValue(CollectionTypeDataType.MdaTypes.COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB_TAGTYPE_ELT);
     }
@@ -128,12 +128,12 @@ public class CollectionTypeDataType {
      * Get the underlying {@link DataType}. 
      * @return the DataType represented by this proxy, never null.
      */
-    @objid ("605319a9-420c-4a8e-951f-36c944ce90ea")
+    @objid ("0080ee8a-b526-4283-9f0c-36cde3025a85")
     public DataType getElement() {
         return this.elt;
     }
 
-    @objid ("3f93ec9d-899a-458d-a02f-5dcf4ac8c40a")
+    @objid ("b7774760-1120-4312-b4ba-541591b5845b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -144,31 +144,31 @@ public class CollectionTypeDataType {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("dec2927e-1d73-4c02-bdd1-a5929b72d43e")
+    @objid ("67289650-60f8-4ae3-b0cf-efd7e6f630b7")
     public void setCollectionType_DataType_collectionAttrib(final String value) {
         this.elt.putTagValue(CollectionTypeDataType.MdaTypes.COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB_TAGTYPE_ELT, value);
     }
 
-    @objid ("09e220cc-d7f4-4ebc-bd42-36c39ebd1218")
+    @objid ("0dfdb4ee-5f2f-49a2-856d-9831c071f192")
     protected CollectionTypeDataType(final DataType elt) {
         this.elt = elt;
     }
 
     @objid ("74de3e74-dbdf-46f7-a9a3-a5721484d041")
     public static final class MdaTypes {
-        @objid ("008e6076-919b-4e26-b6ce-bd76bc290225")
+        @objid ("afaf1b4e-d2a0-476b-9fcb-5de7b512b6e4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("65094765-3195-40da-8473-f9edf916d3a7")
+        @objid ("a107f458-6886-4848-99e9-f7db4bdca068")
         public static TagType COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB_TAGTYPE_ELT;
 
-        @objid ("4f53aa6f-713f-4fa9-a572-3ab23ff95106")
+        @objid ("73ae603d-b689-47af-a028-5c25d5405b93")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a2e74d0c-53ae-4ed7-917c-1ec6efef3c4e")
+        @objid ("f20b65d7-1182-480c-a5b4-6ec2c9cfdb1d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("691fed6b-c995-4748-8859-a8d9d574d19e")
+        @objid ("f8e47015-4db0-4f7b-8659-a0fb9c560606")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d9efe2e1-0cce-11df-8525-001302895b2b");
             COLLECTIONTYPE_DATATYPE_COLLECTIONATTRIB_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "d9efe2e5-0cce-11df-8525-001302895b2b");

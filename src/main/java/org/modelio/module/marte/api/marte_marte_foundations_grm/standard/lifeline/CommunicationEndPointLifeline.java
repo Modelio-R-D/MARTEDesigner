@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.lifeline;
 
@@ -33,21 +33,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("59f1e546-74a7-4252-833e-a8f7b53a241b")
 public class CommunicationEndPointLifeline extends ResourceLifeline {
-    @objid ("ad1a52fd-a820-4856-96af-581df4656d46")
+    @objid ("6e525ec2-1eb1-4b8f-9f0d-cdc6ef50290b")
     public static final String STEREOTYPE_NAME = "CommunicationEndPoint_Lifeline";
 
-    @objid ("9a2c1dd1-e31b-416b-93d7-d944f02a264e")
+    @objid ("551d39f0-a387-48af-ac0b-a4970280500c")
     public static final String COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE_TAGTYPE = "CommunicationEndPoint_Lifeline_packetSize";
 
     /**
-     * Tells whether a {@link CommunicationEndPointLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << CommunicationEndPoint_Lifeline >>. 
+     * Tells whether a {@link CommunicationEndPointLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << CommunicationEndPoint_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("6f20e2ab-c69d-48f1-a266-9b631b601bdb")
+    @objid ("afa30fef-f457-4287-a905-febc16903b1b")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointLifeline.STEREOTYPE_NAME));
     }
@@ -57,21 +57,21 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
      * 
      * @return a {@link CommunicationEndPointLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("358e02fe-17f5-4133-a41c-5048401826c9")
+    @objid ("4e8b9e3d-6ddc-44ed-a000-400591ec446d")
     public static CommunicationEndPointLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointLifeline.STEREOTYPE_NAME);
         return CommunicationEndPointLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link CommunicationEndPointLifeline} proxy from a {@link Lifeline} stereotyped << CommunicationEndPoint_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link CommunicationEndPointLifeline} proxy from a {@link Lifeline} stereotyped << CommunicationEndPoint_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link CommunicationEndPointLifeline} proxy or <i>null</i>.
      */
-    @objid ("c788fd41-9c87-49bf-aa07-49d9e4d6d3fc")
+    @objid ("de4bd8e9-f854-4216-b2f8-899846a686d0")
     public static CommunicationEndPointLifeline instantiate(final Lifeline obj) {
         return CommunicationEndPointLifeline.canInstantiate(obj) ? new CommunicationEndPointLifeline(obj) : null;
     }
@@ -84,7 +84,7 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
      * @return a {@link CommunicationEndPointLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9d21aeb6-b2b0-446f-8dfb-8d70e65c776b")
+    @objid ("5e18d429-37f2-459c-9ed8-2523835b8cc2")
     public static CommunicationEndPointLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (CommunicationEndPointLifeline.canInstantiate(obj))
         	return new CommunicationEndPointLifeline(obj);
@@ -92,7 +92,7 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
         	throw new IllegalArgumentException("CommunicationEndPointLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ab782280-5df3-4fe1-904d-03439d63147d")
+    @objid ("353bf0b3-1f59-42f0-9acc-82b74b5c7971")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ccb32783-d19f-49d0-8785-4c784c4126b5")
+    @objid ("3573fd12-2b03-433e-8fce-540ca84e6d9f")
     public String getCommunicationEndPoint_Lifeline_packetSize() {
         return this.elt.getTagValue(CommunicationEndPointLifeline.MdaTypes.COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -122,13 +122,13 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("73e3b0de-7129-43be-952c-0338e49a2168")
+    @objid ("cd894df4-0f16-4d37-8d2b-365866d9896c")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
     }
 
-    @objid ("ef296719-0c04-4477-b49b-9d93e846ea18")
+    @objid ("1c652f90-c06b-45d6-9358-a0b8969dfa6e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +139,31 @@ public class CommunicationEndPointLifeline extends ResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5406712d-fe1a-4b6c-8d2b-c62640a87c32")
+    @objid ("d833772f-723a-4d06-ba74-918f7f5a8c15")
     public void setCommunicationEndPoint_Lifeline_packetSize(final String value) {
         this.elt.putTagValue(CommunicationEndPointLifeline.MdaTypes.COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("e269194d-853e-4e34-bc48-7d7362111d45")
+    @objid ("9b579a71-c3a5-4ab7-b1c1-80804738dc6a")
     protected CommunicationEndPointLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("80594c22-8814-411a-b7bd-1c6e73f5e324")
     public static final class MdaTypes {
-        @objid ("dafed7ac-dfbc-42da-af1a-db15b52ac37c")
+        @objid ("e6fe62e0-6e88-44ae-8f8a-22b18b41e9ce")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("3150ca37-ab23-48b4-817b-3a47a14b2fde")
+        @objid ("7d0cab32-7579-4975-bd37-af5082a0bb87")
         public static TagType COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("0466a406-6deb-4e8b-8081-5d1722274f77")
+        @objid ("99e65f22-06ba-4434-9334-2ccfd0e94dbf")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("af2ea586-d819-4919-94e8-819b0b9836f4")
+        @objid ("8cf82cb9-a045-4484-9d28-3250e4565dcb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("af225747-fa1f-4617-8817-3c680e2a6a4f")
+        @objid ("a1558d66-bfd4-4b6c-9757-4210a09a542f")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ffa4f5da-0cce-11df-8525-001302895b2b");
             COMMUNICATIONENDPOINT_LIFELINE_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ffa4f5e1-0cce-11df-8525-001302895b2b");

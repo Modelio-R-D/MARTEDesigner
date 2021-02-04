@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 
@@ -32,24 +32,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("eb026383-ef46-4f0d-8925-89458c6eb692")
 public class ProfileAssociationSendServicesMessageComResource {
-    @objid ("3225892f-2d1b-41c5-a459-b33a86a77d34")
+    @objid ("7ea03b17-8d1b-433e-9d8c-4c42cddd3862")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_sendServices_MessageComResource";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("3882ff1c-9e22-4018-8045-0e597ee6329e")
+    @objid ("d87368d6-453e-4d5a-8bf7-f7e988d68c7f")
     protected final Dependency elt;
 
     /**
-     * Tells whether a {@link ProfileAssociationSendServicesMessageComResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_sendServices_MessageComResource >>. 
+     * Tells whether a {@link ProfileAssociationSendServicesMessageComResource proxy} can be instantiated from a {@link MObject} checking it is a {@link Dependency} stereotyped << ProfileAssociation_sendServices_MessageComResource >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("5ca2d556-25a6-4bcf-875a-a6eff3925d85")
+    @objid ("6300de4c-8715-40b2-8681-6ab449bf0851")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationSendServicesMessageComResource.STEREOTYPE_NAME));
     }
@@ -59,21 +59,21 @@ public class ProfileAssociationSendServicesMessageComResource {
      * 
      * @return a {@link ProfileAssociationSendServicesMessageComResource} proxy on the created {@link Dependency}.
      */
-    @objid ("0a55ac80-301d-4b23-8254-18d51ff5afbc")
+    @objid ("6382137b-9adc-4e76-b524-6a889c2f804e")
     public static ProfileAssociationSendServicesMessageComResource create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Dependency");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationSendServicesMessageComResource.STEREOTYPE_NAME);
         return ProfileAssociationSendServicesMessageComResource.instantiate((Dependency)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProfileAssociationSendServicesMessageComResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_sendServices_MessageComResource >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProfileAssociationSendServicesMessageComResource} proxy from a {@link Dependency} stereotyped << ProfileAssociation_sendServices_MessageComResource >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Dependency
      * @return a {@link ProfileAssociationSendServicesMessageComResource} proxy or <i>null</i>.
      */
-    @objid ("d906abac-a210-4e1a-a468-0d3ae136f5ed")
+    @objid ("f80572dd-768a-4775-b01f-4bf1fa7b49d5")
     public static ProfileAssociationSendServicesMessageComResource instantiate(final Dependency obj) {
         return ProfileAssociationSendServicesMessageComResource.canInstantiate(obj) ? new ProfileAssociationSendServicesMessageComResource(obj) : null;
     }
@@ -86,7 +86,7 @@ public class ProfileAssociationSendServicesMessageComResource {
      * @return a {@link ProfileAssociationSendServicesMessageComResource} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("03ce4b68-93eb-4913-ac53-9def6a67eb2f")
+    @objid ("fa96b415-87c6-4b0f-a591-187b36ee04d8")
     public static ProfileAssociationSendServicesMessageComResource safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationSendServicesMessageComResource.canInstantiate(obj))
         	return new ProfileAssociationSendServicesMessageComResource(obj);
@@ -94,7 +94,7 @@ public class ProfileAssociationSendServicesMessageComResource {
         	throw new IllegalArgumentException("ProfileAssociationSendServicesMessageComResource: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("5a9736ea-2ebc-4f1f-9dc9-6d93193a820f")
+    @objid ("3a90ebeb-a73f-4f39-9591-b2f609437ca5")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +114,34 @@ public class ProfileAssociationSendServicesMessageComResource {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("417c3eeb-48ae-49e1-9175-5cb57a8039fa")
+    @objid ("95b8a4b4-7f4b-4709-abee-9fe93b63664c")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("70c1028e-4812-4f1a-8c5c-4dc9ffa7c419")
+    @objid ("33a379be-3868-49b5-b38a-9b49ddfb4f86")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("826e6618-04ed-4f9f-b9c0-6818d63f3053")
+    @objid ("5751e48e-bf57-4343-9d6c-c0f3f53468bb")
     protected ProfileAssociationSendServicesMessageComResource(final Dependency elt) {
         this.elt = elt;
     }
 
     @objid ("8a39b24b-2171-4787-aa5b-217df8b186ff")
     public static final class MdaTypes {
-        @objid ("10ad414a-b8e8-46dd-8da7-625f2728ca5b")
+        @objid ("29ec4142-6006-404b-bb33-7266b1979cc7")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4c066d73-912d-4cef-abf4-527d75751596")
+        @objid ("afeb7554-db04-4dd6-b629-db230895d65e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("ffef3c39-9b40-4c83-905a-44ada79c042a")
+        @objid ("2d958014-dfc6-460b-9075-aa4fea213763")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e5a5ff59-ad27-49f2-8f44-4b462cb02e3b")
+        @objid ("33ca8d60-e7cd-40a1-a3f7-6af7efe88170")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ac35c0e5-9758-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

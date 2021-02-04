@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.associationend;
 
@@ -34,21 +34,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("78302229-07f7-464c-9198-ec5fe47e2707")
 public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationEnd {
-    @objid ("a0eb7813-d4d8-4437-9284-c490c17789e0")
+    @objid ("ad605ba1-5d03-4537-9714-07319ba37806")
     public static final String STEREOTYPE_NAME = "HwArbiter_AssociationEnd";
 
-    @objid ("fbd18d8b-69f2-4da6-9324-dabff15d55a4")
+    @objid ("b87f5413-c934-43fb-ad1b-d01cc47c95f6")
     public static final String HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS_TAGTYPE = "HwArbiter_AssociationEnd_controlledMedias";
 
     /**
-     * Tells whether a {@link HwArbiterAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwArbiter_AssociationEnd >>. 
+     * Tells whether a {@link HwArbiterAssociationEnd proxy} can be instantiated from a {@link MObject} checking it is a {@link AssociationEnd} stereotyped << HwArbiter_AssociationEnd >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("51f0b692-b108-4f54-9fd7-664808c3d6d8")
+    @objid ("3ec7a42f-6b73-4960-bbee-e4a1c1f3c0a4")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwArbiterAssociationEnd.STEREOTYPE_NAME));
     }
@@ -58,21 +58,21 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
      * 
      * @return a {@link HwArbiterAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("989af88c-3455-4ce4-88e8-1ee300912507")
+    @objid ("5c84e7ce-b0e2-49b8-8685-b6d73b54e24b")
     public static HwArbiterAssociationEnd create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("AssociationEnd");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwArbiterAssociationEnd.STEREOTYPE_NAME);
         return HwArbiterAssociationEnd.instantiate((AssociationEnd)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwArbiterAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwArbiter_AssociationEnd >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwArbiterAssociationEnd} proxy from a {@link AssociationEnd} stereotyped << HwArbiter_AssociationEnd >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a AssociationEnd
      * @return a {@link HwArbiterAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("b90add2e-220c-4f17-92c2-32071c8d4776")
+    @objid ("51c246fa-b0f1-4452-9240-73702443133c")
     public static HwArbiterAssociationEnd instantiate(final AssociationEnd obj) {
         return HwArbiterAssociationEnd.canInstantiate(obj) ? new HwArbiterAssociationEnd(obj) : null;
     }
@@ -85,7 +85,7 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
      * @return a {@link HwArbiterAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("dba775ab-5a95-4dd1-8e5e-e3ae8e59e7b2")
+    @objid ("4dc6c156-e6ee-4aa6-a8f1-2795abb7602b")
     public static HwArbiterAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (HwArbiterAssociationEnd.canInstantiate(obj))
         	return new HwArbiterAssociationEnd(obj);
@@ -93,7 +93,7 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
         	throw new IllegalArgumentException("HwArbiterAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fb871bc0-343d-4d45-ac83-51317f24eaa4")
+    @objid ("36a8786e-6ec7-4138-a32f-b0097c060d8a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("92aa44b6-1122-4dbc-9cad-274b13d80a69")
+    @objid ("671c3c54-f5a7-42e8-a292-c577cc666c6e")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
@@ -124,12 +124,12 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d0966127-ce35-4661-a140-6dfcf559fd59")
+    @objid ("982875a4-3914-414e-b629-ea5a98f426d5")
     public List<String> getHwArbiter_AssociationEnd_controlledMedias() {
         return this.elt.getTagValues(HwArbiterAssociationEnd.MdaTypes.HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS_TAGTYPE_ELT);
     }
 
-    @objid ("d50de109-dee6-4e1b-b82b-023ae1526da4")
+    @objid ("ce386ab0-1a0d-4058-9158-c027833cd5fe")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +140,31 @@ public class HwArbiterAssociationEnd extends HwCommunicationResourceAssociationE
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e16d6f53-c5fd-403c-b1c7-6ec4f84983cf")
+    @objid ("51d3e063-02a3-4ccc-979b-18778c39d208")
     public void setHwArbiter_AssociationEnd_controlledMedias(final List<String> values) {
         this.elt.putTagValues(HwArbiterAssociationEnd.MdaTypes.HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS_TAGTYPE_ELT, values);
     }
 
-    @objid ("014a7781-d71c-43c0-ac93-e4cdb296d834")
+    @objid ("be3eea23-85dc-46d7-ab43-b370650c1619")
     protected HwArbiterAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
     @objid ("0a8f36ee-8330-44da-98b0-0a236435c4e3")
     public static final class MdaTypes {
-        @objid ("b4c0b6a2-8aac-4943-a4f5-64b851df563b")
+        @objid ("2ff57b05-c412-4839-a4c8-1181b6733304")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("fda93408-0709-44b5-ac5f-2d01b2081c2b")
+        @objid ("cceca3f4-dcfc-42c1-a75d-bd2f70337a51")
         public static TagType HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS_TAGTYPE_ELT;
 
-        @objid ("63264285-a99a-4066-8895-88f575654707")
+        @objid ("804a9abf-d7c5-4cf1-aba0-c590e892b57e")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("2a373e0a-1ed7-4040-9e84-765c9ee8dc19")
+        @objid ("86778b6e-2237-435e-9105-9b1e7219727c")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2fe8994e-69a7-4a90-a4a6-55708142ead7")
+        @objid ("11db2d59-643b-4ec1-bcce-0eaf7fa30e59")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01036ae6-0ccf-11df-8525-001302895b2b");
             HWARBITER_ASSOCIATIONEND_CONTROLLEDMEDIAS_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "01036aed-0ccf-11df-8525-001302895b2b");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_time.standard.constraint;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("25755b2c-1d83-4713-8fc7-30e0294e6a3a")
 public class DurationObservationConstraint {
-    @objid ("0933e779-9d60-42a2-b7df-cb9739fb7ad8")
+    @objid ("ea2abb1e-0725-48a1-865c-5462d63d66ae")
     public static final String STEREOTYPE_NAME = "DurationObservation_Constraint";
 
     /**
      * The underlying {@link Constraint} represented by this proxy, never null.
      */
-    @objid ("89fd4002-86c5-4b60-b768-adffd08de8e8")
+    @objid ("a50590ed-4547-4c7c-9460-d371b679019a")
     protected final Constraint elt;
 
     /**
-     * Tells whether a {@link DurationObservationConstraint proxy} can be instantiated from a {@link MObject} checking it is a {@link Constraint} stereotyped << DurationObservation_Constraint >>. 
+     * Tells whether a {@link DurationObservationConstraint proxy} can be instantiated from a {@link MObject} checking it is a {@link Constraint} stereotyped << DurationObservation_Constraint >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2431f3c2-9681-46e8-9f67-5704dd4302df")
+    @objid ("b3ba424d-153c-4ece-8855-60ba57526ebe")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Constraint) && ((Constraint) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DurationObservationConstraint.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class DurationObservationConstraint {
      * 
      * @return a {@link DurationObservationConstraint} proxy on the created {@link Constraint}.
      */
-    @objid ("ed81ccf5-b46e-452b-b6c0-e1e56be461f7")
+    @objid ("0864f14e-aff9-413d-8aca-c5906356f98f")
     public static DurationObservationConstraint create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Constraint");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Constraint");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DurationObservationConstraint.STEREOTYPE_NAME);
         return DurationObservationConstraint.instantiate((Constraint)e);
     }
 
     /**
-     * Tries to instantiate a {@link DurationObservationConstraint} proxy from a {@link Constraint} stereotyped << DurationObservation_Constraint >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link DurationObservationConstraint} proxy from a {@link Constraint} stereotyped << DurationObservation_Constraint >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Constraint
      * @return a {@link DurationObservationConstraint} proxy or <i>null</i>.
      */
-    @objid ("2337dea0-a78a-4b6e-a8db-445b63e3921f")
+    @objid ("506b2eca-52b9-4fc1-ab19-1d1cd3828e76")
     public static DurationObservationConstraint instantiate(final Constraint obj) {
         return DurationObservationConstraint.canInstantiate(obj) ? new DurationObservationConstraint(obj) : null;
     }
@@ -87,7 +87,7 @@ public class DurationObservationConstraint {
      * @return a {@link DurationObservationConstraint} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("6d8f47b4-2e3f-486b-80bb-25e2e836b865")
+    @objid ("17a6bc03-5b79-4e9e-aa3f-5c0242ba62c9")
     public static DurationObservationConstraint safeInstantiate(final Constraint obj) throws IllegalArgumentException {
         if (DurationObservationConstraint.canInstantiate(obj))
         	return new DurationObservationConstraint(obj);
@@ -95,7 +95,7 @@ public class DurationObservationConstraint {
         	throw new IllegalArgumentException("DurationObservationConstraint: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("5cae4035-b45e-485e-b689-fa3217203c7a")
+    @objid ("013379a3-683a-4a0e-88bb-4dcf1160ed24")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,34 +115,34 @@ public class DurationObservationConstraint {
      * Get the underlying {@link Constraint}. 
      * @return the Constraint represented by this proxy, never null.
      */
-    @objid ("a7b298b2-7537-4960-b2eb-b1ccfcee5477")
+    @objid ("82ff089f-8729-497d-ad49-047aefa2009b")
     public Constraint getElement() {
         return this.elt;
     }
 
-    @objid ("1bcc4386-3139-44e9-b761-ea283dcbd5df")
+    @objid ("789744b2-b542-4a3b-a225-40d022e26cd0")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("e8826759-33fb-4f45-bf2f-c63608cb8f0d")
+    @objid ("d3fd0e94-3b48-4224-8d0e-69182914e719")
     protected DurationObservationConstraint(final Constraint elt) {
         this.elt = elt;
     }
 
     @objid ("d4584cbe-a7aa-4b45-b0ee-27f45f6a21b2")
     public static final class MdaTypes {
-        @objid ("cead24e4-e777-4893-95f8-dff94e2f84c8")
+        @objid ("7c0e5cfb-a0a1-41cf-8ca7-217a2a383c36")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("518c8c34-d446-4faa-aa22-64854e51b5ff")
+        @objid ("5564c6f6-9f7a-4761-a386-60ae82e10bc5")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0f28a69e-1946-43e4-9a0b-011703570555")
+        @objid ("15437e13-e6cc-4d39-9a59-c55725651716")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("34987c9c-fc31-47bd-bbbd-cdfdf282ecf3")
+        @objid ("66a30210-1d07-4faa-8762-761043e458c0")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "fb23468a-3ac9-11e1-960b-0027103f347d");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

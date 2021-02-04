@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hlam.standard.callaction;
 
@@ -33,33 +33,33 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("eb5b2e96-a071-4afb-84c5-e784e24ddc7f")
 public class RtActionCallAction {
-    @objid ("982db621-adb8-4206-a6d2-05c7cfcfe333")
+    @objid ("b44ecfa4-8cef-404d-be90-297fa2edf00f")
     public static final String STEREOTYPE_NAME = "RtAction_CallAction";
 
-    @objid ("86d27f71-5c9f-4bc1-baa8-06764ac583b5")
+    @objid ("017c59e5-e64d-41cb-be45-728062779ec8")
     public static final String RTACTION_CALLACTION_ISATOMIC_TAGTYPE = "RtAction_CallAction_isAtomic";
 
-    @objid ("0109fadd-c014-4e90-9a5c-bc1b3a960730")
+    @objid ("d8a5b1d9-8da9-4f54-adfb-d941bf442844")
     public static final String RTACTION_CALLACTION_MSGSIZE_TAGTYPE = "RtAction_CallAction_msgSize";
 
-    @objid ("d2929632-6416-4b5f-9623-59d0f7f50ca0")
+    @objid ("f8de3f89-083b-4c28-a6a4-c4f62f5dcbaf")
     public static final String RTACTION_CALLACTION_SYNCHKIND_TAGTYPE = "RtAction_CallAction_synchKind";
 
     /**
      * The underlying {@link CallAction} represented by this proxy, never null.
      */
-    @objid ("0ec75443-ab6a-40b2-9ee5-3d45a6ab175d")
+    @objid ("8fca1bb6-e705-4a5c-99a6-f1fc569812e4")
     protected final CallAction elt;
 
     /**
-     * Tells whether a {@link RtActionCallAction proxy} can be instantiated from a {@link MObject} checking it is a {@link CallAction} stereotyped << RtAction_CallAction >>. 
+     * Tells whether a {@link RtActionCallAction proxy} can be instantiated from a {@link MObject} checking it is a {@link CallAction} stereotyped << RtAction_CallAction >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("316c112e-7be2-4694-aba9-94eb0128143e")
+    @objid ("5e9acaf7-6688-400e-84f5-744fead25c1a")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof CallAction) && ((CallAction) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, RtActionCallAction.STEREOTYPE_NAME));
     }
@@ -69,21 +69,21 @@ public class RtActionCallAction {
      * 
      * @return a {@link RtActionCallAction} proxy on the created {@link CallAction}.
      */
-    @objid ("cb5a664b-6c41-4a61-a33b-01111eeddb34")
+    @objid ("466c0bf6-9eda-45be-873a-93e716a4b283")
     public static RtActionCallAction create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("CallAction");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.CallAction");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, RtActionCallAction.STEREOTYPE_NAME);
         return RtActionCallAction.instantiate((CallAction)e);
     }
 
     /**
-     * Tries to instantiate a {@link RtActionCallAction} proxy from a {@link CallAction} stereotyped << RtAction_CallAction >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link RtActionCallAction} proxy from a {@link CallAction} stereotyped << RtAction_CallAction >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a CallAction
      * @return a {@link RtActionCallAction} proxy or <i>null</i>.
      */
-    @objid ("c0943a1b-213b-43aa-9871-ee2ff297f4fc")
+    @objid ("c291a146-3043-41ef-9b0e-c7af4264c62e")
     public static RtActionCallAction instantiate(final CallAction obj) {
         return RtActionCallAction.canInstantiate(obj) ? new RtActionCallAction(obj) : null;
     }
@@ -96,7 +96,7 @@ public class RtActionCallAction {
      * @return a {@link RtActionCallAction} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("0aab240b-4927-424b-ba91-2c30839c6f4f")
+    @objid ("77d54dc4-8ea9-4b21-ab8f-941d5496aa2d")
     public static RtActionCallAction safeInstantiate(final CallAction obj) throws IllegalArgumentException {
         if (RtActionCallAction.canInstantiate(obj))
         	return new RtActionCallAction(obj);
@@ -104,7 +104,7 @@ public class RtActionCallAction {
         	throw new IllegalArgumentException("RtActionCallAction: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("870b13ad-563a-4c61-8c87-4a63424314ad")
+    @objid ("51416b33-eb53-4a77-8c7d-51efa85c3384")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +124,7 @@ public class RtActionCallAction {
      * Get the underlying {@link CallAction}. 
      * @return the CallAction represented by this proxy, never null.
      */
-    @objid ("f6d107bf-61f4-4e6c-8eff-fd288258f33d")
+    @objid ("7c15a82f-1d18-4823-8b7c-6a1613b44e7f")
     public CallAction getElement() {
         return this.elt;
     }
@@ -134,7 +134,7 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5006f62d-0b3f-4177-bdeb-795af4116b9e")
+    @objid ("49d4af95-0246-42df-b18f-a1e67f7759bd")
     public String getRtAction_CallAction_msgSize() {
         return this.elt.getTagValue(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_MSGSIZE_TAGTYPE_ELT);
     }
@@ -144,12 +144,12 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5285fd64-308f-49f2-aa76-92be9cc23b29")
+    @objid ("cd313e46-1e5e-4be2-aacd-af19cebf49aa")
     public String getRtAction_CallAction_synchKind() {
         return this.elt.getTagValue(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_SYNCHKIND_TAGTYPE_ELT);
     }
 
-    @objid ("ed45ea6c-51ad-4eaa-aba0-c0805d2138af")
+    @objid ("f7e162be-804e-49bd-99d3-cbaccf45eb48")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -160,7 +160,7 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("934ea130-626b-49b3-82be-7c6f9603629e")
+    @objid ("b8d4541d-17f9-4bbd-b8f4-3889c9a4e3d5")
     public boolean isRtAction_CallAction_isAtomic() {
         return this.elt.isTagged(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_ISATOMIC_TAGTYPE_ELT);
     }
@@ -170,7 +170,7 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("77427d8c-f06b-4a84-b239-f90924d09e40")
+    @objid ("26ae55af-aa64-4a05-baae-e571c4add6ae")
     public void setRtAction_CallAction_isAtomic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_ISATOMIC_TAGTYPE_ELT, this.elt);
@@ -183,7 +183,7 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("095c1588-623e-4c69-a99a-d11049358e67")
+    @objid ("d1a680e9-8324-45aa-8083-534a281c2d5e")
     public void setRtAction_CallAction_msgSize(final String value) {
         this.elt.putTagValue(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_MSGSIZE_TAGTYPE_ELT, value);
     }
@@ -193,37 +193,37 @@ public class RtActionCallAction {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f0d2ed9a-68f8-4150-890e-6d10809ef927")
+    @objid ("85c84f52-bb88-42d7-9df5-5a6bfed2b30e")
     public void setRtAction_CallAction_synchKind(final String value) {
         this.elt.putTagValue(RtActionCallAction.MdaTypes.RTACTION_CALLACTION_SYNCHKIND_TAGTYPE_ELT, value);
     }
 
-    @objid ("568f68c4-d057-4701-93e5-c3bd8db28e1d")
+    @objid ("d5e89cb3-e8ca-4312-9bf1-04c2d63f8912")
     protected RtActionCallAction(final CallAction elt) {
         this.elt = elt;
     }
 
     @objid ("c7565de3-4852-4ec1-a735-963d87917524")
     public static final class MdaTypes {
-        @objid ("3ca14ca1-93ad-4354-b1e1-145aa03d0667")
+        @objid ("47227685-d003-493d-ad06-f10c7ce31135")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("40c5effd-f6a6-42f3-8ce1-d404d0873182")
+        @objid ("cd78b1af-8e96-4c52-a3f3-7d8736543e7e")
         public static TagType RTACTION_CALLACTION_ISATOMIC_TAGTYPE_ELT;
 
-        @objid ("b10da793-a422-43ef-86b0-946a62441d74")
+        @objid ("e36fce66-10f5-4b01-b48d-97ce9fb537bb")
         public static TagType RTACTION_CALLACTION_SYNCHKIND_TAGTYPE_ELT;
 
-        @objid ("b529da9c-a9d5-4685-8414-a683db22cfcc")
+        @objid ("f946a6a7-ec19-4097-b1c0-72efdee9c163")
         public static TagType RTACTION_CALLACTION_MSGSIZE_TAGTYPE_ELT;
 
-        @objid ("6276ff99-8737-4bf0-882f-1f31a23e06ff")
+        @objid ("aa99183e-63e0-4f3f-8cd6-bb53c574b7ea")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("aa6dc032-cc51-4a72-ae75-929414461e90")
+        @objid ("f7103f5c-b3b4-4ed8-91e2-2ecfa455a8eb")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("addc8900-f7ea-4cf2-80df-dd2b3baad120")
+        @objid ("405d6c09-6119-46e0-8141-5433c66d8aab")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "a13ac171-0ff9-11df-86fe-0014222a9f79");
             RTACTION_CALLACTION_ISATOMIC_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ada74cd9-0ff9-11df-86fe-0014222a9f79");

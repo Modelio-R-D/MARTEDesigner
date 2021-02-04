@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcomputing.standard.parameter;
 
@@ -35,39 +35,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("2b309656-c345-4cf4-b854-5b8171e2502b")
 public class HwComputingResourceParameter extends ComputingResourceParameter {
-    @objid ("555f8fe9-001b-4f1d-b67c-739d079084db")
+    @objid ("3ecd7e76-dc9f-40df-9791-07f1ffc9528a")
     public static final String STEREOTYPE_NAME = "HwComputingResource_Parameter";
 
-    @objid ("3729b0c5-56fa-4ae2-adce-4fe8c6dd8eed")
+    @objid ("cd12b095-ec78-4ff8-9763-c52c5eb19461")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_DESCRIPTION_TAGTYPE = "HwComputingResource_Parameter_description";
 
-    @objid ("4d39589c-e0ad-4b31-a6e6-bfa46ae0bef0")
+    @objid ("6c0aa87a-9964-41fe-9faa-b2407c2db2d9")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_ENDPOINTS_TAGTYPE = "HwComputingResource_Parameter_endPoints";
 
-    @objid ("68225c8c-a251-4df1-9e7b-3da5445aaa25")
+    @objid ("cb94044e-d541-4aaa-80f0-291161d17b58")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_FREQUENCY_TAGTYPE = "HwComputingResource_Parameter_frequency";
 
-    @objid ("21b0c3fa-7e8f-4094-9c84-3334b1dbf0eb")
+    @objid ("2bbeda2c-2793-49be-89ef-f5cde264b4d8")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES_TAGTYPE = "HwComputingResource_Parameter_op_Frequencies";
 
-    @objid ("4d79f6cc-e13f-49c3-bd2f-2d6bbf8f0239")
+    @objid ("5764ec95-be82-4cf2-9be5-b2a56ccea2b9")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_OWNEDHW_TAGTYPE = "HwComputingResource_Parameter_ownedHW";
 
-    @objid ("fdb09e6a-3b6f-4aa9-8850-c4d61377a210")
+    @objid ("58fd7452-ca5e-45bb-83b3-f054ff72bb24")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_P_HW_SERVICES_TAGTYPE = "HwComputingResource_Parameter_p_HW_Services";
 
-    @objid ("01e67553-4cee-4edb-9c50-c0d47dceee8f")
+    @objid ("e8c2b4fa-03c8-4102-9567-5506f8d3ac31")
     public static final String HWCOMPUTINGRESOURCE_PARAMETER_R_HW_SERVICES_TAGTYPE = "HwComputingResource_Parameter_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwComputingResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwComputingResource_Parameter >>. 
+     * Tells whether a {@link HwComputingResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << HwComputingResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b415b607-ec42-4625-bdb5-cef5c78d7092")
+    @objid ("98d01cf6-347c-4614-89ea-0983e1753f09")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwComputingResourceParameter.STEREOTYPE_NAME));
     }
@@ -77,21 +77,21 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * 
      * @return a {@link HwComputingResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("864d052d-7452-4710-a70c-133436c490e8")
+    @objid ("408984bf-aa29-4d19-b83a-f52c005d271c")
     public static HwComputingResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwComputingResourceParameter.STEREOTYPE_NAME);
         return HwComputingResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwComputingResourceParameter} proxy from a {@link Parameter} stereotyped << HwComputingResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwComputingResourceParameter} proxy from a {@link Parameter} stereotyped << HwComputingResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link HwComputingResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("3bb982d0-0a5c-4828-a519-0fc0d6b27b34")
+    @objid ("0f8097c1-de07-487f-9b96-97df890ab500")
     public static HwComputingResourceParameter instantiate(final Parameter obj) {
         return HwComputingResourceParameter.canInstantiate(obj) ? new HwComputingResourceParameter(obj) : null;
     }
@@ -104,7 +104,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * @return a {@link HwComputingResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("b409acbf-facf-413e-9050-d8e543ff49ee")
+    @objid ("23808b22-7404-4c84-b862-690711db7375")
     public static HwComputingResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (HwComputingResourceParameter.canInstantiate(obj))
         	return new HwComputingResourceParameter(obj);
@@ -112,7 +112,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
         	throw new IllegalArgumentException("HwComputingResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("4e69e6f2-7e12-4b34-b309-583f8bd14f07")
+    @objid ("40683992-4d48-4551-9944-0d9ae5ade919")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -132,7 +132,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("7998d3b2-af97-4428-b4ef-62aba6a8c2c4")
+    @objid ("754508d3-c2f5-4584-8729-95275dca8891")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -143,7 +143,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7db525d6-c240-41c7-9c29-9347d7123733")
+    @objid ("412daa64-eea5-4f5e-ba97-c0a4df1e02d0")
     public String getHwComputingResource_Parameter_description() {
         return this.elt.getTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -153,7 +153,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ad32e8cd-a34e-4e9e-bcfd-610ea81710d8")
+    @objid ("c59c4629-d581-4275-9184-cdd98e185cc6")
     public List<String> getHwComputingResource_Parameter_endPoints() {
         return this.elt.getTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_ENDPOINTS_TAGTYPE_ELT);
     }
@@ -163,7 +163,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5cbd6c16-4fc2-4f92-8fe5-b3d8cad44bd8")
+    @objid ("2875e7bd-d0d5-4c06-82da-96175a256f61")
     public String getHwComputingResource_Parameter_frequency() {
         return this.elt.getTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_FREQUENCY_TAGTYPE_ELT);
     }
@@ -173,7 +173,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e83674b5-3ef7-4b19-930b-33c6966b61c4")
+    @objid ("75501fd8-5244-47a6-9efe-803c365a495a")
     public String getHwComputingResource_Parameter_op_Frequencies() {
         return this.elt.getTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES_TAGTYPE_ELT);
     }
@@ -183,7 +183,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6a4d2d21-ff04-41a3-aa89-6aea6bad6235")
+    @objid ("5206d82a-1005-4c4c-bd81-ecdc8c8ebac4")
     public List<String> getHwComputingResource_Parameter_ownedHW() {
         return this.elt.getTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_OWNEDHW_TAGTYPE_ELT);
     }
@@ -193,7 +193,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6d016f58-720d-4dc9-b172-790e5f4f7184")
+    @objid ("cf41390a-918b-4645-b1af-488826b9979c")
     public List<String> getHwComputingResource_Parameter_p_HW_Services() {
         return this.elt.getTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -203,12 +203,12 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("e1af360c-c9ff-4b29-bf93-ad71f6595dc0")
+    @objid ("b210c563-4192-4e3a-8a51-ff8b87f70d9c")
     public List<String> getHwComputingResource_Parameter_r_HW_Services() {
         return this.elt.getTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("70d1e5d8-1a74-4ae7-aa46-2681ed4193ff")
+    @objid ("ad820d67-63a0-4989-ab44-efc4a58bd330")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -219,7 +219,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e516e6d3-a95b-4079-a473-634dfc148f99")
+    @objid ("139ba457-23e3-417c-9f1b-ca750abef5a0")
     public void setHwComputingResource_Parameter_description(final String value) {
         this.elt.putTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -229,7 +229,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1de14db9-48db-4eca-b1df-20957190e532")
+    @objid ("019aa413-f827-4f1d-a90b-9e8e271a31d8")
     public void setHwComputingResource_Parameter_endPoints(final List<String> values) {
         this.elt.putTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_ENDPOINTS_TAGTYPE_ELT, values);
     }
@@ -239,7 +239,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5150aec4-c12c-4e07-9f92-350b3ce3c2f8")
+    @objid ("79395b2e-5ba9-4fe6-9450-287bd9a78c28")
     public void setHwComputingResource_Parameter_frequency(final String value) {
         this.elt.putTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -249,7 +249,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("969f00ca-04f3-479e-bc0f-a358e8663c32")
+    @objid ("d353b8f9-8d30-4d04-9c43-3641d086d105")
     public void setHwComputingResource_Parameter_op_Frequencies(final String value) {
         this.elt.putTagValue(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES_TAGTYPE_ELT, value);
     }
@@ -259,7 +259,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ba14d8c4-1084-43b1-b4fb-cf6f24f57042")
+    @objid ("757a54f4-9a32-499a-97bb-a2782a5e45c7")
     public void setHwComputingResource_Parameter_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -269,7 +269,7 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("272b6191-abbc-4e67-87d4-5b86fd72af63")
+    @objid ("b8d41dc1-444d-4861-91a0-6e89c4e24a2e")
     public void setHwComputingResource_Parameter_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -279,49 +279,49 @@ public class HwComputingResourceParameter extends ComputingResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8abaa458-cc71-4077-9f68-0d14a70de6ce")
+    @objid ("f2a74e26-3a9a-4a45-867c-bb8ba1ee461d")
     public void setHwComputingResource_Parameter_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwComputingResourceParameter.MdaTypes.HWCOMPUTINGRESOURCE_PARAMETER_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("4e622b35-81e5-4e61-bb9f-70c3417670b9")
+    @objid ("6b75143c-1382-4831-9847-3ef4b8cec3cf")
     protected HwComputingResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("259cd032-5152-4c9e-96be-4446b53036d8")
     public static final class MdaTypes {
-        @objid ("514cb339-2411-4851-a340-ee443c375b56")
+        @objid ("db128c1a-3067-4a6e-8226-c90ebcb43612")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("6ed82e92-69c3-4eb3-84a8-010d826c0cbc")
+        @objid ("e6bdb599-a54e-4368-a0b4-9401677a568f")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES_TAGTYPE_ELT;
 
-        @objid ("4e7aff9c-6e96-4bc7-bc96-3e204c3e7a5e")
+        @objid ("b601a613-0a99-45f2-9a53-ad114f4be6b7")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("4a20b13f-03bf-454d-be1e-49eff9df5caa")
+        @objid ("a2e08582-1c3d-4294-a9ac-39f4642c42b7")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("cf01f50e-1bfd-4b02-8a85-41086ef1e1b1")
+        @objid ("e5dae4c5-161f-4d86-9472-b869fbea1970")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("a87c1686-cea7-43e6-b51f-d1fb0b51e3ea")
+        @objid ("87df0562-d758-4235-9da2-921b6ddfbfda")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("35ac001e-5d2c-446e-9498-8dc7e6e2a2b0")
+        @objid ("d8978c3d-f2d4-465e-a19e-d7ce28ced0ba")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("f968d561-34a1-4493-9758-457ca35c3d1f")
+        @objid ("b0873e4d-7a9f-45d5-a462-bd2305aaddee")
         public static TagType HWCOMPUTINGRESOURCE_PARAMETER_ENDPOINTS_TAGTYPE_ELT;
 
-        @objid ("a4111590-751d-42a2-84a6-096527cde109")
+        @objid ("3da6f59d-ac11-4d44-911b-8501bb6df124")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a75ac3ad-6080-41d4-9947-35842cc4d811")
+        @objid ("c1b7edc9-fb22-47de-9f79-4e59d1055398")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("897e5cd3-c70d-4bba-81a2-18098a76e906")
+        @objid ("9a392697-5229-407a-8e76-b06d37d771b2")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00d61ed0-0ccf-11df-8525-001302895b2b");
             HWCOMPUTINGRESOURCE_PARAMETER_OP_FREQUENCIES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00e46cbc-0ccf-11df-8525-001302895b2b");

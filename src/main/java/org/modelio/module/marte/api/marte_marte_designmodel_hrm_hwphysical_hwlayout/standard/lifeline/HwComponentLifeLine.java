@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwlayout.standard.lifeline;
 
@@ -35,57 +35,57 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("01fd86ed-508c-4d93-b6da-40a3acfdf58e")
 public class HwComponentLifeLine extends HwResourceLifeline {
-    @objid ("ad5eb643-345d-4748-991c-4f7b82920cd7")
+    @objid ("28bf30c5-59d3-48ad-9e3a-46e44250dbd7")
     public static final String STEREOTYPE_NAME = "HwComponent_LifeLine";
 
-    @objid ("9afd0a49-aef5-41d7-b994-4121a32b296d")
+    @objid ("1e8d57a6-c9bd-4ad9-b09e-6eb6a9fbe5b6")
     public static final String HWCOMPONENT_LIFELINE_AREA_TAGTYPE = "HwComponent_LifeLine_area";
 
-    @objid ("e22a7dcf-9980-46f0-882e-6677ccac1451")
+    @objid ("f7d55de3-2021-4e0b-b4bb-2bce875b80a9")
     public static final String HWCOMPONENT_LIFELINE_DIMENSIONS_TAGTYPE = "HwComponent_LifeLine_dimensions";
 
-    @objid ("521ab53b-0228-4151-b76f-241bc74b2a6e")
+    @objid ("f799fb83-0d42-45fc-8953-46b59a4d0984")
     public static final String HWCOMPONENT_LIFELINE_GRID_TAGTYPE = "HwComponent_LifeLine_grid";
 
-    @objid ("c948b0f5-691f-4de0-9f75-f7ea2a49647a")
+    @objid ("d4f2399a-cb3a-4e04-ac4d-a57cd3d4d9f7")
     public static final String HWCOMPONENT_LIFELINE_KIND_TAGTYPE = "HwComponent_LifeLine_kind";
 
-    @objid ("a6b687f4-425c-4ba0-a7bc-be9eec7fd2f6")
+    @objid ("66e2543f-0c95-4c25-94c6-d8914b620655")
     public static final String HWCOMPONENT_LIFELINE_NBPINS_TAGTYPE = "HwComponent_LifeLine_nbPins";
 
-    @objid ("f83dc194-adc8-4027-be9a-2df4e091990b")
+    @objid ("7bd63391-baec-45cd-9547-e23612bf811e")
     public static final String HWCOMPONENT_LIFELINE_POSITION_TAGTYPE = "HwComponent_LifeLine_position";
 
-    @objid ("11bb2b21-15cf-441c-8ab4-59c23995c43c")
+    @objid ("0cd64f2e-d66b-4d27-ae40-7842e8ff918e")
     public static final String HWCOMPONENT_LIFELINE_POWEREDSERVICES_TAGTYPE = "HwComponent_LifeLine_poweredServices";
 
-    @objid ("cc899c36-94aa-452c-885d-cbc395a45e32")
+    @objid ("15de57a9-55b5-4f97-be5e-e5ada85a7c5d")
     public static final String HWCOMPONENT_LIFELINE_PRICE_TAGTYPE = "HwComponent_LifeLine_price";
 
-    @objid ("8e92741e-50ae-4fc5-8575-7ee64f451ef2")
+    @objid ("8819207d-40ee-4fbd-89e8-7319db859a88")
     public static final String HWCOMPONENT_LIFELINE_R_CONDITIONS_TAGTYPE = "HwComponent_LifeLine_r_Conditions";
 
-    @objid ("d5642c14-b27d-4e58-ab3c-e44f60bc5814")
+    @objid ("87b4cd0f-78da-4ce9-bebc-a1f12e3ef265")
     public static final String HWCOMPONENT_LIFELINE_STATICCONSUMPTION_TAGTYPE = "HwComponent_LifeLine_staticConsumption";
 
-    @objid ("eb68db78-d877-4f35-be4e-586286f30749")
+    @objid ("61056b14-7051-4203-a444-6ae442ae86e6")
     public static final String HWCOMPONENT_LIFELINE_STATICDISSIPATION_TAGTYPE = "HwComponent_LifeLine_staticDissipation";
 
-    @objid ("8809ef24-3eaf-4ee3-ac20-0a775d6bb66e")
+    @objid ("6020ee98-9f63-4784-94a3-1473acf5da2f")
     public static final String HWCOMPONENT_LIFELINE_SUBCOMPONENTS_TAGTYPE = "HwComponent_LifeLine_subComponents";
 
-    @objid ("a3e749f3-31b8-4cdf-ac3d-784b9c5d7d8a")
+    @objid ("b76f34ab-c02d-4baa-988d-309396f7e26c")
     public static final String HWCOMPONENT_LIFELINE_WEIGHT_TAGTYPE = "HwComponent_LifeLine_weight";
 
     /**
-     * Tells whether a {@link HwComponentLifeLine proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwComponent_LifeLine >>. 
+     * Tells whether a {@link HwComponentLifeLine proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwComponent_LifeLine >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("aa1e2de5-7a1e-4751-ae2a-819cb6937c63")
+    @objid ("1c6a726a-43c2-4807-96e1-fe8122e5042e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwComponentLifeLine.STEREOTYPE_NAME));
     }
@@ -95,21 +95,21 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * 
      * @return a {@link HwComponentLifeLine} proxy on the created {@link Lifeline}.
      */
-    @objid ("8c6b0ff7-5b0f-4a62-bc12-715d7176f812")
+    @objid ("400bd67f-a493-4d7e-b2ce-a6a80890bf4f")
     public static HwComponentLifeLine create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwComponentLifeLine.STEREOTYPE_NAME);
         return HwComponentLifeLine.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwComponentLifeLine} proxy from a {@link Lifeline} stereotyped << HwComponent_LifeLine >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwComponentLifeLine} proxy from a {@link Lifeline} stereotyped << HwComponent_LifeLine >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwComponentLifeLine} proxy or <i>null</i>.
      */
-    @objid ("6e1ad78c-ed7d-4e1a-9655-e01941364e42")
+    @objid ("3f00f6f0-c7ac-48da-8ea7-a6436026d679")
     public static HwComponentLifeLine instantiate(final Lifeline obj) {
         return HwComponentLifeLine.canInstantiate(obj) ? new HwComponentLifeLine(obj) : null;
     }
@@ -122,7 +122,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * @return a {@link HwComponentLifeLine} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("dfdc28fc-70f3-4495-9171-4996faba47ac")
+    @objid ("23c74abf-2b94-4b83-9e44-de1bea9bc43b")
     public static HwComponentLifeLine safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwComponentLifeLine.canInstantiate(obj))
         	return new HwComponentLifeLine(obj);
@@ -130,7 +130,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
         	throw new IllegalArgumentException("HwComponentLifeLine: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b892e6c0-d321-4a60-841e-7433d4461f07")
+    @objid ("fd3eff5c-4d37-41e8-a0ae-33f26e106dd3")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -150,7 +150,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("dfb5bcaa-0966-4eb0-88d8-e809bdc13d51")
+    @objid ("6679fbfa-b93c-49fc-86da-767e159463f7")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -161,7 +161,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1befd3e5-3c4e-42e7-8ccc-56909b884269")
+    @objid ("ca409fb4-d20c-4457-98e8-b954c7dfe9c9")
     public String getHwComponent_LifeLine_area() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_AREA_TAGTYPE_ELT);
     }
@@ -171,7 +171,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c2d05169-f9c0-4b4c-a1cf-8301a8b43856")
+    @objid ("199a51a8-fbac-4e78-95e9-c3eda3f50b4e")
     public List<String> getHwComponent_LifeLine_dimensions() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_DIMENSIONS_TAGTYPE_ELT);
     }
@@ -181,7 +181,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("ccf863f5-cdfd-4f38-b0d3-6b6760b8a752")
+    @objid ("3ee1b938-2ae6-4035-8ac7-bc5d173cbfcb")
     public List<String> getHwComponent_LifeLine_grid() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_GRID_TAGTYPE_ELT);
     }
@@ -191,7 +191,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("49171ed2-3548-4bbd-9a5a-19e3693d1517")
+    @objid ("76593377-149c-4b55-a118-0e6de23e2ff1")
     public String getHwComponent_LifeLine_kind() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_KIND_TAGTYPE_ELT);
     }
@@ -201,7 +201,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ce78debd-68e9-4561-8e93-c2679f6b0f75")
+    @objid ("74081947-ad6c-4483-b549-d7c193f510d7")
     public String getHwComponent_LifeLine_nbPins() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_NBPINS_TAGTYPE_ELT);
     }
@@ -211,7 +211,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6b31c377-9966-4856-a8dc-40bacc5b1590")
+    @objid ("228376dd-03e2-49f0-afea-94b325e3bbbd")
     public List<String> getHwComponent_LifeLine_position() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_POSITION_TAGTYPE_ELT);
     }
@@ -221,7 +221,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6afdb9ef-7234-412f-8c5a-02969f7546a1")
+    @objid ("3c5375fb-b021-4491-bf5b-b45f7e48411a")
     public List<String> getHwComponent_LifeLine_poweredServices() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_POWEREDSERVICES_TAGTYPE_ELT);
     }
@@ -231,7 +231,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("057a7d25-b5b6-42e2-9c1f-a09021d048dd")
+    @objid ("4f05ffb0-c7ca-40b1-b260-adb7a0a972ff")
     public String getHwComponent_LifeLine_price() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_PRICE_TAGTYPE_ELT);
     }
@@ -241,7 +241,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("90502fdd-2be3-4984-ba31-b780726d0b44")
+    @objid ("0c82aac4-8988-4c08-b588-bc3f60086893")
     public List<String> getHwComponent_LifeLine_r_Conditions() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_R_CONDITIONS_TAGTYPE_ELT);
     }
@@ -251,7 +251,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("526d36ec-83a7-404c-8915-2913d717e58b")
+    @objid ("aaf9ee36-af16-420e-9201-57680f7d697a")
     public String getHwComponent_LifeLine_staticConsumption() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_STATICCONSUMPTION_TAGTYPE_ELT);
     }
@@ -261,7 +261,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3e3d49a2-76b8-4774-b116-34211b09acb7")
+    @objid ("b427c2a5-d813-42f9-8df1-8b4c989c0056")
     public String getHwComponent_LifeLine_staticDissipation() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_STATICDISSIPATION_TAGTYPE_ELT);
     }
@@ -271,7 +271,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("741ba1a6-fe1e-4963-9246-d8639a5ab823")
+    @objid ("a161fa97-b5f8-4c99-be63-d390b2e96dcc")
     public List<String> getHwComponent_LifeLine_subComponents() {
         return this.elt.getTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_SUBCOMPONENTS_TAGTYPE_ELT);
     }
@@ -281,12 +281,12 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ec93c33b-4b19-458a-ae1e-bead2ae46e09")
+    @objid ("70fed64e-43ff-43b3-9907-cc778871e203")
     public String getHwComponent_LifeLine_weight() {
         return this.elt.getTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_WEIGHT_TAGTYPE_ELT);
     }
 
-    @objid ("48a4ad1e-0290-4d1e-8c33-1578f2b56fe2")
+    @objid ("c01acce9-30ca-434e-8c1e-17f6c08dbd6a")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -297,7 +297,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("46c857b6-756c-4d4d-ac2d-ed0ea5c9510c")
+    @objid ("117a4da8-b70c-4146-bba2-5b6000e51e71")
     public void setHwComponent_LifeLine_area(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_AREA_TAGTYPE_ELT, value);
     }
@@ -307,7 +307,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("df5dd7a0-4751-4efd-b102-bff142ba7b6a")
+    @objid ("507e12f0-0731-48af-a521-65334ac502b2")
     public void setHwComponent_LifeLine_dimensions(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_DIMENSIONS_TAGTYPE_ELT, values);
     }
@@ -317,7 +317,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9cc37fc2-54b8-4f74-a4d3-3d14dc1cd5d7")
+    @objid ("aaa04619-715f-497e-9615-22b13e949fc0")
     public void setHwComponent_LifeLine_grid(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_GRID_TAGTYPE_ELT, values);
     }
@@ -327,7 +327,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("58510885-8eef-4bd3-9901-c967b779de9d")
+    @objid ("002ef910-f6b7-4116-a39f-2f4c5d7924c2")
     public void setHwComponent_LifeLine_kind(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_KIND_TAGTYPE_ELT, value);
     }
@@ -337,7 +337,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("56974642-5a50-4cc6-ad30-03b5791dda35")
+    @objid ("d7e5416e-974b-40f2-9a5a-6f86371eb334")
     public void setHwComponent_LifeLine_nbPins(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_NBPINS_TAGTYPE_ELT, value);
     }
@@ -347,7 +347,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f7e486bc-9798-4219-b17a-c3663d4f6367")
+    @objid ("5b8a60f1-3cae-4ea2-87f5-13b9bcf714db")
     public void setHwComponent_LifeLine_position(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_POSITION_TAGTYPE_ELT, values);
     }
@@ -357,7 +357,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("46f4c125-e639-43b6-bdb3-dd4861ca5163")
+    @objid ("b09d25cb-0c6b-4147-855a-c0f4313e1d9c")
     public void setHwComponent_LifeLine_poweredServices(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_POWEREDSERVICES_TAGTYPE_ELT, values);
     }
@@ -367,7 +367,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f2253a17-df3c-4c44-bbcb-745fbea5a480")
+    @objid ("90c79aad-ca28-4a6c-a8c2-d409be440368")
     public void setHwComponent_LifeLine_price(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_PRICE_TAGTYPE_ELT, value);
     }
@@ -377,7 +377,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2219052e-c0ba-44c9-98be-478a7334fca5")
+    @objid ("2c1a71f9-efa5-4d6a-8855-36edfd935f83")
     public void setHwComponent_LifeLine_r_Conditions(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_R_CONDITIONS_TAGTYPE_ELT, values);
     }
@@ -387,7 +387,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("400f611b-b3f3-4fe2-8b94-85ce22d8d047")
+    @objid ("32e75838-4d7d-4a50-b8ec-425d2fc7d584")
     public void setHwComponent_LifeLine_staticConsumption(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_STATICCONSUMPTION_TAGTYPE_ELT, value);
     }
@@ -397,7 +397,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c44c2cfa-0222-41d1-b2fe-56cfcf7d7a5d")
+    @objid ("d8cdc587-4ea6-4eb0-bcad-91b590aacb2f")
     public void setHwComponent_LifeLine_staticDissipation(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_STATICDISSIPATION_TAGTYPE_ELT, value);
     }
@@ -407,7 +407,7 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("15ce869e-0c78-4dfe-8ee0-f742392403fb")
+    @objid ("5d026407-b63e-489c-8e3a-f279da623e87")
     public void setHwComponent_LifeLine_subComponents(final List<String> values) {
         this.elt.putTagValues(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_SUBCOMPONENTS_TAGTYPE_ELT, values);
     }
@@ -417,67 +417,67 @@ public class HwComponentLifeLine extends HwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7bcc31fb-e326-45ae-9d59-ac7e06cdb315")
+    @objid ("cb0f24dc-d361-494a-94b8-ea77d5837da3")
     public void setHwComponent_LifeLine_weight(final String value) {
         this.elt.putTagValue(HwComponentLifeLine.MdaTypes.HWCOMPONENT_LIFELINE_WEIGHT_TAGTYPE_ELT, value);
     }
 
-    @objid ("52e5d5f2-4ab6-49f4-85cd-c51cc49b099d")
+    @objid ("2fc12518-e828-4858-a7d7-97859d9a4fac")
     protected HwComponentLifeLine(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("73e423b9-926a-4346-89f8-4bce8cbeb68a")
     public static final class MdaTypes {
-        @objid ("f027ddfb-9cf9-4337-b732-fe5fbe3d87e5")
+        @objid ("a069f631-936c-454b-aa8d-7f535f8fb4e7")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("6b75c448-b9e3-4e09-856f-b07a87a2b220")
+        @objid ("8282986d-aa78-493c-bae2-bb1d68f8f6cd")
         public static TagType HWCOMPONENT_LIFELINE_KIND_TAGTYPE_ELT;
 
-        @objid ("19d85fe3-e2cc-4014-8f51-2c8d4879b6f0")
+        @objid ("697f10b6-1f0e-4706-bffe-8d59c1b039ed")
         public static TagType HWCOMPONENT_LIFELINE_DIMENSIONS_TAGTYPE_ELT;
 
-        @objid ("3ec59f73-e8f4-496a-8183-21f87d4ab214")
+        @objid ("2cbc44f9-f90b-4101-893b-3bfb57285c3a")
         public static TagType HWCOMPONENT_LIFELINE_AREA_TAGTYPE_ELT;
 
-        @objid ("ff83ac79-d57e-4f47-a378-abf7ca5ad6ae")
+        @objid ("44429ba9-ffc0-4acf-8f39-d480d66ff425")
         public static TagType HWCOMPONENT_LIFELINE_POSITION_TAGTYPE_ELT;
 
-        @objid ("8ee836ae-d4d4-4463-aa23-a2565366f063")
+        @objid ("716acac3-fb17-4f17-9e35-8e400527ff31")
         public static TagType HWCOMPONENT_LIFELINE_GRID_TAGTYPE_ELT;
 
-        @objid ("09ac32d1-cdfe-4480-9d7f-659e8c4e0ae2")
+        @objid ("eb6c3121-ff83-49bf-87a1-e02afb5ea8cf")
         public static TagType HWCOMPONENT_LIFELINE_NBPINS_TAGTYPE_ELT;
 
-        @objid ("52da59f7-c5f1-4623-8819-0128921d1229")
+        @objid ("d26d4342-37ca-4e92-8936-b6746383c9a1")
         public static TagType HWCOMPONENT_LIFELINE_WEIGHT_TAGTYPE_ELT;
 
-        @objid ("9d723ca2-7b2d-462b-a926-33bb5dd81aa7")
+        @objid ("8a5f2b4b-fb99-4dba-bd85-95e9ca5762f2")
         public static TagType HWCOMPONENT_LIFELINE_PRICE_TAGTYPE_ELT;
 
-        @objid ("8d7f3686-80a6-4608-875c-70ba205a5c7c")
+        @objid ("61de8107-751f-4ed5-bd0c-9b686613d754")
         public static TagType HWCOMPONENT_LIFELINE_R_CONDITIONS_TAGTYPE_ELT;
 
-        @objid ("584196f0-175f-45c7-95cf-49486ee01682")
+        @objid ("aee6415a-233c-4864-8c2b-31396d9f9981")
         public static TagType HWCOMPONENT_LIFELINE_POWEREDSERVICES_TAGTYPE_ELT;
 
-        @objid ("a5202d36-6a54-4155-96d6-511d9626306b")
+        @objid ("787024cc-53ea-44db-ad2c-59f791c8d428")
         public static TagType HWCOMPONENT_LIFELINE_STATICCONSUMPTION_TAGTYPE_ELT;
 
-        @objid ("f522146c-25ea-4b0f-bc11-7758553e9364")
+        @objid ("2253ee6a-1759-4664-bb93-764f0517d228")
         public static TagType HWCOMPONENT_LIFELINE_STATICDISSIPATION_TAGTYPE_ELT;
 
-        @objid ("4846e97c-72b1-4f1d-8d01-a97eb8baf45f")
+        @objid ("4a57a1f7-4073-4443-8b3f-d5117bf9f329")
         public static TagType HWCOMPONENT_LIFELINE_SUBCOMPONENTS_TAGTYPE_ELT;
 
-        @objid ("ccb616d2-42d8-4f13-868a-72b4ebbc90c9")
+        @objid ("c12a7392-cb7e-4c1c-84ac-fa214a9744ed")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("94b6ca4f-36f9-4da8-9cae-858098af6740")
+        @objid ("8ca9a4b5-689c-4fb8-8f3c-b0c20f0a5653")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("170ca1a9-73ac-4637-9aef-e46541e3e84a")
+        @objid ("feec1441-5004-4df8-ade5-ef096bf8982d")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "76bd8842-10b4-11df-81d9-0014222a9f79");
             HWCOMPONENT_LIFELINE_KIND_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "76bd8847-10b4-11df-81d9-0014222a9f79");

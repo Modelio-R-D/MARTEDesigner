@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_gcm.standard.port;
 
@@ -33,30 +33,30 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("b7661c2b-574d-4cc1-873e-fd57695b9bb0")
 public class FlowPortPort {
-    @objid ("dbcc4ef3-2d2a-4008-b344-ef9cf46e28e9")
+    @objid ("fa69b6bb-9d08-4baf-8cb6-e921ab8f0386")
     public static final String STEREOTYPE_NAME = "FlowPort_Port";
 
-    @objid ("aa23ab59-6ac3-4e3f-b83b-8ac17575e92d")
+    @objid ("001f4a12-c22d-40b4-a84a-6ecea74bf750")
     public static final String FLOWPORT_PORT_DIRECTION_TAGTYPE = "FlowPort_Port_direction";
 
-    @objid ("d9c5b42e-60da-4922-ad5a-5f30fdf5d919")
+    @objid ("a23404b6-3dd2-4e77-9d27-34f4bf7d7c1b")
     public static final String FLOWPORT_PORT_ISATOMIC_TAGTYPE = "FlowPort_Port_isAtomic";
 
     /**
      * The underlying {@link Port} represented by this proxy, never null.
      */
-    @objid ("b6ae2f00-3c1b-4420-be86-aae70fff34d9")
+    @objid ("d70a905c-ebb2-424e-8db7-f1008772c69a")
     protected final Port elt;
 
     /**
-     * Tells whether a {@link FlowPortPort proxy} can be instantiated from a {@link MObject} checking it is a {@link Port} stereotyped << FlowPort_Port >>. 
+     * Tells whether a {@link FlowPortPort proxy} can be instantiated from a {@link MObject} checking it is a {@link Port} stereotyped << FlowPort_Port >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("e66258af-9139-4656-b640-aa3cd362453a")
+    @objid ("78c1cde8-56c7-4706-a8ee-fb35c2f97d4f")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Port) && ((Port) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, FlowPortPort.STEREOTYPE_NAME));
     }
@@ -66,21 +66,21 @@ public class FlowPortPort {
      * 
      * @return a {@link FlowPortPort} proxy on the created {@link Port}.
      */
-    @objid ("149e24af-561e-4079-bbec-d156753ced1b")
+    @objid ("cd1d2be8-6576-4842-9cbf-930f0c409d8b")
     public static FlowPortPort create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Port");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Port");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, FlowPortPort.STEREOTYPE_NAME);
         return FlowPortPort.instantiate((Port)e);
     }
 
     /**
-     * Tries to instantiate a {@link FlowPortPort} proxy from a {@link Port} stereotyped << FlowPort_Port >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link FlowPortPort} proxy from a {@link Port} stereotyped << FlowPort_Port >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Port
      * @return a {@link FlowPortPort} proxy or <i>null</i>.
      */
-    @objid ("e67221c1-c7f8-4d42-a24f-806a3a7dcab8")
+    @objid ("b1a0a604-a9d5-4eb4-9d66-d18da44d1269")
     public static FlowPortPort instantiate(final Port obj) {
         return FlowPortPort.canInstantiate(obj) ? new FlowPortPort(obj) : null;
     }
@@ -93,7 +93,7 @@ public class FlowPortPort {
      * @return a {@link FlowPortPort} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("7ffd9e55-e9f1-47e7-a332-f0bbc27451bf")
+    @objid ("e5e936e3-e6b6-4f27-a444-ea70c1699b38")
     public static FlowPortPort safeInstantiate(final Port obj) throws IllegalArgumentException {
         if (FlowPortPort.canInstantiate(obj))
         	return new FlowPortPort(obj);
@@ -101,7 +101,7 @@ public class FlowPortPort {
         	throw new IllegalArgumentException("FlowPortPort: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d0b9401c-1b99-44c1-bf74-bb51130096a4")
+    @objid ("7723aa4f-80e6-4a2b-85e2-f150c97c219c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -121,7 +121,7 @@ public class FlowPortPort {
      * Get the underlying {@link Port}. 
      * @return the Port represented by this proxy, never null.
      */
-    @objid ("2ac529c6-3e7c-42c1-9c5f-53bec27f4f33")
+    @objid ("26b86547-9868-4bfd-90da-f584f007d48a")
     public Port getElement() {
         return this.elt;
     }
@@ -131,12 +131,12 @@ public class FlowPortPort {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("994c83e5-5978-4bcd-923b-787fafd27555")
+    @objid ("4576289a-547f-4d08-b5c9-8b2c94ec8255")
     public String getFlowPort_Port_direction() {
         return this.elt.getTagValue(FlowPortPort.MdaTypes.FLOWPORT_PORT_DIRECTION_TAGTYPE_ELT);
     }
 
-    @objid ("4a841b87-cf93-4ff0-8951-901608b6f752")
+    @objid ("272ce019-dc8c-4586-9d23-979b371fda41")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -147,7 +147,7 @@ public class FlowPortPort {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b478a71f-b934-4614-a1aa-21a2945debc2")
+    @objid ("706600f1-d00a-4313-834e-3ade2b1d91c5")
     public boolean isFlowPort_Port_isAtomic() {
         return this.elt.isTagged(FlowPortPort.MdaTypes.FLOWPORT_PORT_ISATOMIC_TAGTYPE_ELT);
     }
@@ -157,7 +157,7 @@ public class FlowPortPort {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("96c5c4f5-8039-4d80-9b41-66837208fd23")
+    @objid ("840af154-ff23-484d-99e7-69937aff58cd")
     public void setFlowPort_Port_direction(final String value) {
         this.elt.putTagValue(FlowPortPort.MdaTypes.FLOWPORT_PORT_DIRECTION_TAGTYPE_ELT, value);
     }
@@ -167,7 +167,7 @@ public class FlowPortPort {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ea7fdd66-3040-4133-a0ee-84bcfbea9b67")
+    @objid ("7af95f70-9853-4b63-976e-d0712d5cc1dd")
     public void setFlowPort_Port_isAtomic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(FlowPortPort.MdaTypes.FLOWPORT_PORT_ISATOMIC_TAGTYPE_ELT, this.elt);
@@ -175,29 +175,29 @@ public class FlowPortPort {
           this.elt.removeTags(FlowPortPort.MdaTypes.FLOWPORT_PORT_ISATOMIC_TAGTYPE_ELT);
     }
 
-    @objid ("78889f0f-83a1-4b89-a46d-9a87ca532b73")
+    @objid ("c9197c81-2751-4f34-a398-d5c2b9c6ed48")
     protected FlowPortPort(final Port elt) {
         this.elt = elt;
     }
 
     @objid ("83cc7522-221d-4aab-b593-4983b4a16738")
     public static final class MdaTypes {
-        @objid ("5d36ebeb-cf98-4a04-9193-9331ecc4cfe6")
+        @objid ("c6d658a9-a6a3-424e-8dc3-bec99426ba8b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("afdce551-d7a9-4529-a3ba-fe8ddb0cfc20")
+        @objid ("d5a61db2-7490-4ad6-9156-a518b3e66916")
         public static TagType FLOWPORT_PORT_ISATOMIC_TAGTYPE_ELT;
 
-        @objid ("6d425ddc-28a7-4961-b20f-a3df46568101")
+        @objid ("7fba2038-258c-4b8b-bb19-6f232f81d60b")
         public static TagType FLOWPORT_PORT_DIRECTION_TAGTYPE_ELT;
 
-        @objid ("082d51c3-e8f2-4a6b-ace2-29721bec6275")
+        @objid ("23500703-b350-4c80-9a22-a1d21abda0bd")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("0bcfc941-0d7d-4483-9659-fde450d60ab3")
+        @objid ("58aa4f11-3fac-421f-b83b-31cb0905ca57")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f7e041ca-93fd-4c7f-bda0-cad31fff4037")
+        @objid ("3fa2460a-a382-44c9-9e92-bcf0b235bd60")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0247a67c-0ccf-11df-8525-001302895b2b");
             FLOWPORT_PORT_ISATOMIC_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "0247a67d-0ccf-11df-8525-001302895b2b");

@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.lifeline;
 
@@ -34,21 +34,21 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("e20fb6e3-b6e8-4039-92d7-f407c3dcaae4")
 public class SecondarySchedulerLifeline extends SchedulerLifeline {
-    @objid ("4249bc7f-6345-458f-b15d-5e8faf40cba6")
+    @objid ("4a8c15cf-6b0a-4b7e-a287-a2a3718ee9c9")
     public static final String STEREOTYPE_NAME = "SecondaryScheduler_Lifeline";
 
-    @objid ("03eebc8d-3283-4f1b-ab16-d8367e11a9bb")
+    @objid ("399348a3-810e-4d16-8e6f-7d62cdc0d24c")
     public static final String SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS_TAGTYPE = "SecondaryScheduler_Lifeline_virtualProcessingUnits";
 
     /**
-     * Tells whether a {@link SecondarySchedulerLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SecondaryScheduler_Lifeline >>. 
+     * Tells whether a {@link SecondarySchedulerLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << SecondaryScheduler_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("cc88b766-4502-40c8-934d-797f1bd41a98")
+    @objid ("fac108af-0c57-4e1b-80fd-a79edbe29b59")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SecondarySchedulerLifeline.STEREOTYPE_NAME));
     }
@@ -58,21 +58,21 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
      * 
      * @return a {@link SecondarySchedulerLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("9207e4e6-3b24-4d12-af57-ceb529707802")
+    @objid ("77f3343d-82e2-4e43-a785-4954eda8842c")
     public static SecondarySchedulerLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SecondarySchedulerLifeline.STEREOTYPE_NAME);
         return SecondarySchedulerLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link SecondarySchedulerLifeline} proxy from a {@link Lifeline} stereotyped << SecondaryScheduler_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SecondarySchedulerLifeline} proxy from a {@link Lifeline} stereotyped << SecondaryScheduler_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link SecondarySchedulerLifeline} proxy or <i>null</i>.
      */
-    @objid ("5dc619dd-098a-4457-84e7-5f12e5d15eb2")
+    @objid ("8cfffddf-c7e1-4448-aeed-99e84737b8d1")
     public static SecondarySchedulerLifeline instantiate(final Lifeline obj) {
         return SecondarySchedulerLifeline.canInstantiate(obj) ? new SecondarySchedulerLifeline(obj) : null;
     }
@@ -85,7 +85,7 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
      * @return a {@link SecondarySchedulerLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("2bdf9a55-0ac2-4b6e-b91a-da989a4feb52")
+    @objid ("44a95602-62d6-4acb-a99f-561146697b6f")
     public static SecondarySchedulerLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SecondarySchedulerLifeline.canInstantiate(obj))
         	return new SecondarySchedulerLifeline(obj);
@@ -93,7 +93,7 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
         	throw new IllegalArgumentException("SecondarySchedulerLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("5ccbfa18-2660-402a-b008-610cc81e3077")
+    @objid ("daebb0a9-bc1c-4bfd-a883-75aed3348bb5")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +113,7 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("3a3f67cd-ac1c-4ec7-b505-db1f426e20bf")
+    @objid ("b373f0fb-5e80-4c3a-8c3d-501e8cfeecd2")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -124,12 +124,12 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("92ccbe1e-1524-45ba-8549-ffde18595759")
+    @objid ("d9dfd9ee-d1c8-4ae7-8c88-6f3e81cd5feb")
     public List<String> getSecondaryScheduler_Lifeline_virtualProcessingUnits() {
         return this.elt.getTagValues(SecondarySchedulerLifeline.MdaTypes.SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS_TAGTYPE_ELT);
     }
 
-    @objid ("afe992a4-8f91-4bd4-9493-3eb5687b090a")
+    @objid ("c64834b5-7497-4e2c-b088-036c9faec957")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +140,31 @@ public class SecondarySchedulerLifeline extends SchedulerLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5aa5edb2-1912-4b5b-8080-04d21f9c53f5")
+    @objid ("93ea5c28-f83d-48a1-a9b2-3db33d9e6b16")
     public void setSecondaryScheduler_Lifeline_virtualProcessingUnits(final List<String> values) {
         this.elt.putTagValues(SecondarySchedulerLifeline.MdaTypes.SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS_TAGTYPE_ELT, values);
     }
 
-    @objid ("7f0bd2b7-ba70-47c5-841f-5700b7672e0d")
+    @objid ("35507679-e63a-4620-9270-a4b8f5f5a121")
     protected SecondarySchedulerLifeline(final Lifeline elt) {
         super(elt);
     }
 
     @objid ("efd5560c-3385-418e-9b6c-de461d7c3fe0")
     public static final class MdaTypes {
-        @objid ("05a78b2e-db98-4809-9112-56d4cf38f663")
+        @objid ("dece0815-ad3e-45c0-852f-5130ac3f1c46")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("fff1f2a4-4c5a-4f48-8b35-1aecf6a1b880")
+        @objid ("d85408ec-199f-40ac-8783-77fc308da6e8")
         public static TagType SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS_TAGTYPE_ELT;
 
-        @objid ("99b76377-d90a-45e7-9176-c2ce52df869a")
+        @objid ("999f342e-b6de-45e7-8e9f-94f7e51734bd")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("fdd46014-1fe6-4c47-89e5-849e77aae062")
+        @objid ("f4f5c581-ca4c-4dd5-a347-e09f3abf342e")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("1e726bfa-06e9-443c-b682-f010e5d2b2fe")
+        @objid ("92ec5d6a-57b2-41cb-88a3-570ed9234fd2")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "002f3c66-0ccf-11df-8525-001302895b2b");
             SECONDARYSCHEDULER_LIFELINE_VIRTUALPROCESSINGUNITS_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "76c18dfb-16fa-11df-b92a-0014222a9f79");

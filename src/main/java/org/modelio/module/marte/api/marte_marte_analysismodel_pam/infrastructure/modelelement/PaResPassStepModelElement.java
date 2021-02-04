@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_analysismodel_pam.infrastructure.modelelement;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("9b050f1f-3cdc-4705-9db6-46ac69ae8afe")
 public class PaResPassStepModelElement extends GaStepModelElement {
-    @objid ("79e87bdd-e400-415b-8a26-9a64299c64d8")
+    @objid ("35322e04-e578-4249-824c-72c4463879e2")
     public static final String STEREOTYPE_NAME = "PaResPassStep_ModelElement";
 
-    @objid ("00517846-eb34-4b4f-966a-047984e5045e")
+    @objid ("ca6028bf-5fb3-4237-847b-e294c0b77fd1")
     public static final String PARESPASSSTEP_MODELELEMENT_RESUNITS_TAGTYPE = "PaResPassStep_ModelElement_resUnits";
 
-    @objid ("11ae853b-8736-4f16-aebf-6588ffcf1cfd")
+    @objid ("69100da4-7a94-49d4-b94f-3f622267619d")
     public static final String PARESPASSSTEP_MODELELEMENT_RESOURCE_TAGTYPE = "PaResPassStep_ModelElement_resource";
 
     /**
-     * Tells whether a {@link PaResPassStepModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << PaResPassStep_ModelElement >>. 
+     * Tells whether a {@link PaResPassStepModelElement proxy} can be instantiated from a {@link MObject} checking it is a {@link ModelElement} stereotyped << PaResPassStep_ModelElement >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("c511204f-1da8-40d9-9b4d-77dc37b50d6f")
+    @objid ("da363a2b-abaa-4445-aa6f-54af3468d81e")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof ModelElement) && ((ModelElement) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, PaResPassStepModelElement.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * 
      * @return a {@link PaResPassStepModelElement} proxy on the created {@link ModelElement}.
      */
-    @objid ("e3f79c45-c9be-4da6-a42f-b652988247f9")
+    @objid ("16abe48f-d9b0-4cff-a777-d67b5f5a2b7a")
     public static PaResPassStepModelElement create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("ModelElement");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.ModelElement");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, PaResPassStepModelElement.STEREOTYPE_NAME);
         return PaResPassStepModelElement.instantiate((ModelElement)e);
     }
 
     /**
-     * Tries to instantiate a {@link PaResPassStepModelElement} proxy from a {@link ModelElement} stereotyped << PaResPassStep_ModelElement >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link PaResPassStepModelElement} proxy from a {@link ModelElement} stereotyped << PaResPassStep_ModelElement >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a ModelElement
      * @return a {@link PaResPassStepModelElement} proxy or <i>null</i>.
      */
-    @objid ("f97aaaea-1982-4379-8763-b839070cef09")
+    @objid ("25c1208f-f568-498f-9042-b7609ce185d3")
     public static PaResPassStepModelElement instantiate(final ModelElement obj) {
         return PaResPassStepModelElement.canInstantiate(obj) ? new PaResPassStepModelElement(obj) : null;
     }
@@ -87,7 +87,7 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * @return a {@link PaResPassStepModelElement} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4cd93ec3-4a43-4fc1-8bcc-472068f33f66")
+    @objid ("fea66dd5-de8c-413f-8d49-e99e5f3ee5ef")
     public static PaResPassStepModelElement safeInstantiate(final ModelElement obj) throws IllegalArgumentException {
         if (PaResPassStepModelElement.canInstantiate(obj))
         	return new PaResPassStepModelElement(obj);
@@ -95,7 +95,7 @@ public class PaResPassStepModelElement extends GaStepModelElement {
         	throw new IllegalArgumentException("PaResPassStepModelElement: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("c679bd00-8081-4af0-a0c7-4e5a6c3175be")
+    @objid ("2de7e850-521a-4804-98e1-cb9542fea80b")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * Get the underlying {@link ModelElement}. 
      * @return the ModelElement represented by this proxy, never null.
      */
-    @objid ("f8255f22-820d-49df-a908-c7614ec53c53")
+    @objid ("f7ccc525-c43e-43a5-94f2-afef1d2d0c39")
     @Override
     public ModelElement getElement() {
         return (ModelElement)super.getElement();
@@ -126,7 +126,7 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("326df754-061a-4ca5-a9c5-d216e9ff4cb1")
+    @objid ("2431cbb5-b4db-44ac-8cf4-6593970b1c14")
     public String getPaResPassStep_ModelElement_resUnits() {
         return this.elt.getTagValue(PaResPassStepModelElement.MdaTypes.PARESPASSSTEP_MODELELEMENT_RESUNITS_TAGTYPE_ELT);
     }
@@ -136,12 +136,12 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("72355f4a-d798-479c-b234-9648e4bb6cf8")
+    @objid ("7f729029-e0f3-4f9c-ae9c-bd09d4b9f210")
     public String getPaResPassStep_ModelElement_resource() {
         return this.elt.getTagValue(PaResPassStepModelElement.MdaTypes.PARESPASSSTEP_MODELELEMENT_RESOURCE_TAGTYPE_ELT);
     }
 
-    @objid ("530a2a24-086d-4c02-9d97-9605a9ba306d")
+    @objid ("e844974c-57d4-4176-8dc7-605848b5b256")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -152,7 +152,7 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("01c7d059-c6f3-4351-9b9f-6a1a83ee4413")
+    @objid ("27a71f58-e116-4f37-be80-bfc3b536ca5a")
     public void setPaResPassStep_ModelElement_resUnits(final String value) {
         this.elt.putTagValue(PaResPassStepModelElement.MdaTypes.PARESPASSSTEP_MODELELEMENT_RESUNITS_TAGTYPE_ELT, value);
     }
@@ -162,34 +162,34 @@ public class PaResPassStepModelElement extends GaStepModelElement {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b53af7a7-9661-4a2c-8f70-6fd16b54401c")
+    @objid ("d88bddf5-8f73-40fb-babe-9c3ce006da6a")
     public void setPaResPassStep_ModelElement_resource(final String value) {
         this.elt.putTagValue(PaResPassStepModelElement.MdaTypes.PARESPASSSTEP_MODELELEMENT_RESOURCE_TAGTYPE_ELT, value);
     }
 
-    @objid ("3605d5e9-c9f5-46c0-8d8a-2d81d512ad6f")
+    @objid ("a9f9096f-7411-4e02-9b1a-418b1f592232")
     protected PaResPassStepModelElement(final ModelElement elt) {
         super(elt);
     }
 
     @objid ("787c56f8-0750-4b50-aeb8-10c406e27ca2")
     public static final class MdaTypes {
-        @objid ("334a6aa1-3a4b-431d-b888-068ace26aa04")
+        @objid ("c39fc2c5-8ce4-4eb5-b24f-d027a24842a0")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("c4c46208-ce3e-4135-a5a6-2b064f37463d")
+        @objid ("6dee61a1-f64f-46a3-9f02-c144ccaea3bc")
         public static TagType PARESPASSSTEP_MODELELEMENT_RESOURCE_TAGTYPE_ELT;
 
-        @objid ("511e83c7-d961-4011-b652-b0467c47532a")
+        @objid ("c20336db-1097-4d29-a4bc-4b0f03fdeac4")
         public static TagType PARESPASSSTEP_MODELELEMENT_RESUNITS_TAGTYPE_ELT;
 
-        @objid ("9c190e32-2d24-4990-bbac-912572b0ccb9")
+        @objid ("573eb156-72c8-40e7-9856-45b9d0cc177b")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("c54375fe-c7fd-42ef-a649-a236941e99f1")
+        @objid ("b23e06d6-6876-4985-83de-6f6b05d7ab1b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2cf3d929-6c77-4e19-af5e-89d8faf542ed")
+        @objid ("73280350-7f06-4f2a-a092-a5e5e3700226")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "06480ffa-14b2-11df-9d54-0014222a9f79");
             PARESPASSSTEP_MODELELEMENT_RESOURCE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "06480ffb-14b2-11df-9d54-0014222a9f79");

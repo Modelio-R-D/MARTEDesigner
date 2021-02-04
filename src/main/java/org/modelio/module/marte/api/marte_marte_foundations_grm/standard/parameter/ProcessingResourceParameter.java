@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.parameter;
 
@@ -33,24 +33,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("d938e5b9-4e9f-498c-af50-d83c7e95d6c9")
 public class ProcessingResourceParameter extends ResourceParameter {
-    @objid ("b96ea662-8c5e-4765-b142-beef7f53314b")
+    @objid ("36e3464d-4037-4d43-93d1-c6b21e1bae2a")
     public static final String STEREOTYPE_NAME = "ProcessingResource_Parameter";
 
-    @objid ("1c6091aa-229a-4ce0-b488-aa678d59b514")
+    @objid ("fc29ccb8-4a6c-472e-93a4-e7285f946d1f")
     public static final String PROCESSINGRESOURCE_PARAMETER_MAINSCHEDULER_TAGTYPE = "ProcessingResource_Parameter_mainScheduler";
 
-    @objid ("b1b53cb8-6f08-4a40-ba1b-9baefc2c00c3")
+    @objid ("41c4e440-ad23-447c-a11e-2e4d13be7254")
     public static final String PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR_TAGTYPE = "ProcessingResource_Parameter_speedFactor";
 
     /**
-     * Tells whether a {@link ProcessingResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << ProcessingResource_Parameter >>. 
+     * Tells whether a {@link ProcessingResourceParameter proxy} can be instantiated from a {@link MObject} checking it is a {@link Parameter} stereotyped << ProcessingResource_Parameter >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("becb3613-d8f6-45db-b66b-4d4e6f3df19c")
+    @objid ("4db307d2-f22a-4579-953b-d305a1875d91")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Parameter) && ((Parameter) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProcessingResourceParameter.STEREOTYPE_NAME));
     }
@@ -60,21 +60,21 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * 
      * @return a {@link ProcessingResourceParameter} proxy on the created {@link Parameter}.
      */
-    @objid ("685a5910-6146-4a38-9f3a-a2be583de227")
+    @objid ("ea4b233f-a696-4656-be67-970f9a412942")
     public static ProcessingResourceParameter create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Parameter");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Parameter");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProcessingResourceParameter.STEREOTYPE_NAME);
         return ProcessingResourceParameter.instantiate((Parameter)e);
     }
 
     /**
-     * Tries to instantiate a {@link ProcessingResourceParameter} proxy from a {@link Parameter} stereotyped << ProcessingResource_Parameter >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link ProcessingResourceParameter} proxy from a {@link Parameter} stereotyped << ProcessingResource_Parameter >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Parameter
      * @return a {@link ProcessingResourceParameter} proxy or <i>null</i>.
      */
-    @objid ("f841bb1f-2281-4fff-9bcf-f10b830480a9")
+    @objid ("608d72ba-09b6-4e1d-8f09-e6bab25f2235")
     public static ProcessingResourceParameter instantiate(final Parameter obj) {
         return ProcessingResourceParameter.canInstantiate(obj) ? new ProcessingResourceParameter(obj) : null;
     }
@@ -87,7 +87,7 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * @return a {@link ProcessingResourceParameter} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("e42371c0-1181-4cd8-90d3-e79a2cc2c630")
+    @objid ("b7182d34-feff-459d-8883-b1535aa14d0a")
     public static ProcessingResourceParameter safeInstantiate(final Parameter obj) throws IllegalArgumentException {
         if (ProcessingResourceParameter.canInstantiate(obj))
         	return new ProcessingResourceParameter(obj);
@@ -95,7 +95,7 @@ public class ProcessingResourceParameter extends ResourceParameter {
         	throw new IllegalArgumentException("ProcessingResourceParameter: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("489bc66e-f26a-4c44-8509-da2d47edb098")
+    @objid ("442058b8-2193-4959-914e-0eda20b5c953")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +115,7 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * Get the underlying {@link Parameter}. 
      * @return the Parameter represented by this proxy, never null.
      */
-    @objid ("fed45050-85ff-4857-80e4-0f716e7a4e64")
+    @objid ("5431845b-0542-4f1a-b66e-506fec228fd8")
     @Override
     public Parameter getElement() {
         return (Parameter)super.getElement();
@@ -126,7 +126,7 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("35c61170-5caf-4b6b-81bd-f0f309d7029e")
+    @objid ("95f7ca74-5d30-4e3d-aef6-2c02bdfdf5b1")
     public String getProcessingResource_Parameter_mainScheduler() {
         return this.elt.getTagValue(ProcessingResourceParameter.MdaTypes.PROCESSINGRESOURCE_PARAMETER_MAINSCHEDULER_TAGTYPE_ELT);
     }
@@ -136,12 +136,12 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2250f536-dd22-459d-bcea-da318463a687")
+    @objid ("b7fad37a-ae61-4557-b9aa-583c6b36f417")
     public String getProcessingResource_Parameter_speedFactor() {
         return this.elt.getTagValue(ProcessingResourceParameter.MdaTypes.PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR_TAGTYPE_ELT);
     }
 
-    @objid ("e5ca15a9-2f75-4119-86eb-16c392200a18")
+    @objid ("a0748749-376e-4ec5-b940-f347b3ec69f1")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -152,7 +152,7 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a420f46a-1169-4132-96b3-72ac05bc43cd")
+    @objid ("903f8a5d-5b09-47d9-9fe7-cd59a295e983")
     public void setProcessingResource_Parameter_mainScheduler(final String value) {
         this.elt.putTagValue(ProcessingResourceParameter.MdaTypes.PROCESSINGRESOURCE_PARAMETER_MAINSCHEDULER_TAGTYPE_ELT, value);
     }
@@ -162,34 +162,34 @@ public class ProcessingResourceParameter extends ResourceParameter {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("711b7d37-539c-4fa1-a1cb-b02e4bb5a8da")
+    @objid ("693a358f-1d4f-4acd-aac4-24b88162e7c0")
     public void setProcessingResource_Parameter_speedFactor(final String value) {
         this.elt.putTagValue(ProcessingResourceParameter.MdaTypes.PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR_TAGTYPE_ELT, value);
     }
 
-    @objid ("701b41db-e37f-437c-88a2-bf066a790845")
+    @objid ("1e37fcf2-41e7-4c68-9d6a-e4c120107346")
     protected ProcessingResourceParameter(final Parameter elt) {
         super(elt);
     }
 
     @objid ("7698b1f6-f9c0-440d-aa46-1368accf273b")
     public static final class MdaTypes {
-        @objid ("b594ae1e-9806-4d55-ab67-0650224dd43f")
+        @objid ("a93953f9-b470-48bc-b1da-b78da4e00690")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f1a78ac3-179d-4fea-9dec-d044e39c235e")
+        @objid ("c3bd4193-d063-49b2-83d3-d4bc28f16ed5")
         public static TagType PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR_TAGTYPE_ELT;
 
-        @objid ("241ea15a-1fc9-4e12-bf51-51f465b87f6c")
+        @objid ("1fcc6324-2c06-49ff-aeef-f7fe658af9a0")
         public static TagType PROCESSINGRESOURCE_PARAMETER_MAINSCHEDULER_TAGTYPE_ELT;
 
-        @objid ("6f9e3ba5-89df-4bb1-bca8-df11bb3b4a37")
+        @objid ("52b48425-0039-4284-a6d3-3eae0269dafa")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("e911dd66-a172-4d54-9801-d64de0ae8933")
+        @objid ("202bca31-46a6-49f3-8ea1-600cc922d4fc")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("cb3424dc-8c29-4cc6-9431-f9d25b80613b")
+        @objid ("19db7cdf-abf1-4fc0-b18b-d2ce970fb74e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "0090fb99-0ccf-11df-8525-001302895b2b");
             PROCESSINGRESOURCE_PARAMETER_SPEEDFACTOR_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "00935ddc-0ccf-11df-8525-001302895b2b");

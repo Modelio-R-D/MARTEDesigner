@@ -17,7 +17,7 @@ import org.modelio.module.marte.profile.utils.ModelUtils;
 @objid ("2db18e45-53be-4a96-96b2-69ca5f574ac8")
 public class Dimension_EnumerationProperty implements IPropertyContent {
     @objid ("5df5a3b9-3423-4c56-b1f4-9251e7bbc46b")
-     static int counter = 0;
+    static int counter = 0;
 
     @objid ("591bba2d-035d-4e1f-826e-bddf4f316832")
     private static List<ModelElement> listBaseDimension = null;
@@ -29,16 +29,15 @@ public class Dimension_EnumerationProperty implements IPropertyContent {
             ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_SYMBOL, value);
         }
         else if(row == 2){
-        
-            ModelUtils.manageMultipleOrientedLink(elt, 
-                                                  listBaseDimension, 
-                                                  MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEDIMENSION_DIMENSION_DIMENSION, 
-        //                                                  MARTEDesignerTagTypes.DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_BASEDIMENSION,
-                                                  value );
+
+            ModelUtils.manageMultipleOrientedLink(elt,
+                    listBaseDimension,
+                    MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEDIMENSION_DIMENSION_DIMENSION,
+                    value );
         }
         else if(row == 3){
             String[] t = ModelUtils.parseValuesToStringTab(value);
-        
+
             if(isParseable(t)) {
                 ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_BASEEXPONENT, value);
             }
@@ -56,16 +55,16 @@ public class Dimension_EnumerationProperty implements IPropertyContent {
             value_symbol = "";
         }
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_SYMBOL),value_symbol);
-        
+
         /*
          * baseDimension tagged value initialization
          */
         listBaseDimension = ModelUtils.searchElementStereotyped(Enumeration.class, MARTEDesignerStereotypes.DIMENSION_ENUMERATION);
-        
+
         String[] tabBaseDimension = ModelUtils.createListAddRemove(LinkManager.getAllTargets(elt, MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEDIMENSION_DIMENSION_DIMENSION), listBaseDimension);
         String value_baseDimension = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEDIMENSION_DIMENSION_DIMENSION, elt);
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.DIMENSION_ENUMERATION_DIMENSION_ENUMERATION_BASEDIMENSION),value_baseDimension, tabBaseDimension);
-        
+
         /*
          * baseExponent tagged value initialization
          */
@@ -78,24 +77,24 @@ public class Dimension_EnumerationProperty implements IPropertyContent {
 
     /**
      * isParseable allows us to check the parsing of the different getting values
-     * 
+     *
      * @param values are the different getting values
      * @return a boolean which gives the parsing of the different getting values
      */
     @objid ("c4290c15-7d72-4c4d-9bfe-58c335ac8491")
     protected boolean isParseable(String[] values) {
         boolean result = false;
-        
+
         for (String s : values) {
-        
+
             try {
                 Integer.parseInt(s);
                 result = true;
             }
             catch (Exception e) {
-        
+
                 new ErrorMessageBox(Display.getDefault().getActiveShell()
-                                    ,"The value "+s+" is not parseable to in integer.\n You will have to enter another value.");
+                        ,"The value "+s+" is not parseable to in integer.\n You will have to enter another value.");
                 result = false;
                 return result;
             }

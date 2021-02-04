@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwgeneral.standard.behavior;
 
@@ -34,24 +34,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("725e8c6b-8cc9-419e-974f-955027d97b3d")
 public class HwResourceServiceBehavior extends GrServiceBehavior {
-    @objid ("de3a487b-8528-4406-8161-6a11722633d6")
+    @objid ("050984f6-2ded-410e-80b6-0d5162fc9aaf")
     public static final String STEREOTYPE_NAME = "HwResourceService_Behavior";
 
-    @objid ("59b643d6-0ac6-4148-8646-5643a46d1db0")
+    @objid ("a0dadef8-9a25-47c2-b11f-105f09d13501")
     public static final String HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION_TAGTYPE = "HwResourceService_Behavior_consumption";
 
-    @objid ("454d9837-3fc1-4181-ba39-89771e6f06d2")
+    @objid ("b971e6e8-c8d0-4cc4-bb9a-ca56c3ebfb74")
     public static final String HWRESOURCESERVICE_BEHAVIOR_DISSIPATION_TAGTYPE = "HwResourceService_Behavior_dissipation";
 
     /**
-     * Tells whether a {@link HwResourceServiceBehavior proxy} can be instantiated from a {@link MObject} checking it is a {@link Behavior} stereotyped << HwResourceService_Behavior >>. 
+     * Tells whether a {@link HwResourceServiceBehavior proxy} can be instantiated from a {@link MObject} checking it is a {@link Behavior} stereotyped << HwResourceService_Behavior >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d0565e3d-45a3-4a05-ba61-db794a2537ac")
+    @objid ("270ce93b-066d-43fb-9d29-601e4f264d1d")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Behavior) && ((Behavior) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceServiceBehavior.STEREOTYPE_NAME));
     }
@@ -61,21 +61,21 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * 
      * @return a {@link HwResourceServiceBehavior} proxy on the created {@link Behavior}.
      */
-    @objid ("282346d5-5aef-4de4-9cd3-b0e32fa0e1e4")
+    @objid ("9f28370e-06c5-4735-b577-79aa554a5035")
     public static HwResourceServiceBehavior create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Behavior");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Behavior");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwResourceServiceBehavior.STEREOTYPE_NAME);
         return HwResourceServiceBehavior.instantiate((Behavior)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwResourceServiceBehavior} proxy from a {@link Behavior} stereotyped << HwResourceService_Behavior >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwResourceServiceBehavior} proxy from a {@link Behavior} stereotyped << HwResourceService_Behavior >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Behavior
      * @return a {@link HwResourceServiceBehavior} proxy or <i>null</i>.
      */
-    @objid ("df13629c-3ac4-4e16-b176-4085247d690b")
+    @objid ("988a3342-428f-4a6b-b8b8-2f7f76cd6fdc")
     public static HwResourceServiceBehavior instantiate(final Behavior obj) {
         return HwResourceServiceBehavior.canInstantiate(obj) ? new HwResourceServiceBehavior(obj) : null;
     }
@@ -88,7 +88,7 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * @return a {@link HwResourceServiceBehavior} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("7a0be3eb-9881-4c25-9e08-70063bc59006")
+    @objid ("86317312-73cd-4568-8fa4-cfd59b831768")
     public static HwResourceServiceBehavior safeInstantiate(final Behavior obj) throws IllegalArgumentException {
         if (HwResourceServiceBehavior.canInstantiate(obj))
         	return new HwResourceServiceBehavior(obj);
@@ -96,7 +96,7 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
         	throw new IllegalArgumentException("HwResourceServiceBehavior: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("fb1548af-d4e7-4a57-b656-d593264e65bb")
+    @objid ("8a554bc2-99de-4e54-8909-f00a7e0c6d1c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -116,7 +116,7 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * Get the underlying {@link Behavior}. 
      * @return the Behavior represented by this proxy, never null.
      */
-    @objid ("4de2d196-61e0-4389-b7ed-5f870190588c")
+    @objid ("7500527e-f848-4e03-a332-fc9b4a4d548d")
     @Override
     public Behavior getElement() {
         return (Behavior)super.getElement();
@@ -127,7 +127,7 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d8b4fb3e-4c61-4264-8a70-b46479f7a6fb")
+    @objid ("4e82c919-8d88-477c-bd81-e8a9682b2e0c")
     public String getHwResourceService_Behavior_consumption() {
         return this.elt.getTagValue(HwResourceServiceBehavior.MdaTypes.HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION_TAGTYPE_ELT);
     }
@@ -137,12 +137,12 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ae1f8a23-ab6a-43fd-85fa-61eb8a6fc846")
+    @objid ("5c33e1a4-5ae1-43a0-af51-9173e6df2c1a")
     public String getHwResourceService_Behavior_dissipation() {
         return this.elt.getTagValue(HwResourceServiceBehavior.MdaTypes.HWRESOURCESERVICE_BEHAVIOR_DISSIPATION_TAGTYPE_ELT);
     }
 
-    @objid ("f6820b00-7e97-468b-ae9a-cfed27b0ef6d")
+    @objid ("98e6c87d-42b6-4465-9014-0afe2c52ef4f")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -153,7 +153,7 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c810f8cc-deaa-478d-a501-d8005157b222")
+    @objid ("9d22be01-b35b-41bb-a7cb-e349863a7738")
     public void setHwResourceService_Behavior_consumption(final String value) {
         this.elt.putTagValue(HwResourceServiceBehavior.MdaTypes.HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION_TAGTYPE_ELT, value);
     }
@@ -163,34 +163,34 @@ public class HwResourceServiceBehavior extends GrServiceBehavior {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("81570dbf-c9f8-48ab-8800-fc7496634a36")
+    @objid ("4dcba38b-ab3f-474f-8a0c-72ee9363f2a6")
     public void setHwResourceService_Behavior_dissipation(final String value) {
         this.elt.putTagValue(HwResourceServiceBehavior.MdaTypes.HWRESOURCESERVICE_BEHAVIOR_DISSIPATION_TAGTYPE_ELT, value);
     }
 
-    @objid ("9821b40e-5164-404a-b089-3b7e313b4166")
+    @objid ("ed2d83e7-40eb-4105-b5f1-c5c8c2bdf0f9")
     protected HwResourceServiceBehavior(final Behavior elt) {
         super(elt);
     }
 
     @objid ("fc44f321-53d6-4be2-9e1a-43c4de627c84")
     public static final class MdaTypes {
-        @objid ("e855d96b-3266-4a9b-a51e-6feb039f737d")
+        @objid ("29a7ace1-8533-433c-abec-250ee43b3cae")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("8c47473b-fd51-41f1-aa2c-fc1026bf715b")
+        @objid ("8094dfc6-2ee8-4e8e-95f0-05e7b8f36823")
         public static TagType HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION_TAGTYPE_ELT;
 
-        @objid ("c440728f-8bb6-4b0b-9448-d07d224f1180")
+        @objid ("592ff836-ada0-48b6-9bfb-79111ef4ba5d")
         public static TagType HWRESOURCESERVICE_BEHAVIOR_DISSIPATION_TAGTYPE_ELT;
 
-        @objid ("609573c4-dd61-4f27-9159-abec919ec0cf")
+        @objid ("bb1cc588-e30f-4979-83af-8c3554c61fcb")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8eef53ed-a968-45d8-9828-e5cb87f30a54")
+        @objid ("8d3a2fc1-93cf-48bd-9f57-d3f0b299ab4e")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("058573d2-df38-405e-94b2-3527a1b9973f")
+        @objid ("a9a13c8a-7d27-491e-824d-9d62ee354ae9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "019e61b8-0ccf-11df-8525-001302895b2b");
             HWRESOURCESERVICE_BEHAVIOR_CONSUMPTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "15fe8416-1241-11df-8f55-0014222a9f79");

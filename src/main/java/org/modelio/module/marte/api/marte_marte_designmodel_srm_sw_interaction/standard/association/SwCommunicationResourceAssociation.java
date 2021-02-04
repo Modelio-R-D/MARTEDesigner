@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_interaction.standard.association;
 
@@ -34,39 +34,39 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  */
 @objid ("7b46fe69-3c6c-4df2-9bcc-d0c9539a0535")
 public class SwCommunicationResourceAssociation extends SwInteractionResourceAssociation {
-    @objid ("40ec7cad-88f4-46f1-aefd-10989e1f2d97")
+    @objid ("abdb18e4-0a29-4122-b0dc-cfe2668324cb")
     public static final String STEREOTYPE_NAME = "SwCommunicationResource_Association";
 
-    @objid ("dd7d1e88-d27f-4ace-9db5-2d899453ec05")
+    @objid ("5702b511-fb93-42b6-891e-49bd5b275448")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_BLOCKT_TAGTYPE = "SwCommunicationResource_Association_blockT";
 
-    @objid ("f28a1433-b9b7-4a6e-8814-c5c29fec1f98")
+    @objid ("4daa7248-fede-4908-943a-b9076d844ac0")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_CAPACITY_TAGTYPE = "SwCommunicationResource_Association_capacity";
 
-    @objid ("8ae4ccaa-77d8-4ac8-8490-0fb2ae89d361")
+    @objid ("5759952f-6187-440c-8cd1-9c1127f017a1")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE_TAGTYPE = "SwCommunicationResource_Association_elementSize";
 
-    @objid ("f13e539d-063d-455b-b724-56eef9685015")
+    @objid ("30afde70-1e83-40a1-8848-5d701e56021b")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_MAINSCHEDULER_TAGTYPE = "SwCommunicationResource_Association_mainScheduler";
 
-    @objid ("06d8f8c6-a14c-44ac-b41e-174038a46780")
+    @objid ("aff9d86a-5442-4686-aa1c-aead2fde0cba")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_PACKETT_TAGTYPE = "SwCommunicationResource_Association_packetT";
 
-    @objid ("be5a7e1b-0c91-43fe-b350-80db75f83a0d")
+    @objid ("96257483-8901-48fd-b23c-157f0486ddcd")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_SPEEDFACTOR_TAGTYPE = "SwCommunicationResource_Association_speedFactor";
 
-    @objid ("8a488c38-9e71-4183-ad63-8ff0cb7cec20")
+    @objid ("a6dfac36-0555-4fe4-a099-f7b05ac40a9d")
     public static final String SWCOMMUNICATIONRESOURCE_ASSOCIATION_TRANSMMODE_TAGTYPE = "SwCommunicationResource_Association_transmMode";
 
     /**
-     * Tells whether a {@link SwCommunicationResourceAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << SwCommunicationResource_Association >>. 
+     * Tells whether a {@link SwCommunicationResourceAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << SwCommunicationResource_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("d3c71ca7-daed-4f2c-96ea-6aeff7d855eb")
+    @objid ("411353aa-f409-41e9-a5a6-3c62d7a95a86")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwCommunicationResourceAssociation.STEREOTYPE_NAME));
     }
@@ -76,21 +76,21 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * 
      * @return a {@link SwCommunicationResourceAssociation} proxy on the created {@link Association}.
      */
-    @objid ("a75cb086-3118-4f45-9f04-b8202ce9bf65")
+    @objid ("8570e0b5-547e-4cbc-a871-8b07234e61c4")
     public static SwCommunicationResourceAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwCommunicationResourceAssociation.STEREOTYPE_NAME);
         return SwCommunicationResourceAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwCommunicationResourceAssociation} proxy from a {@link Association} stereotyped << SwCommunicationResource_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwCommunicationResourceAssociation} proxy from a {@link Association} stereotyped << SwCommunicationResource_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link SwCommunicationResourceAssociation} proxy or <i>null</i>.
      */
-    @objid ("1db510ab-9e94-4bcd-995d-449df2806e8b")
+    @objid ("1249623f-093a-4269-ab76-8b69450c653b")
     public static SwCommunicationResourceAssociation instantiate(final Association obj) {
         return SwCommunicationResourceAssociation.canInstantiate(obj) ? new SwCommunicationResourceAssociation(obj) : null;
     }
@@ -103,7 +103,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * @return a {@link SwCommunicationResourceAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("957e3aeb-6c0e-46dd-8302-deea3dde03f4")
+    @objid ("d3553a03-2341-4cb5-9191-f6d912277b5f")
     public static SwCommunicationResourceAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (SwCommunicationResourceAssociation.canInstantiate(obj))
         	return new SwCommunicationResourceAssociation(obj);
@@ -111,7 +111,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
         	throw new IllegalArgumentException("SwCommunicationResourceAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("cb6cc975-2d35-4f59-a051-511cde1765b8")
+    @objid ("722da16a-cbe4-408e-8576-c3e43f60741c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,7 +131,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("3ca8f102-61b0-4560-ba9c-9fd35330260d")
+    @objid ("cae98e0c-80b3-4617-bc99-1c907979ec6f")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -142,7 +142,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("13d0f78d-93cf-423f-9ffa-4b112aa943d9")
+    @objid ("1b1b42cf-7721-42d7-9630-1b6a1a6830df")
     public List<String> getSwCommunicationResource_Association_blockT() {
         return this.elt.getTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_BLOCKT_TAGTYPE_ELT);
     }
@@ -152,7 +152,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("62b2d91b-2583-4633-bbfd-08e2ccf5964f")
+    @objid ("6b9512e2-5136-40ab-8112-914cad862bad")
     public List<String> getSwCommunicationResource_Association_capacity() {
         return this.elt.getTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_CAPACITY_TAGTYPE_ELT);
     }
@@ -162,7 +162,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6a1d3b37-56d1-4258-81e8-c204eeb2e8a7")
+    @objid ("3c331b12-2d71-42bb-9531-1000d0499c61")
     public String getSwCommunicationResource_Association_elementSize() {
         return this.elt.getTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE_TAGTYPE_ELT);
     }
@@ -172,7 +172,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("17c2266a-03f7-4622-8f42-cf2f5918a67d")
+    @objid ("8c140c17-912f-4bce-802b-bd2c4767b28f")
     public String getSwCommunicationResource_Association_mainScheduler() {
         return this.elt.getTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_MAINSCHEDULER_TAGTYPE_ELT);
     }
@@ -182,7 +182,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("6ace201f-154a-4294-ae2a-cb85f67a548d")
+    @objid ("20de01cd-25e4-43ae-99a9-7c19d44f1fd5")
     public List<String> getSwCommunicationResource_Association_packetT() {
         return this.elt.getTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_PACKETT_TAGTYPE_ELT);
     }
@@ -192,7 +192,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("145e7ee9-634c-4055-a113-d9f6624bc700")
+    @objid ("e7b0666d-21cc-4ad0-8e6b-d670a86d6ed1")
     public String getSwCommunicationResource_Association_speedFactor() {
         return this.elt.getTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_SPEEDFACTOR_TAGTYPE_ELT);
     }
@@ -202,12 +202,12 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("e04d920e-6354-4cb5-84d4-8460ee47f54c")
+    @objid ("dac6d863-66bc-4c62-b32c-af31413d4e7a")
     public String getSwCommunicationResource_Association_transmMode() {
         return this.elt.getTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_TRANSMMODE_TAGTYPE_ELT);
     }
 
-    @objid ("1a7dfff8-692e-4f64-b1f3-2e92fc74af4c")
+    @objid ("ffffc82b-4819-43c8-9e9c-d56851aea351")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -218,7 +218,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7a1b3b6a-efb8-430f-87d9-701b24db8e06")
+    @objid ("f0b8ce56-0f93-42b7-8e0a-6ebb6a19a101")
     public void setSwCommunicationResource_Association_blockT(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_BLOCKT_TAGTYPE_ELT, values);
     }
@@ -228,7 +228,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c69a5669-60d7-49ae-8881-ee59c8b824cb")
+    @objid ("83a69ae3-37ba-4a99-b40d-f1106247011e")
     public void setSwCommunicationResource_Association_capacity(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_CAPACITY_TAGTYPE_ELT, values);
     }
@@ -238,7 +238,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5bf711f9-9667-4ca1-949e-f22b503fd802")
+    @objid ("af5027e0-1b67-46e3-be7a-9eead0fe63ff")
     public void setSwCommunicationResource_Association_elementSize(final String value) {
         this.elt.putTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE_TAGTYPE_ELT, value);
     }
@@ -248,7 +248,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ab730df5-ed24-4bd4-a64a-c0630e9f4083")
+    @objid ("0972a364-bc21-425c-9622-f1dfc17d5efd")
     public void setSwCommunicationResource_Association_mainScheduler(final String value) {
         this.elt.putTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_MAINSCHEDULER_TAGTYPE_ELT, value);
     }
@@ -258,7 +258,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("986680c5-f593-4274-b1b1-cac770f250e5")
+    @objid ("fb2458d5-7d02-44c6-840e-82bb2fd7cb45")
     public void setSwCommunicationResource_Association_packetT(final List<String> values) {
         this.elt.putTagValues(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_PACKETT_TAGTYPE_ELT, values);
     }
@@ -268,7 +268,7 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b4c8953c-3fcc-49cc-824c-197b45684e0a")
+    @objid ("e465d3d8-eca7-4f87-b375-94a1ff801aa7")
     public void setSwCommunicationResource_Association_speedFactor(final String value) {
         this.elt.putTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_SPEEDFACTOR_TAGTYPE_ELT, value);
     }
@@ -278,49 +278,49 @@ public class SwCommunicationResourceAssociation extends SwInteractionResourceAss
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("b09cd805-fbc9-4a4f-9729-7ba9aacf6b8a")
+    @objid ("2ee8e9a6-fe1c-414c-858d-c5320f536ccc")
     public void setSwCommunicationResource_Association_transmMode(final String value) {
         this.elt.putTagValue(SwCommunicationResourceAssociation.MdaTypes.SWCOMMUNICATIONRESOURCE_ASSOCIATION_TRANSMMODE_TAGTYPE_ELT, value);
     }
 
-    @objid ("26675404-611a-431f-b1a9-c9aae5256695")
+    @objid ("8b7ea758-5bce-437b-99f0-c633b75dac7f")
     protected SwCommunicationResourceAssociation(final Association elt) {
         super(elt);
     }
 
     @objid ("b0ca6dce-a9b9-4696-83c7-bd52714cb208")
     public static final class MdaTypes {
-        @objid ("c77b468a-e623-4d42-bc05-84da5321c802")
+        @objid ("7e1600fe-1039-41c9-8cd9-45e02c429d27")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("5affbc85-f832-4653-b06e-54c64a67a9d1")
+        @objid ("05d4ddc6-061b-4a11-b2ee-dc87955cf3dc")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE_TAGTYPE_ELT;
 
-        @objid ("4deeb1bd-eaad-4b3e-8306-651539ec559a")
+        @objid ("e7b59989-75c3-4c4c-83e8-ee7d4639fd44")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_BLOCKT_TAGTYPE_ELT;
 
-        @objid ("c60c5d75-bc92-4c27-9a5a-98ae48ea4d8b")
+        @objid ("a425cab9-9920-4fed-b0ef-3f58ce697a56")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_PACKETT_TAGTYPE_ELT;
 
-        @objid ("c28b5be5-81a7-4191-ae98-19879f2a539b")
+        @objid ("37b86e4d-bf79-4ee5-9f28-ff2baae49ab6")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_CAPACITY_TAGTYPE_ELT;
 
-        @objid ("8151ece0-5db5-4f1f-a0b6-ccc0978c1fec")
+        @objid ("1cbb2047-06df-40be-b4c8-914985ca56ae")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_MAINSCHEDULER_TAGTYPE_ELT;
 
-        @objid ("8a98c6ff-c199-46b9-a6d3-c836814ad217")
+        @objid ("249d432b-b830-4a72-9969-f583d6c49f50")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_SPEEDFACTOR_TAGTYPE_ELT;
 
-        @objid ("fbc977f1-9ec6-479f-b1b6-e9cac10d6a48")
+        @objid ("f8c71987-ada1-4942-8e3f-6e06597553f2")
         public static TagType SWCOMMUNICATIONRESOURCE_ASSOCIATION_TRANSMMODE_TAGTYPE_ELT;
 
-        @objid ("8ff971ca-b56a-4987-9b86-525fff76f058")
+        @objid ("7c7b8fd3-a3c2-4f58-869a-8bbcc2c9a958")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("a700d0be-f2dd-4338-8115-8f7d678e0b2d")
+        @objid ("209b8320-e328-4000-9c4d-6d7d46aeabe5")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("864bfd96-5b41-4593-bee1-319c244892a5")
+        @objid ("cc74884e-a189-445b-b8f4-83d04889ee8a")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "595ed6e2-10d8-11df-81d9-0014222a9f79");
             SWCOMMUNICATIONRESOURCE_ASSOCIATION_ELEMENTSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "73075d66-92ad-11e0-a69d-0027103f347c");
