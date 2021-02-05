@@ -22,14 +22,14 @@ public class Unit_EnumerationLiteralProperty implements IPropertyContent {
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
-            ModelUtils.manageSingleOrientedLink(elt, 
-                                                listBaseUnit, 
-                                                MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEUNIT_UNIT_UNIT, 
+            ModelUtils.manageSingleOrientedLink(elt,
+                                                listBaseUnit,
+                                                MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEUNIT_UNIT_UNIT,
         //                                                MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_BASEUNIT,
-                                                value ); 
+                                                value );
         }
         else if(row == 2){
-        
+
             if (isParseable(value)) {
                 ModelUtils.addStringValue(elt, MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_CONVFACTOR, value);
             }
@@ -47,22 +47,21 @@ public class Unit_EnumerationLiteralProperty implements IPropertyContent {
         //
         // Unit
         //
-        
+
         /*
          * baseUnit tagged value getting
          */
-        
-        // unit element List<MObject> getting
+
         listBaseUnit = ModelUtils.searchElementStereotyped(EnumerationLiteral.class, MARTEDesignerStereotypes.UNIT_ENUMERATIONLITERAL);
         String[] tabBaseUnit = ModelUtils.createListString(listBaseUnit);
-        String value_baseUnit = ModelUtils.getTargetDependencyNames(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_BASEUNIT, elt);
+        String value_baseUnit = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.PROFILEASSOCIATION_BASEUNIT_UNIT_UNIT, elt);
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_BASEUNIT),value_baseUnit, tabBaseUnit);
-        
-        
+
+
         String value_convFactor = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_CONVFACTOR, elt);
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_CONVFACTOR),value_convFactor);
-        
-        
+
+
         String value_offsetFactor = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_OFFSETFACTOR, elt);
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.UNIT_ENUMERATIONLITERAL_UNIT_ENUMERATIONLITERAL_OFFSETFACTOR),value_offsetFactor);
     }
@@ -70,13 +69,13 @@ public class Unit_EnumerationLiteralProperty implements IPropertyContent {
     /**
      * isParseable allows us to check the parsing of the different getting values
      * @param values are the different getting values
-     * 
+     *
      * @return a boolean which gives the parsing of the different getting values
      */
     @objid ("0f70baed-6139-43bf-8d9e-6a43f1f6883b")
     public boolean isParseable(String value) {
         boolean result = false;
-        
+
         try {
             Double.parseDouble(value);
             result = true;

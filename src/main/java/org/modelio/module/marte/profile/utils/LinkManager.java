@@ -6,6 +6,7 @@ import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IUmlModel;
 import org.modelio.metamodel.uml.infrastructure.Dependency;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
+import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
 import org.modelio.module.marte.impl.MARTEModule;
 
@@ -17,7 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 public class LinkManager {
     /**
      * Creates a dependency, if it doesn't exist, stereotyped stereotypeName between the two ModelElement i.e. source and target
-     * 
+     *
      * @param source : the ModelElement which will be the source of the dependency
      * @param target : the ModelElement which will be the target of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
@@ -25,7 +26,7 @@ public class LinkManager {
     @objid ("5f303eaf-9ebc-41d7-96c8-d1a87f2d7196")
     public static void setLink(ModelElement source, ModelElement target, String stereotypeName) {
         IUmlModel model = MARTEModule.getInstance().getModuleContext().getModelingSession().getModel();
-              
+
         try {
             //Looking after a pre-existing stereotype
             boolean find = false;
@@ -36,11 +37,11 @@ public class LinkManager {
                     break;
                 }
             }
-            
+
             //create the dependency if necessary
             if(!find)
                 model.createDependency(source, target, IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName);
-            
+
         } catch (Exception e) {
            MARTEModule.getInstance().getModuleContext().getLogService().error(e);
         }
@@ -48,7 +49,7 @@ public class LinkManager {
 
     /**
      * delete the first dependency, if exists, stereotyped stereotypeName between the two ModelElement i.e. source and target
-     * 
+     *
      * @param source : the ModelElement which will be the source of the dependency
      * @param target : the ModelElement which will be the target of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
@@ -56,7 +57,7 @@ public class LinkManager {
     @objid ("522e7d1b-789c-4b38-ac53-69c492c02736")
     public static void removeLink(ModelElement source, ModelElement target, String stereotypeName) {
         try {
-        
+
             for(Dependency dp: source.getDependsOnDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                     dp.delete();
@@ -71,28 +72,28 @@ public class LinkManager {
     /**
      * delete ALL dependencies,incoming or outgoing, stereotyped stereotypeName between the two ModelElement i.e. source and target
      * @param elemeznt : the ModelElement which is the source or the target of the dependencies
-     * 
+     *
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      */
     @objid ("0dbdb123-8b58-47cd-aaaf-aa607a280c43")
     public static List<ModelElement> removeAllLinks(ModelElement element, String stereotypeName) {
         List<ModelElement> result = new ArrayList<>();
         try {
-        
+
             for(Dependency dp : element.getDependsOnDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                     result.add(dp.getDependsOn());
                     dp.delete();
                 }
             }
-            
+
             for(Dependency dp : element.getImpactedDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                     result.add(dp.getImpacted());
                     dp.delete();
                 }
             }
-        
+
         } catch (Exception e) {
            MARTEModule.getInstance().getModuleContext().getLogService().error(e);
         }
@@ -101,7 +102,7 @@ public class LinkManager {
 
     /**
      * ALWAYS creates a dependency stereotyped stereotypeName between the two ModelElement i.e. source and target
-     * 
+     *
      * @param source : the ModelElement which will be the source of the dependency
      * @param target : the ModelElement which will be the target of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
@@ -117,7 +118,7 @@ public class LinkManager {
 
     /**
      * return the ModelElement target of the FIRST dependency stereotyped stereotypeName  owned by source element
-     * 
+     *
      * @param source : the ModelElement which is the source of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the ModelElement target of the first dependency
@@ -129,7 +130,7 @@ public class LinkManager {
                 ModelElement element = dp.getDependsOn();
                 if(element != null){
                     return element;
-                }       
+                }
             }
         }
         return null;
@@ -137,7 +138,7 @@ public class LinkManager {
 
     /**
      * return the List<MObject> of ModelElement target of the dependencies stereotyped stereotypeName owned by source element
-     * 
+     *
      * @param source : the ModelElement which is the source of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the ArrayList<MObject> of ModelElement targets of the dependencies
@@ -145,22 +146,44 @@ public class LinkManager {
     @objid ("8451ba6a-d782-42a6-97ad-08dd79263204")
     public static List<ModelElement> getAllTargets(ModelElement source, String stereotypeName) {
         List<ModelElement> result = new ArrayList<>();
-        
+
         for(Dependency dp: source.getDependsOnDependency()){
             if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                 ModelElement element = dp.getDependsOn();
                 if(element != null){
                     result.add(element);
-                }       
+                }
             }
         }
         return result;
     }
 
     /**
+     * return the List<MObject> of ModelElement target of the dependencies stereotyped stereotypeName owned by source element
+     *
+     * @param source : the ModelElement which is the source of the dependency
+     * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
+     * @return the ArrayList<MObject> of ModelElement targets of the dependencies
+     */
+    public static List<ModelElement> getAllTargets(ModelElement source, Stereotype stereotype) {
+        List<ModelElement> result = new ArrayList<>();
+
+        for(Dependency dp: source.getDependsOnDependency()){
+            if(dp.isStereotyped(stereotype)){
+                ModelElement element = dp.getDependsOn();
+                if(element != null){
+                    result.add(element);
+                }
+            }
+        }
+        return result;
+    }
+
+
+    /**
      * return the ModelElement source of the FIRST dependency stereotyped stereotypeName
      * which impact the target element
-     * 
+     *
      * @param target : the ModelElement which is the source of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the ModelElement source of the first dependency
@@ -172,7 +195,7 @@ public class LinkManager {
                 ModelElement element = dp.getImpacted();
                 if(element != null){
                     return element;
-                }       
+                }
             }
         }
         return null;
@@ -181,7 +204,7 @@ public class LinkManager {
     /**
      * return ALL the ModelElement source of ALL dependencies stereotyped stereotypeName
      * which impact the target element
-     * 
+     *
      * @param target : the ModelElement which is the target of the dependency
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the List<MObject> of ModelElement source of all incoming dependencies
@@ -194,7 +217,28 @@ public class LinkManager {
                 ModelElement element = dp.getImpacted();
                 if(element != null){
                     result.add(element);
-                }       
+                }
+            }
+        }
+        return result;
+    }
+
+    /**
+     * return ALL the ModelElement source of ALL dependencies stereotyped stereotypeName
+     * which impact the target element
+     *
+     * @param target : the ModelElement which is the target of the dependency
+     * @param stereotypeName : the stereotype applicable on Dependency Metaclass
+     * @return the List<MObject> of ModelElement source of all incoming dependencies
+     */
+    public static List<ModelElement> getAllSources(ModelElement target, final Stereotype stereotype) {
+        List<ModelElement> result = new ArrayList<>();
+        for(Dependency dp: target.getImpactedDependency()){
+            if(dp.isStereotyped(stereotype)){
+                ModelElement element = dp.getImpacted();
+                if(element != null){
+                    result.add(element);
+                }
             }
         }
         return result;
@@ -203,7 +247,7 @@ public class LinkManager {
     /**
      * return true if the element have a link
      * @param target : the ModelElement which is the target of the dependency
-     * 
+     *
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the List<MObject> of ModelElement source of all incoming dependencies
      */
@@ -220,7 +264,7 @@ public class LinkManager {
     @objid ("6c2a2882-4479-430f-b66b-27dcd337d4d9")
     public static void removeLink(ModelElement source, String stereotype) {
         try {
-        
+
             for(Dependency dp: source.getDependsOnDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotype)){
                    dp.delete();
@@ -234,20 +278,20 @@ public class LinkManager {
 
     /**
      * delete ALL outgoing dependencies stereotyped stereotypeName between the two ModelElement i.e. source and target
-     * 
+     *
      * @param element : the ModelElement which will be the source of the dependencies
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      */
     @objid ("5408d85c-4da5-4047-8f19-e584de5cbd63")
     public static void removeAllOutgoingLinks(ModelElement element, String stereotypeName) {
         try {
-        
+
             for(Dependency dp: element.getDependsOnDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                     dp.delete();
                 }
             }
-        
+
         } catch (Exception e) {
            MARTEModule.getInstance().getModuleContext().getLogService().error(e);
         }
@@ -255,20 +299,20 @@ public class LinkManager {
 
     /**
      * delete ALL incoming dependencies stereotyped stereotypeName between the two ModelElement i.e. source and target
-     * 
+     *
      * @param element : the ModelElement which will be the target of the dependencies
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      */
     @objid ("8c648c2a-dbe3-47d8-b4c7-ae6c1a654fb8")
     public static void removeAllIncomingLinks(ModelElement element, String stereotypeName) {
         try {
-            
+
             for(Dependency dp: element.getImpactedDependency()){
                 if(dp.isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName)){
                     dp.delete();
                 }
             }
-        
+
         } catch (Exception e) {
            MARTEModule.getInstance().getModuleContext().getLogService().error(e);
         }
@@ -277,7 +321,7 @@ public class LinkManager {
     /**
      * return true if the element have a link
      * @param target : the ModelElement which is the target of the dependency
-     * 
+     *
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the List<MObject> of ModelElement source of all incoming dependencies
      */
@@ -294,7 +338,7 @@ public class LinkManager {
     /**
      * return true if the element have a link
      * @param target : the ModelElement which is the target of the dependency
-     * 
+     *
      * @param stereotypeName : the stereotype name applicable on Dependency Metaclass
      * @return the List<MObject> of ModelElement source of all incoming dependencies
      */
