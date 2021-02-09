@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,15 +10,11 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("c132ca29-797e-42de-8b3e-4dcef1aa8eab")
 public class GaWorkloadBehavior_ModelElementProperty implements IPropertyContent {
-    @objid ("a874314d-e43b-406c-8b0b-c044fd3a2059")
     private static List<ModelElement> behaviors = null;
 
-    @objid ("1424b35c-0708-4d2e-9320-2f9f261a5dfc")
     private static List<ModelElement> demands = null;
 
-    @objid ("e8f201ed-ea42-4924-ba06-cb14a2459a26")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){           
@@ -38,7 +33,6 @@ public class GaWorkloadBehavior_ModelElementProperty implements IPropertyContent
         }
     }
 
-    @objid ("8f1b5c9d-e7f2-4736-a2a2-783858d70ea1")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         behaviors = ModelUtils.searchElementStereotyped(ModelElement.class, MARTEDesignerStereotypes.GASCENARIO_MODELELEMENT);

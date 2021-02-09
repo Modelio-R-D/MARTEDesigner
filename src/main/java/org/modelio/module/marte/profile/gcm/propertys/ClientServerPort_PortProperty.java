@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Port;
@@ -13,12 +12,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("32c80657-da94-4b1c-ba68-c9a9add8fb92")
 public class ClientServerPort_PortProperty implements IPropertyContent {
-    @objid ("274c4560-ef55-47c7-ad16-0d2068ffa53c")
     private static List<ModelElement> _clientServerSpecifications = null;
 
-    @objid ("a81eee16-2348-4441-b3c8-0a0aa8c70da3")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -45,7 +41,6 @@ public class ClientServerPort_PortProperty implements IPropertyContent {
         }
     }
 
-    @objid ("3694a3c0-44b9-4392-b3b5-b07866033448")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] tabSpecKind = MARTEEnumerationUtils.getPortSpecificationKind();

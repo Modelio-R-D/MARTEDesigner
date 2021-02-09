@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwBridge_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5fa74c1d-29a0-4507-8a1d-9cd4448bf96d")
 public class HwBridge_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("c35c3f9a-e469-4717-b0ff-8163a835d59c")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class HwBridge_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("37e1679d-d55c-4ecf-ae70-144051ed5383")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBridge_ClassCommand")){

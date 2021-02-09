@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ClockResource_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("fbfa4d76-e1de-488f-a51f-96ced161dad7")
 public class ClockResource_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("6f53d0db-41ea-48b6-8403-9c7f4bf0a711")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class ClockResource_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("a7afca1b-29ac-4c36-9ac4-207f5071967a")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClockResource_ClassCommand")){

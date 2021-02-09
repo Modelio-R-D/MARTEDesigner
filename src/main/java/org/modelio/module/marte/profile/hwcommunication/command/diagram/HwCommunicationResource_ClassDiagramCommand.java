@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcommunication.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwCommunicationResource_Class;
 
-@objid ("fce87666-c9bf-4264-ba6e-e979427db418")
 public class HwCommunicationResource_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("52f568e2-99b7-4876-9e78-e6d8ca84bfad")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -40,7 +37,6 @@ public class HwCommunicationResource_ClassDiagramCommand extends DefaultBoxTool 
         return false;
     }
 
-    @objid ("74df1416-ba5f-4f3f-808a-a5fc71e59e78")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwCommunicationResource_ClassCommand")){

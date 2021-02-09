@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.SwInteractionResource_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("e825e1c7-f3ea-4b97-b3ad-8035803ae1b8")
 public class SwInteractionResource_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("e811fd5d-9593-4328-9bef-5f9efb156ff3")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -35,7 +32,6 @@ public class SwInteractionResource_InstanceCommand extends DefaultModuleCommandH
         return false;
     }
 
-    @objid ("743b113a-d742-4362-a226-8c8145c34c30")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwInteractionResource_InstanceCommand")){

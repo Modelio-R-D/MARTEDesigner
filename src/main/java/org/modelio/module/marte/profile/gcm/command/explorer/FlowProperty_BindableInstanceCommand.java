@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.FlowProperty_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("00f78947-1e61-40f4-82c1-2381f71e24ad")
 public class FlowProperty_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("0f380bab-ed38-4564-9d77-b89aa63e6d6b")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class FlowProperty_BindableInstanceCommand extends DefaultModuleCommandHa
         return false;
     }
 
-    @objid ("249075dd-5223-4e51-b0b6-78e0a5be3ecf")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("FlowProperty_BindableInstanceCommand")){

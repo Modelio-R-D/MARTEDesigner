@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwstoragemanager.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -17,9 +16,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwstoragemanager.model.HwMMU_BindableInstance;
 
-@objid ("e31f200d-ab46-4453-80b9-b970a27c1574")
 public class HwMMU_BindableInstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("aeaaedc5-dd46-45a5-afdc-556069fe3002")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -45,7 +42,6 @@ public class HwMMU_BindableInstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("7a2d192b-2771-4d44-bc7e-6c6952788491")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwMMU_BindableInstanceCommand")){

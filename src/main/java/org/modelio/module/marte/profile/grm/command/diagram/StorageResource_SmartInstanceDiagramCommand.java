@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.StorageResource_BindableInstance;
 import org.modelio.module.marte.profile.grm.model.StorageResource_Instance;
 
-@objid ("9b88d022-0420-4445-835a-01f1164f4685")
 public class StorageResource_SmartInstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("9b8a5a04-a3ba-4e75-a9b9-69b170d51e8c")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -43,7 +40,6 @@ public class StorageResource_SmartInstanceDiagramCommand extends DefaultBoxTool 
         return false;
     }
 
-    @objid ("52448b7d-0ac6-44e5-addd-3bf6abc44cee")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("StorageResource_InstanceCommand")){

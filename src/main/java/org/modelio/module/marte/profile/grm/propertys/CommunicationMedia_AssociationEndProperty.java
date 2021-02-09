@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("b8fd1913-9cb6-4b28-b945-415c4d4043a1")
 public class CommunicationMedia_AssociationEndProperty implements IPropertyContent {
-    @objid ("e9ac061b-2603-4b10-8980-f32336aa697f")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -31,7 +28,6 @@ public class CommunicationMedia_AssociationEndProperty implements IPropertyConte
         }
     }
 
-    @objid ("2a5c244a-2f2d-46cb-93a5-2e7b3f1c207f")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

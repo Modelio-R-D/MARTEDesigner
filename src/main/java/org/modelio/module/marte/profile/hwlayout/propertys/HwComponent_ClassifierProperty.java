@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwlayout.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("bf87ef3d-7859-44f0-a5c7-d0dfb8e7fa6d")
 public class HwComponent_ClassifierProperty implements IPropertyContent {
-    @objid ("02702f19-5989-4ea7-9858-574e897af497")
     private static List<ModelElement> ownedSubComponents = null;
 
-    @objid ("8837400e-a4e5-4626-8ec0-d4e6ec6ccb36")
     private static List<ModelElement> poweredServices = null;
 
-    @objid ("07a1d49b-ad6b-425f-a21b-0263d8a87b0c")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -74,7 +69,6 @@ public class HwComponent_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("dfe76f22-6d90-49ef-bd6d-39bec91c889e")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

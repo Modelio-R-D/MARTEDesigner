@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -18,9 +17,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.EntryPoint_Dependency;
 
-@objid ("2609dd44-4a87-4231-87d5-81fbdb119a50")
 public class EntryPoint_DependencyDiagramCommand extends DefaultLinkTool {
-    @objid ("10a649ab-6bea-4d15-af18-d7504dc1e7f8")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -41,7 +38,6 @@ public class EntryPoint_DependencyDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("92cb35a2-da53-4152-9bfe-ff9580776ff1")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -61,7 +57,6 @@ public class EntryPoint_DependencyDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("ba87cf8d-191c-4af8-94bb-da68eef4fa1b")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("EntryPoint_AbstractionCommand")){

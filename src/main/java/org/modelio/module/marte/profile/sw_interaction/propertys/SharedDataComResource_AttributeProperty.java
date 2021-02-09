@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5e038fdc-c907-4686-9fc2-c41dd5f7d785")
 public class SharedDataComResource_AttributeProperty implements IPropertyContent {
-    @objid ("075097e4-2a1c-4cfe-a1e5-d7f874275fea")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("27c48b76-a030-454c-8255-032fc98755a1")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -36,7 +32,6 @@ public class SharedDataComResource_AttributeProperty implements IPropertyContent
         }
     }
 
-    @objid ("85229ec0-60cd-478e-9905-894979ad3335")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

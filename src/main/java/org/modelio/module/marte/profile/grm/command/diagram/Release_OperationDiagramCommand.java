@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Release_Operation;
 
-@objid ("d546eda3-5828-494c-8e3d-ca711a9e8224")
 public class Release_OperationDiagramCommand extends DefaultBoxTool {
-    @objid ("f82fceeb-dfc1-4439-bf3b-bafecebd2bb9")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class Release_OperationDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("855d3c98-fb30-4100-ac51-526b10541280")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Release_OperationCommand")){

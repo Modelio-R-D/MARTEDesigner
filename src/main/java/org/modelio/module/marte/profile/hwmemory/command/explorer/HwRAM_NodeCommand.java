@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwmemory.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwmemory.model.HwRAM_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("0680eb96-e7fb-450c-828d-b337464dbc6e")
 public class HwRAM_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("c8740831-1704-4399-8787-cfc81e2b5ca2")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwRAM_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("d282c9d0-2cb6-4712-98ac-fe41daf57958")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwRAM_NodeCommand")){

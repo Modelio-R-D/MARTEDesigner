@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -16,12 +15,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("1de484bd-855a-4c3e-b91e-c853e94780dd")
 public class MutualExclusionResource_InstanceProperty implements IPropertyContent {
-    @objid ("588c3328-20b0-4d22-a3e3-d8419641053d")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("fb226bef-966d-4cb4-b1b8-d4ce9fcb476d")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -62,7 +58,6 @@ public class MutualExclusionResource_InstanceProperty implements IPropertyConten
         }
     }
 
-    @objid ("41618d71-99b8-47cf-b7fd-a9616050042b")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

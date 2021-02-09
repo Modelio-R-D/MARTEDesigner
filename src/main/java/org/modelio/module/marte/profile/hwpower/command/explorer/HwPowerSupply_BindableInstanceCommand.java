@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwpower.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwpower.model.HwPowerSupply_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("68cd2bff-219f-4456-94e9-572a5bbc243b")
 public class HwPowerSupply_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("75286b0e-4f9d-49ea-90fb-a527cf2ccc01")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -32,7 +29,6 @@ public class HwPowerSupply_BindableInstanceCommand extends DefaultModuleCommandH
         return false;
     }
 
-    @objid ("5828541f-4efa-426e-a5f0-b45765357e02")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwPowerSupply_BindableInstanceCommand")){

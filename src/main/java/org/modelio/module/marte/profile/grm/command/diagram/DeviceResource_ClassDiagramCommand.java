@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.DeviceResource_Class;
 
-@objid ("47378c34-422c-482c-8892-37859c8a6d11")
 public class DeviceResource_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("d847b98e-abb0-4ed3-876a-c1c2016ee337")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class DeviceResource_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("dbb8e167-082f-4e74-817b-67e5f1cf13bd")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DeviceResource_ClassCommand")){

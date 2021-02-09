@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SecondaryScheduler_Link;
 
-@objid ("74c60053-5cea-460a-8004-b96ef26a7133")
 public class SecondaryScheduler_LinkDiagramCommand extends DefaultLinkTool {
-    @objid ("5b8a7dc6-1ec6-4f69-bd32-f619769806e1")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class SecondaryScheduler_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("66aaa201-836d-474a-9421-89210f86a9f2")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class SecondaryScheduler_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("50caef29-c404-4b4f-b726-20197bf6c8b4")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SecondaryScheduler_LinkCommand")){

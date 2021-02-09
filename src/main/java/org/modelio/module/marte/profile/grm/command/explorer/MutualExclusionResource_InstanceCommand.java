@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.MutualExclusionResource_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("c38c1dbc-90c8-487a-8e6a-0dfa422bcea9")
 public class MutualExclusionResource_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("6f5e176e-f956-4985-bfb9-6920e592adde")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class MutualExclusionResource_InstanceCommand extends DefaultModuleComman
         return false;
     }
 
-    @objid ("23572e52-40fb-4351-951d-3e2b3fb34a28")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MutualExclusionResource_InstanceCommand")){

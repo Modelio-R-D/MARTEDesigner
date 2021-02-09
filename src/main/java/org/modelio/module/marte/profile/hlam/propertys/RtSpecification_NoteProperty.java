@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hlam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.infrastructure.Note;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("74c9ed3d-1e93-452e-b29a-d7e75ba4a6c7")
 public class RtSpecification_NoteProperty implements IPropertyContent {
-    @objid ("0723bbfd-504b-4479-8c9a-db2992e882cc")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -46,7 +43,6 @@ public class RtSpecification_NoteProperty implements IPropertyContent {
         }
     }
 
-    @objid ("47fe40b1-1b76-4a39-a6b6-8b1c60c12820")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName("Name"), elt.getName());

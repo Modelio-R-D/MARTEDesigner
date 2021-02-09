@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -12,9 +11,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sam.model.SaCommHost_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5c696068-c46b-4fcc-87fc-340105627022")
 public class SaCommHost_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("dd71e57e-8571-4d89-b1ee-0a525592e9cd")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class SaCommHost_InstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("9d68a874-546f-428b-97b9-fc846826f929")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SaCommHost_InstanceCommand")){

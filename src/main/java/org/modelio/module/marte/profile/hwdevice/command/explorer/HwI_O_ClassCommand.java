@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwdevice.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwdevice.model.HwI_O_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5932d68e-51e9-4390-a2fe-47a708c23ab2")
 public class HwI_O_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("46965176-52a3-4350-9f6a-acdd814e1361")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwI_O_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("1670f5b6-daae-41f6-9eeb-aed982958739")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwI_O_ClassCommand")){

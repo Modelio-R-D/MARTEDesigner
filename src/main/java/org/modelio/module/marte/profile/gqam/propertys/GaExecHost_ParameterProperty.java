@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("85e860b9-4e7d-4ee4-baf9-479e3fba33e9")
 public class GaExecHost_ParameterProperty implements IPropertyContent {
-    @objid ("281fdbba-f8cd-49bc-8c4b-01a8e4fa90a6")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if (row == 1) {        
@@ -63,7 +60,6 @@ public class GaExecHost_ParameterProperty implements IPropertyContent {
         }
     }
 
-    @objid ("2a962293-971b-4bc1-a26a-ff3893946fa0")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

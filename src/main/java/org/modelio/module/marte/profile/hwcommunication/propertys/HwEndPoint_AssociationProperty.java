@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,21 +11,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("20962ba4-648f-4145-af1f-0c43fb023846")
 public class HwEndPoint_AssociationProperty implements IPropertyContent {
-    @objid ("63a75522-f0d4-4aec-a629-f2dd9b9e4121")
     private static List<ModelElement> ownedHwResource;
 
-    @objid ("d0e0d127-f97f-46dc-be03-1bdad078e877")
     private static List<ModelElement> ownedHwResourceService;
 
-    @objid ("030ce596-7a89-4ec3-9e22-827b9e61d230")
     private static List<ModelElement> referencedHwResourceService;
 
-    @objid ("4361c28f-2312-4ab8-bf20-b967c834aaf1")
     private static List<ModelElement> referencedHwMedia;
 
-    @objid ("97c27ab5-b468-420a-912b-9a1441d56e65")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -65,7 +58,6 @@ public class HwEndPoint_AssociationProperty implements IPropertyContent {
         }
     }
 
-    @objid ("60da4b99-b5c3-41a2-9a2c-af17b02b49ed")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

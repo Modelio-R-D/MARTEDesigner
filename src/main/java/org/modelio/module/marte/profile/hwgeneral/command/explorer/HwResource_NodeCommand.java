@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwgeneral.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwgeneral.model.HwResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("9fb78788-c3b0-469b-9e14-82f802b370a1")
 public class HwResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("3c758ba9-c88c-494a-8d27-135cb52b38fa")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwResource_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("bee37d04-9cc5-48a2-90f4-784ded6a43af")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwResource_NodeCommand")){

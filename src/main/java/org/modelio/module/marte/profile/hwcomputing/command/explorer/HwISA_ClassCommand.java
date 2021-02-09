@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwISA_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("2260f115-937b-4bb2-97e1-67f852c7d145")
 public class HwISA_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("55c24985-c9f0-4a74-87f2-2d9b3d79677c")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwISA_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("f414d0c7-1369-40e4-800c-6d25ff28ec8e")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwISA_ClassCommand")){

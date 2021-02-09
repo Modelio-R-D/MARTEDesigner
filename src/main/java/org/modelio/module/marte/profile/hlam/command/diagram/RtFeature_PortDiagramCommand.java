@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hlam.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -22,9 +21,7 @@ import org.modelio.metamodel.uml.statik.Package;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hlam.model.RtFeature_Port;
 
-@objid ("d9c643cc-8fe7-4541-9005-37b139e449a2")
 public class RtFeature_PortDiagramCommand extends DefaultBoxTool {
-    @objid ("8c7deb64-ec03-4c09-8f18-d8c4906cb67c")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -45,7 +42,6 @@ public class RtFeature_PortDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("8895e275-723a-4b32-9b50-dfdf1f6fd171")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("RtFeature_PortCommand")){

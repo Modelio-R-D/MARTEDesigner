@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ce7c3efa-45c8-45ad-871d-a15d9c589a81")
 public class MemoryPartition_LinkProperty implements IPropertyContent {
-    @objid ("c2ea9b97-8086-45b4-9be1-b2d1fa30d201")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("0c7e2479-4b94-49a9-8732-5d9f9ced3b44")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("acbab7d5-fbae-4011-991f-40141e924d04")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -54,7 +49,6 @@ public class MemoryPartition_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("80d63bec-a5af-41c2-9167-96c3858da312")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -18,9 +17,7 @@ import org.modelio.metamodel.uml.statik.Instance;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwCommunicationResource_Link;
 
-@objid ("da2cb165-3dba-4fda-bbef-ec0a74ead30d")
 public class HwCommunicationResource_LinkDiagramCommand extends DefaultLinkTool {
-    @objid ("c4dfcabf-c25c-41f8-93fb-b2007e4357e3")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class HwCommunicationResource_LinkDiagramCommand extends DefaultLinkTool 
         return false;
     }
 
-    @objid ("3d58e297-f656-4030-9283-0a4fbb4a9520")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -53,7 +49,6 @@ public class HwCommunicationResource_LinkDiagramCommand extends DefaultLinkTool 
         return false;
     }
 
-    @objid ("a77c85df-3cf6-41b8-870d-d7873061a390")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwCommunicationResource_LinkCommand")){

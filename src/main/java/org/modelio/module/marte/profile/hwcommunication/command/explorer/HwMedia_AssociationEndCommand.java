@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwMedia_AssociationEnd;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("824ae77b-4e4d-4442-a519-a7df4728a7e5")
 public class HwMedia_AssociationEndCommand extends DefaultModuleCommandHandler {
-    @objid ("57ba2009-188a-4c57-9375-8b47d6ce99db")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class HwMedia_AssociationEndCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("c0dcdfbd-dfc3-4c91-a810-05dce6fdc4bd")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwMedia_AssociationEndCommand")){

@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.hwgeneral.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.commonBehaviors.Behavior;
 import org.modelio.metamodel.uml.behavior.interactionModel.ExecutionSpecification;
@@ -18,21 +17,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("fb27bf93-7093-4377-b283-c4ad3af1edab")
 public class HwResource_LifelineProperty implements IPropertyContent {
-    @objid ("d8255eb6-cd7d-4cee-a3b4-1322996e14ff")
     private static List<ModelElement> ownedHwResource;
 
-    @objid ("9ac549df-fa52-49c5-93ac-24f411aebf79")
     private static List<ModelElement> ownedHwEndPoint;
 
-    @objid ("cd34b7d0-22cb-4d82-9880-9a7627ce44a4")
     private static List<ModelElement> ownedHwResourceService;
 
-    @objid ("bfd31e9b-421c-42c5-9f42-2e996b647f59")
     private static List<ModelElement> referencedHwResourceService;
 
-    @objid ("6b5d6fcb-ad0d-4245-bde7-26b4e61d0a87")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -71,7 +64,6 @@ public class HwResource_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("3398237e-1c52-4384-9f59-13c15230037c")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

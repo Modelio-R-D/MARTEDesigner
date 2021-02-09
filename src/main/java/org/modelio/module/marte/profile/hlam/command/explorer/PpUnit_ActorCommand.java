@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hlam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hlam.model.PpUnit_Actor;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("e8d64597-80fc-4f1c-9dd5-fe7da0e7b974")
 public class PpUnit_ActorCommand extends DefaultModuleCommandHandler {
-    @objid ("44b1ea7f-d016-40c1-ab5b-416dc1138d5d")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class PpUnit_ActorCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("ba5a3d17-ebfa-45af-818a-536be6dad7e7")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("PpUnit_ActorCommand")){

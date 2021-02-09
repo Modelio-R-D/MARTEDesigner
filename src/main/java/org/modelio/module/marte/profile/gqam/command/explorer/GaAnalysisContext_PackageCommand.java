@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gqam.model.GaAnalysisContext_Package;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("a9a380b0-ca89-496b-be28-7c60b97abe32")
 public class GaAnalysisContext_PackageCommand extends DefaultModuleCommandHandler {
-    @objid ("8dc2981b-d91d-4082-b090-d43161ebad94")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class GaAnalysisContext_PackageCommand extends DefaultModuleCommandHandle
         return false;
     }
 
-    @objid ("b8a8c76d-faea-4e69-b55d-6d2481d99c20")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("GaAnalysisContext_PackageCommand")){

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Instance;
@@ -13,12 +12,9 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("46780c49-672a-4522-9d92-5300bb02afec")
 public class TimedInstantObservation_NoteProperty implements IPropertyContent {
-    @objid ("cb7a883d-d668-4ca5-8b28-1c9f8cf727d0")
     private static List<ModelElement> listClocks = null;
 
-    @objid ("dc4cd272-52cf-4dd3-afa2-b14f6d22bcb9")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -33,7 +29,6 @@ public class TimedInstantObservation_NoteProperty implements IPropertyContent {
         }
     }
 
-    @objid ("0965db26-2e61-4ded-9b4c-465762a101de")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] types = MARTEEnumerationUtils.getEventKind();

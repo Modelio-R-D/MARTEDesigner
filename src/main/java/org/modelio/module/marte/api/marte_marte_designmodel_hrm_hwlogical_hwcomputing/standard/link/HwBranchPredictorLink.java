@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcom
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,9 +31,7 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("21238c7c-db30-46b5-aba0-c7ac68082100")
 public class HwBranchPredictorLink extends HwResourceLink {
-    @objid ("f1c04cdf-444a-4689-8ad8-8a7259197eac")
     public static final String STEREOTYPE_NAME = "HwBranchPredictor_Link";
 
     /**
@@ -45,7 +42,6 @@ public class HwBranchPredictorLink extends HwResourceLink {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("a70c2fa7-0b19-4cfe-ac72-be9d0ab36438")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBranchPredictorLink.STEREOTYPE_NAME));
     }
@@ -55,7 +51,6 @@ public class HwBranchPredictorLink extends HwResourceLink {
      * 
      * @return a {@link HwBranchPredictorLink} proxy on the created {@link Link}.
      */
-    @objid ("4e77c283-cb25-42f1-af7e-e67a1b9a7043")
     public static HwBranchPredictorLink create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBranchPredictorLink.STEREOTYPE_NAME);
@@ -69,7 +64,6 @@ public class HwBranchPredictorLink extends HwResourceLink {
      * @param obj a Link
      * @return a {@link HwBranchPredictorLink} proxy or <i>null</i>.
      */
-    @objid ("a187c71c-9513-4325-a9cf-47c25412795b")
     public static HwBranchPredictorLink instantiate(final Link obj) {
         return HwBranchPredictorLink.canInstantiate(obj) ? new HwBranchPredictorLink(obj) : null;
     }
@@ -82,7 +76,6 @@ public class HwBranchPredictorLink extends HwResourceLink {
      * @return a {@link HwBranchPredictorLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("eed82673-0ccf-4a5e-b078-075bd80a4cda")
     public static HwBranchPredictorLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwBranchPredictorLink.canInstantiate(obj))
         	return new HwBranchPredictorLink(obj);
@@ -90,7 +83,6 @@ public class HwBranchPredictorLink extends HwResourceLink {
         	throw new IllegalArgumentException("HwBranchPredictorLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("04211ee4-a553-4915-9c3a-26231f379b90")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -110,35 +102,27 @@ public class HwBranchPredictorLink extends HwResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("d1507a45-49bf-4c8b-bf69-900cb4a9bf74")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
     }
 
-    @objid ("3b552909-46d9-4764-899b-8db5983bd4af")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("e977f559-591a-44c2-be1b-ef9f3e6d5eb3")
     protected HwBranchPredictorLink(final Link elt) {
         super(elt);
     }
 
-    @objid ("1d480ba0-b29a-4536-a1c8-21877106128a")
     public static final class MdaTypes {
-        @objid ("d6d5d166-c8bc-4a68-b1b4-2f9ee1809444")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b431f2f7-1edd-4aad-b84e-49dd055e6a6a")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f803fcaf-e671-4ed9-9d4f-b0b3d76e0dc9")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("1383646c-e605-4ca7-8cbe-41e1efc95a79")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "00fc43f5-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.alloc.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ac29b9ee-dd07-421e-9fa7-1215f5e20348")
 public class Allocate_DependencyProperty implements IPropertyContent {
-    @objid ("ef4d691f-e155-4831-9bee-c805f0e13c81")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -25,7 +22,6 @@ public class Allocate_DependencyProperty implements IPropertyContent {
         }
     }
 
-    @objid ("91c65daa-0f1f-4039-9e77-03dbad82bb86")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] typesKind = MARTEEnumerationUtils.getAllocationKind();

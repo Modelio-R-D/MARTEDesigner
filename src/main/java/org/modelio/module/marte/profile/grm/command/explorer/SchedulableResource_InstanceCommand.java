@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SchedulableResource_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("229502df-aedf-4b2e-aef9-7b434e103fa5")
 public class SchedulableResource_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("673015c6-a10b-40e8-b88e-57c7a5918365")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class SchedulableResource_InstanceCommand extends DefaultModuleCommandHan
         return false;
     }
 
-    @objid ("dd352c4b-ef78-48e0-a002-c8d62f337f8a")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SchedulableResource_InstanceCommand")){

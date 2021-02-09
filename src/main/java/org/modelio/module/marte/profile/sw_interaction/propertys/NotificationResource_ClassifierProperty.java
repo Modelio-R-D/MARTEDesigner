@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("423cb1e3-c750-44b9-bf0f-b5800f1c18eb")
 public class NotificationResource_ClassifierProperty implements IPropertyContent {
-    @objid ("8c049e06-c600-4c12-8e49-27c1a0ff0fbc")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("19ffb095-2811-45c1-9322-187a27beac5b")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("1a45c65e-6308-47e9-8d23-f84ae5d0a673")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -75,7 +70,6 @@ public class NotificationResource_ClassifierProperty implements IPropertyContent
         }
     }
 
-    @objid ("6ea004f0-d0c0-4023-9dbb-89b812927c47")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

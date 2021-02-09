@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.SwSynchronizationResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("e36dbe23-84c8-4622-8fee-5d87558ccc6c")
 public class SwSynchronizationResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("5b8ae620-d3ad-45f4-95c4-29848d94bab8")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class SwSynchronizationResource_NodeCommand extends DefaultModuleCommandH
         return false;
     }
 
-    @objid ("9c2c5acf-c788-41a0-bbea-fff99688f3e2")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwSynchronizationResource_NodeCommand")){

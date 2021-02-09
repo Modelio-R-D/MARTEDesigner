@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.commonBehaviors.Behavior;
 import org.modelio.metamodel.uml.behavior.interactionModel.ExecutionSpecification;
@@ -17,21 +16,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("564136d5-581c-48c2-ada1-efcd326f0625")
 public class HwComputingResource_AssociationEndProperty implements IPropertyContent {
-    @objid ("09ab9a59-d54e-4c41-bc37-0025ef4fbbf4")
     private static List<ModelElement> ownedHwResource;
 
-    @objid ("76eb0bce-cff3-4472-9ccb-3139e1285840")
     private static List<ModelElement> ownedHwEndPoint;
 
-    @objid ("d5e21b52-e9c3-49a7-a754-311630b9a3d2")
     private static List<ModelElement> ownedHwResourceService;
 
-    @objid ("8aec9603-fdc1-4dcb-bbce-b6d5f713284e")
     private static List<ModelElement> referencedHwResourceService;
 
-    @objid ("0660a6a9-477d-4c03-960c-fd1569960f83")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -75,7 +68,6 @@ public class HwComputingResource_AssociationEndProperty implements IPropertyCont
         }
     }
 
-    @objid ("49d0751d-c525-4c18-b382-7e3ea9b384d4")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

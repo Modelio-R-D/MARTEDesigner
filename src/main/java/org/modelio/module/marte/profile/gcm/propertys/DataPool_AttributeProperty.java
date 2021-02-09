@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("76846d09-ef88-4caf-a147-9bc761d5abe3")
 public class DataPool_AttributeProperty implements IPropertyContent {
-    @objid ("cf27373f-5b5c-47e3-811e-b707855bb016")
     public static final String GACOMMHOST_ASSOCIATION_GACOMMHOST_ASSOCIATION_HOST = "GaCommHost_Association_host";
 
-    @objid ("5b8bb90a-49e6-4800-8cb4-6ca672e43c80")
     private static List<ModelElement> _behaviors = null;
 
-    @objid ("7641c2ce-7cc2-456d-9648-42cb39ff0b69")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -44,7 +39,6 @@ public class DataPool_AttributeProperty implements IPropertyContent {
         }
     }
 
-    @objid ("3f65f7e9-f35a-47ca-bef8-13c7900a7aeb")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] tab_ordering = MARTEEnumerationUtils.getDataPoolOderingKind();

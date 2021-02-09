@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.DataPool_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("ebfac52b-ab5d-41b3-b194-ac358d391a02")
 public class DataPool_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("7804bbac-1444-4ebc-b182-d7e96587c404")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class DataPool_BindableInstanceCommand extends DefaultModuleCommandHandle
         return false;
     }
 
-    @objid ("d6329f89-a980-4f39-a197-b9d50bfcc03e")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DataPool_BindableInstanceCommand")){

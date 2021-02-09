@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -18,9 +17,7 @@ import org.modelio.metamodel.uml.statik.Instance;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwBridge_Link;
 
-@objid ("a10ed8f5-307d-4dff-ab19-a49d9e37be02")
 public class HwBridge_LinkDiagramCommand extends DefaultLinkTool {
-    @objid ("51830df0-5d43-4033-a3ae-de70cdbb7bbb")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -37,7 +34,6 @@ public class HwBridge_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("a69144b1-e6b0-470c-9ddf-8ebde72b77a4")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -54,7 +50,6 @@ public class HwBridge_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("279857d5-4e0c-4410-a76d-9d50cbc49e50")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBridge_LinkCommand")){

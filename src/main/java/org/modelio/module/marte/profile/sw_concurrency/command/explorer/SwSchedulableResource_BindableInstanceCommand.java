@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.SwSchedulableResource_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5c39d065-65f9-4b90-a890-c99a7f3da81e")
 public class SwSchedulableResource_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("37c53879-a74a-4b28-9bc2-9308ee13d347")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class SwSchedulableResource_BindableInstanceCommand extends DefaultModule
         return false;
     }
 
-    @objid ("d9284d62-d733-4c50-8bba-4933fee6e8ba")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwSchedulableResource_BindableInstanceCommand")){

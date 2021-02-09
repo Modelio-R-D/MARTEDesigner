@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -33,15 +32,11 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("8750af39-a401-4bee-9d4b-4471622777c8")
 public class GaCommChannelLifeline extends SchedulableResourceLifeline {
-    @objid ("c1daaf06-4f19-4cda-94e3-a861e4938050")
     public static final String STEREOTYPE_NAME = "GaCommChannel_Lifeline";
 
-    @objid ("0599ce6f-9342-4588-8748-a08892898c31")
     public static final String GACOMMCHANNEL_LIFELINE_PACKETSIZE_TAGTYPE = "GaCommChannel_Lifeline_packetSize";
 
-    @objid ("76cfcf09-26ef-4309-a49f-3ebfc948c25e")
     public static final String GACOMMCHANNEL_LIFELINE_UTILIZATION_TAGTYPE = "GaCommChannel_Lifeline_utilization";
 
     /**
@@ -52,7 +47,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("9f9215f0-b02b-4a6c-b2b1-19f65a4492a2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, GaCommChannelLifeline.STEREOTYPE_NAME));
     }
@@ -62,7 +56,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * 
      * @return a {@link GaCommChannelLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("1877a798-ca69-4945-8d34-4a4c7c77c21f")
     public static GaCommChannelLifeline create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, GaCommChannelLifeline.STEREOTYPE_NAME);
@@ -76,7 +69,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * @param obj a Lifeline
      * @return a {@link GaCommChannelLifeline} proxy or <i>null</i>.
      */
-    @objid ("c9993eac-2bef-461a-be24-47d0cecf4707")
     public static GaCommChannelLifeline instantiate(final Lifeline obj) {
         return GaCommChannelLifeline.canInstantiate(obj) ? new GaCommChannelLifeline(obj) : null;
     }
@@ -89,7 +81,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * @return a {@link GaCommChannelLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("94850b5c-1c9d-4405-ba0f-e93e41f4e672")
     public static GaCommChannelLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (GaCommChannelLifeline.canInstantiate(obj))
         	return new GaCommChannelLifeline(obj);
@@ -97,7 +88,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
         	throw new IllegalArgumentException("GaCommChannelLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("17d0e4bd-0636-4a89-a59f-d0895e391b98")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -117,7 +107,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("e315348e-1e5d-4750-9ad1-68d80b201852")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -128,7 +117,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5c2c47cd-35f9-4c9f-8ce6-8ca382102d2e")
     public String getGaCommChannel_Lifeline_packetSize() {
         return this.elt.getTagValue(GaCommChannelLifeline.MdaTypes.GACOMMCHANNEL_LIFELINE_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -138,12 +126,10 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("c42d6c07-0905-41c3-9d70-ebc3c64b4945")
     public List<String> getGaCommChannel_Lifeline_utilization() {
         return this.elt.getTagValues(GaCommChannelLifeline.MdaTypes.GACOMMCHANNEL_LIFELINE_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("e4019936-6b41-4cd9-adb6-6a0d1e2484ed")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -154,7 +140,6 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("212cdf0b-ae49-4809-aeaa-2eec08133f09")
     public void setGaCommChannel_Lifeline_packetSize(final String value) {
         this.elt.putTagValue(GaCommChannelLifeline.MdaTypes.GACOMMCHANNEL_LIFELINE_PACKETSIZE_TAGTYPE_ELT, value);
     }
@@ -164,34 +149,25 @@ public class GaCommChannelLifeline extends SchedulableResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9dd41b6d-7b51-4eac-9d00-a12cfdb39295")
     public void setGaCommChannel_Lifeline_utilization(final List<String> values) {
         this.elt.putTagValues(GaCommChannelLifeline.MdaTypes.GACOMMCHANNEL_LIFELINE_UTILIZATION_TAGTYPE_ELT, values);
     }
 
-    @objid ("95b0ac98-5740-4c34-938a-792c12fb991b")
     protected GaCommChannelLifeline(final Lifeline elt) {
         super(elt);
     }
 
-    @objid ("e264071e-c9c7-459b-a75d-86164a22bbda")
     public static final class MdaTypes {
-        @objid ("d3946034-771a-49bd-a68b-f71019f3ac1a")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("5a0d7779-3d50-4fcd-8b25-1fc2c513401e")
         public static TagType GACOMMCHANNEL_LIFELINE_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("69c454fa-0f08-479e-9da6-3a84d4e6c00d")
         public static TagType GACOMMCHANNEL_LIFELINE_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("827153d0-7c91-4eef-a9c5-d3fe2373df6a")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("bded3b13-4b67-4249-80f2-7418a771ec50")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("48bf3d09-d72e-4c7f-9238-dbda5f82e3cd")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "edc6c683-149e-11df-9d54-0014222a9f79");
             GACOMMCHANNEL_LIFELINE_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "edc6c684-149e-11df-9d54-0014222a9f79");

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SecondaryScheduler_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("4305f792-b92c-460f-8dfb-aa592f1abeb9")
 public class SecondaryScheduler_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("9b20c37e-0442-41cc-8ca8-fd2c6a30ae9d")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class SecondaryScheduler_LifelineCommand extends DefaultModuleCommandHand
         return false;
     }
 
-    @objid ("387ee262-5f83-438d-b85e-02d184210085")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SecondaryScheduler_LifelineCommand")){

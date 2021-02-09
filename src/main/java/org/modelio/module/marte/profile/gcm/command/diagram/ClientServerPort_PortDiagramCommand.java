@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gcm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -22,9 +21,7 @@ import org.modelio.metamodel.uml.statik.Package;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.ClientServerPort_Port;
 
-@objid ("8d8e60fc-9050-4f89-a4a8-6e133912d1e9")
 public class ClientServerPort_PortDiagramCommand extends DefaultBoxTool {
-    @objid ("5cf26008-0ee2-4c6a-9e81-2ddd87d867db")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -45,7 +42,6 @@ public class ClientServerPort_PortDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("9d456888-1146-4f69-8577-2aed0c2f67d1")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClientServerPort_PortCommand")){

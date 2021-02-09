@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("09b89e82-0ab5-4938-b85d-782aba131fae")
 public class GaTimedObs_ConstraintProperty implements IPropertyContent {
-    @objid ("4e31ea63-aa5e-4cbe-8d09-ef9eeb5adcb3")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -25,7 +22,6 @@ public class GaTimedObs_ConstraintProperty implements IPropertyContent {
         }
     }
 
-    @objid ("7dccf48d-a5a8-4ea1-9e6b-646b2ac6cfcd")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] types_laxitykind = MARTEEnumerationUtils.getLaxityKind();

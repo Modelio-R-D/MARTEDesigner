@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6539015f-a893-459b-be5a-e1e00ad41199")
 public class Resource_LifelineProperty implements IPropertyContent {
-    @objid ("7c9c1b1d-ece0-48a4-a0d7-33c37195a449")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -41,7 +38,6 @@ public class Resource_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("36af3311-f9a1-4521-9403-78ab3419a71e")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_resMult = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RESOURCE_LIFELINE_RESOURCE_LIFELINE_RESMULT, elt);

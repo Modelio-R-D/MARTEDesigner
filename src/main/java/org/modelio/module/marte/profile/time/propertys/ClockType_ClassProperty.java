@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Attribute;
@@ -17,30 +16,21 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("4d460ae3-a4b9-4377-bcd2-6e8fd13d8e2d")
 public class ClockType_ClassProperty implements IPropertyContent {
-    @objid ("9318a9bb-1b91-4f1a-b286-42b1759de6bd")
     private static List<ModelElement> listUnitType = null;
 
-    @objid ("fb435c20-f061-4c3b-a555-24cfa0a4b03a")
     private static List<ModelElement> listResolAtt = null;
 
-    @objid ("0c4bcc62-fb0c-4ea3-8ea8-ded05329fbbe")
     private static List<ModelElement> listMaxValAtt = null;
 
-    @objid ("6bbaec00-2689-40f9-a93c-e03ef9bca45f")
     private static List<ModelElement> listOffsetAtt = null;
 
-    @objid ("ebbc6848-a7b2-4972-b3f1-7e726e93e45a")
     private static List<ModelElement> listGetTime = null;
 
-    @objid ("50042627-0ba4-4ce1-94d0-41b7b4ebc57f")
     private static List<ModelElement> listSetTime = null;
 
-    @objid ("fe11e419-c420-450f-ac97-a0f40bb4f8a3")
     private static List<ModelElement> listIndexToValue = null;
 
-    @objid ("6e9a41e9-a16c-41f8-be80-959e05d24ce8")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -102,7 +92,6 @@ public class ClockType_ClassProperty implements IPropertyContent {
         }
     }
 
-    @objid ("60b9c390-ce2a-44c8-a1c6-badeba379e55")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         /*
@@ -168,7 +157,6 @@ public class ClockType_ClassProperty implements IPropertyContent {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.CLOCKTYPE_CLASS_CLOCKTYPE_CLASS_INDEXTOVALUE),value_indexToValue, tabIndexToValue);
     }
 
-    @objid ("2eefbd33-f2f5-4e40-80bb-c78d5ec453c6")
     protected List<ModelElement> unitChecking(List<ModelElement> listEnum) {
         List<ModelElement> result = new ArrayList<>();
         for (ModelElement plouf:listEnum) {

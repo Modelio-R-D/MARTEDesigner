@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_nfps.standard.binda
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,15 +30,12 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("7ac11866-6b79-473f-b121-422cdbdd0f1e")
 public class NfpBindableInstance {
-    @objid ("4189f34c-713a-48d6-8bc7-4050aaf8ec66")
     public static final String STEREOTYPE_NAME = "Nfp_BindableInstance";
 
     /**
      * The underlying {@link BindableInstance} represented by this proxy, never null.
      */
-    @objid ("b7f07aa5-575e-454d-bf19-afef73fb2da4")
     protected final BindableInstance elt;
 
     /**
@@ -50,7 +46,6 @@ public class NfpBindableInstance {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("bc82d8c3-f29b-4e0e-92f3-827e09bc3ca7")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof BindableInstance) && ((BindableInstance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, NfpBindableInstance.STEREOTYPE_NAME));
     }
@@ -60,7 +55,6 @@ public class NfpBindableInstance {
      * 
      * @return a {@link NfpBindableInstance} proxy on the created {@link BindableInstance}.
      */
-    @objid ("824430ae-db0d-4d1b-b1e9-0306086d4da0")
     public static NfpBindableInstance create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.BindableInstance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, NfpBindableInstance.STEREOTYPE_NAME);
@@ -74,7 +68,6 @@ public class NfpBindableInstance {
      * @param obj a BindableInstance
      * @return a {@link NfpBindableInstance} proxy or <i>null</i>.
      */
-    @objid ("e77e1aa0-de6f-49a9-8713-02ec5b37ca70")
     public static NfpBindableInstance instantiate(final BindableInstance obj) {
         return NfpBindableInstance.canInstantiate(obj) ? new NfpBindableInstance(obj) : null;
     }
@@ -87,7 +80,6 @@ public class NfpBindableInstance {
      * @return a {@link NfpBindableInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("8848b0a3-5795-4867-93ef-9baf848ea054")
     public static NfpBindableInstance safeInstantiate(final BindableInstance obj) throws IllegalArgumentException {
         if (NfpBindableInstance.canInstantiate(obj))
         	return new NfpBindableInstance(obj);
@@ -95,7 +87,6 @@ public class NfpBindableInstance {
         	throw new IllegalArgumentException("NfpBindableInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("8525d197-fc37-4556-be9f-69853488b885")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,34 +106,26 @@ public class NfpBindableInstance {
      * Get the underlying {@link BindableInstance}. 
      * @return the BindableInstance represented by this proxy, never null.
      */
-    @objid ("2b1ffcb0-efa6-4b3a-a098-a9d36c70b281")
     public BindableInstance getElement() {
         return this.elt;
     }
 
-    @objid ("f4bd8c71-1a1c-4c51-be93-1be3882b6fcd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("5b79df14-e088-4a59-b45b-28dbc287bcc2")
     protected NfpBindableInstance(final BindableInstance elt) {
         this.elt = elt;
     }
 
-    @objid ("7b41a3d4-509e-40f6-8b1b-1e0b6a1d14ca")
     public static final class MdaTypes {
-        @objid ("94a062db-fbd4-4b09-a102-b256301d6055")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("e61afb7c-8f86-4541-be6b-1a1e13bc1641")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b49c1f99-3609-4e67-98f6-2adc8dda168f")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("34e99a64-2bb0-4e77-9788-0e5049726ee9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "d9490073-0cce-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

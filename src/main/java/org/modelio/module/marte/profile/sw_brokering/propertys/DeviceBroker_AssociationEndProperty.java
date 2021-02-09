@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_brokering.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5384771c-5465-4333-b63e-e68980b5336c")
 public class DeviceBroker_AssociationEndProperty implements IPropertyContent {
-    @objid ("6dd83f96-fa93-40ff-af19-ae03f07e9e16")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -39,7 +36,6 @@ public class DeviceBroker_AssociationEndProperty implements IPropertyContent {
         }
     }
 
-    @objid ("8016db94-b983-4fa4-a142-f5129db4de21")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

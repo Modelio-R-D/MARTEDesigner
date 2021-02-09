@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_brokering.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5340cc3b-f774-47c3-aff0-d748fdb95b61")
 public class MemoryBroker_LinkProperty implements IPropertyContent {
-    @objid ("c5d619cf-2e43-46f6-91e7-13ea7dbdb993")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -39,7 +36,6 @@ public class MemoryBroker_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("aa92f10f-4ffb-4610-b566-dd2687ffd503")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

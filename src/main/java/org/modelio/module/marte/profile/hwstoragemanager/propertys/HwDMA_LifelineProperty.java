@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwstoragemanager.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5a4df15e-bdef-4a00-a4b6-b820238b3057")
 public class HwDMA_LifelineProperty implements IPropertyContent {
-    @objid ("96d129e9-d97b-47c2-b331-319a662964e1")
     private static List<ModelElement> referencedHwProcessor;
 
-    @objid ("7766fbf7-8f5d-41eb-b12f-e37e0531d7d3")
     private static List<ModelElement> referencedHwMemory;
 
-    @objid ("e5cd498c-1c43-4d5b-bd93-78ffd729ed6b")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -48,7 +43,6 @@ public class HwDMA_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("2a698e7f-da76-4524-b658-9f2cd2ed9d6a")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         // Hw DMA

@@ -1,15 +1,12 @@
 package org.modelio.module.marte.profile.hwstoragemanager.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("5546e08d-f901-4a46-b13c-d6aeab5bbab4")
 public class PropertyManager {
-    @objid ("dbf962ca-5aeb-4383-be5e-9f7ebf176f15")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.HWDMA_ASSOCIATIONEND)){
             return new HwDMA_AssociationEndProperty();
@@ -89,11 +86,9 @@ public class PropertyManager {
         return new DefaultProperty();
     }
 
-    @objid ("79f01c3d-9ccc-471b-ac43-902333c3c913")
     public static void changeProperty(ModelElement elt, Stereotype ste, int row, String value) {
     }
 
-    @objid ("14b72762-4f5a-4602-ad9b-ecd60a42b1f0")
     public static void update(ModelElement elt, Stereotype ste, IModulePropertyTable table) {
     }
 

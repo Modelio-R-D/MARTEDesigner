@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.association;
 
@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,23 +31,19 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("9ddec143-0a11-427a-8331-dc4db003b3eb")
 public class HwBridgeAssociation extends HwMediaAssociation {
-    @objid ("fe44ab0b-1b30-4f37-92ff-6aadb2d1181c")
     public static final String STEREOTYPE_NAME = "HwBridge_Association";
 
-    @objid ("a9d9c72b-4515-45ca-94d3-07bc49a893db")
     public static final String HWBRIDGE_ASSOCIATION_SIDES_TAGTYPE = "HwBridge_Association_sides";
 
     /**
-     * Tells whether a {@link HwBridgeAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwBridge_Association >>. 
+     * Tells whether a {@link HwBridgeAssociation proxy} can be instantiated from a {@link MObject} checking it is a {@link Association} stereotyped << HwBridge_Association >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("705442d9-d7b4-4a3e-9f3c-31523c121985")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeAssociation.STEREOTYPE_NAME));
     }
@@ -58,21 +53,19 @@ public class HwBridgeAssociation extends HwMediaAssociation {
      * 
      * @return a {@link HwBridgeAssociation} proxy on the created {@link Association}.
      */
-    @objid ("af4821f2-93e8-4500-9932-ae49287d27d8")
     public static HwBridgeAssociation create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Association");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeAssociation.STEREOTYPE_NAME);
         return HwBridgeAssociation.instantiate((Association)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBridgeAssociation} proxy from a {@link Association} stereotyped << HwBridge_Association >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBridgeAssociation} proxy from a {@link Association} stereotyped << HwBridge_Association >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Association
      * @return a {@link HwBridgeAssociation} proxy or <i>null</i>.
      */
-    @objid ("1df2fb5d-6f96-40ae-9207-848ac5305fc2")
     public static HwBridgeAssociation instantiate(final Association obj) {
         return HwBridgeAssociation.canInstantiate(obj) ? new HwBridgeAssociation(obj) : null;
     }
@@ -85,7 +78,6 @@ public class HwBridgeAssociation extends HwMediaAssociation {
      * @return a {@link HwBridgeAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("b1ba7f7c-26ac-4864-bdb5-280449c58ca1")
     public static HwBridgeAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (HwBridgeAssociation.canInstantiate(obj))
         	return new HwBridgeAssociation(obj);
@@ -93,7 +85,6 @@ public class HwBridgeAssociation extends HwMediaAssociation {
         	throw new IllegalArgumentException("HwBridgeAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("b97189be-93e9-4317-a9c9-7b6d6f80d514")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +104,6 @@ public class HwBridgeAssociation extends HwMediaAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("80938b8e-e627-4ba5-b18a-f7ed11545741")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
@@ -124,12 +114,10 @@ public class HwBridgeAssociation extends HwMediaAssociation {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("d6c777ca-72ed-40fd-ac18-0b0ab4a124ab")
     public List<String> getHwBridge_Association_sides() {
         return this.elt.getTagValues(HwBridgeAssociation.MdaTypes.HWBRIDGE_ASSOCIATION_SIDES_TAGTYPE_ELT);
     }
 
-    @objid ("62519a37-1dc9-4688-9032-458dcb115e00")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +128,23 @@ public class HwBridgeAssociation extends HwMediaAssociation {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1a53f64b-9763-4d08-ab52-eb30d71b28a7")
     public void setHwBridge_Association_sides(final List<String> values) {
         this.elt.putTagValues(HwBridgeAssociation.MdaTypes.HWBRIDGE_ASSOCIATION_SIDES_TAGTYPE_ELT, values);
     }
 
-    @objid ("db4a0dcb-36c8-4b76-af37-d80b5e2c4727")
     protected HwBridgeAssociation(final Association elt) {
         super(elt);
     }
 
-    @objid ("29b120f0-b700-4256-a90c-f308fd8641c6")
     public static final class MdaTypes {
-        @objid ("b0f19ead-103c-486f-899a-8205e6022b79")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("a2503dc3-113b-4b07-968c-7fa6f1cac7a1")
         public static TagType HWBRIDGE_ASSOCIATION_SIDES_TAGTYPE_ELT;
 
-        @objid ("e30b54f1-7f6f-4e0a-bd80-58b8ca40a709")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("504c6582-94da-47ab-978d-156e4a22b474")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("c5b5b842-b294-41f6-9139-47d1001021c9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "e7e8ec3d-10ac-11df-81d9-0014222a9f79");
             HWBRIDGE_ASSOCIATION_SIDES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "bf48283a-1726-11df-b92a-0014222a9f79");

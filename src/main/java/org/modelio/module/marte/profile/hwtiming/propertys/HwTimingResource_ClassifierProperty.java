@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwtiming.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,21 +11,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("7c1f3fc2-31c7-4366-9344-1b43f137f48e")
 public class HwTimingResource_ClassifierProperty implements IPropertyContent {
-    @objid ("9feaa1cc-5f3c-474b-9ca6-6206cefecc52")
     private static List<ModelElement> ownedHwResource;
 
-    @objid ("49ee5366-11b6-4b78-a7e2-f13a4d3a7ae9")
     private static List<ModelElement> ownedHwEndPoint;
 
-    @objid ("35c91242-51c2-471a-ba87-a9d7b89cae89")
     private static List<ModelElement> ownedHwResourceService;
 
-    @objid ("89c90433-133f-42b2-906a-681d64fa9c0a")
     private static List<ModelElement> referencedHwResourceService;
 
-    @objid ("aff8b2e7-c9e6-4bd8-a6d7-631daffcdca8")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -65,7 +58,6 @@ public class HwTimingResource_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("1314d30e-f608-4270-b4d7-d7f9a18be5ef")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwstoragemanager.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwstoragemanager.model.HwStorageManager_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("d2396eba-be92-4d17-83c9-99f92b1565b6")
 public class HwStorageManager_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("db13a05c-19bd-46a9-8618-942d8cfe6584")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -32,7 +29,6 @@ public class HwStorageManager_BindableInstanceCommand extends DefaultModuleComma
         return false;
     }
 
-    @objid ("f094f9c4-4003-49b9-a468-66c2e23fbe5c")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwStorageManager_BindableInstanceCommand")){

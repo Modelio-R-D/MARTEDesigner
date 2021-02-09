@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwpower.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwpower.model.HwCoolingSupply_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("662d650f-73e7-4942-a015-3bcabfb5dfac")
 public class HwCoolingSupply_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("a5f545a0-d401-418a-ad4b-47543cdf7c97")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class HwCoolingSupply_InstanceCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("19317b57-1c8e-498d-bfd8-eb6746f00d89")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwCoolingSupply_InstanceCommand")){

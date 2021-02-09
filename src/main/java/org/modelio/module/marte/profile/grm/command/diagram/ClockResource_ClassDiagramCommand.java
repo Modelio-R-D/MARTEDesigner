@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ClockResource_Class;
 
-@objid ("4acccfb9-ddba-4922-b957-5b315be64184")
 public class ClockResource_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("6dee7d4f-9a6f-4792-9e2e-0614c9112b3f")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class ClockResource_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("808e13b6-9fc2-4e08-b79d-4f59d44430be")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClockResource_ClassCommand")){

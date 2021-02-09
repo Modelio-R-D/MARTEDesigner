@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.SwTimerResource_Class;
 
-@objid ("43a8952d-34d6-41e2-8f17-9ebd3619a0c7")
 public class SwTimerResource_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("eb056a10-f966-46b3-b488-223524405e96")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -44,7 +41,6 @@ public class SwTimerResource_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("bf576767-e798-4507-8ec8-904266c80a1e")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwTimerResource_ClassCommand")){

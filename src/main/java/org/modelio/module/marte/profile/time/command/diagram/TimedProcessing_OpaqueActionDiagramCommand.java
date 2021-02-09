@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.time.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -12,9 +11,7 @@ import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.time.model.TimedProcessing_OpaqueAction;
 
-@objid ("32786aac-691a-423e-bd03-ca1b70a0ccb4")
 public class TimedProcessing_OpaqueActionDiagramCommand extends DefaultBoxTool {
-    @objid ("4b538ceb-bfdd-4527-a01f-aa32657f9ebc")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -32,7 +29,6 @@ public class TimedProcessing_OpaqueActionDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("d0af0dd7-94b1-4cf0-abad-db3d829d2aca")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("TimedProcessing_OpaqueActionCommand")){

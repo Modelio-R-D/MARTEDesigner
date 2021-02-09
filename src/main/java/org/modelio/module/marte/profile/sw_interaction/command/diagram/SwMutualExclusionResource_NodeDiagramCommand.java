@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_interaction.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.SwMutualExclusionResource_Node;
 
-@objid ("c3abf2dd-9a44-4aa5-96a4-a811e20e8741")
 public class SwMutualExclusionResource_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("5a614bbd-fe25-449f-a3d0-83784a9583fe")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class SwMutualExclusionResource_NodeDiagramCommand extends DefaultBoxTool
         return false;
     }
 
-    @objid ("0bda4018-ab40-4bc3-9ae7-bf3ab668d327")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwMutualExclusionResource_NodeCommand")){

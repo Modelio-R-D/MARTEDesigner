@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.editors;
 
 import java.util.ArrayList;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.custom.TreeEditor;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
@@ -26,7 +25,6 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * - complex structure > ComplexTree
  * @author ehouziaux
  */
-@objid ("fd298f32-2f36-4fbb-8f48-af863fd764af")
 public abstract class CompositeHandle {
     /**
      * Gets beautiful data for a boolean tag type.
@@ -34,7 +32,6 @@ public abstract class CompositeHandle {
      * @param b is a Button because a boolean is represented by a check button.
      * @return a boolean.
      */
-    @objid ("a3d3340f-ee87-409c-925f-28c31e5ba53c")
     public boolean getDataBoolean(Button b) {
         boolean result = false;
         if (b.getSelection()) {
@@ -49,7 +46,6 @@ public abstract class CompositeHandle {
      * @param t is a Text because a single data is represented by a text field.
      * @return a String which can be empty.
      */
-    @objid ("8ea16fa9-0629-4cea-8be0-939bbd59821d")
     public String getDataSingleValue(Text t) {
         return t.getText();
     }
@@ -60,7 +56,6 @@ public abstract class CompositeHandle {
      * @param t is a Text because a single data is represented by a text field.
      * @return a String if the text field contains an integer or is empty, null if the text is not an integer.
      */
-    @objid ("fa6fe013-e221-4b52-a4ce-0362207e4be7")
     public String getDataSingleValueInteger(Text t) {
         String result = "";
         
@@ -76,7 +71,6 @@ public abstract class CompositeHandle {
      * @param t is a Text because a single data is represented by a text field.
      * @return a String if the text field contains an real or is empty, null if the text is not an real.
      */
-    @objid ("ee3c337e-f28e-477f-8478-721d4f55ae84")
     public String getDataSingleValueReal(Text t) {
         String result = null;
         if (ModelUtils.isDouble(t.getText())) {
@@ -91,7 +85,6 @@ public abstract class CompositeHandle {
      * @param l is the integers list.
      * @return a String table, null if the data are not integers.
      */
-    @objid ("c446c1e4-b4f8-4fd4-b2dc-bbcb084e32af")
     public String[] getDataMultipleValueInteger(org.eclipse.swt.widgets.List l) {
         String[] result = null;
         if (ModelUtils.isInteger(l.getItems())) {
@@ -106,7 +99,6 @@ public abstract class CompositeHandle {
      * @param l is the reals list.
      * @return a String table, null if the data are not reals.
      */
-    @objid ("63688440-d511-48fc-bb75-5028d082836b")
     public String[] getDataMultipleValueReal(org.eclipse.swt.widgets.List l) {
         String[] result = null;
         if (ModelUtils.isParseableDouble(l.getItems())) {
@@ -121,7 +113,6 @@ public abstract class CompositeHandle {
      * @param l is the string list.
      * @return a String table.
      */
-    @objid ("5b2567ec-2f8a-44da-a5b5-d2ae933cc9f3")
     public String[] getDataMultipleValue(org.eclipse.swt.widgets.List l) {
         String[] result = null;
         result = l.getItems();
@@ -134,7 +125,6 @@ public abstract class CompositeHandle {
      * @param l is the integers list.
      * @return a String table which can be null is there are not items in the list.
      */
-    @objid ("9d73a16c-06f3-4664-bd3d-3895c56a321d")
     public String[] getDataMultipleElt(org.eclipse.swt.widgets.List l) {
         String[] result = null;
         result = l.getItems();
@@ -147,7 +137,6 @@ public abstract class CompositeHandle {
      * @param c is the combo box which contains the different model elements.
      * @return a String which is the model element or an empty String.
      */
-    @objid ("c382e550-017c-4d6c-88fc-ff5684dee040")
     public String getDataSingleElt(Combo c) {
         return c.getText();
     }
@@ -158,7 +147,6 @@ public abstract class CompositeHandle {
      * @param bs is the check buttons list.
      * @return a String table which contains the different kinds chosen.
      */
-    @objid ("6fbed77e-5073-49db-b3fe-fc1fccf4ee93")
     public String[] getDataMultipleKind(ArrayList<Button> bs) {
         ArrayList<String> res = new ArrayList<>();
         
@@ -178,7 +166,6 @@ public abstract class CompositeHandle {
      * @param complex is the tree editor array List<MObject> which contains the different controls which contains the data.
      * @return a String table which contains the complex data.
      */
-    @objid ("ab65e930-ad3d-43d2-a022-237eeadda431")
     public String[] getDataComplex(ArrayList<ArrayList<TreeEditor>> complex) {
         // empty items checking
         // the empty data will be removed.
@@ -244,7 +231,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("52a54c29-c0dc-4f11-a260-84033be83e58")
     public void updateBoolean(Button b, String tagType, ModelElement element) {
         if (ModelUtils.hasTaggedValue(tagType, element)) {
             b.setSelection(true);
@@ -261,7 +247,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("dff4ea35-774b-461d-8a5c-0eeeddddf80d")
     public void updateSingleValue(Text t, String tagType, ModelElement element) {
         t.setText(ModelUtils.getTaggedValue(tagType, element));
     }
@@ -271,7 +256,6 @@ public abstract class CompositeHandle {
      * 
      * @param l is the List<MObject> to update.
      */
-    @objid ("bcdda261-ea53-41a1-a862-f7f1c41e7ba4")
     public void updateMultipleValue(org.eclipse.swt.widgets.List l, String tagType, ModelElement element) {
         if(ModelUtils.getMultipleTaggedValue(tagType, element) != null) {
             l.setItems(ModelUtils.getMultipleTaggedValue(tagType, element));
@@ -286,7 +270,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("74cfd362-b871-49bf-b8fa-f8e96d83fa3b")
     public void updateSingleElement(Combo c, String tagType, ModelElement element, ListUtils list, String stereoDepName) {
         c.setItems(list.getListString());
         c.add("", 0);
@@ -309,7 +292,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("b4956fae-46de-4e4a-b4e2-0942e035e924")
     public void updateMultipleElement(AddRemoveList<MObject> l, String tagType, ModelElement element, Class<? extends MObject> extendedClass, String stereoName, String depName) {
         // lists initialization
         String[] availableElt = ModelUtils.searchElement(extendedClass, stereoName).getListString();
@@ -347,7 +329,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("4498b297-a989-4b79-8c00-9393e4933854")
     public void updateSingleKind(Combo c, String tagType, ModelElement element, String[] list) {
         c.setItems(list);
         c.add("", 0);
@@ -362,7 +343,6 @@ public abstract class CompositeHandle {
      * @param tagType is the tag type name.
      * @param element is the owner this.element.
      */
-    @objid ("1a6eb8c2-b232-4585-b4ba-08704d5be96e")
     public void updateMultipleKind(ArrayList<Button> bs, String tagType, ModelElement element) {
         String[] current = ModelUtils.getMultipleTaggedValue(tagType, element);
         if (current != null) {

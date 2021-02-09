@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ProcessingResource_Parameter;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("b2636227-d2c2-4366-9e50-e5fb0bd6497c")
 public class ProcessingResource_ParameterCommand extends DefaultModuleCommandHandler {
-    @objid ("3a8bbecc-dbb1-4889-8ee6-23bc20017e9b")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class ProcessingResource_ParameterCommand extends DefaultModuleCommandHan
         return false;
     }
 
-    @objid ("8ec93eef-1f7f-45c1-b393-82628d6b3445")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ProcessingResource_ParameterCommand")){

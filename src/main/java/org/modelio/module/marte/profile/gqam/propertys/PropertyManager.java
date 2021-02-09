@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("7a3fd11d-a646-4df0-99bb-6f652eb15061")
 public class PropertyManager {
-    @objid ("3b9082e9-a24e-40ed-b9f9-7fa24e9d6028")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.GAACQSTEP_MODELELEMENT)){
             return new  GaAcqStep_ModelElementProperty();

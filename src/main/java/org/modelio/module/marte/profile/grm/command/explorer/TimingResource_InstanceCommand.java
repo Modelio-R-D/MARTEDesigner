@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.TimingResource_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("db6e4e9e-8bf0-4076-9ea1-7a308cff87a4")
 public class TimingResource_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("162c0b46-aa64-4e86-8d50-5a5358d80aaa")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class TimingResource_InstanceCommand extends DefaultModuleCommandHandler 
         return false;
     }
 
-    @objid ("72f75399-66cb-433b-9281-353325c24a7a")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("TimingResource_InstanceCommand")){

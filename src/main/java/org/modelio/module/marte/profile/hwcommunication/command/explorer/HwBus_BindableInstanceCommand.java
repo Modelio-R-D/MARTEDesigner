@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwBus_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("d814774a-d842-4e41-8ac3-e2e48d7fb6c2")
 public class HwBus_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("6e8395ea-8915-4cbc-b7b3-d5cb4dd501fb")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class HwBus_BindableInstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("af9627fb-c2cf-45ce-a2f3-678cddcf305d")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBus_BindableInstanceCommand")){

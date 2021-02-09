@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcommunication.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("7a34cc4d-0fa1-4e10-b47f-4f53c588b8d8")
 public class HwBus_LifelineProperty implements IPropertyContent {
-    @objid ("11d9470a-dd54-4f1d-8efc-0cdb0c0b1c24")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -27,7 +24,6 @@ public class HwBus_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("624f1b85-b23a-417f-a64c-6dc122c9200c")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationEndPoint_Class;
 
-@objid ("ed7e4869-d5f6-45b9-bf34-6a4b9b13c029")
 public class CommunicationEndPoint_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("f87773f4-2015-48f6-ae9b-ab5ca3a490f7")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class CommunicationEndPoint_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("94e1827d-7df1-43c5-b3f8-cde62d88ae36")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationEndPoint_ClassCommand")){

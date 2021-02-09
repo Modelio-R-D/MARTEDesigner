@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.hwdevice.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("b63ee0ab-b956-4e5a-8cd5-5f2bf24e2698")
 public class HwDevice_ClassifierProperty implements IPropertyContent {
-    @objid ("ed62e257-b469-46cc-b5f3-f38b4c5ca86c")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("31151f2e-40cc-4bca-8a20-4e5457247af2")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -47,7 +43,6 @@ public class HwDevice_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("e15e37f6-aa72-4703-992f-ca5c64920523")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         listScheduler = MARTESearchUtils.searchScheduler();

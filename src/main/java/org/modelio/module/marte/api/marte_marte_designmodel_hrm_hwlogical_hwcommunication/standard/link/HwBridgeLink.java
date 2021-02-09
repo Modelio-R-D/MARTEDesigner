@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.link;
 
@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,23 +31,19 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("8f4258ff-2375-430b-a9c1-b2a9f56580ad")
 public class HwBridgeLink extends HwMediaLink {
-    @objid ("59c91639-fd09-4167-9c90-daa14295f273")
     public static final String STEREOTYPE_NAME = "HwBridge_Link";
 
-    @objid ("ebe01cd0-372e-4603-b01f-b19d96a0c5cd")
     public static final String HWBRIDGE_LINK_SIDES_TAGTYPE = "HwBridge_Link_sides";
 
     /**
-     * Tells whether a {@link HwBridgeLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwBridge_Link >>. 
+     * Tells whether a {@link HwBridgeLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << HwBridge_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("5d1aeff2-e89b-4a61-ac9e-7ede29b58335")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeLink.STEREOTYPE_NAME));
     }
@@ -58,21 +53,19 @@ public class HwBridgeLink extends HwMediaLink {
      * 
      * @return a {@link HwBridgeLink} proxy on the created {@link Link}.
      */
-    @objid ("70bfb574-c7d3-485c-b847-de86851cc311")
     public static HwBridgeLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwBridgeLink.STEREOTYPE_NAME);
         return HwBridgeLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwBridgeLink} proxy from a {@link Link} stereotyped << HwBridge_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwBridgeLink} proxy from a {@link Link} stereotyped << HwBridge_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link HwBridgeLink} proxy or <i>null</i>.
      */
-    @objid ("c2fbdfd9-c5ac-49e3-a71c-ad6c9c7eaf79")
     public static HwBridgeLink instantiate(final Link obj) {
         return HwBridgeLink.canInstantiate(obj) ? new HwBridgeLink(obj) : null;
     }
@@ -85,7 +78,6 @@ public class HwBridgeLink extends HwMediaLink {
      * @return a {@link HwBridgeLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c616521a-e23c-47eb-8875-ea6c23182507")
     public static HwBridgeLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (HwBridgeLink.canInstantiate(obj))
         	return new HwBridgeLink(obj);
@@ -93,7 +85,6 @@ public class HwBridgeLink extends HwMediaLink {
         	throw new IllegalArgumentException("HwBridgeLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("ad9f7cbc-0f8c-47e0-87b4-26073265f9e6")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +104,6 @@ public class HwBridgeLink extends HwMediaLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("9fd29292-79df-4a7d-8040-6f573a607280")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
@@ -124,12 +114,10 @@ public class HwBridgeLink extends HwMediaLink {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("389f6f4e-c5ec-4657-9458-3f44bc856ef9")
     public List<String> getHwBridge_Link_sides() {
         return this.elt.getTagValues(HwBridgeLink.MdaTypes.HWBRIDGE_LINK_SIDES_TAGTYPE_ELT);
     }
 
-    @objid ("93805a82-8e37-4fc6-aa1a-1c8c46c4d766")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +128,23 @@ public class HwBridgeLink extends HwMediaLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6c6e80df-7702-4265-b3b6-18ce288807c5")
     public void setHwBridge_Link_sides(final List<String> values) {
         this.elt.putTagValues(HwBridgeLink.MdaTypes.HWBRIDGE_LINK_SIDES_TAGTYPE_ELT, values);
     }
 
-    @objid ("20a0634c-dd1c-46e7-8715-1902228f02f0")
     protected HwBridgeLink(final Link elt) {
         super(elt);
     }
 
-    @objid ("6413bd8a-1237-4dd3-bb36-6ee6c1802d2c")
     public static final class MdaTypes {
-        @objid ("566ed97e-46d8-4bf9-a3e1-e9ae0fefc196")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("6ffa75d0-14d6-46da-ae40-50489dac4f9f")
         public static TagType HWBRIDGE_LINK_SIDES_TAGTYPE_ELT;
 
-        @objid ("7e398bfc-67b8-4381-9d06-244c22635385")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("02e16cb8-b20b-46dd-b0fc-da31ae5d0ddf")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("f1d25077-afca-46e4-bff8-c0e8149069bc")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "011da470-0ccf-11df-8525-001302895b2b");
             HWBRIDGE_LINK_SIDES_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "c1eae09d-1726-11df-b92a-0014222a9f79");

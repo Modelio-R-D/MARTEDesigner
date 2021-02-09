@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.sw_interaction.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -17,18 +16,13 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("8d6953d5-a478-414d-bd45-855537b19ada")
 public class SwMutualExclusionResource_LinkProperty implements IPropertyContent {
-    @objid ("abba1580-fea6-4d63-90a2-16124cdd09cd")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("7192e3de-3e4f-4056-831e-4ae87650663b")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("c6151621-1ce2-49d8-a623-dd25ef7abb74")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("b5815085-6cd7-4f03-9759-d74e4e2ff137")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -96,7 +90,6 @@ public class SwMutualExclusionResource_LinkProperty implements IPropertyContent 
         }
     }
 
-    @objid ("4ab67b21-a4f1-47a2-8897-f228fed58d65")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

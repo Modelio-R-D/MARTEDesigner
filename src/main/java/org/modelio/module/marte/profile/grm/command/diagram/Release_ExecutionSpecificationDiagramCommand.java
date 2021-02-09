@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -14,9 +13,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Release_ExecutionSpecification;
 
-@objid ("3bfc645d-a86c-43a6-8abc-592aecfcd910")
 public class Release_ExecutionSpecificationDiagramCommand extends DefaultBoxTool {
-    @objid ("bc2679ba-3b74-4541-9d9e-1bdf843e943e")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -40,7 +37,6 @@ public class Release_ExecutionSpecificationDiagramCommand extends DefaultBoxTool
         return false;
     }
 
-    @objid ("f1c13af6-3132-4aff-b1b2-c8fd59355e04")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Release_ExecutionSpecificationCommand")){

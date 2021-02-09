@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SecondaryScheduler_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("3d2b4c00-638d-4545-b6bd-d4902e60dab5")
 public class SecondaryScheduler_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("a55b0e47-2923-4342-9532-a25e28ad72d0")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class SecondaryScheduler_ClassCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("48747f48-bb6d-4058-aa79-c4bcc64f3bb5")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SecondaryScheduler_ClassCommand")){

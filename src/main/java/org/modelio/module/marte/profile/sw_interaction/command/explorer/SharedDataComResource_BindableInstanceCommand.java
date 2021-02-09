@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.SharedDataComResource_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("d12f0d95-0cbd-4046-bed8-3a0ae6e61692")
 public class SharedDataComResource_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("e3019ab9-2ceb-4ac7-a785-ab8ecb5e7c68")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class SharedDataComResource_BindableInstanceCommand extends DefaultModule
         return false;
     }
 
-    @objid ("80c5e7ab-fe40-4dd6-b3ef-d680ff6ecd9b")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SharedDataComResource_BindableInstanceCommand")){

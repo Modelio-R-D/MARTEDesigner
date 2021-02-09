@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_brokering.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_brokering.model.DeviceBroker_Class;
 
-@objid ("330f7fdb-8b16-4c2c-80c7-22b526897d6e")
 public class DeviceBroker_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("5351493f-bdbc-4753-ae99-fa89aaf3c1f4")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -43,7 +40,6 @@ public class DeviceBroker_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("26ecb3de-e389-4c3a-8f76-4757244cbf1e")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DeviceBroker_ClassCommand")){

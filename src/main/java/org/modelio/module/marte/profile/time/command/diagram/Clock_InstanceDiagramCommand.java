@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.time.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.time.model.Clock_Instance;
 
-@objid ("06cd3d63-41bf-4792-95c1-118f6128a696")
 public class Clock_InstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("7652fc3f-4740-456e-8883-e73b020e23ea")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class Clock_InstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("f4bb603e-1de9-4a7b-b46e-b015b0cbda01")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Clock_InstanceCommand")){

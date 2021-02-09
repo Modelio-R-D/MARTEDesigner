@@ -1,15 +1,12 @@
 package org.modelio.module.marte.profile.sw_interaction.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("43c28163-49e1-457a-9680-9cddccec318b")
 public class PropertyManager {
-    @objid ("f6aa8613-6918-4102-8bab-4e41498b5cbf")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.MESSAGECOMRESOURCE_ASSOCIATIONEND)){
             return new MessageComResource_AssociationEndProperty();
@@ -162,11 +159,9 @@ public class PropertyManager {
         return new DefaultProperty();
     }
 
-    @objid ("74e20129-1191-4264-a56b-13ea3521e5b8")
     public static void changeProperty(ModelElement elt, Stereotype ste, int row, String value) {
     }
 
-    @objid ("23506874-80f8-43ff-ae41-260638773e12")
     public static void update(ModelElement elt, Stereotype ste, IModulePropertyTable table) {
     }
 

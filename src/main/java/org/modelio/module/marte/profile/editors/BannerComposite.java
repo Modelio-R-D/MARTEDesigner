@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.editors;
 
 import java.io.File;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.custom.StyledText;
@@ -20,12 +19,9 @@ import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
  * It is used for the properties frame.
  * @author ehouziaux
  */
-@objid ("d0469bd7-4aef-4669-ace0-ba8e04ffd33f")
 public class BannerComposite extends Composite {
-    @objid ("5001dcdf-06bb-4d16-bcba-f5ba31f9e332")
     private StyledText text;
 
-    @objid ("85e26e79-ba4b-4b8a-a20f-6ff17c65961b")
     private Label label;
 
     /**
@@ -34,7 +30,6 @@ public class BannerComposite extends Composite {
      * @param parent is the parent Composite.
      * @param style is the used SWT style.
      */
-    @objid ("a9515ce0-257c-493c-9b58-250dc28e9e9b")
     public BannerComposite(Composite parent, int style) {
         super(parent, style);
         
@@ -91,7 +86,6 @@ public class BannerComposite extends Composite {
      * @param title is the banner title.
      * @param description is the banner description.
      */
-    @objid ("67590471-13c0-4b73-a564-8f8d10ff114c")
     public void setText(String title, String description) {
         String theTitle = title + "\n";
         String htmlText = theTitle + description;

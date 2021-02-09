@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.operat
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,9 +30,7 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("7f679249-6a8e-4124-a504-a4647fded63e")
 public class ReleaseOperation extends GrServiceOperation {
-    @objid ("6fb37c71-2c4b-4b15-9054-7ecb1399204b")
     public static final String STEREOTYPE_NAME = "Release_Operation";
 
     /**
@@ -44,7 +41,6 @@ public class ReleaseOperation extends GrServiceOperation {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("75c26033-82f0-41d0-a3f6-d35354e97bc0")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Operation) && ((Operation) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseOperation.STEREOTYPE_NAME));
     }
@@ -54,7 +50,6 @@ public class ReleaseOperation extends GrServiceOperation {
      * 
      * @return a {@link ReleaseOperation} proxy on the created {@link Operation}.
      */
-    @objid ("e6d20615-e2ca-41a5-8aeb-c07bd7f807a9")
     public static ReleaseOperation create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Operation");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ReleaseOperation.STEREOTYPE_NAME);
@@ -68,7 +63,6 @@ public class ReleaseOperation extends GrServiceOperation {
      * @param obj a Operation
      * @return a {@link ReleaseOperation} proxy or <i>null</i>.
      */
-    @objid ("17ce5c3f-86bb-4c61-b69f-e5ff7b800035")
     public static ReleaseOperation instantiate(final Operation obj) {
         return ReleaseOperation.canInstantiate(obj) ? new ReleaseOperation(obj) : null;
     }
@@ -81,7 +75,6 @@ public class ReleaseOperation extends GrServiceOperation {
      * @return a {@link ReleaseOperation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4c60e9e3-535c-4f43-a7b3-b74c2e7ebe7b")
     public static ReleaseOperation safeInstantiate(final Operation obj) throws IllegalArgumentException {
         if (ReleaseOperation.canInstantiate(obj))
         	return new ReleaseOperation(obj);
@@ -89,7 +82,6 @@ public class ReleaseOperation extends GrServiceOperation {
         	throw new IllegalArgumentException("ReleaseOperation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9020eec3-c929-4229-8f7c-6a54dbf7f2e4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +101,27 @@ public class ReleaseOperation extends GrServiceOperation {
      * Get the underlying {@link Operation}. 
      * @return the Operation represented by this proxy, never null.
      */
-    @objid ("34ee0635-0204-4dd3-b400-4f16e856e522")
     @Override
     public Operation getElement() {
         return (Operation)super.getElement();
     }
 
-    @objid ("1a30e3b5-ead1-4cbf-bc33-291ceddd5fdd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("ff3aa453-8963-45a7-9336-11a37dd683fe")
     protected ReleaseOperation(final Operation elt) {
         super(elt);
     }
 
-    @objid ("d2c4b653-bba5-42e7-9b5a-0a6500480437")
     public static final class MdaTypes {
-        @objid ("43477e4f-b3cd-4c78-8086-d5c71e293c11")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b0cd2033-a305-4584-b4dc-2a42059da894")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("cce69187-d3c9-4e1a-bb9b-fd454208bf24")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("b040d1d3-5a89-4361-bd6a-71172392cee4")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "b1b05a9c-14bf-11df-92f7-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

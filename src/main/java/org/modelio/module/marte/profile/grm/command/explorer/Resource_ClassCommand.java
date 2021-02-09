@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Resource_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("a0ee277b-1970-4062-9c8d-bbb6c31824fb")
 public class Resource_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("b56853a9-0869-430b-bacc-16e259e5babc")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class Resource_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("227f7707-078e-4647-9eea-553bb955fc18")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Resource_ClassCommand")){

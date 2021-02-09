@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -30,15 +29,12 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("cee1ea78-02ab-4281-98d1-e39060009654")
 public class ProfileAssociationDrivenByHwDMAHwProcessor {
-    @objid ("f4965bad-41e4-4457-8c98-d9496f4278da")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_drivenBy_HwDMA_HwProcessor";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("eb4f44cb-db15-4545-ae70-b5cc3f5ccb40")
     protected final Dependency elt;
 
     /**
@@ -49,7 +45,6 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("13b57bd1-eba7-49ea-b106-f87b04fcd7e2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationDrivenByHwDMAHwProcessor.STEREOTYPE_NAME));
     }
@@ -59,7 +54,6 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
      * 
      * @return a {@link ProfileAssociationDrivenByHwDMAHwProcessor} proxy on the created {@link Dependency}.
      */
-    @objid ("b67a20f9-d67a-48f7-ac02-60827c614e16")
     public static ProfileAssociationDrivenByHwDMAHwProcessor create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationDrivenByHwDMAHwProcessor.STEREOTYPE_NAME);
@@ -73,7 +67,6 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
      * @param obj a Dependency
      * @return a {@link ProfileAssociationDrivenByHwDMAHwProcessor} proxy or <i>null</i>.
      */
-    @objid ("671f54b1-4385-4b14-ae21-b5f997b1a05f")
     public static ProfileAssociationDrivenByHwDMAHwProcessor instantiate(final Dependency obj) {
         return ProfileAssociationDrivenByHwDMAHwProcessor.canInstantiate(obj) ? new ProfileAssociationDrivenByHwDMAHwProcessor(obj) : null;
     }
@@ -86,7 +79,6 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
      * @return a {@link ProfileAssociationDrivenByHwDMAHwProcessor} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("67a8bf5c-9baa-4588-ace1-4ac71bbfdb02")
     public static ProfileAssociationDrivenByHwDMAHwProcessor safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationDrivenByHwDMAHwProcessor.canInstantiate(obj))
         	return new ProfileAssociationDrivenByHwDMAHwProcessor(obj);
@@ -94,7 +86,6 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
         	throw new IllegalArgumentException("ProfileAssociationDrivenByHwDMAHwProcessor: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("1dc1f82f-aeb9-4d3a-83df-439b59733d1f")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +105,26 @@ public class ProfileAssociationDrivenByHwDMAHwProcessor {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("f195322d-a366-48c1-954b-11a5066e7ccd")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("ad0aba3d-b489-45d6-b88e-5bbf1f05f6d1")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("46a79c65-f333-402a-a51a-2c91c062b718")
     protected ProfileAssociationDrivenByHwDMAHwProcessor(final Dependency elt) {
         this.elt = elt;
     }
 
-    @objid ("a681cd0a-9374-47ca-89ba-00be10f5ce7a")
     public static final class MdaTypes {
-        @objid ("614b6cdb-ed61-47f2-b2dc-1725af93b970")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("342ec4c8-c7a6-427f-97f0-d3f71c554f33")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("fb91e05c-90ce-426f-bb77-83a70e2adb03")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("e06d5314-9ea3-42c8-a225-092657ea39e3")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "a0d18452-936b-11e0-b960-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

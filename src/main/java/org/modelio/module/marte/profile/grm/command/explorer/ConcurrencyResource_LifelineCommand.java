@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("9b13761d-cfba-476c-b356-3c69a7f522e5")
 public class ConcurrencyResource_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("f05e5c0e-f0f1-401d-9dbd-7ac79c05b6c8")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class ConcurrencyResource_LifelineCommand extends DefaultModuleCommandHan
         return false;
     }
 
-    @objid ("cf753ec8-356f-4452-ab62-141e5743ed57")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ConcurrencyResource_LifelineCommand")){

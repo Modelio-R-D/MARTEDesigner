@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SynchronizationResource_AssociationEnd;
 
-@objid ("b343da75-2679-48aa-8b9a-c3e94c57b7ab")
 public class SynchronizationResource_AssociationEndDiagramCommand extends DefaultBoxTool {
-    @objid ("1ad2894c-eaf1-4093-bb39-a044eaac3037")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class SynchronizationResource_AssociationEndDiagramCommand extends Defaul
         return false;
     }
 
-    @objid ("fd90cdc6-e0b1-4cd6-870e-e15c5f81d250")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SynchronizationResource_AssociationEndCommand")){

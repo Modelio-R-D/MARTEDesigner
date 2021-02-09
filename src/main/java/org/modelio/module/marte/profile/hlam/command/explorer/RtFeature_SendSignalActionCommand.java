@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hlam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hlam.model.RtFeature_SendSignalAction;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("05af13ec-2418-4418-91e2-0c63a068c09a")
 public class RtFeature_SendSignalActionCommand extends DefaultModuleCommandHandler {
-    @objid ("acb76393-b00e-4dd9-bd2a-2d736d1d2500")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class RtFeature_SendSignalActionCommand extends DefaultModuleCommandHandl
         return false;
     }
 
-    @objid ("d38a5fd1-a3cd-4000-ada0-318bab798cb6")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("RtFeature_SendSignalActionCommand")){

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("cb1d99b4-5a90-4bb4-91b8-104ddca125e6")
 public class GaCommHost_LinkProperty implements IPropertyContent {
-    @objid ("71216f9d-2336-4aac-afe2-19840a2a8e0a")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -45,7 +42,6 @@ public class GaCommHost_LinkProperty implements IPropertyContent {
                 }
     }
 
-    @objid ("9c537c8e-dd75-4c30-87bb-748dd93ed7b6")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         // Ga communication host

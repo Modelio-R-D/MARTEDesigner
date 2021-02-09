@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.SwConcurrentResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("de38c833-4e88-47a5-ac7a-e74135b09cea")
 public class SwConcurrentResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("0a8f3a3c-fc1a-48e3-b01d-dd24c7a83592")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class SwConcurrentResource_NodeCommand extends DefaultModuleCommandHandle
         return false;
     }
 
-    @objid ("5038b781-a2f2-4434-8382-b84f2e8b6de1")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwConcurrentResource_NodeCommand")){

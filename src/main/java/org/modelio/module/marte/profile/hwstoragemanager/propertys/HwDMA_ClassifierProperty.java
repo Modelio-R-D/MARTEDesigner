@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwstoragemanager.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("9c455c06-d497-43a8-8d31-7d812c541eb1")
 public class HwDMA_ClassifierProperty implements IPropertyContent {
-    @objid ("394ebd8b-1497-402b-9f50-ba92914c3aed")
     private static List<ModelElement> referencedHwProcessor;
 
-    @objid ("9c064b61-0a71-4d7a-ba5e-926c299657e7")
     private static List<ModelElement> referencedHwMemory;
 
-    @objid ("b1484435-4fc1-4986-8099-69fec2729fdb")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -48,7 +43,6 @@ public class HwDMA_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("1ce0b707-5a35-4543-b25b-163f19ca35e0")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         // Hw DMA

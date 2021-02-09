@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.alloc.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -10,9 +9,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("8c06d773-9ec1-44ab-b315-1c8c8cbcddf8")
 public class Allocated_ModelElementProperty implements IPropertyContent {
-    @objid ("4abf61a0-1d9b-48c8-b914-0cc47392e61b")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -26,7 +23,6 @@ public class Allocated_ModelElementProperty implements IPropertyContent {
         }
     }
 
-    @objid ("252d4d81-701e-4749-bb37-9006f9f4d085")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_to = ModelUtils.getTargetDependencyNames(MARTEDesignerStereotypes.ALLOCATE_DEPENDENCY, elt);

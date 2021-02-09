@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.link;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,9 +30,7 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("31cf68fe-e235-447a-946c-6e0328a3ad8f")
 public class DeviceResourceLink extends ProcessingResourceLink {
-    @objid ("7014ba75-ffe5-4b86-b5fa-595f75580c9f")
     public static final String STEREOTYPE_NAME = "DeviceResource_Link";
 
     /**
@@ -44,7 +41,6 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b07e97c5-bed4-4751-8270-399d8255ec22")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLink.STEREOTYPE_NAME));
     }
@@ -54,7 +50,6 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * 
      * @return a {@link DeviceResourceLink} proxy on the created {@link Link}.
      */
-    @objid ("82bb883e-4885-40c7-a322-9f68f1155e0f")
     public static DeviceResourceLink create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, DeviceResourceLink.STEREOTYPE_NAME);
@@ -68,7 +63,6 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * @param obj a Link
      * @return a {@link DeviceResourceLink} proxy or <i>null</i>.
      */
-    @objid ("6bfd70c0-579f-4feb-b391-763dfe334b53")
     public static DeviceResourceLink instantiate(final Link obj) {
         return DeviceResourceLink.canInstantiate(obj) ? new DeviceResourceLink(obj) : null;
     }
@@ -81,7 +75,6 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * @return a {@link DeviceResourceLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("41f63440-a6de-4e3b-89ff-9dbf8926db0c")
     public static DeviceResourceLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (DeviceResourceLink.canInstantiate(obj))
         	return new DeviceResourceLink(obj);
@@ -89,7 +82,6 @@ public class DeviceResourceLink extends ProcessingResourceLink {
         	throw new IllegalArgumentException("DeviceResourceLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d9db7128-a860-4e41-bd75-735363453760")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +101,27 @@ public class DeviceResourceLink extends ProcessingResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("07e28c02-268d-40a1-a8f1-3fea5121a5ae")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
     }
 
-    @objid ("25820e6e-b71b-4d3f-968b-68d60e34e517")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("14c4cf28-c89b-443d-96ba-60c396976c83")
     protected DeviceResourceLink(final Link elt) {
         super(elt);
     }
 
-    @objid ("f075d49d-c30d-4e32-94f2-b330701b6b4b")
     public static final class MdaTypes {
-        @objid ("d0124c0c-81a9-4790-9f81-707c10e4a0a4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("08e9880d-1a48-4ba2-ab05-8f39d62cb3a8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f1e640dd-1f4a-4717-a389-6ba12914face")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("31b36381-f0f4-40aa-913d-4d9e550f217e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "009a84da-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

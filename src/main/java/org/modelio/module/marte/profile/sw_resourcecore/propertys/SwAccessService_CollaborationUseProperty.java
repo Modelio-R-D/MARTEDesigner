@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_resourcecore.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,12 +10,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("cf49e5b6-ba2c-4e17-9042-2a19927492e1")
 public class SwAccessService_CollaborationUseProperty implements IPropertyContent {
-    @objid ("405fc05d-e106-4a42-b9cd-b3f11d6d6340")
     private static List<ModelElement> accessedElements = null;
 
-    @objid ("4d9b31d0-6036-474d-8c95-e6963df64b63")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){ 
@@ -32,7 +28,6 @@ public class SwAccessService_CollaborationUseProperty implements IPropertyConten
              }
     }
 
-    @objid ("2cdf1d6d-d578-4cdc-8e62-7db447ad4a43")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

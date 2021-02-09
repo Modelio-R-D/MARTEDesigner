@@ -1,14 +1,11 @@
 package org.modelio.module.marte.profile.hwdevice.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.hwcommunication.propertys.DefaultProperty;
 
-@objid ("43a29b3c-1913-4b4d-8d75-87b059aa97c8")
 public class PropertyManager {
-    @objid ("e447b6b4-af7f-4ee3-ab75-6de394fe234f")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.HWDEVICE_ASSOCIATIONEND)){
             return new HwDevice_AssociationEndProperty();

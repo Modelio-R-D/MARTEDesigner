@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -33,21 +32,15 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("64c6b935-6c4b-45ee-a7d8-e3ad7e5be273")
 public class SwInteractionResourceLifeline extends SwResourceLifeline {
-    @objid ("107a2cf5-0ebc-4e4d-9a77-2e6609640791")
     public static final String STEREOTYPE_NAME = "SwInteractionResource_Lifeline";
 
-    @objid ("52067990-a135-4277-864b-1487a3621e35")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE = "SwInteractionResource_Lifeline_isIntraMemoryPartitionInteraction";
 
-    @objid ("2fe34738-3178-4131-acc1-45e43b83f1ad")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_WAITINGPOLICYELEMENTS_TAGTYPE = "SwInteractionResource_Lifeline_waitingPolicyElements";
 
-    @objid ("0d040a09-e302-4a87-9cde-30ba263238d7")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUECAPACITY_TAGTYPE = "SwInteractionResource_Lifeline_waitingQueueCapacity";
 
-    @objid ("578e8f80-5206-4d12-bec1-f07a1d0a8a6f")
     public static final String SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUEPOLICY_TAGTYPE = "SwInteractionResource_Lifeline_waitingQueuePolicy";
 
     /**
@@ -58,7 +51,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("6b8827b4-e823-4a9a-8bf0-b32f81db8813")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceLifeline.STEREOTYPE_NAME));
     }
@@ -68,7 +60,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * 
      * @return a {@link SwInteractionResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("7e575800-0555-4f10-bf79-59f3f9c328ee")
     public static SwInteractionResourceLifeline create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwInteractionResourceLifeline.STEREOTYPE_NAME);
@@ -82,7 +73,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * @param obj a Lifeline
      * @return a {@link SwInteractionResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("f3a25224-9dae-41c7-a3ed-85a43759cb9e")
     public static SwInteractionResourceLifeline instantiate(final Lifeline obj) {
         return SwInteractionResourceLifeline.canInstantiate(obj) ? new SwInteractionResourceLifeline(obj) : null;
     }
@@ -95,7 +85,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * @return a {@link SwInteractionResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4c332cff-8760-4b54-83bd-f22a4c21424c")
     public static SwInteractionResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SwInteractionResourceLifeline.canInstantiate(obj))
         	return new SwInteractionResourceLifeline(obj);
@@ -103,7 +92,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
         	throw new IllegalArgumentException("SwInteractionResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3721f036-c142-4642-b5b5-60062c8fb523")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -123,7 +111,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("12506872-6731-499c-8655-39b2482acd45")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -134,7 +121,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("86355e08-085b-4d2b-8635-a891472d2c10")
     public List<String> getSwInteractionResource_Lifeline_waitingPolicyElements() {
         return this.elt.getTagValues(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGPOLICYELEMENTS_TAGTYPE_ELT);
     }
@@ -144,7 +130,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("58e0b4eb-f936-4139-af2b-5f496194eb83")
     public String getSwInteractionResource_Lifeline_waitingQueueCapacity() {
         return this.elt.getTagValue(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUECAPACITY_TAGTYPE_ELT);
     }
@@ -154,12 +139,10 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ff8f6a37-0c8a-48b2-bf91-ecee1ed96021")
     public String getSwInteractionResource_Lifeline_waitingQueuePolicy() {
         return this.elt.getTagValue(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUEPOLICY_TAGTYPE_ELT);
     }
 
-    @objid ("e344c3b7-6a94-4276-89c7-47d4af47bb03")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +153,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c7995f47-a2bf-4624-89aa-ab043f43903c")
     public boolean isSwInteractionResource_Lifeline_isIntraMemoryPartitionInteraction() {
         return this.elt.isTagged(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT);
     }
@@ -180,7 +162,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("eb67f5bb-8ef4-41ac-9134-61ec43e19ace")
     public void setSwInteractionResource_Lifeline_isIntraMemoryPartitionInteraction(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT, this.elt);
@@ -193,7 +174,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("9b85f462-11d2-4eec-9548-de5a678cc665")
     public void setSwInteractionResource_Lifeline_waitingPolicyElements(final List<String> values) {
         this.elt.putTagValues(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGPOLICYELEMENTS_TAGTYPE_ELT, values);
     }
@@ -203,7 +183,6 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("d0362491-8491-4dda-87e3-fb0c1065430e")
     public void setSwInteractionResource_Lifeline_waitingQueueCapacity(final String value) {
         this.elt.putTagValue(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUECAPACITY_TAGTYPE_ELT, value);
     }
@@ -213,40 +192,29 @@ public class SwInteractionResourceLifeline extends SwResourceLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bfa02568-f3b0-4052-b9c9-d4b255df3209")
     public void setSwInteractionResource_Lifeline_waitingQueuePolicy(final String value) {
         this.elt.putTagValue(SwInteractionResourceLifeline.MdaTypes.SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUEPOLICY_TAGTYPE_ELT, value);
     }
 
-    @objid ("12aaddd0-682c-4711-bc27-b5c6ca97ac71")
     protected SwInteractionResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
-    @objid ("53ad73c1-b939-47b5-9da0-a7f75679ea2f")
     public static final class MdaTypes {
-        @objid ("96d9f508-79ae-4eb7-9d13-b496cc8d71e4")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7d65a0b2-292e-4435-9775-b25218f5f21f")
         public static TagType SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT;
 
-        @objid ("32cffb37-eecc-44d3-ab78-4673f64e5147")
         public static TagType SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUEPOLICY_TAGTYPE_ELT;
 
-        @objid ("1065e22d-d278-42ff-9af6-31b78371fee4")
         public static TagType SWINTERACTIONRESOURCE_LIFELINE_WAITINGQUEUECAPACITY_TAGTYPE_ELT;
 
-        @objid ("91aad1e9-c45d-4f73-9c2e-b78a48f92242")
         public static TagType SWINTERACTIONRESOURCE_LIFELINE_WAITINGPOLICYELEMENTS_TAGTYPE_ELT;
 
-        @objid ("bd6560ee-2705-45ff-8a7d-c336e2073435")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("2ce227f4-c488-4349-b8d8-88b16825030d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("2eebf6ae-b786-4c87-ab94-a2ad0487de99")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "fe080db2-10d8-11df-81d9-0014222a9f79");
             SWINTERACTIONRESOURCE_LIFELINE_ISINTRAMEMORYPARTITIONINTERACTION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "fe080db3-10d8-11df-81d9-0014222a9f79");

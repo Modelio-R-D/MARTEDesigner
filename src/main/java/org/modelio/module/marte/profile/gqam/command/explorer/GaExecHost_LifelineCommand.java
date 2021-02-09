@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -12,9 +11,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gqam.model.GaExecHost_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("86003b95-b483-40e6-8634-d5f101dfe814")
 public class GaExecHost_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("c15f32e1-85b0-465d-821b-b7f2376c4f77")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class GaExecHost_LifelineCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("cce89f93-ca66-4e27-b41f-65486fa5cdfa")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("GaExecHost_LifelineCommand")){

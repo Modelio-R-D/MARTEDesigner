@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -21,9 +20,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.FlowPort_Port;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("332323eb-22d9-4003-acb2-679eeda425c9")
 public class FlowPort_PortCommand extends DefaultModuleCommandHandler {
-    @objid ("1b7de1e8-0f74-4220-a03e-999381bcd9aa")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -40,7 +37,6 @@ public class FlowPort_PortCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("574330c3-c7d0-4ed8-96cb-d7ab7fba5b4c")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("FlowPort_PortCommand")){

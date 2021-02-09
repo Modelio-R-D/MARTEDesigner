@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SynchronizationResource_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("4b2eefa5-e839-496f-b8d1-552dcf39ef31")
 public class SynchronizationResource_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("f97fc96d-3e9b-463c-90ab-2b3456697668")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class SynchronizationResource_BindableInstanceCommand extends DefaultModu
         return false;
     }
 
-    @objid ("47036f02-e7da-402b-85e1-fae51bdb046f")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SynchronizationResource_BindableInstanceCommand")){

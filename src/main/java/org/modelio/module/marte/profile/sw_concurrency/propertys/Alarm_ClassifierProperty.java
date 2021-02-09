@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("8ee21d10-7b0a-4d56-96b3-7c4446feded6")
 public class Alarm_ClassifierProperty implements IPropertyContent {
-    @objid ("f3159e18-cccd-40ca-84fb-fca55427b4f9")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("8c1a5ec3-48ee-4547-b8a0-1d50eee0f5ec")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -32,7 +28,6 @@ public class Alarm_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("aebe4091-25a7-4953-b6f9-83941cf65adf")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

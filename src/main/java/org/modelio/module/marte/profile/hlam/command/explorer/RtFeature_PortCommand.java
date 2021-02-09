@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hlam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -22,9 +21,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hlam.model.RtFeature_Port;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("00f0cf92-5968-49a4-91e8-237e5790d02e")
 public class RtFeature_PortCommand extends DefaultModuleCommandHandler {
-    @objid ("05e88b1d-772b-49af-8ccc-3c1f8f407e35")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -42,7 +39,6 @@ public class RtFeature_PortCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("29e804f9-fbc8-4deb-b76d-ba9c80e0adc2")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("RtFeature_PortCommand")){

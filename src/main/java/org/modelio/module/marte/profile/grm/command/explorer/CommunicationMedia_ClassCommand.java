@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationMedia_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("b39fb81b-aa09-45f0-a5a8-66bfa4a1a36a")
 public class CommunicationMedia_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("7efaeec2-b437-4460-8365-5ee7e94b29ab")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class CommunicationMedia_ClassCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("9e2a980c-4abb-452e-8580-210471279765")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationMedia_ClassCommand")){

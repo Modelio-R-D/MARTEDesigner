@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwdevice.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwdevice.model.HwSupport_BindableInstance;
 import org.modelio.module.marte.profile.hwdevice.model.HwSupport_Instance;
 
-@objid ("ee618238-369a-4ac0-91d8-41134b2c5516")
 public class HwSupport_SmartInstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("96e1adf7-bf67-419e-aff2-32e0f40330c7")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -47,7 +44,6 @@ public class HwSupport_SmartInstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("db0a6b45-5f92-4a2a-9260-59306670733e")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwSupport_BindableInstanceCommand")){

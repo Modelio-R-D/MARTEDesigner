@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.instan
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,12 +30,9 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("a6313b49-2a90-4a12-850c-8030418eedbc")
 public class StorageResourceInstance extends ResourceInstance {
-    @objid ("2b8da775-8771-4a54-a198-3a849169d976")
     public static final String STEREOTYPE_NAME = "StorageResource_Instance";
 
-    @objid ("13794ac6-4caf-4bfd-b2f2-0307d7644e27")
     public static final String STORAGERESOURCE_INSTANCE_ELEMENTSIZE_TAGTYPE = "StorageResource_Instance_elementSize";
 
     /**
@@ -47,7 +43,6 @@ public class StorageResourceInstance extends ResourceInstance {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("9f100f8e-18aa-49a3-992b-892c7aa48ffa")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, StorageResourceInstance.STEREOTYPE_NAME));
     }
@@ -57,7 +52,6 @@ public class StorageResourceInstance extends ResourceInstance {
      * 
      * @return a {@link StorageResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("41afda18-cb50-408d-808f-7675636f0e85")
     public static StorageResourceInstance create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, StorageResourceInstance.STEREOTYPE_NAME);
@@ -71,7 +65,6 @@ public class StorageResourceInstance extends ResourceInstance {
      * @param obj a Instance
      * @return a {@link StorageResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("82483a3e-bb57-4ada-8e81-212304336325")
     public static StorageResourceInstance instantiate(final Instance obj) {
         return StorageResourceInstance.canInstantiate(obj) ? new StorageResourceInstance(obj) : null;
     }
@@ -84,7 +77,6 @@ public class StorageResourceInstance extends ResourceInstance {
      * @return a {@link StorageResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("370191b0-d650-4948-bf76-0d82293681c5")
     public static StorageResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (StorageResourceInstance.canInstantiate(obj))
         	return new StorageResourceInstance(obj);
@@ -92,7 +84,6 @@ public class StorageResourceInstance extends ResourceInstance {
         	throw new IllegalArgumentException("StorageResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("70232b2b-b010-421c-87fe-f1d88f6a62fa")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -112,7 +103,6 @@ public class StorageResourceInstance extends ResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("f8f9486c-b6a5-4ec5-929c-1dd62f80687d")
     @Override
     public Instance getElement() {
         return (Instance)super.getElement();
@@ -123,12 +113,10 @@ public class StorageResourceInstance extends ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6fb85ba5-e6a7-4cf0-a6da-799aa076d35f")
     public String getStorageResource_Instance_elementSize() {
         return this.elt.getTagValue(StorageResourceInstance.MdaTypes.STORAGERESOURCE_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT);
     }
 
-    @objid ("0241c9eb-f37e-4b54-a385-00e28b185ac7")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +127,23 @@ public class StorageResourceInstance extends ResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3b3adff4-e867-4a20-be2a-50f44363a0c5")
     public void setStorageResource_Instance_elementSize(final String value) {
         this.elt.putTagValue(StorageResourceInstance.MdaTypes.STORAGERESOURCE_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("9640d270-bd50-46e9-875a-eb0c0a1951f3")
     protected StorageResourceInstance(final Instance elt) {
         super(elt);
     }
 
-    @objid ("650c90b4-e1de-4803-a48b-b834c185f598")
     public static final class MdaTypes {
-        @objid ("868a9586-2971-4ce4-8669-632649c9f173")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("9a251ced-faeb-4c9f-afea-ca34b8816e2e")
         public static TagType STORAGERESOURCE_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT;
 
-        @objid ("b2714638-a7c2-4f12-98bc-59aeab7f8456")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("41631e37-2c3b-43e6-be7b-1b3dcf16f97d")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("641db928-e1de-4169-b34a-b1727f21e7fa")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ffa29394-0cce-11df-8525-001302895b2b");
             STORAGERESOURCE_INSTANCE_ELEMENTSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ffa4f5d5-0cce-11df-8525-001302895b2b");

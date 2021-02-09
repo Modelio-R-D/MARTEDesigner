@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -22,9 +21,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwEndPoint_Port;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("2c518c23-680d-4599-9f0b-b90a155ff6bb")
 public class HwEndPoint_PortCommand extends DefaultModuleCommandHandler {
-    @objid ("0a8bb7b9-4560-4831-bb66-70bfa28c87a9")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -42,7 +39,6 @@ public class HwEndPoint_PortCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("e1d4a32e-3178-4421-a417-a11fd8157fdd")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwEndPoint_PortCommand")){

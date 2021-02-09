@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.variables.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.variables.model.Var_Attribute;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("cf5595c3-7a30-4568-9537-48f25700b8b8")
 public class Var_AttributeCommand extends DefaultModuleCommandHandler {
-    @objid ("3b238883-7678-4b22-bf15-25c4d215ee17")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class Var_AttributeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("45032906-4afe-4972-bf08-c2570847ea08")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Var_AttributeCommand")){

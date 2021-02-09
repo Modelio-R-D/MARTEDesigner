@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ComputingResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("12444ca0-ce08-4c75-b1c8-a6365ef32936")
 public class ComputingResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("82432ca4-1ab8-4969-92cb-acd055fa3d83")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class ComputingResource_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("e8221ebc-7285-4ce8-a7bb-8f5a60b26e7f")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ComputingResource_NodeCommand")){

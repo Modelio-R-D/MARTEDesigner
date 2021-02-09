@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6b292809-1de7-4efb-86ff-80c0e8435cfb")
 public class SwConcurrentResource_AttributeProperty implements IPropertyContent {
-    @objid ("c59b55f2-f511-4d3a-a502-7017575fc3b7")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("8525c997-b54d-4f78-ab59-6ef1abd08442")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("aeffc7f8-7a0d-444d-af05-390f6e3d71b9")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -139,7 +134,6 @@ public class SwConcurrentResource_AttributeProperty implements IPropertyContent 
         }
     }
 
-    @objid ("9bd40ba4-e187-40f0-9d77-0a56e3a3ec93")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

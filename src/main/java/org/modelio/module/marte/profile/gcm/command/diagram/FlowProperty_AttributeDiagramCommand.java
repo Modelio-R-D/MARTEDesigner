@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gcm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.Enumeration;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.FlowProperty_Attribute;
 
-@objid ("7431ff7a-40e7-45a8-a776-e66e84b0e634")
 public class FlowProperty_AttributeDiagramCommand extends DefaultBoxTool {
-    @objid ("94c21e0b-f2a2-460c-a6ed-960b522a2602")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class FlowProperty_AttributeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("833c2d08-6db2-42bd-a17c-1b7303793799")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("FlowProperty_AttributeCommand")) {

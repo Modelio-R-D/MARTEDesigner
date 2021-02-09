@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwpower.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("0a31e796-5f49-4988-987b-498b9b5a4ff9")
 public class HwPowerSupply_AssociationEndProperty implements IPropertyContent {
-    @objid ("450526a1-724f-41dc-a362-62a5d0b07129")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -21,7 +18,6 @@ public class HwPowerSupply_AssociationEndProperty implements IPropertyContent {
         }
     }
 
-    @objid ("ec39eb2e-ee71-4381-a715-832ae0e8b3e2")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

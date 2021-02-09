@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hlam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.commonBehaviors.Behavior;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("57ad65ca-b6b0-4c82-a36a-0fed7af8540b")
 public class RtUnit_ActorProperty implements IPropertyContent {
-    @objid ("0c14518b-67f0-4adb-8174-5e012528ee57")
     private List<ModelElement> behavior = null;
 
-    @objid ("25064629-40c9-4f18-8e8c-91d4f7eb0e4b")
     private List<ModelElement> operation = null;
 
-    @objid ("8fd5f630-2d6e-4eff-b812-e20e6092787e")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -71,7 +66,6 @@ public class RtUnit_ActorProperty implements IPropertyContent {
         }
     }
 
-    @objid ("98497284-a26c-465c-bc8f-e20bde2d7989")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

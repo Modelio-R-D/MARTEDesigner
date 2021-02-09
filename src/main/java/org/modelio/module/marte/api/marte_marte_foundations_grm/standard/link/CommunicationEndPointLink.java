@@ -1,15 +1,14 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.link;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,23 +30,19 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("4407aa48-a058-4f95-8e2b-18cc2a7723de")
 public class CommunicationEndPointLink extends ResourceLink {
-    @objid ("dca3ad2d-2041-4b95-b5f8-35d58591ab8d")
     public static final String STEREOTYPE_NAME = "CommunicationEndPoint_Link";
 
-    @objid ("d2735d20-e460-44ea-ada9-04397c26b8a4")
     public static final String COMMUNICATIONENDPOINT_LINK_PACKETSIZE_TAGTYPE = "CommunicationEndPoint_Link_packetSize";
 
     /**
-     * Tells whether a {@link CommunicationEndPointLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << CommunicationEndPoint_Link >>. 
+     * Tells whether a {@link CommunicationEndPointLink proxy} can be instantiated from a {@link MObject} checking it is a {@link Link} stereotyped << CommunicationEndPoint_Link >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("13943792-8ab3-4453-9161-32ca7350eb10")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Link) && ((Link) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointLink.STEREOTYPE_NAME));
     }
@@ -57,21 +52,19 @@ public class CommunicationEndPointLink extends ResourceLink {
      * 
      * @return a {@link CommunicationEndPointLink} proxy on the created {@link Link}.
      */
-    @objid ("5b936f94-278f-4569-ae52-f8d53d559ed3")
     public static CommunicationEndPointLink create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Link");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Link");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointLink.STEREOTYPE_NAME);
         return CommunicationEndPointLink.instantiate((Link)e);
     }
 
     /**
-     * Tries to instantiate a {@link CommunicationEndPointLink} proxy from a {@link Link} stereotyped << CommunicationEndPoint_Link >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link CommunicationEndPointLink} proxy from a {@link Link} stereotyped << CommunicationEndPoint_Link >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Link
      * @return a {@link CommunicationEndPointLink} proxy or <i>null</i>.
      */
-    @objid ("499f0ae4-4789-4b80-81dd-91fac9605738")
     public static CommunicationEndPointLink instantiate(final Link obj) {
         return CommunicationEndPointLink.canInstantiate(obj) ? new CommunicationEndPointLink(obj) : null;
     }
@@ -84,7 +77,6 @@ public class CommunicationEndPointLink extends ResourceLink {
      * @return a {@link CommunicationEndPointLink} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("ecd3efef-89c1-41c9-80ed-6358f41a1451")
     public static CommunicationEndPointLink safeInstantiate(final Link obj) throws IllegalArgumentException {
         if (CommunicationEndPointLink.canInstantiate(obj))
         	return new CommunicationEndPointLink(obj);
@@ -92,7 +84,6 @@ public class CommunicationEndPointLink extends ResourceLink {
         	throw new IllegalArgumentException("CommunicationEndPointLink: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a2a9ed43-a109-4fe7-948d-307226a4b228")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +104,6 @@ public class CommunicationEndPointLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("12a91491-ae1b-4fa1-bf74-36e89765d0b6")
     public String getCommunicationEndPoint_Link_packetSize() {
         return this.elt.getTagValue(CommunicationEndPointLink.MdaTypes.COMMUNICATIONENDPOINT_LINK_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -122,13 +112,11 @@ public class CommunicationEndPointLink extends ResourceLink {
      * Get the underlying {@link Link}. 
      * @return the Link represented by this proxy, never null.
      */
-    @objid ("3726fc59-82f6-4936-b534-73bffa9f55fd")
     @Override
     public Link getElement() {
         return (Link)super.getElement();
     }
 
-    @objid ("2717a0fe-ce32-4e89-b1f1-2b53e8f7d3dd")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +127,23 @@ public class CommunicationEndPointLink extends ResourceLink {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ac40ae4a-7dbf-4d56-8f36-28f0324dbee7")
     public void setCommunicationEndPoint_Link_packetSize(final String value) {
         this.elt.putTagValue(CommunicationEndPointLink.MdaTypes.COMMUNICATIONENDPOINT_LINK_PACKETSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("49929dc8-9c39-46d3-84db-d4c58a0bd174")
     protected CommunicationEndPointLink(final Link elt) {
         super(elt);
     }
 
-    @objid ("ec3c2a29-b2d4-4eda-b723-867f8abb98cf")
     public static final class MdaTypes {
-        @objid ("cc26c249-7a2e-4382-b400-0064fb592e4e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("1bd60e4a-7f2a-40ba-b8da-55ef36d2bc43")
         public static TagType COMMUNICATIONENDPOINT_LINK_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("5de6c1a4-1d15-4dc5-9204-dc8456da5e9f")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("85a9d48c-dfb2-4165-98b5-5f8de7f282d6")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("297b0b9e-eb84-464f-a716-a1498b1ce0c7")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "99e0a8e3-0f46-11df-8c52-0014222a9f79");
             COMMUNICATIONENDPOINT_LINK_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "7bc05155-0f47-11df-8c52-0014222a9f79");

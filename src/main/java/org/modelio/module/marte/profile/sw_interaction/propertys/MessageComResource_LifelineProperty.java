@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("7f70e399-3834-402f-8887-31c808a44daa")
 public class MessageComResource_LifelineProperty implements IPropertyContent {
-    @objid ("854d94e7-d6b5-4cdf-a11b-990dbcca074e")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("e039bd0e-de63-43d1-9212-5553c0b2511f")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("91b5770c-11ca-4a78-bae2-15d0647be579")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -64,7 +59,6 @@ public class MessageComResource_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("e044df71-8377-4d50-bea6-9e6c7154f52c")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

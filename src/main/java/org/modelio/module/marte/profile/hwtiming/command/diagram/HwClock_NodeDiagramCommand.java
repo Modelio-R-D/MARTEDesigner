@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwtiming.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwtiming.model.HwClock_Node;
 
-@objid ("b8fac94b-eb9b-4ee9-a388-7435285ffc84")
 public class HwClock_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("6d25c198-5b1e-4d9d-a4c9-e2575651aadf")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class HwClock_NodeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("0abb48c1-5a74-4dc0-bac1-b57f7ffdb3fd")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwClock_NodeCommand")){

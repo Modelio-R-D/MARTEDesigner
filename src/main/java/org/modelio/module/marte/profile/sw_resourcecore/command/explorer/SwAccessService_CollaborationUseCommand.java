@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_resourcecore.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -15,9 +14,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_resourcecore.model.SwAccessService_Collaboration;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("1a52086e-e519-41fc-8505-cd8845477b31")
 public class SwAccessService_CollaborationUseCommand extends DefaultModuleCommandHandler {
-    @objid ("d87b9f66-8920-4cc4-bdd7-0e0ea1677fed")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class SwAccessService_CollaborationUseCommand extends DefaultModuleComman
         return false;
     }
 
-    @objid ("4c4aafc6-701d-4f2d-8238-e3211845f015")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwAccessService_CollaborationUseCommand")){

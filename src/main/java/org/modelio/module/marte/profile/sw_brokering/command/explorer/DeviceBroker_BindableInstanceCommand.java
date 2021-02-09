@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_brokering.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_brokering.model.DeviceBroker_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("8f162266-b3bd-4651-b685-3b01973a2e6a")
 public class DeviceBroker_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("71f4fa57-84bf-4dde-a302-4df84312f032")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class DeviceBroker_BindableInstanceCommand extends DefaultModuleCommandHa
         return false;
     }
 
-    @objid ("c2347450-4cfa-498b-b7c8-1a0532861976")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DeviceBroker_BindableInstanceCommand")){

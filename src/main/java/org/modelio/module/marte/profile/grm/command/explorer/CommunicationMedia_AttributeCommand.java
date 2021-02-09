@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationMedia_Attribute;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("d0204e3d-c2cb-4e22-ac33-24bb297f4301")
 public class CommunicationMedia_AttributeCommand extends DefaultModuleCommandHandler {
-    @objid ("cfa5db93-6e92-4abe-95e0-caec2457a15d")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -29,7 +26,6 @@ public class CommunicationMedia_AttributeCommand extends DefaultModuleCommandHan
         return false;
     }
 
-    @objid ("66d023cb-16c8-48df-b77e-bf8fe6b9e76d")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationMedia_AttributeCommand")){

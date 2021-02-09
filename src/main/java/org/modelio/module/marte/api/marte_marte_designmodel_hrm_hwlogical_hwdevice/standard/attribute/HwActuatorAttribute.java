@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwdev
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,9 +30,7 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("328cac1d-5c9a-44ae-928c-9c22115fa52a")
 public class HwActuatorAttribute extends HwIOAttribute {
-    @objid ("f9678287-2dfb-4099-add8-95baa85bc103")
     public static final String STEREOTYPE_NAME = "HwActuator_Attribute";
 
     /**
@@ -44,7 +41,6 @@ public class HwActuatorAttribute extends HwIOAttribute {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1c075422-dbb8-40aa-9646-a70509b7aaf6")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwActuatorAttribute.STEREOTYPE_NAME));
     }
@@ -54,7 +50,6 @@ public class HwActuatorAttribute extends HwIOAttribute {
      * 
      * @return a {@link HwActuatorAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("57f4c70c-81ae-4af0-97c9-723853292cf7")
     public static HwActuatorAttribute create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwActuatorAttribute.STEREOTYPE_NAME);
@@ -68,7 +63,6 @@ public class HwActuatorAttribute extends HwIOAttribute {
      * @param obj a Attribute
      * @return a {@link HwActuatorAttribute} proxy or <i>null</i>.
      */
-    @objid ("59f765cf-b7ff-42b1-a4ea-ccfd013de4d5")
     public static HwActuatorAttribute instantiate(final Attribute obj) {
         return HwActuatorAttribute.canInstantiate(obj) ? new HwActuatorAttribute(obj) : null;
     }
@@ -81,7 +75,6 @@ public class HwActuatorAttribute extends HwIOAttribute {
      * @return a {@link HwActuatorAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("fbefb07a-7e27-495b-b82d-3e438e0a2ef6")
     public static HwActuatorAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (HwActuatorAttribute.canInstantiate(obj))
         	return new HwActuatorAttribute(obj);
@@ -89,7 +82,6 @@ public class HwActuatorAttribute extends HwIOAttribute {
         	throw new IllegalArgumentException("HwActuatorAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d069c029-1373-4812-9053-20866d5b1f7e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +101,27 @@ public class HwActuatorAttribute extends HwIOAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("4ce6917e-8e5c-4ca5-813e-cd57664ec624")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("c457b152-eb98-4bbe-898d-0e914d782baa")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("a29636ec-87ef-43da-b293-b1498b7bcfc0")
     protected HwActuatorAttribute(final Attribute elt) {
         super(elt);
     }
 
-    @objid ("5ccc30e1-5957-4bc4-8b4a-18e05e91f882")
     public static final class MdaTypes {
-        @objid ("26277570-9f12-4d9b-a1af-c8c755dec813")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("99843a74-e6ac-4607-a906-cf66e947ae1f")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("36b4d118-fcb7-42ae-9ed9-97a89460249b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("696513f4-d966-499c-80c5-117404e6899b")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "88a37411-c7ac-11df-ad39-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

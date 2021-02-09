@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Scheduler_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("bf2e3678-5c9c-43f0-85b9-246f7352fffc")
 public class Scheduler_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("ae475b27-6422-432a-a038-66abb1b1d683")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class Scheduler_BindableInstanceCommand extends DefaultModuleCommandHandl
         return false;
     }
 
-    @objid ("0e7a997b-9f8b-4c51-81d8-39b280ac3fe2")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Scheduler_BindableInstanceCommand")){

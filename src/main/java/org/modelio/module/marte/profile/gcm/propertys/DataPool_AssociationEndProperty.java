@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("4d7aafe6-f9e5-4835-b4b1-dbe9bcac2047")
 public class DataPool_AssociationEndProperty implements IPropertyContent {
-    @objid ("06299bdc-e238-4fa8-8a42-38ef6e838e69")
     private static List<ModelElement> _behaviors = null;
 
-    @objid ("9f31a208-7da1-476b-82b7-131424d11f9a")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -41,7 +37,6 @@ public class DataPool_AssociationEndProperty implements IPropertyContent {
         }
     }
 
-    @objid ("059547ac-e371-42a9-8e0b-b1630b55bee0")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] tab_ordering = MARTEEnumerationUtils.getDataPoolOderingKind();

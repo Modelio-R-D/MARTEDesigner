@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("3b7f3bed-e83e-4420-b524-9161f627da84")
 public class HwPLD_LinkProperty implements IPropertyContent {
-    @objid ("43c32c17-2720-4686-8024-18ac2a3b535a")
     private static List<ModelElement> ownedblocksRAMs;
 
-    @objid ("9ce3255c-b99b-422c-a20c-e1054e7b3553")
     private static List<ModelElement> ownedblocksComputing;
 
-    @objid ("9c12281d-0487-477e-ba7e-4dbd4b28e359")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -55,7 +50,6 @@ public class HwPLD_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("319f693e-444b-4309-be6b-040146a8a8bb")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

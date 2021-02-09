@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hlam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hlam.model.RtUnit_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("e7323600-9fe3-4a4f-ba1b-c333a3fa90d4")
 public class RtUnit_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("cdd00d54-5106-4c4f-a34f-ad22e092d2d2")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class RtUnit_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("4d505ae5-5821-4248-8e33-9ff235075bdb")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("RtUnit_ClassCommand")){

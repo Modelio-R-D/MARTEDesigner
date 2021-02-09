@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.time.command.diagram;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.profile.time.model.ClockConstraint_Constraint;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("4ff4dbe4-2d28-4094-824f-0ac18a7aa510")
 public class ClockConstraint_ConstraintDiagramCommand extends DefaultMultiLinkTool {
-    @objid ("02d7ab1b-97c3-4105-a9cc-bfccc4d76821")
     @Override
     public void actionPerformed(IDiagramHandle diagramHandle, IDiagramGraphic lastNode, List<IDiagramGraphic> otherNodes, List<LinkRouterKind> routerKinds, List<ILinkPath> paths, Rectangle rectangle) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClockConstraint_ConstraintCommand")){
@@ -64,7 +61,6 @@ public class ClockConstraint_ConstraintDiagramCommand extends DefaultMultiLinkTo
         }
     }
 
-    @objid ("b0f3caae-aad3-4e3e-87e1-9e485d99e299")
     @Override
     public boolean acceptAdditionalElement(IDiagramHandle diagramRepresentation, List<IDiagramGraphic> previousNodes, IDiagramGraphic targetNode) {
         if(targetNode != null){
@@ -80,7 +76,6 @@ public class ClockConstraint_ConstraintDiagramCommand extends DefaultMultiLinkTo
         return false;
     }
 
-    @objid ("6807a444-4eb7-4f68-9611-20b8599173a4")
     @Override
     public boolean acceptFirstElement(IDiagramHandle diagramRepresentation, IDiagramGraphic targetNode) {
         if(targetNode != null){
@@ -95,7 +90,6 @@ public class ClockConstraint_ConstraintDiagramCommand extends DefaultMultiLinkTo
         return false;
     }
 
-    @objid ("9ae3cb8f-c552-4d3d-a29a-ca3882c7254e")
     @Override
     public boolean acceptLastElement(IDiagramHandle diagramRepresentation, List<IDiagramGraphic> otherNodes, IDiagramGraphic targetNode) {
         if( (targetNode == null) && (otherNodes.size() > 1 )) {

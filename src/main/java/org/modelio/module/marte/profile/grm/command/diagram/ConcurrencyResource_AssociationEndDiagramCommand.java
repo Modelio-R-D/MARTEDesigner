@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_AssociationEnd;
 
-@objid ("05205902-84fa-42a2-adf9-b121f1afd04f")
 public class ConcurrencyResource_AssociationEndDiagramCommand extends DefaultBoxTool {
-    @objid ("5672ca5c-8e70-4286-9f0e-d1ea89f9f609")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class ConcurrencyResource_AssociationEndDiagramCommand extends DefaultBox
         return false;
     }
 
-    @objid ("6f82e7c4-9915-4149-98dc-7b6a0835d353")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ConcurrencyResource_AssociationEndCommand")){

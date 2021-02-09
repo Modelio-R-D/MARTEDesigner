@@ -3,7 +3,6 @@ package org.modelio.module.marte.impl;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.mc.AbstractModelComponentContributor;
 import org.modelio.api.modelio.model.IMetamodelExtensions;
 import org.modelio.api.modelio.model.IModelingSession;
@@ -65,12 +64,9 @@ import org.modelio.vcore.model.filter.IObjectFilter;
 import org.modelio.vcore.smkernel.mapi.MClass;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("f37f2150-42c9-4c70-a8e9-0021b58f3c44")
 public class MARTEModelComponentContributor extends AbstractModelComponentContributor {
-    @objid ("c2389670-d9e6-468c-a756-1d6a7ae25025")
     private IModelingSession session = MARTEModule.getInstance().getModuleContext().getModelingSession();
 
-    @objid ("af137dcc-3947-4ab3-8f2c-8f1ca1e15109")
     public MARTEModelComponentContributor(IModule module) {
         super(module);
     }
@@ -78,7 +74,6 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * Get a TagType from the metamodel extensions.
      */
-    @objid ("6b7ce638-2c4e-4d7c-ac90-b1956bce18db")
     private TagType getTagType(java.lang.Class<? extends MObject> metaclass, String tagTypeName) {
         IMetamodelExtensions metamodel = this.session.getMetamodelExtensions();
         return metamodel.getTagType(IMARTEDesignerPeerModule.MODULE_NAME, tagTypeName, MARTEModule.getInstance().getModuleContext().getModelioServices().getMetamodelService().getMetamodel().getMClass(metaclass));
@@ -87,7 +82,6 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * Get a NoteType from the metamodel extensions.
      */
-    @objid ("3f1c1aa4-7903-4925-b492-2aa16c877596")
     private NoteType getNoteType(java.lang.Class<? extends MObject> metaclass, String noteTypeName) {
         IMetamodelExtensions metamodel = this.session.getMetamodelExtensions();
         return metamodel.getNoteType(IMARTEDesignerPeerModule.MODULE_NAME, noteTypeName, MARTEModule.getInstance().getModuleContext().getModelioServices().getMetamodelService().getMetamodel().getMClass(metaclass));
@@ -96,17 +90,15 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * Get a Steretotype from the metamodel extensions.
      */
-    @objid ("73eb6dfa-7a79-4c66-adea-cef4a2703aa4")
     private Stereotype getStereotype(java.lang.Class<? extends MObject> metaclass, String stereotypeName) {
         IMetamodelExtensions metamodel = this.session.getMetamodelExtensions();
         return metamodel.getStereotype(IMARTEDesignerPeerModule.MODULE_NAME, stereotypeName, MARTEModule.getInstance().getModuleContext().getModelioServices().getMetamodelService().getMetamodel().getMClass(metaclass));
     }
 
-    @objid ("b312f8ee-bed8-4b6c-b98e-e01266ba0195")
     @Override
     public Set<Stereotype> getDependencyStereotypes() {
         Set<Stereotype> stereotypes = new HashSet<>();
-
+        
         stereotypes.add(getStereotype(Behavior.class, MARTEDesignerStereotypes.ACQUIRE_BEHAVIOR));
         stereotypes.add(getStereotype(Collaboration.class, MARTEDesignerStereotypes.ACQUIRE_COLLABORATION));
         stereotypes.add(getStereotype(CollaborationUse.class, MARTEDesignerStereotypes.ACQUIRE_COLLABORATIONUSE));
@@ -1004,23 +996,20 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
         return stereotypes;
     }
 
-    @objid ("e2289e0c-adda-4ab2-8a60-aa980b720ff1")
     @Override
     public Set<MObject> getElements() {
         return Collections.emptySet();
     }
 
-    @objid ("ca7fb112-140e-4c9c-8ee1-68579203ef63")
     @Override
     public Set<ExportedFileEntry> getFiles() {
         return Collections.emptySet();
     }
 
-    @objid ("2fc45c83-6939-4fef-80c6-b72b00aec130")
     @Override
     public Set<NoteType> getNoteTypes() {
         Set<NoteType> noteTypes = new HashSet<>();
-
+        
         noteTypes.add(getNoteType(MARTEDesignerStereotypes.RTFEATURE_CALLACTION, CallAction.class, MARTEDesignerNoteTypes.RTFEATURE_CALLACTION_RTFEATURE_CALLACTION_SPECIFICATION));
         noteTypes.add(getNoteType(MARTEDesignerStereotypes.RTFEATURE_MESSAGE, Message.class, MARTEDesignerNoteTypes.RTFEATURE_MESSAGE_RTFEATURE_MESSAGE_SPECIFICATION));
         noteTypes.add(getNoteType(MARTEDesignerStereotypes.RTFEATURE_OPAQUEACTION, OpaqueAction.class, MARTEDesignerNoteTypes.RTFEATURE_OPAQUEACTION_RTFEATURE_OPAQUEACTION_SPECIFICATION));
@@ -1036,7 +1025,6 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * Get a NoteType from the metamodel extensions.
      */
-    @objid ("ff01a1fb-afe0-434c-b082-4f831ab08027")
     private NoteType getNoteType(String sterotypeName, java.lang.Class<? extends MObject> metaclass, String noteTypeName) {
         IMetamodelExtensions metamodel = this.session.getMetamodelExtensions();
         MClass mClass = MARTEModule.getInstance().getModuleContext().getModelioServices().getMetamodelService().getMetamodel().getMClass(metaclass);
@@ -1046,18 +1034,16 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * Get a tagType from the metamodel extensions.
      */
-    @objid ("075ccda0-75d2-42e2-b409-48bf735853c6")
     private TagType getTagType(String sterotypeName, java.lang.Class<? extends MObject> metaclass, String tagTypeName) {
         IMetamodelExtensions metamodel = this.session.getMetamodelExtensions();
         MClass mClass = MARTEModule.getInstance().getModuleContext().getModelioServices().getMetamodelService().getMetamodel().getMClass(metaclass);
         return metamodel.getTagType(metamodel.getStereotype(IMARTEDesignerPeerModule.MODULE_NAME, sterotypeName, mClass), tagTypeName);
     }
 
-    @objid ("187820c0-523e-4d2f-8510-92e929ffe0ec")
     @Override
     public Set<TagType> getTagTypes() {
         Set<TagType> tagTypes = new HashSet<>();
-
+        
         tagTypes.add(getTagType(MARTEDesignerStereotypes.ACQUIRE_BEHAVIOR, Behavior.class, MARTEDesignerTagTypes.ACQUIRE_BEHAVIOR_ACQUIRE_BEHAVIOR_ISBLOCKING));
         tagTypes.add(getTagType(MARTEDesignerStereotypes.ACQUIRE_COLLABORATION, Collaboration.class, MARTEDesignerTagTypes.ACQUIRE_COLLABORATION_ACQUIRE_COLLABORATION_ISBLOCKING));
         tagTypes.add(getTagType(MARTEDesignerStereotypes.ACQUIRE_COLLABORATIONUSE, CollaborationUse.class, MARTEDesignerTagTypes.ACQUIRE_COLLABORATIONUSE_ACQUIRE_COLLABORATIONUSE_ISBLOCKING));
@@ -3825,34 +3811,29 @@ public class MARTEModelComponentContributor extends AbstractModelComponentContri
     /**
      * A custom filter allowing to remove a specific element from an List.
      */
-    @objid ("1516d632-57e7-4b0f-b9c3-82db245f2d53")
     private class ExcludeElementFilter implements IObjectFilter {
         /**
          * The element to exclude.
          */
-        @objid ("af07601a-7fe1-4999-89bb-212044cbccbe")
         private Element eltToExclude;
 
         /**
          * Default constructor.
          */
-        @objid ("8d72858f-1fb9-4775-9a83-f462e0b1b339")
         public ExcludeElementFilter(final Element eltToExclude) {
             this.eltToExclude = eltToExclude;
         }
 
         /**
          * Check if this element has to be excluded.
-         *
+         * 
          * @param eltToFilter The element to check.
          * @return True if the eltToFilter is not the eltToExclude
          */
-        @objid ("6032b80a-4a42-41ff-9825-2c79050180a0")
         public boolean select(Element eltToFilter) {
             return !this.eltToExclude.equals(eltToFilter);
         }
 
-        @objid ("6f333867-18fc-4138-8735-2da19d0d3a00")
         @Override
         public boolean accept(MObject arg0) {
             return !this.eltToExclude.equals(arg0);

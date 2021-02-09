@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -14,12 +13,9 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("cfadd66d-0fd7-41a0-a1be-5a899dbbb1bc")
 public class TimedDurationObservation_NoteProperty implements IPropertyContent {
-    @objid ("b4886818-9b28-42b4-b588-03c3a110cd6a")
     private static List<ModelElement> listClocks = null;
 
-    @objid ("298a838d-3f3c-4978-af3c-0c08c5703311")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -59,7 +55,6 @@ public class TimedDurationObservation_NoteProperty implements IPropertyContent {
         }
     }
 
-    @objid ("bb670f9d-0427-4ee8-8941-8d2bfeeeb41e")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String[] types = new String[]{"start","finish","send","receive","consume"};

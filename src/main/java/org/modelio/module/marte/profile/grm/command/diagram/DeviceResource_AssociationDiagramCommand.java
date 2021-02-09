@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.DeviceResource_Association;
 
-@objid ("089e9a3d-d21d-4ba0-a334-8be285a04b44")
 public class DeviceResource_AssociationDiagramCommand extends DefaultLinkTool {
-    @objid ("8766049c-f5ad-4e57-a1ad-1e1feacdc668")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class DeviceResource_AssociationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("17a5091c-daf1-43f9-8d89-87c76b355cc6")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class DeviceResource_AssociationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("6ef334cd-833a-4e12-9d34-d68c4023cbf2")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DeviceResource_AssociationCommand")){

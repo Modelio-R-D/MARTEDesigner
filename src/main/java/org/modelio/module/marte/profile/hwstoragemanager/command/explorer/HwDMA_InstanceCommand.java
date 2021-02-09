@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwstoragemanager.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwstoragemanager.model.HwDMA_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("30bbdc63-3df4-4ca6-94c5-1c5cebc9fde7")
 public class HwDMA_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("70a9dea5-99a5-4247-a2ee-ec31a0ecede1")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -35,7 +32,6 @@ public class HwDMA_InstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("4a721424-02fb-4c1b-b0fb-4abe45d7dee9")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwDMA_InstanceCommand")){

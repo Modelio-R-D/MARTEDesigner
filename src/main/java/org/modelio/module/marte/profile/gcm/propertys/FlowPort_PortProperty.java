@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gcm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Port;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("36497b6e-3b39-48a1-a066-74423370988e")
 public class FlowPort_PortProperty implements IPropertyContent {
-    @objid ("9b96c079-0c09-4d4b-a45d-eb930a282095")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -41,7 +38,6 @@ public class FlowPort_PortProperty implements IPropertyContent {
         }
     }
 
-    @objid ("5b76e5a2-c6dc-49bb-9a88-a9af320b8c02")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.FLOWPORT_PORT_FLOWPORT_PORT_ISATOMIC),ModelUtils.hasTaggedValue(MARTEDesignerTagTypes.FLOWPORT_PORT_FLOWPORT_PORT_ISATOMIC, elt));

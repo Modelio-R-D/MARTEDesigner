@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.time.model.ClockType_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("11c92aad-219e-4f65-824b-99fadf2cde8f")
 public class ClockType_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("1d0d4a79-5c5e-44ee-860f-a99c1e402a88")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -32,7 +29,6 @@ public class ClockType_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("ade026df-a28d-446e-a1c1-f36221cf4601")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClockType_ClassCommand")){

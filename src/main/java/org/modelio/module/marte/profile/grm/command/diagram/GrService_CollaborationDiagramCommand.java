@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -14,9 +13,7 @@ import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.GrService_Collaboration;
 
-@objid ("17632721-67b6-40d1-8b52-a504a2fabfa7")
 public class GrService_CollaborationDiagramCommand extends DefaultLinkTool {
-    @objid ("c9266349-d7c6-4584-88b4-f1fee4cf412e")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -33,7 +30,6 @@ public class GrService_CollaborationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("8e2e0219-a315-4d8f-9e6f-c7a79f526760")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -51,7 +47,6 @@ public class GrService_CollaborationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("b7015a23-9eb1-42b4-b4b7-2a9f78c90a35")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("GrService_CollaborationCommand")){

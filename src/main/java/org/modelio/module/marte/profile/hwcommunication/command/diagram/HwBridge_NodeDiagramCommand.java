@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcommunication.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwBridge_Node;
 
-@objid ("13bada1f-d01a-40d1-8faf-cabf9e03f2db")
 public class HwBridge_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("cd08bc5f-dbf5-41a6-ba4a-2b95fd1ad4b6")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class HwBridge_NodeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("a2ca2f10-b5cd-46f5-a360-b221c116cee7")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBridge_NodeCommand")){

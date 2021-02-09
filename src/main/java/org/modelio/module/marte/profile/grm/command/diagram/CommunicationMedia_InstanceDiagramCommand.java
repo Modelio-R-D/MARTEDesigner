@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationMedia_Instance;
 
-@objid ("23991b4c-60c2-4ae3-85d0-5e1a94700ce7")
 public class CommunicationMedia_InstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("d6174143-239a-42a1-9c2b-07553fe49ed7")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class CommunicationMedia_InstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("24a6afd8-9199-4e27-b0bd-76cb0931ceed")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationMedia_InstanceCommand")){

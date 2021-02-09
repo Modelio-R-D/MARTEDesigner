@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcom
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,9 +30,7 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("c37be7c9-2b24-4d51-ac6c-d92f1073bace")
 public class HwASICAssociation extends HwComputingResourceAssociation {
-    @objid ("3316187f-e921-432d-bf34-1d1ef5161531")
     public static final String STEREOTYPE_NAME = "HwASIC_Association";
 
     /**
@@ -44,7 +41,6 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f185faa1-a740-4177-b4f5-d7ff710af729")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Association) && ((Association) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwASICAssociation.STEREOTYPE_NAME));
     }
@@ -54,7 +50,6 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
      * 
      * @return a {@link HwASICAssociation} proxy on the created {@link Association}.
      */
-    @objid ("06373758-6053-4edf-8352-dcaad9ed66f1")
     public static HwASICAssociation create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Association");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwASICAssociation.STEREOTYPE_NAME);
@@ -68,7 +63,6 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
      * @param obj a Association
      * @return a {@link HwASICAssociation} proxy or <i>null</i>.
      */
-    @objid ("ca54ab9e-103f-4a4a-bf89-a6bfc0da3087")
     public static HwASICAssociation instantiate(final Association obj) {
         return HwASICAssociation.canInstantiate(obj) ? new HwASICAssociation(obj) : null;
     }
@@ -81,7 +75,6 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
      * @return a {@link HwASICAssociation} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("62f03859-97f2-44ce-acbd-a4c7281d4eae")
     public static HwASICAssociation safeInstantiate(final Association obj) throws IllegalArgumentException {
         if (HwASICAssociation.canInstantiate(obj))
         	return new HwASICAssociation(obj);
@@ -89,7 +82,6 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
         	throw new IllegalArgumentException("HwASICAssociation: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3046335f-7b95-4ea6-afac-6f4799f13a91")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -109,35 +101,27 @@ public class HwASICAssociation extends HwComputingResourceAssociation {
      * Get the underlying {@link Association}. 
      * @return the Association represented by this proxy, never null.
      */
-    @objid ("ff60511a-2fd3-4633-9a83-04472313c8c3")
     @Override
     public Association getElement() {
         return (Association)super.getElement();
     }
 
-    @objid ("7a9a0fd4-caf7-4154-8612-763a26eab8ac")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("a8a0ee94-fd90-46c2-a97b-1e44f8ffdb26")
     protected HwASICAssociation(final Association elt) {
         super(elt);
     }
 
-    @objid ("b1a8cb13-a4ae-4b88-a909-a3e1f8cbb3e5")
     public static final class MdaTypes {
-        @objid ("681f0fd5-fc3f-43c2-bdb3-1a378bf4f244")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("9ef64911-9061-46d1-b6da-36fdb8a628d2")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("3151789a-b691-4d94-a5c1-dc71422210c6")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("08e88957-a10e-4b5e-841c-549a37ee9ab9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "b4666f29-10a3-11df-81d9-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.associ
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,12 +30,9 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("beaef391-b721-461b-9645-6a48842d73f2")
 public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd {
-    @objid ("9e02eb01-130b-469a-a71a-fd6c21a12ecc")
     public static final String STEREOTYPE_NAME = "CommunicationEndPoint_AssociationEnd";
 
-    @objid ("e049201f-d83a-4db4-9b6b-38e8b178378d")
     public static final String COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE_TAGTYPE = "CommunicationEndPoint_AssociationEnd_packetSize";
 
     /**
@@ -47,7 +43,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("b335c493-1e3c-4c3f-b9b0-9fd03c0597a2")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof AssociationEnd) && ((AssociationEnd) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointAssociationEnd.STEREOTYPE_NAME));
     }
@@ -57,7 +52,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * 
      * @return a {@link CommunicationEndPointAssociationEnd} proxy on the created {@link AssociationEnd}.
      */
-    @objid ("4a1daf73-e083-4167-8b1d-b6eee1d098eb")
     public static CommunicationEndPointAssociationEnd create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.AssociationEnd");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, CommunicationEndPointAssociationEnd.STEREOTYPE_NAME);
@@ -71,7 +65,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * @param obj a AssociationEnd
      * @return a {@link CommunicationEndPointAssociationEnd} proxy or <i>null</i>.
      */
-    @objid ("c94c2978-ffcc-462a-a95c-24cc7025e5a5")
     public static CommunicationEndPointAssociationEnd instantiate(final AssociationEnd obj) {
         return CommunicationEndPointAssociationEnd.canInstantiate(obj) ? new CommunicationEndPointAssociationEnd(obj) : null;
     }
@@ -84,7 +77,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * @return a {@link CommunicationEndPointAssociationEnd} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("587be496-c096-4abd-858c-906fd46fc648")
     public static CommunicationEndPointAssociationEnd safeInstantiate(final AssociationEnd obj) throws IllegalArgumentException {
         if (CommunicationEndPointAssociationEnd.canInstantiate(obj))
         	return new CommunicationEndPointAssociationEnd(obj);
@@ -92,7 +84,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
         	throw new IllegalArgumentException("CommunicationEndPointAssociationEnd: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2cea29c8-b928-4ee7-b161-86c7fcb8e8c7")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +104,6 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("6e204791-d7f9-4098-ba1e-061a2967b8d6")
     public String getCommunicationEndPoint_AssociationEnd_packetSize() {
         return this.elt.getTagValue(CommunicationEndPointAssociationEnd.MdaTypes.COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE_TAGTYPE_ELT);
     }
@@ -122,13 +112,11 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * Get the underlying {@link AssociationEnd}. 
      * @return the AssociationEnd represented by this proxy, never null.
      */
-    @objid ("bac2baf6-ff53-42ab-867b-3285d9118ad0")
     @Override
     public AssociationEnd getElement() {
         return (AssociationEnd)super.getElement();
     }
 
-    @objid ("75824f6e-8a72-4c0a-b4f0-9fe9124a258e")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -139,31 +127,23 @@ public class CommunicationEndPointAssociationEnd extends ResourceAssociationEnd 
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("723a8961-c79c-4d3e-a428-26bc539d2d55")
     public void setCommunicationEndPoint_AssociationEnd_packetSize(final String value) {
         this.elt.putTagValue(CommunicationEndPointAssociationEnd.MdaTypes.COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE_TAGTYPE_ELT, value);
     }
 
-    @objid ("1996ab28-c38f-40f0-ad3c-e20d71a179f3")
     protected CommunicationEndPointAssociationEnd(final AssociationEnd elt) {
         super(elt);
     }
 
-    @objid ("84e492ab-65b7-4152-8628-1d5604e18815")
     public static final class MdaTypes {
-        @objid ("52840f03-2725-4ad9-b3c6-aaeb794635f8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("07364dfb-ed19-4882-854e-224889d6c016")
         public static TagType COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE_TAGTYPE_ELT;
 
-        @objid ("28c3b27a-900b-4d42-970c-7b99441601fb")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("89ecb1e9-be60-46b4-8da3-43481d4a23d5")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("0f481f7e-6281-44aa-bc78-53cb289058f8")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "ffa4f5d7-0cce-11df-8525-001302895b2b");
             COMMUNICATIONENDPOINT_ASSOCIATIONEND_PACKETSIZE_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "ffa4f5de-0cce-11df-8525-001302895b2b");

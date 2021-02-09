@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Instance;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("3cd3b309-4af2-4fdb-97aa-bd1205c21110")
 public class TimedConstraint_ConstraintProperty implements IPropertyContent {
-    @objid ("1e57bc7e-62f9-43ec-870e-2dbb571d48ae")
     private static List<ModelElement> listClocks = null;
 
-    @objid ("761622b8-d10c-433d-a293-ba6ee14ebc19")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -32,7 +28,6 @@ public class TimedConstraint_ConstraintProperty implements IPropertyContent {
         }
     }
 
-    @objid ("19c99107-f70f-4d27-9ba6-f39b9859a715")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

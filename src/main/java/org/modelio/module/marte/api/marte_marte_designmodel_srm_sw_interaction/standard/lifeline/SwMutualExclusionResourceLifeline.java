@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,36 +31,25 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("626e975c-ff2f-4a85-9224-b90e81752e2b")
 public class SwMutualExclusionResourceLifeline extends SwSynchronizationResourceLifeline {
-    @objid ("7995c8d0-7382-4f54-a48f-acb305b549c4")
     public static final String STEREOTYPE_NAME = "SwMutualExclusionResource_Lifeline";
 
-    @objid ("56a023e6-14e6-41a6-9f22-42a803c662c1")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACCESSTOKENELEMENTS_TAGTYPE = "SwMutualExclusionResource_Lifeline_accessTokenElements";
 
-    @objid ("d4e2b75f-4088-40b9-98af-855f1d2e66b7")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACQUIRESERVICES_TAGTYPE = "SwMutualExclusionResource_Lifeline_acquireServices";
 
-    @objid ("fd44cf67-ee0e-46d5-9cf6-8df11cae013e")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING_TAGTYPE = "SwMutualExclusionResource_Lifeline_ceiling";
 
-    @objid ("359cea82-29e6-45d3-84f6-861b965b0ecf")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CONCURRENTACCESSPROTOCOL_TAGTYPE = "SwMutualExclusionResource_Lifeline_concurrentAccessProtocol";
 
-    @objid ("81ef6b48-e349-4860-86bd-a61dfab48f02")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM_TAGTYPE = "SwMutualExclusionResource_Lifeline_mechanism";
 
-    @objid ("23ff7370-dd69-4dc5-a85b-d4d1a42d84b2")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL_TAGTYPE = "SwMutualExclusionResource_Lifeline_otherProtectProtocol";
 
-    @objid ("03ea89ed-9bd1-4cb9-ab36-ef969dee6784")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND_TAGTYPE = "SwMutualExclusionResource_Lifeline_protectKind";
 
-    @objid ("24d63b73-82c6-41bc-a241-1204969076fc")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_RELEASESERVICES_TAGTYPE = "SwMutualExclusionResource_Lifeline_releaseServices";
 
-    @objid ("a6c9a8ba-6164-4701-89ea-0bfa43271fdb")
     public static final String SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER_TAGTYPE = "SwMutualExclusionResource_Lifeline_scheduler";
 
     /**
@@ -72,7 +60,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("2e7adb52-5853-4462-8f9f-02b8a4a4b7d1")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwMutualExclusionResourceLifeline.STEREOTYPE_NAME));
     }
@@ -82,7 +69,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * 
      * @return a {@link SwMutualExclusionResourceLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("99854f28-1a52-437e-8de4-ae7806f70616")
     public static SwMutualExclusionResourceLifeline create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwMutualExclusionResourceLifeline.STEREOTYPE_NAME);
@@ -96,7 +82,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * @param obj a Lifeline
      * @return a {@link SwMutualExclusionResourceLifeline} proxy or <i>null</i>.
      */
-    @objid ("8967d5f4-a30c-468c-b058-df88db5f06df")
     public static SwMutualExclusionResourceLifeline instantiate(final Lifeline obj) {
         return SwMutualExclusionResourceLifeline.canInstantiate(obj) ? new SwMutualExclusionResourceLifeline(obj) : null;
     }
@@ -109,7 +94,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * @return a {@link SwMutualExclusionResourceLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("6a6b373d-4c0b-46c9-a8ac-87604e2efb9e")
     public static SwMutualExclusionResourceLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (SwMutualExclusionResourceLifeline.canInstantiate(obj))
         	return new SwMutualExclusionResourceLifeline(obj);
@@ -117,7 +101,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
         	throw new IllegalArgumentException("SwMutualExclusionResourceLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("3d409c8b-c648-4dd2-819c-2126f8d6049c")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -137,7 +120,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("3c45eab3-a233-4e98-8c6a-f59d8cc1a40a")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -148,7 +130,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cc3356ee-99e2-4afa-af2a-6ffc02cb4868")
     public List<String> getSwMutualExclusionResource_Lifeline_accessTokenElements() {
         return this.elt.getTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACCESSTOKENELEMENTS_TAGTYPE_ELT);
     }
@@ -158,7 +139,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("cf7a724b-395b-4537-87ea-4342e397b210")
     public List<String> getSwMutualExclusionResource_Lifeline_acquireServices() {
         return this.elt.getTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACQUIRESERVICES_TAGTYPE_ELT);
     }
@@ -168,7 +148,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("715732ef-027a-42a1-a8da-66904aff65c8")
     public String getSwMutualExclusionResource_Lifeline_ceiling() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING_TAGTYPE_ELT);
     }
@@ -178,7 +157,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a949e387-6307-42fd-9f31-5732bb0d0bd1")
     public String getSwMutualExclusionResource_Lifeline_concurrentAccessProtocol() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CONCURRENTACCESSPROTOCOL_TAGTYPE_ELT);
     }
@@ -188,7 +166,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("94dcdcc0-b106-47a7-915e-7fe2e025be6d")
     public String getSwMutualExclusionResource_Lifeline_mechanism() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM_TAGTYPE_ELT);
     }
@@ -198,7 +175,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fe0a0f2f-cc9a-4949-997a-567c76adfc8c")
     public String getSwMutualExclusionResource_Lifeline_otherProtectProtocol() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL_TAGTYPE_ELT);
     }
@@ -208,7 +184,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("60db51e4-f0a0-4a01-985b-e3bfe062586f")
     public String getSwMutualExclusionResource_Lifeline_protectKind() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND_TAGTYPE_ELT);
     }
@@ -218,7 +193,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("55cdd588-eaa8-48c4-a472-aa3f42dc3e01")
     public List<String> getSwMutualExclusionResource_Lifeline_releaseServices() {
         return this.elt.getTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_RELEASESERVICES_TAGTYPE_ELT);
     }
@@ -228,12 +202,10 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f1025055-01d5-4b67-8e2c-5b1859bd7434")
     public String getSwMutualExclusionResource_Lifeline_scheduler() {
         return this.elt.getTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER_TAGTYPE_ELT);
     }
 
-    @objid ("898c191c-b0a1-40b2-b45e-8546d35a37f5")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -244,7 +216,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("05715dd3-d87b-4d7c-94a7-9be74fd23491")
     public void setSwMutualExclusionResource_Lifeline_accessTokenElements(final List<String> values) {
         this.elt.putTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACCESSTOKENELEMENTS_TAGTYPE_ELT, values);
     }
@@ -254,7 +225,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fca2daac-7d92-4c51-a3c5-1e075353276a")
     public void setSwMutualExclusionResource_Lifeline_acquireServices(final List<String> values) {
         this.elt.putTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACQUIRESERVICES_TAGTYPE_ELT, values);
     }
@@ -264,7 +234,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("17772e9f-2744-4fbc-b738-2d111ab21619")
     public void setSwMutualExclusionResource_Lifeline_ceiling(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING_TAGTYPE_ELT, value);
     }
@@ -274,7 +243,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2c1f45d5-d96f-43b4-a258-7f054fdbc5bf")
     public void setSwMutualExclusionResource_Lifeline_concurrentAccessProtocol(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CONCURRENTACCESSPROTOCOL_TAGTYPE_ELT, value);
     }
@@ -284,7 +252,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ecfa7d98-1875-45ba-8137-b4e4380ef7f3")
     public void setSwMutualExclusionResource_Lifeline_mechanism(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM_TAGTYPE_ELT, value);
     }
@@ -294,7 +261,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("7d0b8312-9f59-4dda-9d7f-1455e37a178a")
     public void setSwMutualExclusionResource_Lifeline_otherProtectProtocol(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL_TAGTYPE_ELT, value);
     }
@@ -304,7 +270,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("283ef698-6c02-46aa-96cb-8bf374233aab")
     public void setSwMutualExclusionResource_Lifeline_protectKind(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND_TAGTYPE_ELT, value);
     }
@@ -314,7 +279,6 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("cd29623a-cbdc-4c53-8149-f5fa026bac4e")
     public void setSwMutualExclusionResource_Lifeline_releaseServices(final List<String> values) {
         this.elt.putTagValues(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_RELEASESERVICES_TAGTYPE_ELT, values);
     }
@@ -324,55 +288,39 @@ public class SwMutualExclusionResourceLifeline extends SwSynchronizationResource
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1cd73e66-4c55-4cee-b79c-4c13c8e03e7c")
     public void setSwMutualExclusionResource_Lifeline_scheduler(final String value) {
         this.elt.putTagValue(SwMutualExclusionResourceLifeline.MdaTypes.SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER_TAGTYPE_ELT, value);
     }
 
-    @objid ("8c4380fc-5572-404e-aa04-22de6f7af485")
     protected SwMutualExclusionResourceLifeline(final Lifeline elt) {
         super(elt);
     }
 
-    @objid ("4d9bfe11-651a-4995-bc9d-589a827f3397")
     public static final class MdaTypes {
-        @objid ("cc9e2c40-d58c-41ad-80cc-81021aea218b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("4ae05fd8-3042-4a06-afc0-e9ab5efdf0d5")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM_TAGTYPE_ELT;
 
-        @objid ("0678861d-78d6-486a-8265-67cc4dc75508")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CONCURRENTACCESSPROTOCOL_TAGTYPE_ELT;
 
-        @objid ("d17d3e17-b253-4c3e-ba0d-6efb84ff664b")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACCESSTOKENELEMENTS_TAGTYPE_ELT;
 
-        @objid ("b3e0fb00-c199-40d5-b1d1-70c8af03aad6")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_RELEASESERVICES_TAGTYPE_ELT;
 
-        @objid ("e5f4b76c-104d-4e37-86b1-a471ec6bcc23")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_ACQUIRESERVICES_TAGTYPE_ELT;
 
-        @objid ("58f63b4e-70a7-4d15-9f68-be1e2ccd17dc")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_PROTECTKIND_TAGTYPE_ELT;
 
-        @objid ("f48f96a9-83bc-4536-a341-f406ca875f53")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_CEILING_TAGTYPE_ELT;
 
-        @objid ("297375ee-b82e-4e2e-9da2-3912fc10c996")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_OTHERPROTECTPROTOCOL_TAGTYPE_ELT;
 
-        @objid ("8f3c7376-6a3a-4802-bb4a-017b0fcf3da0")
         public static TagType SWMUTUALEXCLUSIONRESOURCE_LIFELINE_SCHEDULER_TAGTYPE_ELT;
 
-        @objid ("b5bfb1a3-dfcd-43f4-a726-3063a7fc6df3")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("da7e4da2-27fd-44f7-89f2-565a832bcab0")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("5624e893-08b9-4580-b5d7-3baaf18f3c53")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "84f6ccea-10d9-11df-81d9-0014222a9f79");
             SWMUTUALEXCLUSIONRESOURCE_LIFELINE_MECHANISM_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "84f6cceb-10d9-11df-81d9-0014222a9f79");

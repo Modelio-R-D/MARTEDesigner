@@ -6,7 +6,6 @@
  */
 package org.modelio.module.marte.api;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.behavior.activityModel.ActivityAction;
 import org.modelio.metamodel.uml.behavior.activityModel.ActivityPartition;
 import org.modelio.metamodel.uml.behavior.activityModel.CallAction;
@@ -958,9 +957,7 @@ import org.modelio.module.marte.api.extensions.infrastructure.dependency.*;
  * <li><< ProfileAssociation_yieldServices_SwSchedulableResource >> on a {@link org.modelio.metamodel.uml.infrastructure.Dependency}: instantiates a {@link ProfileAssociationYieldServicesSwSchedulableResource}
  * </ul>
  */
-@objid ("cc70d895-8c8f-4834-91db-4aa64c431939")
 public class MARTEDesignerProxyFactory {
-    @objid ("1c83533f-81ab-4ef2-8c7b-e54bded4aca4")
     private static final InstantiateVisitor instantiateVisitor = new InstantiateVisitor();
 
     /**
@@ -971,7 +968,6 @@ public class MARTEDesignerProxyFactory {
      * @param e A model element
      * @return the right proxy or <i>null</i>.
      */
-    @objid ("fc430ae8-8652-4967-9d90-65d5bae14382")
     public static final Object instantiate(final ModelElement e) {
         for (Stereotype s : e.getExtension()) {
               if (s.getModule().getName().equals(IMARTEDesignerPeerModule.MODULE_NAME)) {
@@ -990,23 +986,18 @@ public class MARTEDesignerProxyFactory {
      * @param stName A stereotype name.
      * @return the right proxy or <i>null</i>.
      */
-    @objid ("5cbaacd2-de29-4563-9900-9ced316ee4a0")
     public static final Object instantiate(final Element e, final String stName) {
         instantiateVisitor.setStereotype(stName);
         return e.accept(instantiateVisitor);
     }
 
-    @objid ("c13eeaa7-2c82-4435-a7d3-1958b38eb02b")
     private static class InstantiateVisitor implements IDefaultModelVisitor, IDefaultInfrastructureVisitor {
-        @objid ("b7532a23-52d9-40f9-9076-27736ddb6349")
         private String stName;
 
-        @objid ("fe9c5c76-03af-4d79-b09a-47dc8de4a887")
         public final void setStereotype(final String stName) {
             this.stName = stName;
         }
 
-        @objid ("27087425-4996-458c-af67-526a162e7f8a")
         @Override
         public final Object visitConnectorEnd(ConnectorEnd obj) {
             switch (this.stName) {
@@ -1018,7 +1009,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitConnectorEnd(obj);
         }
 
-        @objid ("34ff6182-74c7-479f-97a5-cb87a93657f1")
         @Override
         public final Object visitCallAction(CallAction obj) {
             switch (this.stName) {
@@ -1030,7 +1020,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitCallAction(obj);
         }
 
-        @objid ("0074f355-9e6d-446d-80e2-c4974dee5b90")
         @Override
         public final Object visitBindableInstance(BindableInstance obj) {
             switch (this.stName) {
@@ -1045,7 +1034,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitBindableInstance(obj);
         }
 
-        @objid ("43d0feb3-b3c3-4476-869f-692700a89255")
         @Override
         public final Object visitActivityPartition(ActivityPartition obj) {
             switch (this.stName) {
@@ -1056,7 +1044,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitActivityPartition(obj);
         }
 
-        @objid ("1a676d1e-cdcb-47f8-9922-b8d1eb533080")
         @Override
         public final Object visitTransition(Transition obj) {
             switch (this.stName) {
@@ -1067,7 +1054,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitTransition(obj);
         }
 
-        @objid ("2ec44254-c48e-406e-9b6e-2ecc67ae15ba")
         @Override
         public final Object visitModelElement(ModelElement obj) {
             switch (this.stName) {
@@ -1097,7 +1083,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultInfrastructureVisitor.super.visitModelElement(obj);
         }
 
-        @objid ("36ef8a47-9ee8-45cf-b862-285c5109f6a0")
         @Override
         public final Object visitMessage(Message obj) {
             switch (this.stName) {
@@ -1109,7 +1094,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitMessage(obj);
         }
 
-        @objid ("1ab212e0-d243-460d-b241-49fb7e3c324f")
         @Override
         public final Object visitEvent(Event obj) {
             switch (this.stName) {
@@ -1122,7 +1106,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitEvent(obj);
         }
 
-        @objid ("82abf893-2caa-468d-a5ab-57e148e81aa3")
         @Override
         public final Object visitPackage(Package obj) {
             switch (this.stName) {
@@ -1136,7 +1119,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitPackage(obj);
         }
 
-        @objid ("fe937aa2-290f-4e80-b2c6-3b5f75086df7")
         @Override
         public final Object visitEnumerationLiteral(EnumerationLiteral obj) {
             switch (this.stName) {
@@ -1147,7 +1129,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitEnumerationLiteral(obj);
         }
 
-        @objid ("1c0488e1-98ee-4d23-9847-de99754c774a")
         @Override
         public final Object visitDataType(DataType obj) {
             switch (this.stName) {
@@ -1163,7 +1144,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitDataType(obj);
         }
 
-        @objid ("97794117-ab37-457f-826b-ce256cd51893")
         @Override
         public final Object visitPort(Port obj) {
             switch (this.stName) {
@@ -1176,7 +1156,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitPort(obj);
         }
 
-        @objid ("6a9e6afd-9770-479f-a63e-5b1ae7069496")
         @Override
         public final Object visitOpaqueAction(OpaqueAction obj) {
             switch (this.stName) {
@@ -1188,7 +1167,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitOpaqueAction(obj);
         }
 
-        @objid ("dcafe2ba-5b82-4f9a-82c5-bd764d34d765")
         @Override
         public final Object visitStateMachine(StateMachine obj) {
             switch (this.stName) {
@@ -1199,7 +1177,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitStateMachine(obj);
         }
 
-        @objid ("00a752d3-9851-4fae-8fd7-8fc483ef1e60")
         @Override
         public final Object visitParameter(Parameter obj) {
             switch (this.stName) {
@@ -1281,7 +1258,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitParameter(obj);
         }
 
-        @objid ("0088a323-2d34-4f7c-8389-3481b637488c")
         @Override
         public final Object visitActor(Actor obj) {
             switch (this.stName) {
@@ -1293,7 +1269,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitActor(obj);
         }
 
-        @objid ("669957f3-03d4-4d1f-95ff-5be85c557e62")
         @Override
         public final Object visitAssociation(Association obj) {
             switch (this.stName) {
@@ -1376,7 +1351,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitAssociation(obj);
         }
 
-        @objid ("b38517ed-b656-4764-9aed-4aaa59aad175")
         @Override
         public final Object visitLink(Link obj) {
             switch (this.stName) {
@@ -1459,7 +1433,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitLink(obj);
         }
 
-        @objid ("079fa41b-4e11-4847-a138-ef1ac4f63118")
         @Override
         public final Object visitCollaboration(Collaboration obj) {
             switch (this.stName) {
@@ -1479,7 +1452,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitCollaboration(obj);
         }
 
-        @objid ("aa36b28b-a724-474e-ae18-a569d038a374")
         @Override
         public final Object visitBehavior(Behavior obj) {
             switch (this.stName) {
@@ -1502,7 +1474,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitBehavior(obj);
         }
 
-        @objid ("ca4ffb99-8e85-4dfd-bbbd-5e2b3474a6d8")
         @Override
         public final Object visitDependency(Dependency obj) {
             switch (this.stName) {
@@ -1672,7 +1643,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultInfrastructureVisitor.super.visitDependency(obj);
         }
 
-        @objid ("22b96362-671b-4bbf-8985-3b90270e5170")
         @Override
         public final Object visitInstance(Instance obj) {
             switch (this.stName) {
@@ -1755,7 +1725,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitInstance(obj);
         }
 
-        @objid ("940c7237-2c21-4ed9-a37f-321c5f6c9842")
         @Override
         public final Object visitState(State obj) {
             switch (this.stName) {
@@ -1766,7 +1735,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitState(obj);
         }
 
-        @objid ("d4535357-381b-4a10-b51a-8b4485a06d3b")
         @Override
         public final Object visitLinkEnd(LinkEnd obj) {
             switch (this.stName) {
@@ -1779,7 +1747,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitLinkEnd(obj);
         }
 
-        @objid ("6fd6857b-a2cd-4a83-9a80-03f079442a9f")
         @Override
         public final Object visitClassifier(Classifier obj) {
             switch (this.stName) {
@@ -1862,7 +1829,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitClassifier(obj);
         }
 
-        @objid ("0578c111-9f49-4cc3-b348-9e8793276fc8")
         @Override
         public final Object visitOperation(Operation obj) {
             switch (this.stName) {
@@ -1881,7 +1847,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitOperation(obj);
         }
 
-        @objid ("ce8d6c86-038c-4332-a17b-1ab2687d06c2")
         @Override
         public final Object visitClass(Class obj) {
             switch (this.stName) {
@@ -1897,7 +1862,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitClass(obj);
         }
 
-        @objid ("711dd6b8-2791-4933-8f4a-60a4315ba794")
         @Override
         public final Object visitEnumeration(Enumeration obj) {
             switch (this.stName) {
@@ -1908,7 +1872,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitEnumeration(obj);
         }
 
-        @objid ("0f006241-1cd2-4236-9d54-344e8afb979a")
         @Override
         public final Object visitBehaviorParameter(BehaviorParameter obj) {
             switch (this.stName) {
@@ -1919,7 +1882,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitBehaviorParameter(obj);
         }
 
-        @objid ("991a22f7-3b9d-4c4d-a7a8-43c42cc7dfb0")
         @Override
         public final Object visitSignal(Signal obj) {
             switch (this.stName) {
@@ -1930,7 +1892,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitSignal(obj);
         }
 
-        @objid ("2426b321-f1be-4a94-9a07-576a6e602147")
         @Override
         public final Object visitExecutionSpecification(ExecutionSpecification obj) {
             switch (this.stName) {
@@ -1945,7 +1906,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitExecutionSpecification(obj);
         }
 
-        @objid ("a63d7853-22fd-4ea5-9d92-91c943a89d15")
         @Override
         public final Object visitInterface(Interface obj) {
             switch (this.stName) {
@@ -1957,7 +1917,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitInterface(obj);
         }
 
-        @objid ("834a0979-588b-48bb-ae95-0a284c13c422")
         @Override
         public final Object visitTaggedValue(TaggedValue obj) {
             switch (this.stName) {
@@ -1968,7 +1927,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultInfrastructureVisitor.super.visitTaggedValue(obj);
         }
 
-        @objid ("dbcc7d6d-0cfc-4276-8f74-0c4236130a7b")
         @Override
         public final Object visitAttribute(Attribute obj) {
             switch (this.stName) {
@@ -2056,7 +2014,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitAttribute(obj);
         }
 
-        @objid ("d8fa314d-7279-4e19-887e-ba89276fe56e")
         @Override
         public final Object visitCollaborationUse(CollaborationUse obj) {
             switch (this.stName) {
@@ -2071,7 +2028,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitCollaborationUse(obj);
         }
 
-        @objid ("293fe041-0465-4e45-bba8-6a842bb68fe2")
         @Override
         public final Object visitConnector(Connector obj) {
             switch (this.stName) {
@@ -2086,7 +2042,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitConnector(obj);
         }
 
-        @objid ("5ed3f03e-d2f2-406a-9426-438aef4feb82")
         @Override
         public final Object visitUseCase(UseCase obj) {
             switch (this.stName) {
@@ -2098,7 +2053,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitUseCase(obj);
         }
 
-        @objid ("e1890758-fadf-4cc2-bd74-3f79fab2952c")
         @Override
         public final Object visitAssociationEnd(AssociationEnd obj) {
             switch (this.stName) {
@@ -2186,7 +2140,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitAssociationEnd(obj);
         }
 
-        @objid ("4647519a-1bb8-4ee8-9b51-756a3af3a457")
         @Override
         public final Object visitSendSignalAction(SendSignalAction obj) {
             switch (this.stName) {
@@ -2198,7 +2151,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitSendSignalAction(obj);
         }
 
-        @objid ("dee6a6b4-4157-4089-b85e-14a852b59285")
         @Override
         public final Object visitConstraint(Constraint obj) {
             switch (this.stName) {
@@ -2218,7 +2170,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitConstraint(obj);
         }
 
-        @objid ("f14c91dd-1465-47f4-a8e9-05e55bb71581")
         @Override
         public final Object visitNode(Node obj) {
             switch (this.stName) {
@@ -2231,7 +2182,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitNode(obj);
         }
 
-        @objid ("17a6fd7b-a1b0-413d-a0ae-76fd0cb331d2")
         @Override
         public final Object visitActivityAction(ActivityAction obj) {
             switch (this.stName) {
@@ -2243,7 +2193,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitActivityAction(obj);
         }
 
-        @objid ("a34865ba-ce0c-4c48-b237-12ce395190cf")
         @Override
         public final Object visitLifeline(Lifeline obj) {
             switch (this.stName) {
@@ -2325,7 +2274,6 @@ public class MARTEDesignerProxyFactory {
             return IDefaultModelVisitor.super.visitLifeline(obj);
         }
 
-        @objid ("68fa512a-1a42-4971-af78-e5f2a6d89f20")
         @Override
         public final Object visitNote(Note obj) {
             switch (this.stName) {
@@ -2345,7 +2293,6 @@ public class MARTEDesignerProxyFactory {
          * 
          * @return the {@link IInfrastructureVisitor} visitor or <i>null</i>.
          */
-        @objid ("ceefe487-1152-430e-9b34-9837de8261e4")
         @Override
         public IInfrastructureVisitor getInfrastructureVisitor() {
             return this;

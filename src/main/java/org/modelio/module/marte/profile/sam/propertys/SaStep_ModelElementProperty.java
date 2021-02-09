@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,12 +10,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6969a682-b206-474b-a15e-340aa64b3ccf")
 public class SaStep_ModelElementProperty implements IPropertyContent {
-    @objid ("6f3670d7-14dc-4fe0-afe1-6ae5eda6e71d")
     private static List<ModelElement> _sharedRes = null;
 
-    @objid ("c4aa7a5e-0297-469d-b042-83315c5c09a7")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -53,7 +49,6 @@ public class SaStep_ModelElementProperty implements IPropertyContent {
         }
     }
 
-    @objid ("2f435121-00a6-4f68-bc3a-f4e6980359fb")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.SASTEP_MODELELEMENT_SASTEP_MODELELEMENT_DEADLINE, elt);

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwtiming.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,12 +10,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("50d60289-bda7-43e5-aac2-23b7da7ff5b3")
 public class HwTimer_LinkProperty implements IPropertyContent {
-    @objid ("2b1cd0a0-da32-467d-a7c7-a533af73f0eb")
     private static List<ModelElement> listHwClock = null;
 
-    @objid ("94281a4d-2040-46f1-a1f4-8bd636287eef")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -36,7 +32,6 @@ public class HwTimer_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("021813d5-a3fa-463a-b012-bb996340a4d4")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

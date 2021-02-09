@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gcm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -21,9 +20,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.ClientServerPort_Port;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("4c6333e3-ec21-4b9c-8b68-6d8b49cd10c2")
 public class ClientServerPort_PortCommand extends DefaultModuleCommandHandler {
-    @objid ("70d23d0b-9070-4577-86af-2e3b31464398")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -41,7 +38,6 @@ public class ClientServerPort_PortCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("81053605-4c8a-456f-9349-afde1be7373e")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClientServerPort_PortCommand")){

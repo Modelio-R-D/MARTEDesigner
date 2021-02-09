@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.hwcommunication.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("48b83e2b-b1f0-41ac-9509-93aa938ae263")
 public class PropertyManager {
-    @objid ("269caccb-b49f-45b5-9919-bc1c3da898ea")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.HWARBITER_ASSOCIATION)){
             return new HwArbiter_AssociationProperty();

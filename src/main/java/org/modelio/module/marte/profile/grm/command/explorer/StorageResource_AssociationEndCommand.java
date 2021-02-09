@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.StorageResource_AssociationEnd;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("dd63a3c9-086c-4281-9966-18b3cbf83837")
 public class StorageResource_AssociationEndCommand extends DefaultModuleCommandHandler {
-    @objid ("db5a5fed-5c19-4c92-aeab-360d7b67e70c")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class StorageResource_AssociationEndCommand extends DefaultModuleCommandH
         return false;
     }
 
-    @objid ("38bc584f-5473-42a8-83e4-3231c0757235")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("StorageResource_AssociationEndCommand")){

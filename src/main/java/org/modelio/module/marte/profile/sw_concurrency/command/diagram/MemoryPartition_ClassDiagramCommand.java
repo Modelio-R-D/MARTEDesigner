@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.MemoryPartition_Class;
 
-@objid ("047fbcae-8ce5-45e2-ab61-5de9ba645b48")
 public class MemoryPartition_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("d88553c5-273b-4613-b15d-aefd244eae3e")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -44,7 +41,6 @@ public class MemoryPartition_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("f3f1ce11-0b25-476c-91e9-05f0974b4278")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MemoryPartition_ClassCommand")){

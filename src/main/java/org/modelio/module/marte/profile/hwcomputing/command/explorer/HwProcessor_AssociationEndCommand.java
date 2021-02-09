@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwProcessor_AssociationEnd;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("4c62e14e-0b25-4132-86fd-f585e2f2e457")
 public class HwProcessor_AssociationEndCommand extends DefaultModuleCommandHandler {
-    @objid ("026fb128-0322-4824-bb44-feec1aa4ef54")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class HwProcessor_AssociationEndCommand extends DefaultModuleCommandHandl
         return false;
     }
 
-    @objid ("57476bf1-9ecf-4d39-839a-11c1586eb41f")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwProcessor_AssociationEndCommand")){

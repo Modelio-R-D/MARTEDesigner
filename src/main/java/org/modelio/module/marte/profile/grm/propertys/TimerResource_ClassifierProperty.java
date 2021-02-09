@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("f3aa64ba-e516-4862-95cb-5f1aa176da16")
 public class TimerResource_ClassifierProperty implements IPropertyContent {
-    @objid ("5d8e6956-713e-4522-87f5-e0aaf410bc91")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("a6e80276-cfb7-4cfe-8999-13042126dfa0")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -35,7 +31,6 @@ public class TimerResource_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("b3e7b558-9a02-4d88-9bad-2d7f50b78ed8")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,15 +1,12 @@
 package org.modelio.module.marte.profile.hwtiming.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("09f5740c-964b-4cb1-8bc4-8ae4f463a7f0")
 public class PropertyManager {
-    @objid ("2057ff97-4d8f-4c24-b1f4-4a11e335826c")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.HWCLOCK_ASSOCIATIONEND)){
             return new HwClock_AssociationEndProperty();
@@ -89,11 +86,9 @@ public class PropertyManager {
         return new DefaultProperty();
     }
 
-    @objid ("b5ad63c7-a89e-4075-8d85-0448c98a789f")
     public static void changeProperty(ModelElement elt, Stereotype ste, int row, String value) {
     }
 
-    @objid ("6240d42b-5106-4e27-a43e-dbd26c8ba1e4")
     public static void update(ModelElement elt, Stereotype ste, IModulePropertyTable table) {
     }
 

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.impl;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
@@ -18,12 +17,9 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * MARTEPropertiesCommand provides a button for the complex properties
  * @author ehouziaux
  */
-@objid ("0a699a93-6323-441b-8656-1cc3fc760ee8")
 public class MARTEPropertiesCommand extends DefaultModuleCommandHandler {
-    @objid ("c3f125eb-ff1b-4742-aeba-31f7a86e69ce")
     private static BodyTreePage btp;
 
-    @objid ("27114ffd-fe17-4b97-a0ea-cda4da551fc8")
     @Override
     public boolean accept(List<MObject> selectedElements, IModule module) {
         boolean result = false;
@@ -48,7 +44,6 @@ public class MARTEPropertiesCommand extends DefaultModuleCommandHandler {
         return result;
     }
 
-    @objid ("be3aa257-75df-42d8-a8bb-56b92870a5e2")
     @Override
     public void actionPerformed(List<MObject> selectedElements, IModule module) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("BodyTree Page creation")){

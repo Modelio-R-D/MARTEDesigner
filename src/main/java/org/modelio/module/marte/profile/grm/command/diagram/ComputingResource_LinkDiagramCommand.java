@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ComputingResource_Link;
 
-@objid ("770fe33c-6fc1-43e0-ab62-dc272dab834c")
 public class ComputingResource_LinkDiagramCommand extends DefaultLinkTool {
-    @objid ("0d1c3285-f628-442a-b391-82198329848e")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class ComputingResource_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("4b18c22d-5612-4801-8c1b-711b5e8489c8")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class ComputingResource_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("d7edbc9e-41d8-463a-9a63-f5204dc82ce1")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ComputingResource_LinkCommand")){

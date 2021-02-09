@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.SwTimerResource_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("fc201d0f-e599-4ca7-9287-8995b2143cbe")
 public class SwTimerResource_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("b6d702ae-9018-428b-8911-0db639b939b7")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class SwTimerResource_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("667961f9-1335-4b14-8f52-92e8fc4edf07")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwTimerResource_ClassCommand")){

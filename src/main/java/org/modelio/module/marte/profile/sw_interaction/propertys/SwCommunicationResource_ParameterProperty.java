@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_interaction.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("24aae693-9003-4768-8089-65de0935c7f6")
 public class SwCommunicationResource_ParameterProperty implements IPropertyContent {
-    @objid ("19c640d7-39a6-4d63-83a4-64acc4482cee")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -34,7 +31,6 @@ public class SwCommunicationResource_ParameterProperty implements IPropertyConte
         }
     }
 
-    @objid ("682778dc-df15-4be8-806f-33057302a7b1")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_Lifeline;
 
-@objid ("40a8b034-72ce-48db-aa17-eb33972c4a80")
 public class ConcurrencyResource_LifelineDiagramCommand extends DefaultBoxTool {
-    @objid ("61729495-cad5-492c-9b16-7281c24797bd")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class ConcurrencyResource_LifelineDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("b66e8b2f-1b25-4034-870d-b098f3b3b6f9")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ConcurrencyResource_LifelineCommand")){

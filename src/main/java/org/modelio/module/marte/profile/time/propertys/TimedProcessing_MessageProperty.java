@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.commonBehaviors.Event;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("0d3599f4-53fe-4e5a-88d5-bb0e882a533b")
 public class TimedProcessing_MessageProperty implements IPropertyContent {
-    @objid ("fef24747-ed13-4653-b534-3c347bf47ddc")
     private static List<ModelElement> listClocks = null;
 
-    @objid ("77fe6e7b-c683-4c01-8313-5c5279cd2ed3")
     private static List<ModelElement> listEvent = null;
 
-    @objid ("27852a65-da69-4356-b8f1-df195d7bf22c")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -50,7 +45,6 @@ public class TimedProcessing_MessageProperty implements IPropertyContent {
         }
     }
 
-    @objid ("b974e512-a025-4d35-b14c-3ae7037d1502")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

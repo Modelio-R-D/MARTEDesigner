@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.GrService_ExecutionSpecification;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5d7061d0-8acb-4942-ae2e-3b3e6e88de31")
 public class GrService_ExecutionSpecificationCommand extends DefaultModuleCommandHandler {
-    @objid ("8dfad223-be13-4212-aad1-d6c8e616c092")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -29,7 +26,6 @@ public class GrService_ExecutionSpecificationCommand extends DefaultModuleComman
         return false;
     }
 
-    @objid ("fabb3861-07bb-4ba2-8557-1f7d839c35e8")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("GrService_ExecutionSpecificationCommand")){

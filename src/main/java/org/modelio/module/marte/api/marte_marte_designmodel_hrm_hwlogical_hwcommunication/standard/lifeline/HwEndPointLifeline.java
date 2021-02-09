@@ -1,8 +1,8 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwlogical_hwcommunication.standard.lifeline;
 
@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -33,38 +32,29 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("ae8605fc-0ea2-4f61-a588-422a43b0b41d")
 public class HwEndPointLifeline extends CommunicationEndPointLifeline {
-    @objid ("1a55bdee-5422-4f97-bfcd-2fb9e40dc8d1")
     public static final String STEREOTYPE_NAME = "HwEndPoint_Lifeline";
 
-    @objid ("cf3c2c57-4cf2-42bb-ae31-73be25229fc7")
     public static final String HWENDPOINT_LIFELINE_CONNECTEDTO_TAGTYPE = "HwEndPoint_Lifeline_connectedTo";
 
-    @objid ("7f55d083-c312-4965-977e-dcf2d6728f7b")
     public static final String HWENDPOINT_LIFELINE_DESCRIPTION_TAGTYPE = "HwEndPoint_Lifeline_description";
 
-    @objid ("e9419744-298b-40fe-9ffd-22857c167f00")
     public static final String HWENDPOINT_LIFELINE_FREQUENCY_TAGTYPE = "HwEndPoint_Lifeline_frequency";
 
-    @objid ("ac0a9dad-e80d-4e51-832d-76403e453e16")
     public static final String HWENDPOINT_LIFELINE_OWNEDHW_TAGTYPE = "HwEndPoint_Lifeline_ownedHW";
 
-    @objid ("dbba8cd6-433e-43f1-a9df-af3ad4c0df03")
     public static final String HWENDPOINT_LIFELINE_P_HW_SERVICES_TAGTYPE = "HwEndPoint_Lifeline_p_HW_Services";
 
-    @objid ("ea05a365-18c6-4f4e-bfa1-0067b31ae80f")
     public static final String HWENDPOINT_LIFELINE_R_HW_SERVICES_TAGTYPE = "HwEndPoint_Lifeline_r_HW_Services";
 
     /**
-     * Tells whether a {@link HwEndPointLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwEndPoint_Lifeline >>. 
+     * Tells whether a {@link HwEndPointLifeline proxy} can be instantiated from a {@link MObject} checking it is a {@link Lifeline} stereotyped << HwEndPoint_Lifeline >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("ad10fe4b-c977-4da5-9f7d-3a5b4a5369ef")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwEndPointLifeline.STEREOTYPE_NAME));
     }
@@ -74,21 +64,19 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * 
      * @return a {@link HwEndPointLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("e234da1a-6c66-4885-a8fe-209314061fac")
     public static HwEndPointLifeline create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Lifeline");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwEndPointLifeline.STEREOTYPE_NAME);
         return HwEndPointLifeline.instantiate((Lifeline)e);
     }
 
     /**
-     * Tries to instantiate a {@link HwEndPointLifeline} proxy from a {@link Lifeline} stereotyped << HwEndPoint_Lifeline >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link HwEndPointLifeline} proxy from a {@link Lifeline} stereotyped << HwEndPoint_Lifeline >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Lifeline
      * @return a {@link HwEndPointLifeline} proxy or <i>null</i>.
      */
-    @objid ("80240571-986f-4817-945a-004c5111fb3a")
     public static HwEndPointLifeline instantiate(final Lifeline obj) {
         return HwEndPointLifeline.canInstantiate(obj) ? new HwEndPointLifeline(obj) : null;
     }
@@ -101,7 +89,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * @return a {@link HwEndPointLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("772a5b88-d839-4420-b323-04ce7d857c2f")
     public static HwEndPointLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwEndPointLifeline.canInstantiate(obj))
         	return new HwEndPointLifeline(obj);
@@ -109,7 +96,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
         	throw new IllegalArgumentException("HwEndPointLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2446ba05-0cc3-4f8e-95dc-b9367894bc00")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -129,7 +115,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("0de393b9-93da-4167-9781-2f740d139953")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -140,7 +125,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("536e4aed-2778-4f01-933b-10a092c62f2e")
     public List<String> getHwEndPoint_Lifeline_connectedTo() {
         return this.elt.getTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_CONNECTEDTO_TAGTYPE_ELT);
     }
@@ -150,7 +134,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("a5cb0d1c-5691-4b4e-8723-80e8ea98f3f0")
     public String getHwEndPoint_Lifeline_description() {
         return this.elt.getTagValue(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_DESCRIPTION_TAGTYPE_ELT);
     }
@@ -160,7 +143,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("3288d664-8f25-477f-ab00-b6deb9f11654")
     public String getHwEndPoint_Lifeline_frequency() {
         return this.elt.getTagValue(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_FREQUENCY_TAGTYPE_ELT);
     }
@@ -170,7 +152,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("7218a742-77ab-493b-87f4-f6dc32db4441")
     public List<String> getHwEndPoint_Lifeline_ownedHW() {
         return this.elt.getTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_OWNEDHW_TAGTYPE_ELT);
     }
@@ -180,7 +161,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("8629e79d-525e-47ee-a8a5-c6a851a888bf")
     public List<String> getHwEndPoint_Lifeline_p_HW_Services() {
         return this.elt.getTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT);
     }
@@ -190,12 +170,10 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:<br/>
      * <i></i></p>
      */
-    @objid ("74c684ce-76c2-4013-a85b-5980ea758755")
     public List<String> getHwEndPoint_Lifeline_r_HW_Services() {
         return this.elt.getTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT);
     }
 
-    @objid ("8ca48117-960d-4600-a50d-5a28f95e2daf")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -206,7 +184,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("234e0e83-363b-4c48-9c40-c0c8d158e04e")
     public void setHwEndPoint_Lifeline_connectedTo(final List<String> values) {
         this.elt.putTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_CONNECTEDTO_TAGTYPE_ELT, values);
     }
@@ -216,7 +193,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("fc7698d7-3228-4cde-ba50-01b7e68ace33")
     public void setHwEndPoint_Lifeline_description(final String value) {
         this.elt.putTagValue(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_DESCRIPTION_TAGTYPE_ELT, value);
     }
@@ -226,7 +202,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("70b8b04b-bb82-45d9-b385-b2e1506a11a2")
     public void setHwEndPoint_Lifeline_frequency(final String value) {
         this.elt.putTagValue(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_FREQUENCY_TAGTYPE_ELT, value);
     }
@@ -236,7 +211,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("79ffd6c0-fb20-46b7-82b4-7a717698888e")
     public void setHwEndPoint_Lifeline_ownedHW(final List<String> values) {
         this.elt.putTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_OWNEDHW_TAGTYPE_ELT, values);
     }
@@ -246,7 +220,6 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1385fdf2-7804-42a4-8272-607034a7413b")
     public void setHwEndPoint_Lifeline_p_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT, values);
     }
@@ -256,46 +229,33 @@ public class HwEndPointLifeline extends CommunicationEndPointLifeline {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("4b17bc78-e0c8-4381-82fd-5be11d20c870")
     public void setHwEndPoint_Lifeline_r_HW_Services(final List<String> values) {
         this.elt.putTagValues(HwEndPointLifeline.MdaTypes.HWENDPOINT_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT, values);
     }
 
-    @objid ("a4723235-53a9-4131-b629-e1f5ed114ab9")
     protected HwEndPointLifeline(final Lifeline elt) {
         super(elt);
     }
 
-    @objid ("d5aae369-1381-4c6e-a803-038011d973b0")
     public static final class MdaTypes {
-        @objid ("d4941509-68bd-4cdd-b8a9-cc0f4c1688b8")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("d8cf5dc7-fbca-4379-89e6-0c5fe0e08548")
         public static TagType HWENDPOINT_LIFELINE_CONNECTEDTO_TAGTYPE_ELT;
 
-        @objid ("09cf0c8a-41ba-4fb2-b35f-3aa992165470")
         public static TagType HWENDPOINT_LIFELINE_DESCRIPTION_TAGTYPE_ELT;
 
-        @objid ("f056532f-e49e-4cda-842c-d55f22fb1eb5")
         public static TagType HWENDPOINT_LIFELINE_P_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("3af62757-af49-427d-8758-05d4a3a6724e")
         public static TagType HWENDPOINT_LIFELINE_R_HW_SERVICES_TAGTYPE_ELT;
 
-        @objid ("2fbcf904-ed0d-462c-82a3-76e178fd9325")
         public static TagType HWENDPOINT_LIFELINE_OWNEDHW_TAGTYPE_ELT;
 
-        @objid ("812b726f-7e82-40f2-aa2f-27beb5c01e08")
         public static TagType HWENDPOINT_LIFELINE_FREQUENCY_TAGTYPE_ELT;
 
-        @objid ("0a1f4f86-bc7a-48fa-867a-0dd6571808ad")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("f46134e3-529c-4827-97c1-7587731a0f1b")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("5ec52292-d350-47a3-b73c-6657d2b7c131")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "3d07fff1-10ac-11df-81d9-0014222a9f79");
             HWENDPOINT_LIFELINE_CONNECTEDTO_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "e874abb3-1726-11df-b92a-0014222a9f79");

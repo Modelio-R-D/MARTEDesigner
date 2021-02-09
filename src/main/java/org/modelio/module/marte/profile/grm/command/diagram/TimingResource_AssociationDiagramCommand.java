@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.TimingResource_Association;
 
-@objid ("84b98ca8-5d51-494a-be21-ea946dc72402")
 public class TimingResource_AssociationDiagramCommand extends DefaultLinkTool {
-    @objid ("2c576447-800a-44e4-b52b-75c59e276d58")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class TimingResource_AssociationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("d35ce881-cb0a-470a-9d7d-91e4fc9abbae")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class TimingResource_AssociationDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("5065b7a5-d035-4cd8-a070-6566e58fccf9")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("TimingResource_AssociationCommand")){

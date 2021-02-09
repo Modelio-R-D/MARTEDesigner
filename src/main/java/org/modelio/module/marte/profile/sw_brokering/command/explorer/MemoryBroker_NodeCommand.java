@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_brokering.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_brokering.model.MemoryBroker_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("ca5c8d23-6da6-4810-adf9-693a90aebd64")
 public class MemoryBroker_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("f89fc611-d927-4915-910a-dae08c395e94")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -38,7 +35,6 @@ public class MemoryBroker_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("7c585def-3f7e-47d6-bfd4-ef19bc781564")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MemoryBroker_NodeCommand")){

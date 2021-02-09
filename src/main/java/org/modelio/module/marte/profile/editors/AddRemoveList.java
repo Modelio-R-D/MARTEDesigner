@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.editors;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
@@ -18,24 +17,17 @@ import org.eclipse.swt.widgets.Group;
  * The user is able to add or remove some elements from the linked model elements.
  * @author ehouziaux
  */
-@objid ("fe9c6249-1f3c-474e-8bda-2d2d40b0eab4")
 public class AddRemoveList<MObject> {
-    @objid ("5ff9f718-5671-4f0f-b536-945a73546144")
     private Group grAdd;
 
-    @objid ("f0842a8e-9167-4f04-b185-44d72656b26e")
     private Group grRem;
 
-    @objid ("a33b4c9c-178d-419a-9b8a-b3e9973ee50c")
     private org.eclipse.swt.widgets.List lAdd;
 
-    @objid ("3a36a64a-76c1-4be9-824c-5ba146bf3cd9")
     private org.eclipse.swt.widgets.List lRem;
 
-    @objid ("d41d6c0a-06c7-49a1-a871-c783b4ab7f81")
     private Button bAdd;
 
-    @objid ("6d6a91f7-c45e-4e7a-bcb8-125490598d9f")
     private Button bRem;
 
     /**
@@ -45,7 +37,6 @@ public class AddRemoveList<MObject> {
      * 
      * @param parent is the parent composite.
      */
-    @objid ("aec206a6-6b0c-4452-b1d7-a5e6f28c5daa")
     public AddRemoveList(Composite parent) {
         // parent setting
         parent.setSize(380, 220);
@@ -127,7 +118,6 @@ public class AddRemoveList<MObject> {
      * 
      * @return the available values
      */
-    @objid ("a5f85af8-de64-4b97-a803-5106b7a42c90")
     public String[] getAvailableValues() {
         return lAdd.getSelection();
     }
@@ -138,7 +128,6 @@ public class AddRemoveList<MObject> {
      * @param title1 is the available model elements List<MObject> title.
      * @param title2 is the selected model elements List<MObject> title.
      */
-    @objid ("538abe3d-9758-4db7-b642-63677aefc6ee")
     public void setTitles(String title1, String title2) {
         grAdd.setText(title1);
         grRem.setText(title2);
@@ -147,7 +136,6 @@ public class AddRemoveList<MObject> {
     /**
      * Sets the List<MObject> size.
      */
-    @objid ("e6eb5f3c-04ce-4026-8cfb-191b3a381e46")
     public void setListSize() {
         lAdd.setBounds(5, 15, grAdd.getBounds().width-10, grAdd.getBounds().height-20);
         lRem.setBounds(5, 15, grRem.getBounds().width-10, grRem.getBounds().height-20);
@@ -158,7 +146,6 @@ public class AddRemoveList<MObject> {
      * 
      * @return the available elements list.
      */
-    @objid ("5d7b7c93-f57c-4cd6-a496-65a2893da565")
     public org.eclipse.swt.widgets.List getlAdd() {
         return lAdd;
     }
@@ -167,7 +154,6 @@ public class AddRemoveList<MObject> {
      * Sets the available
      * @param lAdd is the new list.
      */
-    @objid ("7dcbb16b-1eae-4ede-ba68-5bd87a4c4c33")
     public void setlAdd(String[] l) {
         lAdd.removeAll();
         for (String s : l) {
@@ -180,7 +166,6 @@ public class AddRemoveList<MObject> {
      * 
      * @return the selected elements list.
      */
-    @objid ("9cd99642-4ea3-4806-9b9a-8f9d4a2d91d8")
     public org.eclipse.swt.widgets.List getlRem() {
         return lRem;
     }
@@ -189,7 +174,6 @@ public class AddRemoveList<MObject> {
      * Sets the selected model elements list.
      * @param lRem is the new list.
      */
-    @objid ("f790a936-8051-4e6e-be52-be93598f6c6b")
     public void setlRem(String[] l) {
         lRem.removeAll();
         for (String s : l) {

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.pam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("42488969-2e5f-4670-bd55-330922f81afb")
 public class PaRequestedService_ModelElementProperty implements IPropertyContent {
-    @objid ("9e663c9a-9a8f-40d9-9be6-63f00fa4dac5")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -30,7 +27,6 @@ public class PaRequestedService_ModelElementProperty implements IPropertyContent
         }
     }
 
-    @objid ("6e351de2-3ff2-4dfc-9143-72096664b732")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.PAREQUESTEDSERVICE_MODELELEMENT_PAREQUESTEDSERVICE_MODELELEMENT_NOSYNC, elt);

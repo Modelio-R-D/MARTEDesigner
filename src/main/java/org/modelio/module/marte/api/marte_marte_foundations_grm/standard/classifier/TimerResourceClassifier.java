@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_foundations_grm.standard.classi
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,15 +30,11 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("eb0abd3c-d385-49af-98ff-cc3502be9718")
 public class TimerResourceClassifier extends TimingResourceClassifier {
-    @objid ("de4819e3-a3bb-4cbf-a300-113ad9e51e03")
     public static final String STEREOTYPE_NAME = "TimerResource_Classifier";
 
-    @objid ("582747cf-e27d-4958-968d-ce50eeab5df6")
     public static final String TIMERRESOURCE_CLASSIFIER_DURATION_TAGTYPE = "TimerResource_Classifier_duration";
 
-    @objid ("ecb85adc-71db-4bb7-903b-aa8ad8383d41")
     public static final String TIMERRESOURCE_CLASSIFIER_ISPERIODIC_TAGTYPE = "TimerResource_Classifier_isPeriodic";
 
     /**
@@ -50,7 +45,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("bcc74c70-8d6e-4071-82f0-947cb2e8afd4")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Classifier) && ((Classifier) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, TimerResourceClassifier.STEREOTYPE_NAME));
     }
@@ -60,7 +54,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * 
      * @return a {@link TimerResourceClassifier} proxy on the created {@link Classifier}.
      */
-    @objid ("0c547385-a8e4-44ed-bcdd-1538fcfe4155")
     public static TimerResourceClassifier create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Classifier");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, TimerResourceClassifier.STEREOTYPE_NAME);
@@ -74,7 +67,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * @param obj a Classifier
      * @return a {@link TimerResourceClassifier} proxy or <i>null</i>.
      */
-    @objid ("a7b13119-8439-4064-95ba-911ea335b572")
     public static TimerResourceClassifier instantiate(final Classifier obj) {
         return TimerResourceClassifier.canInstantiate(obj) ? new TimerResourceClassifier(obj) : null;
     }
@@ -87,7 +79,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * @return a {@link TimerResourceClassifier} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("4fec1bd0-44ec-4d3a-80c0-964d7a3d3108")
     public static TimerResourceClassifier safeInstantiate(final Classifier obj) throws IllegalArgumentException {
         if (TimerResourceClassifier.canInstantiate(obj))
         	return new TimerResourceClassifier(obj);
@@ -95,7 +86,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
         	throw new IllegalArgumentException("TimerResourceClassifier: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("38bad33c-9e14-4f8f-b05e-f6af906592f5")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -115,7 +105,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * Get the underlying {@link Classifier}. 
      * @return the Classifier represented by this proxy, never null.
      */
-    @objid ("f4eaf7dd-97cf-4ed6-9467-79560e36f80b")
     @Override
     public Classifier getElement() {
         return (Classifier)super.getElement();
@@ -126,12 +115,10 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("2a87918a-8a13-470e-b5da-3f83412960fd")
     public String getTimerResource_Classifier_duration() {
         return this.elt.getTagValue(TimerResourceClassifier.MdaTypes.TIMERRESOURCE_CLASSIFIER_DURATION_TAGTYPE_ELT);
     }
 
-    @objid ("db17dbf7-12f2-4c1a-9107-5e2c27dd0a81")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -142,7 +129,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("0b5f937b-d7cc-40fe-b657-7af00d36dd87")
     public boolean isTimerResource_Classifier_isPeriodic() {
         return this.elt.isTagged(TimerResourceClassifier.MdaTypes.TIMERRESOURCE_CLASSIFIER_ISPERIODIC_TAGTYPE_ELT);
     }
@@ -152,7 +138,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("f0de3171-5906-4345-9f59-f9e1bcc14fb7")
     public void setTimerResource_Classifier_duration(final String value) {
         this.elt.putTagValue(TimerResourceClassifier.MdaTypes.TIMERRESOURCE_CLASSIFIER_DURATION_TAGTYPE_ELT, value);
     }
@@ -162,7 +147,6 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("8a412492-2f32-4172-9a69-4ab317469afe")
     public void setTimerResource_Classifier_isPeriodic(final boolean value) {
         if (value)
           MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createTaggedValue(TimerResourceClassifier.MdaTypes.TIMERRESOURCE_CLASSIFIER_ISPERIODIC_TAGTYPE_ELT, this.elt);
@@ -170,29 +154,21 @@ public class TimerResourceClassifier extends TimingResourceClassifier {
           this.elt.removeTags(TimerResourceClassifier.MdaTypes.TIMERRESOURCE_CLASSIFIER_ISPERIODIC_TAGTYPE_ELT);
     }
 
-    @objid ("e79343ca-61bd-4a1f-a9f4-6d1ea8bca7b2")
     protected TimerResourceClassifier(final Classifier elt) {
         super(elt);
     }
 
-    @objid ("f891975e-06d8-402a-835c-5a6f4afc31a5")
     public static final class MdaTypes {
-        @objid ("624003ba-e180-4801-a24d-aa857db2c9f9")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("216aefae-619c-439b-bd33-9c57118cffef")
         public static TagType TIMERRESOURCE_CLASSIFIER_DURATION_TAGTYPE_ELT;
 
-        @objid ("d38d5cec-e7ca-42fe-9e43-fd0e02125cab")
         public static TagType TIMERRESOURCE_CLASSIFIER_ISPERIODIC_TAGTYPE_ELT;
 
-        @objid ("f5596b2b-5ff9-4b83-8061-235e9ecff724")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b67b5b7f-0851-433e-b6a3-50139c49bf64")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("604f60eb-17ce-4875-ab61-38fcb73d74b9")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "5ff86705-0f4c-11df-8c52-0014222a9f79");
             TIMERRESOURCE_CLASSIFIER_DURATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "7df760b2-14c6-11df-92f7-001302895b2b");

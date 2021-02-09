@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.coreelements.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.coreelements.model.Configuration_Node;
 
-@objid ("dc1aefdc-167e-4eae-a972-db526384da4f")
 public class Configuration_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("f4477ded-a31d-4728-b053-184c7fdd6b97")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -46,7 +43,6 @@ public class Configuration_NodeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("dd59c281-d36b-473c-bf97-a7a4e90ba647")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Configuration_NodeDiagramCommand")){

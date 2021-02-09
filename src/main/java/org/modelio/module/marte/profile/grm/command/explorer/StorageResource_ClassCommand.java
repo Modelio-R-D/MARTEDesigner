@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.StorageResource_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("da9d89db-d318-4782-8858-16f99c933efb")
 public class StorageResource_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("9d15c8d7-120e-41c8-b822-cec881d14e49")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class StorageResource_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("d0cb074a-c943-4125-88d2-6a6524bb7977")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("StorageResource_ClassCommand")){

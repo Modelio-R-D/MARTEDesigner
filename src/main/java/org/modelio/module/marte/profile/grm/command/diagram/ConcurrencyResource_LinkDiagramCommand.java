@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_Link;
 
-@objid ("6a6c2d60-c76d-404f-a32f-1a3da2dbdb7b")
 public class ConcurrencyResource_LinkDiagramCommand extends DefaultLinkTool {
-    @objid ("7745410e-1a62-4a4a-9626-e238f235ede7")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class ConcurrencyResource_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("ef52df4a-a13c-4ad7-ad25-df282365663b")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class ConcurrencyResource_LinkDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("d79c636c-4824-433a-a08e-21563a5e9f3a")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ConcurrencyResource_LinkCommand")){

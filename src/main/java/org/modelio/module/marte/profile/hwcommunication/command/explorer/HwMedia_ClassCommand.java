@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwMedia_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("4a04adfd-069c-449a-9c6e-8857ca1285b2")
 public class HwMedia_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("d6b6df06-4739-47e4-991a-13c7b0eb82ba")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwMedia_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("cee29c11-7cac-4596-ba24-c9cb5cd4323d")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwMedia_ClassCommand")){

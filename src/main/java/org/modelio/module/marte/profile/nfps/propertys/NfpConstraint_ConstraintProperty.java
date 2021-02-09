@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.nfps.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.stateMachineModel.State;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("4e8d30b5-90c7-4358-b5c3-962d91b34f76")
 public class NfpConstraint_ConstraintProperty implements IPropertyContent {
-    @objid ("beb0fba6-a439-4138-b3ef-24aa992a99d9")
     private static List<ModelElement> listMode;
 
-    @objid ("1794f14a-214a-459d-8a86-1a215b99e849")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -32,7 +28,6 @@ public class NfpConstraint_ConstraintProperty implements IPropertyContent {
         }
     }
 
-    @objid ("947cc923-83f8-437b-87e6-c115d309b9d7")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

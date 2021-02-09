@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwtiming.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwtiming.model.HwTimer_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("173a2033-614f-4a16-903a-4df334e71ac7")
 public class HwTimer_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("394cebee-5db6-449d-9771-acddd654650f")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class HwTimer_BindableInstanceCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("ed580bd1-a6e0-43c2-9627-823be85ff0be")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwTimer_BindableInstanceCommand")){

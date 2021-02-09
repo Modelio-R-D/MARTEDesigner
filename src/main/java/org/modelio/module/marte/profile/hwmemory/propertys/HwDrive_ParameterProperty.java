@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwmemory.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6448d993-15d1-46ff-8dfd-9e10d356d96a")
 public class HwDrive_ParameterProperty implements IPropertyContent {
-    @objid ("aa82fe69-4b20-4561-ae75-142d772f363f")
     private static List<ModelElement> ownedBuffers;
 
-    @objid ("55af8769-2072-4f2f-905c-e9586b78ec8f")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -32,7 +28,6 @@ public class HwDrive_ParameterProperty implements IPropertyContent {
         }
     }
 
-    @objid ("948bb9c8-0e0b-4f30-9929-328b7318988a")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

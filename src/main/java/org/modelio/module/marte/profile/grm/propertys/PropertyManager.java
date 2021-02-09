@@ -1,14 +1,11 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.gqam.propertys.DefaultProperty;
 
-@objid ("b199d922-1eda-4096-85ea-33d2188724bf")
 public class PropertyManager {
-    @objid ("283abc74-a4c4-4b03-9272-c904e7e61040")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.ACQUIRE_BEHAVIOR)){
             return new Acquire_BehaviorProperty();

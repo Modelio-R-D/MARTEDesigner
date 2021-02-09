@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gcm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -22,9 +21,7 @@ import org.modelio.metamodel.uml.statik.Package;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.FlowPort_Port;
 
-@objid ("9fc8b58f-3013-4dcc-bce0-d25ddbadd255")
 public class FlowPort_PortDiagramCommand extends DefaultBoxTool {
-    @objid ("cb95de5b-a1c9-47d1-ae95-3ac5cefc4b56")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -45,7 +42,6 @@ public class FlowPort_PortDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("7c02b77f-420f-40c0-b42b-15825606e040")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("FlowPort_PortCommand");) {

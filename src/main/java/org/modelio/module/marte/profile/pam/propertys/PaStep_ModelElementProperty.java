@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.pam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("62277f39-f7a9-4340-a995-292763ae9209")
 public class PaStep_ModelElementProperty implements IPropertyContent {
-    @objid ("dda85cd6-295e-4dfc-8a1c-f4d78d18afc3")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -30,7 +27,6 @@ public class PaStep_ModelElementProperty implements IPropertyContent {
         }
     }
 
-    @objid ("b1ed3c46-32c0-401a-af55-2481aaf2f12e")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.PASTEP_MODELELEMENT_PASTEP_MODELELEMENT_NOSYNC),

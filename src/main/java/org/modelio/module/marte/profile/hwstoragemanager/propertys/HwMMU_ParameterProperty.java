@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwstoragemanager.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,12 +11,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("8ad8f3b0-000c-4fe2-9287-4f3685212edf")
 public class HwMMU_ParameterProperty implements IPropertyContent {
-    @objid ("3deac372-52cb-475d-bb8b-20aca665f56b")
     private static List<ModelElement> ownedTLBs;
 
-    @objid ("cfe02f3f-c1cd-49b6-9420-a55700f0b53f")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -41,7 +37,6 @@ public class HwMMU_ParameterProperty implements IPropertyContent {
         }
     }
 
-    @objid ("765d189a-4543-4183-a675-e5eba7e72650")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationEndPoint_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("1a42c49a-f56d-483f-bed0-4bde011ce6f2")
 public class CommunicationEndPoint_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("305a908c-b65d-4ce3-a6cf-9f4da66e8c7d")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class CommunicationEndPoint_ClassCommand extends DefaultModuleCommandHand
         return false;
     }
 
-    @objid ("2591f5b8-f7de-4ab3-a768-22aa55bb3258")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationEndPoint_ClassCommand")){

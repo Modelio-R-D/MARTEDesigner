@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.MemoryPartition_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("a2ae0f90-1a43-44e3-bfc2-a91a720f57fd")
 public class MemoryPartition_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("78107a43-735d-4650-b134-e83baaa26ecd")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -34,7 +31,6 @@ public class MemoryPartition_InstanceCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("35729660-2cd9-4ab4-a4cb-be58aa4de7cc")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MemoryPartition_InstanceCommand")){

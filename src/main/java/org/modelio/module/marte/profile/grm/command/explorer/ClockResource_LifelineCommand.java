@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ClockResource_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("ac9dd7e5-e0eb-4358-b12a-f376e287d2b1")
 public class ClockResource_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("973f0ed3-2365-4471-9414-724362d09095")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class ClockResource_LifelineCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("5fc60d74-a5ac-4eb3-b602-6b024826dc25")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClockResource_LifelineCommand")){

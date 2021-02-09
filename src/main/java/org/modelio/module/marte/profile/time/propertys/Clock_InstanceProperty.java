@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.Class;
@@ -14,15 +13,11 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("db758711-677b-4085-9b14-40d68ef18047")
 public class Clock_InstanceProperty implements IPropertyContent {
-    @objid ("965deaff-dcb3-4f4c-8ec8-5eb87c1d34c2")
     private static List<ModelElement> listType = null;
 
-    @objid ("0f754c30-6511-4258-8b3b-ab189ae8e835")
     private static List<ModelElement> listUnit = null;
 
-    @objid ("f6d20f2f-d495-41ab-87b6-93c0fdf05f16")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -50,7 +45,6 @@ public class Clock_InstanceProperty implements IPropertyContent {
         }
     }
 
-    @objid ("ad07eaf0-51c3-4c7e-8da3-83697afbd26a")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         /*

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("062fc051-58ba-4db9-8de4-c01a05bebafb")
 public class SaExecHost_ParameterProperty implements IPropertyContent {
-    @objid ("51106492-9347-440b-a47b-c32eef3714a3")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -30,7 +27,6 @@ public class SaExecHost_ParameterProperty implements IPropertyContent {
         }
     }
 
-    @objid ("1720bc88-2665-45f5-8f80-da11db6a3a57")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SAEXECHOST_PARAMETER_SAEXECHOST_PARAMETER_ISSCHED)

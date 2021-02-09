@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.sw_resourcecore.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("c5d1cb7a-e212-44da-95d1-c44041cf5bd8")
 public class PropertyManager {
-    @objid ("8b42c50e-65af-4c36-ac36-7a18374f0aaf")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.SWACCESSSERVICE_EXECUTIONSPECIFICATION)){
             return new SwAccessService_ExecutionSpecificationProperty();

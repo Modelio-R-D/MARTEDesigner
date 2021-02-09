@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.MessageComResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("97953409-fd6a-4449-a569-41aac0721e87")
 public class MessageComResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("5994da22-e707-45b2-b73f-18edfa9d89d2")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class MessageComResource_NodeCommand extends DefaultModuleCommandHandler 
         return false;
     }
 
-    @objid ("e8f4b183-736c-4a19-a67f-d2c0a932b7ec")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MessageComResource_NodeCommand")){

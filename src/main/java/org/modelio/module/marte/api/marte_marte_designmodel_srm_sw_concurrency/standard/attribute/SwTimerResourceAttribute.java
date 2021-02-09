@@ -1,15 +1,14 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_srm_sw_concurrency.standard.attribute;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,20 +31,17 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("bd9e2c1a-b440-4005-b00a-dead3caf7d43")
 public class SwTimerResourceAttribute extends TimerResourceAttribute {
-    @objid ("a9346976-f1b9-4a94-8e00-088ca8a0efa3")
     public static final String STEREOTYPE_NAME = "SwTimerResource_Attribute";
 
     /**
-     * Tells whether a {@link SwTimerResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SwTimerResource_Attribute >>. 
+     * Tells whether a {@link SwTimerResourceAttribute proxy} can be instantiated from a {@link MObject} checking it is a {@link Attribute} stereotyped << SwTimerResource_Attribute >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("f9cd3be3-011e-47c6-abe6-b92e2e51e88c")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Attribute) && ((Attribute) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceAttribute.STEREOTYPE_NAME));
     }
@@ -55,21 +51,19 @@ public class SwTimerResourceAttribute extends TimerResourceAttribute {
      * 
      * @return a {@link SwTimerResourceAttribute} proxy on the created {@link Attribute}.
      */
-    @objid ("3f0c732b-9b21-459c-9d4c-1a0d5562e010")
     public static SwTimerResourceAttribute create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Attribute");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Attribute");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, SwTimerResourceAttribute.STEREOTYPE_NAME);
         return SwTimerResourceAttribute.instantiate((Attribute)e);
     }
 
     /**
-     * Tries to instantiate a {@link SwTimerResourceAttribute} proxy from a {@link Attribute} stereotyped << SwTimerResource_Attribute >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link SwTimerResourceAttribute} proxy from a {@link Attribute} stereotyped << SwTimerResource_Attribute >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Attribute
      * @return a {@link SwTimerResourceAttribute} proxy or <i>null</i>.
      */
-    @objid ("906d48f9-ddc3-44fd-950b-a14bc8805e51")
     public static SwTimerResourceAttribute instantiate(final Attribute obj) {
         return SwTimerResourceAttribute.canInstantiate(obj) ? new SwTimerResourceAttribute(obj) : null;
     }
@@ -82,7 +76,6 @@ public class SwTimerResourceAttribute extends TimerResourceAttribute {
      * @return a {@link SwTimerResourceAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("5a4601f6-c693-44ce-a1bc-8c94880b2b0e")
     public static SwTimerResourceAttribute safeInstantiate(final Attribute obj) throws IllegalArgumentException {
         if (SwTimerResourceAttribute.canInstantiate(obj))
         	return new SwTimerResourceAttribute(obj);
@@ -90,7 +83,6 @@ public class SwTimerResourceAttribute extends TimerResourceAttribute {
         	throw new IllegalArgumentException("SwTimerResourceAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d82169fe-5ace-4dbc-a4a9-178e2dcb937e")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -110,35 +102,27 @@ public class SwTimerResourceAttribute extends TimerResourceAttribute {
      * Get the underlying {@link Attribute}. 
      * @return the Attribute represented by this proxy, never null.
      */
-    @objid ("2b3a32e5-620e-4a00-aae1-50bb242e50e9")
     @Override
     public Attribute getElement() {
         return (Attribute)super.getElement();
     }
 
-    @objid ("a3da95a6-4274-4935-a19a-4d6a9874e5c4")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("b1f50c4d-3627-490a-b6f9-8f3f9f028ef4")
     protected SwTimerResourceAttribute(final Attribute elt) {
         super(elt);
     }
 
-    @objid ("850d8011-9ee8-4b1b-bb2d-6aa8ed285e8d")
     public static final class MdaTypes {
-        @objid ("43cdf275-d541-4b2b-9e15-c53481d65f0b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f9da298e-e96c-46af-8f59-1fe0466c2ea8")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1b4ff6c0-2a60-443e-8812-c62d4c99af40")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("0e31bf77-a602-417e-b262-b0d66b663013")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "01dec061-0ccf-11df-8525-001302895b2b");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

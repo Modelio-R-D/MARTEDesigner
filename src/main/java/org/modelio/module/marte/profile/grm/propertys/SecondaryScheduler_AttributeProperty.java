@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.interactionModel.Lifeline;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -19,12 +18,9 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("3ff59244-6ae6-4760-8742-3b4d23609239")
 public class SecondaryScheduler_AttributeProperty implements IPropertyContent {
-    @objid ("cb46916a-07f3-4210-be0f-5658aed9424d")
     private static List<ModelElement> listSchedulableResource = null;
 
-    @objid ("4558a653-78c7-495a-a263-552903484e7d")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -48,7 +44,6 @@ public class SecondaryScheduler_AttributeProperty implements IPropertyContent {
         }
     }
 
-    @objid ("63ae6315-5c27-4a10-9c0e-2da3cdbd135b")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcomputing.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwASIC_Node;
 
-@objid ("7a2ba0b9-832b-4bff-89d2-bfe732c1d678")
 public class HwASIC_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("db4345e4-d7a5-45bc-80c5-9d4bb6f63ea0")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class HwASIC_NodeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("b4e8dec1-3b08-4188-8d00-d8e63eae8aff")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwASIC_NodeCommand")){

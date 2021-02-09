@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.hwcommunication.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,15 +12,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("679f45a3-44c3-4439-a27b-d4b17b790475")
 public class HwMedia_ClassifierProperty implements IPropertyContent {
-    @objid ("5a307db7-aa80-4335-8aa4-dc5780e01ef8")
     private static List<String> tagTypeNames = new ArrayList<>();
 
-    @objid ("55f33326-9736-427b-8f15-9d8fbec6e67e")
     private static List<ModelElement> hwArbiter;
 
-    @objid ("9f1f2133-d7a9-4a75-afe5-7f242e0c008d")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -37,7 +32,6 @@ public class HwMedia_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("1ff75055-a2b9-4d50-b826-480628a1cb1e")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

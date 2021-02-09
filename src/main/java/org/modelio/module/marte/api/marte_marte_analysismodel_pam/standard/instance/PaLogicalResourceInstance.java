@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_analysismodel_pam.standard.inst
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -31,24 +30,18 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("b53cd6b4-0a4a-4403-a11e-11384a4822b0")
 public class PaLogicalResourceInstance {
-    @objid ("d155e01f-d478-47cb-9357-739c9f2a9f7d")
     public static final String STEREOTYPE_NAME = "PaLogicalResource_Instance";
 
-    @objid ("bf99d774-83b6-4229-9a57-c990384b6c67")
     public static final String PALOGICALRESOURCE_INSTANCE_POOLSIZE_TAGTYPE = "PaLogicalResource_Instance_poolSize";
 
-    @objid ("9b60cb31-e0e0-4ab2-9b10-14e56c5ea290")
     public static final String PALOGICALRESOURCE_INSTANCE_THROUGHPUT_TAGTYPE = "PaLogicalResource_Instance_throughput";
 
-    @objid ("1fca0960-0c47-4e4f-b11b-8e807bf4b461")
     public static final String PALOGICALRESOURCE_INSTANCE_UTILIZATION_TAGTYPE = "PaLogicalResource_Instance_utilization";
 
     /**
      * The underlying {@link Instance} represented by this proxy, never null.
      */
-    @objid ("411453ce-35ae-45da-917e-b25d04f8e467")
     protected final Instance elt;
 
     /**
@@ -59,7 +52,6 @@ public class PaLogicalResourceInstance {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("441b35cc-8607-4b33-9e18-1be7733217ae")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Instance) && ((Instance) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, PaLogicalResourceInstance.STEREOTYPE_NAME));
     }
@@ -69,7 +61,6 @@ public class PaLogicalResourceInstance {
      * 
      * @return a {@link PaLogicalResourceInstance} proxy on the created {@link Instance}.
      */
-    @objid ("fa564dd6-cd86-4c72-80f3-61ac126e6bf6")
     public static PaLogicalResourceInstance create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Instance");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, PaLogicalResourceInstance.STEREOTYPE_NAME);
@@ -83,7 +74,6 @@ public class PaLogicalResourceInstance {
      * @param obj a Instance
      * @return a {@link PaLogicalResourceInstance} proxy or <i>null</i>.
      */
-    @objid ("43e5508b-dd3e-4b07-bf84-52ea059c18cc")
     public static PaLogicalResourceInstance instantiate(final Instance obj) {
         return PaLogicalResourceInstance.canInstantiate(obj) ? new PaLogicalResourceInstance(obj) : null;
     }
@@ -96,7 +86,6 @@ public class PaLogicalResourceInstance {
      * @return a {@link PaLogicalResourceInstance} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("678de581-69fd-4cd9-93d0-be754fa43795")
     public static PaLogicalResourceInstance safeInstantiate(final Instance obj) throws IllegalArgumentException {
         if (PaLogicalResourceInstance.canInstantiate(obj))
         	return new PaLogicalResourceInstance(obj);
@@ -104,7 +93,6 @@ public class PaLogicalResourceInstance {
         	throw new IllegalArgumentException("PaLogicalResourceInstance: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("2d2d61c6-e77f-4ff0-a350-4416ebb13a48")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -124,7 +112,6 @@ public class PaLogicalResourceInstance {
      * Get the underlying {@link Instance}. 
      * @return the Instance represented by this proxy, never null.
      */
-    @objid ("0e7ee9ef-454e-4316-8757-2061be707079")
     public Instance getElement() {
         return this.elt;
     }
@@ -134,7 +121,6 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("64ac8781-a2c7-4325-8ad2-3ea1581c6c9b")
     public String getPaLogicalResource_Instance_poolSize() {
         return this.elt.getTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_POOLSIZE_TAGTYPE_ELT);
     }
@@ -144,7 +130,6 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("bf9177e0-fe3e-48aa-b62b-0b196299166c")
     public String getPaLogicalResource_Instance_throughput() {
         return this.elt.getTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_THROUGHPUT_TAGTYPE_ELT);
     }
@@ -154,12 +139,10 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("1fd8cca4-09ec-44f1-a542-3113edf32b52")
     public String getPaLogicalResource_Instance_utilization() {
         return this.elt.getTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_UTILIZATION_TAGTYPE_ELT);
     }
 
-    @objid ("752cf0b1-cf6e-4efe-8a32-aaa8f1d9d57d")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -170,7 +153,6 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("c2f43d0e-5d86-4fdb-8beb-7721cac7bc76")
     public void setPaLogicalResource_Instance_poolSize(final String value) {
         this.elt.putTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_POOLSIZE_TAGTYPE_ELT, value);
     }
@@ -180,7 +162,6 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("5257e733-8c9e-4d18-87ba-1630a687aa0a")
     public void setPaLogicalResource_Instance_throughput(final String value) {
         this.elt.putTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_THROUGHPUT_TAGTYPE_ELT, value);
     }
@@ -190,37 +171,27 @@ public class PaLogicalResourceInstance {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("99626d2e-3579-405b-a9d9-50d6266eb864")
     public void setPaLogicalResource_Instance_utilization(final String value) {
         this.elt.putTagValue(PaLogicalResourceInstance.MdaTypes.PALOGICALRESOURCE_INSTANCE_UTILIZATION_TAGTYPE_ELT, value);
     }
 
-    @objid ("0fdcc88e-13ed-422e-ae0f-a21923b92c84")
     protected PaLogicalResourceInstance(final Instance elt) {
         this.elt = elt;
     }
 
-    @objid ("0ff2d012-001a-4ac0-8aac-e8ae5a6385ec")
     public static final class MdaTypes {
-        @objid ("81627635-543b-4330-a116-0b204653795b")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("b1d3277f-707e-45d1-abda-094c951b03a7")
         public static TagType PALOGICALRESOURCE_INSTANCE_UTILIZATION_TAGTYPE_ELT;
 
-        @objid ("d80a4c5c-1e0a-49e5-a604-f1784cd90afd")
         public static TagType PALOGICALRESOURCE_INSTANCE_THROUGHPUT_TAGTYPE_ELT;
 
-        @objid ("56f8e692-fce5-4b75-a706-391877f30368")
         public static TagType PALOGICALRESOURCE_INSTANCE_POOLSIZE_TAGTYPE_ELT;
 
-        @objid ("7cd9b3c2-9454-4701-ab64-d0a9ebcd04c4")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("df09771d-a789-45b9-ad25-f8bdce0023f2")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("acf2a884-2921-44e2-83ff-afc0e495e52e")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "03d10557-0ccf-11df-8525-001302895b2b");
             PALOGICALRESOURCE_INSTANCE_UTILIZATION_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "03d1055e-0ccf-11df-8525-001302895b2b");

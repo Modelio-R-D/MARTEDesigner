@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwComputingResource_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("c4cc3866-2a25-4235-a6ed-1f6d6ac78147")
 public class HwComputingResource_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("3cc14085-cbc9-44b7-8d18-efb3ac2784c2")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class HwComputingResource_LifelineCommand extends DefaultModuleCommandHan
         return false;
     }
 
-    @objid ("8a34dfce-5ac1-4fdd-9716-f7b35a2531ff")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwComputingResource_LifelineCommand")){

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Release_ExecutionSpecification;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("8e176ab1-e942-4cbf-a7f8-1fda7280f905")
 public class Release_ExecutionSpecificationCommand extends DefaultModuleCommandHandler {
-    @objid ("915a5e45-f01c-4938-a71a-4a031ad78c7f")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -29,7 +26,6 @@ public class Release_ExecutionSpecificationCommand extends DefaultModuleCommandH
         return false;
     }
 
-    @objid ("562a24f3-866c-469b-b667-dcc33d079980")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Release_ExecutionSpecificationCommand")){

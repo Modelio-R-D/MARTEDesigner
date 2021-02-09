@@ -1,24 +1,20 @@
 package org.modelio.module.marte.properties;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5ca36ea2-62f6-4acf-9c81-040adf979227")
 public class MARTEPropertyManager {
-    @objid ("47155930-9099-4455-af17-e867ba692814")
     private boolean isFromProfile(String namePro, Stereotype ste) {
         return  ste.getOwner().getName().equals(namePro);
     }
 
-    @objid ("aed7da02-f36f-4f60-9fa7-9125e95bb3d6")
     public int changeProperty(ModelElement obmo, int row, String value) {
         List<Stereotype> sterList = ModelUtils.computePropertyList(obmo);
-
+        
         for (Stereotype ste : sterList){
             if (row > 0){
                 if (isFromProfile("MARTE.MARTE_Foundations.Alloc", ste)){
@@ -27,14 +23,14 @@ public class MARTEPropertyManager {
                         contentAlloc.changeProperty(obmo, row, value);
                     }
                 }
-
+        
                 if (isFromProfile("MARTE.MARTE_Foundations.CoreElements", ste)){
                     IPropertyContent contentCoreElements = org.modelio.module.marte.profile.coreelements.propertys.PropertyManager.getPalette(ste);
                     if(contentCoreElements != null){
                         contentCoreElements.changeProperty(obmo, row, value);
                     }
                 }
-
+        
                 if (isFromProfile("MARTE.MARTE_Annexes.VSL.DataTypes", ste)){
                     IPropertyContent contentDataTypes = org.modelio.module.marte.profile.datatypes.propertys.PropertyManager.getPalette(ste);
                     if(contentDataTypes != null){
@@ -71,7 +67,7 @@ public class MARTEPropertyManager {
                         contentPam.changeProperty(obmo, row, value);
                     }
                 }
-
+        
                 if (isFromProfile("MARTE.MARTE_Foundations.GRM", ste)){
                     IPropertyContent contentGrm = org.modelio.module.marte.profile.grm.propertys.PropertyManager.getPalette(ste);
                     if(contentGrm != null){
@@ -180,14 +176,14 @@ public class MARTEPropertyManager {
                         contentVariables.changeProperty(obmo, row, value);
                     }
                 }
-
+        
                 if (isFromProfile("MARTE.MARTE_Annexes.RSM", ste)) {
                     IPropertyContent contentVariables = org.modelio.module.marte.profile.rsm.propertys.PropertyManager.getPalette(ste);
                     if(contentVariables != null){
                         contentVariables.changeProperty(obmo, row, value);
                     }
                 }
-
+        
                 row  = row - ste.getDefinedTagType().size();
                 row  = row - ste.getDefinedNoteType().size();
             }
@@ -195,19 +191,18 @@ public class MARTEPropertyManager {
         return row;
     }
 
-    @objid ("83f09706-bad1-4f80-9321-fb58ece61d16")
     public void update(ModelElement obmo, IModulePropertyTable table) {
         List<Stereotype> sterList = ModelUtils.computePropertyList(obmo);
-
+        
         for (Stereotype ste : sterList){
-
+        
             if (isFromProfile("MARTE.MARTE_Foundations.Alloc", ste)){
                 IPropertyContent contentAlloc = org.modelio.module.marte.profile.alloc.propertys.PropertyManager.getPalette(ste);
                 if(contentAlloc != null){
                     contentAlloc.update(obmo, table);
                 }
             }
-
+        
             if (isFromProfile("MARTE.MARTE_Foundations.CoreElements", ste)) {
                 IPropertyContent contentCoreElements = org.modelio.module.marte.profile.coreelements.propertys.PropertyManager.getPalette(ste);
                 if(contentCoreElements != null){

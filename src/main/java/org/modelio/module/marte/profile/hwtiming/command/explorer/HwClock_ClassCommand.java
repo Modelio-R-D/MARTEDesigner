@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwtiming.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwtiming.model.HwClock_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("f8d7ecee-efa8-42b4-a975-9e8f22cab8ec")
 public class HwClock_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("abb79546-29e4-464e-8665-2b4beedb5fe4")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class HwClock_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("b681e67a-90dd-49f5-93d3-c3620905aef1")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwClock_ClassCommand")){

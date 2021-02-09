@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcommunication.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwEndPoint_AssociationEnd;
 
-@objid ("e945188b-3141-4f0d-a81c-b7ed85056b4b")
 public class HwEndPoint_AssociationEndDiagramCommand extends DefaultBoxTool {
-    @objid ("3c3190ad-eaae-4c36-8161-fb3b51633909")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class HwEndPoint_AssociationEndDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("b2b1e19d-133f-4293-9a95-b0444c6dbfd5")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwEndPoint_AssociationEndCommand")){

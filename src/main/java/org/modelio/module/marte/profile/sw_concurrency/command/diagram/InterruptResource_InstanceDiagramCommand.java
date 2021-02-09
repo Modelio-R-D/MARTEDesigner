@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -18,9 +17,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.InterruptResource_Instance;
 
-@objid ("373eddfd-2200-4f84-a540-1b10d2869d4b")
 public class InterruptResource_InstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("c8c649de-0db5-484a-bae2-1073865e1d28")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -41,7 +38,6 @@ public class InterruptResource_InstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("bc65a91d-a90b-4de7-9e2a-9ce709c4ca1f")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("InterruptResource_InstanceCommand")){

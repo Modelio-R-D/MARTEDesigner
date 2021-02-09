@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.Alarm_Class;
 
-@objid ("84dd05fc-f887-44bc-9040-8d59c024601b")
 public class Alarm_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("cb5dd5bc-a0c7-42c5-94fd-1729a76aec69")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -44,7 +41,6 @@ public class Alarm_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("b6418996-aa36-49a6-b3ea-2b81fe02158e")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Alarm_ClassCommand")){

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwmemory.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwmemory.model.HwROM_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("59ef2448-0c06-4e7e-a61c-d70b92ff3ece")
 public class HwROM_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("4b2f9a65-cee0-499c-b5db-a108eed2ad1d")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -32,7 +29,6 @@ public class HwROM_BindableInstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("1d8f45cd-4ae5-4b12-b35b-bddc87e86b04")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwROM_BindableInstanceCommand")){

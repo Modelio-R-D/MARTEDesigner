@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.StorageResource_Lifeline;
 
-@objid ("f28d6a28-a96c-498d-9f8f-521b54fc761b")
 public class StorageResource_LifelineDiagramCommand extends DefaultBoxTool {
-    @objid ("922ca4e0-09d9-42a6-bd3d-f05bba81523a")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class StorageResource_LifelineDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("bb5013f3-4910-402e-9bf7-6dce6edfbfdf")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("StorageResource_LifelineCommand")){

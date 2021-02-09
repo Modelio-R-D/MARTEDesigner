@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.time.model.TimedObservation_Note;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("35975b3c-34ae-49dd-b6d6-5b15b4d33cf7")
 public class TimedObservation_NoteCommand extends DefaultModuleCommandHandler {
-    @objid ("714986e1-6b7d-4c2d-808c-91fd7280049a")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class TimedObservation_NoteCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("87b97aea-a273-4a78-8a35-1ee53d512554")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("TimedObservationCommand")){

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.coreelements.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -17,9 +16,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.coreelements.model.ModeBehavior_StateMachine;
 
-@objid ("e889e479-bc4c-4e6b-b47d-8b082a96cd09")
 public class ModeBehavior_StateMachineDiagramCommand extends DefaultBoxTool {
-    @objid ("32035bc3-1150-4b95-9f2a-fd266b1737ea")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -46,7 +43,6 @@ public class ModeBehavior_StateMachineDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("0d20fefb-f709-47ec-8515-f30c14eb599e")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try( ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ModeBehavior_StateMachineDiagramCommand")){

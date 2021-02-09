@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gqam.model.GaCommHost_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("ec2dee2e-f455-411a-8cfd-5b273fc4ad30")
 public class GaCommHost_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("b46ac22f-0fa8-46fe-9298-adc01e4810eb")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class GaCommHost_InstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("ed120b3f-fa29-4ae2-9781-2c3ea2647cd8")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("GaCommHost_InstanceCommand")){

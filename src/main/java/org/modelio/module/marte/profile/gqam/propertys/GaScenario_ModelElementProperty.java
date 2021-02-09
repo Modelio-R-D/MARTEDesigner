@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,18 +10,13 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6a86dcfc-e9d8-46b0-b07a-454b41c6f338")
 public class GaScenario_ModelElementProperty implements IPropertyContent {
-    @objid ("a2db4012-210d-4b64-b87e-54b7751d82ca")
     private static List<ModelElement> _causes = null;
 
-    @objid ("ddcd3658-4400-4795-bbda-63e6b4819cf5")
     private static List<ModelElement> _roots = null;
 
-    @objid ("a3720993-c166-41aa-8b47-d0dcf58f3563")
     private static List<ModelElement> _steps = null;
 
-    @objid ("176dab25-dc61-4b59-8f9b-0b373649d4b2")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -123,7 +117,6 @@ public class GaScenario_ModelElementProperty implements IPropertyContent {
         }
     }
 
-    @objid ("190c0ab9-5c1a-4d51-bfa5-46ae6864b0b7")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         _causes = ModelUtils.searchElementStereotyped(ModelElement.class, MARTEDesignerStereotypes.GAWORKLOADEVENT_MODELELEMENT);   

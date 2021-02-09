@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.pam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -12,9 +11,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.pam.model.PaLogicalResource_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("098f6f4b-6725-47c2-a78c-de934adff033")
 public class PaLogicalResource_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("f5c56ce6-780c-420f-8e1c-3c8fe68cc82e")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -26,7 +23,6 @@ public class PaLogicalResource_InstanceCommand extends DefaultModuleCommandHandl
         return false;
     }
 
-    @objid ("672945dd-cd60-4add-be53-bc18a51720bd")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("PaLogicalResource_InstanceCommand")){

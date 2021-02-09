@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwmemory.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwmemory.model.HwCache_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("ffe964dd-59db-4322-97b5-1bc614685b4f")
 public class HwCache_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("9aabac00-f273-4705-b689-c94fe7a35b46")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class HwCache_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("f9c1ed5d-e4f7-4183-8e73-d16a41c1aa1f")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwCache_ClassCommand")){

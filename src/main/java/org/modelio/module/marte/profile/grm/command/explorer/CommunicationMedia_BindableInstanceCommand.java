@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationMedia_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("8b7fa4de-052e-4e9c-9df6-f6f5327ce282")
 public class CommunicationMedia_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("3e8ab3c0-cbc8-4041-9f4d-bb45364f5c20")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -30,7 +27,6 @@ public class CommunicationMedia_BindableInstanceCommand extends DefaultModuleCom
         return false;
     }
 
-    @objid ("6aa9811d-832d-4881-980a-6b66ed8eb818")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationMedia_BindableInstanceCommand")){

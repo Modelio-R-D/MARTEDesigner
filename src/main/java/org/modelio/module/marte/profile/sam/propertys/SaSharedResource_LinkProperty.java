@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ee1e3240-7fd7-4bbe-b1d2-95aeac70c0e1")
 public class SaSharedResource_LinkProperty implements IPropertyContent {
-    @objid ("3c4dfcfe-948e-4848-917c-653d1b6bce01")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -30,7 +27,6 @@ public class SaSharedResource_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("e2e435f8-0ce2-4171-ba0e-0b925b26e1ad")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_capacity = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.SASHAREDRESOURCE_LINK_SASHAREDRESOURCE_LINK_CAPACITY, elt);

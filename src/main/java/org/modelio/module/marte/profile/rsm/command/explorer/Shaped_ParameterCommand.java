@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.rsm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -12,9 +11,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.rsm.model.Shaped_Parameter;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("d0083a4b-c316-485f-86a0-370fcf127362")
 public class Shaped_ParameterCommand extends DefaultModuleCommandHandler {
-    @objid ("4fa9e8e7-02c5-41c6-9859-46b9e23562f5")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class Shaped_ParameterCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("279e3005-86ca-4b8e-b83a-fa4756243cfa")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Shaped_ParameterCommand")){

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwmemory.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("12cfd613-bfdd-4ec1-8d54-4a19173d5988")
 public class HwROM_AssociationEndProperty implements IPropertyContent {
-    @objid ("a84bd5f4-e0fa-4d9f-9a05-454350b93692")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -22,7 +19,6 @@ public class HwROM_AssociationEndProperty implements IPropertyContent {
         }
     }
 
-    @objid ("18d8b99f-2f14-4eb8-aa6a-f4f3dd1be515")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

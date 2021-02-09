@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwBus_AssociationEnd;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("39ba78bd-4d48-4051-bda1-bb709417ae1b")
 public class HwBus_AssociationEndCommand extends DefaultModuleCommandHandler {
-    @objid ("c460ac61-10f1-4679-a5ba-e42dc3144f55")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class HwBus_AssociationEndCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("d5a16c7a-defb-4eaf-9ebd-f276a946b664")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBus_AssociationEndCommand")){

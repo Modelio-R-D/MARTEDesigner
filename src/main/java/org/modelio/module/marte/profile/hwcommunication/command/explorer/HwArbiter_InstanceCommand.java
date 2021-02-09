@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -17,9 +16,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwArbiter_Instance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("fbad31a6-1b10-4ab5-b672-e52525bae95f")
 public class HwArbiter_InstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("034e1ecd-312d-444a-921b-fe39030546c5")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -35,7 +32,6 @@ public class HwArbiter_InstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("8fe3a24c-a165-47ff-89b7-2f36b12b35b3")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwArbiter_InstanceCommand")){

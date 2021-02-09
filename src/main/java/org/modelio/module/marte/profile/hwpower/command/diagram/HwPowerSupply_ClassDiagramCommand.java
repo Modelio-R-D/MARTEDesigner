@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwpower.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwpower.model.HwPowerSupply_Class;
 
-@objid ("ac761302-74e5-4115-af09-a7d68dd17b96")
 public class HwPowerSupply_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("ed8262bf-a59e-45a9-a34d-0b96125d5439")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -41,7 +38,6 @@ public class HwPowerSupply_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("44f3f51d-4c36-42cd-a9cb-221a04e7d622")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwPowerSupply_ClassCommand")){

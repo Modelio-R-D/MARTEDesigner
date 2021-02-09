@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.Alarm_BindableInstance;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("9d13262d-beb7-42f2-9332-b054ac09a7d9")
 public class Alarm_BindableInstanceCommand extends DefaultModuleCommandHandler {
-    @objid ("92b6b7b3-7c49-4d2b-b872-44e0a9f15974")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -33,7 +30,6 @@ public class Alarm_BindableInstanceCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("24fa3ffc-7cd1-43cd-9c55-98507c0c6114")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Alarm_BindableInstanceCommand")){

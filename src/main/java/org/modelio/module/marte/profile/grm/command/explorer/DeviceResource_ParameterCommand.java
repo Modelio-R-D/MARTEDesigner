@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.DeviceResource_Parameter;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("8bf61753-6a3e-401d-9680-d2f3837bb96f")
 public class DeviceResource_ParameterCommand extends DefaultModuleCommandHandler {
-    @objid ("012e3a2d-6469-4bc3-b18b-740aa4d140f8")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class DeviceResource_ParameterCommand extends DefaultModuleCommandHandler
         return false;
     }
 
-    @objid ("25b2a8b2-6b9a-4e9e-86fd-054962ace91f")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("DeviceResource_ParameterCommand")){

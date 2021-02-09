@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -15,12 +14,9 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("7beea805-10ee-4319-92cb-7b6c2cba6b51")
 public class ProcessingResource_ClassifierProperty implements IPropertyContent {
-    @objid ("918c4966-cd64-49d8-82e2-2e876e9e09aa")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("cab39984-21dd-4b41-8a87-192f7c8c9f85")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -55,7 +51,6 @@ public class ProcessingResource_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("9268d9a3-771d-436c-8db5-573ea649f097")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationEndPoint_Lifeline;
 
-@objid ("3f08f4c2-bbde-48e8-8352-da6c151d1903")
 public class CommunicationEndPoint_LifelineDiagramCommand extends DefaultBoxTool {
-    @objid ("2d4cb8f9-4373-4f35-9ebd-514135e1933e")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class CommunicationEndPoint_LifelineDiagramCommand extends DefaultBoxTool
         return false;
     }
 
-    @objid ("869bda86-fe51-4305-8e3c-d902cc2e0756")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationEndPoint_LifelineCommand")){

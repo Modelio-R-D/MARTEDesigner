@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,21 +11,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("233a210a-9259-432c-aea8-5c272e824086")
 public class HwProcessor_LifelineProperty implements IPropertyContent {
-    @objid ("0cdfc2b0-5787-44ba-8248-07f6792f2740")
     private static List<ModelElement> ownedCaches;
 
-    @objid ("d2f0f621-5b61-45c2-8818-fd75d86e31af")
     private static List<ModelElement> ownedMMUs;
 
-    @objid ("2b06198d-bc9f-47d5-a853-eeb884f5f117")
     private static List<ModelElement> ownedISAs;
 
-    @objid ("205607f9-ee6a-45ef-b5a7-833a54c4a782")
     private static List<ModelElement> ownedPredictors;
 
-    @objid ("b8243a4d-4868-4bad-bbcf-30f1811e108d")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -83,7 +76,6 @@ public class HwProcessor_LifelineProperty implements IPropertyContent {
          }
     }
 
-    @objid ("60575840-b4b7-4b26-a5c0-b119a13bf3ec")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

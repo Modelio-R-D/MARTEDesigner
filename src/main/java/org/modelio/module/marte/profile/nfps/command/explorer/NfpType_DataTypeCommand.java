@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.nfps.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -12,9 +11,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.nfps.model.NfpType_DataType;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("7e622f4f-65a8-4e86-a062-1c2387a46f9d")
 public class NfpType_DataTypeCommand extends DefaultModuleCommandHandler {
-    @objid ("003d0938-0809-40b4-9cea-6d81b3655632")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class NfpType_DataTypeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("68cd3a6c-db8a-4be6-8255-54cf011bffa7")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("NfpType_DataTypeCommand")){

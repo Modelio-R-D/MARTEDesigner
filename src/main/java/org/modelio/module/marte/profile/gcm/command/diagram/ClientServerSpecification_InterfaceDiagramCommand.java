@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.gcm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -12,9 +11,7 @@ import org.modelio.metamodel.uml.statik.Package;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.gcm.model.ClientServerSpecification_Interface;
 
-@objid ("c0e32beb-4593-4a4c-84ca-a3d4e456353c")
 public class ClientServerSpecification_InterfaceDiagramCommand extends DefaultBoxTool {
-    @objid ("a1644f39-f78c-4381-92fa-71aacf2750af")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -32,7 +29,6 @@ public class ClientServerSpecification_InterfaceDiagramCommand extends DefaultBo
         return false;
     }
 
-    @objid ("4afd1069-1428-4f8e-8e86-880a3d635a4c")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ClientServerSpecification_InterfaceCommand");){

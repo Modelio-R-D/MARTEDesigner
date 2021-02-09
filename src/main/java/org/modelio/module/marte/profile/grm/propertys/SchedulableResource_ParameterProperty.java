@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,15 +11,11 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("41549a9c-9f5e-4fc1-938e-c70c2531f167")
 public class SchedulableResource_ParameterProperty implements IPropertyContent {
-    @objid ("1acdca6a-7eb1-467c-bc98-9e56e21acdd9")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("a6e1be41-ba78-4730-913c-4084d2586ecf")
     private static List<ModelElement> listSecondaryScheduler = null;
 
-    @objid ("7d88c5be-e89f-426b-8775-0f7ee22939d8")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -68,7 +63,6 @@ public class SchedulableResource_ParameterProperty implements IPropertyContent {
         }
     }
 
-    @objid ("a23d4e6f-2311-4e1a-b62b-084bb4946ce5")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.datatypes.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.metamodel.uml.statik.DataType;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("2f77e2fc-f64c-408f-877e-4a27756727b4")
 public class BoundedSubtype_DataTypeProperty implements IPropertyContent {
-    @objid ("4f53b89b-306c-4489-a7a9-064ccb411329")
     private static List<ModelElement> listBaseType = null;
 
     /**
@@ -23,7 +20,6 @@ public class BoundedSubtype_DataTypeProperty implements IPropertyContent {
      * @param row is the tag type row.
      * @param value is the new value.
      */
-    @objid ("a3d66793-41b0-4a49-87bb-bbf53ea9f4de")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if (row == 1) {
@@ -53,7 +49,6 @@ public class BoundedSubtype_DataTypeProperty implements IPropertyContent {
      * 
      * @param table is the properties table.
      */
-    @objid ("f0e66de1-98d6-4df0-a7b3-b5d427e1e689")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         /*

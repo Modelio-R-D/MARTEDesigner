@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwmemory.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwmemory.model.HwRAM_Node;
 
-@objid ("b43494e2-83fa-48dd-aebc-24eb1d2becd5")
 public class HwRAM_NodeDiagramCommand extends DefaultBoxTool {
-    @objid ("d7c32cd0-e2ef-4e40-9df7-da6935cfc3c1")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class HwRAM_NodeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("5403ab18-c232-467a-a841-1b9f7a835dac")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwRAM_NodeCommand")){

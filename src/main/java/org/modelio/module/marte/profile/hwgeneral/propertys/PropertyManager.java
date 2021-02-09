@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.hwgeneral.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("b7e385f5-c40a-4d2d-b0d4-c52720675cac")
 public class PropertyManager {
-    @objid ("215ed62f-71c4-4b47-ac0c-0073474d67b0")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.HWRESOURCESERVICE_COLLABORATION)){
             return new HwResourceService_CollaborationProperty();

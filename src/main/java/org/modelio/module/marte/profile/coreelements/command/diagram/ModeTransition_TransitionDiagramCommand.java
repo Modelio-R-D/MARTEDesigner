@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.coreelements.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -20,9 +19,7 @@ import org.modelio.metamodel.uml.statik.Enumeration;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.coreelements.model.ModeTransition_Transition;
 
-@objid ("603ce55e-21dc-4c11-a3d8-347e6df8caac")
 public class ModeTransition_TransitionDiagramCommand extends DefaultLinkTool {
-    @objid ("774f73ad-25f8-430b-9ab8-edaf6de67706")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -42,7 +39,6 @@ public class ModeTransition_TransitionDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("efe23dfd-23c8-4693-8f65-5d8f35b7735e")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -60,7 +56,6 @@ public class ModeTransition_TransitionDiagramCommand extends DefaultLinkTool {
         return false;
     }
 
-    @objid ("773bbecd-cf43-4a37-af31-ffbfc3a99cf4")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ModeTransition_TransitionDiagramCommand")){

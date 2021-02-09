@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.marte_marte_designmodel_hrm_hwphysical_hwpo
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,12 +31,9 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("b813b3fe-6f6e-4dc4-b967-1e61564a5f39")
 public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
-    @objid ("c9bcb46c-5bc3-4cba-b823-b7413f061176")
     public static final String STEREOTYPE_NAME = "HwCoolingSupply_Lifeline";
 
-    @objid ("252f2dbc-ef77-41d8-af5f-7bb84cfa3227")
     public static final String HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER_TAGTYPE = "HwCoolingSupply_Lifeline_coolingPower";
 
     /**
@@ -48,7 +44,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("463818b3-1096-4558-aa28-a796bf79698b")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Lifeline) && ((Lifeline) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, HwCoolingSupplyLifeline.STEREOTYPE_NAME));
     }
@@ -58,7 +53,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * 
      * @return a {@link HwCoolingSupplyLifeline} proxy on the created {@link Lifeline}.
      */
-    @objid ("dab50dd2-ba65-41ee-b414-ba40706e689b")
     public static HwCoolingSupplyLifeline create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Lifeline");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, HwCoolingSupplyLifeline.STEREOTYPE_NAME);
@@ -72,7 +66,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * @param obj a Lifeline
      * @return a {@link HwCoolingSupplyLifeline} proxy or <i>null</i>.
      */
-    @objid ("f0da1ca2-96a7-4e2d-a3e1-28ff69cafaf6")
     public static HwCoolingSupplyLifeline instantiate(final Lifeline obj) {
         return HwCoolingSupplyLifeline.canInstantiate(obj) ? new HwCoolingSupplyLifeline(obj) : null;
     }
@@ -85,7 +78,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * @return a {@link HwCoolingSupplyLifeline} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("de31e45c-98aa-4840-b4d7-cd70b9c87bc2")
     public static HwCoolingSupplyLifeline safeInstantiate(final Lifeline obj) throws IllegalArgumentException {
         if (HwCoolingSupplyLifeline.canInstantiate(obj))
         	return new HwCoolingSupplyLifeline(obj);
@@ -93,7 +85,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
         	throw new IllegalArgumentException("HwCoolingSupplyLifeline: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("a481eeb2-c77e-4fe8-8642-78c141120d0a")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -113,7 +104,6 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * Get the underlying {@link Lifeline}. 
      * @return the Lifeline represented by this proxy, never null.
      */
-    @objid ("aff9d44a-762c-49c3-b88b-a3380d8ab6b1")
     @Override
     public Lifeline getElement() {
         return (Lifeline)super.getElement();
@@ -124,12 +114,10 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("645e32ad-0ceb-4217-8ce9-902324a2aa46")
     public String getHwCoolingSupply_Lifeline_coolingPower() {
         return this.elt.getTagValue(HwCoolingSupplyLifeline.MdaTypes.HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER_TAGTYPE_ELT);
     }
 
-    @objid ("93bd8d0e-4a72-4720-9845-e4d29cb99e22")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -140,31 +128,23 @@ public class HwCoolingSupplyLifeline extends HwComponentLifeLine {
      * <p>Property description:
      * <br/><i></i></p>
      */
-    @objid ("ad42384d-bec9-4146-a9a8-00e8e584a688")
     public void setHwCoolingSupply_Lifeline_coolingPower(final String value) {
         this.elt.putTagValue(HwCoolingSupplyLifeline.MdaTypes.HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER_TAGTYPE_ELT, value);
     }
 
-    @objid ("f1deab0d-e8e7-4ebc-b221-c7ddce81119f")
     protected HwCoolingSupplyLifeline(final Lifeline elt) {
         super(elt);
     }
 
-    @objid ("16370288-53c8-4990-b14c-1554da9b2aa2")
     public static final class MdaTypes {
-        @objid ("31205556-a969-482c-847e-4e8554b58ed3")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f1fcbaa5-aa2b-4918-beb4-7d1aea394cfe")
         public static TagType HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER_TAGTYPE_ELT;
 
-        @objid ("ed0ff4e8-74cc-44ca-948a-30c335affb9d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1e6c404b-3f1c-49b9-b1ec-852570516ab8")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("c0057242-0a53-4d60-9f50-125c21ee34d1")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "f30d2627-10bd-11df-81d9-0014222a9f79");
             HWCOOLINGSUPPLY_LIFELINE_COOLINGPOWER_TAGTYPE_ELT = ctx.getModelingSession().findElementById(TagType.class, "f30d2628-10bd-11df-81d9-0014222a9f79");

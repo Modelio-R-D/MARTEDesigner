@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.editors;
 
 import java.io.File;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
@@ -22,27 +21,19 @@ import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
  * It uses the Modelio interface. Usually used for the String[*] configuration.
  * @author ehouziaux
  */
-@objid ("cba46929-3f25-403a-8f4d-a9f993a9cdd3")
 public class MultipleValuesList<MObject> {
-    @objid ("7d18beaf-7075-45ae-a6db-4c63074d87c3")
     private org.eclipse.swt.widgets.List valuesList;
 
-    @objid ("7d56b627-5f33-475d-b4a6-18467bf4238d")
     private Button bDown;
 
-    @objid ("aef20c82-7d7e-4641-881c-a05aed39c6da")
     private Button bUp;
 
-    @objid ("d40e3657-05bf-4bbd-bacb-a6a4c47012ac")
     private Button bDel;
 
-    @objid ("9d3c9fd3-018e-4aab-916a-d929f418fcfd")
     private Button bAdd;
 
-    @objid ("b3ed8724-8bf1-4b3d-94c7-ffeade81411a")
     private Text textField;
 
-    @objid ("42bb4965-4c72-451e-a5cc-0d3524f65264")
     public MultipleValuesList(Composite grandparent, String tagType) {
         grandparent.setLayout(new FormLayout());
         Composite parent = new Composite(grandparent, SWT.NONE);
@@ -112,7 +103,6 @@ public class MultipleValuesList<MObject> {
     /**
      * setList<MObject> allows the List<MObject> modification
      */
-    @objid ("09beb0f2-9c97-46ba-b9a1-2c7b4bf22255")
     public void setList(String[] list) {
         for (String s:list) {
             valuesList.add(s);
@@ -128,7 +118,6 @@ public class MultipleValuesList<MObject> {
      * @param left is a percent value for a left attachment, the offset equals 0.
      * @param right is a percent value for a right attachment, the offset equals 0.
      */
-    @objid ("c00ed727-bfe1-4792-b6f9-2fb7dbcc5612")
     public void attachFormData(Control elt, int top, int bottom, int left, int right) {
         FormData fd = new FormData();
         fd.top = new FormAttachment(top,0);
@@ -143,7 +132,6 @@ public class MultipleValuesList<MObject> {
      * 
      * @return the values list.
      */
-    @objid ("eb20b25e-7a15-475b-b752-35e46cc4ebc0")
     public org.eclipse.swt.widgets.List getList() {
         return valuesList;
     }
@@ -152,12 +140,10 @@ public class MultipleValuesList<MObject> {
      * Sets the values list
      * @param valuesList<MObject> is the new values list.
      */
-    @objid ("356fd7b9-3efa-475e-8b2d-0bf5de8f139f")
     public void setValuesList(org.eclipse.swt.widgets.List valuesList) {
         this.valuesList = valuesList;
     }
 
-    @objid ("d6ebb50c-406b-41be-a5ec-788c3f854050")
     public void upValue() {
         int ind1 = valuesList.getSelectionIndex();
         int ind2 = ind1 -1;
@@ -171,7 +157,6 @@ public class MultipleValuesList<MObject> {
         }
     }
 
-    @objid ("d7b08d36-4f4b-44d0-8054-19322238c1d4")
     public void downValue() {
         int ind1 = valuesList.getSelectionIndex();
         int ind2 = ind1 +1;
@@ -185,7 +170,6 @@ public class MultipleValuesList<MObject> {
         }
     }
 
-    @objid ("0bbca09b-f6c1-4957-af61-1385e3f52cc2")
     public void removeValue() {
         int ind1 = valuesList.getSelectionIndex();
         if (ind1 != -1) {
@@ -193,7 +177,6 @@ public class MultipleValuesList<MObject> {
         }
     }
 
-    @objid ("6f4ce91d-ccff-4e4f-be9e-5870ead00e63")
     public void addValue() {
         String txt = textField.getText();
         if (!txt.equals("")) {

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("56ad7944-d8cc-4fa1-ae4a-69d10b3c609a")
 public class Resource_AssociationProperty implements IPropertyContent {
-    @objid ("11d12811-5266-4d3a-9714-523e80353da0")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -41,7 +38,6 @@ public class Resource_AssociationProperty implements IPropertyContent {
         }
     }
 
-    @objid ("f0624c97-31b6-4a03-982b-b87c5969b65a")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_resMult = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.RESOURCE_ASSOCIATION_RESOURCE_ASSOCIATION_RESMULT, elt);

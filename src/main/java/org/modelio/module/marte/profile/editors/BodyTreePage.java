@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.editors;
 
 import java.util.ArrayList;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.TreeEditor;
 import org.eclipse.swt.events.SelectionEvent;
@@ -37,48 +36,34 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * - complex structure > ComplexTree
  * @author ehouziaux
  */
-@objid ("6683d52f-042d-43a9-b4eb-7d9e4cc56ba2")
 public abstract class BodyTreePage extends CompositeHandle implements IDialogPage {
-    @objid ("ca5586d6-0157-4986-bc05-0a154039abcc")
     private String[] listTagTypes;
 
-    @objid ("6dada627-d6ef-4ade-8116-e56ad6288675")
     private String[] listTagTypeNames;
 
-    @objid ("f403b3df-3d12-4dc6-a264-6749d8c0f747")
     private String[] listDescriptions;
 
-    @objid ("69eaa92c-7e9e-49d6-9a70-37498d6d9e9b")
     private TransformationDialog dialog;
 
-    @objid ("255f3f7e-e5ed-445c-9f5d-5d5ddd3fa336")
     private AddRemoveList list;
 
-    @objid ("45aa0600-dd36-490e-b34c-f314a8a6536e")
     private Tree[] tree;
 
-    @objid ("2df2bb10-2e59-4dc2-b368-0d4dee3c8332")
     private Composite root;
 
-    @objid ("ca396091-1c78-4c3c-a58c-157929dd0792")
     private TabFolder ongletsTab;
 
-    @objid ("c2566cc3-fac4-4055-ad56-0c03c0b23c42")
     private TabItem[] tabItems;
 
-    @objid ("739c0b16-e8f5-4e9a-81e6-4a83fc08da34")
     private Composite compositeTree;
 
-    @objid ("e8bbd654-cc1f-4861-8e76-ca13af2947e5")
     private TreeColumn[][] treeCol;
 
-    @objid ("1ed90bf6-a06b-40af-b7dd-353e39f508d4")
     protected ModelElement element;
 
     /**
      * Provides the page refreshing.
      */
-    @objid ("1a029c7f-768b-4ab4-8097-1d01c925c681")
     @Override
     public void refresh() {
         // TODO Auto-generated method stub
@@ -93,13 +78,11 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * 
      * @param activity is the new activity.
      */
-    @objid ("a2eafa1d-0e91-4bf2-b8fd-a7254a74a9cc")
     @Override
     public void setActive(boolean activity) {
         // TODO Auto-generated method stub
     }
 
-    @objid ("1e281286-7118-44bc-8c80-ae2d6b685d86")
     public void setVisibleAllTree() {
         for (Tree t: tree) {
             t.setVisible(false);
@@ -112,7 +95,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * 
      * @return the check button created for the boolean tag type.
      */
-    @objid ("579c5f34-3095-4624-a024-41355fa97946")
     public Button setCompositeBoolean(String tagType, String description, int indTree) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description);
@@ -143,7 +125,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * Provides a beautiful GUI for the 1 tagged value parameter number.
      * -- WARNING : the data form is "tag type name" and the getting element is a text field.
      */
-    @objid ("13f8eea7-732a-4f76-bd8e-96e3fe61330a")
     public Text setCompositeSingleVal(String tagType, String description, int indTree) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description);
@@ -174,7 +155,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * Provides a beautiful GUI for the multiple tagged value parameter number.
      * -- WARNING : the data form is "tag type name" and the getting element is a text field.
      */
-    @objid ("34bf84b5-820b-47fe-b257-4a2a10afd9f8")
     public org.eclipse.swt.widgets.List setCompositeMultipleVal(String tagType, String description, int indTree) {
         for (int i= 0; i < 3; i++) {
             treeCol[indTree][i].dispose();
@@ -193,7 +173,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * Provides a beautiful GUI for the kind tagged value (one parameter number).
      * -- WARNING : the data form is "tag type name" and the getting element is a combo box.
      */
-    @objid ("79b6e993-e569-4bad-b0e0-e4d433111039")
     public Combo setCompositeSingleKind(String tagType, String description, int indTree) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description); 
@@ -218,7 +197,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * Provides a beautiful GUI for the kind tagged value (multiple parameter number)
      * -- WARNING : the data form is "tag type name"_"kind name" and the getting elements are check buttons.
      */
-    @objid ("917db746-4a3f-4b97-bd80-f293e3670a73")
     public ArrayList<Button> setCompositeMultipleKind(String tagType, String description, int indTree, String[] tabKind) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description); 
@@ -265,7 +243,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * @param indTree is the index in the table
      * @param extendedClass is the searched extended class
      */
-    @objid ("46ef7ec8-6329-4cf8-b12d-d0e9acff08b4")
     public Combo setCompositeSingleElt(String tagType, String description, int indTree, Class<? extends MObject> extendedClass) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description); 
@@ -300,7 +277,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * @param description is the tag type description
      * @param indTree is the index in the table
      */
-    @objid ("fc893e7e-2a5e-47dd-9542-8a9ccadbfe6d")
     public Combo setCompositeSingleElt(String tagType, String description, int indTree) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description); 
@@ -330,7 +306,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * @param description is the tag type description
      * @param indTree is the index in the table
      */
-    @objid ("2d9fad1e-363e-4ccc-9b72-e692676935e8")
     public AddRemoveList<MObject> setCompositeMultipleElt(String tagType, String description, int indTree, String[] titles) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description); 
@@ -351,7 +326,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * @param complex is the complex structure kind.
      * @return a tree editor array List<MObject> which contains the different controls which contains the data.
      */
-    @objid ("f54a3fb5-3ce0-4149-bb05-5e856f623799")
     public ArrayList<ArrayList<TreeEditor>> setCompositeComplex(String tagType, String description, int indTree, ComplexTree complex) {
         // set the header with the tagged value name and the description
         dialog.getCompositeHeader().setText(MARTEResourceManager.getName(tagType), description);
@@ -368,7 +342,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * 
      * @return the tag types list.
      */
-    @objid ("e3904258-0de2-4b96-8a1a-a82729cbfd65")
     public String[] getListTagTypes() {
         return listTagTypes;
     }
@@ -378,7 +351,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
      * 
      * @return the descriptions list.
      */
-    @objid ("1d86c14b-3ee3-4270-8f2c-066aff1aec24")
     public String[] getListDescriptions() {
         return listDescriptions;
     }
@@ -386,14 +358,12 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
     /**
      * Is an abstract function to redefine. It allows the table folders construction.
      */
-    @objid ("a9a26495-ecbf-4120-b6f2-c4668096c0cf")
     public abstract void buildTabFolder();
 
     /**
      * Allows the BodyTreePage initialization.
      * the init function has to call in the sub classes constructor.
      */
-    @objid ("e4cfe67d-b7b5-4dd0-bb50-dfa33112aaea")
     public void init(final TransformationDialog dialog, ModelElement element, String[] listTagTypes, String[] listDescriptions) {
         this.dialog = dialog;
         
@@ -478,7 +448,6 @@ public abstract class BodyTreePage extends CompositeHandle implements IDialogPag
         });
     }
 
-    @objid ("112d3726-44dd-469c-b6b2-abaf6f184cac")
     public TransformationDialog getDialog() {
         return dialog;
     }

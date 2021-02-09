@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.hlam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("390920e2-b1ec-45db-bcad-e09e9fe5bcbe")
 public class PropertyManager {
-    @objid ("c7f0aa1f-1424-413a-9ed3-0ed1c67dd492")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.PPUNIT_ACTOR)){
             return new PpUnit_ActorProperty();

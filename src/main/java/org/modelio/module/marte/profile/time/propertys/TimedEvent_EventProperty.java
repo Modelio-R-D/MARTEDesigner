@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.time.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -13,12 +12,9 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ef415711-cd9c-4d98-bce6-887e14405e04")
 public class TimedEvent_EventProperty implements IPropertyContent {
-    @objid ("a0e12080-48af-45dc-bcb5-370ad5fa737d")
     private static List<ModelElement> listClocks = null;
 
-    @objid ("96b39681-81f9-490d-a289-2b18f64943b1")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -38,7 +34,6 @@ public class TimedEvent_EventProperty implements IPropertyContent {
         }
     }
 
-    @objid ("369e1a91-45d5-43a2-984e-51c942c6faab")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         /*
@@ -69,7 +64,6 @@ public class TimedEvent_EventProperty implements IPropertyContent {
      * @param value is the getting value
      * @return a boolean which gives the parsing of the getting value
      */
-    @objid ("49d7bd11-fc43-4a73-9463-af8d2d888105")
     protected boolean isParseable(String value) {
         boolean result = false;
         

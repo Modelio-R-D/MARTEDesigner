@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.sw_concurrency.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("27dc79b4-87df-4fbf-aa3f-170e65f5a50e")
 public class PropertyManager {
-    @objid ("4e5a9f8d-c026-45c2-82ed-6b1949deb683")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.ALARM_ASSOCIATIONEND)){
             return new Alarm_AssociationEndProperty();
@@ -33,13 +30,13 @@ public class PropertyManager {
         else if(ste.getName().equals(MARTEDesignerStereotypes.ALARM_PARAMETER)){
             return new Alarm_ParameterProperty();
         }
-
-
+        
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.ENTRYPOINT_DEPENDENCY)){
             return new EntryPoint_DependencyProperty();
         }
-
-
+        
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.INTERRUPTRESOURCE_ASSOCIATIONEND)){
             return new InterruptResource_AssociationEndProperty();
         }
@@ -64,7 +61,7 @@ public class PropertyManager {
         else if(ste.getName().equals(MARTEDesignerStereotypes.INTERRUPTRESOURCE_PARAMETER)){
             return new InterruptResource_ParameterProperty();
         }
-
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.MEMORYPARTITION_ASSOCIATIONEND)){
             return new MemoryPartition_AssociationEndProperty();
         }
@@ -86,7 +83,7 @@ public class PropertyManager {
         else if(ste.getName().equals(MARTEDesignerStereotypes.MEMORYPARTITION_PARAMETER)){
             return new MemoryPartition_ParameterProperty();
         }
-
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.SWCONCURRENTRESOURCE_ASSOCIATIONEND)){
             return new SwConcurrentResource_AssociationEndProperty();
         }
@@ -111,7 +108,7 @@ public class PropertyManager {
         else if(ste.getName().equals(MARTEDesignerStereotypes.SWCONCURRENTRESOURCE_PARAMETER)){
             return new SwConcurrentResource_ParameterProperty();
         }
-
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.SWSCHEDULABLERESOURCE_ASSOCIATIONEND)){
             return new SwSchedulableResource_AssociationEndProperty();
         }
@@ -136,7 +133,7 @@ public class PropertyManager {
         else if(ste.getName().equals(MARTEDesignerStereotypes.SWSCHEDULABLERESOURCE_PARAMETER)){
             return new SwSchedulableResource_ParameterProperty();
         }
-
+        
         else if(ste.getName().equals(MARTEDesignerStereotypes.SWTIMERRESOURCE_ASSOCIATIONEND)){
             return new SwTimerResource_AssociationEndProperty();
         }

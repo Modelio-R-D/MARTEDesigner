@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwgeneral.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -16,9 +15,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwgeneral.model.HwResourceService_CollaborationUse;
 
-@objid ("ce6ee5ba-cdaf-4a7b-b53d-2d671e26ebe4")
 public class HwResourceService_CollaborationUseDiagramCommand extends DefaultBoxTool {
-    @objid ("bde3f240-0f47-4265-acd3-bcab7b003b4d")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -51,7 +48,6 @@ public class HwResourceService_CollaborationUseDiagramCommand extends DefaultBox
         return false;
     }
 
-    @objid ("976cb5fc-7ea8-45c7-9f40-9ad0810f7226")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwAccessService_CollaborationUseCommand")){

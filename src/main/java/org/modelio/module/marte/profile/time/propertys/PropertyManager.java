@@ -1,13 +1,10 @@
 package org.modelio.module.marte.profile.time.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.metamodel.uml.infrastructure.Stereotype;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.module.marte.profile.editors.IPropertyContent;
 
-@objid ("ef04aa63-3540-4384-b2d9-825dd5b7dc0b")
 public class PropertyManager {
-    @objid ("52bb2248-a6ca-4203-95c3-0af7fc0f2275")
     public static IPropertyContent getPalette(Stereotype ste) {
         if(ste.getName().equals(MARTEDesignerStereotypes.CLOCK_INSTANCE)){
             return new Clock_InstanceProperty();

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwmemory.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,21 +11,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("6c9239f3-3a32-4fdd-9aba-49e76b7ac24e")
 public class HwMemory_ClassifierProperty implements IPropertyContent {
-    @objid ("8b948786-5fc9-493c-b81c-62d80285ba75")
     private static List<ModelElement> ownedHwResource;
 
-    @objid ("4e573546-8d24-4cb6-9f14-648e72e65193")
     private static List<ModelElement> ownedHwEndPoint;
 
-    @objid ("e466cefc-6f8e-4b2c-b694-61db9145de35")
     private static List<ModelElement> ownedHwResourceService;
 
-    @objid ("fce76edf-e35f-4a18-8207-01fb01ee9c32")
     private static List<ModelElement> referencedHwResourceService;
 
-    @objid ("0b7d67e4-d7bf-45b0-a8e5-35f2d206704a")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -78,7 +71,6 @@ public class HwMemory_ClassifierProperty implements IPropertyContent {
         }
     }
 
-    @objid ("b07fb06c-dfef-4e0e-b574-e41095c72a92")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

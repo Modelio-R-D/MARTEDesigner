@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_interaction.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.NotificationResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("40bb22cb-ee6c-4933-9ba8-6389684fd446")
 public class NotificationResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("5870f3e1-19dc-4fe9-ae4a-203b36566dad")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -37,7 +34,6 @@ public class NotificationResource_NodeCommand extends DefaultModuleCommandHandle
         return false;
     }
 
-    @objid ("aaa4bef9-9d94-4b9d-ac51-4c1bbf2bfb4b")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("NotificationResource_NodeCommand")){

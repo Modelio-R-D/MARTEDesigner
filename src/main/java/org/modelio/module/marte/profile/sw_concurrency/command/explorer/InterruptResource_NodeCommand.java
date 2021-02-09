@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sw_concurrency.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_concurrency.model.InterruptResource_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("78f100cf-a43b-4625-856b-9d92073807c7")
 public class InterruptResource_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("10ebac7f-6a40-4265-9e96-be6a4bc7465a")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class InterruptResource_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("09e3ea2b-6907-4575-9262-5d5a67bc6e25")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("InterruptResource_NodeCommand")){

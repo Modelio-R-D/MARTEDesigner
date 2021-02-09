@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -14,9 +13,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.SecondaryScheduler_Attribute;
 
-@objid ("f89e4858-320f-4a58-8c10-cf3e020893d7")
 public class SecondaryScheduler_AttributeDiagramCommand extends DefaultBoxTool {
-    @objid ("376e5762-0e8d-4d8c-a597-f332a4404a3e")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -40,7 +37,6 @@ public class SecondaryScheduler_AttributeDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("72b2cb18-5b8e-4cc9-8092-29fb9f81c296")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SecondaryScheduler_AttributeCommand")){

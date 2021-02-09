@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwPLD_Attribute;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("038594d4-4f84-4463-b339-715ec331b099")
 public class HwPLD_AttributeCommand extends DefaultModuleCommandHandler {
-    @objid ("1cf99ada-7ddc-4855-98c4-d833dbcf11e4")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class HwPLD_AttributeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("31d88147-e381-4caf-a7ae-58d94c66341b")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwPLD_AttributeCommand")){

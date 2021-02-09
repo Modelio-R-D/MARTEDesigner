@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwtiming.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -18,9 +17,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwtiming.model.HwTimingResource_Instance;
 
-@objid ("8505b856-dae5-4c12-b111-91431bb19d0a")
 public class HwTimingResource_InstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("772b3707-d544-427c-9f71-53055efd9201")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -41,7 +38,6 @@ public class HwTimingResource_InstanceDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("2dd1ed4f-0cb2-4ce8-aca7-607d9d2f07b7")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwTimingResource_InstanceCommand")){

@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.sw_concurrency.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -13,24 +12,17 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("a62fc6e2-249c-4c4a-b8e5-66341e5ac0da")
 public class SwSchedulableResource_ClassifierProperty implements IPropertyContent {
-    @objid ("46b32f06-6361-4cee-a2e6-ac56720ccd79")
     private static List<ModelElement> typedElement = null;
 
-    @objid ("eeb93f77-c6ff-4f4a-804f-2a428435061c")
     private static List<ModelElement> behavioralFeature = null;
 
-    @objid ("8919cf99-c889-4575-b3fc-5f6ebcf24405")
     private static List<ModelElement> namedElement = null;
 
-    @objid ("c84553bd-0703-47cd-bf83-5cb02703c409")
     private static List<ModelElement> listScheduler = null;
 
-    @objid ("e169ad64-e081-4675-9767-3042e57ea568")
     private static List<ModelElement> listSecondaryScheduler = null;
 
-    @objid ("ffecc7af-25a6-45b8-8771-fd398016151e")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -133,7 +125,6 @@ public class SwSchedulableResource_ClassifierProperty implements IPropertyConten
         }
     }
 
-    @objid ("5fc00460-0906-45fe-9090-eac7f08ffedd")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         typedElement = MARTESearchUtils.searchTypedElement();   

@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -30,15 +29,12 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("a76022a1-ef10-4000-8c86-f768453c2c75")
 public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification {
-    @objid ("1d415a57-91ad-4c0b-915b-1dadf8bf6a3a")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_featuresSpec_ClientServerPort_ClientServerSpecification";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("0cff343c-a422-4c8b-ac68-9b467528ad14")
     protected final Dependency elt;
 
     /**
@@ -49,7 +45,6 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("16f33fa8-0403-4fb2-bad9-9bd840f91496")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification.STEREOTYPE_NAME));
     }
@@ -59,7 +54,6 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
      * 
      * @return a {@link ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification} proxy on the created {@link Dependency}.
      */
-    @objid ("6e5520a7-552f-43c8-9060-0add72d2a9e3")
     public static ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification.STEREOTYPE_NAME);
@@ -73,7 +67,6 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
      * @param obj a Dependency
      * @return a {@link ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification} proxy or <i>null</i>.
      */
-    @objid ("47668844-7659-44cc-af38-f5f14451aa5b")
     public static ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification instantiate(final Dependency obj) {
         return ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification.canInstantiate(obj) ? new ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification(obj) : null;
     }
@@ -86,7 +79,6 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
      * @return a {@link ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("233dc0ef-4305-402f-9d83-91ef7375a375")
     public static ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification.canInstantiate(obj))
         	return new ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification(obj);
@@ -94,7 +86,6 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
         	throw new IllegalArgumentException("ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("9422a189-13b4-4335-aaed-f430d0792a65")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +105,26 @@ public class ProfileAssociationFeaturesSpecClientServerPortClientServerSpecifica
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("37deb5c6-04a1-4de5-b352-f0ce269ec069")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("0b590c5a-c376-4f85-905c-fc794d027c37")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("9d184f0c-2cfa-482d-b97f-ce71cd418698")
     protected ProfileAssociationFeaturesSpecClientServerPortClientServerSpecification(final Dependency elt) {
         this.elt = elt;
     }
 
-    @objid ("f5d48e0d-dcef-438c-b7d3-3bcf24c20ccc")
     public static final class MdaTypes {
-        @objid ("1a9fdc5a-e9c0-4146-ad4f-eeee84638853")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("f6400e5e-4474-4deb-9a34-b64a9b9f1a6d")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("1db0c890-79e7-418f-8508-78e36b8a31dc")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("4fee17ba-0aea-44dd-a034-48d7f6ef58d0")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "382c04db-98c1-11e0-aed9-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

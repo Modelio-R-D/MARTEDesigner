@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcomputing.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwBranchPredictor_Class;
 
-@objid ("454acb78-de73-4636-874f-35209faf10ee")
 public class HwBranchPredictor_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("a2c6c9f7-2eac-4309-8e8e-0b4d0001590a")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -41,7 +38,6 @@ public class HwBranchPredictor_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("27be6e68-7af5-4624-ac32-322f2a880813")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBranchPredictor_ClassCommand")){

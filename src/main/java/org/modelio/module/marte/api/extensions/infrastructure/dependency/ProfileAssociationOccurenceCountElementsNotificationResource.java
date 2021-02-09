@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -30,15 +29,12 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("b866f82c-8571-470c-819d-0b217105714a")
 public class ProfileAssociationOccurenceCountElementsNotificationResource {
-    @objid ("aa0c025c-a133-4071-ba65-dac1842e1d71")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_occurenceCountElements_NotificationResource";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("0576c496-4502-4c4b-956d-b9f448db67c8")
     protected final Dependency elt;
 
     /**
@@ -49,7 +45,6 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("ffa6e0be-9903-4e24-9eeb-53ac37c97876")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationOccurenceCountElementsNotificationResource.STEREOTYPE_NAME));
     }
@@ -59,7 +54,6 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
      * 
      * @return a {@link ProfileAssociationOccurenceCountElementsNotificationResource} proxy on the created {@link Dependency}.
      */
-    @objid ("60c8f8ff-48c4-4017-a4fb-9837b64dd18f")
     public static ProfileAssociationOccurenceCountElementsNotificationResource create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationOccurenceCountElementsNotificationResource.STEREOTYPE_NAME);
@@ -73,7 +67,6 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
      * @param obj a Dependency
      * @return a {@link ProfileAssociationOccurenceCountElementsNotificationResource} proxy or <i>null</i>.
      */
-    @objid ("1b8f91ff-b33b-4a14-a88a-d7f92ddd15df")
     public static ProfileAssociationOccurenceCountElementsNotificationResource instantiate(final Dependency obj) {
         return ProfileAssociationOccurenceCountElementsNotificationResource.canInstantiate(obj) ? new ProfileAssociationOccurenceCountElementsNotificationResource(obj) : null;
     }
@@ -86,7 +79,6 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
      * @return a {@link ProfileAssociationOccurenceCountElementsNotificationResource} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("c77eae19-278f-487b-857d-0799d19dde06")
     public static ProfileAssociationOccurenceCountElementsNotificationResource safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationOccurenceCountElementsNotificationResource.canInstantiate(obj))
         	return new ProfileAssociationOccurenceCountElementsNotificationResource(obj);
@@ -94,7 +86,6 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
         	throw new IllegalArgumentException("ProfileAssociationOccurenceCountElementsNotificationResource: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("d69aa31c-caa4-453b-98ee-d74fb28759f4")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +105,26 @@ public class ProfileAssociationOccurenceCountElementsNotificationResource {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("167ab880-c767-4fd6-bbb1-8c5f283cd2a5")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("99f94b01-f61a-4b8e-8515-0e03f8f9ac9b")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("73672287-2ccb-4a02-a710-450f014a4ea0")
     protected ProfileAssociationOccurenceCountElementsNotificationResource(final Dependency elt) {
         this.elt = elt;
     }
 
-    @objid ("5c445e68-8766-40a8-9f5f-e8ff03226f8d")
     public static final class MdaTypes {
-        @objid ("70c9d9a9-537b-4604-baad-5446dbde40c6")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("41ce4319-37e5-4152-94a6-92306a1eaabc")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("b37debfe-a997-4101-86c6-d81ecabf6c44")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("c29c7f71-8107-4530-aa10-181f3ad15074")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "cca3d298-9758-11e0-94fb-0027103f347c");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

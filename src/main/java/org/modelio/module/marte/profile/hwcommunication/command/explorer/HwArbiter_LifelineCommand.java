@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcommunication.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcommunication.model.HwArbiter_Lifeline;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("71953363-9cc4-435b-9525-b79802b4ff61")
 public class HwArbiter_LifelineCommand extends DefaultModuleCommandHandler {
-    @objid ("1089f9f3-c731-401c-ba96-414d79feff14")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -27,7 +24,6 @@ public class HwArbiter_LifelineCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("a14f9fa2-3dfa-4ade-9fbf-983deda9f678")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwArbiter_LifelineCommand")){

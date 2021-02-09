@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -12,21 +11,15 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.MARTESearchUtils;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ac768ef5-78e7-402f-bf06-f5d755ac8e31")
 public class GaStep_ModelElementProperty implements IPropertyContent {
-    @objid ("66b45c88-f1ed-4f5f-8b16-c331733a2e03")
     private static List<ModelElement> _schedResources = null;
 
-    @objid ("e1b62c27-b8e4-4ad6-a982-0817613b14d1")
     private static List<ModelElement> _gascenario = null;
 
-    @objid ("a394d618-8c32-461c-b65f-100114cd560f")
     private static List<ModelElement> _gaexechosts = null;
 
-    @objid ("7d9cc4ca-6345-49bd-bace-30f7deb1feea")
     private static List<ModelElement> _garequestedservices = null;
 
-    @objid ("1377f55a-eee9-4839-98b0-926c9856a735")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -92,7 +85,6 @@ public class GaStep_ModelElementProperty implements IPropertyContent {
         }
     }
 
-    @objid ("8df8e15b-f892-474a-b955-9f19d886c562")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_ISATOMIC),ModelUtils.hasTaggedValue(MARTEDesignerTagTypes.GASTEP_MODELELEMENT_GASTEP_MODELELEMENT_ISATOMIC, elt));

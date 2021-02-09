@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.CommunicationEndPoint_Association;
 
-@objid ("9181dad8-d131-4fa6-b457-c055699f27e9")
 public class CommunicationEndPoint_AssociationDiagramCommand extends DefaultLinkTool {
-    @objid ("1b13545f-bd3d-4e38-9e9a-d94cb5138b22")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class CommunicationEndPoint_AssociationDiagramCommand extends DefaultLink
         return false;
     }
 
-    @objid ("f3e7bcc6-0032-4deb-b133-3d0c4c17558e")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class CommunicationEndPoint_AssociationDiagramCommand extends DefaultLink
         return false;
     }
 
-    @objid ("ab3d4efa-d9f0-41fb-b584-8da814dd1d09")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("CommunicationEndPoint_AssociationCommand")){

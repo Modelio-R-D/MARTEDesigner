@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_resourcecore.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_resourcecore.model.SwAccessService_Operation;
 
-@objid ("8ad983e0-3479-438c-b542-8be3eb043fd3")
 public class SwAccessService_OperationDiagramCommand extends DefaultBoxTool {
-    @objid ("aec69956-f09b-4fae-a37f-e0827ba55e9b")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -35,7 +32,6 @@ public class SwAccessService_OperationDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("7ad40c21-e313-4194-9917-919fd37a59f0")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SwAccessService_OperationCommand")){

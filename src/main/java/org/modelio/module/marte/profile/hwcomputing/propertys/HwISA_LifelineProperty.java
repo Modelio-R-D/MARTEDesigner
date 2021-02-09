@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.hwcomputing.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -9,9 +8,7 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("0ad5bd3d-d0a4-478f-aef3-f176e980c3f3")
 public class HwISA_LifelineProperty implements IPropertyContent {
-    @objid ("24687f1b-a66d-43a1-97f0-a8a7da35bcad")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -25,7 +22,6 @@ public class HwISA_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("4f5e4ed6-1e8a-404d-9a27-084c13c6d681")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_family = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.HWISA_LIFELINE_HWISA_LIFELINE_FAMILY, elt);

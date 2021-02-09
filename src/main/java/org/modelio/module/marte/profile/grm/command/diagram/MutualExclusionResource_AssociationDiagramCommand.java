@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
@@ -19,9 +18,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.MutualExclusionResource_Association;
 
-@objid ("0a159ee6-a322-4029-8808-ff9e8ae9feae")
 public class MutualExclusionResource_AssociationDiagramCommand extends DefaultLinkTool {
-    @objid ("397d84aa-a300-48d5-ae8e-5dd4c1335b66")
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -39,7 +36,6 @@ public class MutualExclusionResource_AssociationDiagramCommand extends DefaultLi
         return false;
     }
 
-    @objid ("079b8d6c-47af-49cb-ae27-d8c24f81ae26")
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -57,7 +53,6 @@ public class MutualExclusionResource_AssociationDiagramCommand extends DefaultLi
         return false;
     }
 
-    @objid ("d8ae0682-cc29-4941-82a2-39834ee04bfb")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind touterType, ILinkPath path) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MutualExclusionResource_AssociationCommand")){

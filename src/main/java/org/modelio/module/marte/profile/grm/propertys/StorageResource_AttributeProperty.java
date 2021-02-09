@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("c85f749a-a02b-44be-a701-70bbe8a0425a")
 public class StorageResource_AttributeProperty implements IPropertyContent {
-    @objid ("980572f5-186c-4450-84bc-736feccf5e32")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -27,7 +24,6 @@ public class StorageResource_AttributeProperty implements IPropertyContent {
         }
     }
 
-    @objid ("1bed34c3-117e-4eca-a361-d7ed4eefcbe9")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

@@ -1,15 +1,14 @@
 /*
  * WARNING: GENERATED FILE - DO NOT EDIT
- * Module: MARTEDesigner v4.0.01
+ * Module: MARTEDesigner v4.1.02
 
- * This file was generated on 3/11/20 12:01 PM by Modelio Studio.
+ * This file was generated on 2/4/21 4:12 PM by Modelio Studio.
  */
 package org.modelio.module.marte.api.marte_marte_designmodel_hlam.standard.port;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -32,29 +31,24 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("055f4b05-33e1-4a21-a65c-e3b210bcdab8")
 public class RtFeaturePort {
-    @objid ("dd0f2b51-99c2-47ff-9de5-60936d721659")
     public static final String STEREOTYPE_NAME = "RtFeature_Port";
 
-    @objid ("ff92e740-0217-441f-b51c-7c66e0dcc73e")
     public static final String RTFEATURE_PORT_SPECIFICATION_NOTETYPE = "RtFeature_Port_specification";
 
     /**
      * The underlying {@link Port} represented by this proxy, never null.
      */
-    @objid ("07083a97-35b7-41f8-aee2-84c43ae7c5c5")
     protected final Port elt;
 
     /**
-     * Tells whether a {@link RtFeaturePort proxy} can be instantiated from a {@link MObject} checking it is a {@link Port} stereotyped << RtFeature_Port >>. 
+     * Tells whether a {@link RtFeaturePort proxy} can be instantiated from a {@link MObject} checking it is a {@link Port} stereotyped << RtFeature_Port >>.
      * <p>
-     * The method returns <i>false</i> if the instantiation cannot be carried out.
+     * The method returns <code>false</code> if the instantiation cannot be carried out.
      * 
      * @param elt a model object
-     * @return <i>true</i> if the instantiation can be carried out else <i>false</i>.
+     * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("4c5b6eb8-3d52-4402-8229-beece326b9ec")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Port) && ((Port) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, RtFeaturePort.STEREOTYPE_NAME));
     }
@@ -64,21 +58,19 @@ public class RtFeaturePort {
      * 
      * @return a {@link RtFeaturePort} proxy on the created {@link Port}.
      */
-    @objid ("b7292857-9cab-4070-953e-cd0980997b55")
     public static RtFeaturePort create() {
-        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Port");
+        ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Standard.Port");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, RtFeaturePort.STEREOTYPE_NAME);
         return RtFeaturePort.instantiate((Port)e);
     }
 
     /**
-     * Tries to instantiate a {@link RtFeaturePort} proxy from a {@link Port} stereotyped << RtFeature_Port >>checking its metaclass and its stereotype. 
+     * Tries to instantiate a {@link RtFeaturePort} proxy from a {@link Port} stereotyped << RtFeature_Port >> checking its metaclass and its stereotype. 
      * <p>
      * The method returns <i>null</i> if the instantiation cannot be carried out.
      * @param obj a Port
      * @return a {@link RtFeaturePort} proxy or <i>null</i>.
      */
-    @objid ("0151a7b9-fceb-4f13-9756-5ab419f2b0b2")
     public static RtFeaturePort instantiate(final Port obj) {
         return RtFeaturePort.canInstantiate(obj) ? new RtFeaturePort(obj) : null;
     }
@@ -91,7 +83,6 @@ public class RtFeaturePort {
      * @return a {@link RtFeaturePort} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("e1fab3fd-8208-459c-996e-792d71435971")
     public static RtFeaturePort safeInstantiate(final Port obj) throws IllegalArgumentException {
         if (RtFeaturePort.canInstantiate(obj))
         	return new RtFeaturePort(obj);
@@ -99,7 +90,6 @@ public class RtFeaturePort {
         	throw new IllegalArgumentException("RtFeaturePort: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("4d27d6b3-4051-437a-a0ab-48c559f13f91")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -119,7 +109,6 @@ public class RtFeaturePort {
      * Get the underlying {@link Port}. 
      * @return the Port represented by this proxy, never null.
      */
-    @objid ("129a4c64-2b90-433b-8520-0399acbfa359")
     public Port getElement() {
         return this.elt;
     }
@@ -129,12 +118,10 @@ public class RtFeaturePort {
      * <p>Note description:
      * <br/><i></i></p>
      */
-    @objid ("dd3dad96-bdc8-4b0e-9040-215d16773ffb")
     public String getRtFeature_Port_specificationNote() {
         return this.elt.getNoteContent(RtFeaturePort.MdaTypes.RTFEATURE_PORT_SPECIFICATION_NOTETYPE_ELT);
     }
 
-    @objid ("8bed8d76-27b5-4774-b3d7-7c775b747ceb")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
@@ -145,31 +132,23 @@ public class RtFeaturePort {
      * <p>Note description:
      * <br/><i></i></p>
      */
-    @objid ("0c412f6f-61d7-43a0-bd9e-a11cca2ae845")
     public void setRtFeature_Port_specificationNote(final String value) {
         this.elt.putNoteContent(RtFeaturePort.MdaTypes.RTFEATURE_PORT_SPECIFICATION_NOTETYPE_ELT, value);
     }
 
-    @objid ("babd6467-b921-41a5-b12f-6395878a0cb1")
     protected RtFeaturePort(final Port elt) {
         this.elt = elt;
     }
 
-    @objid ("96b7c2ce-46c0-4d30-bac8-cc8061609a75")
     public static final class MdaTypes {
-        @objid ("529eaceb-05a3-4e89-b97d-20a905a96ab0")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("7a8e0cbc-235b-4a1b-96a7-f90df3587f02")
         public static NoteType RTFEATURE_PORT_SPECIFICATION_NOTETYPE_ELT;
 
-        @objid ("987784f9-6d77-4cd8-bbab-3b9c9d3c397c")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("8eed6013-c29a-4cbe-8599-ae9f45296eac")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("81c1a235-fa69-425e-9435-e46524487da3")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "5cbde35f-11a6-11df-b398-0014222a9f79");
             RTFEATURE_PORT_SPECIFICATION_NOTETYPE_ELT = ctx.getModelingSession().findElementById(NoteType.class, "19675b43-9276-11e0-aeeb-0027103f347c");

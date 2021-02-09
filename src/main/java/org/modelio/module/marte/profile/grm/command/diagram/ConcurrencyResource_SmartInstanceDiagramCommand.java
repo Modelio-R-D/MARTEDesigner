@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_BindableInstance;
 import org.modelio.module.marte.profile.grm.model.ConcurrencyResource_Instance;
 
-@objid ("ca326946-b374-4696-927d-162bbb069fd6")
 public class ConcurrencyResource_SmartInstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("b8407940-52e5-4039-84fd-8c0cb87ac444")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -43,7 +40,6 @@ public class ConcurrencyResource_SmartInstanceDiagramCommand extends DefaultBoxT
         return false;
     }
 
-    @objid ("5b3cf22c-e028-4058-9392-d745c6147a95")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("ConcurrencyResource_BindableInstanceCommand")){

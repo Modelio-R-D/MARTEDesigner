@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.editors;
 
 import java.io.File;
 import java.util.ArrayList;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.TreeEditor;
 import org.eclipse.swt.events.MouseAdapter;
@@ -36,39 +35,27 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
  * - complex structure > ComplexTree
  * @author ehouziaux
  */
-@objid ("adf0f90e-cc4a-4853-924d-a36f99f3eee2")
 public abstract class ComplexTree {
-    @objid ("df7ecf97-2b05-45ed-ae2e-a17c01f61f69")
     private String tagType;
 
-    @objid ("1fb0181c-5fe7-42c4-8185-265735a79fc4")
     private ArrayList<ArrayList<TreeItem>> listSubItem;
 
-    @objid ("e7034b0e-9899-4da7-8f9e-a6fa39feb4f5")
     private ArrayList<ArrayList<TreeEditor>> listEditor;
 
-    @objid ("ff3dcb4a-9d51-4213-8759-46c631978561")
     private ArrayList<TreeItem> listTreeItem;
 
-    @objid ("d91aac25-151e-4cce-8d75-24eb685c3cf2")
     private ArrayList<Text> listText;
 
-    @objid ("3661f97d-cd4a-4e50-8438-25afb0754fda")
     private ArrayList<Combo> listCombo;
 
-    @objid ("c44a5140-e82e-4000-8a08-8cd329bd5cfd")
     private Button bDown;
 
-    @objid ("5036a981-6fe4-43af-ae8b-a09445deb63a")
     private Button bUp;
 
-    @objid ("7285e1f9-f1bf-49c7-b3ae-66f3e2ab5640")
     private Button bDel;
 
-    @objid ("fa90c3ec-0c9f-48a3-89e2-e3f86ca9b30d")
     private Button bAdd;
 
-    @objid ("de9b284c-5cfb-41b7-ae6d-cec757279b53")
     private Tree parent;
 
     /**
@@ -77,7 +64,6 @@ public abstract class ComplexTree {
      * @param grandParent is the grand parent tree.
      * @param tagType is the tag type name.
      */
-    @objid ("1a6b817f-8078-40ff-a379-9ceab1750c5d")
     public void init(Tree grandParent, String tagType) {
         this.tagType = tagType;
         
@@ -164,7 +150,6 @@ public abstract class ComplexTree {
     /**
      * Allows the item suppression.
      */
-    @objid ("5f6ad3c9-9766-4325-91b4-d2d71e24ea7b")
     private void delete() {
         // keys getting
         String keys[] = new String[parent.getSelection().length];
@@ -217,7 +202,6 @@ public abstract class ComplexTree {
     /**
      * Allows the moving up in the list.
      */
-    @objid ("61ef8be4-ffae-4879-b0a9-1da3f095fadd")
     private void upElement() {
         // index getting
         int ind1 = parent.indexOf(parent.getSelection()[0]);
@@ -290,7 +274,6 @@ public abstract class ComplexTree {
     /**
      * Allows the moving down in the list.
      */
-    @objid ("d30a243c-fc78-4a77-b1d0-3aef832e3009")
     private void downElement() {
         // index getting
         int ind1 = parent.indexOf(parent.getSelection()[0]);
@@ -363,7 +346,6 @@ public abstract class ComplexTree {
     /**
      * Allows the item creation, an item may contain some elements like text or combo
      */
-    @objid ("fec1dfee-e828-493a-a825-3622cb92e357")
     public void createItem(String tagType) {
         TreeItem item = new TreeItem(parent, SWT.NONE);
         item.setText(new String[] {MARTEResourceManager.getName(tagType), "", ""});
@@ -381,7 +363,6 @@ public abstract class ComplexTree {
      * 
      * @param subTagType is the sub tag type name.
      */
-    @objid ("1d0eaa14-2f1e-4f0c-bce5-dd9de58ec48c")
     public void createSubText(String subTagType) {
         TreeItem subItem = new TreeItem(listTreeItem.get(listTreeItem.size()-1), SWT.NONE);
         subItem.setText(new String[] {subTagType, "", ""});
@@ -408,7 +389,6 @@ public abstract class ComplexTree {
      * @param subTagType is the sub tag type name.
      * @param comboVal are the different combo values.
      */
-    @objid ("3eca6963-cc72-43b4-baf4-0a2675c64dee")
     public void createSubCombo(String subTagType, String[] comboVal) {
         TreeItem subItem = new TreeItem(listTreeItem.get(listTreeItem.size()-1), SWT.NONE);
         subItem.setText(new String[] {subTagType, "", ""});
@@ -434,7 +414,6 @@ public abstract class ComplexTree {
      * 
      * @return an object : the data key, usually, a String
      */
-    @objid ("18f87925-e77f-4e67-a128-03762e4a9bcb")
     private Object getData() {
         // DEBUG  Modelio.out.println("getData()"+listTreeItem.get(listTreeItem.size()-1).getData());
         return listTreeItem.get(listTreeItem.size()-1).getData();
@@ -445,7 +424,6 @@ public abstract class ComplexTree {
      * 
      * @return the last Text added in the text list.
      */
-    @objid ("c208d1ae-c5fc-40d6-a1f5-4f48efff4cb8")
     private Text lastText() {
         return listText.get(listText.size()-1);
     }
@@ -455,7 +433,6 @@ public abstract class ComplexTree {
      * 
      * @return the last Combo added in the combo list.
      */
-    @objid ("15de8111-150b-4f64-8db5-7b4974e0449d")
     private Combo lastCombo() {
         return listCombo.get(listCombo.size()-1);
     }
@@ -469,7 +446,6 @@ public abstract class ComplexTree {
      * @param left is a percent value for a left attachment, the offset equals 0.
      * @param right is a percent value for a right attachment, the offset equals 0.
      */
-    @objid ("73e4e4d4-6739-487b-a086-198d19732b2b")
     public void attachFormData(Control elt, int top, int bottom, int left, int right) {
         FormData fd = new FormData();
         fd.top = new FormAttachment(top,0);
@@ -482,7 +458,6 @@ public abstract class ComplexTree {
     /**
      * Clears (dispose and delete from the different lists) all items, sub items and editors.
      */
-    @objid ("15802c2d-0d57-4974-aeee-c25c0eaa2a30")
     private void clearAll() {
         for (TreeItem ti : listTreeItem) {
             ti.dispose();
@@ -514,7 +489,6 @@ public abstract class ComplexTree {
      * Is not defined.
      * It allows the structure item creation.
      */
-    @objid ("c2103fa6-b4b2-4e05-b345-dd412d28f532")
     public abstract void addItem();
 
     /**
@@ -522,7 +496,6 @@ public abstract class ComplexTree {
      * 
      * @return the tree editor list.
      */
-    @objid ("e3ad1b13-2f4b-46b8-81b0-33cebc84dfae")
     public ArrayList<ArrayList<TreeEditor>> getListEditor() {
         return listEditor;
     }
@@ -532,12 +505,10 @@ public abstract class ComplexTree {
      * 
      * @param listEditor is the new tree editor list.
      */
-    @objid ("203a3917-8f48-471c-941c-bccf955206a5")
     public void setListEditor(ArrayList<ArrayList<TreeEditor>> listEditor) {
         this.listEditor = listEditor;
     }
 
-    @objid ("effe15d3-b3c4-4cfa-aff7-c815b460c48f")
     public abstract void update(ComplexTree c, String tagType, ModelElement element);
 
     /**
@@ -545,7 +516,6 @@ public abstract class ComplexTree {
      * 
      * @return the Text list.
      */
-    @objid ("4d6e2807-6424-4779-b9a8-b68fbae25f6d")
     public ArrayList<Text> getListText() {
         return listText;
     }
@@ -555,7 +525,6 @@ public abstract class ComplexTree {
      * 
      * @return the Combo list.
      */
-    @objid ("9e780355-572f-4958-b89f-0548e5b9d465")
     public ArrayList<Combo> getListCombo() {
         return listCombo;
     }

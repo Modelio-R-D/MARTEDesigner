@@ -9,7 +9,6 @@ package org.modelio.module.marte.api.extensions.infrastructure.dependency;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.PropertyConverter;
 import org.modelio.api.module.context.IModuleContext;
@@ -30,15 +29,12 @@ import org.modelio.vcore.smkernel.mapi.MObject;
  * <p>Stereotype description:
  * <br/><i></i></p>
  */
-@objid ("8135a05d-90f0-4b3d-9caf-a5d28c8fa0c9")
 public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
-    @objid ("9fec205a-7b8e-4317-b642-198bd8eaa316")
     public static final String STEREOTYPE_NAME = "ProfileAssociation_intervalAttrib_IntervalType_Attribute";
 
     /**
      * The underlying {@link Dependency} represented by this proxy, never null.
      */
-    @objid ("cee1ab53-f737-4753-997f-0063f95439c0")
     protected final Dependency elt;
 
     /**
@@ -49,7 +45,6 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
      * @param elt a model object
      * @return <code>true</code> if the instantiation can be carried out else <code>false</code>.
      */
-    @objid ("1b1803d0-d114-4795-9925-fb5db88ddf45")
     public static boolean canInstantiate(final MObject elt) {
         return ((elt instanceof Dependency) && ((Dependency) elt).isStereotyped(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationIntervalAttribIntervalTypeAttribute.STEREOTYPE_NAME));
     }
@@ -59,7 +54,6 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
      * 
      * @return a {@link ProfileAssociationIntervalAttribIntervalTypeAttribute} proxy on the created {@link Dependency}.
      */
-    @objid ("b59dfadc-bb30-4465-b39a-aafc4e1178a8")
     public static ProfileAssociationIntervalAttribIntervalTypeAttribute create() {
         ModelElement e = (ModelElement)MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().createElement("Infrastructure.Dependency");
         e.addStereotype(IMARTEDesignerPeerModule.MODULE_NAME, ProfileAssociationIntervalAttribIntervalTypeAttribute.STEREOTYPE_NAME);
@@ -73,7 +67,6 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
      * @param obj a Dependency
      * @return a {@link ProfileAssociationIntervalAttribIntervalTypeAttribute} proxy or <i>null</i>.
      */
-    @objid ("992c9de8-ec60-4e7b-99b7-5a1eb87b6547")
     public static ProfileAssociationIntervalAttribIntervalTypeAttribute instantiate(final Dependency obj) {
         return ProfileAssociationIntervalAttribIntervalTypeAttribute.canInstantiate(obj) ? new ProfileAssociationIntervalAttribIntervalTypeAttribute(obj) : null;
     }
@@ -86,7 +79,6 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
      * @return a {@link ProfileAssociationIntervalAttribIntervalTypeAttribute} proxy.
      * @throws IllegalArgumentException if the instantiation cannot be carried out.
      */
-    @objid ("9243ba97-8536-496a-96f6-bf45ac7f8942")
     public static ProfileAssociationIntervalAttribIntervalTypeAttribute safeInstantiate(final Dependency obj) throws IllegalArgumentException {
         if (ProfileAssociationIntervalAttribIntervalTypeAttribute.canInstantiate(obj))
         	return new ProfileAssociationIntervalAttribIntervalTypeAttribute(obj);
@@ -94,7 +86,6 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
         	throw new IllegalArgumentException("ProfileAssociationIntervalAttribIntervalTypeAttribute: Cannot instantiate "+obj+": wrong element type or stereotype");
     }
 
-    @objid ("61e10e1c-b024-4eb3-9c36-0a6e78dc7e05")
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -114,34 +105,26 @@ public class ProfileAssociationIntervalAttribIntervalTypeAttribute {
      * Get the underlying {@link Dependency}. 
      * @return the Dependency represented by this proxy, never null.
      */
-    @objid ("95ba7375-c5a8-455e-8862-0c177cb3ea3c")
     public Dependency getElement() {
         return this.elt;
     }
 
-    @objid ("18005382-5626-4dfe-bb29-9261771199ac")
     @Override
     public int hashCode() {
         return 23 + ((this.elt == null) ? 0 : this.elt.hashCode());
     }
 
-    @objid ("00eecc71-5cea-4e96-b818-4c4e25f87aaf")
     protected ProfileAssociationIntervalAttribIntervalTypeAttribute(final Dependency elt) {
         this.elt = elt;
     }
 
-    @objid ("bc5cca33-b2b8-4070-98ee-edf6c659f39f")
     public static final class MdaTypes {
-        @objid ("7347217a-3d16-49fd-ba78-e8a404bba29e")
         public static Stereotype STEREOTYPE_ELT;
 
-        @objid ("bff3ff4e-7adb-4d5b-b814-7c9a475659c6")
         private static Stereotype MDAASSOCDEP;
 
-        @objid ("6dd55faf-4a85-4bfa-8ce4-27745d73911c")
         private static TagType MDAASSOCDEP_ROLE;
 
-        @objid ("54666fb5-08f9-4007-b5eb-5990c1ac7820")
         public static void init(final IModuleContext ctx) {
             STEREOTYPE_ELT = ctx.getModelingSession().findElementById(Stereotype.class, "acddc7c0-82b2-11df-b65a-0014222a9f79");
             MDAASSOCDEP = ctx.getModelingSession().findElementById(Stereotype.class, "94b7efa5-f94c-4d1d-896f-f103e56a8e2e");

@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.editors;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.jface.viewers.ColumnViewerEditor;
 import org.eclipse.jface.viewers.IStructuredSelection;
@@ -34,75 +33,51 @@ import org.modelio.api.ui.ModelioDialog;
  * results. This allows for search refinement when many elements have been
  * found.
  */
-@objid ("c8824f7d-3435-41db-893e-02fce1799899")
 public class StringListEditionDialog extends ModelioDialog {
-    @objid ("0106d9fd-b9c3-4ef7-a5dc-bc5542f392a7")
     private String title = "";
 
-    @objid ("92dc3241-49ff-4feb-9955-2b4e00d983cf")
     private String message = "";
 
-    @objid ("bc5a2379-bcc3-48dc-b01e-018f5639987a")
     private String detailedMessage = "";
 
-    @objid ("cb9dad78-80a8-492f-889f-b8435c754e99")
     private int size = 0;
 
-    @objid ("b95cf974-f838-4b37-86c1-878f352d2b11")
     private List<StringAdapter> content = null;
 
-    @objid ("7e0abd05-1153-41cf-b4df-4336b7061c4a")
     private StringListCellEditor editor = null;
 
-    @objid ("055f17d7-35d2-4428-b1a7-6f152edcb090")
     private StringTextListener stringTextListener = null;
 
-    @objid ("6f315dc8-4097-4b65-9e43-4ad777db2b7b")
     private ContentTableListener contentTableListener = null;
 
-    @objid ("883cf36a-97fa-4186-a846-31e20112940b")
     private AddButtonListener addButtonListener = null;
 
-    @objid ("09749ea9-6a95-4b48-9163-a20a593e8036")
     private MoveUpButtonListener moveUpButtonListener = null;
 
-    @objid ("386f8f02-9fa4-48ee-9b14-f02ec3fcce97")
     private MoveDownButtonListener moveDownButtonListener = null;
 
-    @objid ("3eb72a9d-a7ca-4a06-a15e-98b79c1e577b")
     private RemoveButtonListener removeButtonListener = null;
 
-    @objid ("4bf084b8-ba6b-4e87-be1f-75781dc06188")
     private TableViewer contentTable = null;
 
-    @objid ("f2e33664-bac6-4a3b-ac10-a228e2db117c")
     private Image addImage = null;
 
-    @objid ("bc5e6b29-3138-443e-a507-fa56ee82e9cd")
     private Image removeImage = null;
 
-    @objid ("c4868205-f64b-4694-9980-9551dd863ee4")
     private Button addParameterButton = null;
 
-    @objid ("8a72b9e7-5383-476a-8a1b-0afb616653a6")
     private Button removeParameterButton = null;
 
-    @objid ("eeb38519-d6a1-4f0a-8a22-688bb030c052")
     private Text addStringText = null;
 
-    @objid ("9ea0078a-4ef2-46c4-bf34-f48292fa3bb0")
     private Image moveUpImage = null;
 
-    @objid ("9f367966-fce4-48f6-a063-a754b99a5432")
     private Image moveDownImage = null;
 
-    @objid ("af539b24-84f3-4d36-8993-2b7d07cc475e")
     private Button moveUpParameterButton = null;
 
-    @objid ("b3165209-a6c1-4684-bae3-1f0d1d6fe600")
     private Button moveDownParameterButton = null;
 
-    @objid ("fe64d612-1bb4-45e1-a593-2e776b73f8a5")
     public StringListEditionDialog(Shell parentShell, String title, String message, int size, String detailedMessage, IModelingSession session, StringListCellEditor editor, List<String> initialContent) {
         super(parentShell);
         this.title = title;
@@ -118,14 +93,12 @@ public class StringListEditionDialog extends ModelioDialog {
         //        this.moveDownImage = AbstractUIPlugin.imageDescriptorFromPlugin("com.modeliosoft.modelio.edition", "icons/down_16.png").createImage();
     }
 
-    @objid ("d81425d1-eeb6-4f2c-bbf2-d7a347a8d206")
     @Override
     public void addButtonsInButtonBar(Composite parent) {
         createButton(parent, IDialogConstants.OK_ID, IDialogConstants.OK_LABEL, false);
         createButton(parent, IDialogConstants.CANCEL_ID, IDialogConstants.CANCEL_LABEL, false);
     }
 
-    @objid ("775acc2a-c3e1-4c49-9dd6-7730ada7ef82")
     @Override
     public Control createContentArea(Composite parent) {
         Composite area = new Composite(parent, 0);
@@ -144,7 +117,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return area;
     }
 
-    @objid ("7926c14f-3557-4da4-82b2-32caf46d20fa")
     @Override
     public void init() {
         setLogoImage(null);
@@ -157,7 +129,6 @@ public class StringListEditionDialog extends ModelioDialog {
         getShell().setMinimumSize(minSize);
     }
 
-    @objid ("9823fb11-6b42-41ac-b9b3-ff92697b6a88")
     @Override
     protected void okPressed() {
         //        List<String> values = getValues(this.content);
@@ -166,13 +137,11 @@ public class StringListEditionDialog extends ModelioDialog {
                 super.okPressed();
     }
 
-    @objid ("778f7d7d-46d5-4164-a1fc-10f8075ec7a0")
     @Override
     public int open() {
         return super.open();
     }
 
-    @objid ("8cf65390-534c-46c7-a112-7fbadcf1239c")
     @Override
     public boolean close() {
         if (this.moveUpButtonListener != null) {
@@ -227,7 +196,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return super.close();
     }
 
-    @objid ("fa25490d-dff4-4d2f-95e3-9632b803d883")
     protected Image getBundleImage(String relativePath) {
         //        Bundle imageBundle = Platform.getBundle("com.modeliosoft.modelio.edition");
         //        IPath bitmapPath = new Path(relativePath);
@@ -237,14 +205,12 @@ public class StringListEditionDialog extends ModelioDialog {
         return null;
     }
 
-    @objid ("9232db45-b0f7-4075-8969-31939dbdbf38")
     @Override
     protected void cancelPressed() {
         this.editor.closeEditor(false);
         super.cancelPressed();
     }
 
-    @objid ("b414e6aa-c741-4b98-a5db-b339e96ead5b")
     private void createListField(Composite area) {
         this.contentTable = new TableViewer(area);
         
@@ -265,7 +231,6 @@ public class StringListEditionDialog extends ModelioDialog {
         this.contentTable.getControl().setLayoutData(gd_contentTree);
     }
 
-    @objid ("2e1e93f6-f644-4ae3-9575-ee6b503249ca")
     private void createListButtons(Composite area) {
         Composite buttonsComposite = new Composite(area, SWT.NONE);
         GridLayout gl_buttonComposite = new GridLayout(1, false);
@@ -300,12 +265,10 @@ public class StringListEditionDialog extends ModelioDialog {
         this.removeParameterButton.setLayoutData(gd_removeParameterButton);
     }
 
-    @objid ("921af7a3-5890-43c8-b7f3-ab9c2ee5a919")
     public TableViewer getContentTable() {
         return this.contentTable;
     }
 
-    @objid ("d4795a66-0537-4e00-a9ec-b3f4626ea506")
     private List<StringAdapter> initContent(List<String> values) {
         List<StringAdapter> adapters = new ArrayList<StringAdapter>();
         for (String value : values) {
@@ -314,7 +277,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return adapters;
     }
 
-    @objid ("4c5a5888-268b-409d-b7db-08cfc525651b")
     private List<String> getValues(List<StringAdapter> adapters) {
         List<String> values = new ArrayList<>();
         for (StringAdapter adapter : adapters) {
@@ -323,7 +285,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return values;
     }
 
-    @objid ("2eaa8593-1fb9-4480-b86e-fc59c71024c6")
     private void initEditor() {
         // Define cell editor:
         //--------------------
@@ -352,7 +313,6 @@ public class StringListEditionDialog extends ModelioDialog {
                 | ColumnViewerEditor.TABBING_VERTICAL | ColumnViewerEditor.KEYBOARD_ACTIVATION);
     }
 
-    @objid ("130b4d4b-20ab-414f-b7f7-1f01787747dc")
     public void refresh() {
         this.contentTable.setInput(this.content);
         
@@ -361,22 +321,18 @@ public class StringListEditionDialog extends ModelioDialog {
         }
     }
 
-    @objid ("81c321db-2ff7-442c-84f8-f1b9844dfc71")
     public Text getAddStringText() {
         return this.addStringText;
     }
 
-    @objid ("bff7c68f-cf27-4e04-a371-54921b9a8f1d")
     public Button getAddParameterButton() {
         return this.addParameterButton;
     }
 
-    @objid ("543c8e68-d004-458d-a884-12bdf7e9917e")
     public Button getRemoveParameterButton() {
         return this.removeParameterButton;
     }
 
-    @objid ("1341efea-b4f8-436f-b179-c5197443f158")
     private void createAddStringField(Composite area) {
         this.addStringText = new Text(area, SWT.BORDER);
         if (this.size != -1) {
@@ -395,23 +351,19 @@ public class StringListEditionDialog extends ModelioDialog {
         this.addParameterButton.setLayoutData(gd_addParameterButton);
     }
 
-    @objid ("14eca0c0-5658-4c3e-a094-c270066c940e")
     public void addAdapter(StringAdapter adapter) {
         this.content.add(adapter);
         refresh();
     }
 
-    @objid ("3926611c-3092-4566-863c-ab3f5160badf")
     public Button getMoveUpParameterButton() {
         return this.moveUpParameterButton;
     }
 
-    @objid ("5602b410-4b32-466c-a2ce-6c271bc3ffa3")
     public Button getMoveDownParameterButton() {
         return this.moveDownParameterButton;
     }
 
-    @objid ("ae5e71b8-f581-48f6-a49a-f374da961384")
     private void createDetailedText(Composite area) {
         if (this.detailedMessage != null && !this.detailedMessage.equals("")) {
             Label detailText = new Label(area, SWT.NONE);
@@ -422,7 +374,6 @@ public class StringListEditionDialog extends ModelioDialog {
         }
     }
 
-    @objid ("5f27ae50-fc7a-49e9-8deb-68fec7dfe808")
     private void initListeners() {
         this.contentTableListener = new ContentTableListener(this);
         this.contentTable.addSelectionChangedListener(this.contentTableListener);
@@ -446,7 +397,6 @@ public class StringListEditionDialog extends ModelioDialog {
         this.addStringText.addKeyListener(this.stringTextListener);
     }
 
-    @objid ("36dae5aa-d7e0-4e8b-b860-05ffcf245fd7")
     public void removeAdapters(List<StringAdapter> adapters) {
         for (StringAdapter adapter : adapters) {
             this.content.remove(adapter);
@@ -454,14 +404,12 @@ public class StringListEditionDialog extends ModelioDialog {
         refresh();
     }
 
-    @objid ("75ba4d8f-f2df-492e-bf8d-93b7c6bab0aa")
     @SuppressWarnings("unchecked")
     public List<StringAdapter> getSelectedAdapters() {
         IStructuredSelection structuredSelection = (IStructuredSelection)this.contentTable.getSelection();
         return structuredSelection.toList();
     }
 
-    @objid ("f792bbce-8370-4be2-bc18-6e6e667520c6")
     public void moveUp(List<StringAdapter> adapters) {
         for (StringAdapter adapter : adapters) {
             int index = getIndexUp(adapter, this.content);
@@ -477,7 +425,6 @@ public class StringListEditionDialog extends ModelioDialog {
         this.refresh();
     }
 
-    @objid ("10abcc6b-126c-4132-a00b-ad590cdf6983")
     private int getIndexUp(StringAdapter adapter, List<StringAdapter> list) {
         int index = list.indexOf(adapter);
         
@@ -489,7 +436,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return index;
     }
 
-    @objid ("d49a2a61-6a18-4d0c-984d-f895fd0fe33a")
     private int getIndexDown(StringAdapter adapter, List<StringAdapter> list) {
         int index = list.indexOf(adapter);
         
@@ -505,7 +451,6 @@ public class StringListEditionDialog extends ModelioDialog {
         return index;
     }
 
-    @objid ("dc85c8ba-ccf2-4ada-85da-e9e90469ce0d")
     public void moveDown(List<StringAdapter> adapters) {
         // We first move down the Last element of the list; This way the positions of other
         // selected elements are not affected by the move of the current this.element.

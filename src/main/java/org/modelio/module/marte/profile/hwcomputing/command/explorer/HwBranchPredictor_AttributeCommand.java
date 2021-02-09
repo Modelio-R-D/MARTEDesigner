@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwcomputing.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -14,9 +13,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwcomputing.model.HwBranchPredictor_Attribute;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("9a5bccfc-4f57-46ab-8fd0-f2944e26c44c")
 public class HwBranchPredictor_AttributeCommand extends DefaultModuleCommandHandler {
-    @objid ("4249b663-fe2e-4a6d-a797-132b44d9554e")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class HwBranchPredictor_AttributeCommand extends DefaultModuleCommandHand
         return false;
     }
 
-    @objid ("a0c4921c-59cd-4848-a80f-bc80e66add9d")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwBranchPredictor_AttributeCommand")){

@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.sam.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -13,9 +12,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sam.model.SaSharedResource_Attribute;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("3e9203c6-7ec8-4993-bef6-9227f950da85")
 public class SaSharedResource_AttributeCommand extends DefaultModuleCommandHandler {
-    @objid ("7b3f7c06-998d-476f-b06f-5199b635caab")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -28,7 +25,6 @@ public class SaSharedResource_AttributeCommand extends DefaultModuleCommandHandl
         return false;
     }
 
-    @objid ("6511d954-97de-490f-a5f2-20f4ef7829de")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("SaSharedResource_AttributeCommand")){

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_interaction.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_interaction.model.NotificationResource_Class;
 
-@objid ("e0093dae-4899-48e7-8d5c-082d7bbdc3b4")
 public class NotificationResource_ClassDiagramCommand extends DefaultBoxTool {
-    @objid ("f746e19c-ec0b-4ef3-9434-b72cabd92dd3")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -35,7 +32,6 @@ public class NotificationResource_ClassDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("7eaad875-8d51-4aa8-83bb-ba09df1790e1")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("NotificationResource_ClassCommand")){

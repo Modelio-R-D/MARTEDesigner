@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sam.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerTagTypes;
@@ -8,9 +7,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("ab8e5529-9b23-4f79-a367-b9ca0e6d1b9e")
 public class SaExecHost_LifelineProperty implements IPropertyContent {
-    @objid ("a8ae4fe9-f9a0-4c13-9784-b8b17f971d5b")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -30,7 +27,6 @@ public class SaExecHost_LifelineProperty implements IPropertyContent {
         }
     }
 
-    @objid ("d8c72a22-b4f8-4ba6-905d-307376415cdd")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         table.addProperty(MARTEResourceManager.getPropertyName(MARTEDesignerTagTypes.SAEXECHOST_LIFELINE_SAEXECHOST_LIFELINE_ISSCHED)

@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.sw_brokering.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -17,9 +16,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.sw_brokering.model.MemoryBroker_BindableInstance;
 
-@objid ("dba30a63-cf77-4b2b-ac62-cada92714e92")
 public class MemoryBroker_BindableInstanceDiagramCommand extends DefaultBoxTool {
-    @objid ("18b11cf5-6448-4960-a477-2ec6dfefa2cc")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -45,7 +42,6 @@ public class MemoryBroker_BindableInstanceDiagramCommand extends DefaultBoxTool 
         return false;
     }
 
-    @objid ("9134d3d9-b630-453b-80d8-ad5851b84393")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("MemoryBroker_BindableInstanceCommand")){

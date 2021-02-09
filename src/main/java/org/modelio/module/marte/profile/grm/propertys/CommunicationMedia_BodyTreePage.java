@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Text;
@@ -14,39 +13,27 @@ import org.modelio.module.marte.profile.nfps.model.ComplexTree_NFP_DataTxRate;
 import org.modelio.module.marte.profile.nfps.model.ComplexTree_NFP_Duration;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("5679a7a1-d9e8-4b90-857c-9755fc3a6496")
 public class CommunicationMedia_BodyTreePage extends BodyTreePage {
-    @objid ("7f257921-6dea-4218-9829-515442663ce4")
     private ComplexTree_NFP_DataTxRate complex_capacity;
 
-    @objid ("790b923b-dc5a-40a8-9a74-e8cc49a93ccd")
     private ComplexTree_NFP_Duration complex_blockT;
 
-    @objid ("2f7c3757-2b63-4aaa-9685-980c650c0beb")
     private ComplexTree_NFP_Duration complex_packetT;
 
-    @objid ("4c1a7162-fba6-406d-8d09-c40357b35912")
     private Text resMult;
 
-    @objid ("bc3f08f4-3164-4d92-9baa-bd211e90ff9b")
     private Button isProtected;
 
-    @objid ("848995de-cc73-4589-837b-535201a0ce52")
     private Button isActive;
 
-    @objid ("38ec9c10-a16b-4f8a-bb6f-070dc0c0ed4d")
     private Text elementSize;
 
-    @objid ("c64c92ad-7858-4ebf-86bb-bad00ac735d3")
     private Combo transmMode;
 
-    @objid ("cada4201-0574-4b9b-a7ca-6d252181faaa")
     private Text speedFactor;
 
-    @objid ("baa4f21f-f049-4f54-bded-83cddba7f668")
     private Combo mainScheduler;
 
-    @objid ("812455c6-07c0-4f87-8746-d336083db270")
     public CommunicationMedia_BodyTreePage(TransformationDialog dialog, ModelElement element) {
         /*
          * the tag types List<MObject> names has to be created here.
@@ -105,57 +92,46 @@ public class CommunicationMedia_BodyTreePage extends BodyTreePage {
         new ListenerCommunicationMedia_BTP(dialog, this, this.element);
     }
 
-    @objid ("fc82f349-4cff-4981-86db-af85032e1347")
     public String getElementSize() {
         return getDataSingleValueInteger(elementSize);
     }
 
-    @objid ("795541e8-4213-40d8-ab0e-5268ba2ba2dd")
     public String getResMult() {
         return getDataSingleValueInteger(resMult);
     }
 
-    @objid ("040edf7b-49c1-4620-94f1-71fb3c209af1")
     public boolean getIsProtected() {
         return getDataBoolean(isProtected);
     }
 
-    @objid ("18976bdf-2c57-4056-a274-2bfcc4aff886")
     public boolean getIsActive() {
         return getDataBoolean(isActive);
     }
 
-    @objid ("28efb888-ec59-4c83-be3a-b2a542ce08e3")
     public String getTransmMode() {
         return getDataSingleElt(transmMode);
     }
 
-    @objid ("7bfa97c9-e400-409e-8a88-e289dafeeea5")
     public String[] getBlockT() {
         return getDataComplex(complex_blockT.getListEditor());
     }
 
-    @objid ("77c6d990-c7ef-4107-8605-6fa0efb65f6c")
     public String[] getPacketT() {
         return getDataComplex(complex_packetT.getListEditor());
     }
 
-    @objid ("bd6f925b-cb2c-42e9-a317-c10ac42f64b3")
     public String[] getCapacity() {
         return getDataComplex(complex_capacity.getListEditor());
     }
 
-    @objid ("f161fa30-de86-43da-91c3-d7624d69fab4")
     public String getSpeedFactor() {
         return getDataSingleValue(speedFactor);
     }
 
-    @objid ("72a488c9-e6bd-45ec-afa0-2a9bc3895ff0")
     public String getMainScheduler() {
         return getDataSingleElt(mainScheduler);
     }
 
-    @objid ("b928ca4a-31b8-4890-9473-aafce034ba8e")
     public void buildTabFolder() {
         // elements getting
         isProtected  = setCompositeBoolean(getListTagTypes()[1], getListDescriptions()[1], 1);

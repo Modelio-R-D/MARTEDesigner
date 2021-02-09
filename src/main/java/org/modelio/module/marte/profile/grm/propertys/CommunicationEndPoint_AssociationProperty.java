@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.profile.editors.IPropertyContent;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("814a350f-eed1-4f2e-89d0-8cc07808e92e")
 public class CommunicationEndPoint_AssociationProperty implements IPropertyContent {
-    @objid ("1031416c-a713-481f-9830-5db3d56b4974")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){          
@@ -27,7 +24,6 @@ public class CommunicationEndPoint_AssociationProperty implements IPropertyConte
         }
     }
 
-    @objid ("d46124aa-9859-440d-9f7b-b877929f208f")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

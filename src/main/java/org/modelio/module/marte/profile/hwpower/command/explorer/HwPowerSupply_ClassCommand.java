@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.hwpower.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -18,9 +17,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.hwpower.model.HwPowerSupply_Class;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("5b94311e-18ae-47d7-bd17-46e9529e7c2f")
 public class HwPowerSupply_ClassCommand extends DefaultModuleCommandHandler {
-    @objid ("2ff25269-9a49-43b9-bd08-d19d85b675ec")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -35,7 +32,6 @@ public class HwPowerSupply_ClassCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("c8a3aecf-1ca5-4835-ab1e-3f44ac3a3df0")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("HwPowerSupply_ClassCommand")){

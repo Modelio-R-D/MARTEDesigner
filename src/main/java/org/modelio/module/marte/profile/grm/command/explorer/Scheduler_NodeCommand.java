@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.grm.command.explorer;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.api.module.IModule;
 import org.modelio.api.module.command.DefaultModuleCommandHandler;
@@ -19,9 +18,7 @@ import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.Scheduler_Node;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("a4f3c74a-a1ed-4d6f-89d2-50bf30013511")
 public class Scheduler_NodeCommand extends DefaultModuleCommandHandler {
-    @objid ("f6fb9aa3-ffa0-4d34-904e-dd57902ca259")
     @Override
     public boolean accept(List<MObject> selected_element, IModule module) {
         if(selected_element.size() > 0 && selected_element.get(0) instanceof ModelElement){
@@ -36,7 +33,6 @@ public class Scheduler_NodeCommand extends DefaultModuleCommandHandler {
         return false;
     }
 
-    @objid ("28039070-6e5e-4c0b-b0c7-d68682122664")
     @Override
     public void actionPerformed(List<MObject> selected_element, IModule module) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Scheduler_NodeCommand")){

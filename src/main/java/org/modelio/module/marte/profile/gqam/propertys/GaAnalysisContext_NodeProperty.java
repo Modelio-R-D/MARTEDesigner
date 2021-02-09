@@ -1,7 +1,6 @@
 package org.modelio.module.marte.profile.gqam.propertys;
 
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
@@ -11,15 +10,11 @@ import org.modelio.module.marte.profile.utils.LinkManager;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("9cf6b399-cc46-4a0a-9f0f-d5c4ac1608c3")
 public class GaAnalysisContext_NodeProperty implements IPropertyContent {
-    @objid ("621e0e79-c55d-42a5-a82f-643b5cd1c493")
     private static List<ModelElement> workloads = null;
 
-    @objid ("f6908a91-ca60-43b8-b888-ee1066247b17")
     private static List<ModelElement> platforms = null;
 
-    @objid ("1d805633-f8a2-49c5-b11a-8c2da491e389")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if (row == 1) {
@@ -41,7 +36,6 @@ public class GaAnalysisContext_NodeProperty implements IPropertyContent {
         }
     }
 
-    @objid ("4cf3d527-4b5e-4845-830c-558d37e65283")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         String value_context = ModelUtils.getTaggedValue(MARTEDesignerTagTypes.GAANALYSISCONTEXT_NODE_GAANALYSISCONTEXT_NODE_CONTEXTPARAMS, elt);

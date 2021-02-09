@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.command.diagram;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
@@ -13,9 +12,7 @@ import org.modelio.metamodel.uml.statik.TemplateParameter;
 import org.modelio.module.marte.impl.MARTEModule;
 import org.modelio.module.marte.profile.grm.model.TimerResource_AssociationEnd;
 
-@objid ("7907abd8-4f1a-4f12-bdad-c7fa204159b9")
 public class TimerResource_AssociationEndDiagramCommand extends DefaultBoxTool {
-    @objid ("f3995aba-539f-4c59-81be-3532b8475d90")
     @Override
     public boolean acceptElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         ModelElement owner = null;
@@ -36,7 +33,6 @@ public class TimerResource_AssociationEndDiagramCommand extends DefaultBoxTool {
         return false;
     }
 
-    @objid ("f4708fad-8460-4305-a1f4-53c4d011d33a")
     @Override
     public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode, Rectangle rec) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("TimerResource_AssociationEndCommand")){

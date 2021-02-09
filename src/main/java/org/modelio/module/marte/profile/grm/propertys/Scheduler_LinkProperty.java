@@ -2,7 +2,6 @@ package org.modelio.module.marte.profile.grm.propertys;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.behavior.interactionModel.Lifeline;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
@@ -21,21 +20,15 @@ import org.modelio.module.marte.profile.utils.MARTEEnumerationUtils;
 import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 
-@objid ("9f4865b4-e649-43f2-ac8b-4e770a3d09da")
 public class Scheduler_LinkProperty implements IPropertyContent {
-    @objid ("823fa507-c5b1-4b84-9dff-d5a7ce54343f")
     private static List<ModelElement> listComputingResource = null;
 
-    @objid ("a7a9e295-d331-4a91-9b93-e2321fa8116b")
     private static List<ModelElement> listMutualExclusionResource = null;
 
-    @objid ("0e1c02be-d1b5-4b85-8cb7-f3b55a70d54c")
     private static List<ModelElement> listProcessingResource = null;
 
-    @objid ("de9656ff-f390-440f-9805-4f7818e2554b")
     private static List<ModelElement> listSchedulableResource = null;
 
-    @objid ("bbf24381-67a1-4647-a98f-ce9a8f04a199")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -118,7 +111,6 @@ public class Scheduler_LinkProperty implements IPropertyContent {
         }
     }
 
-    @objid ("61deb9d4-493b-42f2-81c6-a984aa9402e1")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

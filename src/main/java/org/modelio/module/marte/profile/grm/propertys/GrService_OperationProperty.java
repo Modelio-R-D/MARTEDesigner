@@ -1,6 +1,5 @@
 package org.modelio.module.marte.profile.grm.propertys;
 
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.module.propertiesPage.IModulePropertyTable;
 import org.modelio.metamodel.uml.infrastructure.ModelElement;
 import org.modelio.module.marte.api.IMARTEDesignerPeerModule;
@@ -11,9 +10,7 @@ import org.modelio.module.marte.profile.utils.MARTEResourceManager;
 import org.modelio.module.marte.profile.utils.ModelUtils;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("8d477994-e3bd-47e1-91ab-cf8fbd4ad1a3")
 public class GrService_OperationProperty implements IPropertyContent {
-    @objid ("693a6861-5ac0-4e8f-8930-08f887ac0626")
     @Override
     public void changeProperty(final ModelElement elt, final int row, final String value) {
         if(row == 1){
@@ -21,7 +18,6 @@ public class GrService_OperationProperty implements IPropertyContent {
         }
     }
 
-    @objid ("f426ed43-f92d-4206-9aaf-5e94fa94219c")
     @Override
     public void update(final ModelElement elt, final IModulePropertyTable table) {
         //

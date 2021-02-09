@@ -2,7 +2,6 @@ package org.modelio.module.marte.impl;
 
 import java.util.List;
 import java.util.Set;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
 import org.modelio.api.modelio.model.IModelingSession;
 import org.modelio.api.modelio.model.event.IElementDeletedEvent;
 import org.modelio.api.modelio.model.event.IModelChangeEvent;
@@ -16,9 +15,7 @@ import org.modelio.module.marte.api.MARTEDesignerNoteTypes;
 import org.modelio.module.marte.api.MARTEDesignerStereotypes;
 import org.modelio.vcore.smkernel.mapi.MObject;
 
-@objid ("f11684a5-dadb-47d3-b9cf-83d9e98b84b4")
 public class MARTEHandler implements IModelChangeHandler {
-    @objid ("5c86bfa8-dcc2-451e-8b3f-ca7478b66199")
     private void updateAllocated(ModelElement element) {
         Stereotype allocatedSter = MARTEModule.getInstance().getModuleContext().getModelingSession().getMetamodelExtensions()
                 .getStereotype(IMARTEDesignerPeerModule.MODULE_NAME, MARTEDesignerStereotypes.ALLOCATED_MODELELEMENT, element.getMClass());
@@ -46,7 +43,6 @@ public class MARTEHandler implements IModelChangeHandler {
             element.getExtension().remove(allocatedSter);
     }
 
-    @objid ("3fac9e34-1a4e-4f14-b471-b4566787677b")
     private void deleteAllocated(ModelElement element) {
         int allocations = 0;
         
@@ -69,7 +65,6 @@ public class MARTEHandler implements IModelChangeHandler {
         }
     }
 
-    @objid ("4a3dcd7d-81fe-41bc-af32-0fed1d76ba10")
     @Override
     public void handleModelChange(IModelingSession session, IModelChangeEvent event) {
         List<IElementDeletedEvent> deleted_elements =  event.getDeleteEvents();
