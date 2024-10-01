@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Module id="${project.name}" class="org.modelio.module.marte.impl.MARTEModule" binaryversion="4.1.0" version="${project.version}" schema-level="2" uid="24f58aa0-0ccc-11df-bc35-001302895b2b" author="" image="" url="">
+<Module id="${project.name}" class="org.modelio.module.marte.impl.MARTEModule" binaryversion="5.4.0" version="${project.version}" schema-level="2" uid="24f58aa0-0ccc-11df-bc35-001302895b2b" author="" image="" url="">
     <ClassPath>
         <PathEntry path="lib/${project.artifactId}-${project.version}.jar"/>
     </ClassPath>

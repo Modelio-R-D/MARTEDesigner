@@ -1,11 +1,12 @@
 package org.modelio.module.marte.profile.alloc.command.diagram;
 
 import java.util.List;
+
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
-import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
 import org.modelio.api.modelio.diagram.IDiagramLink;
-import org.modelio.api.modelio.diagram.ILinkPath;
+import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
+import org.modelio.api.modelio.diagram.ILinkRoute;
 import org.modelio.api.modelio.diagram.InvalidDestinationPointException;
 import org.modelio.api.modelio.diagram.InvalidPointsPathException;
 import org.modelio.api.modelio.diagram.InvalidSourcePointException;
@@ -21,7 +22,7 @@ public class Allocate_DependencyDiagramCommand extends DefaultLinkTool {
     @Override
     public boolean acceptFirstElement(final IDiagramHandle diagramHandle, IDiagramGraphic targetNode) {
         MObject owner = null;
-        
+
         if(targetNode.getElement() instanceof AbstractDiagram){
             owner = diagramHandle.getDiagram().getOrigin();
         }else{
@@ -33,7 +34,7 @@ public class Allocate_DependencyDiagramCommand extends DefaultLinkTool {
     @Override
     public boolean acceptSecondElement(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode) {
         MObject owner = null;
-        
+
         if(targetNode == null){
             owner = diagramHandle.getDiagram().getOrigin();
         }else{
@@ -43,28 +44,28 @@ public class Allocate_DependencyDiagramCommand extends DefaultLinkTool {
     }
 
     @Override
-    public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind routerType, ILinkPath path) {
+    public void actionPerformed(final IDiagramHandle diagramHandle, IDiagramGraphic originNode, IDiagramGraphic targetNode, LinkRouterKind routerType, ILinkRoute path) {
         try (ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("Allocate_DependencyCommand")){
-                 
-        
+
+
             ModelElement source = (ModelElement) originNode.getElement();
             ModelElement target = (ModelElement) targetNode.getElement();
-        
+
             Allocate_Dependency proxy = new Allocate_Dependency();
-            proxy.setParent(source,target);   
+            proxy.setParent(source,target);
             MARTEModule.getInstance().getModuleContext().getModelingSession().getModel().getDefaultNameService().setDefaultName(proxy.getElement(),proxy.getElement().getName());
             List<IDiagramGraphic> graphics = diagramHandle.unmask(proxy.getElement(), 0, 0);
             for (IDiagramGraphic graphic : graphics){
                 if (graphic instanceof IDiagramLink){
                     IDiagramLink link = (IDiagramLink) graphic;
                     link.setRouterKind(routerType);
-                    link.setPath(path);
+                    link.setRoute(path);
                 }
             }
             diagramHandle.save();
             diagramHandle.close();
             tr.commit();
-            
+
         } catch (InvalidSourcePointException e) {
             MARTEModule.getInstance().getModuleContext().getLogService().error(e);
         } catch (InvalidPointsPathException e) {

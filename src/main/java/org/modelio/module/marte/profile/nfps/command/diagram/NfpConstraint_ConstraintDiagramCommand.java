@@ -5,7 +5,7 @@ import org.eclipse.draw2d.geometry.Rectangle;
 import org.modelio.api.modelio.diagram.IDiagramGraphic;
 import org.modelio.api.modelio.diagram.IDiagramHandle;
 import org.modelio.api.modelio.diagram.IDiagramLink.LinkRouterKind;
-import org.modelio.api.modelio.diagram.ILinkPath;
+import org.modelio.api.modelio.diagram.ILinkRoute;
 import org.modelio.api.modelio.diagram.tools.DefaultMultiLinkTool;
 import org.modelio.api.modelio.model.ITransaction;
 import org.modelio.metamodel.diagrams.AbstractDiagram;
@@ -37,7 +37,7 @@ public class NfpConstraint_ConstraintDiagramCommand extends DefaultMultiLinkTool
     }
 
     @Override
-    public void actionPerformed(IDiagramHandle diagramHandle, IDiagramGraphic arg1, List<IDiagramGraphic> arg2, List<LinkRouterKind> arg3, List<ILinkPath> arg4, Rectangle rectangle) {
+    public void actionPerformed(IDiagramHandle diagramHandle, IDiagramGraphic arg1, List<IDiagramGraphic> arg2, List<LinkRouterKind> arg3, List<ILinkRoute> arg4, Rectangle rectangle) {
         try(ITransaction tr = MARTEModule.getInstance().getModuleContext().getModelingSession().createTransaction("NfpConstraint_ConstraintCommand")){
         
         

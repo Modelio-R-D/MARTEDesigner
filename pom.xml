@@ -5,7 +5,7 @@
   <!-- definition -->
   <groupId>org.modelio.module</groupId>
   <artifactId>marte</artifactId>
-  <version>4.1.06</version>
+  <version>5.4.00</version>
   <name>MARTEDesigner</name>
   <repositories>
       <repository>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.modelio</groupId>
             <artifactId>MDAKit</artifactId>
-            <version>[4.1.0,4.1.1)</version>
+            <version>[5.4.0,5.4.1)</version>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
@@ -42,14 +42,13 @@
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
-            <!-- Use JVM 1.8 -->
+            <!-- Use JVM 11 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>11</release>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
@@ -57,7 +56,7 @@
             <plugin>
                 <groupId>org.modelio</groupId>
                 <artifactId>modelio-maven-plugin</artifactId>
-                <version>4.1.0.00</version>
+                <version>5.4.0.00</version>
                 <executions>
                     <execution>
                         <id>ModuleValidation</id>
@@ -84,7 +83,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.4</version>
+                <version>3.2.0</version>
                 <configuration>
                     <outputDirectory>${project.basedir}/target/lib</outputDirectory>
                     <overWriteReleases>false</overWriteReleases>
@@ -107,7 +106,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.3.0</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <descriptors>
@@ -132,7 +131,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
+                <version>3.0.0</version>
                 <executions>
                     <execution>
                         <id>rename</id>
@@ -181,7 +180,7 @@
                                                 modelio-maven-plugin
                                             </artifactId>
                                             <versionRange>
-                                                [4.1.0.00,)
+                                                [5.4.0.00,)
                                             </versionRange>
                                             <goals>
                                                 <goal>
